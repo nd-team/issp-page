@@ -1,0 +1,12 @@
+**/.idea
+.idea
+.project
+**/.project
+**/css
+css
+**/.sass-cache
+.sass-cache
+**/node_modules
+node_modules
+
+
