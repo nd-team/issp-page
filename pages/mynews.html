@@ -10,12 +10,12 @@
 <body>
 <nav id="nav">
     <div id="logo">
-        <a href="javascript:void(0)">
-            <img src="/images/logo.png" alt="logo">
+        <a href="/index.html">
+            <img src="/images/index_logo.png" alt="logo">
         </a>
     </div>
     <ul>
-        <li >
+        <li class="active">
             <a href="javascript:void(0)">个人消息</a>
         </li>
         <li>
@@ -52,28 +52,119 @@
                 <a href="javascript:void(0)">老王
                     <i></i>
                 </a>
-                <ul>
-                    <li>
-                        <a href="javascript:void(0)">注销</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">登录</a>
-                    </li>
-                </ul>
             </div>
             <a href="javascript:void(0)">
                 <img src="/images/creative.png" alt="userImg">
             </a>
+            <ul class="log">
+                <li>
+                    <a href="/pages/login.html" class="logout">注销</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">登录</a>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="main">
         <div class="daily">
             <div class="dail-list unread">
-                <i></i>
                 <p>
                     <a href="javascript:void(0)">日报未填写通知</a>
                     <span>2016-12-08</span>
                 </p>
+            </div>
+            <div class="dail-list unread">
+                <p>
+                    <a href="javascript:void(0)">日报未填写通知</a>
+                    <span>2016-12-08</span>
+                </p>
+            </div>
+            <div class="dail-list unread">
+                <p>
+                    <a href="javascript:void(0)">日报未填写通知</a>
+                    <span>2016-12-08</span>
+                </p>
+            </div>
+            <div class="dail-list">
+                <p>
+                    <a href="javascript:void(0)">日报未填写通知</a>
+                    <span>2016-12-08</span>
+                </p>
+            </div>
+            <div class="dail-list">
+                <p>
+                    <a href="javascript:void(0)">日报未填写通知</a>
+                    <span>2016-12-08</span>
+                </p>
+            </div>
+            <div class="dail-list">
+                <p>
+                    <a href="javascript:void(0)">日报未填写通知</a>
+                    <span>2016-12-08</span>
+                </p>
+            </div>
+            <div class="dail-list">
+                <p>
+                    <a href="javascript:void(0)">日报未填写通知</a>
+                    <span>2016-12-08</span>
+                </p>
+            </div>
+            <div class="dail-list">
+                <p>
+                    <a href="javascript:void(0)">日报未填写通知</a>
+                    <span>2016-12-08</span>
+                </p>
+            </div>
+            <div class="dail-list">
+                <p>
+                    <a href="javascript:void(0)">日报未填写通知</a>
+                    <span>2016-12-08</span>
+                </p>
+            </div>
+            <div class="dail-list">
+                <p>
+                    <a href="javascript:void(0)">日报未填写通知</a>
+                    <span>2016-12-08</span>
+                </p>
+            </div>
+            <div class="dail-list">
+                <p>
+                    <a href="javascript:void(0)">日报未填写通知</a>
+                    <span>2016-12-08</span>
+                </p>
+            </div>
+            <div class="dail-list">
+                <p>
+                    <a href="javascript:void(0)">日报未填写通知</a>
+                    <span>2016-12-08</span>
+                </p>
+            </div>
+            <div class="dail-list">
+                <p>
+                    <a href="javascript:void(0)">日报未填写通知</a>
+                    <span>2016-12-08</span>
+                </p>
+            </div>
+            <div class="dail-list">
+                <p>
+                    <a href="javascript:void(0)">日报未填写通知</a>
+                    <span>2016-12-08</span>
+                </p>
+            </div>
+            <div class="page">
+                <button type="button" class="first disabled">首页</button>
+                <button type="button" class="prev disabled">上一页</button>
+                <div class="page-list">
+                    <a href="javascript:void(0)" class="active">1</a>
+                    <a href="javascript:void(0)">2</a>
+                    <a href="javascript:void(0)">3</a>
+                </div>
+                <button type="button" class="next">下一页</button>
+                <button type="button" class="end">尾页</button>
+                <div class="jump">
+                    跳转到：<input type="text"><a href="javascript:void(0)">GO</a>
+                </div>
             </div>
         </div>
     </div>
@@ -85,6 +176,25 @@
         </a>
     </div>
 </div>
+<div id="modal">
+    <header class="modal-title">
+        日报未填写通知
+        <span>系统</span>
+    </header>
+    <main class="modal-con">
+        <article>您好！截止今日<span>9:30</span>，您还没有上传日报工作计划（已请假人员请忽略此消息）</article>
+        <article>
+            <p>由于您的疏忽，将增加其他部门的工作量，影响考勤核对结果等。</p>
+            <p>故扣<span>2分</span>以示警告，有特殊情况造成没有上传的可以去 <span>ISSP-处罚奖励-处罚列表</span> 中申诉，说明情况，免去扣分。</p>
+        </article>
+
+        <article>温馨提示：员工可以在当日下班前向负责人索要明日的工作计划，下班前就上传日报，以免此情况再次发生。</article>
+    </main>
+    <div>
+        <a href="javascript:void(0)" class="close">关闭</a>
+    </div>
+</div>
+<div id="modalbg"></div>
 
 </body>
 <script src="/js/jquery-2.1.1.min.js"></script>
