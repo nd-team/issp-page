@@ -219,12 +219,16 @@ html{
                   padding-bottom: 15px;
                   text-align: center;
                   background: url("/images/loginbg.png") no-repeat;
-                  a{
-                    line-height: 40px;
+                  button{
+                    width:94px;
+                    height:38px;
                     color: white;
                     font-size: 16px;
                     letter-spacing: 5px;
                     font-weight: bold;
+                    border:none;
+                    background:none;
+                    outline:none;
                   }
                 }
               }
