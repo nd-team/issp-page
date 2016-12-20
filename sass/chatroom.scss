@@ -1,0 +1,174 @@
+//浏览器重置样式
+html, body, div, span, nav, header, iframe,
+h1, h2, h3, h4, h5, h6, p, section, footer,
+a, form, address, big, cite, code,
+del, dfn, em, img, ins, fieldset, q, s, samp,
+small, strike, strong, sub, sup,label, var,
+b, u, i,input, dl, dt, dd, ol, ul, li{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+$main-font: Microsoft YaHei;
+html,body{
+  font:{
+    size: 16px;
+    family: $main-font;
+  }
+  color: #6c6c6c;
+}
+.chat-room{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #efefef;
+  font-family:  $main-font;
+}
+form,fieldset{
+  border: 0 none;
+}
+ol,ul{
+  list-style: none;
+}
+img{
+  border: 0 none;
+  max-width: 100%;
+}
+input{
+  outline: none;
+  font-family: $main-font;
+}
+button{
+  border: 0;
+  font-family: $main-font;
+}
+i,em{
+  font-style: normal;
+}
+a {
+  color: #535353;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+svg{
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+}
+
+header{
+  display: flex;
+  flex: 1;
+  height: 60px;
+  width: 100%;
+  background-color: #fff;
+  flex-wrap: nowrap;
+  position: fixed;
+  .chat-life{
+    flex: 1;
+    flex-wrap: nowrap;
+    text-align: center;
+    .life{
+      width: 126px;
+      height: 126px;
+      fill: #567da4;
+      margin-top: -28px;
+    }
+  }
+  .header-icon{
+    display: flex;
+    flex: 2;
+    background-color: #fff;
+    flex-wrap: nowrap;
+    margin-top: 5px;
+    li{
+      flex: 1;
+      text-align: center;
+      .honor{
+        width: 26px;
+        height: 28px;
+        fill: #565b61;
+
+      }
+      .icon-text{
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+  .myself{
+    flex: 3;
+    display: block;
+    justify-content:center;
+    text-align: center;
+    line-height: 60px;
+    .my{
+      width: 37px;
+      height: 41px;
+      fill: #80a8cc;
+    }
+  }
+  .search-input{
+    display: flex;
+    flex: 2;
+    margin-top: 12px;
+    .input-box{
+      display: flex;
+      flex:5;
+      height: 40px;
+      justify-content: flex-end;
+      border:1px solid #cfcfcf;
+      border-radius: 40px;
+      background-color: #fff;
+      text-align: center;
+      padding-left: 20px;
+      .search{
+        height: 40px;
+        flex: 6;
+        font-family: $main-font;
+      }
+      .magnifier{
+        flex: 1;
+        fill: #80a8cc;
+        margin-top: 5px;
+        margin-right: 5px;
+      }
+    }
+    .photo{
+      //flex:1;
+      width: 45px;
+      height: 45px;
+      background-color: #cb7730;
+      justify-content: flex-end;
+      margin:{
+        left: 50px;
+        right: 24px;
+      }
+      border-radius: 50%;
+    }
+  }
+}
+.chat-content{
+  display: flex;
+  flex: 1;
+  height: auto;
+  margin-top: 60px;
+  .content-center{
+    flex: 1;
+    background-color: #fcc;
+  }
+  .content-right{
+    flex: 0 0 15%;
+    background-color: #ff0;
+    //margin-right: -150px;
+  }
+  .content-left{
+    flex: 0 0 20%;
+    //个人信息导航放到最左边
+    order:-1;
+    background-color: #fcf;
+  }
+}
