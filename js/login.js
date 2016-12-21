@@ -20,7 +20,9 @@ $(function(){
                 required:true,
             },
             password:{
-                required:true
+                required:true,
+                minlength:6,
+                maxlength:14
             }
         },
         messages:{
@@ -28,7 +30,9 @@ $(function(){
                 required:"用户名不能为空！",
             },
             password:{
-                required:"密码不能为空！"
+                required:"密码不能为空！",
+                minlength:"密码长度为6-14位!",
+                maxlength:"密码长度为6-14位!"
             }
         }
     });
