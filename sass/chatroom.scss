@@ -10,7 +10,7 @@ b, u, i,input, dl, dt, dd, ol, ul, li{
   border: 0;
   vertical-align: baseline;
 }
-$main-font: Microsoft YaHei;
+$main-font: "Microsoft YaHei";
 html,body{
   font:{
     size: 16px;
@@ -205,12 +205,12 @@ header{
     .content-box{
       display: flex;
       background-color: #fff;
+      flex-direction: column;
+      border-right:1px solid #e0e0e0;
       .details{
-        //flex: 1;
         background-color: #fff;
         display: flex;
         border-bottom:1px solid #e0e0e0;
-        //height: 300px;
         .rely{
           display: flex;
           padding: {
@@ -241,6 +241,35 @@ header{
               font-size: 14px;
               color: #666;
             }
+            .picture{
+              display: block;
+              margin-top: 10px;
+            }
+            .reproduced{
+              display: flex;
+              background-color: #e3ecf3;
+              padding: {
+                top: 10px;
+                left: 16px;
+                bottom:10px;
+                right: 20px;
+              }
+              margin-top: 10px;
+              .reproduced-left{
+                margin-right: 1%;
+              }
+              .reproduced-right{
+                flex: 1;
+                h4{
+                  font-size: 12px;
+                  color: #41464c;
+                  line-height: 24px;
+                }
+                p{
+                  font-size: 12px;
+                }
+              }
+            }
             .click-btn{
               display: flex;
               cursor: pointer;
@@ -252,6 +281,10 @@ header{
                   width: 20px;
                   height: 18px;
                   fill: #cdcdcd;
+
+                  &.current{
+                    fill: red;
+                  }
                 }
                 span{
                   font-size: 14px;
@@ -262,13 +295,41 @@ header{
           }
         }
       }
+      .pagination-click{
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0;
+        li{
+          text-align: center;
+          line-height: 26px;
+          font-family: "SimHei";
+          font-size: 14px;
+          margin: 0 8px;
+          &.active{
+            width: 26px;
+            height: 26px;
+            background-color: #80a8cc;
+            color: #fff;
+          }
+          &.next{
+            font-weight: bold;
+          }
+          a{
+            color: #454c54;
+          }
+
+        }
+      }
     }
 
   }
   .content-right{
     flex: 0 0 15%;
-    background-color: #ff0;
-    //margin-right: -150px;
+    background-color: #fff;
+    margin-top: 50px;
+
   }
   .content-left{
     flex: 0 0 25%;
@@ -320,12 +381,11 @@ header{
        }
         .attention{
           width: 50%;
-          height: 50px;
+          height:40px;
           background-color: #567ea2;
           color: #fff;
-          font-size: 18px;
           text-align: center;
-          line-height: 50px;
+          line-height: 40px;
           border-radius: 50px;
           margin:{
             top: 30px;
