@@ -206,86 +206,119 @@ header{
       background-color: #fff;
       flex-direction: column;
       border-right:1px solid #e0e0e0;
-      .details{
-        background-color: #fff;
+      .attention{
         display: flex;
-        border-bottom:1px solid #e0e0e0;
-        .rely{
+        padding: {
+          left: 30px;
+          right: 30px;
+          top: 20px;
+        }
+        margin-bottom: 30px;
+        flex-direction: column;
+        .my-attention{
           display: flex;
-          padding: {
-            top: 30px;
-            left: 40px;
-            bottom: 30px;
-            right: 30px;
-          }
-          .people-pic{
-            margin-right: 2%;
-          }
-          .details-text{
+          flex: 1;
+          align-items: center;
+          h4{
             flex: 1;
-            h3{
-              height: 28px;
-              color: #3c444c;
-              font:{
-                size: 18px;
-                family: SimHei;
-              }
-              cursor: pointer;
+            justify-content: flex-start;
+            color: #555b61;
+            font-size: 18px;
+          }
+          .my-search{
+            display: flex;
+            height: 40px;
+            border: 1px solid #efefef;
+            line-height: 40px;
+            border-radius: 40px;
+            align-items: center;
+            padding-left: 20px;
+            justify-content: flex-end;
+            .search{
+              line-height: 40px;
+              font-size: 12px;
+              color: #bababa;
             }
-            p{
-              line-height: 20px;
-              font-size: 14px;
-              color: #666;
+            .magnifier{
+              fill: #80a8cc;
+              padding-right: 10px;
             }
-            .picture{
-              display: block;
-              margin-top: 10px;
-            }
-            .reproduced{
+          }
+        }
+        .concerned-people{
+          flex: 1;
+          .attention-name{
+            display: flex;
+            margin-top: 20px;
+            li{
               display: flex;
-              background-color: #e3ecf3;
-              padding: {
-                top: 10px;
-                left: 16px;
-                bottom:10px;
-                right: 20px;
-              }
-              margin-top: 10px;
-              .reproduced-left{
-                margin-right: 1%;
-              }
-              .reproduced-right{
-                flex: 1;
-                h4{
-                  font-size: 12px;
-                  color: #41464c;
-                  line-height: 24px;
-                }
-                p{
-                  font-size: 12px;
-                }
-              }
-            }
-            .click-btn{
-              display: flex;
-              cursor: pointer;
-              padding-top: 10px;
+              flex-direction: column;
+              justify-content: space-between;
+              flex: 1;
+              //height: 180px;
+              background-color: #e9edf0;
               align-items: center;
-              li{
-                margin-right: 2%;
-                svg{
-                  width: 20px;
-                  height: 18px;
-                  fill: #cdcdcd;
+              margin: {
+                right: 30px;
+                bottom: 15px;
+              }
+              padding: {
+                bottom: 5px;
+              }
+              &:last-child{
+                margin-right: 0;
+              }
+              .head-pic{
+                display: block;
+                width: 69px;
+                height: 69px;
+                border-radius: 50%;
+                margin-top: 10px;
+              }
+              h5{
+                font-size: 14px;
+                color: #333;
+                line-height: 26px;
+              }
+              span{
+                display: block;
+                font-size: 12px;
+                color: #6c6c6c;
+              }
+              .attention-click{
+                display: flex;
+                margin-bottom: 10px;
+                a{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background-color: #fff;
+                  color: #333;
+                  font:{
+                    size: 14px;
+                    weight: bold;
+                  }
+                  padding: 5px 20px;
+                  border-radius: 2px;
+                  margin:{
+                    top: 15px;
+                    right: 5px;
+                    left: 5px;
+                  }
+                  &:last-child{
+                    margin-left: 10px;
+                  }
+                  &:hover{
+                    background-color: #80a8cc;
+                    color: #fff;
+                  }
+                  &.cancel{
+                    background-color: #80a8cc;
+                    color: #fff;
 
-                  &.current{
-                    fill: red;
                   }
                 }
-                span{
-                  font-size: 14px;
-                  color: #cdcdcd;
-                }
+
               }
             }
           }
