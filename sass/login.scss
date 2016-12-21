@@ -157,17 +157,26 @@ html{
               background: white;
               border-radius: 5px;
               margin:0 0 20px 19px;
+              position:relative;
               label{
-                display: inline-block;
-                width: 25px;
-                height: 25px;
-                color: #666;
-                margin:7px 0 0 9px;
-                float: left;
-               svg{
-                width: 25px;
-                height: 25px;
-              }
+                  display: inline-block;
+                  width: 25px;
+                  height: 25px;
+                  color: #666;
+                  margin:7px 0 0 9px;
+                  float: left;
+                 svg{
+                    width: 25px;
+                    height: 25px;
+                 }
+                &.error{
+                  color:#f00;
+                  width:auto;
+                  position:absolute;
+                  right:10px;
+                  top:0;
+                  line-height:28px;
+                }
               }
               input{
                 padding-left: 6px;
