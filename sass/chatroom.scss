@@ -1,0 +1,438 @@
+//浏览器重置样式
+html, body, div, span, nav, header, iframe,
+h1, h2, h3, h4, h5, h6, p, section, footer,
+a, form, address, big, cite, code,
+del, dfn, em, img, ins, fieldset, q, s, samp,
+small, strike, strong, sub, sup,label, var,
+b, u, i,input, dl, dt, dd, ol, ul, li{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+$main-font: "Microsoft YaHei";
+html,body{
+  font:{
+    size: 16px;
+    family: $main-font;
+  }
+}
+.chat-room{
+  display: flex;
+  flex-direction: column;
+  background-color: #efefef;
+  font-family:  $main-font;
+}
+form,fieldset{
+  border: 0 none;
+}
+ol,ul{
+  list-style: none;
+}
+img{
+  border: 0 none;
+  max-width: 100%;
+}
+input{
+  outline: none;
+  font-family: $main-font;
+}
+button{
+  border: 0;
+  font-family: $main-font;
+}
+i,em{
+  font-style: normal;
+}
+a {
+  color: #535353;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+svg{
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+}
+
+header{
+  display: flex;
+  flex: 1;
+  height: 60px;
+  width: 100%;
+  background-color: #fff;
+  flex-wrap: nowrap;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  .chat-life{
+    flex: 0 0 10em;
+    flex-wrap: nowrap;
+    text-align: center;
+    .life{
+      width: 126px;
+      height: 126px;
+      fill: #567da4;
+      margin-top: -28px;
+    }
+  }
+  .header-icon{
+    display: flex;
+    flex: 2.5;
+    background-color: #fff;
+    flex-wrap: nowrap;
+    margin-top: 5px;
+    li{
+      flex: 0 0 21%;
+      text-align: center;
+      svg{
+        width: 26px;
+        height: 28px;
+        fill: #565b61;
+      }
+      .icon-text{
+        color: #555b61;
+        display: block;
+      }
+    }
+  }
+  .myself{
+    flex: 3;
+    display: block;
+    justify-content:center;
+    text-align: center;
+    line-height: 60px;
+    .my{
+      width: 37px;
+      height: 41px;
+      fill: #80a8cc;
+    }
+  }
+  .search-input{
+    display: flex;
+    flex: 2;
+    margin-top: 12px;
+    .input-box{
+      display: flex;
+      flex:5;
+      height: 40px;
+      justify-content: flex-end;
+      border:1px solid #cfcfcf;
+      border-radius: 40px;
+      background-color: #fff;
+      text-align: center;
+      padding-left: 20px;
+      .search{
+        height: 40px;
+        flex: 6;
+        font-family: $main-font;
+      }
+      .magnifier{
+        flex: 1;
+        fill: #80a8cc;
+        margin-top: 5px;
+        margin-right: 5px;
+      }
+    }
+    .photo{
+      width: 45px;
+      height: 45px;
+      justify-content: flex-end;
+      margin:{
+        left: 50px;
+        right: 24px;
+      }
+      border-radius: 50%;
+    }
+  }
+}
+.chat-content{
+  display: flex;
+  flex: 1;
+  height: auto;
+  margin-top: 60px;
+  overflow: auto;
+  .content-center{
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    //margin-left: 26%;
+    margin: 0 5%;
+    .center-header{
+      display: flex;
+      background-color: #fff;
+      margin: 50px 0 30px;
+      height: 62px;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 62px;
+      border: {
+        right: 1px;
+        bottom: 2px;
+        style: solid;
+        color: #e2e2e2;
+      }
+      li{
+        flex: 1;
+        text-align: center;
+        cursor: pointer;
+        align-content: center;
+        &.current{
+          border-bottom: 5px solid #80a8cc;
+        }
+        &:hover{
+          border-bottom: 5px solid #80a8cc;
+        }
+        strong{
+          display: block;
+          line-height: 24px;
+          &.text{
+            color: #949EA7;
+            font-family:"SimHei";
+            padding-top: 8px;
+          }
+          &.number{
+            color: #333;
+            font-size: 18px;
+          }
+        }
+
+      }
+    }
+    .content-box{
+      display: flex;
+      background-color: #fff;
+      flex-direction: column;
+      border-right:1px solid #e0e0e0;
+      .details{
+        background-color: #fff;
+        display: flex;
+        border-bottom:1px solid #e0e0e0;
+        .rely{
+          display: flex;
+          padding: {
+            top: 30px;
+            left: 40px;
+            bottom: 30px;
+            right: 30px;
+          }
+          .people-pic{
+            margin-right: 2%;
+            //img{
+            //  width: 100%;
+            //}
+          }
+          .details-text{
+            flex: 1;
+            h3{
+              height: 28px;
+              color: #3c444c;
+              font:{
+                size: 18px;
+                family: SimHei;
+              }
+              cursor: pointer;
+            }
+            p{
+              line-height: 20px;
+              font-size: 14px;
+              color: #666;
+            }
+            .picture{
+              display: block;
+              margin-top: 10px;
+            }
+            .reproduced{
+              display: flex;
+              background-color: #e3ecf3;
+              padding: {
+                top: 10px;
+                left: 16px;
+                bottom:10px;
+                right: 20px;
+              }
+              margin-top: 10px;
+              .reproduced-left{
+                margin-right: 1%;
+              }
+              .reproduced-right{
+                flex: 1;
+                h4{
+                  font-size: 12px;
+                  color: #41464c;
+                  line-height: 24px;
+                }
+                p{
+                  font-size: 12px;
+                }
+              }
+            }
+            .click-btn{
+              display: flex;
+              cursor: pointer;
+              padding-top: 10px;
+              align-items: center;
+              li{
+                margin-right: 2%;
+                svg{
+                  width: 20px;
+                  height: 18px;
+                  fill: #cdcdcd;
+
+                  &.current{
+                    fill: red;
+                  }
+                }
+                span{
+                  font-size: 14px;
+                  color: #cdcdcd;
+                }
+              }
+            }
+          }
+        }
+      }
+      .pagination-click{
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0;
+        li{
+          text-align: center;
+          line-height: 26px;
+          font-family: "SimHei";
+          font-size: 14px;
+          margin: 0 8px;
+          &.active{
+            width: 26px;
+            height: 26px;
+            background-color: #80a8cc;
+            color: #fff;
+          }
+          &.next{
+            font-weight: bold;
+          }
+          a{
+            color: #454c54;
+          }
+
+        }
+      }
+    }
+
+  }
+  .content-right{
+    flex: 0 0 15%;
+    background-color: #fff;
+    margin-top: 50px;
+
+  }
+  .content-left{
+    flex: 0 0 25%;
+    //个人信息导航放到最左边
+    order:-1;
+    background-color: #80a8cc;
+    //position: fixed;
+    max-width: 400px;
+    width: 26%;
+    //top:60px;
+    //left: 0;
+    //bottom: 0;
+    overflow: auto;
+    .avatar{
+      li{
+        justify-content: center;
+        align-items:center;
+        display: flex;
+        flex-direction: column;
+        &.text-company{
+          width: 60%;
+          margin: 0 auto;
+          p{
+            align-self: flex-start;
+          }
+        }
+        .head-portrait{
+          display: block;
+          width: 144px;
+          height: 144px;
+          margin-top: 50px;
+          position: relative;
+          .editor{
+            position: absolute;
+            bottom: 10%;
+            right: 0;
+          }
+        }
+        strong{
+          color: #fff;
+          font-size: 20px;
+          padding: 2% 0 3%;
+        }
+        p{
+          color: #fffeff;
+          line-height: 26px;
+          align-self: flex-start;
+          font-size: 100%;
+       }
+        .attention{
+          width: 50%;
+          height:40px;
+          background-color: #567ea2;
+          color: #fff;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 50px;
+          margin:{
+            top: 30px;
+            bottom: 60px;
+          }
+        }
+      }
+    }
+    .life-pic{
+      font-size: 0;
+      li{
+        display: flex;
+        font-size: 0;
+        .live{
+          flex: 1;
+          img{
+            min-width: 100%;
+          }
+        }
+      }
+
+    }
+    .trend{
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      color: #fff;
+      margin:{
+        top: 20px;
+        left: 15%;
+        right: 18%;
+      }
+      h4{
+        color: #fff;
+        line-height: 35px;
+      }
+      .info{
+        line-height: 26px;
+        font-size: 12px;
+        a{
+          color: #567ea3;
+          &:hover{
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
