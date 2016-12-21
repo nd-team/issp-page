@@ -30,32 +30,34 @@
                             <p>扫一扫登录</p>
                         </div>
                         <div class="login-page">
-                            <ul>
-                                <li class="form-item">
-                                    <label>
-                                        <svg role="img" class="woman">
-                                            <use xlink:href="#woman"></use>
-                                        </svg>
-                                    </label>
-                                    <input type="text" placeholder="IKE0000">
-                                </li>
-                                <li class="form-item">
-                                    <label>
-                                        <svg role="img" class="hkey">
-                                            <use xlink:href="#hkey"></use>
-                                        </svg>
-                                    </label>
-                                    <input type="password" placeholder="************">
-                                </li>
-                                <li class="form-rem">
-                                    <input type="checkbox" data-style="checkeds" class="checkedNum" />
-                                    <label class="icon"></label>
-                                    <span>记住我</span>
-                                    <span>
-                                        <button>登陆</button>
-                                    </span>
-                                </li>
-                            </ul>
+                            <form id="form">
+                                <ul>
+                                    <li class="form-item">
+                                        <label>
+                                            <svg role="img" class="woman">
+                                                <use xlink:href="#woman"></use>
+                                            </svg>
+                                        </label>
+                                        <input type="text" placeholder="IKE0000" required name="username" >
+                                    </li>
+                                    <li class="form-item">
+                                        <label>
+                                            <svg role="img" class="hkey">
+                                                <use xlink:href="#hkey"></use>
+                                            </svg>
+                                        </label>
+                                        <input type="password" name="password" placeholder="************">
+                                    </li>
+                                    <li class="form-rem">
+                                        <input type="checkbox" data-style="checkeds" class="checkedNum" />
+                                        <label class="icon"></label>
+                                        <span>记住我</span>
+                                        <span>
+                                            <button type="button">登陆</button>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </form>
                         </div>
 
                     </div>
@@ -99,6 +101,7 @@
         </div>
     </div>
     <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
     <script src="/js/common.js"></script>
     <script src="/js/login.js"></script>
 </body>
