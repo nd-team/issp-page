@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>聊天室-关注</title>
+    <title>聊天室-粉丝</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-    <meta name="keywords" content="关注">
-    <meta name="description" content="关注">
+    <meta name="keywords" content="粉丝">
+    <meta name="description" content="粉丝">
     <link rel="stylesheet" href="/css/chatroom/attention.css">
     <script src="/js/common.js"></script>
 </head>
@@ -63,26 +63,48 @@
             </a>
             <a href="javascript:void(0)" class="photo">
                 <img src="/images/chatroom/pictou.png" alt="">
+                <div class="modal-message">
+                    <p>
+                        <i class="triangle"></i>
+                    </p>
+
+                    <div class="get-info">
+                        <a href="javascript:void(0)" class="me">
+                            <svg role="img" class="my">
+                                <use xlink:href="#my"></use>
+                            </svg>
+                            <span>我的</span>
+                        </a>
+                        <a href="javascript:void(0)" class="my-news">
+                            <svg role="img" class="news">
+                                <use xlink:href="#news"></use>
+                            </svg>
+                            <span>消息</span>
+                            <strong>99</strong>
+                        </a>
+                    </div>
+                </div>
             </a>
         </div>
     </header>
+
     <div class="chat-content">
         <!--right friend info start-->
         <div class="content-center">
             <div class="center-header">
-                <a href="javascript:void(0)">
+                <a href="moving.html">
                     <strong class="text">动态</strong>
                     <strong class="number">200</strong>
                 </a>
-                <a href="javascript:void(0)">
+                <a href="honor.html">
                     <strong class="text">荣誉</strong>
                     <strong class="number">20</strong>
                 </a>
-                <a href="javascript:void(0)" class="current">
+                <a href="attention.html">
                     <strong class="text">关注</strong>
                     <strong class="number">200</strong>
                 </a>
-                <a href="javascript:void(0)">
+                <a href="fans.html" class="current">
                     <strong class="text">粉丝</strong>
                     <strong class="number">22660</strong>
                 </a>
@@ -90,9 +112,9 @@
             <div class="content-box">
                 <div class="attention">
                     <div class="my-attention">
-                        <h4>我的关注</h4>
+                        <h4>我的粉丝</h4>
                         <a href="javascript:void(0)" class="my-search">
-                            <input type="text" class="search" placeholder="搜索我关注的人">
+                            <input type="text" class="search" placeholder="搜索关注我的人">
                             <svg role="img" class="magnifier">
                                 <use xlink:href="#magnifier"></use>
                             </svg>
@@ -461,5 +483,7 @@
         </div>
         <!--right friend info end-->
     </div>
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/chatRoom.js"></script>
 </body>
 </html>
