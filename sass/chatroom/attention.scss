@@ -161,7 +161,7 @@ header{
     flex-direction: column;
     display: flex;
     //margin-left: 26%;
-    margin: 0 5%;
+    margin: 0 3%;
     .center-header{
       display: flex;
       background-color: #fff;
@@ -298,7 +298,12 @@ header{
                     size: 14px;
                     weight: bold;
                   }
-                  padding: 5px 20px;
+                  padding: {
+                    top: 5px;
+                    bottom: 5px;
+                    left: 20px;
+                    right: 20px;
+                  }
                   border-radius: 2px;
                   margin:{
                     top: 15px;
