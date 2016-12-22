@@ -139,14 +139,22 @@ header{
       }
     }
     .photo{
+      //width: 45px;
+      //height: 45px;
+      display: flex;
       justify-content: flex-end;
       margin:{
         left: 50px;
         right: 24px;
       }
       border-radius: 50%;
-      position: relative;
-      @at-root .modal-message{
+      //position: relative;
+      .head-photo{
+        width: 45px;
+        height: 45px;
+        display: block;
+      }
+      .modal-message{
         position: absolute;
         z-index: 100;
         display: flex;
@@ -159,7 +167,7 @@ header{
         //display: none;
         .triangle{
           position: absolute;
-          right: -15px;
+          right:5px;
           top:-15px;
           width: 0;
           height: 0;
@@ -173,29 +181,22 @@ header{
           display: flex;
           flex-direction: column;
           background-color: #fff;
-
           a{
             flex: 1;
             padding: 10px 0;
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            margin-top: -10px;
             &.me{
               border-bottom:1px solid #dcdcdc;
             }
-            &.my-news{
-              margin-top: 0px;
-            }
             svg{
-              width: 20px;
-              height: 23px;
+              width: 30px;
+              height: 26px;
               fill: #80a8cc;
               margin: 0 15px;
             }
             span{
-              display: flex;
-              align-items: center;
               color: #333;
               font-size: 14px;
             }
