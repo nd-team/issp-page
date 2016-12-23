@@ -88,6 +88,7 @@ header{
     li{
       flex: 0 0 21%;
       text-align: center;
+      cursor: pointer;
       svg{
         width: 26px;
         height: 28px;
@@ -138,17 +139,87 @@ header{
       }
     }
     .photo{
-      width: 45px;
-      height: 45px;
+      //width: 45px;
+      //height: 45px;
+      display: flex;
       justify-content: flex-end;
       margin:{
         left: 50px;
         right: 24px;
       }
       border-radius: 50%;
+      //position: relative;
+      .head-photo{
+        width: 45px;
+        height: 45px;
+        display: block;
+      }
+      .modal-message{
+        position: absolute;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        top: 80px;
+        margin-right: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 15px #ccc;
+        //display: none;
+        .triangle{
+          position: absolute;
+          right:5px;
+          top:-15px;
+          width: 0;
+          height: 0;
+          border-left: 20px solid transparent;
+          border-right:20px solid transparent;
+          border-bottom: 20px solid #fff;
+          margin: 0;
+          padding: 0;
+        }
+        .get-info{
+          display: flex;
+          flex-direction: column;
+          background-color: #fff;
+          a{
+            flex: 1;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            &.me{
+              border-bottom:1px solid #dcdcdc;
+            }
+            svg{
+              width: 30px;
+              height: 26px;
+              fill: #80a8cc;
+              margin: 0 15px;
+            }
+            span{
+              color: #333;
+              font-size: 14px;
+            }
+            strong{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: #f2504e;
+              color: #fff;
+              height: 16px;
+              line-height: 16px;
+              border-radius: 10px;
+              margin: 0 10px;
+              padding: 0 10px;
+              font-size: 10px;
+            }
+          }
+        }
+      }
     }
   }
 }
+
 .chat-content{
   display: flex;
   flex: 1;
@@ -160,7 +231,7 @@ header{
     flex-direction: column;
     display: flex;
     //margin-left: 26%;
-    margin: 0 5%;
+    margin: 0 3%;
     .center-header{
       display: flex;
       background-color: #fff;
@@ -175,15 +246,12 @@ header{
         style: solid;
         color: #e2e2e2;
       }
-      li{
+      a{
         flex: 1;
         text-align: center;
         cursor: pointer;
         align-content: center;
         &.current{
-          border-bottom: 5px solid #80a8cc;
-        }
-        &:hover{
           border-bottom: 5px solid #80a8cc;
         }
         strong{
@@ -204,92 +272,128 @@ header{
     }
     .content-box{
       display: flex;
+      flex: 1;
       background-color: #fff;
       flex-direction: column;
       border-right:1px solid #e0e0e0;
-      .details{
-        background-color: #fff;
+      .attention{
         display: flex;
-        border-bottom:1px solid #e0e0e0;
-        .rely{
+        padding: {
+          left: 30px;
+          right: 30px;
+          top: 20px;
+        }
+        margin-bottom: 30px;
+        flex-direction: column;
+        .my-attention{
           display: flex;
-          padding: {
-            top: 30px;
-            left: 40px;
-            bottom: 30px;
-            right: 30px;
-          }
-          .people-pic{
-            margin-right: 2%;
-            //img{
-            //  width: 100%;
-            //}
-          }
-          .details-text{
+          flex: 1;
+          align-items: center;
+          h4{
             flex: 1;
-            h3{
-              height: 28px;
-              color: #3c444c;
-              font:{
-                size: 18px;
-                family: SimHei;
-              }
-              cursor: pointer;
+            justify-content: flex-start;
+            color: #555b61;
+            font-size: 18px;
+          }
+          .my-search{
+            display: flex;
+            height: 40px;
+            border: 1px solid #efefef;
+            line-height: 40px;
+            border-radius: 40px;
+            align-items: center;
+            padding-left: 20px;
+            justify-content: flex-end;
+            .search{
+              line-height: 40px;
+              font-size: 12px;
+              color: #bababa;
             }
-            p{
-              line-height: 20px;
-              font-size: 14px;
-              color: #666;
+            .magnifier{
+              fill: #80a8cc;
+              padding-right: 10px;
             }
-            .picture{
-              display: block;
-              margin-top: 10px;
-            }
-            .reproduced{
+          }
+        }
+        .concerned-people{
+          flex: 1;
+          .attention-name{
+            display: flex;
+            margin-top: 20px;
+            li{
               display: flex;
-              background-color: #e3ecf3;
-              padding: {
-                top: 10px;
-                left: 16px;
-                bottom:10px;
-                right: 20px;
-              }
-              margin-top: 10px;
-              .reproduced-left{
-                margin-right: 1%;
-              }
-              .reproduced-right{
-                flex: 1;
-                h4{
-                  font-size: 12px;
-                  color: #41464c;
-                  line-height: 24px;
-                }
-                p{
-                  font-size: 12px;
-                }
-              }
-            }
-            .click-btn{
-              display: flex;
-              cursor: pointer;
-              padding-top: 10px;
+              flex-direction: column;
+              justify-content: space-between;
+              flex: 1;
+              //height: 180px;
+              background-color: #e9edf0;
               align-items: center;
-              li{
-                margin-right: 2%;
-                svg{
-                  width: 20px;
-                  height: 18px;
-                  fill: #cdcdcd;
+              margin: {
+                right: 30px;
+                bottom: 15px;
+              }
+              padding: {
+                bottom: 5px;
+              }
+              &:last-child{
+                margin-right: 0;
+              }
+              .head-pic{
+                display: block;
+                width: 69px;
+                height: 69px;
+                border-radius: 50%;
+                margin-top: 10px;
+              }
+              h5{
+                font-size: 14px;
+                color: #333;
+                line-height: 26px;
+              }
+              span{
+                display: block;
+                font-size: 12px;
+                color: #6c6c6c;
+              }
+              .attention-click{
+                display: flex;
+                margin-bottom: 10px;
+                a{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background-color: #fff;
+                  color: #333;
+                  font:{
+                    size: 14px;
+                    weight: bold;
+                  }
+                  padding: {
+                    top: 5px;
+                    bottom: 5px;
+                    left: 20px;
+                    right: 20px;
+                  }
+                  border-radius: 2px;
+                  margin:{
+                    top: 15px;
+                    right: 5px;
+                    left: 5px;
+                  }
+                  &:last-child{
+                    margin-left: 10px;
+                  }
+                  &:hover{
+                    background-color: #80a8cc;
+                    color: #fff;
+                  }
+                  &.cancel{
+                    background-color: #80a8cc;
+                    color: #fff;
 
-                  &.current{
-                    fill: red;
                   }
                 }
-                span{
-                  font-size: 14px;
-                  color: #cdcdcd;
-                }
+
               }
             }
           }
@@ -297,10 +401,10 @@ header{
       }
       .pagination-click{
         display: flex;
-        flex: 1;
         align-items: center;
         justify-content: center;
         padding: 40px 0;
+        background-color: #fff;
         li{
           text-align: center;
           line-height: 26px;
@@ -329,7 +433,59 @@ header{
     flex: 0 0 15%;
     background-color: #fff;
     margin-top: 50px;
-
+    display: flex;
+    flex-direction: column;
+    h2{
+      flex: 0 0 2em;
+      font-size: 18px;
+      color: #454c54;
+      line-height: 36px;
+      padding: {
+        left: 15px;
+        top: 10px;
+        bottom: 10px;
+      }
+      border-bottom:1px solid #efefef;
+    }
+    .friend{
+      display:flex;
+      flex: 1;
+      flex-direction: column;
+      li{
+        display: flex;
+        margin: {
+          left: 15px;
+          top: 20px;
+        }
+        padding-bottom: 20px;
+        border-bottom:1px solid #efefef;
+        .friend-pic{
+          margin: 0 8px;
+        }
+        .right-text{
+          cursor: pointer;
+          h4{
+            display: flex;
+            align-items: center;
+            line-height: 32px;
+            span{
+              width: 14px;
+              height: 14px;
+              background-color: #bababa;
+              border-radius: 50%;
+              margin-left: 10px;
+              &.new-friend{
+                background-color: #46d434;
+              }
+            }
+          }
+          p{
+            font-size: 12px;
+            color: #999;
+          }
+        }
+      }
+    }
   }
   .content-left{
     flex: 0 0 25%;
@@ -417,7 +573,6 @@ header{
       margin:{
         top: 20px;
         left: 15%;
-        right: 18%;
       }
       h4{
         color: #fff;
