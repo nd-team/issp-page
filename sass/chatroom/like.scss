@@ -245,7 +245,7 @@ header{
       flex-direction: column;
       li{
         display: flex;
-        flex: 1;
+        flex: 2;
         align-items: center;
         justify-content: flex-start;
         color: #fff;
@@ -364,7 +364,6 @@ header{
             margin: 5px 0 10px;
             font: {
               size: 12px;
-              family: "SimHei";
             }
             .red{
               color: #f05050;

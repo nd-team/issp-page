@@ -323,53 +323,82 @@ header{
         font-size: 14px;
       }
     }
-    .person-praise{
+    .chat-message{
+      flex: 1;
+      background-color: #fff;
       display: flex;
       flex-direction: column;
-      li{
+      margin-top: 8px;
+      .all-message{
+        flex: 1;
         display: flex;
-        background-color: #fff;
-        margin-top: 8px;
         padding: {
-          top: 15px;
-          left: 20px;
-          right: 20px;
+          top: 10px;
           bottom: 10px;
         }
-        .praise-pic{
-          margin-right: 10px;
-        }
-        .right-text{
-          flex: 1;
-          h5{
-            color: #333;
-            font:{
-              size: 16px;
-              family: "SimHei";
-            }
-            line-height: 25px;
+        margin: 0 10px;
+        border-bottom: 1px solid #efefef;
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          font-size: 14px;
+          &:nth-child(2) {
+            flex: 2;
           }
-          .review{
-            font-size: 14px;
-            color: #666;
+          &:last-child {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
           }
-          .other-reproduced{
-            background-color: #e4ecf3;
-            padding: 8px;
-            font: {
-              size: 12px;
-            }
-            color: #666;
-            margin: 5px 0 10px;
-            line-height: 18px;
-            .gray{
-              color: #999;
+          .pic-first{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: {
+              left: 12px;
+              right: 20px;
             }
           }
-          span{
-            font-size: 12px;
-            color: #666;
+          .head-photo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: {
+              left: 12px;
+              right: 20px;
+            }
+            &:last-child{
+              margin-top: -18px;
+            }
+            a{
+              &:last-child{
+                margin-left: -22px;
+              }
+            }
+          }
+          h4{
+            font-size: 16px;
+            color: #555b61;
+            line-height: 32px;
+          }
+          .dialogue{
+            color: #999;
+          }
+          .news-time{
+            color: #585e64;
+          }
+          .message-number{
+            //flex: 1;
+            width: 36px;
+            height: 20px;
             line-height: 20px;
+            text-align: center;
+            color: #fff;
+            background-color: #f14e51;
+            border-radius: 20px;
+            margin-top: 10px;
           }
         }
       }
@@ -379,7 +408,7 @@ header{
       align-items: center;
       justify-content: center;
       padding: 40px 0;
-      margin-top: 20px;
+      background-color: #fff;
       li{
         text-align: center;
         line-height: 26px;

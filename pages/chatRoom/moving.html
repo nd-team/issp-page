@@ -150,7 +150,7 @@
                             <p>
                                 你说这个世界哪有那么多的一见如故无话不谈 只不过是因为我喜欢你 所以你说的话题我都感兴趣 你说的风景我也觉得很美丽 你让我看的电影我也觉得好精彩 只不过是因为我喜欢你。
                             </p>
-                            <a href="javascript:void(0)" class="picture"><img src="/images/chatroom/sun.jpg" alt=""></a>
+                            <a href="javascript:void(0)" class="picture same-big"><img src="/images/chatroom/big_pic.png" alt=""></a>
                             <ul class="click-btn">
                                 <li>
                                     <svg role="img" class="relay">
@@ -173,7 +173,6 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
                 <div class="details">
                     <div class="rely">
@@ -222,7 +221,7 @@
                             <p>
                                 你说这个世界哪有那么多的一见如故无话不谈 只不过是因为我喜欢你 所以你说的话题我都感兴趣 你说的风景我也觉得很美丽 你让我看的电影我也觉得好精彩 只不过是因为我喜欢你。
                             </p>
-                            <a href="javascript:void(0)" class="picture"><img src="/images/chatroom/cloud.jpg" alt=""></a>
+                            <a href="javascript:void(0)" class="picture same-big"><img src="/images/chatroom/yun.png" alt=""></a>
                             <ul class="click-btn">
                                 <li>
                                     <svg role="img" class="relay">
@@ -314,6 +313,15 @@
             <h2>我的好友</h2>
             <ul class="friend">
                 <li>
+                    <div class="pop-info">
+                        <a href="javascript:void(0)" class="big-head"><img src="/images/chatroom/big_photo.png" alt=""></a>
+                        <div class="pop-text">
+                            <p>公司：MW娱乐文化传播有限公司</p>
+                            <p>职位：首席运营总经理</p>
+                            <p>经验：518</p>
+                            <a href="javascript:void(0)" class="chat-with">聊天</a>
+                        </div>
+                    </div>
                     <a href="javascript:void(0)" class="friend-pic"><img src="/images/chatroom/friend_tou.png" alt=""></a>
                     <div class="right-text">
                         <h4>王金狗 <span class="new-friend"></span></h4>
@@ -415,5 +423,25 @@
         </div>
         <!--right friend info end-->
     </div>
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+//            $('.friend-pic').hover(function(){
+//                $(".pop-info",this).toggle();
+//            });
+            $(".friend-pic").hover(function(){
+                $(this).find(".pop-info").show();
+            },function(){
+                $(this).find(".pop-info").hide();
+            });
+            $('.picture').on('click', function(){
+                if(!$(this).hasClass('same-big')){
+                    $(this).addClass('same-big');
+                }else {
+                    $(this).removeClass('same-big');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

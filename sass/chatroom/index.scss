@@ -305,11 +305,16 @@ header{
               line-height: 20px;
               font-size: 14px;
               color: #666;
+              margin-bottom: 10px;
             }
             .picture{
               display: block;
-              margin-top: 10px;
+              &.same-big{
+                height: 147px;
+                overflow: hidden;
+              }
             }
+
             .reproduced{
               display: flex;
               background-color: #e3ecf3;
@@ -420,8 +425,71 @@ header{
         }
         padding-bottom: 20px;
         border-bottom:1px solid #efefef;
+        position: relative;
+        align-items: center;
+        justify-content: flex-start;
+        .pop-info{
+          display: flex;
+          position: absolute;
+          left: -360px;
+          top: -50px;
+          background-color: #fff;
+          box-shadow: 0 3px 10px #eee;
+          align-items: center;
+          justify-content: center;
+          padding-right: 10px;
+          display: none;
+          .big-head{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+          }
+          .pop-text{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding-top: 10px;
+            align-self: flex-start;
+            p{
+
+              font: {
+                size: 12px;
+                weight: bold;
+              }
+              color: #333;
+              line-height: 28px;
+            }
+            .chat-with{
+              display: flex;
+              background: url("/images/chatroom/friendbg.png") no-repeat;
+              height: 41px;
+              line-height: 40px;
+              justify-content: center;
+              color: #fff;
+              font: {
+                 size: 14px;
+                weight: bold;
+              }
+              margin: {
+                top: 10px;
+                left: 10px;
+              }
+            }
+          }
+        }
         .friend-pic{
+          display: flex;
           margin: 0 8px;
+          img{
+            width: 48px;
+            height: 48px;
+          }
+          &:hover{
+            .pop-info{
+              display: block;
+            }
+          }
         }
         .right-text{
           cursor: pointer;
