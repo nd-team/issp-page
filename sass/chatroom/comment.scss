@@ -348,26 +348,22 @@ header{
               family: "SimHei";
             }
             line-height: 25px;
-            span{
-              font:{
-                size: 12px;
-                family: $main-font;
-              }
-              color: #666;
-              padding-left: 10px;
-            }
+          }
+          .review{
+            font-size: 14px;
+            color: #666;
           }
           .other-reproduced{
             background-color: #e4ecf3;
-            padding: 10px;
-            color: #666;
-            margin: 5px 0 10px;
+            padding: 8px;
             font: {
               size: 12px;
-              family: "SimHei";
             }
-            .red{
-              color: #f05050;
+            color: #666;
+            margin: 5px 0 10px;
+            line-height: 18px;
+            .gray{
+              color: #999;
             }
           }
           span{
