@@ -369,5 +369,32 @@ header{
         }
       }
     }
+    .pagination-click{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 0;
+      margin-top: 20px;
+      li{
+        text-align: center;
+        line-height: 26px;
+        font-family: "SimHei";
+        font-size: 14px;
+        margin: 0 8px;
+        &.active{
+          width: 26px;
+          height: 26px;
+          background-color: #80a8cc;
+          color: #fff;
+        }
+        &.next{
+          font-weight: bold;
+        }
+        a{
+          color: #454c54;
+        }
+
+      }
+    }
   }
 }
