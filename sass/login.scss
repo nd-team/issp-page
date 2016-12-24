@@ -12,6 +12,9 @@ b, u, i, input, dl, dt, dd, ol, ul, li {
 ul li{
   list-style:none;
 }
+body{
+  font-family: "SimHei";
+}
 a{
   text-decoration:none;
 }
@@ -47,7 +50,7 @@ html{
     height: 67px;
     overflow: hidden;
     margin: {
-      top: 6%;
+      top: 2%;
       left: 20%;
       bottom: 1%;
     }
@@ -69,6 +72,7 @@ html{
           size: 1.5rem;
           weight: bold;
         }
+        cursor: pointer;
       }
     }
 
