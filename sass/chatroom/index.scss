@@ -139,8 +139,6 @@ header{
       }
     }
     .photo{
-      //width: 45px;
-      //height: 45px;
       display: flex;
       justify-content: flex-end;
       margin:{
@@ -149,73 +147,82 @@ header{
       }
       border-radius: 50%;
       //position: relative;
+      &:hover{
+        .modal-box{
+          display: block;
+        }
+      }
       .head-photo{
         width: 45px;
         height: 45px;
         display: block;
       }
-      .modal-message{
+      .modal-box{
         position: absolute;
         z-index: 100;
-        display: flex;
-        flex-direction: column;
         right: 0;
-        top: 80px;
+        top: 50px;
         margin-right: 20px;
-        background-color: #fff;
-        box-shadow: 0 2px 15px #ccc;
-        //display: none;
-        .triangle{
-          position: absolute;
-          right:5px;
-          top:-15px;
-          width: 0;
-          height: 0;
-          border-left: 20px solid transparent;
-          border-right:20px solid transparent;
-          border-bottom: 20px solid #fff;
-          margin: 0;
-          padding: 0;
-        }
-        .get-info{
+        padding-top: 30px;
+        display: none;
+        .modal-message{
           display: flex;
           flex-direction: column;
           background-color: #fff;
-          a{
-            flex: 1;
-            padding: 10px 0;
+          box-shadow: 0 2px 15px #ccc;
+          .triangle{
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right:15px solid transparent;
+            border-bottom: 15px solid #fff;
+            margin: 0;
+            padding: 0;
+          }
+          .get-info{
             display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            &.me{
-              border-bottom:1px solid #dcdcdc;
-            }
-            svg{
-              width: 30px;
-              height: 26px;
-              fill: #80a8cc;
-              margin: 0 15px;
-            }
-            span{
-              color: #333;
-              font-size: 14px;
-            }
-            strong{
+            flex-direction: column;
+            background-color: #fff;
+            a{
+              flex: 1;
+              padding: 10px 0;
               display: flex;
-              justify-content: center;
               align-items: center;
-              background-color: #f2504e;
-              color: #fff;
-              height: 16px;
-              line-height: 16px;
-              border-radius: 10px;
-              margin: 0 10px;
-              padding: 0 10px;
-              font-size: 10px;
+              justify-content: flex-start;
+              &.me{
+                border-bottom:1px solid #dcdcdc;
+              }
+              svg{
+                width: 30px;
+                height: 26px;
+                fill: #80a8cc;
+                margin: 0 15px;
+              }
+              span{
+                color: #333;
+                font-size: 14px;
+              }
+              strong{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f2504e;
+                color: #fff;
+                height: 16px;
+                line-height: 16px;
+                border-radius: 10px;
+                margin: 0 10px;
+                padding: 0 10px;
+                font-size: 10px;
+              }
             }
           }
         }
       }
+
     }
   }
 }
@@ -419,26 +426,34 @@ header{
       flex-direction: column;
       li{
         display: flex;
-        margin: {
+        padding: {
           left: 15px;
           top: 20px;
+          bottom: 20px;
         }
-        padding-bottom: 20px;
         border-bottom:1px solid #efefef;
         position: relative;
         align-items: center;
         justify-content: flex-start;
-        .pop-info{
-          display: flex;
+        &:hover{
+          .all-info{
+            display: block;
+            padding-right:20px;
+          }
+        }
+        .all-info{
+          display: none;
           position: absolute;
           left: -360px;
-          top: -50px;
+          top: -30px;
+        }
+        .pop-info{
+          display: flex;
           background-color: #fff;
           box-shadow: 0 3px 10px #eee;
           align-items: center;
           justify-content: center;
-          padding-right: 10px;
-          display: none;
+          padding-right: 30px;
           .big-head{
             display: flex;
             align-items: center;
@@ -481,15 +496,10 @@ header{
         .friend-pic{
           display: flex;
           margin: 0 8px;
-          img{
-            width: 48px;
-            height: 48px;
-          }
-          &:hover{
-            .pop-info{
-              display: block;
-            }
-          }
+          //img{
+          //  width: 48px;
+          //  height: 48px;
+          //}
         }
         .right-text{
           cursor: pointer;
@@ -618,5 +628,144 @@ header{
         }
       }
     }
+  }
+}
+
+//修改个人信息模态框样式
+.modify-modal{
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.3);
+  display: none;
+  .modify-info{
+    background-color: #fff;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    width: 30%;
+    margin-left: -15%;
+    .info-box{
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      flex: 1;
+      padding: 20px;
+      .info-header{
+        display: flex;
+        flex: 1;
+        align-items: center;
+        .info-left{
+          display: flex;
+          flex: 1;
+          justify-content: flex-start;
+          align-items: center;
+          .editor{
+            width: 36px;
+            height: 36px;
+            margin-right: 10px;
+          }
+          strong{
+            font-size: 20px;
+            color: #555b61;
+          }
+        }
+        .close{
+          width: 34px;
+          height: 34px;
+          fill: #fe4870;
+          justify-content: flex-end;
+          cursor: pointer;
+        }
+      }
+      .person-info{
+        display: flex;
+        flex-direction: column;
+        .info-tab{
+          display: flex;
+          margin: 15px 0;
+          li{
+            padding: 10px;
+            border-radius: 10px;
+            margin-right: 20px;
+            &.current{
+              background-color: #80a8cb;
+              a{
+                color: #fff;
+              }
+            }
+            &:hover{
+              background-color: #80a8cb;
+              a{
+                color: #fff;
+              }
+            }
+            a{
+              font-weight: bold;
+              color: #555b61;
+            }
+          }
+        }
+        .tab-content{
+
+          .tab-item{
+            display: flex;
+            flex-direction: column;
+            li{
+              display: flex;
+              align-items: center;
+              margin:{
+                bottom: 30px;
+                top: 10px;
+              }
+              &:last-child{
+                margin-top: 0;
+              }
+              p{
+                flex: 2;
+                label{
+                  font-size: 14px;
+                  color: #555b61;
+                }
+                .name{
+                  width: 70%;
+                  border:1px solid #b9c2cb;
+                  height: 26px;
+                }
+              }
+              .selected{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border:1px solid #b9c2cb;
+                height: 26px;
+                margin-left: 2px;
+                font-size: 14px;
+                color: #6c6c6c;
+                font-family: "Microsoft YaHei";
+                option{
+                  border-bottom: 1px solid #b9c2cb;
+                }
+              }
+            }
+          }
+        }
+        .submit{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 139px;
+          height: 58px;
+          color: #fff;
+          font-size: 16px;
+          padding-bottom: 20px;
+          cursor: pointer;
+          background: url(/images/chatroom/putbg.png) no-repeat;
+        }
+      }
+    }
+
   }
 }
