@@ -545,17 +545,13 @@ header{
         display: flex;
         flex-direction: column;
         &.text-company{
-          width: 60%;
-          margin: 0 auto;
-          p{
-            align-self: flex-start;
-          }
+          margin-left:60px;
         }
         .head-portrait{
           display: block;
           width: 144px;
           height: 144px;
-          margin-top: 50px;
+          margin-top: 40px;
           position: relative;
           .editor{
             position: absolute;
@@ -584,7 +580,7 @@ header{
           border-radius: 50px;
           margin:{
             top: 30px;
-            bottom: 60px;
+            bottom: 30px;
           }
         }
       }
