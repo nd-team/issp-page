@@ -38,11 +38,51 @@ $(document).ready(function () {
         }
     });
 
+    // 关注
+    var onOff = true;
+    var Attention = $('.attention');
+    Attention.on('click', function(){
+
+        if(Attention.onOff) {
+            $(this).text('关注');
+            Attention.onOff = false;
+        }else{
+            $(this).text('取消关注');
+            Attention.onOff = true;
+        }
+
+    });
+
+    // 文章点赞效果
+    $(".heart").click(function () {
+        //$(".zan").removeClass("zan1");
+        $(this).toggleClass("zan1");
+        var classname=$(this).attr("class");
+        //alert(classname);
+        var zan_num=parseInt($('>span',this).text());
+        //alert(zan_num);
+        if(classname == "zan zan1"){
+            zan_num +=1;
+            //alert(zan_num);
+            $('>span',this).text(zan_num);
+
+        }else if(classname== "zan"){
+            zan_num -=1;
+            //alert(zan_num);
+            $('>span',this).text(zan_num);
+        }
+    });
     /*鼠标经过效果*/
     $('.photo').on('mouseover','img', function(){
         $(this).find('.modal-message').show();
     });
     $('.photo').on('mouseout','img', function(){
         $(this).find('.modal-message').hide();
+    });
+
+
+    $('.friend').scroll(function(){
+        // $('.content-right').css('overflow','auto');/**/
+        alert('123')
     });
 })
