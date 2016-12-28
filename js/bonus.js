@@ -21,4 +21,13 @@ $(document).ready(function(){
     $('.current').click(function(){
         $(this).attr('src',$(this).attr('src')=='/images/honor/grayheart.png'?'/images/honor/redheart.png':'/images/honor/grayheart.png');
     });
+    $('.already a').click(function(){
+        $(".already a").toggleClass("cur");
+        if(
+            $(this).hasClass("cur")){
+            $(this).html("关注");
+        }else{
+            $(this).html("已关注");
+        }
+    })
 })
