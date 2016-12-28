@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta name="keywords" content="粉丝">
     <meta name="description" content="粉丝">
-    <link rel="stylesheet" href="/css/chatroom/attention.css">
+    <link rel="stylesheet" href="/css/chatroom/index.css">
+    <link rel="stylesheet" href="/css/chatroom/style.css">
     <script src="/js/common.js"></script>
 </head>
 <body class="chat-room">
@@ -65,30 +66,31 @@
                 <a href="javascript:void(0)" class="head-photo">
                     <img src="/images/chatroom/pictou.png" alt="">
                 </a>
-                <div class="modal-message">
-                    <p>
-                        <i class="triangle"></i>
-                    </p>
-                    <div class="get-info">
-                        <a href="javascript:void(0)" class="me">
-                            <svg role="img" class="my">
-                                <use xlink:href="#my"></use>
-                            </svg>
-                            <span>我的</span>
-                        </a>
-                        <a href="javascript:void(0)" class="my-news">
-                            <svg role="img" class="news">
-                                <use xlink:href="#news"></use>
-                            </svg>
-                            <span>消息</span>
-                            <strong>99</strong>
-                        </a>
+                <div class="modal-box">
+                    <div class="modal-message">
+                        <p>
+                            <i class="triangle"></i>
+                        </p>
+                        <div class="get-info">
+                            <a href="javascript:void(0)" class="me">
+                                <svg role="img" class="my">
+                                    <use xlink:href="#my"></use>
+                                </svg>
+                                <span>我的</span>
+                            </a>
+                            <a href="javascript:void(0)" class="my-news">
+                                <svg role="img" class="news">
+                                    <use xlink:href="#news"></use>
+                                </svg>
+                                <span>消息</span>
+                                <strong>99</strong>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
     <div class="chat-content">
         <!--right friend info start-->
         <div class="content-center">
@@ -314,16 +316,8 @@
                         </ul>
                     </div>
                 </div>
-                <ul class="pagination-click">
-                    <li class="active">1</li>
-                    <li><a href="javascript:void(0)">2</a></li>
-                    <li><a href="javascript:void(0)">3</a></li>
-                    <li><a href="javascript:void(0)">4</a></li>
-                    <li><a href="javascript:void(0)">5</a></li>
-                    <li><a href="javascript:void(0)">...</a></li>
-                    <li><a href="javascript:void(0)">10</a></li>
-                    <li class="next"><a href="javascript:void(0)">></a></li>
-                </ul>
+                <div class="pagination-click" id="pages">
+                </div>
             </div>
 
         </div>
@@ -484,7 +478,93 @@
         </div>
         <!--right friend info end-->
     </div>
+    <!--修改信息模态框-->
+    <div class="modify-modal">
+        <div class="modify-info">
+            <div class="info-box">
+                <div class="info-header">
+                    <p class="info-left">
+                        <svg role="img" class="editor">
+                            <use xlink:href="#editor"></use>
+                        </svg>
+                        <strong>修改信息</strong>
+                    </p>
+                    <svg role="img" class="close">
+                        <use xlink:href="#close"></use>
+                    </svg>
+                </div>
+                <div class="person-info">
+                    <ul class="info-tab">
+                        <li class="current"><a href="javascript:void(0)">个人信息</a></li>
+                        <li><a href="javascript:void(0)">头像照片</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <ul class="tab-item active">
+                            <li>
+                                <p>
+                                    <label>公司名称：</label>
+                                    <input type="text" class="name">
+                                </p>
+                                <select name="selected" id="selected-one" class="selected">
+                                    <option value="0">公开显示</option>
+                                    <option value="1">只对好友显示</option>
+                                    <option value="2">仅自己显示</option>
+                                </select>
+                            </li>
+                            <li>
+                                <p>
+                                    <label>公司职位：</label>
+                                    <input type="text" class="name">
+                                </p>
+                                <select name="selected" id="selected-two" class="selected">
+                                    <option value="0">公开显示</option>
+                                    <option value="1">只对好友显示</option>
+                                    <option value="2">仅自己显示</option>
+                                </select>
+                            </li>
+                        </ul>
+                        <ul class="tab-item">
+                            <li>
+                                <div class="container">
+                                    <div class="imageBox">
+                                        <div class="thumbBox"></div>
+                                        <div class="spinner" style="display: none">Loading...</div>
+                                    </div>
+                                    <div class="action">
+                                        <div class="new-contentarea tc">
+                                            <a href="javascript:void(0)" class="upload-img">
+                                                <label for="upload-file">请选择你要上传的图像</label>
+                                            </a>
+                                            <input type="file" class="" name="upload-file" id="upload-file" />
+                                        </div>
+                                        <input type="button" id="btnCrop" class="Btnsty_peyton" value="预览" />
+                                    </div>
+                                    <div class="cropped">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" id="btnGetAvatar" class="submit">提交</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/cropbox.js"></script>
     <script src="/js/chatRoom.js"></script>
+    <script src="/laypage/laypage.js"></script>
+    <script type="text/javascript">
+        laypage({
+            cont: 'pages', //容器。值支持id名、原生dom对象，jquery对象,
+            pages: 10, //总页数
+            skin: 'molv', //皮肤
+            first: 1, //将首页显示为数字1,。若不显示，设置false即可
+            last: 10, //将尾页显示为总页数。若不显示，设置false即可
+            prev: '<', //若不显示，设置false即可
+            next: '>' //若不显示，设置false即可
+        });
+    </script>
 </body>
 </html>

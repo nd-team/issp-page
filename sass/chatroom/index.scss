@@ -17,6 +17,12 @@ html,body{
     family: $main-font;
   }
 }
+::-webkit-scrollbar{
+  display: none;
+}
+//::-webkit-scrollbar-thumb{
+//  display: none;
+//}
 .chat-room{
   display: flex;
   flex-direction: column;
@@ -222,7 +228,6 @@ header{
           }
         }
       }
-
     }
   }
 }
@@ -232,12 +237,15 @@ header{
   height: auto;
   margin-top: 60px;
   overflow: auto;
+  //center
   .content-center{
     flex: 1;
     flex-direction: column;
     display: flex;
-    //margin-left: 26%;
-    margin: 0 5%;
+    margin: {
+      left: 22%;
+      right: 19%;
+    }
     .center-header{
       display: flex;
       background-color: #fff;
@@ -276,6 +284,7 @@ header{
 
       }
     }
+    //动态样式
     .content-box{
       display: flex;
       flex: 1;
@@ -372,58 +381,349 @@ header{
           }
         }
       }
+
+      //关注和粉丝样式
+      .attention{
+        display: flex;
+        padding: {
+          left: 30px;
+          right: 30px;
+          top: 20px;
+        }
+        margin-bottom: 30px;
+        flex-direction: column;
+        .my-attention{
+          display: flex;
+          flex: 1;
+          align-items: center;
+          h4{
+            flex: 1;
+            justify-content: flex-start;
+            color: #555b61;
+            font-size: 18px;
+          }
+          .my-search{
+            display: flex;
+            height: 40px;
+            border: 1px solid #efefef;
+            line-height: 40px;
+            border-radius: 40px;
+            align-items: center;
+            padding-left: 20px;
+            justify-content: flex-end;
+            .search{
+              line-height: 40px;
+              font-size: 12px;
+              color: #bababa;
+            }
+            .magnifier{
+              fill: #80a8cc;
+              padding-right: 10px;
+            }
+          }
+        }
+        .concerned-people{
+          flex: 1;
+          .attention-name{
+            display: flex;
+            margin-top: 20px;
+            li{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              flex: 1;
+              //height: 180px;
+              background-color: #e9edf0;
+              align-items: center;
+              margin: {
+                right: 30px;
+                bottom: 15px;
+              }
+              padding: {
+                bottom: 5px;
+              }
+              &:last-child{
+                margin-right: 0;
+              }
+              .head-pic{
+                display: block;
+                width: 69px;
+                height: 69px;
+                border-radius: 50%;
+                margin-top: 10px;
+              }
+              h5{
+                font-size: 14px;
+                color: #333;
+                line-height: 26px;
+              }
+              span{
+                display: block;
+                font-size: 12px;
+                color: #6c6c6c;
+              }
+              .attention-click{
+                display: flex;
+                margin-bottom: 10px;
+                a{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background-color: #fff;
+                  color: #333;
+                  font:{
+                    size: 14px;
+                    weight: bold;
+                  }
+                  padding: {
+                    top: 5px;
+                    bottom: 5px;
+                    left: 20px;
+                    right: 20px;
+                  }
+                  border-radius: 2px;
+                  margin:{
+                    top: 15px;
+                    right: 5px;
+                    left: 5px;
+                  }
+                  &:last-child{
+                    margin-left: 10px;
+                  }
+                  &:hover{
+                    background-color: #80a8cc;
+                    color: #fff;
+                  }
+                  &.cancel{
+                    background-color: #80a8cc;
+                    color: #fff;
+
+                  }
+                }
+
+              }
+            }
+          }
+        }
+      }
       .pagination-click{
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 40px 0;
         background-color: #fff;
-        li{
-          text-align: center;
-          line-height: 26px;
-          font-family: "SimHei";
-          font-size: 14px;
-          margin: 0 8px;
-          &.active{
-            width: 26px;
-            height: 26px;
-            background-color: #80a8cc;
-            color: #fff;
-          }
-          &.next{
-            font-weight: bold;
-          }
-          a{
-            color: #454c54;
-          }
-
-        }
       }
     }
 
+    //荣誉
+    .honor-box{
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      .article{
+        display: flex;
+        flex-direction: column;
+        li{
+          display: flex;
+          flex: 1;
+          background-color: #fff;
+          border: {
+            bottom: 2px;
+            right: 1px;
+            style: solid;
+            color: #e0e0e0;
+          }
+          padding: {
+            top: 20px;
+            left: 40px;
+            bottom: 15px;
+          }
+          margin-bottom: 30px;
+          .article-left{
+            flex: 3;
+            margin-right: 10px;
+            h2{
+              font:{
+                size: 25px;
+                family: "SimHei";
+              }
+              color: #555b61;
+              line-height: 50px;
+            }
+            .time{
+              display: block;
+              color: #666;
+              height: 30px;
+            }
+            .items-text{
+              font-size: 14px;
+              color: #b1b1b1;
+              line-height: 20px;
+            }
+            .team{
+              display: flex;
+              flex: 1;
+              align-items: center;
+              margin-top: 20px;
+              span{
+                color: #666;
+              }
+              a{
+                display: flex;
+                margin-left: 20px;
+              }
+            }
+          }
+          .article-pic{
+            flex: 1;
+            margin-left: 10px;
+            img{
+              border-radius: 10px;
+              box-shadow: 0 0 10px 2px #eceeeb;
+            }
+          }
+        }
+      }
+      .pagination-click{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+      }
+    }
   }
+  //left
+  .content-left{
+    flex: 0 0 25%;
+    //个人信息导航放到最左边
+    order:-1;
+    background-color: #80a8cc;
+    position: fixed;
+    max-width: 360px;
+    width: 24%;
+    overflow: auto;
+    bottom: 0;
+    top: 60px;
+    .avatar{
+      li{
+        justify-content: center;
+        align-items:center;
+        display: flex;
+        flex-direction: column;
+        &.text-company{
+          margin-left:60px;
+        }
+        .head-portrait{
+          display: block;
+          width: 144px;
+          height: 144px;
+          margin-top: 25px;
+          position: relative;
+          .editor{
+            position: absolute;
+            bottom: 10%;
+            right: 0;
+          }
+        }
+        strong{
+          color: #fff;
+          font-size: 20px;
+          padding: 2% 0 3%;
+        }
+        p{
+          color: #fffeff;
+          line-height: 26px;
+          align-self: flex-start;
+          font-size: 100%;
+       }
+        .attention{
+          width: 50%;
+          height:40px;
+          background-color: #567ea2;
+          color: #fff;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 50px;
+          margin:{
+            top: 20px;
+            bottom: 30px;
+          }
+        }
+      }
+    }
+    .life-pic{
+      font-size: 0;
+      li{
+        display: flex;
+        font-size: 0;
+        .live{
+          flex: 1;
+          img{
+            min-width: 100%;
+          }
+        }
+      }
+
+    }
+    .trend{
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      color: #fff;
+      margin:{
+        top: 10px;
+        left: 15%;
+      }
+      h4{
+        color: #fff;
+        line-height: 35px;
+      }
+      .info{
+        line-height: 26px;
+        font-size: 12px;
+        a{
+          color: #567ea3;
+          &:hover{
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  //right
   .content-right{
-    flex: 0 0 15%;
+    width: 16%;
+    margin-top: 100px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    bottom: 0;
+    //overflow: auto;
     background-color: #fff;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
+    height: auto;
     h2{
-      flex: 0 0 2em;
+      width: 16%;
+      position: fixed;
       font-size: 18px;
       color: #454c54;
       line-height: 36px;
       padding: {
-        left: 15px;
+        left: 10px;
         top: 10px;
         bottom: 10px;
       }
       border-bottom:1px solid #efefef;
+      background-color: #fff;
+      z-index: 10;
     }
     .friend{
       display:flex;
       flex: 1;
       flex-direction: column;
+      margin-top: 56px;
+      background-color: #fff;
       li{
         display: flex;
         padding: {
@@ -435,17 +735,12 @@ header{
         position: relative;
         align-items: center;
         justify-content: flex-start;
+        margin-left: 10px;
         &:hover{
           .all-info{
             display: block;
             padding-right:20px;
           }
-        }
-        .all-info{
-          display: none;
-          position: absolute;
-          left: -360px;
-          top: -30px;
         }
         .pop-info{
           display: flex;
@@ -454,6 +749,13 @@ header{
           align-items: center;
           justify-content: center;
           padding-right: 30px;
+          @at-root .all-info{
+            display: none;
+            position: absolute;
+            left: -370px;
+            top: -30px;
+            z-index: 1000;
+          }
           .big-head{
             display: flex;
             align-items: center;
@@ -483,7 +785,7 @@ header{
               justify-content: center;
               color: #fff;
               font: {
-                 size: 14px;
+                size: 14px;
                 weight: bold;
               }
               margin: {
@@ -496,10 +798,10 @@ header{
         .friend-pic{
           display: flex;
           margin: 0 8px;
-          //img{
-          //  width: 48px;
-          //  height: 48px;
-          //}
+          img{
+            width: 48px;
+            height: 48px;
+          }
         }
         .right-text{
           cursor: pointer;
@@ -526,111 +828,12 @@ header{
       }
     }
   }
-  .content-left{
-    flex: 0 0 25%;
-    //个人信息导航放到最左边
-    order:-1;
-    background-color: #80a8cc;
-    //position: fixed;
-    max-width: 400px;
-    width: 26%;
-    //top:60px;
-    //left: 0;
-    //bottom: 0;
-    overflow: auto;
-    .avatar{
-      li{
-        justify-content: center;
-        align-items:center;
-        display: flex;
-        flex-direction: column;
-        &.text-company{
-          margin-left:60px;
-        }
-        .head-portrait{
-          display: block;
-          width: 144px;
-          height: 144px;
-          margin-top: 40px;
-          position: relative;
-          .editor{
-            position: absolute;
-            bottom: 10%;
-            right: 0;
-          }
-        }
-        strong{
-          color: #fff;
-          font-size: 20px;
-          padding: 2% 0 3%;
-        }
-        p{
-          color: #fffeff;
-          line-height: 26px;
-          align-self: flex-start;
-          font-size: 100%;
-       }
-        .attention{
-          width: 50%;
-          height:40px;
-          background-color: #567ea2;
-          color: #fff;
-          text-align: center;
-          line-height: 40px;
-          border-radius: 50px;
-          margin:{
-            top: 30px;
-            bottom: 30px;
-          }
-        }
-      }
-    }
-    .life-pic{
-      font-size: 0;
-      li{
-        display: flex;
-        font-size: 0;
-        .live{
-          flex: 1;
-          img{
-            min-width: 100%;
-          }
-        }
-      }
-
-    }
-    .trend{
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      flex-direction: column;
-      color: #fff;
-      margin:{
-        top: 20px;
-        left: 15%;
-      }
-      h4{
-        color: #fff;
-        line-height: 35px;
-      }
-      .info{
-        line-height: 26px;
-        font-size: 12px;
-        a{
-          color: #567ea3;
-          &:hover{
-            color: #fff;
-          }
-        }
-      }
-    }
-  }
 }
 
 //修改个人信息模态框样式
 .modify-modal{
   position: fixed;
-  top: 60px;
+  top: 40px;
   left: 0;
   bottom: 0;
   right: 0;
@@ -641,14 +844,14 @@ header{
     position: absolute;
     top: 200px;
     left: 50%;
-    width: 30%;
-    margin-left: -15%;
+    width: 40%;
+    margin-left: -20%;
     .info-box{
       display: flex;
       flex-direction: column;
       background-color: #fff;
       flex: 1;
-      padding: 20px;
+      padding: 20px 20px 0;
       .info-header{
         display: flex;
         flex: 1;
@@ -763,5 +966,22 @@ header{
       }
     }
 
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1550px){
+  .chat-content{
+    .content-center{
+      margin-left: 28%;
+    }
+  }
+
+}
+
+@media (min-width:1551px) and (max-width: 1760px) {
+  .chat-content{
+    .content-center{
+      margin-left: 25%;
+    }
   }
 }
