@@ -132,7 +132,7 @@
                                     <svg role="img" class="heart">
                                         <use xlink:href="#heart"></use>
                                     </svg>
-                                    <span class="zan-num">0</span>
+                                    <span id="zan-num">0</span>
                                 </li>
                                 <li>
                                     <svg role="img" class="comment">
@@ -248,16 +248,8 @@
                         </div>
                     </div>
                 </div>
-                <ul class="pagination-click">
-                    <li class="active">1</li>
-                    <li><a href="javascript:void(0)">2</a></li>
-                    <li><a href="javascript:void(0)">3</a></li>
-                    <li><a href="javascript:void(0)">4</a></li>
-                    <li><a href="javascript:void(0)">5</a></li>
-                    <li><a href="javascript:void(0)">...</a></li>
-                    <li><a href="javascript:void(0)">10</a></li>
-                    <li class="next"><a href="javascript:void(0)">></a></li>
-                </ul>
+                <div class="pagination-click" id="pages">
+                </div>
             </div>
         </div>
         <!--center section end-->
@@ -618,19 +610,6 @@
                                 </select>
                             </li>
                         </ul>
-                        <!--<ul class="tab-item active">-->
-                            <!--<li>-->
-                                <!--<p>-->
-                                    <!--<label>公司名称：</label>-->
-                                    <!--<input type="text" class="name">-->
-                                <!--</p>-->
-                                <!--<select name="selected" id="" class="selected">-->
-                                    <!--<option value="0">公开显示</option>-->
-                                    <!--<option value="1">只对好友显示</option>-->
-                                    <!--<option value="2">仅自己显示</option>-->
-                                <!--</select>-->
-                            <!--</li>-->
-                        <!--</ul>-->
                         <ul class="tab-item">
                             <li>
                                 <div class="container">
@@ -662,24 +641,17 @@
     <script src="/js/jquery-2.1.1.min.js"></script>
     <script src="/js/cropbox.js"></script>
     <script src="/js/chatRoom.js"></script>
+    <script src="/laypage/laypage.js"></script>
     <script type="text/javascript">
-        $(function(){
-            var num = true;
-            var zan = $('.heart');
-            zan.on('click', function(){
-                var n = 1
-                var zan_length = parseInt($('.zan-num').text(''+ n + 1));
-                if(zan.num){
-                    zan_length++;
-                    $(this).css('fill','#cdcdcd');
-                    zan.num = false;
-                }else{
-                    $(this).css('fill','#f3403b');
-                    zan.num = true;
-                    zan_length--;
-                }
-            });
-        })
+        laypage({
+            cont: 'pages', //容器。值支持id名、原生dom对象，jquery对象,
+            pages: 10, //总页数
+            skin: 'molv', //皮肤
+            first: 1, //将首页显示为数字1,。若不显示，设置false即可
+            last: 10, //将尾页显示为总页数。若不显示，设置false即可
+            prev: '<', //若不显示，设置false即可
+            next: '>' //若不显示，设置false即可
+        });
     </script>
 </body>
 </html>

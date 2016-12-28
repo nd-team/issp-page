@@ -512,34 +512,6 @@ header{
         justify-content: center;
         padding: 40px 0;
         background-color: #fff;
-        li{
-          text-align: center;
-          line-height: 26px;
-          font-family: "SimHei";
-          font-size: 14px;
-          margin: 0 8px;
-          &.active{
-            width: 26px;
-            height: 26px;
-            background-color: #80a8cc;
-            color: #fff;
-          }
-          &:hover{
-            //width: 26px;
-            //height: 26px;
-            background-color: #80a8cc;
-            a{
-              color: #fff;
-            }
-          }
-          &.next{
-            font-weight: bold;
-          }
-          a{
-            color: #454c54;
-          }
-
-        }
       }
     }
 
@@ -617,26 +589,6 @@ header{
         align-items: center;
         justify-content: center;
         padding: 20px 0;
-        li{
-          text-align: center;
-          line-height: 26px;
-          font-family: "SimHei";
-          font-size: 14px;
-          margin: 0 8px;
-          &.active{
-            width: 26px;
-            height: 26px;
-            background-color: #80a8cc;
-            color: #fff;
-          }
-          &.next{
-            font-weight: bold;
-          }
-          a{
-            color: #454c54;
-          }
-
-        }
       }
     }
   }
@@ -758,7 +710,7 @@ header{
       color: #454c54;
       line-height: 36px;
       padding: {
-        left: 15px;
+        left: 10px;
         top: 10px;
         bottom: 10px;
       }
@@ -886,14 +838,14 @@ header{
   bottom: 0;
   right: 0;
   background-color: rgba(0,0,0,.3);
-  //display: none;
+  display: none;
   .modify-info{
     background-color: #fff;
     position: absolute;
     top: 200px;
     left: 50%;
-    width: 45%;
-    margin-left: -22%;
+    width: 40%;
+    margin-left: -20%;
     .info-box{
       display: flex;
       flex-direction: column;

@@ -203,7 +203,7 @@
                     </div>
                 </li>
             </ul>
-            <ul class="pagination-click">
+            <ul class="pagination-click" id="pages">
                 <li class="active">1</li>
                 <li><a href="javascript:void(0)">2</a></li>
                 <li><a href="javascript:void(0)">3</a></li>
@@ -215,5 +215,17 @@
             </ul>
         </div>
     </div>
+    <script src="/laypage/laypage.js"></script>
+    <script type="text/javascript">
+        laypage({
+            cont: 'pages', //容器。值支持id名、原生dom对象，jquery对象,
+            pages: 10, //总页数
+            skin: 'molv', //皮肤
+            first: 1, //将首页显示为数字1,。若不显示，设置false即可
+            last: 10, //将尾页显示为总页数。若不显示，设置false即可
+            prev: '<', //若不显示，设置false即可
+            next: '>' //若不显示，设置false即可
+        });
+    </script>
 </body>
 </html>

@@ -9,7 +9,6 @@ $(document).ready(function () {
                 $this.addClass("current").siblings().removeClass("current");
                 $(setting.parent).children("ul").eq($index).show().siblings().hide();//切换标签对应的内容
 
-
             })
             //判断进入页面显示那个标签样式和内容
             if(setting.index==null){
@@ -54,22 +53,19 @@ $(document).ready(function () {
     });
 
     // 文章点赞效果
-    $(".heart").click(function () {
-        //$(".zan").removeClass("zan1");
-        $(this).toggleClass("zan1");
-        var classname=$(this).attr("class");
-        //alert(classname);
-        var zan_num=parseInt($('>span',this).text());
-        //alert(zan_num);
-        if(classname == "zan zan1"){
-            zan_num +=1;
-            //alert(zan_num);
-            $('>span',this).text(zan_num);
-
-        }else if(classname== "zan"){
-            zan_num -=1;
-            //alert(zan_num);
-            $('>span',this).text(zan_num);
+    var num = true;
+    var zan = $('.heart');
+    zan.on('click', function(){
+        var n = 1
+        var zan_num = parseInt($('#zan-num').text(''+ n));
+        if(zan.num){
+            zan_num++;
+            $(this).css('fill','#cdcdcd');
+            zan.num = false;
+        }else{
+            $(this).css('fill','#f3403b');
+            zan.num = true;
+            zan_num--;
         }
     });
     /*鼠标经过效果*/
