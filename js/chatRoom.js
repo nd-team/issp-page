@@ -52,21 +52,32 @@ $(document).ready(function () {
 
     });
 
-    // 文章点赞效果
-    var num = true;
-    var zan = $('.heart');
-    zan.on('click', function(){
-        var n = 1
-        var zan_num = parseInt($('#zan-num').text(''+ n));
-        if(zan.num){
-            zan_num++;
-            $(this).css('fill','#cdcdcd');
-            zan.num = false;
-        }else{
-            $(this).css('fill','#f3403b');
-            zan.num = true;
-            zan_num--;
+    // 关注和粉丝页面
+    var fans = true;
+    $('.cancel').on('click', function(){
+        if (fans) {
+            $(this).text('关注');
+            fans = false;
+        }else {
+            $(this).text('取消关注');
+            fans = true;
         }
+    });
+
+    // 文章点赞效果
+
+   $('.approval').on('click', function(){
+        var zan_num =$(this).siblings('span').text();
+       if(!$(this).hasClass('xin')){
+           $(this).addClass('xin').children('svg').css('fill','red');
+           zan_num++;
+           $(this).siblings('span').text(zan_num);
+       }else{
+           $(this).removeClass('xin').children('svg').css('fill','#cdcdcd');
+           zan_num--;
+           $(this).siblings('span').text(zan_num);
+       }
+
     });
     /*鼠标经过效果*/
     $('.photo').on('mouseover','img', function(){
@@ -82,17 +93,17 @@ $(document).ready(function () {
             thumbBox: '.thumbBox',
             spinner: '.spinner',
             imgSrc: 'images/avatar.jpg'
-        }
+        };
         var cropper = $('.imageBox').cropbox(options);
         $('#upload-file').on('change', function () {
             var reader = new FileReader();
             reader.onload = function (e) {
                 options.imgSrc = e.target.result;
                 cropper = $('.imageBox').cropbox(options);
-            }
+            };
             reader.readAsDataURL(this.files[0]);
             this.files = [];
-        })
+        });
         $('#btnCrop').on('click', function () {
             var img = cropper.getDataURL();
             $('.cropped').html('');
@@ -100,7 +111,7 @@ $(document).ready(function () {
             $('.cropped').append('<img src="' + img + '" align="absmiddle" style="width:100px;margin-top:20px;border-radius:100px;"><p style="margin-top:20px;">100*100像素</p>');
             $('.cropped').append('<img src="' + img + '" align="absmiddle" style="width:50px;margin-top:20px;border-radius:50px;" ><p style="margin-top:20px;">50*50像素</p>');
 
-        })
+        });
         $('#btnSubmit').on('click', function () {
             $('#circularG').show();
             var img = cropper.getDataURL().replace('data:images/jpg;base64,', '');
@@ -119,7 +130,7 @@ $(document).ready(function () {
 
                 }
             });
-        })
+        });
         $('#btnGetAvatar').on('click', function () {
             var url = 'AvatarHandler.ashx';
             var data = {

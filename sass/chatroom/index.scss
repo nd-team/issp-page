@@ -244,7 +244,7 @@ header{
     display: flex;
     margin: {
       left: 22%;
-      right: 19%;
+      right: 5%;
     }
     .center-header{
       display: flex;
@@ -367,10 +367,13 @@ header{
                   width: 20px;
                   height: 18px;
                   fill: #cdcdcd;
-
+                  &.heart{
+                    fill: #cdcdcd;
+                  }
                   &.current{
                     fill: red;
                   }
+
                 }
                 span{
                   font-size: 14px;
@@ -383,7 +386,7 @@ header{
       }
 
       //关注和粉丝样式
-      .attention{
+      .cancel-attention{
         display: flex;
         padding: {
           left: 30px;
@@ -494,13 +497,7 @@ header{
                     background-color: #80a8cc;
                     color: #fff;
                   }
-                  &.cancel{
-                    background-color: #80a8cc;
-                    color: #fff;
-
-                  }
                 }
-
               }
             }
           }
@@ -694,18 +691,18 @@ header{
 
   //right
   .content-right{
-    width: 16%;
-    margin-top: 100px;
-    position: fixed;
-    right: 0;
-    top: 10px;
-    bottom: 0;
+    flex: 0 0 15%;
+    margin-top: 50px;
+    //position: fixed;
+    //right: 0;
+    //top: 10px;
+    //bottom: 0;
     //overflow: auto;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
     height: auto;
     h2{
-      width: 16%;
-      position: fixed;
       font-size: 18px;
       color: #454c54;
       line-height: 36px;
@@ -722,7 +719,6 @@ header{
       display:flex;
       flex: 1;
       flex-direction: column;
-      margin-top: 56px;
       background-color: #fff;
       li{
         display: flex;
