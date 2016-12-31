@@ -1,0 +1,300 @@
+html, body, div, span, nav, header, iframe,
+h1, h2, h3, h4, h5, h6, p, section, footer,
+a, form, address, big, cite, code,
+del, dfn, em, img, ins, fieldset, q, s, samp,
+small, strike, strong, sub, sup,label, var,
+b, u, i,input, dl, dt, dd, ol, ul, li{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+$main-font: "Microsoft YaHei";
+html,body{
+  font:{
+    family: $main-font;
+  }
+}
+body{
+  display: flex;
+  flex-direction: column;
+  font-family:  $main-font;
+}
+form,fieldset{
+  border: 0 none;
+}
+ol,ul{
+  list-style: none;
+}
+img{
+  border: 0 none;
+  max-width: 100%;
+}
+input{
+  outline: none;
+  font-family: $main-font;
+}
+button{
+  border: 0;
+  font-family: $main-font;
+}
+i,em{
+  font-style: normal;
+}
+a {
+  color: #535353;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+svg{
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+}
+
+header{
+  display: flex;
+  flex: 1;
+  height: 60px;
+  width: 100%;
+  background-color: #fff;
+  flex-wrap: nowrap;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  .chat-life{
+    flex: 0 0 10em;
+    flex-wrap: nowrap;
+    text-align: center;
+    .life{
+      width: 126px;
+      height: 126px;
+      fill: #567da4;
+      margin-top: -28px;
+    }
+  }
+  .header-icon{
+    display: flex;
+    flex: 2.5;
+    background-color: #fff;
+    flex-wrap: nowrap;
+    margin-top: 5px;
+    li{
+      flex: 0 0 21%;
+      text-align: center;
+      cursor: pointer;
+      svg{
+        width: 26px;
+        height: 28px;
+        fill: #565b61;
+      }
+      .icon-text{
+        color: #555b61;
+        display: block;
+      }
+    }
+  }
+  .myself{
+    flex: 3;
+    display: block;
+    justify-content:center;
+    text-align: center;
+    line-height: 60px;
+    .honor{
+      width: 37px;
+      height: 41px;
+      fill: #80a8cc;
+    }
+  }
+  .search-input{
+    display: flex;
+    flex: 2;
+    margin-top: 12px;
+    .input-box{
+      display: flex;
+      flex:5;
+      height: 40px;
+      justify-content: flex-end;
+      border:1px solid #cfcfcf;
+      border-radius: 40px;
+      background-color: #fff;
+      text-align: center;
+      padding-left: 20px;
+      .search{
+        height: 40px;
+        flex: 6;
+        font-family: $main-font;
+      }
+      .magnifier{
+        flex: 1;
+        fill: #80a8cc;
+        margin-top: 5px;
+        margin-right: 5px;
+      }
+    }
+    .photo{
+      display: flex;
+      justify-content: flex-end;
+      margin:{
+        left: 50px;
+        right: 24px;
+      }
+      border-radius: 50%;
+      .head-photo{
+        width: 45px;
+        height: 45px;
+        display: block;
+      }
+    }
+  }
+}
+.banner{
+   width:100%;
+   height: 389px;
+  background-image: url('/images/honor/banner.jpg');
+  margin-top: 3%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  p{
+    display: flex;
+    align-items:flex-end;
+    max-width: 141px;
+    margin:0 0 60px 20%;
+    width: 25%;
+    button{
+      width: 100%;
+      height: 36px;
+      background-color: #ff6186;
+      color: white;
+      border-radius: 5px;
+      text-shadow: #a8596b 2px 1px 3px;
+      cursor: pointer;
+    }
+  }
+}
+.content{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: auto;
+  .content-center{
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+     .center-like{
+       flex: 1;
+       ul{
+         display: flex;
+         margin-top: 40px;
+          li{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1;
+            max-width: 330px;
+            box-shadow: 0 0 10px #e5e5e5;
+            margin: {
+              right: 76px;
+              bottom: 40px;
+            }
+            padding: {
+              bottom: 5px;
+            }
+            &:last-child{
+              margin-right: 0;
+            }
+
+           .honor01{
+                position: relative;
+               margin-bottom: 30px;
+             .current{
+               position: absolute;
+               top:75%;
+               right: 5%;
+             }
+
+            }
+            p{
+              text-align: left;
+              margin: 0 17px;
+              &:nth-of-type(1){
+                font:{
+                  size: 12px;
+                  weight: bold;
+                }
+                margin-bottom: 7px;
+              }
+              &:nth-of-type(2){
+                margin-bottom: 11px;
+                font:{
+                  size: 16px;
+                  weight: bold;
+                }
+              }
+              &:nth-of-type(3){
+                line-height: 19px;
+                font:{
+                  size: 12px;
+                }
+                color: #666;
+              }
+            }
+            .detail{
+              width: 122px;
+              height: 28px;
+              line-height: 28px;
+              margin: 15px 0 20px 17px;
+              background: #80A8CC;
+              color: white;
+              text-align: center;
+              cursor: pointer;
+              border: 2px solid #80A8CC;
+              font:{
+                size: 14px;
+              }
+              &:hover{
+                background: white;
+                border: 2px solid #80A8CC;
+                color: #80A8CC;
+               }
+            }
+
+           }
+       }
+     }
+     .pagination-click{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 0;
+      background-color: #fff;
+      li{
+        text-align: center;
+        line-height: 26px;
+        font-family: "SimHei";
+        font-size: 14px;
+        margin: 0 8px;
+        &.active{
+          width: 26px;
+          height: 26px;
+          background-color: #80a8cc;
+          color: #fff;
+        }
+        &.next{
+          font-weight: bold;
+        }
+        a{
+          color: #454c54;
+        }
+
+      }
+    }
+  }
+}
+
