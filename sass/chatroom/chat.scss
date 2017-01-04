@@ -32,6 +32,7 @@ h1,h2,h3,h4,h5,h6{
   flex-direction: column;
   background-color: #f2f9ff;
   font-family:  $main-font;
+  position: relative;
 }
 form,fieldset{
   border: 0 none;
@@ -72,6 +73,7 @@ svg{
   margin: 50px auto;
   box-shadow: 0 0 25px #80a8cc;
   display: flex;
+  position: relative;
   //左边好友列表样式
   .friend-list{
     width: 300px;
@@ -319,7 +321,7 @@ svg{
               content:"";
               position: absolute;
               left: 100%;
-              top: 16px;
+              top: 14px;
               width: 0;
               height: 0;
               border-top: 6px solid transparent;
@@ -382,5 +384,25 @@ svg{
       }
 
     }
+  }
+}
+
+//遮罩层模态框
+.module{
+  width: 1200px;
+  height: 800px;
+  background: rgba(0,0,0,.3);
+  position: absolute;
+  left: 0;
+  top: 0;
+  .group-module{
+    width: 480px;
+    height: 612px;
+    background-color: #fff;
+    margin: {
+      top: 90px;
+      left: 492px;
+    }
+    box-shadow: 0 0 25px #6f6e6e;
   }
 }
