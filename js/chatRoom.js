@@ -54,10 +54,12 @@ $(document).ready(function () {
 
     // 关注和粉丝页面
     var fans = true;
-    $('.cancel').on('click', function(){
+    $('.cancel').on('click', function(evevt){
+        event.stopPropagation();
         if (fans) {
             $(this).text('关注');
             fans = false;
+
         }else {
             $(this).text('取消关注');
             fans = true;
@@ -78,13 +80,6 @@ $(document).ready(function () {
            $(this).siblings('span').text(zan_num);
        }
 
-    });
-    /*鼠标经过效果*/
-    $('.photo').on('mouseover','img', function(){
-        $(this).find('.modal-message').show();
-    });
-    $('.photo').on('mouseout','img', function(){
-        $(this).find('.modal-message').hide();
     });
 
     // 模态框头像截取
