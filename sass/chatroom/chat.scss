@@ -111,15 +111,21 @@ svg{
         flex-direction: column;
         padding: 20px 10px;
         overflow: hidden;
-        li{
+        .good-friends{
           display: flex;
+          margin-bottom: 5px;
           align-items: center;
           cursor: pointer;
-          &:first-child{
-            margin-bottom: 5px;
+          &:hover{
+            .toggle-more{
+                transform:rotate(-180deg);
+                transition:all .8s ease-in .1s;
+            }
           }
           .toggle-more{
             margin-right: 10px;
+            transform:rotate(0deg);
+            transition:all .8s ease-in .1s;
             .more{
               width: 13px;
               height: 13px;
@@ -130,13 +136,21 @@ svg{
             color: #fff;
             font-size: 14px;
           }
-          &.bottom-list{
+        }
+        .bottom-list{
+          height: 270px;
+          overflow: auto;
+          li{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
             margin-left: 20px;
             border-bottom:1px solid #fff;
             padding: {
               top: 8px;
               bottom: 8px;
             }
+            height: 50px;
             .friend-pic{
               width: 50px;
               height: 50px;
@@ -185,6 +199,7 @@ svg{
             }
           }
         }
+
       }
       .group-friends{
         @extend .my-friends;
@@ -500,6 +515,7 @@ svg{
         color: #fff;
         font-size: 16px;
         background-color: #6198ca;
+        cursor: pointer;
       }
     }
   }
@@ -693,6 +709,7 @@ svg{
         color: #fff;
         font-size: 16px;
         background-color: #6198ca;
+        cursor: pointer;
       }
     }
   }
