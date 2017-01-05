@@ -665,7 +665,7 @@ svg{
               display: flex;
               align-items: center;
               margin-left: 40px;
-              i{
+              .same-circle{
                 display: flex;
                 width: 20px;
                 height: 20px;
@@ -675,6 +675,12 @@ svg{
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;
+                .select{
+                  width: 14px;
+                  height: 12px;
+                  fill: #fff;
+                  display: none;
+                }
                 &.circle{
                   background-color: #38d759;
                   border: 0 none;
@@ -682,6 +688,7 @@ svg{
                     width: 14px;
                     height: 12px;
                     fill: #fff;
+                    display: block;
                   }
                 }
               }
@@ -713,4 +720,7 @@ svg{
       }
     }
   }
+}
+.module-next{
+  @extend .module-two;
 }

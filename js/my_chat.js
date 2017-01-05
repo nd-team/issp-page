@@ -6,9 +6,10 @@ $(function(){
     $('.close').on('click', '.close_module', function(){
         $('.module').hide();
         $('.module-two').hide();
+        $('.module-next').hide();
     });
     $('.add-people').on('click', '.added', function(){
-        $('.module-two').show();
+        $('.module-next').show();
         $('.module').hide();
     });
     $('.talk-news').on('click', '.talk', function(){
@@ -25,8 +26,10 @@ $(function(){
     $('.same-circle').on('click',function(){
         if(!$(this).hasClass('circle')){
             $(this).addClass('circle').children('svg').show();
+            $(this).parents('.all-member').addClass('current');
         }else{
             $(this).removeClass('circle').children('svg').hide();
+            $(this).parents('.all-member').removeClass('current');
         }
     });
 });
