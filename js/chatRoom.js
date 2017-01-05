@@ -37,6 +37,7 @@ $(document).ready(function () {
         }
     });
 
+<<<<<<< Updated upstream
     // 关注
     var onOff = true;
     var Attention = $('.attention');
@@ -142,5 +143,13 @@ $(document).ready(function () {
                 }
             });
         })
+=======
+    /*鼠标经过效果*/
+    $('.photo').on('mouseover','img', function(){
+        $('.modal-message').show();
+    });
+    $('.photo').on('mouseout','img', function(){
+        $('.modal-message').hide();
+>>>>>>> Stashed changes
     });
 });

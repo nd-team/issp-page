@@ -68,10 +68,12 @@ header{
   left: 0;
   top: 0;
   z-index: 1;
+  box-shadow: 0 3px 10px #c4c4c4;
   .chat-life{
     flex: 0 0 10em;
     flex-wrap: nowrap;
     text-align: center;
+    border-right:1px solid #e0e0e0;
     .life{
       width: 126px;
       height: 126px;
