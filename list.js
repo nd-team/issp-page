@@ -24,7 +24,7 @@ function getFilenames (dir, regexp, recursive) {
     })
     return files
 }
-var html={};
+var html;
 getFilenames(__dirname+'/pages', /.html$/, true).forEach((file) => {
     var fileName = path.basename(file);
     var fileHref = file.split('issp-page')[1]
