@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>社交</title>
+    <link rel="stylesheet" href="/css/social.css">
+</head>
+<body>
+    <header>
+    <a href="moving.html" class="chat-life" title="生活价值平台">
+        <svg role="img" class="life">
+            <use xlink:href="#life"></use>
+        </svg>
+    </a>
+    <ul class="header-icon">
+        <li>
+            <svg role="img" class="honor">
+                <use xlink:href="#honor"></use>
+            </svg>
+            <a href="javascript:void(0)" class="icon-text">荣誉</a>
+        </li>
+        <li>
+            <svg role="img" class="bonuses">
+                <use xlink:href="#bonuses"></use>
+            </svg>
+            <a href="javascript:void(0)" class="icon-text">奖励</a>
+        </li>
+        <li>
+            <svg role="img" class="bbs">
+                <use xlink:href="#bbs"></use>
+            </svg>
+            <a href="javascript:void(0)" class="icon-text">聊天室</a>
+        </li>
+        <li>
+            <svg role="img" class="activity">
+                <use xlink:href="#activity"></use>
+            </svg>
+            <a href="javascript:void(0)" class="icon-text">活动</a>
+        </li>
+        <li>
+            <svg role="img" class="society">
+                <use xlink:href="#society"></use>
+            </svg>
+            <a href="javascript:void(0)" class="icon-text">社交</a>
+        </li>
+    </ul>
+    <a href="javascript:void(0)" class="myself">
+        <svg role="img" class="society">
+            <use xlink:href="#society"></use>
+        </svg>
+    </a>
+    <div class="search-input">
+        <a href="javascript:void(0)" class="input-box">
+            <input type="text" class="search" placeholder="输入要搜索的内容">
+            <svg role="img" class="magnifier">
+                <use xlink:href="#magnifier"></use>
+            </svg>
+        </a>
+        <div class="photo">
+            <a href="javascript:void(0)" class="head-photo">
+                <img src="/images/chatroom/pictou.png" alt="">
+            </a>
+            <div class="modal-box">
+                <div class="modal-message">
+                    <p>
+                        <i class="triangle"></i>
+                    </p>
+                    <div class="get-info">
+                        <a href="javascript:void(0)" class="me">
+                            <svg role="img" class="my">
+                                <use xlink:href="#my"></use>
+                            </svg>
+                            <span>我的</span>
+                        </a>
+                        <a href="javascript:void(0)" class="my-news">
+                            <svg role="img" class="news">
+                                <use xlink:href="#news"></use>
+                            </svg>
+                            <span>消息</span>
+                            <strong>99</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <div id="content">
+        <article class="leftlayout">
+            <section class="item rele-article">
+                <textarea placeholder="请输入文字内容"></textarea>
+                <div class="textmenu">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg role="img" class="face">
+                                    <use xlink:href="#face"></use>
+                                </svg>
+                                表情
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg role="img" class="photo">
+                                    <use xlink:href="#photo"></use>
+                                </svg>
+                                图片
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg role="img" class="mores">
+                                    <use xlink:href="#mores"></use>
+                                </svg>
+                            </a>
+                            <aside class="vote">
+                                <i class="triangle"></i>
+                                <a href="javascript:void(0)" class="close">
+                                    <svg role="img" >
+                                        <use xlink:href="#social_close"></use>
+                                    </svg>
+                                </a>
+                                <div class="vote-title">
+                                    <h3>投票标题</h3>
+                                    <textarea class="vote-title-text" placeholder="最多25个字" maxlength="25"></textarea>
+                                    <span>添加说明</span>
+                                    <textarea textarea class="vote-title-des" placeholder="最多140个字" maxlength="140"></textarea>
+                                </div>
+                                <div class="vote-option">
+                                    <div class="vote-tab-btn">
+                                        <a href="javascript:void(0)" data-title="texts">文字投票</a>
+                                        <a href="javascript:void(0)" data-title="imgs" class="active">图片投票</a>
+                                    </div>
+                                    <h3>投票选项：</h3>
+                                    <div class="vote-pages imgs">
+                                        <div class="img-page">
+                                            <input type="file" id="select-img1">
+                                            <label for="select-img1">
+                                                <svg role="img" class="photo">
+                                                    <use xlink:href="#photo"></use>
+                                                </svg>
+                                            </label>
+                                            <textarea placeholder="1."></textarea>
+                                        </div>
+                                        <div class="img-page">
+                                            <input type="file" id="select-img2">
+                                            <label for="select-img2">
+                                                <svg role="img" class="photo">
+                                                    <use xlink:href="#photo"></use>
+                                                </svg>
+                                            </label>
+                                            <textarea placeholder="2."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="vote-pages texts">
+                                        <div class="text-page">
+                                            <textarea placeholder="1."></textarea>
+                                        </div>
+                                        <div class="text-page">
+                                            <textarea placeholder="2."></textarea>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:void(0)" class="add">添加选项</a>
+                                </div>
+                                <div class="vote-setting">
+                                    <h3>投票设置</h3>
+                                    <dl>
+                                        <dt>单选/多选：</dt>
+                                        <dd>
+                                            <select>
+                                                <option value="">单选</option>
+                                                <option value="">多选</option>
+                                            </select>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>结束时间：</dt>
+                                        <dd>
+                                             <span class="enddate">
+                                                 <input type="text" value="2017-1-7">
+                                                 <svg role="img" class="photo">
+                                                    <use xlink:href="#photo"></use>
+                                                </svg>
+                                             </span>
+                                            <select >
+                                                <option value="">01</option>
+                                                <option value="">02</option>
+                                                <option value="">03</option>
+                                            </select> 时
+                                            <select >
+                                                <option value="">01</option>
+                                                <option value="">02</option>
+                                                <option value="">03</option>
+                                            </select> 分
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>投票结果：</dt>
+                                        <dd>
+                                            <input type="radio" name="result" checked id="aftervote"> <label for="aftervote">投票后可见</label>
+                                            <input type="radio" name="result" id="allpeo"> <label for="allpeo">任何人可见</label>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="submit-vote">
+                                    <button>发起投票</button>
+                                </div>
+                            </aside>
+                        </li>
+                    </ul>
+                    <div class="release">
+                        <!--<a href="javascript:void(0)" class="btn-drap">-->
+                            <!--公开-->
+                            <!--<svg role="img" class="xiala">-->
+                                <!--<use xlink:href="#xiala"></use>-->
+                            <!--</svg>-->
+                        <!--</a>-->
+                        <select>
+                            <option value="">公开</option>
+                            <option value="">不公开</option>
+                        </select>
+                        <a href="javascript:void(0)" class="btn-rele">发布</a>
+                    </div>
+                </div>
+            </section>
+            <section class="item">
+                <figure class="item-title">
+                    <a href="javascript:void(0)"><img src="/images/chatroom/pictou.png" class="avatar" alt=""></a>
+                    <figcaption>
+                        <p class="name">孟小宝</p>
+                        <p class="time"><span>2016-12-29</span><span>16:30</span></p>
+                    </figcaption>
+                </figure>
+                <article>
+                    <p class="text">
+                        12月13日是日本汉字节，今年共收到15万2562日投选，其中6655日选了“金”子，其他按得票次序是“选” “变” “震”和“惊”。日本汉字协会指出，今年
+                        “金”字当选的原因很多，日本在里约奥运里夺得历来最多“金牌”，美国选了个“金主”特朗普当总统，他的豪宅金碧辉煌以及金发都让日本人“拜金”。
+                    </p>
+                    <div class="l-img"><img src="/images/social/pic01.jpg" alt=""></div>
+                    <ul class="img-list">
+                        <li><img src="/images/social/pic02.jpg" alt=""></li>
+                        <li><img src="/images/social/pic03.jpg" alt=""></li>
+                        <li><img src="/images/social/pic04.jpg" alt=""></li>
+                    </ul>
+                </article>
+                <article class="comment">
+                    <ul class="comment-menu">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg role="img" class="collect">
+                                    <use xlink:href="#collect"></use>
+                                </svg>
+                                <span>收藏</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="likebtn red">
+                                <svg role="img" class="like">
+                                    <use xlink:href="#like"></use>
+                                </svg>
+                                <span>79</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="talkbtn">
+                                <svg role="img" class="talk">
+                                    <use xlink:href="#talk"></use>
+                                </svg>
+                                <span>100</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"  class="zhuanfa">
+                                <svg role="img">
+                                    <use xlink:href="#zhuanfa"></use>
+                                </svg>
+                                <span>20</span>
+                            </a>
+
+                        </li>
+                    </ul>
+                    <ul class="comment-list">
+                        <li class="reply"><!--回复-->
+                            <i class="triangle"></i>
+                            <img class="comment-avatar" src="/images/social/avatar1.png"/>
+                            <article>
+                                <textarea placeholder="请输入评论"></textarea>
+                                <div class="textmenu">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <svg role="img" class="face">
+                                                    <use xlink:href="#face"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <svg role="img" class="photo">
+                                                    <use xlink:href="#photo"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <span class="release">
+                                        <a href="javascript:void(0)" class="btn-rele">发送</a>
+                                    </span>
+                                </div>
+                            </article>
+                        </li>
+                        <li >
+                            <img class="comment-avatar" src="/images/social/avatar2.png"/>
+                            <article>
+                                <div class="guests">
+                                    <div class="replycon"><span class="replyname">牛奶糖</span>：<span class="replytext">看起来很好吃的样子！赞</span></div>
+                                    <div class="time-btn">
+                                        <p class="commentime"><span>2016-12-29</span><span>16:30</span></p>
+                                        <span class="menubtn">
+                                        <a href="javascript:void(0)" class="replybtn">回复</a>
+                                        <a href="javascript:void(0)" class="likebtn red">
+                                            <svg role="img" class="like ">
+                                                <use xlink:href="#like"></use>
+                                            </svg>
+                                            <span>20</span>
+                                        </a>
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="host">
+                                    <div class="replycon"><span class="replyname">孟小宝</span>：<span class="replytext">来啊，一起吃！</span></div>
+                                    <div class="time-btn">
+                                        <p class="commentime"><span>2016-12-29</span><span>16:30</span></p>
+                                        <span class="menubtn">
+                                        <a href="javascript:void(0)" class="replybtn">回复</a>
+                                        <a href="javascript:void(0)" class="likebtn red">
+                                            <svg role="img" class="like ">
+                                                <use xlink:href="#like"></use>
+                                            </svg>
+                                            <span>20</span>
+                                        </a>
+                                    </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li >
+                            <img class="comment-avatar" src="/images/social/avatar3.png"/>
+                            <article>
+                                <div class="guests">
+                                    <div class="replycon"><span class="replyname">萌萌哒的影子</span>：<span class="replytext">看起来很好吃的样子！赞</span></div>
+                                    <div class="time-btn">
+                                        <p class="commentime"><span>2016-12-29</span><span>16:30</span></p>
+                                        <span class="menubtn">
+                                        <a href="javascript:void(0)" class="replybtn">回复</a>
+                                        <a href="javascript:void(0)" class="likebtn red">
+                                            <svg role="img" class="like">
+                                                <use xlink:href="#like"></use>
+                                            </svg>
+                                            <span>20</span>
+                                        </a>
+                                    </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li >
+                            <img class="comment-avatar" src="/images/social/avatar4.png"/>
+                            <article>
+                                <div class="guests">
+                                    <div class="replycon"><span class="replyname">圆圆圆</span>：<span class="replytext">看起来很好吃的样子！赞</span></div>
+                                    <div class="time-btn">
+                                        <p class="commentime"><span>2016-12-29</span><span>16:30</span></p>
+                                        <span class="menubtn">
+                                        <a href="javascript:void(0)" class="replybtn">回复</a>
+                                        <a href="javascript:void(0)" class="likebtn red">
+                                            <svg role="img" class="like">
+                                                <use xlink:href="#like"></use>
+                                            </svg>
+                                            <span>20</span>
+                                        </a>
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="host">
+                                    <div class="replycon"><span class="replyname">孟小宝</span>：<span class="replytext">屎要不要。</span></div>
+                                    <div class="time-btn">
+                                        <p class="commentime"><span>2016-12-29</span><span>16:30</span></p>
+                                        <span class="menubtn">
+                                        <a href="javascript:void(0)" class="replybtn">回复</a>
+                                        <a href="javascript:void(0)" class="likebtn">
+                                            <svg role="img" class="like">
+                                                <use xlink:href="#like"></use>
+                                            </svg>
+                                            <span>20</span>
+                                        </a>
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="host">
+                                    <div class="replycon"><span class="replyname">圆圆圆</span>回复 <span class="aname">@孟小宝</span>：<span class="replytext">拉。</span></div>
+                                    <div class="time-btn">
+                                        <p class="commentime"><span>2016-12-29</span><span>16:30</span></p>
+                                        <span class="menubtn">
+                                        <a href="javascript:void(0)" class="replybtn">回复</a>
+                                        <a href="javascript:void(0)" class="likebtn">
+                                            <svg role="img" class="like">
+                                                <use xlink:href="#like"></use>
+                                            </svg>
+                                            <span>20</span>
+                                        </a>
+                                    </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                    <div id="replypages"></div>
+                </article>
+            </section>
+            <section class="item">
+                <figure class="item-title">
+                    <a href="javascript:void(0)"><img src="/images/chatroom/pictou.png" class="avatar" alt=""></a>
+                    <figcaption>
+                        <p class="name">孟小宝</p>
+                        <p class="time"><span>2016-12-29</span><span>16:30</span></p>
+                    </figcaption>
+                </figure>
+                <article>
+                    <p class="text">
+                        12月13日是日本汉字节，今年共收到15万2562日投选，其中6655日选了“金”子，其他按得票次序是“选” “变” “震”和“惊”。日本汉字协会指出，今年
+                        “金”字当选的原因很多，日本在里约奥运里夺得历来最多“金牌”，美国选了个“金主”特朗普当总统，他的豪宅金碧辉煌以及金发都让日本人“拜金”。
+                    </p>
+                    <div class="l-img"><img src="/images/social/pic05.jpg" alt=""></div>
+                    <ul class="img-list">
+                        <li><img src="/images/social/pic06.jpg" alt=""></li>
+                        <li><img src="/images/social/pic07.jpg" alt=""></li>
+                        <li><img src="/images/social/pic08.jpg" alt=""></li>
+                        <li><img src="/images/social/pic09.jpg" alt=""></li>
+                    </ul>
+                </article>
+                <article class="comment">
+                    <ul class="comment-menu">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg role="img" class="collect">
+                                    <use xlink:href="#collect"></use>
+                                </svg>
+                                <span>收藏</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="likebtn red">
+                                <svg role="img" class="like">
+                                    <use xlink:href="#like"></use>
+                                </svg>
+                                <span>79</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="talkbtn">
+                                <svg role="img" class="talk">
+                                    <use xlink:href="#talk"></use>
+                                </svg>
+                                <span>100</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="zhuanfa">
+                                <svg role="img">
+                                    <use xlink:href="#zhuanfa"></use>
+                                </svg>
+                                <span>20</span>
+                            </a>
+
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section class="item">
+                <figure class="item-title">
+                    <a href="javascript:void(0)"><img src="/images/chatroom/pictou.png" class="avatar" alt=""></a>
+                    <figcaption>
+                        <p class="name">孟小宝</p>
+                        <p class="time"><span>2016-12-29</span><span>16:30</span></p>
+                    </figcaption>
+                </figure>
+                <article>
+                    <p class="text">
+                        12月13日是日本汉字节，今年共收到15万2562日投选，其中6655日选了“金”子，其他按得票次序是“选” “变” “震”和“惊”。日本汉字协会指出，今年
+                        “金”字当选的原因很多，日本在里约奥运里夺得历来最多“金牌”，美国选了个“金主”特朗普当总统，他的豪宅金碧辉煌以及金发都让日本人“拜金”。
+                    </p>
+                </article>
+                <article class="comment">
+                    <ul class="comment-menu">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg role="img" class="collect">
+                                    <use xlink:href="#collect"></use>
+                                </svg>
+                                <span>收藏</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="likebtn red">
+                                <svg role="img" class="like">
+                                    <use xlink:href="#like"></use>
+                                </svg>
+                                <span>79</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="talkbtn">
+                                <svg role="img" class="talk">
+                                    <use xlink:href="#talk"></use>
+                                </svg>
+                                <span>100</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="zhuanfa">
+                                <svg role="img">
+                                    <use xlink:href="#zhuanfa"></use>
+                                </svg>
+                                <span>20</span>
+                            </a>
+
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section class="item">
+                <figure class="item-title">
+                    <a href="javascript:void(0)"><img src="/images/chatroom/pictou.png" class="avatar" alt=""></a>
+                    <figcaption>
+                        <p class="name">孟小宝</p>
+                        <p class="time"><span>2016-12-29</span><span>16:30</span></p>
+                    </figcaption>
+                </figure>
+                <article>
+                    <p class="text">
+                        12月13日是日本汉字节，今年共收到15万2562日投选，其中6655日选了“金”子，其他按得票次序是“选” “变” “震”和“惊”。日本汉字协会指出，今年
+                        “金”字当选的原因很多，日本在里约奥运里夺得历来最多“金牌”，美国选了个“金主”特朗普当总统，他的豪宅金碧辉煌以及金发都让日本人“拜金”。
+                    </p>
+                </article>
+                <article class="comment">
+                    <ul class="comment-menu">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg role="img" class="collect">
+                                    <use xlink:href="#collect"></use>
+                                </svg>
+                                <span>收藏</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="likebtn red">
+                                <svg role="img" class="like">
+                                    <use xlink:href="#like"></use>
+                                </svg>
+                                <span>79</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="talkbtn">
+                                <svg role="img" class="talk">
+                                    <use xlink:href="#talk"></use>
+                                </svg>
+                                <span>100</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="zhuanfa">
+                                <svg role="img">
+                                    <use xlink:href="#zhuanfa"></use>
+                                </svg>
+                                <span>20</span>
+                            </a>
+
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section class="item">
+                <figure class="item-title">
+                    <a href="javascript:void(0)"><img src="/images/chatroom/pictou.png" class="avatar" alt=""></a>
+                    <figcaption>
+                        <p class="name">孟小宝</p>
+                        <p class="time"><span>2016-12-29</span><span>16:30</span></p>
+                    </figcaption>
+                </figure>
+                <article>
+                    <p class="text">
+                        12月13日是日本汉字节，今年共收到15万2562日投选，其中6655日选了“金”子，其他按得票次序是“选” “变” “震”和“惊”。日本汉字协会指出，今年
+                        “金”字当选的原因很多，日本在里约奥运里夺得历来最多“金牌”，美国选了个“金主”特朗普当总统，他的豪宅金碧辉煌以及金发都让日本人“拜金”。
+                    </p>
+                    <div class="l-img"><img src="/images/social/pic10.jpg" alt=""></div>
+                    <ul class="img-list">
+                        <li><img src="/images/social/pic11.jpg" alt=""></li>
+                        <li><img src="/images/social/pic12.jpg" alt=""></li>
+                        <li><img src="/images/social/pic13.jpg" alt=""></li>
+                        <li><img src="/images/social/pic14.jpg" alt=""></li>
+                    </ul>
+                </article>
+                <article class="comment">
+                    <ul class="comment-menu">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg role="img" class="collect">
+                                    <use xlink:href="#collect"></use>
+                                </svg>
+                                <span>收藏</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="likebtn red">
+                                <svg role="img" class="like">
+                                    <use xlink:href="#like"></use>
+                                </svg>
+                                <span>79</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="talkbtn">
+                                <svg role="img" class="talk" class="talkbtn">
+                                    <use xlink:href="#talk"></use>
+                                </svg>
+                                <span>100</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="zhuanfa">
+                                <svg role="img">
+                                    <use xlink:href="#zhuanfa"></use>
+                                </svg>
+                                <span>20</span>
+                            </a>
+
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section class="item">
+                <figure class="item-title">
+                    <a href="javascript:void(0)"><img src="/images/chatroom/pictou.png" class="avatar" alt=""></a>
+                    <figcaption>
+                        <p class="name">孟小宝</p>
+                        <p class="time"><span>2016-12-29</span><span>16:30</span></p>
+                    </figcaption>
+                </figure>
+                <article>
+                    <p class="text">
+                        12月13日是日本汉字节，今年共收到15万2562日投选，其中6655日选了“金”子，其他按得票次序是“选” “变” “震”和“惊”。日本汉字协会指出，今年
+                        “金”字当选的原因很多，日本在里约奥运里夺得历来最多“金牌”，美国选了个“金主”特朗普当总统，他的豪宅金碧辉煌以及金发都让日本人“拜金”。
+                    </p>
+                </article>
+                <article class="comment">
+                    <ul class="comment-menu">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg role="img" class="collect">
+                                    <use xlink:href="#collect"></use>
+                                </svg>
+                                <span>收藏</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="likebtn red">
+                                <svg role="img" class="like">
+                                    <use xlink:href="#like"></use>
+                                </svg>
+                                <span>79</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="talkbtn">
+                                <svg role="img" class="talk" class="talkbtn">
+                                    <use xlink:href="#talk"></use>
+                                </svg>
+                                <span>100</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="zhuanfa">
+                                <svg role="img">
+                                    <use xlink:href="#zhuanfa"></use>
+                                </svg>
+                                <span>20</span>
+                            </a>
+
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <div id="pages"></div>
+        </article>
+        <article class="rightlayout">
+            <section class="userinfo">
+                <figure>
+                    <img src="/images/social/myavatar.png" alt="" class="useravatar">
+                    <figcaption>
+                        <p>孟小宝</p>
+                        MW娱乐有限公司
+                    </figcaption>
+                </figure>
+                <ul class="user-atten">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <strong>1200</strong>
+                            <span>粉丝</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <strong>200</strong>
+                            <span>关注</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <strong>200</strong>
+                            <span>动态</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="know">
+                <h3>可能认识的人</h3>
+                <ul>
+                    <li>
+                        <figure>
+                            <img src="/images/social/renshi01.png" alt="">
+                            <figcaption>
+                                <strong>shadow影子</strong>
+                                <span>MW娱乐文化传媒有限公司</span>
+                                <span>人事助理</span>
+                            </figcaption>
+                            <a href="javascript:void(0)">关注</a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="/images/social/renshi02.png" alt="">
+                            <figcaption>
+                                <strong>shadow影子</strong>
+                                <span>MW娱乐文化传媒有限公司</span>
+                                <span>人事助理</span>
+                            </figcaption>
+                            <a href="javascript:void(0)">关注</a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="/images/social/renshi03.png" alt="">
+                            <figcaption>
+                                <strong>shadow影子</strong>
+                                <span>MW娱乐文化传媒有限公司</span>
+                                <span>人事助理</span>
+                            </figcaption>
+                            <a href="javascript:void(0)">关注</a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="/images/social/renshi04.png" alt="">
+                            <figcaption>
+                                <strong>shadow影子</strong>
+                                <span>MW娱乐文化传媒有限公司</span>
+                                <span>人事助理</span>
+                            </figcaption>
+                            <a href="javascript:void(0)">关注</a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="/images/social/renshi05.png" alt="">
+                            <figcaption>
+                                <strong>shadow影子</strong>
+                                <span>MW娱乐文化传媒有限公司</span>
+                                <span>人事助理</span>
+                            </figcaption>
+                            <a href="javascript:void(0)">关注</a>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+            <section class="friend-updates">
+                <h3>好友动态</h3>
+                <article>
+                    <div><span>@王服役</span>发表了动态</div>
+                    <p class="text"><a href="javascript:void(0)" >你曾只身路过很多风景，每个风景都值得骄傲。曾经最好的故事始于你清澈的眼眸！</a></p>
+                </article>
+                <article>
+                    <div><span>@张小凡</span>发表了动态</div>
+                    <p class="text"><a href="javascript:void(0)" >天地不仁，以万物为刍狗！</a></p>
+                </article>
+                <article>
+                    <div><span>@碧瑶</span>发表了动态</div>
+                    <p class="text"><a href="javascript:void(0)" >三生七世，永坠阎罗！只为情故，虽死不悔！</a></p>
+                </article>
+                <article>
+                    <div><span>@陆雪琪</span>发表了动态</div>
+                    <p class="text"><a href="javascript:void(0)" >那一剑芳华！</a></p>
+                </article>
+            </section>
+            <section class="hot-updates">
+                <h3>热门的动态</h3>
+                <article>
+                    <img src="/images/social/avatar1.png" alt="">
+                    <div class="hot-con">
+                        <p class="hot-title">
+                            <strong>孟瑞</strong>
+                            <span>2016-12-30</span>
+                        </p>
+                        <p class="hot-text">
+                            <a href="javascript:void(0)">
+                                铃铛咽，百花凋，人影渐瘦鬓如霜。
+                                深情苦，一生苦，痴情只为无情苦。
+                                芳心苦，忍回顾，悔不及，难相处。
+                                金铃清脆噬血误，一生总被痴情诉。
+                                天涯路，从来远； 儿女意，向来痴。
+                                天高海阔八万丈， 芸芸众生尽匍匐。
+                                星万点，月上明； 苍天冷，冷如霜。
+                                可笑万物如刍狗， 谁为覆雨谁翻云！
+                                小松岗，月如霜，
+                                人如飘絮花亦伤 十数载，三千年，
+                                但愿相别不相忘。
+                            </a>
+                        </p>
+                        <a href="javascript:void(0)" class="likebtn red">
+                            <svg role="img" class="like">
+                                <use xlink:href="#like"></use>
+                            </svg>
+                            <span>520</span>
+                        </a>
+                    </div>
+
+                </article>
+                <article>
+                    <img src="/images/social/avatar2.png" alt="">
+                    <div class="hot-con">
+                        <p class="hot-title">
+                            <strong>孟瑞</strong>
+                            <span>2016-12-30</span>
+                        </p>
+                        <p class="hot-text">
+                            <a href="javascript:void(0)">
+                                铃铛咽，百花凋，人影渐瘦鬓如霜。
+                                深情苦，一生苦，痴情只为无情苦。
+                                芳心苦，忍回顾，悔不及，难相处。
+                            </a>
+                        </p>
+                        <a href="javascript:void(0)" class="likebtn red">
+                            <svg role="img" class="like">
+                                <use xlink:href="#like"></use>
+                            </svg>
+                            <span>520</span>
+                        </a>
+                    </div>
+
+                </article>
+                <article>
+                    <img src="/images/social/avatar3.png" alt="">
+                    <div class="hot-con">
+                        <p class="hot-title">
+                            <strong>孟瑞</strong>
+                            <span>2016-12-30</span>
+                        </p>
+                        <p class="hot-text">
+                            <a href="javascript:void(0)">
+                                小松岗，月如霜，
+                                人如飘絮花亦伤 十数载，三千年，
+                                但愿相别不相忘。
+                            </a>
+                        </p>
+                        <a href="javascript:void(0)" class="likebtn red">
+                            <svg role="img" class="like">
+                                <use xlink:href="#like"></use>
+                            </svg>
+                            <span>520</span>
+                        </a>
+                    </div>
+
+                </article>
+            </section>
+        </article>
+    </div>
+    <aside id="modal">
+        <section class="m-title">
+                <h2>转发动态</h2>
+                <a href="javascript:void(0)" class="m-close">
+                    <svg role="img" >
+                        <use xlink:href="#social_close"></use>
+                    </svg>
+                </a>
+            </section>
+        <section class="m-main">
+            <h3>转发到我的动态</h3>
+            <article class="article">
+                <span>@孟小宝</span>
+                <p>12月13日是日本汉字节，今年共收到15万2562日投选，其中6655日选了“金”子，其他按得票次序是“选” “变” “震”和“惊”。</p>
+            </article>
+            <textarea value="这个很有趣，怒转！"></textarea>
+            <div class="textmenu">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" class="face">
+                            <svg role="img">
+                                <use xlink:href="#face"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="photo">
+                            <svg role="img">
+                                <use xlink:href="#photo"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="toauthor"> <label for="toauthor">同是评论给原作者<span>孟小宝</span></label>
+                    </li>
+                </ul>
+                    <a href="javascript:void(0)" class="forward">转发</a>
+            </div>
+        </section>
+    </aside>
+    <div id="modalbg"></div>
+</body>
+</html>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/common.js"></script>
+<script src="/laypage/laypage.js"></script>
+<script src="/js/social.js"></script>
+<script type="text/javascript">
+
+</script>
