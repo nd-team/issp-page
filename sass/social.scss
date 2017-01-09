@@ -17,6 +17,7 @@ html,body{
     family: $main-font;
   }
   background:#f7f7f7;
+
 }
 form,fieldset{
   border: 0 none;
@@ -580,17 +581,22 @@ header{
             &.reply{
               position:relative;
               display:none;
-              .triangle{
-                position:absolute;
-                top:-28px;
-                left:31rem;
-                width: 15px;
-                height: 15px;
-                border-left:1px solid #dcdcdc;
-                border-top:1px solid #dcdcdc;
-                background:#fff;
-                transform:rotate(45deg);
+              .reply-wrap{
+                display:flex;
+                flex:1;
+                .triangle{
+                  position:absolute;
+                  top:-28px;
+                  left:31rem;
+                  width: 15px;
+                  height: 15px;
+                  border-left:1px solid #dcdcdc;
+                  border-top:1px solid #dcdcdc;
+                  background:#fff;
+                  transform:rotate(45deg);
+                }
               }
+
             }
             &:last-child{
               border-bottom:none;
@@ -665,6 +671,59 @@ header{
                 .replycon{
                   font-size:0.75rem;
                   .replyname,.aname{ color:#41729e;}
+                }
+
+              }
+              .subreply{
+                background:#e4ebf1;
+                padding:0.625rem 1.25rem 0.5rem;
+                position:relative;
+                display:none;
+                .triangle{
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
+                  border-width: 0 6px 7px 6px;
+                  border-color: transparent transparent #e4ebf1 transparent;
+                  position:absolute;
+                  top:-6px;
+                  right:6.25rem;
+                }
+                article{
+                  margin:0;
+                  .textarea-wrap{
+                    height:0.875rem;
+                    padding:0.625rem;
+                    font-size:0.75rem;
+                    display:flex;
+                    border:1px solid #c5c5c5;
+                    background:#fff;
+                    textarea{
+                      flex:1;
+                      padding:0;
+                      border:none;
+                      outline:none;
+                      font-size:0.75rem;
+                    }
+                    span{
+                      color:#41729e;
+                    }
+                  }
+                  .textmenu{
+                    margin-top:5px;
+                    ul li{
+                      margin-right:0.75rem;
+                      font-size:0.75rem;
+                      display:flex;
+                      align-items:center;
+                      input{
+                        margin-right:5px;
+                      }
+                    }
+                    .release a{
+                      padding:0.25rem 1.125rem;
+                    }
+                  }
                 }
 
               }
