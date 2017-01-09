@@ -212,15 +212,9 @@
                         </li>
                     </ul>
                     <div class="release">
-                        <!--<a href="javascript:void(0)" class="btn-drap">-->
-                            <!--公开-->
-                            <!--<svg role="img" class="xiala">-->
-                                <!--<use xlink:href="#xiala"></use>-->
-                            <!--</svg>-->
-                        <!--</a>-->
                         <select>
                             <option value="">公开</option>
-                            <option value="">不公开</option>
+                            <option value="">仅对同事显示</option>
                         </select>
                         <a href="javascript:void(0)" class="btn-rele">发布</a>
                     </div>
@@ -284,36 +278,39 @@
                     </ul>
                     <ul class="comment-list">
                         <li class="reply"><!--回复-->
-                            <i class="triangle"></i>
-                            <img class="comment-avatar" src="/images/social/avatar1.png"/>
-                            <article>
-                                <textarea placeholder="请输入评论"></textarea>
-                                <div class="textmenu">
-                                    <ul>
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <svg role="img" class="face">
-                                                    <use xlink:href="#face"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <svg role="img" class="photo">
-                                                    <use xlink:href="#photo"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <span class="release">
+                            <div class="reply-wrap">
+                                <i class="triangle"></i>
+                                <img class="comment-avatar" src="/images/social/avatar1.png"/>
+                                <article >
+                                    <textarea placeholder="请输入评论"></textarea>
+                                    <div class="textmenu">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <svg role="img" class="face">
+                                                        <use xlink:href="#face"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <svg role="img" class="photo">
+                                                        <use xlink:href="#photo"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <span class="release">
                                         <a href="javascript:void(0)" class="btn-rele">发送</a>
                                     </span>
-                                </div>
-                            </article>
+                                    </div>
+                                </article>
+                            </div>
+
                         </li>
                         <li >
                             <img class="comment-avatar" src="/images/social/avatar2.png"/>
-                            <article>
+                            <article class="comment-detail">
                                 <div class="guests">
                                     <div class="replycon"><span class="replyname">牛奶糖</span>：<span class="replytext">看起来很好吃的样子！赞</span></div>
                                     <div class="time-btn">
@@ -348,7 +345,7 @@
                         </li>
                         <li >
                             <img class="comment-avatar" src="/images/social/avatar3.png"/>
-                            <article>
+                            <article class="comment-detail">
                                 <div class="guests">
                                     <div class="replycon"><span class="replyname">萌萌哒的影子</span>：<span class="replytext">看起来很好吃的样子！赞</span></div>
                                     <div class="time-btn">
@@ -364,11 +361,42 @@
                                     </span>
                                     </div>
                                 </div>
+                                <div class="subreply"><!--回复-->
+                                    <i class="triangle"></i>
+                                    <article>
+                                        <div class="textarea-wrap">
+                                            <span>回复@<a href="javascript:void(0)">萌萌哒的影子：</a></span><textarea placeholder="请输入评论">来啊一起吃</textarea>
+                                        </div>
+
+                                        <div class="textmenu">
+                                            <ul>
+                                                <li>
+                                                    <a href="javascript:void(0)">
+                                                        <svg role="img" class="face">
+                                                            <use xlink:href="#face"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">
+                                                        <svg role="img" class="photo">
+                                                            <use xlink:href="#photo"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li><input type="checkbox" id="subreoly-formywx"> <label for="subreoly-formywx">同时转发到我的微博</label></li>
+                                            </ul>
+                                            <span class="release">
+                                                <a href="javascript:void(0)" class="btn-rele">发送</a>
+                                            </span>
+                                        </div>
+                                    </article>
+                                </div>
                             </article>
                         </li>
                         <li >
                             <img class="comment-avatar" src="/images/social/avatar4.png"/>
-                            <article>
+                            <article class="comment-detail">
                                 <div class="guests">
                                     <div class="replycon"><span class="replyname">圆圆圆</span>：<span class="replytext">看起来很好吃的样子！赞</span></div>
                                     <div class="time-btn">

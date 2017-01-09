@@ -31,7 +31,7 @@ getFilenames(__dirname+'/pages', /.html$/, true).forEach((file) => {
 
      html +=`<li><a href="${fileHref}">${fileName}</a></li>`;
 
-
+    console.info(fileHref);
 
 });
 fs.writeFile('./list.txt',html,function(err){
