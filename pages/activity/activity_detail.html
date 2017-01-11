@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>活动详情页</title>
     <link rel="stylesheet" href="/css/activity/activity_detail.css">
+    <link rel="stylesheet" href="/css/activity/activity_theme_y.css">
+    <!--<link rel="stylesheet" href="/css/activity/activity_theme_r.css">-->
 </head>
 <body>
     <header>
@@ -90,14 +92,14 @@
             <div class="item-title">选择标题模板：</div>
             <article class="item-con ">
                 <figure>
-                    <a href="javascript:void(0)">
-                        <img src="/images/activity/trip_theme.png" alt="旅记">
+                    <a href="javascript:void(0)" class="trip-nav">
+                        <!--<img src="/images/activity/trip_theme.png" alt="旅记">-->
                     </a>
                     <figcaption>旅记</figcaption>
                 </figure>
                 <figure>
-                    <a href="javascript:void(0)">
-                        <img src="/images/activity/food_theme.png" alt="旅记">
+                    <a href="javascript:void(0)" class="food-nav">
+                        <!--<img src="/images/activity/food_theme.png" alt="吃喝玩乐记">-->
                     </a>
                     <figcaption>吃喝玩乐记</figcaption>
                 </figure>
@@ -212,11 +214,11 @@
                                 <figcaption>4视图</figcaption>
                             </figure>
                             <figure>
-                                <a href="javascript:void(0)" class="active"><img src="/images/activity/5lay.png" alt=""></a>
+                                <a href="javascript:void(0)"><img src="/images/activity/5lay.png" alt=""></a>
                                 <figcaption>5视图</figcaption>
                             </figure>
                             <figure>
-                                <a href="javascript:void(0)"><img src="/images/activity/6lay.png" alt=""></a>
+                                <a href="javascript:void(0)" class="active"><img src="/images/activity/6lay.png" alt=""></a>
                                 <figcaption>6视图</figcaption>
                             </figure>
                         </dd>
@@ -344,33 +346,44 @@
         </section>
     </div>
     <footer>
-        <ul>
-            <li>
-                <img src="/images/activity/aboutus.png" alt="">
-                <a href="javascript:void(0)">关于我们</a>
-                <a href="javascript:void(0)">帮助我们</a>
-                <a href="javascript:void(0)">意见反馈</a>
-            </li>
-            <li>
-                <img src="/images/activity/platopen.png" alt="">
-                <a href="javascript:void(0)">开放平台</a>
-                <a href="javascript:void(0)">了解平台</a>
-            </li>
-            <li>
-                <img src="/images/activity/platnav.png" alt="">
-                <a href="javascript:void(0)">平台导航</a>
-            </li>
-            <li>
-                <img src="/images/activity/platmana.png" alt="">
-                <a href="javascript:void(0)">平台管理中心</a>
-            </li>
-            <li>
-                <img src="/images/activity/publicplat.png" alt="">
-                <a href="javascript:void(0)">平台公共</a>
-            </li>
-        </ul>
+        <div class="wrap">
+            <ul>
+                <li>
+                    <img src="/images/activity/aboutus.png" alt="">
+                    <a href="javascript:void(0)">关于我们</a>
+                    <a href="javascript:void(0)">帮助我们</a>
+                    <a href="javascript:void(0)">意见反馈</a>
+                </li>
+                <li>
+                    <img src="/images/activity/platopen.png" alt="">
+                    <a href="javascript:void(0)">开放平台</a>
+                    <a href="javascript:void(0)">了解平台</a>
+                </li>
+                <li>
+                    <img src="/images/activity/platnav.png" alt="">
+                    <a href="javascript:void(0)">平台导航</a>
+                </li>
+                <li>
+                    <img src="/images/activity/platmana.png" alt="">
+                    <a href="javascript:void(0)">平台管理中心</a>
+                </li>
+                <li>
+                    <img src="/images/activity/publicplat.png" alt="">
+                    <a href="javascript:void(0)">平台公共</a>
+                </li>
+            </ul>
+            <section class="copyright">
+                <div>
+                    <p>Copyright @ 2010-2017 ISSO 北京艾佳天诚信息技术有限公司</p>
+                    <p>京文网[2012]0398-130号</p>
+                    <p>京ICP备12003058号</p>
+                </div>
+            </section>
+        </div>
+
     </footer>
 </body>
 </html>
 <script src="/js/common.js"></script>
 <script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/activity_detail.js"></script>
