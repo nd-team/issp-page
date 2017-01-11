@@ -1,15 +1,14 @@
-var gulp = require('gulp');
-var bs = require('browser-sync').create();//浏览器刷新
-var bsReload = bs.reload;
-var sass = require('gulp-sass');//sass编译
-var cached = require('gulp-cached');//文件修改缓存
-var sourcemaps = require('gulp-sourcemaps');//调试sass
-var autoprefixer = require('gulp-autoprefixer');//浏览器兼容前缀
-var jshint = require('gulp-jshint');//js代码规范检查m
-var sassLint = require('gulp-sass-lint');//sass代码规范检查
-
-var svgSymbols = require('gulp-svg-symbols');//svg图标字体
-var path = require('path');
+const gulp = require('gulp');
+const bs = require('browser-sync').create();//浏览器刷新
+const bsReload = bs.reload;
+const sass = require('gulp-sass');//sass编译
+const cached = require('gulp-cached');//文件修改缓存
+const sourcemaps = require('gulp-sourcemaps');//调试sass
+const autoprefixer = require('gulp-autoprefixer');//浏览器兼容前缀
+const jshint = require('gulp-jshint');//js代码规范检查m
+const sassLint = require('gulp-sass-lint');//sass代码规范检查
+const svgSymbols = require('gulp-svg-symbols');//svg图标字体
+const path = require('path');
 
 
 
@@ -60,7 +59,7 @@ gulp.task('serve', ['sass'], ()=> {
 
     bs.init({
         server: './',
-        startPath:'index.html'
+        startPath:'list.html'
     });
 
     gulp.watch('./sass/**/*.scss', ['sass']);

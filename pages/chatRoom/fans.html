@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta name="keywords" content="粉丝">
     <meta name="description" content="粉丝">
-    <link rel="stylesheet" href="/css/chatroom/attention.css">
+    <link rel="stylesheet" href="/css/chatroom/index.css">
+    <link rel="stylesheet" href="/css/chatroom/style.css">
     <script src="/js/common.js"></script>
 </head>
 <body class="chat-room">
@@ -55,40 +56,43 @@
             </svg>
         </a>
         <div class="search-input">
-            <a href="javascript:void(0)" class="input-box">
+            <div class="input-box">
                 <input type="text" class="search" placeholder="输入要搜索的内容">
-                <svg role="img" class="magnifier">
-                    <use xlink:href="#magnifier"></use>
-                </svg>
-            </a>
+                <a href="javascript:void(0)">
+                    <svg role="img" class="magnifier">
+                        <use xlink:href="#magnifier"></use>
+                    </svg>
+                </a>
+            </div>
             <div class="photo">
                 <a href="javascript:void(0)" class="head-photo">
                     <img src="/images/chatroom/pictou.png" alt="">
                 </a>
-                <div class="modal-message">
-                    <p>
-                        <i class="triangle"></i>
-                    </p>
-                    <div class="get-info">
-                        <a href="javascript:void(0)" class="me">
-                            <svg role="img" class="my">
-                                <use xlink:href="#my"></use>
-                            </svg>
-                            <span>我的</span>
-                        </a>
-                        <a href="javascript:void(0)" class="my-news">
-                            <svg role="img" class="news">
-                                <use xlink:href="#news"></use>
-                            </svg>
-                            <span>消息</span>
-                            <strong>99</strong>
-                        </a>
+                <div class="modal-box">
+                    <div class="modal-message">
+                        <p>
+                            <i class="triangle"></i>
+                        </p>
+                        <div class="get-info">
+                            <a href="javascript:void(0)" class="me">
+                                <svg role="img" class="my">
+                                    <use xlink:href="#my"></use>
+                                </svg>
+                                <span>我的</span>
+                            </a>
+                            <a href="comment.html" class="my-news">
+                                <svg role="img" class="news">
+                                    <use xlink:href="#news"></use>
+                                </svg>
+                                <span>消息</span>
+                                <strong>99</strong>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
     <div class="chat-content">
         <!--right friend info start-->
         <div class="content-center">
@@ -111,15 +115,17 @@
                 </a>
             </div>
             <div class="content-box">
-                <div class="attention">
+                <div class="cancel-attention">
                     <div class="my-attention">
                         <h4>我的粉丝</h4>
-                        <a href="javascript:void(0)" class="my-search">
+                        <div class="my-search">
                             <input type="text" class="search" placeholder="搜索关注我的人">
-                            <svg role="img" class="magnifier">
-                                <use xlink:href="#magnifier"></use>
-                            </svg>
-                        </a>
+                            <a href="javascript:void(0)">
+                                <svg role="img" class="magnifier">
+                                    <use xlink:href="#magnifier"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                     <div class="concerned-people">
                         <ul class="attention-name">
@@ -138,7 +144,7 @@
                                 <span>MW娱乐文化有限公司</span>
                                 <p class="attention-click">
                                     <a href="javascript:void(0)" class="letter">私信</a>
-                                    <a href="javascript:void(0)">取消关注</a>
+                                    <a href="javascript:void(0)" class="cancel">取消关注</a>
                                 </p>
                             </li>
                             <li>
@@ -147,7 +153,7 @@
                                 <span>MW娱乐文化有限公司</span>
                                 <p class="attention-click">
                                     <a href="javascript:void(0)" class="letter">私信</a>
-                                    <a href="javascript:void(0)">取消关注</a>
+                                    <a href="javascript:void(0)" class="cancel">取消关注</a>
                                 </p>
                             </li>
                             <li>
@@ -156,7 +162,7 @@
                                 <span>MW娱乐文化有限公司</span>
                                 <p class="attention-click">
                                     <a href="javascript:void(0)" class="letter">私信</a>
-                                    <a href="javascript:void(0)">取消关注</a>
+                                    <a href="javascript:void(0)" class="cancel">取消关注</a>
                                 </p>
                             </li>
                         </ul>
@@ -176,7 +182,7 @@
                                 <span>MW娱乐文化有限公司</span>
                                 <p class="attention-click">
                                     <a href="javascript:void(0)" class="letter">私信</a>
-                                    <a href="javascript:void(0)">取消关注</a>
+                                    <a href="javascript:void(0)" class="cancel">取消关注</a>
                                 </p>
                             </li>
                             <li>
@@ -185,7 +191,7 @@
                                 <span>MW娱乐文化有限公司</span>
                                 <p class="attention-click">
                                     <a href="javascript:void(0)" class="letter">私信</a>
-                                    <a href="javascript:void(0)">取消关注</a>
+                                    <a href="javascript:void(0)" class="cancel">取消关注</a>
                                 </p>
                             </li>
                             <li>
@@ -194,7 +200,7 @@
                                 <span>MW娱乐文化有限公司</span>
                                 <p class="attention-click">
                                     <a href="javascript:void(0)" class="letter">私信</a>
-                                    <a href="javascript:void(0)">取消关注</a>
+                                    <a href="javascript:void(0)" class="cancel">取消关注</a>
                                 </p>
                             </li>
                         </ul>
@@ -214,7 +220,7 @@
                                 <span>MW娱乐文化有限公司</span>
                                 <p class="attention-click">
                                     <a href="javascript:void(0)" class="letter">私信</a>
-                                    <a href="javascript:void(0)">取消关注</a>
+                                    <a href="javascript:void(0)" class="cancel">取消关注</a>
                                 </p>
                             </li>
                             <li>
@@ -223,7 +229,7 @@
                                 <span>MW娱乐文化有限公司</span>
                                 <p class="attention-click">
                                     <a href="javascript:void(0)" class="letter">私信</a>
-                                    <a href="javascript:void(0)">取消关注</a>
+                                    <a href="javascript:void(0)" class="cancel">取消关注</a>
                                 </p>
                             </li>
                             <li>
@@ -232,7 +238,7 @@
                                 <span>MW娱乐文化有限公司</span>
                                 <p class="attention-click">
                                     <a href="javascript:void(0)" class="letter">私信</a>
-                                    <a href="javascript:void(0)">取消关注</a>
+                                    <a href="javascript:void(0)" class="cancel">取消关注</a>
                                 </p>
                             </li>
                         </ul>
@@ -252,7 +258,7 @@
                                 <span>MW娱乐文化有限公司</span>
                                 <p class="attention-click">
                                     <a href="javascript:void(0)" class="letter">私信</a>
-                                    <a href="javascript:void(0)">取消关注</a>
+                                    <a href="javascript:void(0)" class="cancel">取消关注</a>
                                 </p>
                             </li>
                             <li>
@@ -261,7 +267,7 @@
                                 <span>MW娱乐文化有限公司</span>
                                 <p class="attention-click">
                                     <a href="javascript:void(0)" class="letter">私信</a>
-                                    <a href="javascript:void(0)">取消关注</a>
+                                    <a href="javascript:void(0)" class="cancel">取消关注</a>
                                 </p>
                             </li>
                             <li>
@@ -270,7 +276,7 @@
                                 <span>MW娱乐文化有限公司</span>
                                 <p class="attention-click">
                                     <a href="javascript:void(0)" class="letter">私信</a>
-                                    <a href="javascript:void(0)">取消关注</a>
+                                    <a href="javascript:void(0)" class="cancel">取消关注</a>
                                 </p>
                             </li>
                         </ul>
@@ -290,7 +296,7 @@
                                 <span>MW娱乐文化有限公司</span>
                                 <p class="attention-click">
                                     <a href="javascript:void(0)" class="letter">私信</a>
-                                    <a href="javascript:void(0)">取消关注</a>
+                                    <a href="javascript:void(0)" class="cancel">取消关注</a>
                                 </p>
                             </li>
                             <li>
@@ -299,7 +305,7 @@
                                 <span>MW娱乐文化有限公司</span>
                                 <p class="attention-click">
                                     <a href="javascript:void(0)" class="letter">私信</a>
-                                    <a href="javascript:void(0)">取消关注</a>
+                                    <a href="javascript:void(0)" class="cancel">取消关注</a>
                                 </p>
                             </li>
                             <li>
@@ -308,22 +314,14 @@
                                 <span>MW娱乐文化有限公司</span>
                                 <p class="attention-click">
                                     <a href="javascript:void(0)" class="letter">私信</a>
-                                    <a href="javascript:void(0)">取消关注</a>
+                                    <a href="javascript:void(0)" class="cancel">取消关注</a>
                                 </p>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <ul class="pagination-click">
-                    <li class="active">1</li>
-                    <li><a href="javascript:void(0)">2</a></li>
-                    <li><a href="javascript:void(0)">3</a></li>
-                    <li><a href="javascript:void(0)">4</a></li>
-                    <li><a href="javascript:void(0)">5</a></li>
-                    <li><a href="javascript:void(0)">...</a></li>
-                    <li><a href="javascript:void(0)">10</a></li>
-                    <li class="next"><a href="javascript:void(0)">></a></li>
-                </ul>
+                <div class="pagination-click" id="pages">
+                </div>
             </div>
 
         </div>
@@ -383,6 +381,17 @@
             <h2>我的好友</h2>
             <ul class="friend">
                 <li>
+                    <div class="all-info">
+                        <div class="pop-info">
+                            <a href="javascript:void(0)" class="big-head"><img src="/images/chatroom/big_photo.png" alt=""></a>
+                            <div class="pop-text">
+                                <p>公司：MW娱乐文化传播有限公司</p>
+                                <p>职位：首席运营总经理</p>
+                                <p>经验：518</p>
+                                <a href="javascript:void(0)" class="chat-with">聊天</a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="javascript:void(0)" class="friend-pic"><img src="/images/chatroom/friend_tou.png" alt=""></a>
                     <div class="right-text">
                         <h4>王金狗 <span class="new-friend"></span></h4>
@@ -390,6 +399,17 @@
                     </div>
                 </li>
                 <li>
+                    <div class="all-info">
+                        <div class="pop-info">
+                            <a href="javascript:void(0)" class="big-head"><img src="/images/chatroom/big_photo.png" alt=""></a>
+                            <div class="pop-text">
+                                <p>公司：MW娱乐文化传播有限公司</p>
+                                <p>职位：首席运营总经理</p>
+                                <p>经验：518</p>
+                                <a href="javascript:void(0)" class="chat-with">聊天</a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="javascript:void(0)" class="friend-pic"><img src="/images/chatroom/friend1.png" alt=""></a>
                     <div class="right-text">
                         <h4>媛媛 <span class="new-friend"></span></h4>
@@ -397,6 +417,17 @@
                     </div>
                 </li>
                 <li>
+                    <div class="all-info">
+                        <div class="pop-info">
+                            <a href="javascript:void(0)" class="big-head"><img src="/images/chatroom/big_photo.png" alt=""></a>
+                            <div class="pop-text">
+                                <p>公司：MW娱乐文化传播有限公司</p>
+                                <p>职位：首席运营总经理</p>
+                                <p>经验：518</p>
+                                <a href="javascript:void(0)" class="chat-with">聊天</a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="javascript:void(0)" class="friend-pic"><img src="/images/chatroom/friend2.png" alt=""></a>
                     <div class="right-text">
                         <h4>小牛奶 <span class="new-friend"></span></h4>
@@ -404,6 +435,17 @@
                     </div>
                 </li>
                 <li>
+                    <div class="all-info">
+                        <div class="pop-info">
+                            <a href="javascript:void(0)" class="big-head"><img src="/images/chatroom/big_photo.png" alt=""></a>
+                            <div class="pop-text">
+                                <p>公司：MW娱乐文化传播有限公司</p>
+                                <p>职位：首席运营总经理</p>
+                                <p>经验：518</p>
+                                <a href="javascript:void(0)" class="chat-with">聊天</a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="javascript:void(0)" class="friend-pic"><img src="/images/chatroom/friend3.png" alt=""></a>
                     <div class="right-text">
                         <h4>李未央 <span class="new-friend"></span></h4>
@@ -411,6 +453,17 @@
                     </div>
                 </li>
                 <li>
+                    <div class="all-info">
+                        <div class="pop-info">
+                            <a href="javascript:void(0)" class="big-head"><img src="/images/chatroom/big_photo.png" alt=""></a>
+                            <div class="pop-text">
+                                <p>公司：MW娱乐文化传播有限公司</p>
+                                <p>职位：首席运营总经理</p>
+                                <p>经验：518</p>
+                                <a href="javascript:void(0)" class="chat-with">聊天</a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="javascript:void(0)" class="friend-pic"><img src="/images/chatroom/friend4.png" alt=""></a>
                     <div class="right-text">
                         <h4>孟瑞 <span class="new-friend"></span></h4>
@@ -418,6 +471,17 @@
                     </div>
                 </li>
                 <li>
+                    <div class="all-info">
+                        <div class="pop-info">
+                            <a href="javascript:void(0)" class="big-head"><img src="/images/chatroom/big_photo.png" alt=""></a>
+                            <div class="pop-text">
+                                <p>公司：MW娱乐文化传播有限公司</p>
+                                <p>职位：首席运营总经理</p>
+                                <p>经验：518</p>
+                                <a href="javascript:void(0)" class="chat-with">聊天</a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="javascript:void(0)" class="friend-pic"><img src="/images/chatroom/friend5.png" alt=""></a>
                     <div class="right-text">
                         <h4>拓跋浚 <span class="new-friend"></span></h4>
@@ -425,6 +489,17 @@
                     </div>
                 </li>
                 <li>
+                    <div class="all-info">
+                        <div class="pop-info">
+                            <a href="javascript:void(0)" class="big-head"><img src="/images/chatroom/big_photo.png" alt=""></a>
+                            <div class="pop-text">
+                                <p>公司：MW娱乐文化传播有限公司</p>
+                                <p>职位：首席运营总经理</p>
+                                <p>经验：518</p>
+                                <a href="javascript:void(0)" class="chat-with">聊天</a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="javascript:void(0)" class="friend-pic"><img src="/images/chatroom/friend6.png" alt=""></a>
                     <div class="right-text">
                         <h4>王博文 <span class="new-friend"></span></h4>
@@ -432,6 +507,17 @@
                     </div>
                 </li>
                 <li>
+                    <div class="all-info">
+                        <div class="pop-info">
+                            <a href="javascript:void(0)" class="big-head"><img src="/images/chatroom/big_photo.png" alt=""></a>
+                            <div class="pop-text">
+                                <p>公司：MW娱乐文化传播有限公司</p>
+                                <p>职位：首席运营总经理</p>
+                                <p>经验：518</p>
+                                <a href="javascript:void(0)" class="chat-with">聊天</a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="javascript:void(0)" class="friend-pic"><img src="/images/chatroom/friend7.png" alt=""></a>
                     <div class="right-text">
                         <h4>全智贤 <span class="new-friend"></span></h4>
@@ -439,6 +525,17 @@
                     </div>
                 </li>
                 <li>
+                    <div class="all-info">
+                        <div class="pop-info">
+                            <a href="javascript:void(0)" class="big-head"><img src="/images/chatroom/big_photo.png" alt=""></a>
+                            <div class="pop-text">
+                                <p>公司：MW娱乐文化传播有限公司</p>
+                                <p>职位：首席运营总经理</p>
+                                <p>经验：518</p>
+                                <a href="javascript:void(0)" class="chat-with">聊天</a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="javascript:void(0)" class="friend-pic"><img src="/images/chatroom/friend8.png" alt=""></a>
                     <div class="right-text">
                         <h4>李敏镐 <span class="new-friend"></span></h4>
@@ -446,6 +543,17 @@
                     </div>
                 </li>
                 <li>
+                    <div class="all-info">
+                        <div class="pop-info">
+                            <a href="javascript:void(0)" class="big-head"><img src="/images/chatroom/big_photo.png" alt=""></a>
+                            <div class="pop-text">
+                                <p>公司：MW娱乐文化传播有限公司</p>
+                                <p>职位：首席运营总经理</p>
+                                <p>经验：518</p>
+                                <a href="javascript:void(0)" class="chat-with">聊天</a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="javascript:void(0)" class="friend-pic"><img src="/images/chatroom/friend9.png" alt=""></a>
                     <div class="right-text">
                         <h4>许茹芸 <span></span></h4>
@@ -453,6 +561,17 @@
                     </div>
                 </li>
                 <li>
+                    <div class="all-info">
+                        <div class="pop-info">
+                            <a href="javascript:void(0)" class="big-head"><img src="/images/chatroom/big_photo.png" alt=""></a>
+                            <div class="pop-text">
+                                <p>公司：MW娱乐文化传播有限公司</p>
+                                <p>职位：首席运营总经理</p>
+                                <p>经验：518</p>
+                                <a href="javascript:void(0)" class="chat-with">聊天</a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="javascript:void(0)" class="friend-pic"><img src="/images/chatroom/friend10.png" alt=""></a>
                     <div class="right-text">
                         <h4>李易峰 <span></span></h4>
@@ -460,6 +579,17 @@
                     </div>
                 </li>
                 <li>
+                    <div class="all-info">
+                        <div class="pop-info">
+                            <a href="javascript:void(0)" class="big-head"><img src="/images/chatroom/big_photo.png" alt=""></a>
+                            <div class="pop-text">
+                                <p>公司：MW娱乐文化传播有限公司</p>
+                                <p>职位：首席运营总经理</p>
+                                <p>经验：518</p>
+                                <a href="javascript:void(0)" class="chat-with">聊天</a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="javascript:void(0)" class="friend-pic"><img src="/images/chatroom/friend11.png" alt=""></a>
                     <div class="right-text">
                         <h4>汪东城 <span></span></h4>
@@ -467,6 +597,17 @@
                     </div>
                 </li>
                 <li>
+                    <div class="all-info">
+                        <div class="pop-info">
+                            <a href="javascript:void(0)" class="big-head"><img src="/images/chatroom/big_photo.png" alt=""></a>
+                            <div class="pop-text">
+                                <p>公司：MW娱乐文化传播有限公司</p>
+                                <p>职位：首席运营总经理</p>
+                                <p>经验：518</p>
+                                <a href="javascript:void(0)" class="chat-with">聊天</a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="javascript:void(0)" class="friend-pic"><img src="/images/chatroom/friend12.png" alt=""></a>
                     <div class="right-text">
                         <h4>柯洛 <span></span></h4>
@@ -474,6 +615,17 @@
                     </div>
                 </li>
                 <li>
+                    <div class="all-info">
+                        <div class="pop-info">
+                            <a href="javascript:void(0)" class="big-head"><img src="/images/chatroom/big_photo.png" alt=""></a>
+                            <div class="pop-text">
+                                <p>公司：MW娱乐文化传播有限公司</p>
+                                <p>职位：首席运营总经理</p>
+                                <p>经验：518</p>
+                                <a href="javascript:void(0)" class="chat-with">聊天</a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="javascript:void(0)" class="friend-pic"><img src="/images/chatroom/friend13.png" alt=""></a>
                     <div class="right-text">
                         <h4>艾玛·沃特森 <span></span></h4>
@@ -484,7 +636,93 @@
         </div>
         <!--right friend info end-->
     </div>
+    <!--修改信息模态框-->
+    <div class="modify-modal">
+        <div class="modify-info">
+            <div class="info-box">
+                <div class="info-header">
+                    <p class="info-left">
+                        <svg role="img" class="editor">
+                            <use xlink:href="#editor"></use>
+                        </svg>
+                        <strong>修改信息</strong>
+                    </p>
+                    <svg role="img" class="close">
+                        <use xlink:href="#close"></use>
+                    </svg>
+                </div>
+                <div class="person-info">
+                    <ul class="info-tab">
+                        <li class="current"><a href="javascript:void(0)">个人信息</a></li>
+                        <li><a href="javascript:void(0)">头像照片</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <ul class="tab-item active">
+                            <li>
+                                <p>
+                                    <label>公司名称：</label>
+                                    <input type="text" class="name">
+                                </p>
+                                <select name="selected" id="selected-one" class="selected">
+                                    <option value="0">公开显示</option>
+                                    <option value="1">只对好友显示</option>
+                                    <option value="2">仅自己显示</option>
+                                </select>
+                            </li>
+                            <li>
+                                <p>
+                                    <label>公司职位：</label>
+                                    <input type="text" class="name">
+                                </p>
+                                <select name="selected" id="selected-two" class="selected">
+                                    <option value="0">公开显示</option>
+                                    <option value="1">只对好友显示</option>
+                                    <option value="2">仅自己显示</option>
+                                </select>
+                            </li>
+                        </ul>
+                        <ul class="tab-item">
+                            <li>
+                                <div class="container">
+                                    <div class="imageBox">
+                                        <div class="thumbBox"></div>
+                                        <div class="spinner" style="display: none">Loading...</div>
+                                    </div>
+                                    <div class="action">
+                                        <div class="new-contentarea tc">
+                                            <a href="javascript:void(0)" class="upload-img">
+                                                <label for="upload-file">请选择你要上传的图像</label>
+                                            </a>
+                                            <input type="file" class="" name="upload-file" id="upload-file" />
+                                        </div>
+                                        <input type="button" id="btnCrop" class="Btnsty_peyton" value="预览" />
+                                    </div>
+                                    <div class="cropped">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" id="btnGetAvatar" class="submit">提交</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/cropbox.js"></script>
     <script src="/js/chatRoom.js"></script>
+    <script src="/laypage/laypage.js"></script>
+    <script type="text/javascript">
+        laypage({
+            cont: 'pages', //容器。值支持id名、原生dom对象，jquery对象,
+            pages: 10, //总页数
+            skin: 'molv', //皮肤
+            first: 1, //将首页显示为数字1,。若不显示，设置false即可
+            last: 10, //将尾页显示为总页数。若不显示，设置false即可
+            prev: '<', //若不显示，设置false即可
+            next: '>' //若不显示，设置false即可
+        });
+    </script>
 </body>
 </html>
