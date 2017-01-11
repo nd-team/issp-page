@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>活动详情页</title>
     <link rel="stylesheet" href="/css/activity/activity_detail.css">
-    <link rel="stylesheet" href="/css/activity/activity_theme_y.css">
-    <!--<link rel="stylesheet" href="/css/activity/activity_theme_r.css">-->
+    <link rel="stylesheet" href="/css/activity/activity_theme_y.css" class="theme" title="trip-theme">
+    <link rel="stylesheet" href="/css/activity/activity_theme_r.css" class="theme" title="food-theme" disabled="disabled">
 </head>
 <body>
     <header>
@@ -92,14 +92,12 @@
             <div class="item-title">选择标题模板：</div>
             <article class="item-con ">
                 <figure>
-                    <a href="javascript:void(0)" class="trip-nav">
-                        <!--<img src="/images/activity/trip_theme.png" alt="旅记">-->
+                    <a href="javascript:void(0)" class="trip-nav" data-title="trip-theme">
                     </a>
                     <figcaption>旅记</figcaption>
                 </figure>
                 <figure>
-                    <a href="javascript:void(0)" class="food-nav">
-                        <!--<img src="/images/activity/food_theme.png" alt="吃喝玩乐记">-->
+                    <a href="javascript:void(0)" class="food-nav" data-title="food-theme">
                     </a>
                     <figcaption>吃喝玩乐记</figcaption>
                 </figure>
@@ -227,22 +225,19 @@
                 <ul class="piclist">
                     <li>
                         <figure>
-                           <img src="/images/activity/img4.jpg" alt="">
-                        <figcaption class="mask">
-                            <p>
-                                <a href="javascript:void(0)" class="change">
-                                    <svg role="img">
-                                        <use xlink:href="#act_edit"></use>
-                                    </svg>
-                                    编辑更改
-                                </a>
-                                <a href="javascript:void(0)" class="del">删除</a>
-                            </p>
-                        </figcaption>
+                            <img src="/images/activity/img4.jpg"  alt="">
+                            <figcaption class="mask">
+                                <p>
+                                    <a href="javascript:void(0)" class="change">
+                                        <svg role="img">
+                                            <use xlink:href="#act_edit"></use>
+                                        </svg>
+                                        编辑更改
+                                    </a>
+                                    <a href="javascript:void(0)" class="del">删除</a>
+                                </p>
+                            </figcaption>
                         </figure>
-
-
-
                     </li>
                     <li>
                         <figure>
@@ -277,66 +272,82 @@
                             </figcaption>
                         </figure>
                     </li>
-                    <li><figure>
-                        <img src="/images/activity/img5.jpg" alt="">
-                        <figcaption class="mask">
-                            <p>
-                                <a href="javascript:void(0)" class="change">
-                                    <svg role="img">
-                                        <use xlink:href="#act_edit"></use>
-                                    </svg>
-                                    编辑更改
-                                </a>
-                                <a href="javascript:void(0)" class="del">删除</a>
-                            </p>
-                        </figcaption>
-                    </figure></li>
-                    <li><figure>
-                        <img src="/images/activity/img5.jpg" alt="">
-                        <figcaption class="mask">
-                            <p>
-                                <a href="javascript:void(0)" class="change">
-                                    <svg role="img">
-                                        <use xlink:href="#act_edit"></use>
-                                    </svg>
-                                    编辑更改
-                                </a>
-                                <a href="javascript:void(0)" class="del">删除</a>
-                            </p>
-                        </figcaption>
-                    </figure></li>
-                    <li><figure>
-                        <img src="/images/activity/img4.jpg" alt="">
-                        <figcaption class="mask">
-                            <p>
-                                <a href="javascript:void(0)" class="change">
-                                    <svg role="img">
-                                        <use xlink:href="#act_edit"></use>
-                                    </svg>
-                                    编辑更改
-                                </a>
-                                <a href="javascript:void(0)" class="del">删除</a>
-                            </p>
-                        </figcaption>
-                    </figure></li>
+                    <li>
+                        <figure>
+                            <img src="/images/activity/img5.jpg" alt="">
+                            <figcaption class="mask">
+                                <p>
+                                    <a href="javascript:void(0)" class="change">
+                                        <svg role="img">
+                                            <use xlink:href="#act_edit"></use>
+                                        </svg>
+                                        编辑更改
+                                    </a>
+                                    <a href="javascript:void(0)" class="del">删除</a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="/images/activity/img5.jpg" alt="">
+                            <figcaption class="mask">
+                                <p>
+                                    <a href="javascript:void(0)" class="change">
+                                        <svg role="img">
+                                            <use xlink:href="#act_edit"></use>
+                                        </svg>
+                                        编辑更改
+                                    </a>
+                                    <a href="javascript:void(0)" class="del">删除</a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="/images/activity/img4.jpg" alt="">
+                            <figcaption class="mask">
+                                <p>
+                                    <a href="javascript:void(0)" class="change">
+                                        <svg role="img">
+                                            <use xlink:href="#act_edit"></use>
+                                        </svg>
+                                        编辑更改
+                                    </a>
+                                    <a href="javascript:void(0)" class="del">删除</a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
                 </ul>
                 <div class="imgpreview">
-                    <p class="msg">预览效果，把图片拖入相应位置即可</p>
+                    <p class="msg"><strong>?</strong> 预览效果，把图片拖入相应位置即可</p>
                     <div class="imgspoke">
                         <a href="javascript:void(0)" class="pastimg">往期图片</a>
                         <div class="imglay5">
                             <div class="imglay5-l">
-                                <span class="imglay5-lt">
-                                    <img src="/images/activity/img5.jpg" alt="">
-                                </span>
-                                <span class="imglay5-lb">
-                                    <img src="/images/activity/img1.jpg" alt="">
-                                    <img src="/images/activity/img1.jpg" alt="">
-                                    <img src="/images/activity/img1.jpg" alt="">
-                                </span>
+                                <p class="imglay5-lt">
+                                    <span>
+                                        <img src="/images/activity/img2.jpg" alt="">
+                                    </span>
+                                </p>
+                                <p class="imglay5-lb">
+                                    <span>
+                                        <!--<img src="/images/activity/img1.jpg" alt="">-->
+                                    </span>
+                                    <span>
+                                        <img src="/images/activity/img4.jpg" alt="">
+                                    </span>
+                                    <span>
+                                        <!--<img src="/images/activity/img1.jpg" alt="">-->
+                                    </span>
+                                </p>
                             </div>
                             <div class="imglay5-r">
-                                <img src="/images/activity/img4.jpg" alt="">
+                                <span>
+                                    <img src="/images/activity/img5.jpg" alt="">
+                                </span>
                             </div>
                         </div>
                     </div>

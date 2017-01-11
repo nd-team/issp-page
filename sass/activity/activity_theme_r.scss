@@ -1,3 +1,22 @@
 #content{
   box-shadow:-20px 0 30px #f6cdd1,-50px 0 50px #f1eee9,20px 0 30px #f6cdd1,50px 0 50px #f1eee9;
+  .nav{
+    .trip-nav{
+      background:url("/images/activity/trip_theme.png") no-repeat center;
+      background-size:100% 100%;
+    }
+    .food-nav{
+      background:url("/images/activity/food_theme_select.png") no-repeat center;
+      background-size:100% 100%;
+    }
+  }
+  .activity-updatapic{
+    .imgspoke{
+      background:url("/images/activity/imgspoke_r.png");
+      background-size:100% 100%;
+    }
+    .pastimg{
+      background:url("/images/activity/pastimg_food.png");
+    }
+  }
 }
