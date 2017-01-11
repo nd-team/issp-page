@@ -2,8 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>活动详情页</title>
-    <link rel="stylesheet" href="/css/activity/activity_detail.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>参加活动详情内容</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="参加活动详情内容">
+    <meta name="description" content="参加活动详情内容">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/activity/activity_participate.css">
 </head>
 <body>
     <header>
@@ -85,290 +90,97 @@
             </div>
         </div>
     </header>
-    <div id="content">
-        <section class="item nav">
-            <div class="item-title">选择标题模板：</div>
-            <article class="item-con ">
-                <figure>
-                    <a href="javascript:void(0)">
-                        <img src="/images/activity/trip_theme.png" alt="旅记">
-                    </a>
-                    <figcaption>旅记</figcaption>
-                </figure>
-                <figure>
-                    <a href="javascript:void(0)">
-                        <img src="/images/activity/food_theme.png" alt="旅记">
-                    </a>
-                    <figcaption>吃喝玩乐记</figcaption>
-                </figure>
-            </article>
-        </section>
-        <section class="item activity-theme">
-            <div class="item-title">活动主题：</div>
-            <div class="item-con ">
-                <div class="activity-theme-title">
-                    <input type="text" >
-                    <p class="msg">限定<span>20</span>字以内</p>
-                </div>
-                <dl class="activity-shape">
-                    <dt>活动形式：</dt>
-                    <dd>
-                        <input type="text">
-                        <p class="msg">例如："旅游"、"聚会"、"徒步"等~</p>
-                    </dd>
-
-                </dl>
-            </div>
-        </section>
-        <section class="item activity-con">
-            <div class="item-title">活动内容：</div>
-            <div class="item-con">
-                <dl>
-                    <dt>主标题</dt>
-                    <dd class="main-title-con">内容</dd>
-                </dl>
-                <dl>
-                    <dt>
-                        <input type="text">
-                        <a href="javascript:void(0)" class="icon-add">
-                            <svg role="img" >
-                                <use xlink:href="#act_close"></use>
-                            </svg>
-                        </a>
-                    </dt>
-                    <dd>
-                        <p>
-                            <input type="text">
-                            <input type="text">
-                        </p>
-                        <a href="javascript:void(0)" class="icon-add">
-                            <svg role="img" >
-                                <use xlink:href="#act_close"></use>
-                            </svg>
-                        </a>
-
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>
-                        <input type="text">
-                        <a href="javascript:void(0)" class="icon-add">
-                            <svg role="img" >
-                                <use xlink:href="#act_close"></use>
-                            </svg>
-                        </a>
-                    </dt>
-                    <dd>
-                        <p>
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
-                        </p>
-                        <a href="javascript:void(0)" class="icon-add">
-                            <svg role="img" >
-                                <use xlink:href="#act_close"></use>
-                            </svg>
-                        </a>
-                    </dd>
-                </dl>
-            </div>
-        </section>
-        <section class="item activity-address">
-        <div class="item-title">活动地点：</div>
-        <div class="item-con">
-            <select name="">
-                <option value="">广州市</option>
-                <option value="">深圳市</option>
-            </select>
-            <select name="">
-                <option value="">天河区</option>
-            </select>
-            <input type="text" value="棠东">
-        </div>
-    </section>
-        <section class="item activity-updatapic">
-            <div class="item-title">是否上传图片：</div>
-            <div class="item-con">
-                <div class="piclayout">
-                    <div class="updataimg">
-                        <p>
-                            <input type="file" id="selectimg">
-                            <label for="selectimg">上传图片</label>
-                        </p>
-                        <ul>
-                            <li>c:/user/bjike/图片</li>
-                            <li>c:/user/bjike/图片</li>
-                            <li>c:/user/bjike/图片</li>
-                            <li>c:/user/bjike/图片</li>
-                            <li>c:/user/bjike/图片</li>
-                            <li>c:/user/bjike/图片</li>
-                        </ul>
+    <section class="content-section">
+        <div class="section-first">
+            <div class="show-address">
+                <div class="activity-address">
+                    <p>活动地点</p>
+                    <div class="address-name">
+                        <p>四川</p>
+                        <p>西藏</p>
                     </div>
-                    <dl class="imglay">
-                        <dt>图片排版方式：</dt>
-                        <dd>
-                            <figure>
-                                <a href="javascript:void(0)" ><img src="/images/activity/4lay.png" alt=""></a>
-                                <figcaption>4视图</figcaption>
-                            </figure>
-                            <figure>
-                                <a href="javascript:void(0)" class="active"><img src="/images/activity/5lay.png" alt=""></a>
-                                <figcaption>5视图</figcaption>
-                            </figure>
-                            <figure>
-                                <a href="javascript:void(0)"><img src="/images/activity/6lay.png" alt=""></a>
-                                <figcaption>6视图</figcaption>
-                            </figure>
-                        </dd>
-                    </dl>
-                </div>
-                <ul class="piclist">
-                    <li>
-                        <figure>
-                           <img src="/images/activity/img4.jpg" alt="">
-                        <figcaption class="mask">
-                            <p>
-                                <a href="javascript:void(0)" class="change">
-                                    <svg role="img">
-                                        <use xlink:href="#act_edit"></use>
-                                    </svg>
-                                    编辑更改
-                                </a>
-                                <a href="javascript:void(0)" class="del">删除</a>
+                    <div class="activity-time">
+                        <p>时间</p>
+                        <div class="time-data">
+                            <p class="time-start">
+                                <span class="year">2017</span>-
+                                <span class="month">1</span>-
+                                <span class="day">15</span>
                             </p>
-                        </figcaption>
-                        </figure>
-
-
-
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="/images/activity/img5.jpg" alt="">
-                            <figcaption class="mask">
-                                <p>
-                                    <a href="javascript:void(0)" class="change">
-                                        <svg role="img">
-                                            <use xlink:href="#act_edit"></use>
-                                        </svg>
-                                        编辑更改
-                                    </a>
-                                    <a href="javascript:void(0)" class="del">删除</a>
-                                </p>
-                            </figcaption>
-                        </figure>
-
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="/images/activity/img5.jpg" alt="">
-                            <figcaption class="mask">
-                                <p>
-                                    <a href="javascript:void(0)" class="change">
-                                        <svg role="img">
-                                            <use xlink:href="#act_edit"></use>
-                                        </svg>
-                                        编辑更改
-                                    </a>
-                                    <a href="javascript:void(0)" class="del">删除</a>
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li><figure>
-                        <img src="/images/activity/img5.jpg" alt="">
-                        <figcaption class="mask">
-                            <p>
-                                <a href="javascript:void(0)" class="change">
-                                    <svg role="img">
-                                        <use xlink:href="#act_edit"></use>
-                                    </svg>
-                                    编辑更改
-                                </a>
-                                <a href="javascript:void(0)" class="del">删除</a>
+                            <p class="line"></p>
+                            <p class="time-end">
+                                <span class="year">2017</span>-
+                                <span class="month">2</span>-
+                                <span class="day">27</span>
                             </p>
-                        </figcaption>
-                    </figure></li>
-                    <li><figure>
-                        <img src="/images/activity/img5.jpg" alt="">
-                        <figcaption class="mask">
-                            <p>
-                                <a href="javascript:void(0)" class="change">
-                                    <svg role="img">
-                                        <use xlink:href="#act_edit"></use>
-                                    </svg>
-                                    编辑更改
-                                </a>
-                                <a href="javascript:void(0)" class="del">删除</a>
-                            </p>
-                        </figcaption>
-                    </figure></li>
-                    <li><figure>
-                        <img src="/images/activity/img4.jpg" alt="">
-                        <figcaption class="mask">
-                            <p>
-                                <a href="javascript:void(0)" class="change">
-                                    <svg role="img">
-                                        <use xlink:href="#act_edit"></use>
-                                    </svg>
-                                    编辑更改
-                                </a>
-                                <a href="javascript:void(0)" class="del">删除</a>
-                            </p>
-                        </figcaption>
-                    </figure></li>
-                </ul>
-                <div class="imgpreview">
-                    <p class="msg">预览效果，把图片拖入相应位置即可</p>
-                    <div class="imgspoke">
-                        <a href="javascript:void(0)" class="pastimg">往期图片</a>
-                        <div class="imglay5">
-                            <div class="imglay5-l">
-                                <span class="imglay5-lt">
-                                    <img src="/images/activity/img5.jpg" alt="">
-                                </span>
-                                <span class="imglay5-lb">
-                                    <img src="/images/activity/img1.jpg" alt="">
-                                    <img src="/images/activity/img1.jpg" alt="">
-                                    <img src="/images/activity/img1.jpg" alt="">
-                                </span>
-                            </div>
-                            <div class="imglay5-r">
-                                <img src="/images/activity/img4.jpg" alt="">
-                            </div>
                         </div>
                     </div>
-                    <div class="goactbtn"><button>发起活动</button></div>
                 </div>
             </div>
-        </section>
-    </div>
+            <div class="right-praise">
+                <a href="javascript:void(0)" class="same-effect">
+                    <svg role="img" class="praise">
+                        <use xlink:href="#praise"></use>
+                    </svg>
+                    <span>236</span>
+                </a>
+                <a href="javascript:void(0)" class="same-effect">
+                    <svg role="img" class="forward">
+                        <use xlink:href="#forward"></use>
+                    </svg>
+                    <span>236</span>
+                </a>
+                <a href="javascript:void(0)" class="same-effect">
+                    <svg role="img" class="comment">
+                        <use xlink:href="#comment"></use>
+                    </svg>
+                    <span>236</span>
+                </a>
+            </div>
+        </div>
+        <div class="section-second">
+
+        </div>
+        <div class="section-third">
+
+        </div>
+    </section>
     <footer>
-        <ul>
-            <li>
-                <img src="/images/activity/aboutus.png" alt="">
-                <a href="javascript:void(0)">关于我们</a>
-                <a href="javascript:void(0)">帮助我们</a>
-                <a href="javascript:void(0)">意见反馈</a>
-            </li>
-            <li>
-                <img src="/images/activity/platopen.png" alt="">
-                <a href="javascript:void(0)">开放平台</a>
-                <a href="javascript:void(0)">了解平台</a>
-            </li>
-            <li>
-                <img src="/images/activity/platnav.png" alt="">
-                <a href="javascript:void(0)">平台导航</a>
-            </li>
-            <li>
-                <img src="/images/activity/platmana.png" alt="">
-                <a href="javascript:void(0)">平台管理中心</a>
-            </li>
-            <li>
-                <img src="/images/activity/publicplat.png" alt="">
-                <a href="javascript:void(0)">平台公共</a>
-            </li>
-        </ul>
+        <div class="wrap">
+            <ul>
+                <li>
+                    <img src="/images/activity/aboutus.png" alt="">
+                    <a href="javascript:void(0)">关于我们</a>
+                    <a href="javascript:void(0)">帮助我们</a>
+                    <a href="javascript:void(0)">意见反馈</a>
+                </li>
+                <li>
+                    <img src="/images/activity/platopen.png" alt="">
+                    <a href="javascript:void(0)">开放平台</a>
+                    <a href="javascript:void(0)">了解平台</a>
+                </li>
+                <li>
+                    <img src="/images/activity/platnav.png" alt="">
+                    <a href="javascript:void(0)">平台导航</a>
+                </li>
+                <li>
+                    <img src="/images/activity/platmana.png" alt="">
+                    <a href="javascript:void(0)">平台管理中心</a>
+                </li>
+                <li>
+                    <img src="/images/activity/publicplat.png" alt="">
+                    <a href="javascript:void(0)">平台公共</a>
+                </li>
+            </ul>
+            <section class="copyright">
+                <div>
+                    <p>Copyright @ 2010-2017 ISSO 北京艾佳天诚信息技术有限公司</p>
+                    <p>京文网[2012]0398-130号</p>
+                    <p>京ICP备12003058号</p>
+                </div>
+            </section>
+        </div>
+
     </footer>
 </body>
 </html>

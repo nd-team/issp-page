@@ -223,3 +223,44 @@ header{
     }
   }
 }
+
+
+//活动页面的公共脚部样式
+footer{
+  font-size:0.75rem;
+  background:#fff;
+  .wrap{
+    margin:0 auto;
+    width:50%;
+    ul{
+      display:flex;
+      justify-content:center;
+      li{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        flex:1;
+        img{
+          width:2rem;
+          margin-bottom:1rem;
+        }
+        a{
+          margin:0.5rem 0;
+        }
+      }
+    }
+    .copyright{
+      width:43.75rem;
+      margin:0 auto;
+      div{
+        display:flex;
+        justify-content:space-around;
+        align-items: center;
+        justify-content: center;
+        line-height: 28px;
+      }
+
+    }
+  }
+
+}
