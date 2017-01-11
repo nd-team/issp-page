@@ -1,8 +1,8 @@
+@import "../reset";
 @font-face {
   font-family: 'myFont';
   src: url('/font-face/fonts/方正粗谭黑简体.ttf');
 }
-
 header{
   box-shadow: 0 0 0 0;
   border-bottom: 1px solid #e8e3e9;
@@ -70,11 +70,11 @@ header{
             box-shadow: 0 8px 15px #e8971f;
             transform:rotate(-2deg);
             p{
+              transform:rotate(-6deg);
               &.line{
                 width: 1px;
                 height: 15px;
                 background-color: #da6f07;
-                transform:rotate(-2deg);
               }
               .year{
                 font-size: 16px;
@@ -88,6 +88,11 @@ header{
             }
           }
         }
+      }
+      .activity-where{
+        position: absolute;
+        right: 25%;
+        bottom: 40%;
       }
     }
     .right-praise{
