@@ -30,4 +30,26 @@ $(document).ready(function(){
             $(this).html("已关注");
         }
     })
+    $('.pagination-click li').not(".next").click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+    $('.pagination-click .next').click(function () {
+        var current = $('.pagination-click .active').index();
+        current++;
+        var length = $('.pagination-click li').not(".next").length;
+        if (current >= length) {
+            current = length - 1;
+        }
+        $('.pagination-click li').removeClass('active')
+        $('.pagination-click li').eq(current).addClass('active');
+    })
+//活动
+    $('.act-com .close').click(function(){
+        $('.act-com').remove();
+    });
+    $('.act-head a:not(:last),.act-head2 a:not(:last)').click(function(){
+        $(this).addClass('cur').siblings().removeClass('cur');
+    });
+
 })
+
