@@ -17,7 +17,7 @@ $(document).ready(function () {
                 $(this).find('li').eq(options.index).click();
             }
         }
-    })(jQuery)
+    })(jQuery);
 
     $(".info-tab").myTab({parent:".tab-content",index:0});
 
@@ -36,8 +36,6 @@ $(document).ready(function () {
             $(this).removeClass('same-big');
         }
     });
-
-<<<<<<< Updated upstream
     // 关注
     var onOff = true;
     var Attention = $('.attention');
@@ -142,14 +140,6 @@ $(document).ready(function () {
 
                 }
             });
-        })
-=======
-    /*鼠标经过效果*/
-    $('.photo').on('mouseover','img', function(){
-        $('.modal-message').show();
-    });
-    $('.photo').on('mouseout','img', function(){
-        $('.modal-message').hide();
->>>>>>> Stashed changes
+        });
     });
 });
