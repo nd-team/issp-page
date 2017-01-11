@@ -406,6 +406,8 @@ header{
           outline:none;
           padding:0 3.625rem;
           margin-right:1rem;
+          appearance: none;
+          background:url("/images/activity/drop.png") no-repeat 95% center ;
         }
         input{
           flex:4;
@@ -530,20 +532,30 @@ header{
           .msg{
             display:flex;
             justify-content:center;
+            margin-bottom:8px;
+            strong{
+              width:1.125rem;
+              height:1.125rem;
+              background:#f00;
+              border-radius:50%;
+              color:#fff;
+              display:flex;
+              justify-content:center;
+              font-size:0.875rem;
+              align-items:center;
+              margin-right:6px;
+            }
           }
           .imgspoke{
             display:flex;
             flex-direction:column;
             align-items:center;
-            background:url("/images/activity/imgspoke_y.png");
-            background-size:100% 100%;
             .pastimg{
               display:flex;
               justify-content:center;
               align-items:center;
               width:200px;
               height:34px;
-              background:url("/images/activity/past_img.png");
               background-size:100% 100%;
               color:#fff;;
             }
@@ -557,25 +569,40 @@ header{
                   display:flex;
                   justify-content:center;
                   margin:10px 0;
-                  img{
-                    max-height:11rem;
+                  span{
+                    background:#f0f0f0;
+                    width:19.5rem;
+                    height:11rem;
                   }
+
                 }
                 .imglay5-lb{
                   display:flex;
-                  img{
-                    max-height:11rem;
-                    margin:0 4px;
+                  span{
+                    height:11rem;
+                    width:7.25rem;
+                    background:#f0f0f0;
+                    img{
+                      height:100%;
+                      margin:0 4px;
+                    }
                   }
+
                 }
               }
               .imglay5-r{
                 display:flex;
                 align-items:center;
                 margin-left:5px;
-                img{
-                  max-height:17.5rem;
+                span{
+                  width:11.75rem;
+                  height:17.75rem;
                 }
+
+              }
+              img{
+                width:100%;
+                height:100%;
               }
             }
           }
