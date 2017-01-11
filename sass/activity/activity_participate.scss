@@ -1,7 +1,9 @@
-@import "../reset";
+
+@import "../base";
+
 @font-face {
   font-family: 'myFont';
-  src: url('/font-face/fonts/方正粗谭黑简体.ttf');
+  src: url('/font-face/fonts/fang.ttf');
 }
 header{
   box-shadow: 0 0 0 0;

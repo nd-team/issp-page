@@ -5,10 +5,12 @@ $(function(){
     $('.log-red').hover(function(){
         $(".login-WeChat",this).toggle();
     });
+    $('.login-page:nth-of-type(2)').hide();
     $('.login-tabs a').click(function(){
-    $(this).addClass('current').siblings().removeClass('current');
-    $(".login-page").css("display", "none");
-    $(".login-page").eq($(this).index()).css("display", "block")
+        $(this).addClass('current').siblings().removeClass('current');
+        $(".login-page").eq($(this).index()).show().siblings().hide();
+  /*   $(".login-page").css("display", "none");
+       $(".login-page").eq($(this).index()).css("display", "block")*/
 });
     $(".checkedNum").each(function(i){
     $(this).attr({"id":"checked"+i});
