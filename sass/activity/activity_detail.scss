@@ -1,6 +1,6 @@
 @import "../base";
 #content{
-  width:62.5%;
+  width:62.5rem;
   background:#fff;
   margin: 3.75rem auto 0;
   padding:0 5%;
@@ -181,7 +181,7 @@
           border-radius:3px;
           box-shadow:0 0 6px #ccdff0,0 0 6px #ccdff0;
           outline:none;
-          padding:0 3.625rem;
+          padding:0 5rem;
           margin-right:1rem;
           appearance: none;
           background:url("/images/activity/drop.png") no-repeat 95% center ;
@@ -336,52 +336,117 @@
               background-size:100% 100%;
               color:#fff;;
             }
-            .imglay5{
-              display:flex;
-              margin:1rem 0;
-              .imglay5-l{
-                display:flex;
-                flex-direction:column;
-                .imglay5-lt{
-                  display:flex;
-                  justify-content:center;
-                  margin:10px 0;
-                  span{
-                    background:#f0f0f0;
-                    width:19.5rem;
-                    height:11rem;
-                  }
-
-                }
-                .imglay5-lb{
-                  display:flex;
-                  span{
-                    height:11rem;
-                    width:7.25rem;
-                    background:#f0f0f0;
-                    img{
-                      height:100%;
-                      margin:0 4px;
-                    }
-                  }
-
-                }
-              }
-              .imglay5-r{
-                display:flex;
-                align-items:center;
-                margin-left:5px;
-                span{
-                  width:11.75rem;
-                  height:17.75rem;
-                }
-
-              }
+            .imglay-wrap{
+              display:none;
+              margin :1.25rem 0;
               img{
                 width:100%;
                 height:100%;
               }
+              &.lay4{
+                display:block;
+              }
+              .imglay4{
+                display:flex;
+                .imglay4-l,.imglay4-r{
+                  display:flex;
+                  align-items:center;
+                  span{
+                    width:11.75rem;
+                    height:17.75rem;
+                  }
+
+                }
+                .imglay4-c{
+                  display:flex;
+                  flex-direction:column;
+                  margin:0 10px;
+                  p{
+                    display:flex;
+                    &:first-child{
+                      margin-bottom:10px;
+                    }
+                    span{
+                      background:#f0f0f0;
+                      width:19.5rem;
+                      height:11rem;
+                    }
+                  }
+                }
+              }
+              .imglay5{
+                display:flex;
+                .imglay5-l{
+                  display:flex;
+                  flex-direction:column;
+                  .imglay5-lt{
+                    display:flex;
+                    justify-content:center;
+                    margin:10px 0;
+                    span{
+                      background:#f0f0f0;
+                      width:19.5rem;
+                      height:11rem;
+                    }
+
+                  }
+                  .imglay5-lb{
+                    display:flex;
+                    span{
+                      height:11rem;
+                      width:7.25rem;
+                      background:#f0f0f0;
+                      margin-right: 10px;
+                      img{
+                        height:100%;
+
+                      }
+                    }
+
+                  }
+                }
+                .imglay5-r{
+                  display:flex;
+                  align-items:center;
+                  span{
+                    width:11.75rem;
+                    height:17.75rem;
+                  }
+
+                }
+
+              }
+              .imglay6{
+                display:flex;
+                li{
+                  display:flex;
+                  &:first-child{
+                    margin-right:10px;
+                  }
+                  .imglay6-l{
+                    display:flex;
+                    align-items:center;
+                    span{
+                      width:11.75rem;
+                      height:17.75rem;
+                    }
+                    margin-right:10px;
+                  }
+                  .imglay6-r{
+                    display:flex;
+                    flex-direction:column;
+                    span{
+                      width:12.75rem;
+                      height:11.75rem;
+                      &:first-child{
+                        margin-bottom:10px;
+                      }
+                    }
+                  }
+                }
+              }
             }
+
           }
           .goactbtn{
             display:flex;
@@ -399,39 +464,4 @@
       }
     }
   }
-}
-footer{
-  font-size:0.75rem;
-  background:#fff;
-  .wrap{
-    margin:0 auto;
-    width:50%;
-    ul{
-      display:flex;
-      justify-content:center;
-      li{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        flex:1;
-        img{
-          width:2rem;
-          margin-bottom:1rem;
-        }
-        a{
-          margin:0.5rem 0;
-        }
-      }
-    }
-    .copyright{
-      width:43.75rem;
-      margin:0 auto;
-      div{
-        display:flex;
-        justify-content:space-around;
-      }
-
-    }
-  }
-
 }
