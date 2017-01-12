@@ -5,6 +5,20 @@
   font-family: 'myFont';
   src: url('/font-face/fonts/fang.ttf');
 }
+@font-face {
+  font-family: 'myFashion';
+  src: url('/font-face/fonts/fashion.ttf');
+}
+body{
+  background-color: #fff;
+}
+@mixin big-box{
+  width: 100%;
+  display: flex;
+  background-size:100% 100%;
+  justify-content: center;
+  align-items: center;
+}
 header{
   box-shadow: 0 0 0 0;
   border-bottom: 1px solid #e8e3e9;
@@ -19,13 +33,9 @@ header{
   width: 100%;
   height: auto;
   .section-first{
-    width: 100%;
+    @include big-box;
     height: 600px;
     background: url("/images/activity/orangebg.png") no-repeat center center;
-    display: flex;
-    background-size:100% 100%;
-    justify-content: center;
-    align-items: center;
     .show-address{
       width: 578px;
       height: 533px;
@@ -93,8 +103,28 @@ header{
       }
       .activity-where{
         position: absolute;
-        right: 25%;
-        bottom: 40%;
+        right: 20%;
+        bottom: 28%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+          color: #000;
+          font:{
+            size: 25px;
+            family: "myFashion";
+          }
+          &.center-line{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 48px;
+            height: 3px;
+            background: #000;
+            margin: 25px 0;
+          }
+        }
       }
     }
     .right-praise{
@@ -124,17 +154,129 @@ header{
     }
   }
   .section-second{
-    width: 100%;
+    @include big-box;
+    flex-direction: column;
     height: 773px;
     background: url("/images/activity/twobg.png") no-repeat center center;
-    display: flex;
-    background-size:100% 100%;
+    .second-content{
+      width: 1200px;
+      height: 773px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .detail-title{
+        width: 358px;
+        height: 62px;
+        text-align: center;
+        line-height: 62px;
+        background: url("/images/activity/detailbg.png") no-repeat;
+        color: #fff;
+      }
+      .join{
+        display: flex;
+        align-self: flex-end;
+        font-size: 14px;
+        margin-top: 10px;
+        height: 40px;
+        .want-join{
+          width: 116px;
+          height: 38px;
+          line-height: 38px;
+          text-align: center;
+          color: #fff;
+          background: url("/images/activity/joinbtn.png") no-repeat;
+        }
+        .hold{
+          display: flex;
+          align-items: center;
+          height: 38px;
+          margin-left: 30px;
+          font-size: 16px;
+          a{
+            display: flex;
+            background: url("/images/activity/hold.png") no-repeat left center;
+            color: #fff;
+            padding-left: 40px;
+          }
+
+        }
+      }
+      .join-detail{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        font-size: 14px;
+        color: #fff;
+        li{
+          height: 45px;
+          line-height: 22px;
+          &.two{
+            margin-bottom: 30px;
+          }
+          &:last-child{
+            margin-bottom: 35px;
+          }
+          .top-word{
+            font-size: 16px;
+            color: #fff2ca;
+          }
+          .dashed{
+            display: flex;
+            flex: 2;
+            border-top:1px dashed #fff2ca;
+            margin-top: -10px;
+            margin-left: 80px;
+          }
+          .select-ordinal{
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+
   }
   .section-third{
-    width: 100%;
+    @include big-box;
     height: 685px;
+    flex-direction: column;
     background: url("/images/activity/orange-under.png") no-repeat center center;
-    display: flex;
-    background-size:100% 100%;
+    .previous-title{
+      width: 358px;
+      height: 62px;
+      text-align: center;
+      line-height: 62px;
+      background: url("/images/activity/agobg.png") no-repeat;
+      color: #fff;
+    }
+    .previous-pic{
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      li{
+        display: flex;
+        flex-direction: column;
+        &:nth-of-type(2){
+          margin: 0 15px;
+          a{
+            &:first-child{
+              margin-bottom: 10px;
+            }
+          }
+        }
+        &:last-child{
+          margin-left: 15px;
+          a{
+            &:first-child{
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
   }
 }

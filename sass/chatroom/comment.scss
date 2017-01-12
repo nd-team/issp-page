@@ -4,12 +4,9 @@
 .my-message{
   display: flex;
   flex: 1;
-  margin:{
-    top: 100px;
-    right: 20%;
-    left: 20%;
-  }
+  margin:100px auto;
   overflow: auto;
+  width: 1100px;
   .slider-nav{
     width: 240px;
     position: fixed;
