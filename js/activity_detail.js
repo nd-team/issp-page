@@ -1,12 +1,17 @@
 $(document).ready(function(){
-    $(".imglay").on("click","figure a",function(){
-        $(this).addClass('active').parent().siblings().children('a').removeClass('active')
-    });
     $('.nav').on("click","figure a",function(){
         var style = $(this).attr('data-title');
         $("link.theme[title='"+style+"']").removeAttr("disabled");
         $("link.theme[title!='"+style+"']").attr("disabled","disabled");
     });
+    //布局
+    function piclay(){
+        $('.imglay').on("click","figure a",function(){
+            var lay = $(this).attr("data-title");
+            $(this).addClass('active').parent().siblings().children('a').removeClass('active');
+            $('.imgspoke').children("."+lay).show().siblings('.imglay-wrap').hide()
+        })
+    }
 
     //活动内容
     function actConTable(){
@@ -65,9 +70,16 @@ $(document).ready(function(){
                 $(this).addClass('cur');
                 event.preventDefault();
             },
+            "dragover":function(event){
+                event.preventDefault();
+            },
+            "dragleave":function(event){
+                $(this).removeClass('cur')
+            },
         },"span")
 
     }
     actConTable();
     actPic();
+    piclay()
 });
