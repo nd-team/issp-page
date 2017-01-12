@@ -252,30 +252,54 @@ header{
       background: url("/images/activity/agobg.png") no-repeat;
       color: #fff;
     }
-    .previous-pic{
-      display: flex;
+    .type-one{
+      display: none;
       flex: 1;
-      justify-content: center;
-      align-items: center;
-      li{
+      display: flex;
+      .previous-pic{
         display: flex;
-        flex-direction: column;
-        &:nth-of-type(2){
-          margin: 0 15px;
-          a{
-            &:first-child{
-              margin-bottom: 10px;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        li{
+          display: flex;
+          flex-direction: column;
+          .first-third{
+            width: 318px;
+            height: 399px;
+          }
+          .second-fourth{
+            width: 250px;
+            height: 229px;
+          }
+          &:nth-of-type(2){
+            margin: 0 15px;
+            a{
+              &:first-child{
+                margin-bottom: 10px;
+              }
+            }
+          }
+          &:last-child{
+            margin-left: 15px;
+            a{
+              &:first-child{
+                margin-bottom: 10px;
+              }
             }
           }
         }
-        &:last-child{
-          margin-left: 15px;
-          a{
-            &:first-child{
-              margin-bottom: 10px;
-            }
-          }
-        }
+      }
+    }
+    .type-two{
+      display: none;
+      //display: flex;
+      flex: 1;
+      .typesetting-second{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
