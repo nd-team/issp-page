@@ -13,6 +13,42 @@ $(document).ready(function(){
         })
     }
 
+    //市区联动
+    function select(){
+        var countys = null;
+        var citydata ;
+        $.get("/data/guangdong.json",function(data){
+            $.each(data,function(ind,item){
+                var option = "<option value='" + item.zip + "'>" + item.name + "</option>";
+                $("#city").append(option);
+                var first = $("#city").val();
+                if(item.zip ==first ){
+                    countys = item.county;
+                    $.each(countys,function(i,t){
+                        var option = "<option value='" + t.zip + "'>" + t.name + "</option>";
+                        $("#county").append(option);
+                    })
+                }
+            });
+            $('#city').change(function(e){
+                var zip = $(this).val();
+                var countys;
+                $("#county option").remove();
+                $.each(data,function(i,t){
+                    if(t.zip ==zip ){
+                         countys = t.county;
+                         $.each(countys,function(i,t){
+                            var option = "<option value='" + t.zip + "'>" + t.name + "</option>";
+                            $("#county").append(option);
+                        })
+                    }
+                });
+
+            })
+        });
+
+    }
+
     //活动内容
     function actConTable(){
         $('.activity-con').on("click",".icon-add",function(){
@@ -82,4 +118,5 @@ $(document).ready(function(){
     actConTable();
     actPic();
     piclay()
+    select()
 });
