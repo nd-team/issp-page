@@ -1,12 +1,53 @@
 $(document).ready(function(){
-    $(".imglay").on("click","figure a",function(){
-        $(this).addClass('active').parent().siblings().children('a').removeClass('active')
-    });
     $('.nav').on("click","figure a",function(){
         var style = $(this).attr('data-title');
         $("link.theme[title='"+style+"']").removeAttr("disabled");
         $("link.theme[title!='"+style+"']").attr("disabled","disabled");
     });
+    //布局
+    function piclay(){
+        $('.imglay').on("click","figure a",function(){
+            var lay = $(this).attr("data-title");
+            $(this).addClass('active').parent().siblings().children('a').removeClass('active');
+            $('.imgspoke').children("."+lay).show().siblings('.imglay-wrap').hide()
+        })
+    }
+
+    //市区联动
+    function select(){
+        var countys = null;
+        var citydata ;
+        $.get("/data/guangdong.json",function(data){
+            $.each(data,function(ind,item){
+                var option = "<option value='" + item.zip + "'>" + item.name + "</option>";
+                $("#city").append(option);
+                var first = $("#city").val();
+                if(item.zip ==first ){
+                    countys = item.county;
+                    $.each(countys,function(i,t){
+                        var option = "<option value='" + t.zip + "'>" + t.name + "</option>";
+                        $("#county").append(option);
+                    })
+                }
+            });
+            $('#city').change(function(e){
+                var zip = $(this).val();
+                var countys;
+                $("#county option").remove();
+                $.each(data,function(i,t){
+                    if(t.zip ==zip ){
+                         countys = t.county;
+                         $.each(countys,function(i,t){
+                            var option = "<option value='" + t.zip + "'>" + t.name + "</option>";
+                            $("#county").append(option);
+                        })
+                    }
+                });
+
+            })
+        });
+
+    }
 
     //活动内容
     function actConTable(){
@@ -65,9 +106,17 @@ $(document).ready(function(){
                 $(this).addClass('cur');
                 event.preventDefault();
             },
+            "dragover":function(event){
+                event.preventDefault();
+            },
+            "dragleave":function(event){
+                $(this).removeClass('cur')
+            },
         },"span")
 
     }
     actConTable();
     actPic();
+    piclay()
+    select()
 });

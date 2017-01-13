@@ -176,13 +176,8 @@
         <section class="item activity-address">
         <div class="item-title">活动地点：</div>
         <div class="item-con">
-            <select name="">
-                <option value="">广州市</option>
-                <option value="">深圳市</option>
-            </select>
-            <select name="">
-                <option value="">天河区</option>
-            </select>
+            <select id="city"></select>
+            <select id="county"></select>
             <input type="text" value="棠东">
         </div>
     </section>
@@ -208,15 +203,15 @@
                         <dt>图片排版方式：</dt>
                         <dd>
                             <figure>
-                                <a href="javascript:void(0)" ><img src="/images/activity/4lay.png" alt=""></a>
+                                <a href="javascript:void(0)" data-title="lay4"><img src="/images/activity/4lay.png" alt=""></a>
                                 <figcaption>4视图</figcaption>
                             </figure>
                             <figure>
-                                <a href="javascript:void(0)"><img src="/images/activity/5lay.png" alt=""></a>
+                                <a href="javascript:void(0)" data-title="lay5"><img src="/images/activity/5lay.png" alt=""></a>
                                 <figcaption>5视图</figcaption>
                             </figure>
                             <figure>
-                                <a href="javascript:void(0)" class="active"><img src="/images/activity/6lay.png" alt=""></a>
+                                <a href="javascript:void(0)" data-title="lay6" class="active"><img src="/images/activity/6lay.png" alt=""></a>
                                 <figcaption>6视图</figcaption>
                             </figure>
                         </dd>
@@ -325,30 +320,80 @@
                     <p class="msg"><strong>?</strong> 预览效果，把图片拖入相应位置即可</p>
                     <div class="imgspoke">
                         <a href="javascript:void(0)" class="pastimg">往期图片</a>
-                        <div class="imglay5">
-                            <div class="imglay5-l">
-                                <p class="imglay5-lt">
+                        <div class="imglay-wrap lay4">
+                            <ul class="imglay4">
+                                <li class="imglay4-l">
                                     <span>
                                         <img src="/images/activity/img2.jpg" alt="">
                                     </span>
-                                </p>
-                                <p class="imglay5-lb">
+                                </li>
+                                <li class="imglay4-c">
+                                    <p>
+                                        <span>
+                                            <img src="/images/activity/img5.jpg" alt="">
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <span>
+                                            <img src="/images/activity/img5.jpg" alt="">
+                                        </span>
+                                    </p>
+                                </li>
+                                <li class="imglay4-r">
                                     <span>
-                                        <!--<img src="/images/activity/img1.jpg" alt="">-->
+                                        <img src="/images/activity/img2.jpg" alt="">
                                     </span>
-                                    <span>
-                                        <img src="/images/activity/img4.jpg" alt="">
-                                    </span>
-                                    <span>
-                                        <!--<img src="/images/activity/img1.jpg" alt="">-->
-                                    </span>
-                                </p>
-                            </div>
-                            <div class="imglay5-r">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="imglay-wrap lay5">
+                            <ul class="imglay5">
+                                <li class="imglay5-l">
+                                    <p class="imglay5-lt">
+                                        <span>
+                                            <img src="/images/activity/img2.jpg" alt="">
+                                        </span>
+                                    </p>
+                                    <p class="imglay5-lb">
+                                        <span>
+                                            <!--<img src="/images/activity/img4.jpg" alt="">-->
+                                        </span>
+                                        <span>
+                                            <img src="/images/activity/img4.jpg" alt="">
+                                        </span>
+                                        <span>
+                                            <!--<img src="/images/activity/img4.jpg" alt="">-->
+                                        </span>
+                                    </p>
+                                </li>
+                                <li class="imglay5-r">
                                 <span>
                                     <img src="/images/activity/img5.jpg" alt="">
                                 </span>
-                            </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="imglay-wrap lay6">
+                            <ul class="imglay6">
+                                <li>
+                                    <p class="imglay6-l">
+                                        <span> <img src="/images/activity/img2.jpg" alt=""></span>
+                                    </p>
+                                    <p class="imglay6-r">
+                                        <span> <img src="/images/activity/img2.jpg" alt=""></span>
+                                        <span> <img src="/images/activity/img2.jpg" alt=""></span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="imglay6-l">
+                                        <span> <img src="/images/activity/img2.jpg" alt=""></span>
+                                    </p>
+                                    <p class="imglay6-r">
+                                        <span> <img src="/images/activity/img2.jpg" alt=""></span>
+                                        <span> <img src="/images/activity/img2.jpg" alt=""></span>
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="goactbtn"><button>发起活动</button></div>
