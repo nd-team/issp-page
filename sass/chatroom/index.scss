@@ -355,6 +355,8 @@
     }
   }
   //left
+  .content-left::-webkit-scrollbar {display:none;}
+  .content-right::-webkit-scrollbar {display:none;}
   .content-left{
     flex: 0 0 25%;
     //个人信息导航放到最左边
