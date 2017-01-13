@@ -1,0 +1,27 @@
+
+@import "../base";
+
+@font-face {
+  font-family: 'myFont';
+  src: url('/font-face/fonts/fang.ttf');
+}
+@font-face {
+  font-family: 'myFashion';
+  src: url('/font-face/fonts/fashion.ttf');
+}
+body{
+  background-color: #fff;
+}
+.big-box{
+  width: 100%;
+  height: 100%;
+  background: url("/images/activity/banner01.jpg") no-repeat center center;
+  header{
+    box-shadow: 0 0 0 0;
+    border-bottom: 1px solid #e8e3e9;
+    .myself{
+      visibility: hidden;
+    }
+  }
+}
+
