@@ -377,7 +377,7 @@ ol,ul{
           }
         }
         .comment-list{
-          padding:1.25rem;
+          padding:0 1.25rem;
           border-top:1px solid #d4d4d4;
           >li{
             display:flex;
@@ -391,7 +391,7 @@ ol,ul{
                 flex:1;
                 .triangle{
                   position:absolute;
-                  top:-28px;
+                  top:-8px;
                   left:31rem;
                   width: 15px;
                   height: 15px;
@@ -414,6 +414,8 @@ ol,ul{
               padding:0;
               flex:1;
               margin-left:1.125rem;
+              flex-direction:column;
+              display:flex;
               textarea{
                 height:auto;
                 padding:0.875rem;
@@ -483,16 +485,17 @@ ol,ul{
                 background:#e4ebf1;
                 padding:0.625rem 1.25rem 0.5rem;
                 position:relative;
-                display:none;
+                //display:none;
                 .triangle{
-                  width: 0;
-                  height: 0;
-                  border-style: solid;
-                  border-width: 0 6px 7px 6px;
-                  border-color: transparent transparent #e4ebf1 transparent;
                   position:absolute;
                   top:-6px;
-                  right:6.25rem;
+                  right:6.5rem;
+                  width: 10px;
+                  height: 10px;
+                  border-left:1px solid #d4d4d4;
+                  border-top:1px solid #d4d4d4;
+                  background:#e4ebf1;
+                  transform:rotate(45deg);
                 }
                 article{
                   margin:0;
@@ -509,6 +512,7 @@ ol,ul{
                       border:none;
                       outline:none;
                       font-size:0.75rem;
+                      background:none;
                     }
                     span{
                       color:#41729e;

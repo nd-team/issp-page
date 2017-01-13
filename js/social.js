@@ -35,11 +35,16 @@ $(document).ready(function(){
     });
     //评论
     $('.comment-menu').on("click",".talkbtn",function(){
+
         $(this).parents('.comment-menu').next().find('.reply').slideToggle();
     });
     $('.menubtn').on("click",".replybtn",function(){
-        $(this).parents('.comment-detail').children('.subreply').slideToggle();
-    })
+
+        // var replyInd = $(this).parent().parent().parent().css('order');
+        // $(this).parents('.comment-detail').children('.subreply').slideToggle();
+        // console.info(replyInd);
+
+    });
     //点赞
     $('.likebtn').on("click",function(){
         var count = $(this).children('span').text();

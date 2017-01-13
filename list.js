@@ -24,7 +24,7 @@ function getFilenames (dir, regexp, recursive) {
     })
     return files
 }
-var html;
+var html="<ul id='list'>";
 getFilenames(__dirname+'/pages', /.html$/, true).forEach((file) => {
     var fileName = path.basename(file);
     var fileHref = file.split('issp-page')[1]
@@ -34,6 +34,7 @@ getFilenames(__dirname+'/pages', /.html$/, true).forEach((file) => {
     console.info(fileHref);
 
 });
+html+="</ul>";
 fs.writeFile('./list.txt',html,function(err){
     if (err) {
         return console.error(err);

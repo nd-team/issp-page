@@ -31,7 +31,6 @@
         </div>
     </div>
     <div id="content">
-        <ul id="list"></ul>
     </div>
 
 </body>
@@ -40,7 +39,7 @@
 <script>
     $(function(){
         $.get('/list.txt',function(data){
-            $('#list').html(data)
+            $('#content').html(data)
         })
     })
 </script>
