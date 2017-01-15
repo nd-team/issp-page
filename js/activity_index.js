@@ -1,8 +1,11 @@
 $(function(){
     $('#dowebok').fullpage({
         navigation: true,
-        scrollingSpeed:'1000',
+        scrollingSpeed:'800',
         loopBottom: true,
+        scrollOverflow: false,
+        resize: false,
+        css3: true
     });
     var time = setInterval(function(){
         $.fn.fullpage.moveSlideRight();
