@@ -1,0 +1,219 @@
+@import "../base";
+body{
+  background:linear-gradient(#134158,#13435a,#091418);
+}
+.mainwrap{
+  width:1260px;
+  margin:0 auto;
+  position:relative;
+  #menu{
+    position:absolute;
+    left:0;
+    top:3.75rem;
+    width:15%;
+    ul{
+      li{
+        flex:1;
+        display:flex;
+        height:80px;
+        justify-content:center;
+        border-bottom:1px solid #666;
+        &:last-child{
+          border-bottom:none;
+        }
+        a{
+          display:flex;
+          align-self:center;
+          font-size:1.375rem;
+          align-items:center;
+          color:#646569;
+          img{
+            width:50px;
+            height:50px;
+            display:flex;
+            align-self:center;
+            margin-top:5px;
+          }
+        }
+      }
+    }
+  }
+  #dowebok{
+    .section{
+      margin-left:15%;
+      .wrap{
+        width:65.625rem;
+        position:absolute;
+        top:70px;
+        .w-bg{
+          position:absolute;
+          top:0;
+          border-radius:5px;
+          padding-left:20px;
+          h2{color:#bababa;font-size:20px;}
+          i{ color:#646569; font-size:0.75rem;border-left:4px solid #d62722; padding-left:5px;}
+          article{
+            width:1060px;
+            height:380px;
+            position:absolute;
+            top:80px;
+            left:-30px;
+            border-radius:5px;
+            &.banner1{
+              background:url("/images/indiana/banner1.png");
+              background-size:100% 100%;
+              .nowgobtn{
+                background:url("/images/indiana/nowbtn_w.png") no-repeat;
+                background-size:100% 100%;
+              }
+            }
+            &.banner2{
+              background:url("/images/indiana/banner2.png");
+              background-size:100% 100%;
+              top:180px;
+              left:175px;
+              .nowgobtn{
+                background:url("/images/indiana/nowbtn_r.png") no-repeat;
+                background-size:100% 100%;
+                top:180px;
+                left:175px;
+              }
+            }
+            &.banner3{
+              background:url("/images/indiana/banner3.png");
+              background-size:100% 100%;
+              .nowgobtn{
+                background:url("/images/indiana/nowbtn_g.png") no-repeat;
+                background-size:100% 100%;
+                top:175px;
+                left:160px;
+
+              }
+            }
+            .nowgobtn{
+              position:absolute;
+              background-size:100% 100%;
+              width:60px;
+              height:20px;
+
+            }
+            .t-btn{
+              display:flex;
+              margin-left:40px;
+              a{
+                display:flex;
+                width:26px;
+                height:26px;
+                justify-content:center;
+                align-self:center;
+                background:#fff;
+                color:#000;
+                font-size:20px;
+                border-radius:50%;
+                margin:-10px 10px;
+              }
+            }
+          }
+        }
+        .w-con{
+          position:absolute;
+          top:290px;
+          right:40px;
+          ul{
+            display:flex;
+            margin-bottom:10px;
+            justify-content:center;
+            li{
+              width:220px;
+              height:260px;
+              box-shadow:0 0 5px #666;
+              margin:0 5px;
+              background:#fff;
+              font-size:12px;
+              img{
+                width:220px;
+                height:115px;
+              }
+              p{
+                margin:2px 0;
+                padding:0 5px;
+              }
+              .w-con-t{
+                a{
+                  color:#2d2d2d;
+                }
+              }
+              .between{
+                display:flex;
+                justify-content:space-between;
+                &.cold7{
+                  color:#979797;
+                }
+              }
+              .progress{
+                display:flex;
+                justify-content:center;
+                .barbg{
+                  width:98%;
+                  border-radius:5px;
+                  background:#ccc;
+                  height:8px;
+                  position:relative;
+                  overflow:hidden;
+                  i{
+                    background:linear-gradient(left,#11ec98,#14e4f1);
+                    height:8px;
+                    width:50%;
+                    position:absolute;
+                  }
+                }
+              }
+              .btn{
+                margin-top:5px;
+                .ind-btn{
+                  color:#21c5ea;
+                  border:1px solid #21c5ea;
+                  padding:6px;
+                  border-radius:3px;
+                }
+                .cart-btn{
+                  background:url("/images/indiana/cart.png") no-repeat;
+                  width:30px;
+                  height:30px;
+                }
+              }
+            }
+          }
+          .w-uesr{
+            display:flex;
+            justify-content:flex-end;
+
+            p{
+              align-self:center;
+              color:#504e51;
+              display:flex;
+              &.user-list{
+                a{
+                  width:40px;
+                  height:40px;
+                  background:#999;
+                  border-radius:50%;
+                  margin:0 10px;
+                }
+
+              }
+            }
+            .moreuser{
+              width:40px;
+              height:40px;
+              margin-left:25px;
+              display:flex;
+              align-items:center;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
