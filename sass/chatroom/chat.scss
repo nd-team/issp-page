@@ -118,7 +118,7 @@ svg{
           cursor: pointer;
           &:hover{
             .toggle-more{
-                transform:rotate(-180deg);
+                transform:rotate(-90deg);
                 transition:all .8s ease-in .1s;
             }
           }
