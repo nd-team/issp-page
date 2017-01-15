@@ -11,7 +11,7 @@ function isDirectory (dir) {
 }
 
 function getFilenames (dir, regexp, recursive) {
-    let files = []
+    var  files = []
     if (!isDirectory(dir)) throw new Error(dir + ' is not a directory!')
     fs.readdirSync(dir).forEach((filename) => {
         const fullPath = path.join(dir, filename)

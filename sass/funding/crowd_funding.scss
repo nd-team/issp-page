@@ -1,0 +1,313 @@
+@import "../base";
+html,body{
+  background-color: #f6f6f6;
+}
+body{
+  min-width: 1200px;
+  overflow-x: hidden;
+}
+.content{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: auto;
+  .banner{
+    background-color: #eae7ee;
+    max-height: 473px;
+    .banner_center{
+      max-width: 1200px;
+      margin:60px auto 0;
+      padding-top: 84px;
+      position: relative;
+      overflow: hidden;
+      height: 520px;
+      .banner_img{
+      /*  width: 3500px; position: absolute; height: 520px; left: 0;*/
+        li{
+          display: flex;
+          .banner02{
+            display: flex;
+            flex-direction: column;
+            img{
+              vertical-align: top;
+            }
+          }
+        }
+      }
+      .prev{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #252023;
+        opacity: 0.5;
+        left: 22px;
+        top:50%;
+        z-index: 1;
+        a{
+          display: block;
+          width: 15px;
+          height: 15px;
+          cursor: pointer;
+          border-width: 0 0 3px 3px;
+          border-style: solid;
+          -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+          color: #ffffff;
+          margin: {
+            left: 15px;
+            top:10px;
+          };
+        }
+      }
+      .next{
+        @extend .prev;
+        transform: rotate(-175deg);
+        left: auto;
+        right: 30px;
+      }
+      .circle{
+        display: flex;
+        justify-content: center;
+        margin: {
+          top: -30px;
+        };
+        ul{
+          display: flex;
+          li{
+            cursor: pointer;
+             width: 10px;
+             height: 10px;
+             border-radius: 50%;
+             background-color: #79ff61;
+             opacity: 0.6;
+             margin-right: 10px;
+            &.circle-cur{
+              opacity: 1;
+              background-color: #ff1682;
+            }
+          }
+        }
+       }
+      }
+    }
+  .content-center{
+    max-width: 1200px;
+    margin: 229px auto 0; //
+    display: flex;
+    flex-direction: column;
+    .p_title{
+       display: flex;
+      .title{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        h4{
+          font-size: 22px;
+          color: #333;
+        }
+        span{
+          display: flex;
+          margin-top: 5px;
+          i{
+            display: block;
+            width: 4px;
+            height: 14px;
+            background-color: #dc2323;
+            margin: {
+              right: 3px;
+              top:2px;
+            };
+          }
+          font-size: 14px;
+          color: #666;
+        }
+      }
+      .more{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        color: #666;
+        margin: {
+          right: 11px;
+        };
+      }
+      &:nth-last-of-type(1){
+        margin-top: 60px;
+      }
+     }
+    ul{
+        display: flex;
+        margin-top: 30px;
+      li{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+        max-width: 280px;
+        box-shadow: 0 0 15px #e2e2e2;
+        margin: {
+          right: 27px;
+        };
+        &:nth-last-of-type(1){
+          margin-right: 0;
+        }
+        .surplus{
+          font-size: 14px;
+          color: white;
+          background: url("/images/funding/top-button.png") no-repeat right;
+          height: 46px;
+          margin: 7px -3px 7px 0;
+          text-align: right;
+          line-height: 35px;
+          padding-right: 9px;
+           }
+        p{
+          margin: 0 7px;
+          &:nth-of-type(1){
+            margin: {
+              top:33px;
+              bottom: 19px;
+            };
+            font:{
+              size: 14px;
+              weight: bold;
+            }
+          }
+          &:nth-of-type(2){
+            font-size: 12px;
+            color: #999;
+            line-height: 19px;
+            margin: {
+
+            };
+            }
+          &.progress{
+            margin: {
+              top:19px;
+              bottom: 16px;
+            };
+            display: flex;
+            flex: 1;
+            height: 8px;
+            background-color: #e3e3e3;
+            border-radius: 5px;
+            .speed{
+              height: 8px;
+              width: 50%;
+              border-radius: 5px;
+              background: linear-gradient(to right, #1fe996,#11eecc,#11e6ee);
+            }
+            .speed2{
+              @extend .speed;
+              width: 100%;
+              background: linear-gradient(to right, #770dc8, #c51fe9, #ff25c4);
+              }
+            .speed4{
+              @extend .speed;
+              width:75.7%;
+               }
+            .speed5{
+              @extend .speed;
+              width: 10.1%;
+            }
+            .speed6{
+              @extend .speed2;
+              width: 150%;
+            }
+            .speed7{
+              @extend .speed;
+              width: 30.7%;
+            }
+          }
+          &:nth-of-type(4){
+            color: #999999;
+            font-size: 12px;
+            height: 26px;
+            padding-bottom: 6px;
+            span{
+              padding: 5px 0;
+              &:nth-of-type(1){
+                padding: {
+                  left: 23px;
+                  right: 30px;
+                };
+                border-right: 1px solid #e8e8e8;
+              }
+              &:nth-of-type(2){
+                padding: {
+                  left: 20px;
+                };
+              }
+             em{
+               color: #333333;
+               padding: {
+                 left: 5px;
+               };
+             }
+              }
+             }
+            }
+           }
+         }
+       }
+  .bottom-banner{
+    display: flex;
+    background: url("/images/funding/dibanner.png") no-repeat;
+    width: 100%;
+    margin: {
+      top:30px;
+      bottom: 30px;
+    };
+ /*   background-size:contain;*/
+    background-position: center;
+/*    background-size: cover;*/
+    button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      color: white;
+      border-radius: 5px;
+      font-size: 16px;
+      padding: 10px 28px;
+    /*  margin: 40px 0;*/
+      margin: 40px 0 40px 63%;
+      background-color: #11b1ed;
+    }
+  }
+ }
+.footer{
+  position:absolute;
+  width:100%;
+  height:235px;
+  background:#3b3b3b;
+  padding-top:30px;
+  margin-top:30px;
+  ul{
+    width:1200px;
+    margin:0 auto;
+    display:flex;
+    justify-content:center;
+    li{
+      display:flex;
+      flex-direction:column;
+      flex:1;
+      align-items:center;
+      strong{
+        font-size:16px;
+        color:#fff;
+      }
+      a{
+        display:flex;
+        font-size:14px;
+        color:#a1a1a1;
+        margin:5px 0;
+      }
+    }
+  }
+
+}
+
