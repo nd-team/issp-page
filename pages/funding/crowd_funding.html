@@ -6,8 +6,8 @@
     <title>众筹</title>
 </head>
 <body>
-   <header>
-    <a href="moving.html" class="chat-life" title="生活价值平台">
+<header>
+    <a href="/pages/funding/crowd_funding.html" class="chat-life" title="生活价值平台">
         <svg role="img" class="life">
             <use xlink:href="#life"></use>
         </svg>
@@ -17,36 +17,48 @@
             <svg role="img" class="honor">
                 <use xlink:href="#honor"></use>
             </svg>
-            <a href="javascript:void(0)" class="icon-text">荣誉</a>
+            <a href="/pages/honor/bonus.html" class="icon-text">荣誉</a>
         </li>
         <li>
             <svg role="img" class="bonuses">
                 <use xlink:href="#bonuses"></use>
             </svg>
-            <a href="javascript:void(0)" class="icon-text">奖励</a>
+            <a href="/pages/reward/reward_circle.html" class="icon-text">奖励</a>
         </li>
         <li>
             <svg role="img" class="bbs">
                 <use xlink:href="#bbs"></use>
             </svg>
-            <a href="javascript:void(0)" class="icon-text">聊天室</a>
+            <a href="/pages/chatRoom/private_chat.html" class="icon-text">聊天室</a>
         </li>
         <li>
             <svg role="img" class="activity">
                 <use xlink:href="#activity"></use>
             </svg>
-            <a href="javascript:void(0)" class="icon-text">活动</a>
+            <a href="/pages/activity/activity_index.html" class="icon-text">活动</a>
         </li>
         <li>
             <svg role="img" class="society">
                 <use xlink:href="#society"></use>
             </svg>
-            <a href="javascript:void(0)" class="icon-text">社交</a>
+            <a href="/pages/social.html" class="icon-text">社交</a>
+        </li>
+        <li>
+            <svg role="img" class="yiyuan">
+                <use xlink:href="#yiyuan"></use>
+            </svg>
+            <a href="/pages/activity/indiana.html" class="icon-text">夺宝</a>
+        </li>
+        <li>
+            <svg role="img" class="zongchou">
+                <use xlink:href="#zongchou"></use>
+            </svg>
+            <a href="/pages/funding/crowd_funding.html" class="icon-text">众筹</a>
         </li>
     </ul>
-    <a href="javascript:void(0)" class="myself">
-        <svg role="img" class="bonuses">
-            <use xlink:href="#bonuses"></use>
+    <a href="/pages/funding/crowd_funding.html" class="myself">
+        <svg role="img" class="zongchou">
+            <use xlink:href="#zongchou"></use>
         </svg>
     </a>
     <div class="search-input">
@@ -60,6 +72,28 @@
             <a href="javascript:void(0)" class="head-photo">
                 <img src="/images/chatroom/pictou.png" alt="">
             </a>
+            <div class="modal-box">
+                <div class="modal-message">
+                    <p>
+                        <i class="triangle"></i>
+                    </p>
+                    <div class="get-info">
+                        <a href="javascript:void(0)" class="me">
+                            <svg role="img" class="my">
+                                <use xlink:href="#my"></use>
+                            </svg>
+                            <span>我的</span>
+                        </a>
+                        <a href="javascript:void(0)" class="my-news">
+                            <svg role="img" class="news">
+                                <use xlink:href="#news"></use>
+                            </svg>
+                            <span>消息</span>
+                            <strong>99</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </header>
@@ -77,7 +111,7 @@
                           <a href="javascript:void(0)"><img src="/images/funding/banner03.png"/></a>
                     </span>
                     </li>
-                    <li>
+<!--                    <li>
                     <span class="banner01">
                         <a href="javascript:void(0)"><img src="/images/funding/banner04.png"/></a>
                     </span>
@@ -94,7 +128,7 @@
                           <a href="javascript:void(0)"><img src="/images/funding/banner07.png"/></a>
                           <a href="javascript:void(0)"><img src="/images/funding/banner08.png"/></a>
                     </span>
-                    </li>
+                    </li>-->
                 </ul>
                 <div class="next"><a href="javascript:void(0)"></a></div>
                  <div class="circle">
@@ -344,74 +378,67 @@
    </div>
    <script src="/js/jquery-2.1.1.min.js"></script>
    <script src="/js/common.js"></script>
-   <script type="text/javascript">
-       var curIndex = 0, //当前index
-               imgLen = $(".imgList li").length; //图片总数
-       // 定时器自动变换2.5秒每次
-       var autoChange = setInterval(function(){
-           if(curIndex < imgLen-1){
-               curIndex ++;
-           }else{
-               curIndex = 0;
-           }
-           //调用变换处理函数
-           changeTo(curIndex);
-       },2500);
-       //左箭头滑入滑出事件处理
-       $("#prev").hover(function(){
-           //滑入清除定时器
-           clearInterval(autoChange);
-       },function(){
-           //滑出则重置定时器
-           autoChangeAgain();
-       });
-       //左箭头点击处理
-       $("#prev").click(function(){
-           //根据curIndex进行上一个图片处理
-           curIndex = (curIndex > 0) ? (--curIndex) : (imgLen - 1);
-           changeTo(curIndex);
-       });
-       //右箭头滑入滑出事件处理
-       $("#next").hover(function(){
-           //滑入清除定时器
-           clearInterval(autoChange);
-       },function(){
-           //滑出则重置定时器
-           autoChangeAgain();
-       });
-       //右箭头点击处理
-       $("#next").click(function(){
-           curIndex = (curIndex < imgLen - 1) ? (++curIndex) : 0;
-           changeTo(curIndex);
-       });
-       //对右下角按钮index进行事件绑定处理等
-       $(".indexList").find("li").each(function(item){
-           $(this).hover(function(){
-               clearInterval(autoChange);
-               changeTo(item);
-               curIndex = item;
-           },function(){
-               autoChangeAgain();
-           });
-       });
-       //清除定时器时候的重置定时器--封装
-       function autoChangeAgain(){
-           autoChange = setInterval(function(){
-               if(curIndex < imgLen-1){
-                   curIndex ++;
-               }else{
-                   curIndex = 0;
-               }
-               //调用变换处理函数
-               changeTo(curIndex);
-           },2500);
-       }
-       function changeTo(num){
-           var goLeft = num * 400;
-           $(".imgList").animate({left: "-" + goLeft + "px"},500);
-           $(".infoList").find("li").removeClass("infoOn").eq(num).addClass("infoOn");
-           $(".indexList").find("li").removeClass("indexOn").eq(num).addClass("indexOn");
-       }
-   </script>
+<script type="text/javascript">
+    $(function(){
+        var links=$(".banner_img li");
+        var float=$(".circle ul li");
+        var divs=$(".box div");
+        var num1=0;
+        var num2=0;
+        $(".leftB").click(function(){
+            divs.finish();
+            float.stop(true);
+            var temp=num1;
+            num1--;
+            if(num1==-1){
+                num1=4;
+            }
+            divs.eq(num1).css("left",700).animate({left:0});
+            divs.eq(temp).animate({left:-700});
+            links.css("color","#009797");
+            float.animate({left:links.eq(num1).position().left})
+            links.eq(num1).css("color","#fff");
+        });
+        $(".rightB").click(function(){
+            divs.finish();
+            float.stop(true);
+            var temp=num1;
+            num1++;
+            if(num1==5){
+                num1=0;
+            }
+            divs.eq(num1).css("left",-700).animate({left:0});
+            divs.eq(temp).animate({left:700});
+            links.css("color","#009797");
+            float.animate({left:links.eq(num1).position().left})
+            links.eq(num1).css("color","#fff");
+        });
+        links.hover(function(){
+            divs.finish();
+            float.stop(true);
+            links.css("color","#009797");
+            var that=$(this);
+            var lefts=$(this).position().left;
+            float.animate({left:lefts},function(){
+                that.css("color","#fff");
+            });
+            var index=$(this).index(".title a");
+            num2=index;
+            if(num1==num2){
+                return;
+            }else if(num1<num2){
+                divs.eq(num2).css("left",700).animate({left:0});
+                divs.eq(num1).animate({left:-700});
+            }else if(num1>num2){
+                divs.eq(num2).css("left",-700).animate({left:0});
+                divs.eq(num1).animate({left:700});
+            }
+            num1=num2;
+            num2="";
+        },function(){
+
+        })
+    })
+</script>
 </body>
 </html>

@@ -22,7 +22,6 @@ body{
       overflow: hidden;
       height: 520px;
       .banner_img{
-      /*  width: 3500px; position: absolute; height: 520px; left: 0;*/
         li{
           display: flex;
           .banner02{
@@ -80,11 +79,11 @@ body{
              height: 10px;
              border-radius: 50%;
              background-color: #79ff61;
-             opacity: 0.6;
+             /*opacity: 0.6;*/
              margin-right: 10px;
             &.circle-cur{
               opacity: 1;
-              background-color: #ff1682;
+              /*background-color: #ff1682;*/
             }
           }
         }
