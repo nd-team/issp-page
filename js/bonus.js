@@ -51,5 +51,13 @@ $(document).ready(function(){
         $(this).addClass('cur').siblings().removeClass('cur');
     });
 
-})
+    //排行
+    $('.rank-right').find("table").not("table:nth-of-type(1)").hide();
+    $('.rank-left ul li').click(function () {
+        $(this).addClass('current').siblings().removeClass('current');
+        $('.rank-right>table:eq(' + $(this).index() + ')').show().siblings().hide();
+    })
+
+
+});
 

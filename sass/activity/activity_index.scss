@@ -337,11 +337,10 @@ header{
     &.fulpage2{
       background:#f1f1f1;
       position:relative;
-
       #canvas{
         position:absolute;
-        left:42%;
         top:20%;
+        left:42%;
         background-color: #f0f0f0;
         overflow: hidden;
         width:850px;
@@ -448,7 +447,191 @@ header{
       }
 
     }
-    
+
+  }
+
+  .fulpage2.active .page-text{
+    i{animation:lightSpeedIn 1.3s}
+    .page-title{animation:lightSpeedIn 1.5s}
+    strong{animation:lightSpeedIn 1.7s}
+    .msg1{animation:lightSpeedIn 1.9s}
+    .msg2{animation:lightSpeedIn 2s}
+    a{animation:lightSpeedIn 2.3s}
+  }
+  .fulpage3.active {
+    .page-text{
+      i{animation:bounceInDown 2.3s}
+      .page-title{animation:bounceInDown 2s}
+      strong{animation:bounceInDown 1.9s}
+      .msg1{animation:bounceInDown 1.7s}
+      .msg2{animation:bounceInDown 1.5s}
+      a{animation:bounceInDown 1.3s}
+    }
+  }
+  .fulpage4.active {
+    animation:bgr 1s;
+    .page-text{
+      i{animation:rotateInUpRight 1s}
+      .page-title{animation:rotateInUpRight 1.2s}
+      strong{animation:rotateInUpRight 1.5s}
+      .msg1{animation:rotateInUpRight 1.9s}
+      .msg2{animation:rotateInUpRight 2s}
+      a{animation:rotateInUpRight 2.3s}
+    }
+  }
+  .fulpage5.active .page-text{
+    i{animation:zoomInUp 1s}
+    .page-title{animation:zoomInUp 1.2s}
+    strong{animation:zoomInUp 1.5s}
+    .msg1{animation:zoomInUp 1.9s}
+    .msg2{animation:zoomInUp 2s}
+    a{animation:zoomInUp 2.3s}
+  }
+  .fulpage5.active .page-img{
+    .boss{animation:bounceInLeft 2s}
+    .bosshadow{animation:bounceInLeft 2s}
+    .talk02{animation:rotateIn 3s;}
+    .worker{animation:bounceInLeft 3s;}
+    .talk{animation:rotateIn 4s;}
+    .workshadow{animation:bounceInLeft 3s}
+  }
+  @keyframes lightSpeedIn {
+    0% {
+      transform: translate(-2600px, 0) skewX(-30deg);
+      opacity: 0;
+    }
+
+    60% {
+      transform: skewX(20deg);
+      opacity: 1;
+    }
+
+    80% {
+      transform: skewX(-5deg);
+      opacity: 1;
+    }
+
+    100% {
+      transform: none;
+      opacity: 1;
+    }
+  }
+  @keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+      transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+      opacity: 1;
+      transform: translate3d(0, 30px, 0);
+    }
+
+    75% {
+      transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+      transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+      transform: none;
+    }
+  }
+  @keyframes rotateInUpRight {
+    0% {
+      transform-origin: right bottom;
+      transform: rotate3d(0, 0, 1, -90deg);
+      opacity: 0;
+    }
+
+    100% {
+      transform-origin: right bottom;
+      transform: none;
+      opacity: 1;
+    }
+  }
+  @keyframes zoomInUp {
+    0% {
+      opacity: 0;
+      transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+      animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+
+    60% {
+      opacity: 1;
+      transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+      animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+  }
+  @keyframes bounceInLeft {
+    0%, 60%, 75%, 90%, 100% {
+      transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+      opacity: 0;
+      transform: translate3d(-3000px, 0, 0);
+    }
+
+    60% {
+      opacity: 1;
+      transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+      transform: translate3d(-10px, 0, 0);
+    }
+
+    90% {
+      transform: translate3d(5px, 0, 0);
+    }
+
+    100% {
+      transform: none;
+    }
+  }
+  @keyframes rotateIn {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    60% {
+      opacity: 0;
+    }
+    80% {
+      -webkit-transform-origin: center;
+      transform-origin: center;
+      -webkit-transform: rotate3d(0, 0, 1, -200deg);
+      transform: rotate3d(0, 0, 1, -200deg);
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform-origin: center;
+      transform-origin: center;
+      -webkit-transform: none;
+      transform: none;
+      opacity: 1;
+    }
+  }
+  @keyframes bgr {
+    0% {
+      background-position:180%;
+    }
+    100% {
+      background-position:80%;
+    }
   }
 }
 #fp-nav.right{
