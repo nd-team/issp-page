@@ -1,8 +1,8 @@
 $(function(){
     $('#dowebok').fullpage({
         navigation: true,
-        scrollingSpeed:'1000',
-        loopBottom: true,
+        scrollingSpeed:'800',
+        loopBottom: true
     });
     var time = setInterval(function(){
         $.fn.fullpage.moveSlideRight();
