@@ -20,7 +20,7 @@ $(function() {
 
     $(".next").click(function () {
         index += 1;
-        if (index == len) {
+        if (index >= len) {
             index = 0;
         }
         showPics(index);
