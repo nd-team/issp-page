@@ -238,4 +238,4 @@ window.onload=function(){
         }
     }
     voxel();
-}
+};
