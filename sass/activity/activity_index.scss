@@ -59,7 +59,7 @@ header{
   top: 0;
   z-index: 1;
   border-bottom: 1px solid #e8e3e9;
-  background:none;
+  background:linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0));
   border-bottom:none;
   .chat-life{
     flex: 0 0 10em;
@@ -90,7 +90,6 @@ header{
   }
   .myself{
     flex: 3;
-    display: block;
     justify-content:center;
     text-align: center;
     line-height: 3.75rem;
@@ -265,11 +264,21 @@ header{
       }
     }
     .fp-controlArrow{
-      &.fp-prev{
-         left:10%;
-       }
-      &.fp-next{
-        right:10%;
+      display:none;
+    }
+    .fp-slidesNav{
+      top:65%;
+      ul li a{
+        &.active {
+          background:#7283a1;
+          border-radius:50%;
+          span{
+            background:#587ea3;
+          }
+        }
+        span{
+          border:1px solid #8a9fbc;
+        }
       }
     }
     .wrap{
@@ -310,6 +319,7 @@ header{
         color:#fff;
         align-items:center;
         font-size:75px;
+        padding:0 10px;
       }
       .msg1{
         font-size:28px;
@@ -358,12 +368,39 @@ header{
       background:url("/images/activity/fulpage3_01.png") no-repeat 80% center;
     }
     &.fulpage5{
+      .page-img{
+        img{
+          position:absolute;
+        }
+        .i-c{
+          left:28%;
+          top:30%;
+        }
+        .i-lt{
+          left:20%;
+          top:20%;
+        }
+        .i-lb{
+          left:18%;
+          bottom:40%;
+        }
+        .i-rt{
+          left:40%;
+          top:18%;
+        }
+        .i-rb{
+          left:42%;
+          bottom:30%;
+        }
+      }
+    }
+    &.fulpage7{
       background:#58b8e8;
       position:relative;
       .wrap{
         .page-img{
           width:900px;
-          height:633px;
+          height:100%;
           margin-bottom:100px;
           position:absolute;
           top:5%;
@@ -385,8 +422,7 @@ header{
           }
           .img-b{
             position:absolute;
-            bottom:0;
-            height:800px;
+            top:75%;
             width:800px;
             .worker{
               position:absolute;
@@ -418,10 +454,9 @@ header{
       .footer{
         position:absolute;
         width:100%;
-        height:235px;
+        bottom:0;
         background:#3b3b3b;
         padding-top:30px;
-        margin-top:30px;
         ul{
           width:1200px;
           margin:0 auto;
@@ -449,7 +484,6 @@ header{
 
     }
   }
-
   .fulpage2.active .page-text{
     i{animation:lightSpeedIn 1.3s}
     .page-title{animation:lightSpeedIn 1.5s}
@@ -479,7 +513,33 @@ header{
       a{animation:rotateInUpRight 2.3s}
     }
   }
-  .fulpage5.active .page-text{
+  .fulpage5.active {
+    .page-text{
+      i{animation:zoomIn 1s}
+      .page-title{animation:zoomIn 1.2s}
+      strong{animation:zoomIn 1.5s}
+      .msg1{animation:zoomIn 1.9s}
+      .msg2{animation:zoomIn 2s}
+      a{animation:zoomIn 2.3s}
+    }
+    .page-img{
+      .i-lt{animation:lt 1.5s;}
+      .i-lb{animation:lb 1.5s;}
+      .i-rt{animation:rt 1.5s;}
+      .i-rb{animation:rb 1.5s;}
+    }
+  }
+  .fulpage6.active {
+    .page-text{
+      i{animation:bounceInUp 1s}
+      .page-title{animation:bounceInUp 1.2s}
+      strong{animation:bounceInUp 1.5s}
+      .msg1{animation:bounceInUp 1.9s}
+      .msg2{animation:bounceInUp 2s}
+      a{animation:bounceInUp 2.3s}
+    }
+  }
+  .fulpage7.active .page-text{
     i{animation:zoomInUp 1s}
     .page-title{animation:zoomInUp 1.2s}
     strong{animation:zoomInUp 1.5s}
@@ -487,7 +547,7 @@ header{
     .msg2{animation:zoomInUp 2s}
     a{animation:zoomInUp 2.3s}
   }
-  .fulpage5.active .page-img{
+  .fulpage7.active .page-img{
     .boss{animation:bounceInLeft 2s}
     .bosshadow{animation:bounceInLeft 2s}
     .talk02{animation:rotateIn 3s;}
@@ -633,18 +693,93 @@ header{
       background-position:80%;
     }
   }
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3, .3, .3);
+      transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+      opacity: 1;
+    }
+  }
+  @keyframes lt{
+    0% {left:0;top:0}
+    33% {left:20%;top:20%}
+    66% {left:10%;top:10%}
+    100% {left:20%;top:20%}
+  }
+  @keyframes rt{
+    0% {left:60%;top:0}
+    33% {left:40%;top:18%;}
+    66% {left:50%;top:0}
+    100% {left:40%;top:18%;}
+  }
+  @keyframes lb{
+    0% {left:0;bottom:0}
+    33% {left:18%;bottom:40%;}
+    66% {left:10%;bottom:20%}
+    100% {left:18%;bottom:40%;}
+  }
+  @keyframes rb{
+    0% {left:60%;bottom:0}
+    33% {left:42%;bottom:30%;}
+    66% {left:50%;bottom:15%}
+    100% {left:42%;bottom:30%;}
+  }
+  @keyframes bounceInUp {
+    0%, 60%, 75%, 90%, 100% {
+      -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 3000px, 0);
+      transform: translate3d(0, 3000px, 0);
+    }
+
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, -20px, 0);
+      transform: translate3d(0, -20px, 0);
+    }
+
+    75% {
+      -webkit-transform: translate3d(0, 10px, 0);
+      transform: translate3d(0, 10px, 0);
+    }
+
+    90% {
+      -webkit-transform: translate3d(0, -5px, 0);
+      transform: translate3d(0, -5px, 0);
+    }
+
+    100% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
 }
 #fp-nav.right{
-  ul li a{
-    &.active {
-      background:#7283a1;
-      border-radius:50%;
+  ul li{
+    a{
+      &.active {
+        background:#7283a1;
+        border-radius:50%;
+        span{
+          background:#587ea3;
+        }
+      }
       span{
-        background:#587ea3;
+        border:1px solid #8a9fbc;
       }
     }
-    span{
-      border:1px solid #8a9fbc;
+    .fp-tooltip{
+      color:#587ea3;
+      font-weight:bold;
     }
   }
 }

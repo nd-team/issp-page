@@ -485,7 +485,7 @@ ol,ul{
                 background:#e4ebf1;
                 padding:0.625rem 1.25rem 0.5rem;
                 position:relative;
-                //display:none;
+                display:none;
                 .triangle{
                   position:absolute;
                   top:-6px;
@@ -701,6 +701,7 @@ ol,ul{
               }
             }
             &.hot-text{
+              width:200px;
               margin-top:0.875rem;
               padding-left:8px;
             }

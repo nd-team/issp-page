@@ -499,6 +499,11 @@
         align-items: center;
         justify-content: flex-start;
         margin-left: 10px;
+        &:last-child:hover{
+          .all-info{
+            top: -50px;
+          }
+        }
         &:hover{
           .all-info{
             display: block;
