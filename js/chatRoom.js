@@ -81,6 +81,12 @@ $(document).ready(function () {
 
     });
 
+    $('li').hover(function () {
+
+    }),function () {
+
+    };
+
     // 模态框头像截取
     $(window).load(function () {
         var options = {
