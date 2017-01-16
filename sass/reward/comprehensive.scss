@@ -11,20 +11,15 @@ button{
   margin-top: 60px;
   background:url("/images/reward/background.jpg");
   .content-center{
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex: 1;
     flex-direction: column;
     padding: {
       top:40px;
     };
       .top-search{
-         display: flex;
-         flex-direction: column;
         p{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-left: -1075px;
           a{
             font-size: 12px;
             color: #6ebde6;
@@ -36,10 +31,6 @@ button{
           }
         }
         .search-hot{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-left: -365px;
           input{
             width: 59%;
             max-width:  732px;
@@ -54,14 +45,15 @@ button{
             };
           }
           button{
+            width: 99px;
+            height: 36px;
             font-size: 16px;
             background-color: #9dd7f0;
             color: white;
-            padding: 8px 35px;
             border-radius: 3px;
             cursor: pointer;
             border:0;
-            margin-top: -10px;
+            margin-top: 10px;
           }
         }
       }
@@ -69,7 +61,6 @@ button{
         display: flex;
         justify-content: center;
         .rank-left{
-       /*flex: 0 0 25%;*/
           font-size: 12px;
           width: 25%;
           max-width: 150px;
@@ -143,16 +134,20 @@ button{
                   text-align: left;
                   &:nth-of-type(1){
                     flex: 1;
+                    width: 89px;
                     padding-left: 20px;
                   }
                   &:nth-of-type(2){
                     flex: 5;
+                    width: 347px;
                   }
                   &:nth-of-type(3){
                     flex: 4;
+                    width: 277.69px;
                   }
                   &:nth-of-type(4){
                     flex: 3;
+                    width: 208.27px;
                   }
                 }
               }
@@ -169,6 +164,7 @@ button{
                   padding: 10px 0;
                   &.td_01{
                     flex: 1;
+                    width: 89px;
                     padding-left: 20px;
                     .rank-top1{
                       width: 15px;
@@ -179,7 +175,6 @@ button{
                       border-radius: 2px;
                       font-size: 10px;
                       color: #fff;
-                      /*padding: 0 3px;*/
                       line-height: 11px;
                       box-shadow:inset 0 -5px 5px #0dd5ec;
                       text-shadow: 0 1px rgba(0,0,0,.3);
@@ -203,6 +198,7 @@ button{
                   }
                   &.td_02{
                     flex: 5;
+                    width: 347px;
                     font-size: 12px;
                     a{
                       color: #417db4;
@@ -252,10 +248,12 @@ button{
                   }
                   &.td_03{
                     flex: 4;
+                    width: 277.69px;
                     color: #60a4c8;
                   }
                   &.td_04{
                     flex: 3;
+                    width: 208.27px;
                     padding-top: 16px;
                     .hot-search01{
                       width: 120px;

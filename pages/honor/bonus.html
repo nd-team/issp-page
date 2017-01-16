@@ -7,52 +7,66 @@
 </head>
 <body>
 <header>
-    <a href="/pages/honor/bonus.html" class="chat-life" title="生活价值平台">
+    <a href="/pages/activity/activity_index.html" class="chat-life" title="生活价值平台">
         <svg role="img" class="life">
             <use xlink:href="#life"></use>
         </svg>
     </a>
     <ul class="header-icon">
         <li>
-            <svg role="img" class="honor">
-                <use xlink:href="#honor"></use>
-            </svg>
+            <a href="/pages/honor/bonus.html">
+                <svg role="img" class="honor">
+                    <use xlink:href="#honor"></use>
+                </svg>
+            </a>
             <a href="/pages/honor/bonus.html" class="icon-text">荣誉</a>
         </li>
         <li>
-            <svg role="img" class="bonuses">
-                <use xlink:href="#bonuses"></use>
-            </svg>
+            <a href="/pages/reward/reward_circle.html">
+                <svg role="img" class="bonuses">
+                    <use xlink:href="#bonuses"></use>
+                </svg>
+            </a>
             <a href="/pages/reward/reward_circle.html" class="icon-text">奖励</a>
         </li>
         <li>
-            <svg role="img" class="bbs">
-                <use xlink:href="#bbs"></use>
-            </svg>
+            <a href="/pages/chatRoom/private_chat.html">
+                <svg role="img" class="bbs">
+                    <use xlink:href="#bbs"></use>
+                </svg>
+            </a>
             <a href="/pages/chatRoom/private_chat.html" class="icon-text">聊天室</a>
         </li>
         <li>
-            <svg role="img" class="activity">
-                <use xlink:href="#activity"></use>
-            </svg>
-            <a href="/pages/activity/activity_index.html" class="icon-text">活动</a>
+            <a href="/pages/activity/activity_all.html">
+                <svg role="img" class="activity">
+                    <use xlink:href="#activity"></use>
+                </svg>
+            </a>
+            <a href="/pages/activity/activity_all.html" class="icon-text">活动</a>
         </li>
         <li>
-            <svg role="img" class="society">
-                <use xlink:href="#society"></use>
-            </svg>
+            <a href="/pages/social.html">
+                <svg role="img" class="society">
+                    <use xlink:href="#society"></use>
+                </svg>
+            </a>
             <a href="/pages/social.html" class="icon-text">社交</a>
         </li>
         <li>
-            <svg role="img" class="yiyuan">
-                <use xlink:href="#yiyuan"></use>
-            </svg>
+            <a href="/pages/activity/indiana.html">
+                <svg role="img" class="yiyuan">
+                    <use xlink:href="#yiyuan"></use>
+                </svg>
+            </a>
             <a href="/pages/activity/indiana.html" class="icon-text">夺宝</a>
         </li>
         <li>
-            <svg role="img" class="zongchou">
-                <use xlink:href="#zongchou"></use>
-            </svg>
+            <a href="/pages/funding/crowd_funding.html">
+                <svg role="img" class="zongchou">
+                    <use xlink:href="#zongchou"></use>
+                </svg>
+            </a>
             <a href="/pages/funding/crowd_funding.html" class="icon-text">众筹</a>
         </li>
     </ul>
@@ -103,8 +117,6 @@
          </p>
      </div>
 <div class="content">
-
-   <div class="content-center">
           <div class="center-like">
                <ul>
                    <li>
@@ -247,7 +259,7 @@
                   </li>
               </ul>
           </div>
-       <ul class="pagination-click">
+       <!--<ul class="pagination-click">
            <li class="active">1</li>
            <li><a href="javascript:void(0)">2</a></li>
            <li><a href="javascript:void(0)">3</a></li>
@@ -256,11 +268,23 @@
            <li><a href="javascript:void(0)">...</a></li>
            <li><a href="javascript:void(0)">10</a></li>
            <li class="next"><a href="javascript:void(0)">></a></li>
-       </ul>
-   </div>
+       </ul>-->
+     <div class="pagination-click" id="pages"></div>
 </div>
 <script src="/js/jquery-2.1.1.min.js"></script>
 <script src="/js/common.js"></script>
 <script src="/js/bonus.js"></script>
+<script src="/laypage/laypage.js"></script>
+<script type="text/javascript">
+    laypage({
+        cont: 'pages', //容器。值支持id名、原生dom对象，jquery对象,
+        pages: 10, //总页数
+        skin: 'molv', //皮肤
+        first: 1, //将首页显示为数字1,。若不显示，设置false即可
+        last: 10, //将尾页显示为总页数。若不显示，设置false即可
+        prev: '<', //若不显示，设置false即可
+        next: '>' //若不显示，设置false即可
+    });
+</script>
 </body>
 </html>

@@ -30,7 +30,7 @@ $(document).ready(function(){
             $(this).html("已关注");
         }
     })
-    $('.pagination-click li').not(".next").click(function () {
+   /* $('.pagination-click li').not(".next").click(function () {
         $(this).addClass('active').siblings().removeClass('active');
     });
     $('.pagination-click .next').click(function () {
@@ -42,7 +42,7 @@ $(document).ready(function(){
         }
         $('.pagination-click li').removeClass('active')
         $('.pagination-click li').eq(current).addClass('active');
-    })
+    })*/
 //活动
     $('.act-com .close').click(function(){
         $('.act-com').remove();

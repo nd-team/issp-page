@@ -26,17 +26,19 @@ $(function() {
         showPics(index);
     });
 
+    $(".banner_center .banner_img").css("width",bannerwidth * (len));
+
     $(".banner_center").hover(function () {
         clearInterval(autoplay);
     }, function () {
-        picTimer = setInterval(function () {
+        autoplay = setInterval(function () {
             showPics(index);
             index++;
             if (index == len) {
                 index = 0;
             }
-        }, 2000);
-    }).trigger("click");
+        }, 4000);
+    }).trigger("mouseleave");
 
     function showPics(index) {
         var nowLeft = -index * bannerwidth;
