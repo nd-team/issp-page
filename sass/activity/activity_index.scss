@@ -796,6 +796,24 @@ header{
     }
   }
 }
+.oldPlat{
+  position:fixed;
+  right:0;
+  top:100px;
+  background:rgba(0,0,0,0.5);
+  padding:5px;
+  border-bottom-left-radius:10px;
+  border-top-left-radius:10px;
+  li{
+    a{
+      color:#fff;
+      font-size:12px;
+      &:hover{
+        color:#0dd5ec;
+      }
+    }
+  }
+}
 
 
 
