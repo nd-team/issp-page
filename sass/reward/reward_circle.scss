@@ -301,6 +301,12 @@ body{
           b{
             display: flex;
             flex-direction: column;
+            height: 170px;
+            overflow: hidden;
+           /* >img{
+                position: relative;
+                top: -50%;
+              }*/
             &:nth-of-type(1){
               display:flex;
               justify-content:center;
@@ -459,6 +465,14 @@ body{
      border: 1px solid #ebebeb;
      box-shadow: 1px 1px 1px rgba(102, 102, 102, 0.25);
      margin-top: 18px;
+     display: flex;
+     flex-direction: column;
+       .right-img{
+         height: 170px;
+         overflow: hidden;
+        display: flex;
+        align-items: center;
+      }
       .notice{
         padding: {
           top:30px;

@@ -15,7 +15,7 @@ body{
 }
 .content{
   display: flex;
-/*  flex: 1;*/
+ /* flex: 1;*/
   flex-direction: column;
   justify-content: center;
   margin: 60px auto 0;
@@ -262,7 +262,7 @@ body{
     font-size: 12px;
     background-color: #ffffff;
     .act-title{
-      flex: 1;
+     /* flex: 1;*/
       margin:{
         top:15px;
         left: 15px;
@@ -283,14 +283,15 @@ body{
       flex-direction: column;
       li{
         display: flex;
+        flex-direction: column;
         padding: 30px 0;
         border-bottom: 1px solid #efefef;
         &:nth-last-of-type(1){
           border: 0;
         }
         .sign-up{
-      margin: 0 5%;
-      display: flex;
+        margin: 0 5%;
+       display: flex;
     /*  flex: 1;*/
       margin-bottom: 5px;
       max-height: 50px;

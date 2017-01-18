@@ -5,7 +5,7 @@ $(function() {
     var bannerwidth = $(".banner_center").width();
     var len = $(".banner_center .banner_img li").length;
     var index = 0;
-    var autoplay;
+   /* var autoplay;*/
     $(".banner_center .circle ul li").css("opacity", 0.4).click(function () {
         index = $(".banner_center .circle ul li").index(this);
         showPics(index);
@@ -19,30 +19,48 @@ $(function() {
     });
 
     $(".next").click(function () {
-        index += 1;
-        if (index >= len) {
-            index = 0;
+             index +=1;
+       if (index<len) {
+           $(".banner_center .banner_img").css("width",bannerwidth * (len));
+        }else{
+           index = 0;
         }
         showPics(index);
     });
-
     $(".banner_center .banner_img").css("width",bannerwidth * (len));
 
-    $(".banner_center").hover(function () {
+   var  autoplay = setInterval(function(){
+        if(index < len-1){
+            index ++;
+        }else{
+            index = 0;
+        }
+        showPics(index);
+    },4000);
+
+    $(".prev").hover(function(){
         clearInterval(autoplay);
-    }, function () {
-        autoplay = setInterval(function () {
-            showPics(index);
-            index++;
-            if (index == len) {
+    },function(){
+        autoChangeAgain();
+    });
+    $(".next").hover(function(){
+        clearInterval(autoplay);
+    },function(){
+        autoChangeAgain();
+    });
+    function autoChangeAgain(){
+        autoplay = setInterval(function(){
+            if(index < len-1){
+                index ++;
+            }else{
                 index = 0;
             }
-        }, 4000);
-    }).trigger("mouseleave");
-
+            showPics(index);
+        },4000);
+    }
     function showPics(index) {
         var nowLeft = -index * bannerwidth;
-        $(".banner_center .banner_img").stop(true, false).animate({"left": nowLeft}, 300);
-        $(".banner_center .circle ul li").stop(true, false).animate({"opacity": "0.4"}, 300).eq(index).stop(true, false).animate({"opacity": "1"}, 300);
+        $(".banner_center .banner_img").stop(true, false).animate({"left": nowLeft}, 500);
+        $(".banner_center .circle ul li").stop(true, false).animate({"opacity": "0.4"}, 500).eq(index).stop(true, false).animate({"opacity": "1"}, 500);
     };
 });
