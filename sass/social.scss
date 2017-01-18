@@ -254,6 +254,9 @@ ol,ul{
         }
         .release{
           display:flex;
+          select::-ms-expand{
+            display: none;
+          }
           select{
             border:none;
             font-size:0.875rem;
@@ -627,9 +630,11 @@ ol,ul{
               border-radius:50%;
             }
             figcaption{
+              display: -ms-flexbox;
               display:flex;
               flex-direction:column;
               font-size:0.75rem;
+              flex:1;
               strong{
                 font-size:0.875rem;
               }

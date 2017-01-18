@@ -23,8 +23,6 @@
       }
     }
     .my-like{
-      display: flex;
-      flex-direction: column;
       li{
         display: flex;
         flex: 1;
@@ -162,10 +160,7 @@
     }
     //聊天信息样式
     .chat-message{
-      flex: 1;
       background-color: #fff;
-      display: flex;
-      flex-direction: column;
       margin-top: 8px;
       .all-message{
         flex: 1;
