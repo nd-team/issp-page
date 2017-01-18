@@ -4,7 +4,6 @@
   flex: 1;
   height: auto;
   margin-top: 60px;
-  overflow: auto;
   //center
   .content-center{
     flex: 1;
@@ -16,6 +15,7 @@
     }
     .center-header{
       display: flex;
+      display:-ms-flexbox;
       background-color: #fff;
       margin: 50px 0 30px;
       height: 62px;
@@ -54,14 +54,10 @@
     }
     //动态样式
     .content-box{
-      display: flex;
-      flex: 1;
       background-color: #fff;
-      flex-direction: column;
       border-right:1px solid #e0e0e0;
       .details{
         background-color: #fff;
-        display: flex;
         border-bottom:1px solid #e0e0e0;
         .rely{
           display: flex;
@@ -155,14 +151,12 @@
 
       //关注和粉丝样式
       .cancel-attention{
-        display: flex;
         padding: {
           left: 30px;
           right: 30px;
           top: 20px;
         }
         margin-bottom: 30px;
-        flex-direction: column;
         .my-attention{
           display: flex;
           flex: 1;
@@ -184,6 +178,7 @@
             justify-content: flex-end;
             .search{
               line-height: 40px;
+              height:40px;
               font-size: 12px;
               color: #bababa;
             }
@@ -283,8 +278,6 @@
       flex: 1;
       flex-direction: column;
       .article{
-        display: flex;
-        flex-direction: column;
         li{
           display: flex;
           flex: 1;
@@ -358,9 +351,6 @@
   .content-left::-webkit-scrollbar {display:none;}
   .content-right::-webkit-scrollbar {display:none;}
   .content-left{
-    flex: 0 0 25%;
-    //个人信息导航放到最左边
-    order:-1;
     background-color: #80a8cc;
     position: fixed;
     max-width: 360px;
@@ -368,7 +358,9 @@
     overflow: auto;
     bottom: 0;
     top: 60px;
+    left:0;
     z-index: 10;
+
     .avatar{
       li{
         justify-content: center;
@@ -461,11 +453,6 @@
   .content-right{
     flex: 0 0 15%;
     margin-top: 50px;
-    //position: fixed;
-    //right: 0;
-    //top: 10px;
-    //bottom: 0;
-    //overflow: auto;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -531,13 +518,8 @@
             margin-right: 20px;
           }
           .pop-text{
-            flex: 1;
-            display: flex;
-            flex-direction: column;
             padding-top: 10px;
-            align-self: flex-start;
             p{
-
               font: {
                 size: 12px;
                 weight: bold;

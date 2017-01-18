@@ -174,6 +174,10 @@
       .item-con{
         align-items:center;
         justify-content:center;
+        //兼容ie下拉箭头
+        select::-ms-expand{
+          display: none;
+        }
         select{
           height:3.25rem;
           font-size:0.875rem;
@@ -184,6 +188,7 @@
           padding:0 5rem;
           margin-right:1rem;
           appearance: none;
+
           background:url("/images/activity/drop.png") no-repeat 95% center ;
         }
         input{

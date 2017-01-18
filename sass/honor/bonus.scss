@@ -60,16 +60,14 @@ body{
             &:last-child{
               margin-right: 0;
             }
-
            .honor01{
                 position: relative;
                margin-bottom: 30px;
              .current{
                position: absolute;
-               top:75%;
+               bottom:-25px;
                right: 5%;
              }
-
             }
             p{
               text-align: left;
