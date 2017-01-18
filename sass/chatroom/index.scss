@@ -14,14 +14,9 @@
       right: 3%;
     }
     .center-header{
-      display: flex;
-      display:-ms-flexbox;
       background-color: #fff;
       margin: 50px 0 30px;
       height: 62px;
-      align-items: center;
-      justify-content: center;
-      flex: 0 0 62px;
       border: {
         right: 1px;
         bottom: 2px;
@@ -29,7 +24,8 @@
         color: #e2e2e2;
       }
       a{
-        flex: 1;
+        display: inline-block;
+        width: 271px;
         text-align: center;
         cursor: pointer;
         align-content: center;
@@ -42,7 +38,7 @@
           &.text{
             color: #949EA7;
             font-family:"SimHei";
-            padding-top: 8px;
+            padding-top: 9px;
           }
           &.number{
             color: #333;
@@ -349,6 +345,9 @@
   }
   //left
   .content-left::-webkit-scrollbar {display:none;}
+  .content-left{
+    -ms-overflow-style: scrollbar;
+  }
   .content-right::-webkit-scrollbar {display:none;}
   .content-left{
     background-color: #80a8cc;
@@ -360,7 +359,7 @@
     top: 60px;
     left:0;
     z-index: 10;
-
+    overflow-x: hidden;
     .avatar{
       li{
         justify-content: center;
@@ -394,6 +393,7 @@
           font-size: 100%;
        }
         .attention{
+          display: block;
           width: 50%;
           height:40px;
           background-color: #567ea2;
@@ -414,9 +414,12 @@
         display: flex;
         font-size: 0;
         .live{
-          flex: 1;
+          width: 120px;
+          height: 120px;
+          display: inline-block;
           img{
-            min-width: 100%;
+            width: 100%;
+            height: 100%;
           }
         }
       }
@@ -454,8 +457,6 @@
     flex: 0 0 15%;
     margin-top: 50px;
     background-color: #fff;
-    display: flex;
-    flex-direction: column;
     height: auto;
     h2{
       font-size: 18px;
@@ -470,9 +471,7 @@
       background-color: #fff;
     }
     .friend{
-      display:flex;
-      flex: 1;
-      flex-direction: column;
+      height: auto;
       background-color: #fff;
       li{
         display: flex;
@@ -486,6 +485,7 @@
         align-items: center;
         justify-content: flex-start;
         margin-left: 10px;
+        background: #fff;
         &:last-child:hover{
           .all-info{
             top: -50px;

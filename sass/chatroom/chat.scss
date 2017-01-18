@@ -154,7 +154,7 @@ svg{
             .friend-pic{
               width: 50px;
               height: 50px;
-              margin-right: 15px;
+              margin-right: 10px;
             }
             .friend-news{
               flex: 1;
@@ -204,7 +204,7 @@ svg{
       .group-friends{
         @extend .my-friends;
         .photo-head{
-          margin-right: 15px;
+          margin-right: 10px;
           p{
             &:last-child{
               margin-top: -15px;
@@ -227,21 +227,24 @@ svg{
   //右边聊天内容
   .chat-list{
     width: 900px;
-    background-color: #ccf;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    //display: flex;
+    //flex-direction: column;
     .content-head{
       height: 50px;
       background-color: #d1dee9;
+      line-height: 50px;
       display: flex;
-      align-items: center;
+      display: -ms-flexbox;
       justify-content: center;
       h5{
+        height: 50px;
         flex: 1;
-        display: flex;
-        justify-content: center;
+        text-align: center;
         font-size: 16px;
         color: #333;
+        line-height: 50px;
       }
       .group-all{
         margin-right: 25px;
@@ -262,11 +265,13 @@ svg{
         justify-content: flex-start;
         .dialogue-pic{
           width: 50px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+          //display: flex;
+          //flex-direction: column;
+          //justify-content: center;
+          //align-items: center;
+          text-align: center;
           margin-right: 20px;
+          vertical-align: middle;
           span{
             color: #999;
             font-size: 12px;
@@ -274,6 +279,7 @@ svg{
         }
         .dialogue-text{
           display: flex;
+          vertical-align: middle;
           p{
             max-width: 46%;
             background-color: #eaeaea;
@@ -311,11 +317,12 @@ svg{
         margin-bottom: 30px;
         .dialogue-pic{
           width: 50px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          margin-left: 20px;
+          //display: flex;
+          //flex-direction: column;
+          //justify-content: center;
+          //align-items: center;
+          margin-left: 25px;
+          text-align: center;
           span{
             color: #999;
             font-size: 12px;
@@ -382,6 +389,7 @@ svg{
         border: 0 none;
         color: #333;
         font-size: 13px;
+        height: 85px;
       }
       .send{
         display: flex;
