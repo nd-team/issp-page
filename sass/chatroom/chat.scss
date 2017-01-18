@@ -232,19 +232,20 @@ svg{
     //display: flex;
     //flex-direction: column;
     .content-head{
-      height: 50px;
+      height: 35px;
       background-color: #d1dee9;
-      line-height: 50px;
+      //line-height: 50px;
       display: flex;
       display: -ms-flexbox;
       justify-content: center;
+      padding-top: 15px;
       h5{
         height: 50px;
         flex: 1;
         text-align: center;
         font-size: 16px;
         color: #333;
-        line-height: 50px;
+        //line-height: 50px;
       }
       .group-all{
         margin-right: 25px;
@@ -372,6 +373,7 @@ svg{
         right: 22px;
         bottom: 13px;
       }
+      height: 160px;
       .send-picture{
         margin-bottom: 10px;
         .select-send{
