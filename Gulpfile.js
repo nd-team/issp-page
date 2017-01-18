@@ -59,7 +59,7 @@ gulp.task('serve', ['sass'], ()=> {
 
     bs.init({
         server: './',
-        startPath:'pages/activity/activity_index.html'
+        startPath:'list.html'
     });
 
     gulp.watch('./sass/**/*.scss', ['sass']);

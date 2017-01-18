@@ -293,10 +293,8 @@ body{
           border: 0;
         }
         .sign-up{
-        margin: 0 5%;
+        margin: 0 5% 5px;
        display: flex;
-    /*  flex: 1;*/
-      margin-bottom: 5px;
       max-height: 50px;
       .act-sign-up{
         display: flex;
@@ -334,10 +332,13 @@ body{
       }
           }
         .act-img{
-         margin: 0 5%;
+          text-align: center;
+          height: 400px;
+          img{
+            height: 100%;
+          }
        }
         .act-img02{
-         /* background: url("/images/activity/activity4.jpg") no-repeat;*/
           display: flex;
           flex-direction: column;
           height: 401px;
@@ -345,6 +346,14 @@ body{
           .act-evaluate03{
             position: absolute;
             z-index: 0;
+            height: 400px;
+            .act-img{
+              text-align: center;
+              height: 400px;
+              img{
+                height: 100%;
+              }
+            }
           }
           .act-evaluate01{
             z-index: 1;
@@ -356,7 +365,6 @@ body{
             height: 235px;
             background: url("/images/activity/white.png") no-repeat center;
             justify-content: center;
-            margin-top: 5%;
             span{
                 display: flex;
                 align-items: center;
