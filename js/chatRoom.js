@@ -53,8 +53,8 @@ $(document).ready(function () {
 
     // 关注和粉丝页面
     var fans = true;
-    $('.cancel').on('click', function(evevt){
-        event.stopPropagation();
+    $('.attention-click').on('click', '.cancel', function(){
+
         if (fans) {
             $(this).text('关注');
             fans = false;

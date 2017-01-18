@@ -191,6 +191,7 @@ header{
         margin-top: 10px;
         height: 40px;
         .want-join{
+          display: inline-block;
           width: 116px;
           height: 38px;
           line-height: 38px;
@@ -276,10 +277,12 @@ header{
           display: flex;
           flex-direction: column;
           .first-third{
+            display: block;
             width: 318px;
             height: 399px;
           }
           .second-fourth{
+            display: block;
             width: 250px;
             height: 229px;
           }
@@ -329,12 +332,14 @@ header{
             margin-top: 15px;
             font-size: 0;
             .two{
+              display: inline-block;
               width: 184px;
               height: 277px;
               margin-right: 15px;
             }
           }
           .three{
+            display: block;
             width: 300px;
             height: 452px;
           }
@@ -358,6 +363,7 @@ header{
             height: 452px;
           }
           .two-three{
+            display: block;
             width: 500px;
             height: 282px;
           }
