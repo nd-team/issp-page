@@ -124,21 +124,24 @@ body{
           position: relative;
           display: flex;
           flex-direction: column;
-          background: url("/images/activity/activity1.jpg") no-repeat;
-         /* background-size: 100% auto;*/
           height:401px;
+          .act-evaluate03{
+            position: absolute;
+            z-index: 0;
+          }
           .act-evaluate01{
-               font-size: 35px;
-               display: flex;
-               flex: 1;
-               flex-direction: column;
-               height: 235px;
-               background: url("/images/activity/black.png") no-repeat center;
-               justify-content:center;
-               margin:{
-                 top:5%;
-
-               };
+    /*        position: absolute;*/
+            z-index: 1;
+            font-size: 35px;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            height: 235px;
+            background: url("/images/activity/black.png") no-repeat center;
+            justify-content:center;
+            margin:{
+              top:5%;
+            };
                span{
                  display: flex;
                  align-items: center;
@@ -334,12 +337,17 @@ body{
          margin: 0 5%;
        }
         .act-img02{
-          background: url("/images/activity/activity4.jpg") no-repeat;
+         /* background: url("/images/activity/activity4.jpg") no-repeat;*/
           display: flex;
           flex-direction: column;
           height: 401px;
           margin: 0 5%;
+          .act-evaluate03{
+            position: absolute;
+            z-index: 0;
+          }
           .act-evaluate01{
+            z-index: 1;
             font-size: 35px;
             color: #000000;
             display: flex;
@@ -358,7 +366,6 @@ body{
          }
         .act-img03{
           @extend .act-img02;
-          background: url("/images/activity/activity5.jpg") no-repeat;
         }
        }
       }
