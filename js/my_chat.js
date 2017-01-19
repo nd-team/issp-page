@@ -3,7 +3,7 @@ $(function(){
     $('.group-all').on('click', function(){
         $('.module').show();
     });
-    $('.close').on('click', '.close_module', function(){
+    $('.close').on('click', function(){
         $('.module').hide();
         $('.module-two').hide();
         $('.module-next').hide();
