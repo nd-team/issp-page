@@ -225,9 +225,9 @@ body{
               }
               .time{
                 color: #666;
-                padding: {
+              /*  padding: {
                   top:8px;
-                };
+                };*/
               }
             }
             .appeal{
@@ -536,6 +536,7 @@ body{
   }
   .m-con {
       display: none;
+   /*   overflow: hidden;*/
       max-width: 600px;
       max-height: 750px;
     /*overflow: hidden;*/
@@ -546,10 +547,12 @@ body{
     /*  display: inline-block;*/
       /*max-width: 600px;
       max-height: 800px;*/
+    /*  max-width: 600px!important;
+      max-height: 750px;*/
       max-height: 750px;
       border: 12px solid white;
       border-radius: 5px;
-/*      position: relative;*/
+      box-shadow:0 0 10px rgba(255, 255, 255, 0.71);
     }
     .close{
       padding: 2px 5px;
