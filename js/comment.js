@@ -39,10 +39,10 @@
 });
     $(".content").find(".comment-bot button").click(function() {
     var evaluate = $(".comment-input").text();
-    if (evaluate == "") {
+/*    if (evaluate == "") {
     alert("你还没有输入任何评价的内容");
     return;
-}
+}*/
     $(".contents").prepend(
     "<div class='d-main'>"+
     "<div class='d-author'>"+
@@ -50,17 +50,17 @@
     "<li class='user-inform'>"+
     "<a href='javascript:void(0)'>"+
     "<img src='/images/reward/name-icon.png'/>"+
-    "<i>"+"鹿晗"+"</i>"+
+    "<i>"+"李剑辉"+"</i>"+
     "</a>"+
     "<a href='javascript:void(0)'>"+
     "<img src='/images/reward/position.png'/>"+
-    "<i>"+"歌手,影视明星"+"</i>"+
+    "<i>"+"前端工程师"+"</i>"+
     "</a>"+
     "</li>"+
     "<li class='user-pic'>"+"<img src='/images/reward/user-name4.png'/>"+"</li>"+
     "<li class='user-explain'>"+
-    "<p>"+"公司：MW文化传播娱乐有限公司"+"</p>"+
-    "<p>"+"经验:123456"+"</p>"+
+    "<p>"+"公司：北京艾佳天城有限公司"+"</p>"+
+    "<p>"+"经验:123"+"</p>"+
     "</li>"+
 
     "</ul>"+
@@ -72,7 +72,7 @@
     "<img src='/images/reward/date.png'/>"+
     "</li>"+
     "<li class='datetime'>"+"发表于"+"<i>"+year+"-"+month+"-"+day+"<i>"+hour+":"+min+":"+second+"</i>"+"</span>"+"</li>"+
-    " <li class='reply-num'>"+"<button>"+"回复"+"<i>"+256+"</i>"+"</button>"+"<button>"+"赞"+"<i>"+256+"</i>"+"</button>"+"</li>"+
+    " <li class='reply-num'>"+"<button>"+"回复"+"<i>"+0+"</i>"+"</button>"+"<button>"+"赞"+"<i>"+0+"</i>"+"</button>"+"</li>"+
     "</ul>"+
     "<div class='reply_01'>"+evaluate+"</div>"+
     "</div>");

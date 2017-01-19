@@ -18,8 +18,6 @@ $(document).ready(function(){
             }
         });
     }
-
-
     //个人消息
     function daily(){
         $('.daily .dail-list a').click(function(){
@@ -33,67 +31,18 @@ $(document).ready(function(){
             $('#modal').hide();
             $('#modalbg').hide();
         })
-
-        //分页
-        var pageLen = $('.daily .page .page-list a').length;
-        $('.daily .page .page-list a').click(function(){
-            var current = $(this).index();
-            $('.daily .page button').removeClass('disabled');
-            $(this).addClass('active').siblings().removeClass('active');
-            if(current=="0"){
-                $('.daily .page .prev,.daily .page .first').addClass('disabled');
-            }else if(current>=pageLen-1){
-                $('.daily .page .next,.daily .page .end').addClass('disabled');
-            }
-        });
-        $('.daily .page button').on("click",function(){
-            var btnName = $(this).attr('class');
-            var ind = $('.daily .page .page-list .active').index();
-            $('.daily .page .page-list a').removeClass('active');
-            $('.daily .page button').removeClass('disabled');
-            if(btnName=="first"){
-                $(this).addClass('disabled');
-                $('.daily .page .prev').addClass('disabled');
-                $('.daily .page .page-list a').eq(0).addClass('active');
-            }else if(btnName=="end"){
-                $('.daily .page .page-list a').eq(pageLen-1).addClass('active');
-                $(this).addClass('disabled');
-                $('.daily .page .next').addClass('disabled');
-            }else if(btnName=="prev"){
-                    ind--;
-                    if(ind<=0){
-                        ind=0;
-                        $(this).addClass('disabled');
-                        $('.daily .page .first').addClass('disabled');
-                    }
-                    $('.daily .page .page-list a').eq(ind).addClass('active').siblings().removeClass('active');
-            } else if(btnName=="next"){
-                ind++;
-                if(ind>=pageLen-1){
-                    ind = pageLen-1;
-                    $(this).addClass('disabled');
-                    $('.daily .page .end').addClass('disabled');
-                }
-                $('.daily .page .page-list a').eq(ind).addClass('active').siblings().removeClass('active');
-            }
-        });
-        $('.daily .page .jump a').click(function(){
-            var val = $('.daily .page .jump input').val();
-            if(val>pageLen||val<="0"){
-                return
-            }else {
-                $('.daily .page button').removeClass('disabled');
-                if(val=="1"){
-                    $('.daily .page .prev,.daily .page .first').addClass('disabled');
-                }else if(val>=pageLen){
-                    $('.daily .page .next,.daily .page .end').addClass('disabled');
-                }
-                $('.daily .page .page-list a').eq(val-1).addClass('active').siblings().removeClass('active');
-            }
-        })
     }
 
-    daily();
+//分页
+    laypage({
+        cont: 'pages', //容器。值支持id名、原生dom对象，jquery对象,
+        pages: 10, //总页数
+        first: 1, //将首页显示为数字1,。若不显示，设置false即可
+        last: 10, //将尾页显示为总页数。若不显示，设置false即可
+        prev: '上一页', //若不显示，设置false即可
+        next: '下一页', //若不显示，设置false即可
+        skip:true,
+        skin:'#05afe2'//皮肤
+    });
     nav();
-
 });

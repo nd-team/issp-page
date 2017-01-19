@@ -6,7 +6,6 @@
   padding:0 5%;
 
   .item{
-    display:flex;
     font-size:0.875rem;
     padding:1.875rem 0;
     border-bottom:1px solid #f6f6f6;
@@ -201,8 +200,8 @@
         flex-direction:column;
         .piclayout{
           display:flex;
-          justify-content: space-between;
-          flex:1;
+          //justify-content: space-between;
+          //flex:1;
           .updataimg{
             width:10rem;
             p{
@@ -232,6 +231,7 @@
             }
           }
           .imglay{
+            margin-left:20px;
             align-items:flex-start;
             dt{
               margin-top:5px;
@@ -273,6 +273,7 @@
           margin:1rem 0.5rem;
           figure{
             position:relative;
+            width:100%;
             &:hover{
               .mask{
                 display:block;
@@ -305,6 +306,7 @@
             }
             img{
               max-height:14.5rem;
+              max-width:100%;
             }
           }
 
@@ -348,7 +350,7 @@
                 width:100%;
                 height:100%;
               }
-              &.lay4{
+              &.lay6{
                 display:block;
               }
               .imglay4{
