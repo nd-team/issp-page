@@ -32,16 +32,13 @@ $(document).ready(function(){
             $('#modalbg').hide();
         })
     }
-    
-    var dailyLen = $('.daily').children('.dail-list').length;
-    var dailypage =Math.ceil(dailyLen/20);
 
 //分页
     laypage({
         cont: 'pages', //容器。值支持id名、原生dom对象，jquery对象,
-        pages: dailypage, //总页数
+        pages: 10, //总页数
         first: 1, //将首页显示为数字1,。若不显示，设置false即可
-        last: dailypage, //将尾页显示为总页数。若不显示，设置false即可
+        last: 10, //将尾页显示为总页数。若不显示，设置false即可
         prev: '上一页', //若不显示，设置false即可
         next: '下一页', //若不显示，设置false即可
         skip:true,
