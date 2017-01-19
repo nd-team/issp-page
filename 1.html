@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="/js/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<li class="world_map"><img src="/images/avatar.jpg" id="b_sjdt" width="230" height="170" alt="世界地图"/><br />
+    世界地图</li>
+<script>
+
+    $(".world_map img").click(function(){
+        var id=$(this).attr("id");//获取图片的id;
+        window.open("img_zhinan/"+id+ ".jpg","","toolbar=no,scrollbars=no,menubar=no");//打开一个新的窗口，在新的窗口显示图片的本来大小
+    })
+</script>
+</body>
+</html>
