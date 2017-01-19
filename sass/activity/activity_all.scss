@@ -334,8 +334,10 @@ body{
         .act-img{
           text-align: center;
           height: 400px;
+          display: block;
+          margin: 0 auto;
           img{
-            height: 100%;
+            max-height: 400px;
           }
        }
         .act-img02{
@@ -343,6 +345,7 @@ body{
           flex-direction: column;
           height: 401px;
           margin: 0 5%;
+          position: relative;
           .act-evaluate03{
             position: absolute;
             z-index: 0;
@@ -351,7 +354,7 @@ body{
               text-align: center;
               height: 400px;
               img{
-                height: 100%;
+                max-height: 400px;
               }
             }
           }
@@ -360,15 +363,20 @@ body{
             font-size: 35px;
             color: #000000;
             display: flex;
-            flex: 1;
             flex-direction: column;
             height: 235px;
+            width: 369px;
             background: url("/images/activity/white.png") no-repeat center;
             justify-content: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -186px;
+            margin-top: -125px;
+            vertical-align: middle;
             span{
-                display: flex;
-                align-items: center;
-                justify-content: center;
+              display: block;
+              text-align: center;
             }
           }
          }
