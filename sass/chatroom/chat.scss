@@ -21,9 +21,6 @@ html,body{
 ::-webkit-scrollbar{
   display: none;
 }
-//::-webkit-scrollbar-thumb{
-//  display: none;
-//}
 h1,h2,h3,h4,h5,h6{
   font-weight: normal;
 }
@@ -227,17 +224,14 @@ svg{
     width: 900px;
     height: 100%;
     overflow: hidden;
-    //display: flex;
-    //flex-direction: column;
     .content-head{
       height: 50px;
       background-color: #d1dee9;
-      //line-height: 50px;
+      line-height: 50px;
       display: flex;
       justify-content: center;
       align-items: center;
       h5{
-        //height: 50px;
         flex: 1;
         text-align: center;
         font-size: 16px;
@@ -379,7 +373,6 @@ svg{
         border: 0 none;
         color: #333;
         font-size: 13px;
-        //height: 80px;
       }
       .send{
         display: flex;
