@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>奖励圈</title>
     <link rel="stylesheet" href="/css/reward/reward_circle.css">
 </head>
@@ -35,7 +36,7 @@
                     <use xlink:href="#bbs"></use>
                 </svg>
             </a>
-            <a href="/pages/chatRoom/private_chat.html" class="icon-text">聊天室</a>
+            <a href="/pages/chatRoom/moving.html" class="icon-text">聊天室</a>
         </li>
         <li>
             <a href="/pages/activity/activity_all.html">
@@ -479,6 +480,14 @@
 <div class="footer">
     <div class="load">正在加载中...</div>
 </div>
+<ul class="oldPlat">
+    <li>
+        <a href="javascript:void(0)">返回issp平台</a>
+    </li>
+    <li>
+        <a href="javascript:void(0)">返回生活价值平台</a>
+    </li>
+</ul>
 <script src="/js/jquery-2.1.1.min.js"></script>
 <script src="/js/common.js"></script>
 <script>
@@ -488,6 +497,9 @@
             $('#modalbg').show();
             $('#modal').show();
             $('#modal .'+dataTitle).show();
+            var h =$('#modal .'+dataTitle).height();
+            $('#modal .'+dataTitle).css('margin-top',-h/3)
+
         });
         $('.close').click(function(){
             $(this).parents('.m-con').hide();
