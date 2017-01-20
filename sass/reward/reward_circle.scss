@@ -119,6 +119,8 @@ body{
     max-width: 380px;
     ul{
       display: flex;
+      display: -ms-flexbox;
+     /* -ms-flex-direction: column;*/
       flex-direction: column;
       width: 100%;
       li{
@@ -131,12 +133,16 @@ body{
         };
         &.infringement1{
           display: flex;
+          display: -ms-flexbox;
           flex-direction: column;
         /*  flex: 1;*/
           background-color: #f7f7f7;
           border: 1px solid #ebebeb;
           box-shadow:1px 1px 1px rgba(102, 102, 102, .25);
           span{
+            /*display: -ms-flexbox;
+            -ms-flex: 1;  */
+            display: block;
             padding: {
               bottom: 25px;
             };
@@ -154,7 +160,7 @@ body{
           p{
             font-size: 14px;
             &:nth-of-type(1){
-              display: flex;
+            /*  display: flex;*/
               margin: {
                 bottom: 20px;
               };
@@ -218,6 +224,7 @@ body{
 
               }
               .name2{
+                display: block;  /*ie10*/
                 color: #92b0d2;
                 padding: {
                   top:6px;
@@ -250,6 +257,7 @@ body{
           justify-content: center;
           align-items: center;
           .has-been-praised{
+            display: block;
             color: #ef434c;
             border:1px solid #ef434c;
             border-radius: 50%;
@@ -273,6 +281,7 @@ body{
             }
           }
           .circle{
+            display: block;
             border:1px solid #000;
             color: #484848;
             border-radius: 50%;
@@ -449,6 +458,7 @@ body{
            top: 14px;
          };
          span{
+           display: block;
            .top{
              color: #5286c2;
              padding-right: 9px;
@@ -456,9 +466,17 @@ body{
            em{
              padding-right: 9px;
            }
-           &:nth-of-type(1){ flex: 0.8}
-           &:nth-of-type(2){ flex: 1.9}
-           &:nth-of-type(3){ flex: 0.5}
+           &:nth-of-type(1){
+             flex: 0.8;
+             width: 89.5px;
+           }
+           &:nth-of-type(2){
+             flex: 1.9;
+             width: 212.56px;
+           }
+           &:nth-of-type(3){
+             flex: 0.5;
+           }
            .new{
              font-size: 12px;
              text-align: center;
@@ -528,7 +546,7 @@ body{
     display: none;
     /*width: 60%;*/
     position: fixed;
-    top:25%;
+    top:50%;
     left:40%;
     margin-left:-101px;
     margin-top:-101px;

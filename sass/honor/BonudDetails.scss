@@ -2,6 +2,10 @@
 body{
   background-color: white;
 }
+/*.banner{
+  position: relative;
+  z-index: 0;
+}*/
 .content {
   display: flex;
   flex: 1;
@@ -67,6 +71,7 @@ body{
               color: #ffa10b;
             }
             &:after{
+              display: block;
               content: '';
               width: 88px;
               border: 1px solid #ffa10b;
@@ -202,16 +207,18 @@ body{
             border-bottom: 0;
           }
           .x{
+            display: block;
             width: 50px;
             text-align: center;
             img{
               margin-bottom: 6px;
             }
-            padding: {
+           padding: 10px 20px 0 15px;
+          /*  padding: {
               top:10px;
               right: 20px;
               left: 15px;
-            };
+            };*/
           }
           .like-text{
             flex: 1;
@@ -272,11 +279,12 @@ body{
       }
   }
     .content-right {
-      flex: 0 0 25%;
+      position: relative;
       max-width: 312px;
       width: 26%;
       margin-top: -89px;
       background-color: white;
+      z-index: 1;
       .attention{
         box-shadow:0 0 10px #eae9e9;
         padding-top: 37px;
@@ -294,6 +302,7 @@ body{
           &.already{
             margin-top: 40px;
             a{
+              display: block;
               width: 100%;
               height: 50px;
               line-height: 50px;
@@ -306,6 +315,7 @@ body{
             }
           }
           strong{
+            display: block;
             font:{
               weight: bold;
               size: 20px;

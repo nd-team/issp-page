@@ -44,11 +44,15 @@ body{
          display: flex;
          margin-top: 40px;
           li{
-            display: flex;
+            /*display: flex;*/
+            /*position: relative;*/
             flex-direction: column;
             justify-content: space-between;
             flex: 1;
+            width: 330px;
+            min-width: 330px;
             max-width: 330px;
+            height: 360px;
             box-shadow: 0 0 10px #e5e5e5;
             margin: {
               right: 76px;
@@ -61,8 +65,18 @@ body{
               margin-right: 0;
             }
            .honor01{
+                display: block;
+                width: 100%;
                 position: relative;
-               margin-bottom: 30px;
+             i{
+               display: block;
+               text-align: center;
+               margin: 0 auto;
+                img{
+                  height: 140px;
+               }
+             }
+              /* margin-bottom: 30px;*/
              .current{
                position: absolute;
                bottom:-25px;
@@ -73,6 +87,7 @@ body{
               text-align: left;
               margin: 0 17px;
               &:nth-of-type(1){
+                margin-top: 30px;
                 font:{
                   size: 12px;
                   weight: bold;
@@ -80,6 +95,10 @@ body{
                 margin-bottom: 7px;
               }
               &:nth-of-type(2){
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space:nowrap;
+               /* max-width: 296px;*/
                 margin-bottom: 11px;
                 font:{
                   size: 16px;
@@ -87,7 +106,16 @@ body{
                 }
               }
               &:nth-of-type(3){
-                line-height: 19px;
+                overflow : hidden;
+                height: 78px;
+         /*       text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 5;
+                -webkit-box-orient: vertical;
+                white-space:nowrap;*/
+                line-height: 16px;
+                /*text-align:justify;
+                text-align-last:justify;*/
                 font:{
                   size: 12px;
                 }
@@ -95,10 +123,18 @@ body{
               }
             }
             .detail{
+              display: block;
+              margin: {
+                left: 15px;
+                top:12px;
+              };
+           /*   position: absolute;
+              left: 15px;
+              bottom: 16px;*/
               width: 122px;
               height: 28px;
               line-height: 28px;
-              margin: 15px 0 20px 17px;
+             /* margin: 15px 0 0 17px;*/
               background: #80A8CC;
               color: white;
               text-align: center;
