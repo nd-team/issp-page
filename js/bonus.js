@@ -4,7 +4,7 @@
 $(document).ready(function(){
     $('.article ul li').click(function() {
         $(this).addClass('now').siblings().removeClass('now');
-        $('.text>p:eq(' + $(this).index() + ')').show().siblings().hide();
+        $('.text>div:eq(' + $(this).index() + ')').show().siblings().hide();
     })
     $(".like").click(function () {
         $(this).toggleClass("nowa");

@@ -2,6 +2,12 @@
 body{
   background-color: white;
 }
+header{
+  z-index: 3;
+}
+button{
+  outline:none;
+}
 /*.banner{
   position: relative;
   z-index: 0;
@@ -88,10 +94,11 @@ body{
       line-height: 26px;
       margin: 20px 30px;
       text-align: justify;
-      p{
-        &:nth-of-type(2){
+     .text_02{
            display: none;
-        }
+      }
+      .text_img{
+        text-align: center;
       }
     }
     .like {
