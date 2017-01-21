@@ -482,7 +482,7 @@
 </div>
 <ul class="oldPlat">
     <li>
-        <a href="javascript:void(0)">返回issp平台</a>
+        <a href="https://issp.bjike.com/admin/login">返回issp平台</a>
     </li>
     <li>
         <a href="javascript:void(0)">返回生活价值平台</a>
@@ -490,41 +490,6 @@
 </ul>
 <script src="/js/jquery-2.1.1.min.js"></script>
 <script src="/js/common.js"></script>
-<script>
-    $(function() {
-        $('b[data-title]').click(function(){
-            var dataTitle = $(this).attr("data-title");
-            $('#modalbg').show();
-            $('#modal').show();
-            $('#modal .'+dataTitle).show();
-            var h =$('#modal .'+dataTitle).height();
-            $('#modal .'+dataTitle).css('margin-top',-h/3)
-
-        });
-        $('.close').click(function(){
-            $(this).parents('.m-con').hide();
-            $('#modal').hide();
-            $('#modalbg').hide();
-        });
-
-            /*
-                    $(".m-con img").height();
-                    var div1W = $('.m-con img').width();
-                    var div2 = $('.m-con');
-                    div2.css('width',div1W);*/
-
-    });
-
-
-
-/*    var popHeight = $('.m-con img').height();
-    var popWidth = $('.m-con img').width();
-    $('.m-con').width( popWidth);*/
-    /*$(".m-con img").height();
-     var div1W = $('.m-con img').Width();
-     var div2 = $('.m-con');
-     div2.css('width',div1W);*/
-
-</script>
+<script src="/js/bonus.js"></script>
 </body>
 </html>
