@@ -57,6 +57,21 @@ $(document).ready(function(){
         $(this).addClass('current').siblings().removeClass('current');
         $('.rank-right>table:eq(' + $(this).index() + ')').show().siblings().hide();
     })
+   //奖励圈
+    $('b[data-title]').click(function(){
+        var dataTitle = $(this).attr("data-title");
+        $('#modalbg').show();
+        $('#modal').show();
+        $('#modal .'+dataTitle).show();
+        var h =$('#modal .'+dataTitle).height();
+        $('#modal .'+dataTitle).css('margin-top',-h/3)
+
+    });
+    $('.close').click(function(){
+        $(this).parents('.m-con').hide();
+        $('#modal').hide();
+        $('#modalbg').hide();
+    });
 
 
 });
