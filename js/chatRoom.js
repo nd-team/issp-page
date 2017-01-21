@@ -21,7 +21,7 @@ $(document).ready(function () {
 
     $(".info-tab").myTab({parent:".tab-content",index:0});
 
-    $('.avatar').on('click', '.editor', function(){
+    $('.editor').on('click', function(){
         $(".modify-modal").show();
     });
     $(".close").on('click', function(){

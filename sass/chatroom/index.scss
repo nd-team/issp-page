@@ -29,6 +29,9 @@
         text-align: center;
         cursor: pointer;
         align-content: center;
+        &:last-child{
+          width: 313px;
+        }
         &.current{
           border-bottom: 5px solid #80a8cc;
         }
