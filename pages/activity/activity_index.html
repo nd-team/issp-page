@@ -7,10 +7,18 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta name="keywords" content="活动首页">
     <meta name="description" content="活动首页">
+    <script language="javascript" type="text/javascript">
+        function showAllContent(status1,status2){
+            document.getElementById("showLoad").style.display=status1;
+            document.getElementById("showContent").style.display=status2;
+        }
+    </script>
     <link rel="stylesheet" href="/css/activity/activity_index.css">
     <link rel="stylesheet" href="/js/libs/fulpages/jquery.fullPage.css">
 </head>
-<body>
+<body onLoad='showAllContent("","none")'>
+<div id="showLoad" ></div>
+<div id="showContent">
     <header>
         <a href="javascript:void(0)" class="chat-life" title="生活价值平台">
             <img src="/images/activity/logo.png" alt="">
@@ -180,11 +188,11 @@
         <section class="section fulpage7">
             <div class="wrap wrap-r">
                 <div class="page-img">
-                   <div class="img-t">
-                       <img src="/images/activity/boss.png" alt="" class="boss">
-                       <img src="/images/activity/boss-shadow.png" class="bosshadow" alt="">
-                       <img src="/images/activity/talk02.png" class="talk02" alt="">
-                   </div>
+                    <div class="img-t">
+                        <img src="/images/activity/boss.png" alt="" class="boss">
+                        <img src="/images/activity/boss-shadow.png" class="bosshadow" alt="">
+                        <img src="/images/activity/talk02.png" class="talk02" alt="">
+                    </div>
                     <div class="img-b">
                         <img src="/images/activity/woeker.png" alt="" class="worker">
                         <img src="/images/activity/talk.png" class="talk" alt="">
@@ -240,14 +248,17 @@
             <a href="javascript:void(0)">返回生活价值平台</a>
         </li>
     </ul>
-    <script src="/js/common.js"></script>
-    <script src="/js/jquery-2.1.1.min.js"></script>
-    <script src="/js/libs/fulpages/jquery.fullPage.min.js"></script>
-    <script src="/js/libs/voxels/Detector.js"></script>
-    <script src="/js/libs/voxels/RequestAnimationFrame.js"></script>
-    <script src="/js/libs/voxels/Stats.js"></script>
-    <script src="/js/libs/voxels/Three.js"></script>
-    <script src="/js/activity_index.js"></script>
-    <script src="/js/activity_index_m.js"></script>
+
+</div>
+<script src="/js/common.js"></script>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/libs/fulpages/jquery.fullPage.min.js"></script>
+<script src="/js/libs/voxels/Detector.js"></script>
+<script src="/js/libs/voxels/RequestAnimationFrame.js"></script>
+<script src="/js/libs/voxels/Stats.js"></script>
+<script src="/js/libs/voxels/Three.js"></script>
+<script src="/js/activity_index.js"></script>
+<script src="/js/activity_index_m.js"></script>
 </body>
 </html>
+<script>showAllContent("none","");</script>
