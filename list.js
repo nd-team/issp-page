@@ -21,7 +21,7 @@ function getFilenames (dir, regexp, recursive) {
         }
         if (regexp && !regexp.test(filename)) return
         files.push(fullPath)
-    })
+    });
     return files
 }
 var html="<ul id='list'>";
@@ -40,4 +40,4 @@ fs.writeFile('./list.txt',html,function(err){
         return console.error(err);
     }
     console.log("数据写入成功！");
-})
+});
