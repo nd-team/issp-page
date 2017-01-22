@@ -8,11 +8,12 @@ button{
 body{
  min-width: 1200px;
  overflow-x: hidden;
+  background-color: #f8f8f8;
 }
 .banner{
    width:100%;
    height: 389px;
-  background-image: url('/images/honor/banner.jpg');
+  background-image: url('/images/honor/banner1.png');
   margin-top: 3%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -39,16 +40,18 @@ body{
   flex: 1;
   flex-direction: column;
   height: auto;
-  width: 1100px;
+  width: 1142px;
   margin: 0 auto;
      .center-like{
        flex: 1;
+       margin-top: 40px;
        ul{
          display: flex;
-         margin-top: 40px;
+         /*margin-top: 40px;*/
           li{
             /*display: flex;*/
             /*position: relative;*/
+            background-color: white;
             flex-direction: column;
             justify-content: space-between;
             flex: 1;
@@ -75,8 +78,16 @@ body{
                display: block;
                text-align: center;
                margin: 0 auto;
-                img{
+               max-height: 154px;
+               overflow: hidden;
+               /*vertical-align: middle;*/
+              /* box-shadow:3px 0px 3px 0px rgba(0,0,0, .5);*/
+              /* box-shadow:-20px -2px 15px -13px #000 inset;*/
+              /* box-shadow: 17px 10px 0 -8px #ff8c1a inset;*/
+               box-shadow: 0 2px 5px #eeeeee;
+               img{
                   height: 140px;
+                  border: 5px solid white;
                }
              }
               /* margin-bottom: 30px;*/
@@ -110,7 +121,7 @@ body{
               }
               &:nth-of-type(3){
                 overflow : hidden;
-                height: 78px;
+                height: 65px;
          /*       text-overflow: ellipsis;
                 display: -webkit-box;
                 -webkit-line-clamp: 5;
@@ -160,8 +171,13 @@ body{
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 40px 0;
-      background-color: #fff;
+     /* padding: 20px 0;*/
+       padding: {
+         top:30px;
+         bottom: 15px;
+       };
+     /*  margin-top: -40px;*/
+       background-color: #fff;
       li{
         text-align: center;
         line-height: 26px;
@@ -184,5 +200,9 @@ body{
       }
     }
   }
+footer{
+  box-shadow: 0 -2px 2px #eeeeee;
+  margin-top: 3px;
+}
 
 
