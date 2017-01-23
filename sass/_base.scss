@@ -155,6 +155,9 @@ header{
         width:2.8125rem;
         height:2.8125rem;
         display: block;
+        img{
+          border-radius: 50%;
+        }
       }
       .modal-box{
         position: absolute;
