@@ -63,16 +63,47 @@ $(document).ready(function(){
         $('#modalbg').show();
         $('#modal').show();
         $('#modal .'+dataTitle).show();
-        var h =$('#modal .'+dataTitle).height();
-        $('#modal .'+dataTitle).css('margin-top',-h/3)
+        var modal1 = document.getElementById("modal");
+        var sWidth=$(document.body).scrollWidth;
+        var wHeight=$(window).height();
+        var dWidth = $("#modal").outerWidth();
+        var dHeight = $("#modal").outerHeight();
+        modal1.style.left=sWidth/2-dWidth/2+"px";
+        modal1.style.top=wHeight/2-dHeight/2+"px";
 
     });
+    var x=$("b[data-title]").length;
+    var idStr = "";
+    var idList = new Array();
+        for (var i = 0; i <x; i++) {
+            var id = "issue" + (i+1);
+            var tem = "";
+            tem += "<img src='/images/reward/b"+parseInt(i+1)+".jpg'><a href='javascript:void(0)' class='close'>关闭</a>";
+            var div = $("<div class='" + id + " m-con'>" + tem + "</div>");
+            $("#modal").append(div);
+            idStr += id + " ";
+            idList.push(id);
+        }
+        var eachId = "";
+        $("#modal >div").each(function() {
+            eachId += $(this).attr("id") + " ";
+        });
+
+        var listId = "";
+        for (var key in idList) {
+            listId += idList[key] + " ";
+        }
     $('.close').click(function(){
         $(this).parents('.m-con').hide();
         $('#modal').hide();
         $('#modalbg').hide();
     });
-
+           /*  var len = $(".m-con img").length;
+             var tem = "";
+             for(i=0;i<=len;i++){
+                 tem += "<div class='issue"+parseInt(i+1)+" m-con'><img src='/images/reward/b"+parseInt(i+1)+".jpg'><a href='javascript:void(0)' class='close'>关闭</a></div>";
+             }
+             $("#modal").append(tem);*/
 
 });
 
