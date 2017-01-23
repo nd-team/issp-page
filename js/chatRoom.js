@@ -81,18 +81,13 @@ $(document).ready(function () {
 
     });
 
-    $('li').hover(function () {
-
-    }),function () {
-
-    };
 
     // 模态框头像截取
     $(window).load(function () {
         var options = {
             thumbBox: '.thumbBox',
             spinner: '.spinner',
-            imgSrc: 'images/avatar.jpg'
+            imgSrc: '/images/avatar.jpg'
         };
         var cropper = $('.imageBox').cropbox(options);
         $('#upload-file').on('change', function () {
