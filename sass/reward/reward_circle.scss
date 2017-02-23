@@ -5,6 +5,7 @@ button{
 body{
   min-width: 841px;
   overflow-x: hidden;
+  background-color: white;
 }
 .header-bottom{
   flex: 1;
@@ -338,6 +339,7 @@ body{
             flex-direction: column;
             height: 170px;
             overflow: hidden;
+            border-bottom: 3px solid white;
             /*  img:hover{
                 -webkit-transform:rotate(0deg) scale(2.5);
                  -ms-transform:rotate(0deg) scale(2.5);
@@ -351,7 +353,7 @@ body{
               display:flex;
               justify-content:center;
               align-items:center;
-              margin: 10px 0;
+             /* margin: 10px 0;*/
             }
             &:nth-of-type(2){
               img{
@@ -542,32 +544,24 @@ body{
       }
     }
    }
+
+
+
+
   #modal {
     display: none;
-    /*width: 60%;*/
     position: fixed;
-    top:50%;
-    left:40%;
-    margin-left:-101px;
-    margin-top:-101px;
     z-index: 1001;
   }
   .m-con {
       display: none;
-   /*   overflow: hidden;*/
-      max-width: 600px;
+    /*  max-width: 600px;*/
       max-height: 750px;
-    /*overflow: hidden;*/
     white-space: nowrap;
-   /* display: inline-block;*/
-    position: relative;
+
     img{
-    /*  display: inline-block;*/
-      /*max-width: 600px;
-      max-height: 800px;*/
-    /*  max-width: 600px!important;
-      max-height: 750px;*/
       max-height: 750px;
+      position: relative;
       border: 12px solid white;
       border-radius: 5px;
       box-shadow:0 0 10px rgba(255, 255, 255, 0.71);
