@@ -229,20 +229,38 @@ header{
 //返回就平台
 .oldPlat{
   position:fixed;
-  right:0;
+  right:-110px;
   top:100px;
   background:rgba(0,0,0,0.5);
   padding:5px;
-  border-bottom-left-radius:10px;
-  border-top-left-radius:10px;
-  li{
-    a{
+  border-bottom-left-radius:30px;
+  border-top-left-radius:30px;
+  transition:1s;
+  .wrap{
+    display:flex;
+    span{
+      width:16px;
+      height:100%;
       color:#fff;
-      font-size:12px;
-      &:hover{
-        color:#0dd5ec;
+      padding:0 10px;
+      transition:1s;
+    }
+    ul{
+      width:100px;
+      li{
+        a{
+          color:#fff;
+          font-size:12px;
+          &:hover{
+            color:#0dd5ec;
+          }
+        }
       }
     }
+  }
+  &:hover{
+    right:0;
+    transition:1s;
   }
 }
 
