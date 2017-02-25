@@ -544,24 +544,24 @@ body{
       }
     }
    }
-
-
-
-
   #modal {
     display: none;
     position: fixed;
     z-index: 1001;
+    /*left:50%;
+    top:10%;
+    margin-left: -15%;*/
   }
   .m-con {
+     /* position: relative;*/
       display: none;
-    /*  max-width: 600px;*/
-      max-height: 750px;
-    white-space: nowrap;
-
+      max-width: 524px;
+      max-height: 700px;
+      white-space: nowrap;
     img{
-      max-height: 750px;
-      position: relative;
+      max-height: 700px;
+      max-width: 500px;
+     /* position: relative;*/
       border: 12px solid white;
       border-radius: 5px;
       box-shadow:0 0 10px rgba(255, 255, 255, 0.71);
@@ -593,8 +593,6 @@ body{
     right: 0;
     z-index: 1000;
   }
-
-
  }
 .footer{
    text-align: center;
