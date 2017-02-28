@@ -273,24 +273,22 @@ body{
           &:hover{
             .bg{
               transform: rotateX(90deg);
-              top: 2px;
+              p{
+                height: 245px;
+              }
             }
           }
           .bg{
             width: 100%;
             height: 250px;
-            padding: 0 10px;
             position: relative;
             transform-style: preserve-3d; //设置变换属性为3D，只对子元素有效
             transform: rotateX(0deg);
             transition: all 0.5s ease-out;
-            //display: flex;
-            //flex-direction: column;
-            left: -20px;
             p{
               //flex: 2;
               width: 100%;
-              height: 250px;
+              height: 232px;
               position: absolute;
               display: flex;
               justify-content: center;
@@ -395,10 +393,10 @@ body{
                 visibility: hidden;
               }
               &:nth-child(1){
-                  transform: translateZ(125px);
+                  transform: translateZ(122px);
                 }
                 &:nth-child(2){
-                  transform: rotateX(-90deg) translateZ(125px);
+                  transform: rotateX(-90deg) translateZ(118px);
                 }
 
               a{
