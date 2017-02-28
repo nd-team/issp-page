@@ -257,7 +257,6 @@ body{
         right: 120px;
       }
       background-color: #dcdcdc;
-
       .one-line{
         display: flex;
         justify-content: center;
@@ -265,124 +264,166 @@ body{
         li{
           flex: 1;
           height: 250px;
-          @extend .one-line;
-          flex-direction: column;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           cursor: pointer;
-          border: {
-            right: 1px;
-            bottom: 1px;
-            style: solid;
-            color: #fff;
-          }
-          transition: transform 1s ease-in;
+          perspective-origin:50% 50%;  //建立一个3D场景，这里以每个li标签为3D场景（透视效果，只影响子元素）
+          perspective:2000px;//这个是观察的视角，类似摄像机镜头
           &:hover{
-            transform: rotateX(360deg);
-          }
-          .icon{
-            width: 40px;
-            height: 40px;
-            margin-bottom: 10px;
-            img{
-              @extend .icon;
+            .bg{
+              transform: rotateX(90deg);
+              top: 2px;
             }
           }
-          .text{
-            color: #fff;
-            font-size: 28px;
-            text-align: center;
-          }
-          &.first{
-            background: url("/images/new_index/01.jpg") no-repeat;
-          }
-          &.second{
-            background: url("/images/new_index/02.jpg") no-repeat;
-          }
-          &.three{
-            background: url("/images/new_index/03.jpg") no-repeat;
-          }
-          &.four{
-            background: url("/images/new_index/04.jpg") no-repeat;
-          }
-          &.five{
-            background: url("/images/new_index/05.jpg") no-repeat;
-          }
-          &.six{
-            background: url("/images/new_index/06.jpg") no-repeat;
-          }
-          &.seven{
-            background: url("/images/new_index/07.jpg") no-repeat;
-          }
-          &.eight{
-            background: url("/images/new_index/08.jpg") no-repeat;
-          }
-          &.nine{
-            background: url("/images/new_index/09.jpg") no-repeat;
-          }
-          &.ten{
-            background: url("/images/new_index/10.jpg") no-repeat;
-          }
-          &.eleven{
-            background: url("/images/new_index/11.jpg") no-repeat;
-          }
-          &.twelve{
-            background: url("/images/new_index/12.jpg") no-repeat;
-          }
-          &.thirteen{
-            background: url("/images/new_index/13.jpg") no-repeat;
-          }
-          &.fourteen{
-            background: url("/images/new_index/14.jpg") no-repeat;
-          }
-          &.fifteen{
-            background: url("/images/new_index/15.jpg") no-repeat;
-          }
-          &.sixteen{
-            background: url("/images/new_index/16.jpg") no-repeat;
-          }
-          &.seventeen{
-            background: url("/images/new_index/17.jpg") no-repeat;
-          }
-          &.eighteen{
-            background: url("/images/new_index/18.jpg") no-repeat;
-          }
-          &.nineteen{
-            background: url("/images/new_index/19.jpg") no-repeat;
-          }
-          &.twenty{
-            background: url("/images/new_index/20.jpg") no-repeat;
-          }
-          &.twenty-one{
-            background: url("/images/new_index/21.jpg") no-repeat;
-          }
-          &.twenty-two{
-            background: url("/images/new_index/22.jpg") no-repeat;
-          }
-          &.twenty-three{
-            background: url("/images/new_index/23.jpg") no-repeat;
-          }
-          &.twenty-four{
-            background: url("/images/new_index/24.jpg") no-repeat;
-          }
-          &.twenty-five{
-            background: url("/images/new_index/25.jpg") no-repeat;
-          }
-          &.twenty-six{
-            background: url("/images/new_index/26.jpg") no-repeat;
-          }
-          &.twenty-seven{
-            background: url("/images/new_index/27.jpg") no-repeat;
-          }
-          &.twenty-eight{
-            background: url("/images/new_index/28.jpg") no-repeat;
-          }&.twenty-nine{
-            background: url("/images/new_index/29.jpg") no-repeat;
-          }&.thirty{
-            background: url("/images/new_index/30.jpg") no-repeat;
-          }&.thirty-one{
-            background: url("/images/new_index/31.jpg") no-repeat;
-          }
-          &.hidden{
-            visibility: hidden;
+          .bg{
+            width: 100%;
+            height: 250px;
+            padding: 0 10px;
+            position: relative;
+            transform-style: preserve-3d; //设置变换属性为3D，只对子元素有效
+            transform: rotateX(0deg);
+            transition: all 0.5s ease-out;
+            //display: flex;
+            //flex-direction: column;
+            left: -20px;
+            p{
+              //flex: 2;
+              width: 100%;
+              height: 250px;
+              position: absolute;
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              border: {
+                right: 1px;
+                bottom: 1px;
+                style: solid;
+                color: #fff;
+              }
+              &.first{
+                background: url("/images/new_index/01.jpg") no-repeat;
+              }
+              &.second{
+                background: url("/images/new_index/02.jpg") no-repeat;
+              }
+              &.three{
+                background: url("/images/new_index/03.jpg") no-repeat;
+              }
+              &.four{
+                background: url("/images/new_index/04.jpg") no-repeat;
+              }
+              &.five{
+                background: url("/images/new_index/05.jpg") no-repeat;
+              }
+              &.six{
+                background: url("/images/new_index/06.jpg") no-repeat;
+              }
+              &.seven{
+                background: url("/images/new_index/07.jpg") no-repeat;
+              }
+              &.eight{
+                background: url("/images/new_index/08.jpg") no-repeat;
+              }
+              &.nine{
+                background: url("/images/new_index/09.jpg") no-repeat;
+              }
+              &.ten{
+                background: url("/images/new_index/10.jpg") no-repeat;
+              }
+              &.eleven{
+                background: url("/images/new_index/11.jpg") no-repeat;
+              }
+              &.twelve{
+                background: url("/images/new_index/12.jpg") no-repeat;
+              }
+              &.thirteen{
+                background: url("/images/new_index/13.jpg") no-repeat;
+              }
+              &.fourteen{
+                background: url("/images/new_index/14.jpg") no-repeat;
+              }
+              &.fifteen{
+                background: url("/images/new_index/15.jpg") no-repeat;
+              }
+              &.sixteen{
+                background: url("/images/new_index/16.jpg") no-repeat;
+              }
+              &.seventeen{
+                background: url("/images/new_index/17.jpg") no-repeat;
+              }
+              &.eighteen{
+                background: url("/images/new_index/18.jpg") no-repeat;
+              }
+              &.nineteen{
+                background: url("/images/new_index/19.jpg") no-repeat;
+              }
+              &.twenty{
+                background: url("/images/new_index/20.jpg") no-repeat;
+              }
+              &.twenty-one{
+                background: url("/images/new_index/21.jpg") no-repeat;
+              }
+              &.twenty-two{
+                background: url("/images/new_index/22.jpg") no-repeat;
+              }
+              &.twenty-three{
+                background: url("/images/new_index/23.jpg") no-repeat;
+              }
+              &.twenty-four{
+                background: url("/images/new_index/24.jpg") no-repeat;
+              }
+              &.twenty-five{
+                background: url("/images/new_index/25.jpg") no-repeat;
+              }
+              &.twenty-six{
+                background: url("/images/new_index/26.jpg") no-repeat;
+              }
+              &.twenty-seven{
+                background: url("/images/new_index/27.jpg") no-repeat;
+              }
+              &.twenty-eight{
+                background: url("/images/new_index/28.jpg") no-repeat;
+              }&.twenty-nine{
+                 background: url("/images/new_index/29.jpg") no-repeat;
+               }&.thirty{
+                  background: url("/images/new_index/30.jpg") no-repeat;
+                }&.thirty-one{
+                   background: url("/images/new_index/31.jpg") no-repeat;
+                 }
+              &.hidden{
+                visibility: hidden;
+              }
+              &:nth-child(1){
+                  transform: translateZ(125px);
+                }
+                &:nth-child(2){
+                  transform: rotateX(-90deg) translateZ(125px);
+                }
+
+              a{
+                display: block;
+                text-align: center;
+                vertical-align: middle;
+                &.icon{
+                  width: 40px;
+                  height: 40px;
+                  margin: 0 auto;
+                  img{
+                    text-align: center;
+                    @extend .icon;
+                  }
+                }
+                &.text{
+                  color: #fff;
+                  font-size: 26px;
+                  text-align: center;
+                  line-height: 52px;
+                }
+              }
+
+
+            }
           }
         }
       }
