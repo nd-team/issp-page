@@ -261,7 +261,7 @@ body{
       }
       background-color: #dcdcdc;
       .one-line{
-        margin:10px 0;
+        margin:6px 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -276,7 +276,12 @@ body{
           cursor: pointer;
           perspective-origin:center;  //建立一个3D场景，这里以每个li标签为3D场景（透视效果，只影响子元素）
           perspective:2000px;//这个是观察的视角，类似摄像机镜头
-          margin: 0 10px;
+          margin: {
+            right: 20px;
+          }
+          &:last-child{
+            margin-right: 0;
+          }
           &:hover{
             .bg{
               transform: rotateX(90deg);
