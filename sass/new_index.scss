@@ -19,6 +19,9 @@
     background-color:#929292;
   }
 }
+html{
+  font-size: 16px;
+}
 ul li{
   list-style:none;
 }
@@ -258,46 +261,75 @@ body{
       }
       background-color: #dcdcdc;
       .one-line{
+        margin:10px 0;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 250px;
+        overflow: hidden;
         li{
           flex: 1;
-          height: 250px;
+          height: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
           cursor: pointer;
-          perspective-origin:50% 50%;  //建立一个3D场景，这里以每个li标签为3D场景（透视效果，只影响子元素）
+          perspective-origin:center;  //建立一个3D场景，这里以每个li标签为3D场景（透视效果，只影响子元素）
           perspective:2000px;//这个是观察的视角，类似摄像机镜头
+          margin: 0 10px;
           &:hover{
             .bg{
               transform: rotateX(90deg);
-              p{
-                height: 245px;
-              }
+              //p{
+              //  height: 245px;
+              //}
             }
           }
           .bg{
-            width: 100%;
-            height: 250px;
+            flex: 1;
+            height: 100%;
             position: relative;
             transform-style: preserve-3d; //设置变换属性为3D，只对子元素有效
             transform: rotateX(0deg);
             transition: all 0.5s ease-out;
             p{
-              //flex: 2;
               width: 100%;
-              height: 232px;
+              height: 100%;
               position: absolute;
               display: flex;
               justify-content: center;
               flex-direction: column;
-              border: {
-                right: 1px;
-                bottom: 1px;
-                style: solid;
-                color: #fff;
+              //border: {
+              //  right: 1px;
+              //  bottom: 1px;
+              //  style: solid;
+              //  color: #fff;
+              //}
+              &:nth-child(1){
+                transform: translateZ(119px);
+              }
+              &:nth-child(2){
+                transform: rotateX(-90deg) translateZ(119px);
+              }
+              a{
+                display: block;
+                text-align: center;
+                vertical-align: middle;
+                &.icon{
+                  width: 40px;
+                  height: 40px;
+                  margin: 0 auto;
+                  img{
+                    text-align: center;
+                    @extend .icon;
+                  }
+                }
+                &.text{
+                  color: #fff;
+                  font-size: 1.625rem;
+                  text-align: center;
+                  line-height: 52px;
+                }
               }
               &.first{
                 background: url("/images/new_index/01.jpg") no-repeat;
@@ -392,35 +424,6 @@ body{
               &.hidden{
                 visibility: hidden;
               }
-              &:nth-child(1){
-                  transform: translateZ(122px);
-                }
-                &:nth-child(2){
-                  transform: rotateX(-90deg) translateZ(118px);
-                }
-
-              a{
-                display: block;
-                text-align: center;
-                vertical-align: middle;
-                &.icon{
-                  width: 40px;
-                  height: 40px;
-                  margin: 0 auto;
-                  img{
-                    text-align: center;
-                    @extend .icon;
-                  }
-                }
-                &.text{
-                  color: #fff;
-                  font-size: 26px;
-                  text-align: center;
-                  line-height: 52px;
-                }
-              }
-
-
             }
           }
         }
