@@ -297,6 +297,12 @@ body{
                 transform: rotateX(90deg);
             }
           }
+          @media screen and (max-width: 1280px) {
+            margin-right: 10px;
+          }
+          @media screen and (min-width: 1366px) {
+            margin-right: 12px;
+          }
           .bg{
             flex: 1;
             height: 100%;
@@ -311,12 +317,6 @@ body{
               display: flex;
               justify-content: center;
               flex-direction: column;
-              &:nth-child(1){
-                transform: translateZ(125px);
-              }
-              &:nth-child(2){
-                transform: rotateX(-90deg) translateZ(122px);
-              }
               @media screen and (max-width: 1280px) {
                 &:nth-child(1){
                   transform: translateZ(64px);
@@ -331,6 +331,14 @@ body{
                 }
                 &:nth-child(2){
                   transform: rotateX(-90deg) translateZ(76px);
+                }
+              }
+              @media screen and (min-width: 1920px) {
+                &:nth-child(1){
+                  transform: translateZ(125px);
+                }
+                &:nth-child(2){
+                  transform: rotateX(-90deg) translateZ(122px);
                 }
               }
               a{
@@ -352,7 +360,7 @@ body{
                   text-align: center;
                   line-height: 52px;
                   @media screen and (max-width: 1280px) {
-                    font-size: 18px;
+                    font-size: 18px !important;
                     line-height: 32px;
                   }
                   @media screen and (max-width: 1366px) {
