@@ -127,7 +127,7 @@
             overflow: hidden;
             border:1px solid #f6f7f7;
             border-radius: 5px;
-            li{
+            .all-list{
               height: 40px;
               display: flex;
               align-items: center;
@@ -154,28 +154,6 @@
           }
         }
       }
-
     }
-    .pagination-click{
-      margin:{
-        left: 15px;
-        top: 20px;
-      }
-    }
-    .laypageskin_molv {
-      .laypage_curr{
-        background-color: #05a9e9;
-        border-radius: 3px;
-      }
-      a{
-        border: 1px solid #cecece;
-        border-radius: 3px;
-        &:last-child{
-          border-color: #05a9e9;
-        }
-      }
-    }
-
   }
-
 }
