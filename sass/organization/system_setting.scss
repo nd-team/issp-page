@@ -7,7 +7,6 @@
       height: auto;
       display: flex;
       flex-direction: column;
-      margin-bottom: 75px;
       .list{
         width: 100%;
         height: 58px;
@@ -23,8 +22,9 @@
         li{
           width: 10%;
           display: flex;
-          justify-content: center;
+          justify-content: flex-start;
           cursor: pointer;
+          padding-left: 15px;
           &.current{
             height: 78px;
             line-height: 78px;
@@ -93,7 +93,7 @@
         }
       }
       .content-tab{
-        height: 660px;
+        height: 665px;
         .table{
           width: 100%;
           height:auto;
