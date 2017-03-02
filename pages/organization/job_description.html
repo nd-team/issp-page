@@ -165,7 +165,11 @@
         <footer class="footer"></footer>
     </section>
     <script src="/js/jquery-2.1.1.min.js"></script>
-    <script src="/js/organization.js"></script>
+    <script>
+        $(".header-menu").on('click',function() {
+            $(".menu").slideToggle();
+        });
+    </script>
     <script src="/laypage/laypage.js"></script>
     <script type="text/javascript">
         laypage({
