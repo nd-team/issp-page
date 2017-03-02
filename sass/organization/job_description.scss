@@ -64,8 +64,11 @@
               style: solid;
               color: #fff;
             }
+            font-size: 16px;
             span{
               display: block;
+              font-size: 12px;
+              color: #c2c2c2;
             }
             &.lis{
               border: {
@@ -85,6 +88,11 @@
             &.same-two{
               border: {
                 color: #ddcfac;
+              }
+            }
+            &.same-three{
+              border: {
+                color: #6fa2ac;
               }
             }
             span{
