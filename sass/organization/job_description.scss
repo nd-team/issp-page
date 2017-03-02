@@ -112,50 +112,38 @@
             top: 20px;
             left: 15px;
           }
-          .top-head{
-            width: 100%;
-            height: 40px;
-            background: #758c94;
-            line-height: 40px;
-            display: flex;
-            border-bottom: 1px solid #cacfce;
-            border-radius:5px 5px 0 0;
-            span{
-              flex: 1;
-              color: #fff;
-              padding-left: 60px;
-              font:{
-                size:12px;
-                weight: bold;
-              }
-            }
-          }
-          .table-list{
+          .list-tab{
             width: 100%;
             height: 100%;
-            overflow: hidden;
-            border:1px solid #f6f7f7;
-            border-radius: 5px;
-            .all-list{
-              height: 40px;
-              display: flex;
-              align-items: center;
-              &:nth-of-type(odd){
-                background-color: #f0f6f4;
+            table{
+              width: 100%;
+              border: 1px solid #f6f7f7;
+              thead{
+                tr{
+                  height: 40px;
+                  background-color: #758c94;
+                  border-radius: 5px;
+                  td{
+                    color: #fff;
+                    font-size: 12px;
+                    &:first-child{
+                      padding-left: 60px;
+                    }
+                  }
+                }
               }
-              p{
-                flex: 1;
-                padding-left: 20px;
-                color: #666;
-                &.text-one{
-                  padding-left: 90px;
-                }
-                &.text{
-                  padding-left: 60px;
-                }
-                span{
-                  &:nth-of-type(2){
-                    padding-left: 30px;
+              tbody{
+                tr{
+                  height: 40px;
+                  &:nth-of-type(odd){
+                    background-color: #f0f6f4;
+                  }
+                  td{
+                    font-size: 12px;
+                    color: #666;
+                    &.num{
+                      margin-left: 16px;
+                    }
                   }
                 }
               }

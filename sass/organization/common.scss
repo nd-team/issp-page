@@ -43,6 +43,10 @@ select{
 i,em{
   font-style: normal;
 }
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
 a {
   color: #999;
   text-decoration: none;
