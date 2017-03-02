@@ -94,6 +94,8 @@
       }
       .content-tab{
         height: 665px;
+        overflow-x: hidden;
+        overflow-y: auto;
         .table{
           width: 100%;
           height:auto;
@@ -163,6 +165,7 @@
     .laypageskin_molv {
       .laypage_curr{
         background-color: #05a9e9;
+        border-radius: 3px;
       }
       a{
         border: 1px solid #cecece;
