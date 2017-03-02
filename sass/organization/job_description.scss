@@ -141,8 +141,21 @@
                   td{
                     font-size: 12px;
                     color: #666;
-                    &.num{
+                    .num{
                       margin-left: 16px;
+                    }
+                    .yellow{
+                      padding-left: 35px;
+                    }
+                    .more{
+                      display: inline-block;
+                      width: 72px;
+                      height: 22px;
+                      line-height: 22px;
+                      background: url("/images/organization/radius.png") no-repeat;
+                      text-align: center;
+                      font-size:12px;
+                      color: #fff;
                     }
                   }
                 }
