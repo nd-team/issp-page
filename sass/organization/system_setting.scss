@@ -41,15 +41,6 @@
               style: solid;
               color: #e1e1e1;
             }
-            .shu{
-              display: flex;
-              height: 45px;
-              width: 2px;
-              background-color: #06afe1;
-              vertical-align: middle;
-              align-items: center;
-              margin: 15px 0;
-            }
             a{
               line-height: 1.5;
             }
@@ -65,8 +56,11 @@
               style: solid;
               color: #fff;
             }
+            font-size: 16px;
             span{
               display: block;
+              font-size: 12px;
+              color: #c2c2c2;
             }
             &.lis{
               border: {

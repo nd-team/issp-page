@@ -28,7 +28,7 @@ img{
   border: 0 none;
   max-width: 100%;
 }
-input{
+input,select{
   outline: none;
   font-family: $main-font;
 }
@@ -37,11 +37,16 @@ button{
   font-family: $main-font;
 }
 select{
+
   appearance:none;
   -moz-appearance:none;
 }
 i,em{
   font-style: normal;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
 }
 a {
   color: #999;
@@ -116,7 +121,11 @@ body{
         padding-left: 50px;
         a{
           color: #999;
+          &:hover{
+            color: #06afe1;
+          }
         }
+
         &.active{
           background-color: #fff;
           background-image: url("/images/organization/nav_rrow.png");
@@ -206,7 +215,9 @@ body{
       a{
         border: 1px solid #cecece;
         border-radius: 3px;
-        &:last-child{
+        &:nth-of-type(1){
+          border-color: #05a9e9;
+        }&:last-child{
           border-color: #05a9e9;
         }
       }

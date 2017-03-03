@@ -271,8 +271,8 @@ body{
         @media screen and (max-width: 1280px) {
           height: 130px;
         }
-        @media screen and (min-width: 1366px) {
-          height: 155px;
+        @media screen and (min-width: 1281px){
+          height: 148px;
         }
         @media screen and (min-width: 1920px) {
           height: 250px;
@@ -299,6 +299,9 @@ body{
           }
           @media screen and (min-width: 1366px) {
             margin-right: 12px;
+          }
+          @media screen and (max-width: 1365px) {
+            margin-right: 8px;
           }
           @media screen and (min-width: 1920px) {
             margin-right: 20px;
@@ -331,6 +334,22 @@ body{
                 }
                 &:nth-child(2){
                   transform: rotateX(-90deg) translateZ(76px);
+                }
+              }
+              @media screen and (max-width: 1365px) {
+                &:nth-child(1){
+                  transform: translateZ(73px);
+                }
+                &:nth-child(2){
+                  transform: rotateX(-90deg) translateZ(73px);
+                }
+              }
+              @media screen and (max-width: 1440px) {
+                &:nth-child(1){
+                  transform: translateZ(70px);
+                }
+                &:nth-child(2){
+                  transform: rotateX(-90deg) translateZ(70px);
                 }
               }
               @media screen and (min-width: 1920px) {
