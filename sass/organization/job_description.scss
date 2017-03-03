@@ -143,14 +143,15 @@
           }
           .list-all{
             width: 100%;
+            .odd{
+              background-color: #f0f6f4;
+            }
             .list-text{
               display: flex;
               height: auto;
               line-height: 40px;
               padding-left: 60px;
-              &:nth-child(odd){
-                background-color: #f0f6f4;
-              }
+
               p{
                 display: flex;
                 flex: 1;

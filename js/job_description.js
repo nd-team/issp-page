@@ -4,6 +4,8 @@ $(document).ready(function () {
     });
     $(".list-text p").on('click','.more',function() {
         $(".can").slideToggle();
+        var More = "";
+        More += ''
     });
     $(".see-children").on('click','span',function() {
         $(".module").show();
