@@ -15,7 +15,7 @@ button{
   flex-direction: column;
   max-width: 1200px;
   background-color: #fefefe;
-  margin:90px auto;
+  margin:90px auto 0;
   .title{
       display: flex;
     padding-left: 20px;
@@ -63,13 +63,20 @@ button{
           align-items: center;
          /* flex: 1;*/
           margin-right: 10px;
-          &:hover{
+          &:active{
             color: #ef434c;
             border:1px solid #ef434c;
             svg{
               fill:#ef434c;
             }
           }
+        /*  &:hover{
+            color: #ef434c;
+            border:1px solid #ef434c;
+            svg{
+              fill:#ef434c;
+            }
+          }*/
           svg{
             width: 16px;
             height: 16px;
@@ -816,7 +823,7 @@ button{
        width: 60%;
        position: fixed;
        left: 50%;
-       top: 45%;
+       top: 40%;
        z-index: 1001;
        .m-con{
          display: none;
