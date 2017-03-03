@@ -72,20 +72,21 @@ $(document).ready(function(){
         modal1.style.top=wHeight/2-dHeight/2+"px";
         modal1.style.left=sWidth/2-dWidth/2+"px";
     });
-    var x=$("b[data-title]").length;
+    var x = $("b[data-title]").length;
     var idStr = "";
     var idList = new Array();
-    for (var i = 0; i <x; i++) {
-        var id = "issue" + (i+1);
+    for (var i = 0; i < x; i++) {
+        var id = "issue" + (i + 1);
         var tem = "";
-        tem += "<img src='/images/reward/b"+parseInt(i+1)+".jpg'><a href='javascript:void(0)' class='close'>关闭</a>";
+        var b="";
+        tem += "<img src='/images/reward/b"+parseInt(i + 1) + ".jpg'><a href='javascript:void(0)' class='close'>关闭</a>";
         var div = $("<div class='" + id + " m-con'>" + tem + "</div>");
         $("#modal").append(div);
         idStr += id + " ";
         idList.push(id);
     }
     var eachId = "";
-    $("#modal >div").each(function() {
+    $("#modal >div").each(function () {
         eachId += $(this).attr("id") + " ";
     });
 
@@ -93,6 +94,9 @@ $(document).ready(function(){
     for (var key in idList) {
         listId += idList[key] + " ";
     }
+
+
+
     $('.close').click(function(){
         $(this).parents('.m-con').hide();
         $('#modal').hide();

@@ -1,0 +1,475 @@
+@import "../base";
+.wrap_t{
+  width: 1204px;
+  margin: 0 auto;
+ }
+.wrap_w{
+  width: 1154px;
+}
+textarea{
+  resize: none;
+  outline:none;
+}
+button {
+  outline: none;
+}
+$bc :#f7f7f7;
+/*@mixin common($value1:1px,$value2:solid,$value3:#e1e1e1){
+  border-width: $value1;
+  border-style: $value2;
+  border-color: $value3;
+}*/
+.content {
+  max-width: 1506px;
+  background-color: white;
+  box-shadow: 0 18px 120px #88ae47;
+  margin: 60px auto 0;
+  .title{
+     width: 100%;
+     background-color: $bc;
+     border-bottom: 1px solid #e1e1e1;
+     padding: {
+      top:38px;
+      bottom: 21px;
+    };
+     span{
+      &:nth-of-type(1){
+         font-size: 18px;
+      }
+      &:nth-of-type(2){
+     //   display: block;
+        font-size: 12px;
+        width: 144px;
+        height: 30px;
+        line-height: 30px;
+        color: #aeaeae;
+        background-color: #ebeef7;
+        box-shadow:0 0 1px rgba(46, 43, 54, .27);
+        i{
+          color: #88ae47;
+          margin: 0 5px;
+        }
+        img{
+          vertical-align: middle;
+          margin: {
+            left: 11px;
+            right: 15px;
+          };
+        }
+      }
+    }
+    &:nth-of-type(1){
+     .wrap_t{
+       display: flex;
+       justify-content: space-between ;
+     }
+    }
+    &:nth-of-type(2){
+      padding: 17px 0;
+      font-size: 14px;
+      button{
+        width: 133px;
+        height: 25px;
+        border-radius: 25px;
+        color: white;
+        background-color: #88ae47;
+        cursor: pointer;
+      }
+      a{
+        color: #333333;
+        margin-left: 75px;
+      }
+    }
+  }
+  .inPunName{
+    label{
+      width: 80px;
+      font-size: 14px;
+      color: #666;
+      line-height: 60px;
+      text-align: right;
+      &:after{
+        content: '\FF1A';
+      }
+    }
+    ul{
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+      .inPunName2{
+        display: flex;
+        margin-left: 26px;
+        .titleName{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 60px;
+          width: 90%;
+          font-size: 14px;
+          color: #c2c2c2;
+          margin-left: 16px;
+          box-shadow:inset 0 0 3px rgba(128,168,204,0.8),inset 0 0 10px rgba(128, 168, 204, 0.57), 0 0 5px rgba(255, 255, 255, 0.17);
+          input{
+            width: 85%;
+            color: #666;
+            font-size: 14px;
+            margin-left: 11px;
+          }
+          a{
+            color: #c2c2c2;
+            margin-right: 22px;
+            img{
+              vertical-align: middle;
+              margin: {
+                right:9px;
+              };
+            }
+          }
+        }
+
+      }
+      li{
+        margin-top: 30px;
+        &.inPunName3{
+          textarea{
+            width: 90%;
+            height: 160px;
+            margin:20px 0 0 11px;
+            border: 0;
+            font-size: 14px;
+            color: #666;
+          }
+          @extend .inPunName2;
+          .titleName{
+            align-items: flex-start;
+            flex-direction: column;
+            height: 220px;
+          }
+          svg{
+            width: 18px;
+            height: 18px;
+            fill: #87b041;
+            margin: 0 0 12px 11px;
+            cursor: pointer;
+          }
+        }
+        &.inPunName4{
+          display: flex;
+          flex-direction:row;
+          justify-content: space-between;
+          p{
+            display: flex;
+            flex-direction: row;
+            width: 45%;
+            &:nth-of-type(1){
+              margin-left: 15px;
+            }
+            &:nth-of-type(2){
+              margin-right: 10px;
+              label{
+                width: 95px;
+              }
+            }
+          }
+          .titleName{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+            width: 90%;
+            font-size: 14px;
+            color: #c2c2c2;
+            margin-left: 16px;
+            box-shadow:inset 0 0 3px rgba(128,168,204,0.8),inset 0 0 10px rgba(128, 168, 204, 0.57), 0 0 5px rgba(255, 255, 255, 0.17);
+            input{
+              color: #666;
+              width: 75%;
+              margin-left: 11px;
+              font-size: 14px;
+            }
+            a{
+              color: #c2c2c2;
+              margin-right: 22px;
+              img{
+                vertical-align: middle;
+                margin: {
+                  right:9px;
+                };
+              }
+            }
+          }
+        }
+        &.inPic{
+          display:flex ;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          border: {
+            top:1px solid #e5e5e5;
+            bottom:1px solid #e5e5e5;
+          };
+          padding: {
+            top:29px;
+          };
+          //上传图片
+          .onPicTop{
+             width: 90%;
+            .titleName{
+              width: 100%;
+              margin-bottom: 23px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .InObject{
+    margin-top: 33px;
+    padding-bottom: 20px;
+    border-top: 10px solid #88ae47;
+    .title{
+      .input-box{
+        display: flex;
+       /* flex:5;*/
+        height: 2.5rem;
+        justify-content: flex-end;
+        border:1px solid #cfcfcf;
+        border-radius: 2.5rem;
+        background-color: #fff;
+        text-align: center;
+        padding-left: 1.25rem;
+        align-items:center;
+        .search{
+          height: 2rem;
+          flex: 6;
+          font-family: $main-font;
+        }
+        .magnifier{
+          width: 26px;
+          height: 27px;
+          flex: 1;
+          fill: #88ae47;
+          margin-right: 5px;
+        }
+      }
+    }
+    .InAll{
+      .InTop{
+        height: 50px;
+        line-height: 50px;
+        background-color: #f7f7f7;
+        border-bottom: 1px solid #d2d2d2;
+        ul{
+          display: flex;
+          flex-direction:row;
+          li:last-child{
+            border: {
+              right: 1px solid #d2d2d2;
+            };
+           // background: none;
+          }
+          li{
+          //  background: url("/images/reward/inPun05.png") no-repeat;
+            a{
+              color: #999;
+            }
+            i{
+            /*  width: 8px;
+              height: 8px;
+              margin-left: 8px;
+              cursor: pointer;
+              background: url("/images/reward/inPun05.png") no-repeat;*/
+            }
+            width: 172px;
+            text-align: center;
+            //cursor: pointer;
+            border: {
+              left: 1px solid #d2d2d2;
+            };
+          }
+          .cur{
+            background: white;
+            a{
+              color: #666;
+            }
+            &:before{
+              content: '';
+              width: 6px;
+              height: 6px;
+              background-color: #88ae47;
+              display: inline-block;
+              text-align: center;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      .InBody{
+        //display: none;
+        width: 1202px;
+        margin: 0 auto;
+        b{
+         // font-weight: normal;
+          margin-left: 10px;
+        }
+        ul{
+          display: flex;
+          flex-direction: row;
+          li{
+            width: 240px;
+            height: 162px;
+            padding: 16px 20px 10px 11px;
+            margin: -1px 0 0 -1px;
+            background: #fff;
+            border: 1px solid #d2d2d2;
+            overflow: hidden;
+            font-size: 12px;
+            color: #999;
+            p{
+              margin-top: 11px;
+              em{
+                width: 37px;
+                &:after{
+                  content: '\FF1A';
+                }
+              }
+            }
+            .inTitle{
+                color: #87af49;
+              img{
+                height: 52px;
+                width: 52px;
+                border-radius: 50%;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+      .pagination2{
+        display: flex;
+        align-items: center;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #cdcdcd;
+        a{
+          width: 22px;
+          height: 22px;
+          font-size: 14px;
+          color: #666;
+          border: 1px solid #cdcdcd;
+          text-align: center;
+          margin-right: 6px;
+          border-radius: 3px;
+          line-height: 22px;
+          &.current{
+            color: white;
+            background-color: #87af47;
+            border: 1px solid #8fad46;
+          }
+          &.prev{
+            width: 59px;
+            color: #d4d4d4;
+            border: 1px solid #d4d4d4;
+            background-color: white;
+          }
+          &.next{
+            width: 59px;
+            color: #87af47;
+            border: 1px solid #87af47;
+            background-color: white;
+          }
+          &.cur-center{
+            color: #d1d1d1;
+            border: 0;
+            margin-top: -10px;
+          }
+        }
+        margin: 0;
+        justify-content:flex-end;
+        border-bottom: 0;
+        margin: {
+          top:28px;
+           right: 24px;
+        };
+      }
+    }
+  }
+  /*模态框*/
+  .oneTitle{
+      font-size: 12px;
+      width: 480px;
+      box-shadow:0 0 20px rgba(111, 110, 110, .27);
+    .xTitle{
+      color: #333;
+      height: 30px;
+      line-height: 30px;
+      background-color: #bed39b;
+      //display: flex;
+      text-align: center;
+      i{
+       float: right;
+        margin-right: 14px;
+       }
+    }
+    .xBody{
+      margin: 0 20px;
+      .picTitle{
+        margin: 25px 0 11px 12px;
+      }
+      ul{
+        font-size: 10px;
+        color: #b2b2b2;
+        display: flex;
+        flex-direction: row;
+        margin-left:30px;
+        :last-child{
+          border: 0;
+          transform: scale(0.9);
+        }
+        li{
+          width: 74px;
+          height: 48px;
+          border: 1px solid #e2e2e2;
+          margin-right: 10px;
+          &.now{
+            border: 2px solid #88ae47;
+            height: 46px;
+            svg{
+              fill: #4d4d4d;
+            }
+          }
+         svg{
+             width: 100%;
+             height: 100%;
+           fill: #e6e6e6;
+          }
+        }
+      }
+      textarea{
+        width: 95%;
+        height: 60px;
+        margin-left: 12px;
+        border: 1px solid #ededed;
+        border-radius: 5px;
+      }
+      .sureTitle{
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin-top: 29px;
+        border-top: 1px solid #ededed;
+         color: #999;
+      }
+    }
+    button{
+      font-size: 14px;
+      height: 40px;
+      color: white;
+      background-color: #88ae47;
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+}

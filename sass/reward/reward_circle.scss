@@ -136,13 +136,10 @@ body{
           display: flex;
           display: -ms-flexbox;
           flex-direction: column;
-        /*  flex: 1;*/
           background-color: #f7f7f7;
           border: 1px solid #ebebeb;
           box-shadow:1px 1px 1px rgba(102, 102, 102, .25);
           span{
-            /*display: -ms-flexbox;
-            -ms-flex: 1;  */
             display: block;
             padding: {
               bottom: 25px;
@@ -167,11 +164,12 @@ body{
               };
               a{
                 color: #252525;
+               /* font-weight: normal;*/
                 //奖励圈
                 &.reward-user{
                   color: #9cb267;
                 }
-                &:nth-of-type(2){
+                &.reward-fraction{
                   margin: {
                     left: 40%;
                   };
@@ -239,6 +237,8 @@ body{
               }
             }
             .appeal{
+              color: #252525;
+              font-weight: normal;
               display: flex;
               flex: 1;
               padding: {
@@ -339,16 +339,7 @@ body{
             flex-direction: column;
             height: 170px;
             overflow: hidden;
-            border-bottom: 3px solid white;
-            /*  img:hover{
-                -webkit-transform:rotate(0deg) scale(2.5);
-                 -ms-transform:rotate(0deg) scale(2.5);
-                 transform:rotate(0deg) scale(2.5);
-                 -webkit-transition:all 0.5s ease-in;
-                 transition:all 0.5s ease-in;
-                 z-index: 2;
-                border: 2px solid white;
-            }*/
+            /*border-bottom: 3px solid white;*/
             &:nth-of-type(1){
               display:flex;
               justify-content:center;
@@ -358,6 +349,7 @@ body{
             &:nth-of-type(2){
               img{
                 width: 100%;
+                vertical-align: top;
                 &:nth-of-type(2){
                   margin: -4px 0 0 0;
                 }
@@ -555,12 +547,12 @@ body{
   .m-con {
      /* position: relative;*/
       display: none;
-      max-width: 524px;
+      max-width: 624px;
       max-height: 700px;
       white-space: nowrap;
     img{
       max-height: 700px;
-      max-width: 500px;
+      max-width: 600px;
      /* position: relative;*/
       border: 12px solid white;
       border-radius: 5px;
