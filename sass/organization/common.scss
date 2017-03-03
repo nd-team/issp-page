@@ -28,7 +28,7 @@ img{
   border: 0 none;
   max-width: 100%;
 }
-input{
+input,select{
   outline: none;
   font-family: $main-font;
 }
@@ -37,6 +37,7 @@ button{
   font-family: $main-font;
 }
 select{
+
   appearance:none;
   -moz-appearance:none;
 }

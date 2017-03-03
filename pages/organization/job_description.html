@@ -75,6 +75,17 @@
                     </li>
                     <li>
                         <a href="javascript:void(0)" class="same-three">岗位<span>Post</span></a>
+
+                    </li>
+                    <li class="last-select">
+                        <select class="select">
+                            <option value="0">请选择</option>
+                            <option value="1">请选择</option>
+                            <option value="2">请选择</option>
+                            <option value="3">请选择</option>
+                            <option value="4">请选择</option>
+                        </select>
+                        <i class="arrow-select"><img src="/images/organization/job-arrow.png" alt=""></i>
                     </li>
                 </ul>
                 <div class="content-tab">
@@ -104,6 +115,48 @@
                                 <p>
                                     <a href="javascript:void(0)" class="more">更多详细</a>
                                 </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-parent">
+                                            <span>维度</span>
+                                            <span>分类</span>
+                                            <span>体现类型</span>
+                                            <span>操作类型</span>
+                                            <span>工作描述</span>
+                                            <span>对应功能</span>
+                                            <span>工作时间</span>
+                                            <span>时间节点</span>
+                                        </p>
+                                        <p class="see-children">
+                                            <span>一线实施体系一线实施体系</span>
+                                            <span>一线实施体系</span>
+                                            <span>一线实施体系</span>
+                                            <span>一线实施体系</span>
+                                            <span>一线实施体系</span>
+                                            <span>一线实施体系一线实施体系</span>
+                                            <span>一线实施体系</span>
+                                            <span>一线实施体系</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-parent">
+                                            <span>输出结果</span>
+                                        </p>
+                                        <p class="see-children">
+                                            <span>一线实施体系</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="module">
+                                    <div class="see-module">
+                                        <p class="see-type">体现类型</p>
+                                        <p class="see-description">人的专注度是有时间限制的，人的身体是会疲劳的。保持充足的精力和专注度，比拼时间的疲劳学习效果更好。一般一次学习最好30-40分钟左右，长了效率就会降低。所以最好在这中间留足够多的休息时间。</p>
+                                        <button class="btn">关闭</button>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="list-text">
                                 <p>
@@ -159,11 +212,7 @@
         <footer class="footer"></footer>
     </section>
     <script src="/js/jquery-2.1.1.min.js"></script>
-    <script>
-        $(".header-menu").on('click',function() {
-            $(".menu").slideToggle();
-        });
-    </script>
+    <script src="/js/job_description.js"></script>
     <script src="/laypage/laypage.js"></script>
     <script type="text/javascript">
         laypage({
