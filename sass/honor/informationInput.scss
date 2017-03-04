@@ -2,6 +2,23 @@
 body{
   background-color: white;
 }
+.pika-title{
+  background-color: #567ea3;
+}
+.is-selected .pika-button {
+  background: #567ea3;
+  box-shadow: inset 0 1px 3px #567ea3;
+}
+.pika-single:before {
+  content: '';
+  border-color: transparent transparent #567ea3 transparent;
+}
+.is-today .pika-button {
+  color: #567ea3;
+}
+.pika-button:hover {
+  background: #567ea3;
+}
 .honorBg{
   background-color: #f9f9f9;
 }
@@ -116,6 +133,7 @@ body{
               text-align: center;
               width: 30px;
               margin-left: -5px;
+              background: none;
               &.time01{
                    margin-left: 138px;
               }

@@ -1,0 +1,86 @@
+@import "../data/data_number";
+.dataLeft{
+  width: 45%;
+  ul.data03{
+    li{
+      margin-top: 38px;
+      &.veryImportant{
+        input{
+          //border: 1px solid #485bd1 #1aafea;
+          //border: 1px solid #485bd1;
+          border: 1px solid #1aafea;
+          //border-color: #485bd1 #1aafea;
+          /* -moz-border-top-colors:#a0a #909 #808 #707 #606 #505 #404 #303;
+           -moz-border-right-colors:#a0a #909 #808 #707 #606 #505 #404 #303;
+           -moz-border-bottom-colors:#a0a #909 #808 #707 #606 #505 #404 #303;
+           -moz-border-left-colors:#a0a #909 #808 #707 #606 #505 #404 #303;*/
+          &:hover{
+            box-shadow: 0 0 3px #1aafea;
+          }
+        }
+      }
+      label{
+        width:100px;
+        display: inline-block;
+        text-align: right;
+        em{
+          display: inline-block;
+          width: 58px;
+          text-align-last: justify;
+        }
+        i{
+          margin-right: 10px;
+        }
+        &:after{
+          content: '\FF1A';
+        }
+      }
+      input{
+        padding: {
+          left: 15px;
+          right: 15px;
+        };
+        height: 36px;
+        //border: 1px solid #4163ce;
+        border: 1px solid #999999;
+        border-radius: 5px;
+        width: 60%;
+        margin-left: 14px;
+      }
+    }
+  }
+}
+//物资入库页面
+.selectBox{
+  position: relative;
+  i{
+    position: absolute;
+    //right: 15px;
+    z-index: 100;
+    top:2px;
+    right:15px;
+  }
+}
+.veryImportant{
+  position: relative;
+}
+.selectB1{
+  width: 65.5%;
+  left: 115px;
+  z-index: 111;
+  background-color: #f6f6f6;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  a{
+    height: 29px;
+    line-height: 29px;
+    color: #343434;
+    padding: {
+      left: 15px;
+    };
+    &:hover{
+      background-color: #cbedf9;
+    }
+  }
+}
