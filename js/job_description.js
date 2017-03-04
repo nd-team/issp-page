@@ -12,16 +12,17 @@ $(document).ready(function () {
         var inx = $(this).index();
         var selfText = $(this).text();
         var num = selfText.length;
-        var test = selfText.visualLength($(this));
+        var width = $(this).width();
         var titleText = $(this).parent().siblings().children().eq(inx).text();
-        if (num>8){
+        var fontSize = $(this).css("font-size").split("p")[0]*num;
+        console.log(fontSize,width);
+        if (fontSize>width){
             $(".module").show();
             $(".module .see-type").text(titleText);
             $(".module .see-description").text(selfText);
         }else {
             return
         }
-        console.log(test);
     });
 
     $(".module .see-module").on('click','.btn',function() {
