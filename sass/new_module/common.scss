@@ -107,7 +107,7 @@ body{
         display: inline-block;
         width: 9px;
         height: 7px;
-        background: url("/images/organization/nav-down.png") no-repeat;
+        background: url("/images/new_module/organization/nav-down.png") no-repeat;
         padding-left: 10px;
         vertical-align: middle;
       }
@@ -128,7 +128,7 @@ body{
 
         &.active{
           background-color: #fff;
-          background-image: url("/images/organization/nav_rrow.png");
+          background-image: url("/images/new_module/organization/nav_rrow.png");
           background-repeat: no-repeat;
           background-position: left center;
           a{
@@ -177,13 +177,13 @@ body{
         .search-btn{
           width: 19px;
           height: 18px;
-          background: url("/images/organization/search.png") no-repeat center;
+          background: url("/images/new_module/organization/search.png") no-repeat center;
           margin-right: 18px;
         }
         .selected{
           width: 137px;
           height: 37px;
-          background: url("/images/organization/searchbg.png") no-repeat;
+          background: url("/images/new_module/organization/searchbg.png") no-repeat;
           color: #fff;
           padding-left: 18px;
           option{
@@ -193,7 +193,7 @@ body{
         .arrow{
           width: 9px;
           height: 7px;
-          background: url("/images/organization/down.png") no-repeat center;
+          background: url("/images/new_module/organization/down.png") no-repeat center;
           cursor: pointer;
           margin: {
             left: -20px;

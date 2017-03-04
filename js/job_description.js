@@ -8,9 +8,11 @@ $(document).ready(function () {
         More += ''
     });
     $(".see-children").on('click','span',function() {
+        // console.log($(this).width());
         var inx = $(this).index();
         var selfText = $(this).text();
         var num = selfText.length;
+        var test = selfText.visualLength($(this));
         var titleText = $(this).parent().siblings().children().eq(inx).text();
         if (num>8){
             $(".module").show();
@@ -19,9 +21,16 @@ $(document).ready(function () {
         }else {
             return
         }
-        console.log(num);
+        console.log(test);
     });
+
     $(".module .see-module").on('click','.btn',function() {
         $(".module ").hide();
     });
 });
+String.prototype.visualLength = function(self)
+{
+    var ruler = $(self);
+    ruler.text(this);
+    return ruler[0].offsetWidth;
+}
