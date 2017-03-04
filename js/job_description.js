@@ -8,20 +8,30 @@ $(document).ready(function () {
         More += ''
     });
     $(".see-children").on('click','span',function() {
+        // console.log($(this).width());
         var inx = $(this).index();
         var selfText = $(this).text();
         var num = selfText.length;
+        var width = $(this).width();
         var titleText = $(this).parent().siblings().children().eq(inx).text();
-        if (num>8){
+        var fontSize = $(this).css("font-size").split("p")[0]*num;
+        console.log(fontSize,width);
+        if (fontSize>width){
             $(".module").show();
             $(".module .see-type").text(titleText);
             $(".module .see-description").text(selfText);
         }else {
             return
         }
-        console.log(num);
     });
+
     $(".module .see-module").on('click','.btn',function() {
         $(".module ").hide();
     });
 });
+String.prototype.visualLength = function(self)
+{
+    var ruler = $(self);
+    ruler.text(this);
+    return ruler[0].offsetWidth;
+}

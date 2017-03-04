@@ -1,4 +1,4 @@
-@import "common";
+@import "../common";
 .right-section{
 
   .top-content{
@@ -41,6 +41,7 @@
               color: #e1e1e1;
             }
             a{
+              color: #333;
               line-height: 1.5;
             }
           }
@@ -171,7 +172,7 @@
                   width: 72px;
                   height: 22px;
                   justify-content: center;
-                  background: url("/images/organization/radius.png") no-repeat;
+                  background: url("/images/new_module/organization/radius.png") no-repeat;
                   color: #fff;
                   margin: 10px 0;
                   font-size: 12px;
@@ -278,7 +279,6 @@
                   }
                 }
               }
-
             }
           }
         }

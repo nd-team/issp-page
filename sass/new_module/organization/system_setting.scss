@@ -1,4 +1,4 @@
-@import "common";
+@import "../common";
 
 .right-section{
 
@@ -42,6 +42,7 @@
               color: #e1e1e1;
             }
             a{
+              color: #333;
               line-height: 1.5;
             }
           }
