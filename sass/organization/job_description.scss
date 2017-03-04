@@ -65,7 +65,7 @@
               background-color: #cdeefb;
               line-height: 28px;
               text-align: center;
-              margin-left: -28px;
+              margin-left: -29px;
             }
           }
           a{
@@ -143,20 +143,22 @@
           }
           .list-all{
             width: 100%;
+            .odd{
+              background-color: #f0f6f4;
+            }
             .list-text{
               display: flex;
               height: auto;
               line-height: 40px;
               padding-left: 60px;
-              &:nth-child(odd){
-                background-color: #f0f6f4;
-              }
+
               p{
                 display: flex;
                 flex: 1;
                 justify-content: flex-start;
                 color: #666;
                 font-size: 12px;
+
                 span{
                   margin-left: -40px;
                   &:last-child{
@@ -213,6 +215,7 @@
                     span{
                       flex: 1;
                       font-size: 12px;
+                      margin: 0 10px;
                     }
                   }
                   .see-children{
@@ -227,6 +230,10 @@
                       font-size: 12px;
                       color: #cfdde3;
                       cursor: pointer;
+                      overflow: hidden;
+                      text-overflow:ellipsis;
+                      white-space: nowrap;
+                      margin: 0 10px;
                     }
                   }
                 }

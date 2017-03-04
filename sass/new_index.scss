@@ -336,7 +336,7 @@ body{
                   transform: rotateX(-90deg) translateZ(76px);
                 }
               }
-              @media screen and (max-width: 1365px) {
+              @media screen and (min-width: 1282px) {
                 &:nth-child(1){
                   transform: translateZ(73px);
                 }
@@ -344,7 +344,7 @@ body{
                   transform: rotateX(-90deg) translateZ(73px);
                 }
               }
-              @media screen and (max-width: 1440px) {
+              @media screen and (min-width: 1440px) {
                 &:nth-child(1){
                   transform: translateZ(70px);
                 }
