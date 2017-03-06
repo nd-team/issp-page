@@ -129,6 +129,24 @@ body{
             color: #06afe1;
           }
         }
+
+        .sub-menu{
+          display:flex;
+          flex-direction:column;
+          width:100%;
+          line-height:40px;
+          text-indent:60px;
+        }
+      }
+      .active{
+        background-color: #fff;
+        background-image: url("/images/new_module/organization/nav_rrow.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        
+        a{
+          color: #06afe1;
+
         }
       }
     }
