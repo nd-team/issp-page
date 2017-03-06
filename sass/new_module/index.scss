@@ -123,6 +123,9 @@ header{
     margin:80px auto 0;
     flex-direction: column;
     overflow: auto;
+    @media screen and (max-width: 1600px) {
+      width: 1200px;
+    }
     .company{
       //flex: 1;
       height: 250px;
@@ -131,15 +134,19 @@ header{
       align-items: center;
       cursor: pointer;
       //overflow: hidden;
-      perspective-origin:center;  //建立一个3D场景，这里以每个li标签为3D场景（透视效果，只影响子元素）
-      perspective:2000px;//这个是观察的视角，类似摄像机镜头
-      transform-style: preserve-3d; //设置变换属性为3D，只对子元素有效
+      //perspective-origin:center;  //建立一个3D场景，这里以每个li标签为3D场景（透视效果，只影响子元素）
+      //perspective:2000px;//这个是观察的视角，类似摄像机镜头
+      //transform-style: preserve-3d; //设置变换属性为3D，只对子元素有效
       margin-bottom: 15px;
       //&:hover{
       //  .same-type{
       //    transform: rotateX(90deg);
       //  }
       //}
+      @media screen and (max-width: 1600px) {
+        height: 200px;
+        margin-bottom: 20px;
+      }
       .same-type{
         width: 250px;
         height: 100%;
@@ -153,10 +160,10 @@ header{
         &:last-child{
           margin-right: 0;
         }
-        @media screen and (min-width: 1280px) {
-          //margin: {
-          //  right: 50px;
-          //}
+        @media screen and (max-width: 1600px) {
+          width: 200px;
+          height: 100%;
+          margin-right: 10px;
         }
         .first{
             width: 246px;
@@ -174,6 +181,10 @@ header{
             //&:nth-child(2) {
             //  transform: rotateX(-90deg) translateZ(124px);
             //}
+            @media screen and (max-width: 1600px) {
+              width: 196px;
+              height: 196px;
+            }
             .border-bg{
               height: 230px;
               border: 1px solid #bbb;
@@ -185,6 +196,9 @@ header{
               //@media screen and (min-width: 1280px) {
               //  height: 186px;
               //}
+              @media screen and (max-width: 1600px) {
+                height: 178px;
+              }
               .icon-one{
                 display: block;
                 width: 34px;
@@ -210,9 +224,31 @@ header{
                 text-align: center;
                 margin: 15px auto 0;
                 border-top: 1px solid #bababa;
+                @media screen and (max-width: 1600px) {
+                  width: 165px;
+                }
                 span{
                   display: block;
                   line-height: 26px;
+                  @media screen and (max-width: 1600px) {
+                    width: 165px;
+                    &.word-text{
+                      font:{
+                        size: 16px !important;
+                        family: Arial;
+                      }
+                      color: #999 !important;
+                    }
+                    &:first-child{
+                      font-size: 18px;
+                      color: #333;
+                    }
+                    &:last-child{
+                      font-family:Arial;
+                      font-size: 16px;
+                      color: #999;
+                    }
+                  }
                   &.word-text{
                     font:{
                       size: 20px !important;
