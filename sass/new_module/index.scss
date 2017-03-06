@@ -194,6 +194,10 @@ header{
                   width: 48px;
                   height: 34px;
                 }
+                &.home{
+                  width: 42px;
+                  height: 36px;
+                }
               }
               .top-text{
                 font-size: 22px;
@@ -201,7 +205,7 @@ header{
               }
 
               p{
-                width: 200px;
+                width: 210px;
                 padding-top: 12px;
                 text-align: center;
                 margin: 15px auto 0;
@@ -210,7 +214,10 @@ header{
                   display: block;
                   line-height: 26px;
                   &.word-text{
-                    font-size: 18px !important;
+                    font:{
+                      size: 20px !important;
+                      family: Arial;
+                    }
                     color: #999 !important;
                   }
                   &:first-child{
@@ -218,6 +225,7 @@ header{
                     color: #333;
                   }
                   &:last-child{
+                    font-family:Arial;
                     font-size: 18px;
                     color: #999;
                   }
@@ -258,30 +266,37 @@ header{
               height: 40px;
             }
             .top-text{
-              font-size: 22px;
+              font:{
+                size: 22px;
+                family: Arial;
+              }
               color: #fff;
             }
             p{
-              //width: 200px;
-              padding-top: 12px;
+              width: 210px;
+              padding-top: 10px;
               display: flex;
               flex-direction: column;
               align-items: center;
               margin-top: 10px;
               border-top: 1px solid #b6babb;
               span{
-                line-height: 26px;
+                line-height: 24px;
                 color: #999;
                 &.word-text{
-                  font-size: 18px !important;
                   color: #999 !important;
+                  font:{
+                    size: 20px !important;
+                    family: Arial;
+                  }
                 }
                 &:first-child{
                   font-size: 22px;
                   color: #fff;
                 }
                 &:last-child{
-                  font-size: 18px;
+                  font-family:Arial;
+                  font-size: 20px;
                   color: #999;
                 }
               }
@@ -316,25 +331,42 @@ header{
             &.tracking{
               background: url("/images/new_module/index/tracking_remind.jpg") no-repeat center center;
             }
+            &.person{
+              background: url("/images/new_module/index/tu02.jpg") no-repeat center center;
+            }
+            &.business{
+              background: url("/images/new_module/index/chooser.jpg") no-repeat center center;
+            }
+            &.assessment{
+              background: url("/images/new_module/index/tu03.jpg") no-repeat center center;
+            }
             .things-management{
               display: block;
               height: 45px;
               line-height: 45px;
               text-align: center;
               background-color: #01c5ff;
-              padding: 0 36px;
+              width: 192px;
               font-size: 22px;
               color: #31302c;
             }
             span{
-              font-size: 14px;
-              color: #999;
+              width: 192px;
+              text-align: center;
+              font-size: 19px;
+              color: #989896;
               line-height: 28px;
+              font-family:Arial;
             }
           }
-
         }
       }
     }
   }
+}
+.footer{
+  width: 100%;
+  height: 70px;
+  background-color: #758c94;
+  margin-top: 80px;
 }
