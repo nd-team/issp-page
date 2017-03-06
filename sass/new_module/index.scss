@@ -1,0 +1,340 @@
+//浏览器重置样式
+html, body, div, span, nav, header, iframe,
+h1, h2, h3, h4, h5, h6, p, section, footer,
+a, form, address, big, cite, code,
+del, dfn, em, img, ins, fieldset, q, s, samp,
+small, strike, strong, sub, sup,label, var,
+b, u, i,input, dl, dt, dd, ol, ul, li,figure,figcaption{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+$main-font: "Microsoft YaHei";
+html,body{
+  width: 100%;
+  font:{
+    size: 14px;
+    family: $main-font;
+  }
+  background:#fff;
+}
+form,fieldset{
+  border: 0 none;
+}
+ol,ul li{
+  list-style: none;
+}
+img{
+  border: 0 none;
+  max-width: 100%;
+}
+input,select{
+  outline: none;
+  font-family: $main-font;
+}
+button{
+  border: 0;
+  font-family: $main-font;
+}
+select{
+  appearance:none;
+  -moz-appearance:none;
+}
+i,em{
+  font-style: normal;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+a {
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+//header style
+header{
+  width: 100%;
+  height: 82px;
+  .search{
+    flex: 1;
+    height: 82px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+    align-items: center;
+    .search-btn{
+      width: 19px;
+      height: 18px;
+      background: url("/images/new_module/organization/search.png") no-repeat center;
+      margin-right: 18px;
+    }
+    .selected{
+      width: 137px;
+      height: 37px;
+      background: url("/images/new_module/organization/searchbg.png") no-repeat;
+      color: #fff;
+      padding-left: 18px;
+      option{
+        color: #666;
+      }
+    }
+    .arrow{
+      width: 9px;
+      height: 7px;
+      background: url("/images/new_module/organization/down.png") no-repeat center;
+      cursor: pointer;
+      margin: {
+        left: -20px;
+      }
+    }
+  }
+}
+//banner style
+.banner{
+  width: 100%;
+  height: 231px;
+  background: url("/images/new_module/index/xbanner.jpg") no-repeat center center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  .logo{
+    display: block;
+    width: 139px;
+    height: 140px;
+    margin-left: 8%;
+  }
+}
+
+//important content section
+.main{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .all-module{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin:80px auto 0;
+    flex-direction: column;
+    overflow: auto;
+    .company{
+      //flex: 1;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      //overflow: hidden;
+      perspective-origin:center;  //建立一个3D场景，这里以每个li标签为3D场景（透视效果，只影响子元素）
+      perspective:2000px;//这个是观察的视角，类似摄像机镜头
+      transform-style: preserve-3d; //设置变换属性为3D，只对子元素有效
+      margin-bottom: 15px;
+      //&:hover{
+      //  .same-type{
+      //    transform: rotateX(90deg);
+      //  }
+      //}
+      .same-type{
+        width: 250px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        transform-style: preserve-3d;
+        transform: rotateX(0deg);
+        transition: all 0.5s ease-out;
+        position: relative;
+        margin-right: 15px;
+        &:last-child{
+          margin-right: 0;
+        }
+        @media screen and (min-width: 1280px) {
+          //margin: {
+          //  right: 50px;
+          //}
+        }
+        .first{
+            width: 246px;
+            height: 246px;
+            border: 2px solid #666;
+            //position: absolute;
+            background-color: #fff;
+            //@media screen and (min-width: 1280px) {
+            //  width: 200px;
+            //  height: 200px;
+            //}
+            //&:nth-child(1){
+            //  transform: translateZ(124px) translateY(0);
+            //}
+            //&:nth-child(2) {
+            //  transform: rotateX(-90deg) translateZ(124px);
+            //}
+            .border-bg{
+              height: 230px;
+              border: 1px solid #bbb;
+              margin: 8px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              //@media screen and (min-width: 1280px) {
+              //  height: 186px;
+              //}
+              .icon-one{
+                display: block;
+                width: 34px;
+                height: 40px;
+                margin: 0 auto;
+                &.icon-bus{
+                  width: 48px;
+                  height: 34px;
+                }
+              }
+              .top-text{
+                font-size: 22px;
+                color: #333;
+              }
+
+              p{
+                width: 200px;
+                padding-top: 12px;
+                text-align: center;
+                margin: 15px auto 0;
+                border-top: 1px solid #bababa;
+                span{
+                  display: block;
+                  line-height: 26px;
+                  &.word-text{
+                    font-size: 18px !important;
+                    color: #999 !important;
+                  }
+                  &:first-child{
+                    font-size: 22px;
+                    color: #333;
+                  }
+                  &:last-child{
+                    font-size: 18px;
+                    color: #999;
+                  }
+                }
+              }
+            }
+          }
+      }
+      .type-two{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        .second{
+          width: 250px;
+          height: 250px;
+          background-color: #33383b;
+          transform-style: preserve-3d; //设置变换属性为3D，只对子元素有效
+          transform: rotateX(0deg);
+          transition: all 0.5s ease-out;
+          //position: absolute;
+          //&:nth-child(1){
+          //  transform: translateZ(110px) translateY(0);
+          //}
+          //&:nth-child(2) {
+          //  transform: rotateX(-90deg) translateZ(110px);
+          //}
+          .border-bg{
+            height: 236px;
+            margin: 6px;
+            border: 1px solid #bbb;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .icon-one{
+              display: block;
+              width: 34px;
+              height: 40px;
+            }
+            .top-text{
+              font-size: 22px;
+              color: #fff;
+            }
+            p{
+              //width: 200px;
+              padding-top: 12px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-top: 10px;
+              border-top: 1px solid #b6babb;
+              span{
+                line-height: 26px;
+                color: #999;
+                &.word-text{
+                  font-size: 18px !important;
+                  color: #999 !important;
+                }
+                &:first-child{
+                  font-size: 22px;
+                  color: #fff;
+                }
+                &:last-child{
+                  font-size: 18px;
+                  color: #999;
+                }
+              }
+            }
+          }
+
+        }
+      }
+      .type-three{
+        width: 516px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        .three{
+          width: 512px;
+          height: 246px;
+          border: 2px solid #666;
+          transform-style: preserve-3d; //设置变换属性为3D，只对子元素有效
+          transform: rotateX(0deg);
+          transition: all 0.5s ease-out;
+          //position: absolute;
+          .border-bg{
+            height: 236px;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            background: url("/images/new_module/index/tu01.jpg") no-repeat center center;
+            padding-right: 40px;
+            &.tracking{
+              background: url("/images/new_module/index/tracking_remind.jpg") no-repeat center center;
+            }
+            .things-management{
+              display: block;
+              height: 45px;
+              line-height: 45px;
+              text-align: center;
+              background-color: #01c5ff;
+              padding: 0 36px;
+              font-size: 22px;
+              color: #31302c;
+            }
+            span{
+              font-size: 14px;
+              color: #999;
+              line-height: 28px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

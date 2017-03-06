@@ -4,17 +4,14 @@ $(document).ready(function () {
     });
     $(".list-text p").on('click','.more',function() {
         $(".can").slideToggle();
-        var More = "";
-        More += ''
     });
     $(".see-children").on('click','span',function() {
-        // console.log($(this).width());
-        var inx = $(this).index();
-        var selfText = $(this).text();
-        var num = selfText.length;
-        var width = $(this).width();
-        var titleText = $(this).parent().siblings().children().eq(inx).text();
-        var fontSize = $(this).css("font-size").split("p")[0]*num;
+        var inx = $(this).index(),
+            selfText = $(this).text(),
+            num = selfText.length,
+            width = $(this).width(),
+            titleText = $(this).parent().siblings().children().eq(inx).text(),
+            fontSize = $(this).css("font-size").split("p")[0]*num;
         console.log(fontSize,width);
         if (fontSize>width){
             $(".module").show();
