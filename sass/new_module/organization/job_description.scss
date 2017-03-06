@@ -116,8 +116,9 @@
           }
         }
       }
+      margin-top:160px;
       .content-tab{
-        height: 665px;
+        max-height: 530px;
         overflow-x: hidden;
         overflow-y: auto;
         .table{

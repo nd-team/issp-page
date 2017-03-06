@@ -41,25 +41,25 @@
     </section>
     <section class="right-section">
         <div class="top-content">
-            <div class="top">
-                <div class="top-back">
-                    <a href="javascript:void(0)" class="back">返回</a>
+            <div class="top-fixed">
+                <div class="top">
+                    <div class="top-back">
+                        <a href="javascript:void(0)" class="back">返回</a>
+                    </div>
+                    <div class="search">
+                        <a href="javascript:void(0)" class="search-btn"></a>
+                        <select class="selected">
+                            <option value="0">张三三</option>
+                            <option value="1">张四四</option>
+                            <option value="2">张五五</option>
+                            <option value="3">张六六</option>
+                            <option value="4">张七七</option>
+                            <option value="5">张八八</option>
+                            <option value="6">张九九</option>
+                        </select>
+                        <span class="arrow"></span>
+                    </div>
                 </div>
-                <div class="search">
-                    <a href="javascript:void(0)" class="search-btn"></a>
-                    <select class="selected">
-                        <option value="0">张三三</option>
-                        <option value="1">张四四</option>
-                        <option value="2">张五五</option>
-                        <option value="3">张六六</option>
-                        <option value="4">张七七</option>
-                        <option value="5">张八八</option>
-                        <option value="6">张九九</option>
-                    </select>
-                    <span class="arrow"></span>
-                </div>
-            </div>
-            <div class="content">
                 <ul class="list">
                     <li class="current">
                         <a href="javascript:void(0)" class="lis">列表<span>Tabulate</span></a>
@@ -88,6 +88,9 @@
                         <i class="arrow-select"><img src="/images/new_module/organization/job-arrow.png" alt=""></i>
                     </li>
                 </ul>
+            </div>
+
+            <div class="content">
                 <div class="content-tab">
                     <ul class="table">
                         <li class="list-head">
@@ -206,9 +209,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="pagination-click" id="pages"></div>
+
         </div>
-        <footer class="footer"></footer>
+        <footer class="footer"> <div class="pagination-click" id="pages"></div></footer>
     </section>
     <script src="/js/jquery-2.1.1.min.js"></script>
     <script src="/js/job_description.js"></script>

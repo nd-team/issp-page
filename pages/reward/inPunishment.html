@@ -140,7 +140,7 @@
                              <label>处罚名称</label>
                              <p class="titleName">
                                 <input type="text" placeholder="可填写标题或者选择标题">
-                                <a href="javascript:void(0)"><img src="/images/reward/inPun01.png">选择标题</a>
+                                <a href="javascript:void(0)" data-title="oneTitle"><img src="/images/reward/inPun01.png">选择标题</a>
                              </p>
                         </li>
                         <li class="inPunName3 wrap_w">
@@ -188,8 +188,8 @@
                             <p>
                                 <label>处罚日期</label>
                                 <span class="titleName">
-                                <input type="text" placeholder="">
-                                      <a href="javascript:void(0)"><img src="/images/reward/inPun03.png">选择</a>
+                                 <input type="text" id="datepicker">
+                                      <a href="javascript:void(0)"><img src="/images/reward/inPun03.png"></a>
                                 </span>
                             </p>
 
@@ -213,12 +213,15 @@
                     <ul class="wrap_t">
                         <li class="cur">
                             <a href="javascript:void(0)">已管理人员</a>
+                            <i class="cur2"><img src="/images/reward/inPun05.png"></i>
                         </li>
                         <li>
                              <a href="javascript:void(0)">综合资源部</a>
+                            <i><img src="/images/reward/inPun05.png"></i>
                         </li>
                         <li>
                             <a href="javascript:void(0)">财务部</a>
+                            <i><img src="/images/reward/inPun05.png"></i>
                         </li>
                         <li class="InAdd">
                             <a href="javascript:void(0)"><img src="/images/reward/inPun04.png"></a>
@@ -616,53 +619,49 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="pagination2">
-                        <a href="javascript:void(0)" class="prev">上一页</a>
-                        <a href="javascript:void(0)" class="current">1</a>
-                        <a href="javascript:void(0)">2</a>
-                        <a href="javascript:void(0)">3</a>
-                        <a href="javascript:void(0)" class="cur-center">...</a>
-                        <a href="javascript:void(0)">20</a>
-                        <a href="javascript:void(0)" class="next">下一页</a>
-                    </div>
+                </div>
+                <div class="pagination2 wrap_t">
+                    <a href="javascript:void(0)" class="prev">上一页</a>
+                    <a href="javascript:void(0)" class="current">1</a>
+                    <a href="javascript:void(0)">2</a>
+                    <a href="javascript:void(0)">3</a>
+                    <a href="javascript:void(0)" class="cur-center">...</a>
+                    <a href="javascript:void(0)">20</a>
+                    <a href="javascript:void(0)" class="next">下一页</a>
                 </div>
             </div>
         </div>
+        <!--模态框-->
+        <div id="modal">
+            <div class="oneTitle m-con">
+                <p class="xTitle">
+                    <span>选择标题</span>
+                    <i class="close"><img src="/images/reward/close.png"></i>
+                </p>
+                <div class="xBody">
+                    <p class="picTitle">图案标题:</p>
+                    <ul>
+                        <li class="now">
+                            <svg role="img" class="pictwo">
+                                <use xlink:href="#pictwo"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg role="img" class="picone">
+                                <use xlink:href="#picone"></use>
+                            </svg>
+                        </li>
+                        <li class="textTitle">后期会增加更多图案喔！敬请期待</li>
+                    </ul>
+                    <p class="picTitle">文字标题:</p>
+                    <textarea></textarea>
+                    <p class="sureTitle">选中其中一种格式即可成为标题</p>
 
-
-        <div class="oneTitle">
-            <p class="xTitle">
-                <span>选择标题</span>
-                <i><img src="/images/reward/close.png"></i>
-            </p>
-             <div class="xBody">
-                   <p class="picTitle">图案标题:</p>
-                   <ul>
-                       <li class="now">
-                           <svg role="img" class="pictwo">
-                           <use xlink:href="#pictwo"></use>
-                          </svg>
-                       </li>
-                       <li>
-                           <svg role="img" class="picone">
-                               <use xlink:href="#picone"></use>
-                           </svg>
-                       </li>
-                       <li>后期会增加更多图案喔！敬请期待</li>
-                   </ul>
-                 <p class="picTitle">文字标题:</p>
-                 <textarea></textarea>
-                 <p class="sureTitle">选中其中一种格式即可成为标题</p>
-
-             </div>
-            <button>确定</button>
+                </div>
+                <button>确定</button>
+            </div>
         </div>
-
-
-
-
-
-
+        <div id="modalbg"></div>
     </div>
 <footer>
     <div class="wrap">
@@ -717,27 +716,11 @@
 <script src="/js/jquery-2.1.1.min.js"></script>
 <script src="/js/honor/moment.min.js"></script>
 <script src="/js/honor/pikaday.js"></script>
+<script src="/js/time.js"></script>
 <script src="/js/common.js"></script>
 <script>
     $(document).ready(function(){
-       // var inPun05= "<img src='/images/reward/inPun05.png'>";
-      //  var div = $("<i>" + inPun05 + "</i>");
-       // $(".InTop ul li").hasClass('.cur').append(div);
-       /* if($('.InTop ul li').hasClass('cur')){
-             $(this).not('.cur').addClass('blueColor');
-        }*/
-        $('.InBodyAll').find(".InBody").not(".InBody:nth-of-type(1)").hide();
-        $(".InTop ul li:not('.InAdd')").click(function(){
-              $('.InTop ul li').removeClass('cur');
-              $(this).addClass('cur');
-            $('.InBodyAll>div:eq(' + $(this).index() + ')').show().siblings().hide();
-        });
-        $('.InTop ul li i').click(function(){
-            $(this).parent().remove();
-        });
-        $('.xBody ul li').click(function(){
-            $(this).addClass('now').siblings().removeClass('now');
-        })
+
     })
 </script>
 </body>
