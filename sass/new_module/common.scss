@@ -65,7 +65,7 @@ body{
   display: flex;
 }
 .left-section{
-  width: 198px;
+  width: 200px;
   height: 100%;
   background-color: #33383b;
   position: fixed;
@@ -91,72 +91,65 @@ body{
     }
   }
   .nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 30px;
     color: #999;
-    h3{
-      height: 30px;
-      font-size: 16px;
-      padding-left: 15px;
-      margin-left: -60px;
-      cursor: pointer;
+    .nav-list{
+      display:flex;
+      flex-direction: column;
+      h3{
+        height: 50px;
+        font-size: 16px;
+        padding-left: 15px;
+        cursor: pointer;
+        display:flex;
+        align-items:center;
+        .nav-arrow{
+          display: inline-block;
+          width: 9px;
+          height: 7px;
+          background: url("/images/new_module/organization/nav-down.png") no-repeat;
+          padding-left: 10px;
+          vertical-align: middle;
+        }
+      }
+
+      .menu{
+        width: 100%;
+        li{
+          line-height: 40px;
+          text-indent:40px;
+          a{
+            color: #999;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            &:hover{
+              color: #06afe1;
+            }
+          }
 
 
-    }
-    .nav-arrow{
-      display: inline-block;
-      width: 9px;
-      height: 7px;
-      background: url("/images/new_module/organization/nav-down.png") no-repeat;
-      padding-left: 10px;
-      vertical-align: middle;
-    }
-    .menu{
-      width: 100%;
-      li{
-        line-height: 40px;
-       text-indent:50px;
-        a{
-          color: #999;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
+        }
+        .active{
+          background-color: #fff;
+          background-image: url("/images/new_module/organization/nav_rrow.png");
+          background-repeat: no-repeat;
+          background-position: left center;
 
-          &:hover{
+          a{
             color: #06afe1;
           }
         }
-
-
-        .sub-menu{
-          display:flex;
-          flex-direction:column;
-          width:100%;
-          line-height:40px;
-          text-indent:60px;
-        }
-      }
-      .active{
-        background-color: #fff;
-        background-image: url("/images/new_module/organization/nav_rrow.png");
-        background-repeat: no-repeat;
-        background-position: left center;
-        
-        a{
-          color: #06afe1;
-        }
       }
     }
+
   }
 }
 .right-section{
   flex: 1;
   height: 100%;
   background-color: #fdfdfd;
-  margin-left: 198px;
+  margin-left: 200px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -165,7 +158,7 @@ body{
     .top-fixed{
       position:fixed;
       top:0;
-      left:198px;
+      left:200px;
       right:0;
     }
     .top{
