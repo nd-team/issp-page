@@ -130,6 +130,7 @@ body{
           }
         }
 
+
         .sub-menu{
           display:flex;
           flex-direction:column;
@@ -143,14 +144,14 @@ body{
         background-image: url("/images/new_module/organization/nav_rrow.png");
         background-repeat: no-repeat;
         background-position: left center;
-        
+
         a{
           color: #06afe1;
-
         }
       }
     }
   }
+}
 .right-section{
   flex: 1;
   height: 100%;

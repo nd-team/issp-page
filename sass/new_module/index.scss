@@ -127,7 +127,6 @@ header{
       width: 1200px;
     }
     .company{
-      //flex: 1;
       height: 250px;
       display: flex;
       justify-content: center;
@@ -144,7 +143,7 @@ header{
       //  }
       //}
       @media screen and (max-width: 1600px) {
-        height: 200px;
+        height: 190px;
         margin-bottom: 20px;
       }
       .same-type{
@@ -161,7 +160,7 @@ header{
           margin-right: 0;
         }
         @media screen and (max-width: 1600px) {
-          width: 200px;
+          width: 190px;
           height: 100%;
           margin-right: 10px;
         }
@@ -169,12 +168,7 @@ header{
             width: 246px;
             height: 246px;
             border: 2px solid #666;
-            //position: absolute;
             background-color: #fff;
-            //@media screen and (min-width: 1280px) {
-            //  width: 200px;
-            //  height: 200px;
-            //}
             //&:nth-child(1){
             //  transform: translateZ(124px) translateY(0);
             //}
@@ -183,7 +177,7 @@ header{
             //}
             @media screen and (max-width: 1600px) {
               width: 196px;
-              height: 196px;
+              height: 185px;
             }
             .border-bg{
               height: 230px;
@@ -193,11 +187,13 @@ header{
               flex-direction: column;
               align-items: center;
               justify-content: center;
-              //@media screen and (min-width: 1280px) {
-              //  height: 186px;
-              //}
               @media screen and (max-width: 1600px) {
-                height: 178px;
+                height: 172px;
+                margin: 6px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
               }
               .icon-one{
                 display: block;
@@ -216,6 +212,9 @@ header{
               .top-text{
                 font-size: 22px;
                 color: #333;
+                @media screen and (max-width: 1600px) {
+                  font-size: 20px;
+                }
               }
 
               p{
@@ -225,30 +224,14 @@ header{
                 margin: 15px auto 0;
                 border-top: 1px solid #bababa;
                 @media screen and (max-width: 1600px) {
-                  width: 165px;
+                  width: 140px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
                 }
                 span{
                   display: block;
                   line-height: 26px;
-                  @media screen and (max-width: 1600px) {
-                    width: 165px;
-                    &.word-text{
-                      font:{
-                        size: 16px !important;
-                        family: Arial;
-                      }
-                      color: #999 !important;
-                    }
-                    &:first-child{
-                      font-size: 18px;
-                      color: #333;
-                    }
-                    &:last-child{
-                      font-family:Arial;
-                      font-size: 16px;
-                      color: #999;
-                    }
-                  }
                   &.word-text{
                     font:{
                       size: 20px !important;
@@ -264,6 +247,20 @@ header{
                     font-family:Arial;
                     font-size: 18px;
                     color: #999;
+                  }
+                  @media screen and (max-width: 1600px) {
+                    width: 165px;
+                    &.word-text{
+                      font:{
+                        size: 16px !important;
+                      }
+                    }
+                    &:first-child{
+                      font-size: 20px;
+                    }
+                    &:last-child{
+                      font-size: 15px;
+                    }
                   }
                 }
               }
@@ -281,6 +278,10 @@ header{
           transform-style: preserve-3d; //设置变换属性为3D，只对子元素有效
           transform: rotateX(0deg);
           transition: all 0.5s ease-out;
+          @media screen and (max-width: 1600px) {
+            width: 200px;
+            height: 190px;
+          }
           //position: absolute;
           //&:nth-child(1){
           //  transform: translateZ(110px) translateY(0);
@@ -296,6 +297,16 @@ header{
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            @media screen and (max-width: 1600px) {
+              height: 176px;
+              .top-text{
+                font:{
+                  size: 16px;
+                  family: Arial;
+                }
+                color: #fff;
+              }
+            }
             .icon-one{
               display: block;
               width: 34px;
@@ -307,6 +318,9 @@ header{
                 family: Arial;
               }
               color: #fff;
+              @media screen and (max-width: 1600px) {
+                font-size: 20px;
+              }
             }
             p{
               width: 210px;
@@ -316,6 +330,10 @@ header{
               align-items: center;
               margin-top: 10px;
               border-top: 1px solid #b6babb;
+              @media screen and (max-width: 1600px) {
+                width: 145px;
+                text-align: center;
+              }
               span{
                 line-height: 24px;
                 color: #999;
@@ -335,6 +353,25 @@ header{
                   font-size: 20px;
                   color: #999;
                 }
+                @media screen and (max-width: 1600px) {
+                  width: 110px;
+                  &.word-text{
+                    color: #999 !important;
+                    font:{
+                      size: 16px !important;
+                      family: Arial;
+                    }
+                  }
+                  &:first-child{
+                    font-size: 18px;
+                    color: #fff;
+                  }
+                  &:last-child{
+                    font-family:Arial;
+                    font-size: 16px;
+                    color: #999;
+                  }
+                }
               }
             }
           }
@@ -347,6 +384,9 @@ header{
         display: flex;
         justify-content: center;
         position: relative;
+        @media screen and (max-width: 1600px) {
+          width: 390px;
+        }
         .three{
           width: 512px;
           height: 246px;
@@ -354,7 +394,9 @@ header{
           transform-style: preserve-3d; //设置变换属性为3D，只对子元素有效
           transform: rotateX(0deg);
           transition: all 0.5s ease-out;
-          //position: absolute;
+          @media screen and (max-width: 1600px) {
+            height: 186px;
+          }
           .border-bg{
             height: 236px;
             margin: 5px;
@@ -376,6 +418,10 @@ header{
             &.assessment{
               background: url("/images/new_module/index/tu03.jpg") no-repeat center center;
             }
+            @media screen and (max-width: 1600px) {
+              height: 176px;
+              padding-right: 25px;
+            }
             .things-management{
               display: block;
               height: 45px;
@@ -385,6 +431,10 @@ header{
               width: 192px;
               font-size: 22px;
               color: #31302c;
+              @media screen and (max-width: 1600px) {
+                width: 160px;
+                font-size: 20px;
+              }
             }
             span{
               width: 192px;
@@ -393,6 +443,10 @@ header{
               color: #989896;
               line-height: 28px;
               font-family:Arial;
+              @media screen and (max-width: 1600px) {
+                width: 160px;
+                font-size: 16px;
+              }
             }
           }
         }
