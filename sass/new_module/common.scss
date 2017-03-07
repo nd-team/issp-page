@@ -123,6 +123,7 @@ body{
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            font-size:12px;
             &:hover{
               color: #06afe1;
             }
@@ -223,6 +224,11 @@ body{
       background-color: #f6f6f6;
       display: flex;
       align-items: center;
+      &.width-10{
+        li{
+          width:10%;
+        }
+      }
       border: {
         top: 1px;
         bottom: 1px;
