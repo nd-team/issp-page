@@ -26,11 +26,15 @@
             background-color:#758c94;
             align-items:center;
             border-radius:5px 0;
-            padding-left:60px;
+            //padding-left:60px;
+
             span{
               flex:1;
               color:#fff;
               font-size:12px;
+              &:first-child{
+                flex:0 0 60px;
+              }
             }
           }
           .list-all{
@@ -44,20 +48,18 @@
               display:flex;
               //height:auto;
               line-height:40px;
-              padding-left:60px;
 
               p{
-                display:flex;
+                //display:flex;
                 flex:1;
-                justify-content:flex-start;
                 color:#666;
                 font-size:12px;
-
-                span{
-                  margin-left:-40px;
-                  &:last-child{
-                    padding-left:70px;
-                  }
+                overflow:hidden;
+                text-overflow:ellipsis;
+                white-space:nowrap;
+                &:first-child{
+                  flex:0 0 60px;
+                  text-align:center;
                 }
                 .more{
                   display:flex;
