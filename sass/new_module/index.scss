@@ -421,6 +421,9 @@ header{
             @media screen and (max-width: 1600px) {
               height: 176px;
               padding-right: 25px;
+              &.business{
+                background-position: 30% 20%;
+              }
             }
             .things-management{
               display: block;
