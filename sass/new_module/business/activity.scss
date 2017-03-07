@@ -36,13 +36,14 @@
           height: auto;
           line-height: 40px;
           padding-left: 60px;
-
           p{
-            display: flex;
             flex: 1;
             justify-content: flex-start;
             color: #666;
             font-size: 12px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
             span{
               margin-left: -40px;
               &:last-child{
@@ -163,6 +164,16 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+.right-section{
+  &.sup{
+    .list{
+      li{
+        width:10%;
       }
     }
   }
