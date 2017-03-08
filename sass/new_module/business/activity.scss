@@ -1,7 +1,6 @@
 @import "../common";
 .right-section{
   .top-content{
-
     flex:1;
     .content{
       width:99%;
@@ -187,6 +186,7 @@
         }
       }
       .content-input{
+        display: none;
         .input-list{
           display:flex;
           margin-bottom:60px;
@@ -263,7 +263,9 @@
         }
 
       }
-
+      .tab-item{
+        display: block;
+      }
     }
   }
 }
