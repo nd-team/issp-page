@@ -91,9 +91,12 @@ body{
     }
   }
   .nav{
+    height: 100%;
     margin-top: 30px;
     color: #999;
+    overflow: hidden;
     .nav-list{
+      height: auto;
       display:flex;
       flex-direction: column;
       h3{
@@ -123,7 +126,7 @@ body{
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            font-size:12px;
+            font-size:14px;
             &:hover{
               color: #06afe1;
             }

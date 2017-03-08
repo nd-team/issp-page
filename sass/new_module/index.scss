@@ -115,7 +115,7 @@ header{
 .main{
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  //overflow: hidden;
   .all-module{
     width: 100%;
     height: auto;
@@ -124,72 +124,58 @@ header{
     flex-direction: column;
     overflow: auto;
     @media screen and (max-width: 1600px) {
-      width: 1200px;
+      width: 1220px;
     }
     .company{
-      height: 250px;
+      width: 100%;
+      height: auto;
       display: flex;
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      //overflow: hidden;
-      //perspective-origin:center;  //建立一个3D场景，这里以每个li标签为3D场景（透视效果，只影响子元素）
-      //perspective:2000px;//这个是观察的视角，类似摄像机镜头
-      //transform-style: preserve-3d; //设置变换属性为3D，只对子元素有效
+      overflow: hidden;
+      transform-origin: center;
       margin-bottom: 15px;
-      //&:hover{
-      //  .same-type{
-      //    transform: rotateX(90deg);
-      //  }
-      //}
       @media screen and (max-width: 1600px) {
         height: 190px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
       }
       .same-type{
-        width: 250px;
-        height: 100%;
+        height: auto;
         display: flex;
         justify-content: center;
-        transform-style: preserve-3d;
-        transform: rotateX(0deg);
-        transition: all 0.5s ease-out;
-        position: relative;
         margin-right: 15px;
+        will-change: transform;
+        transition: box-shadow .3s ease;
+        box-shadow: 0 10px 30px transparent;
         &:last-child{
           margin-right: 0;
         }
         @media screen and (max-width: 1600px) {
           width: 190px;
           height: 100%;
-          margin-right: 10px;
+          margin-right: 15px;
         }
         .first{
             width: 246px;
             height: 246px;
             border: 2px solid #666;
-            background-color: #fff;
-            //&:nth-child(1){
-            //  transform: translateZ(124px) translateY(0);
-            //}
-            //&:nth-child(2) {
-            //  transform: rotateX(-90deg) translateZ(124px);
-            //}
             @media screen and (max-width: 1600px) {
-              width: 196px;
-              height: 185px;
+              width: 186px;
+              height: 186px;
             }
             .border-bg{
-              height: 230px;
+              height: 224px;
               border: 1px solid #bbb;
-              margin: 8px;
+              margin: 10px;
               display: flex;
               flex-direction: column;
               align-items: center;
               justify-content: center;
+              background-color: #fff;
+              transition: all .3s ease-out;
               @media screen and (max-width: 1600px) {
-                height: 172px;
-                margin: 6px;
+                height: 164px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -200,41 +186,51 @@ header{
                 width: 34px;
                 height: 40px;
                 margin: 0 auto;
+
                 &.icon-bus{
                   width: 48px;
                   height: 34px;
+                  @media screen and (max-width: 1600px) {
+                    padding-top: 10px;
+                  }
                 }
                 &.home{
                   width: 42px;
                   height: 36px;
+                  @media screen and (max-width: 1600px) {
+                    padding-top: 10px;
+                  }
                 }
               }
               .top-text{
-                font-size: 22px;
+                font-size: 24px;
                 color: #333;
                 @media screen and (max-width: 1600px) {
-                  font-size: 20px;
+                  font-size: 18px;
+                  text-align: center;
                 }
               }
 
               p{
-                width: 210px;
+                width: 200px;
                 padding-top: 12px;
                 text-align: center;
                 margin: 15px auto 0;
                 border-top: 1px solid #bababa;
                 @media screen and (max-width: 1600px) {
-                  width: 140px;
+                  width: 145px;
                   display: flex;
                   flex-direction: column;
                   align-items: center;
+                  margin-top: 12px;
+                  padding-top: 5px;
                 }
                 span{
                   display: block;
-                  line-height: 26px;
+                  line-height: 30px;
                   &.word-text{
                     font:{
-                      size: 20px !important;
+                      size: 18px !important;
                       family: Arial;
                     }
                     color: #999 !important;
@@ -249,8 +245,9 @@ header{
                     color: #999;
                   }
                   @media screen and (max-width: 1600px) {
-                    width: 165px;
+                    width: 145px;
                     &.word-text{
+                      line-height: 20px;
                       font:{
                         size: 16px !important;
                       }
@@ -260,6 +257,7 @@ header{
                     }
                     &:last-child{
                       font-size: 15px;
+                      line-height: 20px;
                     }
                   }
                 }
@@ -275,30 +273,20 @@ header{
           width: 250px;
           height: 250px;
           background-color: #33383b;
-          transform-style: preserve-3d; //设置变换属性为3D，只对子元素有效
-          transform: rotateX(0deg);
-          transition: all 0.5s ease-out;
           @media screen and (max-width: 1600px) {
-            width: 200px;
+            width: 190px;
             height: 190px;
           }
-          //position: absolute;
-          //&:nth-child(1){
-          //  transform: translateZ(110px) translateY(0);
-          //}
-          //&:nth-child(2) {
-          //  transform: rotateX(-90deg) translateZ(110px);
-          //}
           .border-bg{
-            height: 236px;
-            margin: 6px;
+            height: 228px;
+            margin: 10px;
             border: 1px solid #bbb;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             @media screen and (max-width: 1600px) {
-              height: 176px;
+              height: 168px;
               .top-text{
                 font:{
                   size: 16px;
@@ -320,27 +308,29 @@ header{
               color: #fff;
               @media screen and (max-width: 1600px) {
                 font-size: 20px;
+                line-height: 30px;
               }
             }
             p{
-              width: 210px;
+              width: 200px;
               padding-top: 10px;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
+              text-align: center;
               margin-top: 10px;
               border-top: 1px solid #b6babb;
               @media screen and (max-width: 1600px) {
-                width: 145px;
+                width: 150px;
                 text-align: center;
+                padding-top: 5px;
+                margin-top: 5px;
               }
               span{
-                line-height: 24px;
+                display: block;
+                line-height: 30px;
                 color: #999;
                 &.word-text{
                   color: #999 !important;
                   font:{
-                    size: 20px !important;
+                    size: 18px !important;
                     family: Arial;
                   }
                 }
@@ -350,26 +340,21 @@ header{
                 }
                 &:last-child{
                   font-family:Arial;
-                  font-size: 20px;
+                  font-size: 18px;
                   color: #999;
                 }
                 @media screen and (max-width: 1600px) {
-                  width: 110px;
                   &.word-text{
-                    color: #999 !important;
                     font:{
                       size: 16px !important;
-                      family: Arial;
                     }
                   }
                   &:first-child{
                     font-size: 18px;
-                    color: #fff;
                   }
                   &:last-child{
-                    font-family:Arial;
-                    font-size: 16px;
-                    color: #999;
+                    line-height: 22px;
+                    font-size: 14px;
                   }
                 }
               }
@@ -385,25 +370,28 @@ header{
         justify-content: center;
         position: relative;
         @media screen and (max-width: 1600px) {
-          width: 390px;
+          width: 396px;
         }
         .three{
-          width: 512px;
+          width: 100%;
           height: 246px;
           border: 2px solid #666;
           transform-style: preserve-3d; //设置变换属性为3D，只对子元素有效
           transform: rotateX(0deg);
           transition: all 0.5s ease-out;
           @media screen and (max-width: 1600px) {
+            width: 396px;
             height: 186px;
           }
           .border-bg{
-            height: 236px;
-            margin: 5px;
+            height: 228px;
+            margin: 8px;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
             justify-content: center;
+            transition: all 0.3s ease-out;
+            border: 1px solid #9a9997;
             background: url("/images/new_module/index/tu01.jpg") no-repeat center center;
             padding-right: 40px;
             &.tracking{
@@ -419,8 +407,15 @@ header{
               background: url("/images/new_module/index/tu03.jpg") no-repeat center center;
             }
             @media screen and (max-width: 1600px) {
-              height: 176px;
+              height: 168px;
               padding-right: 25px;
+              &.business{
+                background-position: 62% 20%;
+              }
+              //&:hover{
+              //  height: 130px;
+              //  border: 5px solid #9a9997;
+              //}
             }
             .things-management{
               display: block;
@@ -428,24 +423,26 @@ header{
               line-height: 45px;
               text-align: center;
               background-color: #01c5ff;
-              width: 192px;
+              width: 195px;
               font-size: 22px;
               color: #31302c;
               @media screen and (max-width: 1600px) {
-                width: 160px;
+                width: 150px;
                 font-size: 20px;
               }
             }
             span{
               width: 192px;
               text-align: center;
-              font-size: 19px;
               color: #989896;
               line-height: 28px;
-              font-family:Arial;
+              font:{
+                family: Arial;
+                size: 19px;
+              }
               @media screen and (max-width: 1600px) {
-                width: 160px;
-                font-size: 16px;
+                width: 145px;
+                font-size: 15px;
               }
             }
           }

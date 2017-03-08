@@ -2,9 +2,22 @@ $(document).ready(function () {
     $(".header-menu").on('click',function() {
         $(".menu").slideToggle();
     });
-    $(".list-text p").on('click','.more',function() {
-        $(".can").slideToggle();
-    });
+    // $(".list-text p").on('click','.more',function() {
+    //     $(".can").slideToggle();
+    // });
+    $('.list-text p').on("click",".more",function(){
+        $(this).parents(".list-all").children('.can').stop()
+        if(!$(this).hasClass("open")){
+            $(this).addClass("open");
+            $(this).parents(".list-all").children('.can').slideDown()
+
+        }else {
+            $(this).removeClass("open");
+            $(this).parents(".list-all").children('.can').slideUp()
+
+        }
+
+    })
     $(".see-children").on('click','span',function() {
         var inx = $(this).index(),
             selfText = $(this).text(),
