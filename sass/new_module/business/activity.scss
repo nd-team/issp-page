@@ -239,6 +239,29 @@
             }
           }
         }
+        .dataBottom{
+          display:flex;
+          justify-content:flex-end;
+          align-items:center;
+          margin-right:100px;
+          span{
+            display:flex;
+            align-items:center;
+            margin:0 55px;
+            img{
+              margin:5px 10px 0 0;
+            }
+          }
+          button{
+            color: white;
+            width: 111px;
+            height: 42px;
+            font-size: 18px;
+            cursor: pointer;
+            background: url("/images/new_module/data/button.png") no-repeat;
+          }
+        }
+
       }
 
     }
