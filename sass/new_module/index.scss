@@ -133,58 +133,38 @@ header{
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      //overflow: hidden;
-      perspective-origin:center;  //建立一个3D场景，这里以每个li标签为3D场景（透视效果，只影响子元素）
-      perspective:2000px;//这个是观察的视角，类似摄像机镜头
-      transform-style: preserve-3d; //设置变换属性为3D，只对子元素有效
+      overflow: hidden;
       transform-origin: center;
       margin-bottom: 20px;
-      //&:hover{
-      //  .same-type{
-      //    transform: rotateX(90deg);
-      //  }
-      //}
       @media screen and (max-width: 1600px) {
-        height: 190px;
-        margin-bottom: 20px;
+        height: 160px;
+        margin-bottom: 25px;
       }
-      //&:hover{
-      //  .same-type{
-      //    transform: rotateY(180deg);
-      //  }
-      //}
+
 
       .same-type{
-        //width: 100%;
         height: auto;
         display: flex;
         justify-content: center;
         margin-right: 20px;
+        will-change: transform;
+        transition: box-shadow .3s ease;
+        box-shadow: 0 10px 30px transparent;
         &:last-child{
           margin-right: 0;
         }
         @media screen and (max-width: 1600px) {
-          width: 190px;
+          width: 160px;
           height: 100%;
-          margin-right: 12px;
+          margin-right: 25px;
         }
         .first{
             width: 216px;
             height: 216px;
             border: 2px solid #666;
-            transition: all .4s ease-out;
-          //&:nth-child(1){
-          //  transform: translateX(0) translateY(0);
-          //}
-          //&:nth-child(2) {
-          //  transform: rotateY(-180deg) translateX(0);
-          //}
-          &:hover{
-              border: 6px solid #666;
-          }
             @media screen and (max-width: 1600px) {
-              width: 196px;
-              height: 185px;
+              width: 156px;
+              height: 156px;
             }
             .border-bg{
               //width: 100%;
@@ -196,10 +176,9 @@ header{
               align-items: center;
               justify-content: center;
               background-color: #fff;
-              transition: all .8s ease-out;
+              transition: all .3s ease-out;
               @media screen and (max-width: 1600px) {
-                height: 154px;
-                //margin: 6px;
+                height: 134px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -223,7 +202,8 @@ header{
                 font-size: 22px;
                 color: #333;
                 @media screen and (max-width: 1600px) {
-                  font-size: 20px;
+                  font-size: 18px;
+                  text-align: center;
                 }
               }
 
@@ -234,17 +214,19 @@ header{
                 margin: 15px auto 0;
                 border-top: 1px solid #bababa;
                 @media screen and (max-width: 1600px) {
-                  width: 140px;
+                  width: 128px;
                   display: flex;
                   flex-direction: column;
                   align-items: center;
+                  margin-top: 5px;
+                  padding-top: 5px;
                 }
                 span{
                   display: block;
                   line-height: 26px;
                   &.word-text{
                     font:{
-                      size: 20px !important;
+                      size: 18px !important;
                       family: Arial;
                     }
                     color: #999 !important;
@@ -259,14 +241,14 @@ header{
                     color: #999;
                   }
                   @media screen and (max-width: 1600px) {
-                    width: 165px;
+                    width: 145px;
                     &.word-text{
                       font:{
-                        size: 16px !important;
+                        size: 15px !important;
                       }
                     }
                     &:first-child{
-                      font-size: 20px;
+                      font-size: 18px;
                     }
                     &:last-child{
                       font-size: 15px;
@@ -282,33 +264,23 @@ header{
         justify-content: center;
         position: relative;
         .second{
-          width: 250px;
-          height: 250px;
+          width: 220px;
+          height: 220px;
           background-color: #33383b;
-          transform-style: preserve-3d; //设置变换属性为3D，只对子元素有效
-          transform: rotateX(0deg);
-          transition: all 0.5s ease-out;
           @media screen and (max-width: 1600px) {
-            width: 200px;
-            height: 190px;
+            width: 160px;
+            height: 160px;
           }
-          //position: absolute;
-          //&:nth-child(1){
-          //  transform: translateZ(110px) translateY(0);
-          //}
-          //&:nth-child(2) {
-          //  transform: rotateX(-90deg) translateZ(110px);
-          //}
           .border-bg{
-            height: 219px;
-            margin: 15px;
+            height: 198px;
+            margin: 10px;
             border: 1px solid #bbb;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             @media screen and (max-width: 1600px) {
-              height: 159px;
+              height: 138px;
               .top-text{
                 font:{
                   size: 16px;
@@ -329,7 +301,7 @@ header{
               }
               color: #fff;
               @media screen and (max-width: 1600px) {
-                font-size: 20px;
+                font-size: 18px;
               }
             }
             p{
@@ -339,8 +311,10 @@ header{
               margin-top: 10px;
               border-top: 1px solid #b6babb;
               @media screen and (max-width: 1600px) {
-                width: 145px;
+                width: 128px;
                 text-align: center;
+                padding-top: 5px;
+                margin-top: 5px;
               }
               span{
                 display: block;
@@ -365,14 +339,15 @@ header{
                 @media screen and (max-width: 1600px) {
                   &.word-text{
                     font:{
-                      size: 16px !important;
+                      size: 15px !important;
                     }
                   }
                   &:first-child{
                     font-size: 18px;
                   }
                   &:last-child{
-                    font-size: 16px;
+                    line-height: 22px;
+                    font-size: 15px;
                   }
                 }
               }
@@ -382,31 +357,33 @@ header{
         }
       }
       .type-three{
-        width: 516px;
+        width: 485px;
         height: 100%;
         display: flex;
         justify-content: center;
         position: relative;
         @media screen and (max-width: 1600px) {
-          width: 390px;
+          width: 360px;
         }
         .three{
-          width: 512px;
-          height: 246px;
+          width: 485px;
+          height: 216px;
           border: 2px solid #666;
           transform-style: preserve-3d; //设置变换属性为3D，只对子元素有效
           transform: rotateX(0deg);
           transition: all 0.5s ease-out;
           @media screen and (max-width: 1600px) {
-            height: 186px;
+            height: 156px;
           }
           .border-bg{
-            height: 236px;
-            margin: 5px;
+            height: 198px;
+            margin: 8px;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
             justify-content: center;
+            transition: all 0.3s ease-out;
+            border: 1px solid #9a9997;
             background: url("/images/new_module/index/tu01.jpg") no-repeat center center;
             padding-right: 40px;
             &.tracking{
@@ -422,11 +399,15 @@ header{
               background: url("/images/new_module/index/tu03.jpg") no-repeat center center;
             }
             @media screen and (max-width: 1600px) {
-              height: 176px;
+              height: 138px;
               padding-right: 25px;
               &.business{
-                background-position: 30% 20%;
+                background-position: 62% 20%;
               }
+              //&:hover{
+              //  height: 130px;
+              //  border: 5px solid #9a9997;
+              //}
             }
             .things-management{
               display: block;
@@ -438,20 +419,22 @@ header{
               font-size: 22px;
               color: #31302c;
               @media screen and (max-width: 1600px) {
-                width: 160px;
-                font-size: 20px;
+                width: 145px;
+                font-size: 18px;
               }
             }
             span{
               width: 192px;
               text-align: center;
-              font-size: 19px;
               color: #989896;
               line-height: 28px;
-              font-family:Arial;
+              font:{
+                family: Arial;
+                size: 19px;
+              }
               @media screen and (max-width: 1600px) {
-                width: 160px;
-                font-size: 16px;
+                width: 145px;
+                font-size: 15px;
               }
             }
           }
