@@ -1,7 +1,6 @@
 @import "../common";
 .right-section{
   .top-content{
-
     flex:1;
     .content{
       width:99%;
@@ -16,7 +15,7 @@
         max-height:530px;
         overflow-x:hidden;
         overflow-y:auto;
-        display:none;
+        //display:none;
         .table{
           width:100%;
           height:auto;
