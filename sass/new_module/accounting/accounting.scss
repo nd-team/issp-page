@@ -1,0 +1,76 @@
+/*.right-section {
+  .top-content{
+    .content{
+      .content-input{
+        .input-list{
+         ul{
+           li{
+             label{
+               em{
+                 width: 127px!important;
+               }
+             }
+           }
+         }
+        }
+      }
+    }
+  }
+}*/
+.content-input{
+  width: 1300px;
+  margin: 0 auto;
+}
+.content-input ul li{
+  position: relative;
+}
+.box_se{
+background: url("/images/new_module/data/down.png") no-repeat right 16px center;
+}
+.add_image{
+  background: url("/images/new_module/data/date.png") no-repeat right 16px center;
+}
+.select_b1{
+  position: absolute;
+  width: 55%;
+  top:38px;
+  right: 66px;
+  z-index: 111;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  a{
+    height: 29px;
+    line-height: 29px;
+    color: #343434;
+    padding: {
+      left: 15px;
+    };
+    &:hover{
+      background-color: #cbedf9;
+    }
+  }
+}
+//日历颜色
+.pika-title{
+  background-color: #00c6ff;
+}
+.is-selected .pika-button {
+  background: #00c6ff;
+  box-shadow: inset 0 1px 3px #88ae47;
+}
+.pika-single:before {
+  content: '';
+  border-color: transparent transparent #00c6ff transparent;
+}
+.is-today .pika-button {
+  color: #00c6ff;
+  font-weight: bold;
+}
+.is-selected .pika-button {
+  background: #00c6ff;
+  box-shadow: inset 0 1px 3px #00c6ff
+}
+.pika-button:hover {
+  background: #00c6ff;
+}
