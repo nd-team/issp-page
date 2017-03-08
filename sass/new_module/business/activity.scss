@@ -8,6 +8,7 @@
   flex-direction: column;
   overflow: hidden;
   .top-content{
+
     .content{
       width:99%;
       height:auto;
@@ -21,7 +22,7 @@
         max-height:530px;
         overflow-x:hidden;
         overflow-y:auto;
-        display:none;
+        //display:none;
         .table{
           width:100%;
           height:auto;
