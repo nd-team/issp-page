@@ -1,7 +1,13 @@
 @import "../common";
 .right-section{
+  flex: 1;
+  height: 100%;
+  background-color: #fdfdfd;
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   .top-content{
-    flex:1;
     .content{
       width:99%;
       height:auto;
@@ -187,6 +193,10 @@
       }
       .content-input{
         display: none;
+        &.add,&.edit{
+          display:none;
+        }
+
         .input-list{
           display:flex;
           margin-bottom:60px;
@@ -194,9 +204,12 @@
             flex:1;
             ul{
               width:100%;
+              display:flex;
+              flex-wrap: wrap;
               li{
-                margin:38px 0;
+                margin:19px 0;
                 display:flex;
+                flex:0 0 50%;
                 justify-content:center;
                 align-items:center;
                 &.required{
@@ -207,7 +220,6 @@
                       box-shadow: 0 0 3px #1aafea;
                     }
                   }
-
                 }
                 label{
                   width:147px;
