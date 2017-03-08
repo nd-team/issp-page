@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>组织结构管理-岗位层级</title>
+    <title>组织结构管理-维度</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-    <meta name="keywords" content="组织结构管理-岗位层级">
-    <meta name="description" content="组织结构管理-岗位层级">
+    <meta name="keywords" content="组织结构管理-维度">
+    <meta name="description" content="组织结构管理-维度">
     <!--<link rel="stylesheet" href="/css/new_module/common.css">-->
     <link rel="stylesheet" href="/css/new_module/business/activity.css">
 </head>
@@ -31,12 +31,12 @@
                 <li><a href="javascript:void(0)">编号设计信息</a></li>
                 <li><a href="javascript:void(0)">体系</a></li>
                 <li><a href="javascript:void(0)">部门</a></li>
-                <li class="active"><a href="javascript:void(0)">岗位层级</a></li>
+                <li><a href="javascript:void(0)">岗位层级</a></li>
                 <li><a href="javascript:void(0)">岗位</a></li>
                 <li><a href="javascript:void(0)">项目部门工作范围</a></li>
                 <li><a href="javascript:void(0)">操作类型</a></li>
                 <li><a href="javascript:void(0)">角度</a></li>
-                <li><a href="javascript:void(0)">维度</a></li>
+                <li class="active"><a href="javascript:void(0)">维度</a></li>
                 <li><a href="javascript:void(0)">分类</a></li>
                 <li><a href="javascript:void(0)">体现类型</a></li>
                 <li><a href="javascript:void(0)">岗位说明</a></li>
@@ -77,10 +77,10 @@
                     <a href="javascript:void(0)" class="same-two">删除<span>Delete</span></a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)" class="same-one">冻结<span>Freeze</span></a>
+                    <a href="javascript:void(0)" class="same-one">关闭使用<span>Close</span></a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)" class="same-two">解冻<span>Unfreeze</span></a>
+                    <a href="javascript:void(0)" class="same-two">开始使用<span>Start</span></a>
                 </li>
             </ul>
         </div>
@@ -90,11 +90,7 @@
                 <ul class="table">
                     <li class="list-head">
                         <span></span>
-                        <span>编号</span>
-                        <span>体系</span>
-                        <span>项目组/部门</span>
-                        <span>所属地区</span>
-                        <span>成本分类</span>
+                        <span>名称</span>
                         <span>描述</span>
                         <span>状态</span>
                     </li>
@@ -102,10 +98,6 @@
                         <section>
                             <div class="list-text odd">
                                 <p></p>
-                                <p>01</p>
-                                <p>一线实施体系</p>
-                                <p>研发部</p>
-                                <p>广州</p>
                                 <p>一线实施体系</p>
                                 <p>一线实施体系项目</p>
                                 <p>正常</p>
@@ -114,10 +106,6 @@
                         <section>
                             <div class="list-text">
                                 <p></p>
-                                <p>01</p>
-                                <p>一线实施体系</p>
-                                <p>研发部</p>
-                                <p>广州</p>
                                 <p>一线实施体系</p>
                                 <p>一线实施体系项目</p>
                                 <p>正常</p>
@@ -126,10 +114,6 @@
                         <section>
                             <div class="list-text odd">
                                 <p></p>
-                                <p>01</p>
-                                <p>一线实施体系</p>
-                                <p>研发部</p>
-                                <p>广州</p>
                                 <p>一线实施体系</p>
                                 <p>一线实施体系项目</p>
                                 <p>正常</p>
@@ -138,10 +122,6 @@
                         <section>
                             <div class="list-text">
                                 <p></p>
-                                <p>01</p>
-                                <p>一线实施体系</p>
-                                <p>研发部</p>
-                                <p>广州</p>
                                 <p>一线实施体系</p>
                                 <p>一线实施体系项目</p>
                                 <p>正常</p>
@@ -158,29 +138,13 @@
                     <section class="list-left">
                         <ul >
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>编号</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>体系</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目组/部门</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>名称</em></label>
                                 <input type="text">
                             </li>
                         </ul>
                     </section>
                     <section class="list-right">
                         <ul >
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属地区</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><em>成本分类</em></label>
-                                <input type="text">
-                            </li>
                             <li class="required">
                                 <label><em>描述</em></label>
                                 <input type="text">
@@ -198,29 +162,13 @@
                     <section class="list-left">
                         <ul >
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>编号</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>体系</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目组/部门</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>名称</em></label>
                                 <input type="text">
                             </li>
                         </ul>
                     </section>
                     <section class="list-right">
                         <ul >
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属地区</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><em>成本分类</em></label>
-                                <input type="text">
-                            </li>
                             <li class="required">
                                 <label><em>描述</em></label>
                                 <input type="text">
