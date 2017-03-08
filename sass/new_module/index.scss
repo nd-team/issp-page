@@ -124,7 +124,7 @@ header{
     flex-direction: column;
     overflow: auto;
     @media screen and (max-width: 1600px) {
-      width: 1200px;
+      width: 1220px;
     }
     .company{
       width: 100%;
@@ -135,18 +135,16 @@ header{
       cursor: pointer;
       overflow: hidden;
       transform-origin: center;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       @media screen and (max-width: 1600px) {
-        height: 160px;
-        margin-bottom: 25px;
+        height: 190px;
+        margin-bottom: 15px;
       }
-
-
       .same-type{
         height: auto;
         display: flex;
         justify-content: center;
-        margin-right: 20px;
+        margin-right: 15px;
         will-change: transform;
         transition: box-shadow .3s ease;
         box-shadow: 0 10px 30px transparent;
@@ -154,21 +152,20 @@ header{
           margin-right: 0;
         }
         @media screen and (max-width: 1600px) {
-          width: 160px;
+          width: 190px;
           height: 100%;
-          margin-right: 25px;
+          margin-right: 15px;
         }
         .first{
-            width: 216px;
-            height: 216px;
+            width: 246px;
+            height: 246px;
             border: 2px solid #666;
             @media screen and (max-width: 1600px) {
-              width: 156px;
-              height: 156px;
+              width: 186px;
+              height: 186px;
             }
             .border-bg{
-              //width: 100%;
-              height: 194px;
+              height: 224px;
               border: 1px solid #bbb;
               margin: 10px;
               display: flex;
@@ -178,7 +175,7 @@ header{
               background-color: #fff;
               transition: all .3s ease-out;
               @media screen and (max-width: 1600px) {
-                height: 134px;
+                height: 164px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -189,17 +186,24 @@ header{
                 width: 34px;
                 height: 40px;
                 margin: 0 auto;
+
                 &.icon-bus{
                   width: 48px;
                   height: 34px;
+                  @media screen and (max-width: 1600px) {
+                    padding-top: 10px;
+                  }
                 }
                 &.home{
                   width: 42px;
                   height: 36px;
+                  @media screen and (max-width: 1600px) {
+                    padding-top: 10px;
+                  }
                 }
               }
               .top-text{
-                font-size: 22px;
+                font-size: 24px;
                 color: #333;
                 @media screen and (max-width: 1600px) {
                   font-size: 18px;
@@ -208,22 +212,22 @@ header{
               }
 
               p{
-                width: 190px;
+                width: 200px;
                 padding-top: 12px;
                 text-align: center;
                 margin: 15px auto 0;
                 border-top: 1px solid #bababa;
                 @media screen and (max-width: 1600px) {
-                  width: 128px;
+                  width: 145px;
                   display: flex;
                   flex-direction: column;
                   align-items: center;
-                  margin-top: 5px;
+                  margin-top: 12px;
                   padding-top: 5px;
                 }
                 span{
                   display: block;
-                  line-height: 26px;
+                  line-height: 30px;
                   &.word-text{
                     font:{
                       size: 18px !important;
@@ -243,15 +247,17 @@ header{
                   @media screen and (max-width: 1600px) {
                     width: 145px;
                     &.word-text{
+                      line-height: 20px;
                       font:{
-                        size: 15px !important;
+                        size: 16px !important;
                       }
                     }
                     &:first-child{
-                      font-size: 18px;
+                      font-size: 20px;
                     }
                     &:last-child{
                       font-size: 15px;
+                      line-height: 20px;
                     }
                   }
                 }
@@ -264,15 +270,15 @@ header{
         justify-content: center;
         position: relative;
         .second{
-          width: 220px;
-          height: 220px;
+          width: 250px;
+          height: 250px;
           background-color: #33383b;
           @media screen and (max-width: 1600px) {
-            width: 160px;
-            height: 160px;
+            width: 190px;
+            height: 190px;
           }
           .border-bg{
-            height: 198px;
+            height: 228px;
             margin: 10px;
             border: 1px solid #bbb;
             display: flex;
@@ -280,7 +286,7 @@ header{
             align-items: center;
             justify-content: center;
             @media screen and (max-width: 1600px) {
-              height: 138px;
+              height: 168px;
               .top-text{
                 font:{
                   size: 16px;
@@ -301,24 +307,25 @@ header{
               }
               color: #fff;
               @media screen and (max-width: 1600px) {
-                font-size: 18px;
+                font-size: 20px;
+                line-height: 30px;
               }
             }
             p{
-              width: 190px;
+              width: 200px;
               padding-top: 10px;
               text-align: center;
               margin-top: 10px;
               border-top: 1px solid #b6babb;
               @media screen and (max-width: 1600px) {
-                width: 128px;
+                width: 150px;
                 text-align: center;
                 padding-top: 5px;
                 margin-top: 5px;
               }
               span{
                 display: block;
-                line-height: 26px;
+                line-height: 30px;
                 color: #999;
                 &.word-text{
                   color: #999 !important;
@@ -339,7 +346,7 @@ header{
                 @media screen and (max-width: 1600px) {
                   &.word-text{
                     font:{
-                      size: 15px !important;
+                      size: 16px !important;
                     }
                   }
                   &:first-child{
@@ -347,7 +354,7 @@ header{
                   }
                   &:last-child{
                     line-height: 22px;
-                    font-size: 15px;
+                    font-size: 14px;
                   }
                 }
               }
@@ -357,26 +364,27 @@ header{
         }
       }
       .type-three{
-        width: 485px;
+        width: 516px;
         height: 100%;
         display: flex;
         justify-content: center;
         position: relative;
         @media screen and (max-width: 1600px) {
-          width: 360px;
+          width: 396px;
         }
         .three{
-          width: 485px;
-          height: 216px;
+          width: 100%;
+          height: 246px;
           border: 2px solid #666;
           transform-style: preserve-3d; //设置变换属性为3D，只对子元素有效
           transform: rotateX(0deg);
           transition: all 0.5s ease-out;
           @media screen and (max-width: 1600px) {
-            height: 156px;
+            width: 396px;
+            height: 186px;
           }
           .border-bg{
-            height: 198px;
+            height: 228px;
             margin: 8px;
             display: flex;
             flex-direction: column;
@@ -399,7 +407,7 @@ header{
               background: url("/images/new_module/index/tu03.jpg") no-repeat center center;
             }
             @media screen and (max-width: 1600px) {
-              height: 138px;
+              height: 168px;
               padding-right: 25px;
               &.business{
                 background-position: 62% 20%;
@@ -415,12 +423,12 @@ header{
               line-height: 45px;
               text-align: center;
               background-color: #01c5ff;
-              width: 192px;
+              width: 195px;
               font-size: 22px;
               color: #31302c;
               @media screen and (max-width: 1600px) {
-                width: 145px;
-                font-size: 18px;
+                width: 150px;
+                font-size: 20px;
               }
             }
             span{

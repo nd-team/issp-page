@@ -14,6 +14,7 @@
         max-height: 650px;
         overflow-x: hidden;
         overflow-y: auto;
+        display: none;
         .table{
           width: 100%;
           height:auto;
@@ -53,11 +54,12 @@
                 background-color: #f0f6f4;
               }
               p{
+                font-size: 12px;
                 flex: 1;
                 padding-left: 20px;
                 color: #666;
                 &.text-one{
-                  padding-left: 90px;
+                  padding-left: 98px;
                 }
                 &.text{
                   padding-left: 60px;
@@ -71,6 +73,9 @@
             }
           }
         }
+      }
+      .tab-item{
+        display: block;
       }
     }
   }
