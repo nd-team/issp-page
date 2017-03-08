@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>项目外包洽谈</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="/css/new_module/business/activity.css">
+</head>
+<body>
+<section class="left-section">
+    <div class="header">
+        <a href="javascript:void(0)" title="issp平台" class="logo">
+            <img src="/images/new_module/organization/logo.png" alt="">
+        </a>
+        <span>issp平台</span>
+    </div>
+    <div class="nav">
+
+        <div class="nav-list">
+            <h3 class="header-menu big"><i class="nav-arrow"></i>商务洽谈</h3>
+            <ul class="menu">
+                <li ><a href="javascript:void(0)">项目成包洽谈</a></li>
+                <li class="active"><a href="javascript:void(0)">项目外包洽谈</a></li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+<section class="right-section">
+    <div class="top-content">
+        <div class="top-fixed">
+            <div class="top">
+                <div class="top-back">
+                    <a href="javascript:void(0)" class="back">返回</a>
+                </div>
+                <div class="search">
+                    <a href="javascript:void(0)" class="search-btn"></a>
+                    <select class="selected">
+                        <option value="0">张三三</option>
+                        <option value="1">张四四</option>
+                        <option value="2">张五五</option>
+                        <option value="3">张六六</option>
+                        <option value="4">张七七</option>
+                        <option value="5">张八八</option>
+                        <option value="6">张九九</option>
+                    </select>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+            <ul class="list">
+                <li class="current">
+                    <a href="javascript:void(0)" class="lis">列表<span>Tabulate</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="add">添加<span>Add</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="same-one">编辑<span>Compile</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="same-two">删除<span>Delete</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="same-three">上传洽谈附件<span>Post</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="same-three">查看洽谈附件<span>Info</span></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="content-tab">
+                <ul class="table">
+                    <li class="list-head">
+                        <span>项目外部名称</span>
+                        <span>项目外部编号</span>
+                        <span>项目内部名称</span>
+                        <span>项目内部编号</span>
+                        <span>外包项目名称</span>
+                        <span>外包项目编号</span>
+                        <span>外包项目信息</span>
+                        <span></span>
+                    </li>
+                    <li class="list-all">
+                        <section>
+                            <div class="list-text odd">
+                                <p>
+                                    <span></span>
+                                    <span></span>
+                                </p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">更多详细</a>
+                                </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-parent">
+                                            <span>洽谈轮次</span>
+                                            <span>洽谈目的</span>
+                                            <span>洽谈时间</span>
+                                            <span>洽谈人</span>
+                                            <span>洽谈对象</span>
+                                            <span>洽谈地址</span>
+                                            <span>项目结果</span>
+                                            <span>记录人</span>
+                                        </p>
+                                        <p class="see-children">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="module">
+                                    <div class="see-module">
+                                        <p class="see-type">体现类型</p>
+                                        <p class="see-description"></p>
+                                        <button class="btn">关闭</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer"> <div class="pagination-click" id="pages"></div></footer>
+</section>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/laypage/laypage.js"></script>
+<script src="/js/new_modules/common.js"></script>
+<script type="text/javascript">
+    laypage({
+        cont: 'pages', //容器。值支持id名、原生dom对象，jquery对象,
+        pages: 20, //总页数
+        skin: 'molv', //皮肤
+        first: 1, //将首页显示为数字1,。若不显示，设置false即可
+        last: 20, //将尾页显示为总页数。若不显示，设置false即可
+    });
+</script>
+</body>
+</html>
