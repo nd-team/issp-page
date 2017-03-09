@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta name="keywords" content="组织结构管理-岗位工作明细">
     <meta name="description" content="组织结构管理-岗位工作明细">
-    <!--<link rel="stylesheet" href="/css/new_module/common.css">-->
     <link rel="stylesheet" href="/css/new_module/business/activity.css">
+    <link rel="stylesheet" href="/css/new_module/accounting/accounting.css">
 </head>
 <body>
 <section class="left-section">
@@ -189,69 +189,76 @@
                     <div class="pagination-click" id="pages"></div>
                 </footer>
             </div>
-            <div class="content-input add">
+            <div class="content-input">
                 <div class="input-list">
                     <section class="list-left">
-                        <ul >
+                        <ul>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>编号</em></label>
-                                <input type="text">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>岗位</em></label>
+                                <p>
+                                    <input type="text" class="box_se">
+                                    <span class="select_b1">
+                                        <a href="javascript:void(0)">前端开发</a>
+                                        <a href="javascript:void(0)">Java开发</a>
+                                        <a href="javascript:void(0)">UI设计</a>
+                                        <a href="javascript:void(0)">PHP开发</a>
+                                        <a href="javascript:void(0)">安卓开发</a>
+                                    </span>
+                                </p>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>体系</em></label>
-                                <input type="text">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作说明</em></label>
+                                <p>
+                                    <input type="text" class="box_se">
+                                    <span class="select_b1">
+                                        <a href="javascript:void(0)">一线体系</a>
+                                        <a href="javascript:void(0)">一线体系</a>
+                                        <a href="javascript:void(0)">一线体系</a>
+                                        <a href="javascript:void(0)">一线体系</a>
+                                    </span>
+                                </p>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目组/部门</em></label>
-                                <input type="text">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>汇报时间</em></label>
+                                <p><input type="text"  class="add_image"></p>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属地区</em></label>
-                                <input type="text">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>汇报形式</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>汇报内容描述</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>公示内容</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>包含的附件</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>是否有模板</em></label>
+                                <p>
+                                    <input type="text" class="box_se">
+                                    <span class="select_b1">
+                                        <a href="javascript:void(0)">是</a>
+                                        <a href="javascript:void(0)">否</a>
+                                    </span>
+                                </p>
                             </li>
                             <li>
-                                <label><em>成本分类</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>描述</em></label>
-                                <input type="text">
-                            </li>
-                        </ul>
-                    </section>
-                </div>
-                <p class="dataBottom">
-                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
-                    <button>提交</button>
-                </p>
-            </div>
-            <div class="content-input compile">
-                <div class="input-list">
-                    <section class="list-left">
-                        <ul >
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>编号</em></label>
-                                <input type="text">
+                                <label><em>存储位置</em></label>
+                                <p><input type="text"></p>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>体系</em></label>
-                                <input type="text">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>经验总结</em></label>
+                                <p><input type="text"></p>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目组/部门</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属地区</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>成本分类</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>描述</em></label>
-                                <input type="text">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>联系方式</em></label>
+                                <p><input type="text"></p>
                             </li>
                         </ul>
                     </section>

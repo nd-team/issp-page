@@ -22,7 +22,7 @@
         max-height:530px;
         overflow-x:hidden;
         overflow-y:auto;
-        display:none;
+        //display:none;
         .table{
           width:100%;
           height:auto;
@@ -190,7 +190,7 @@
         }
       }
       .content-input{
-        display: none;
+        //display: none;
         &.add,&.edit{
           display:none;
         }
@@ -305,7 +305,7 @@
 
       }
       .tab-item{
-        display: block;
+        display: none;
       }
     }
   }
