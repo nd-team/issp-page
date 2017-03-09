@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>租车协议管理</title>
+    <title>租车信息管理</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="/css/new_module/common.css">
     <link rel="stylesheet" href="/css/new_module/accounting/accounting.css">
-    <link rel="stylesheet" href="/js/honor/pikaday.css">
+    <link rel="stylesheet" href="/css/new_module/business/activity.css">
 </head>
 <body>
 <section class="left-section">
@@ -57,21 +57,6 @@
                 </li>
                 <li>
                     <a href="javascript:void(0)" class="same-one">编辑<span>Compile</span></a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" class="same-two">删除<span>Delete</span></a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" class="same-two">导入<span>Delete</span></a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" class="same-two">导出<span>Delete</span></a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" class="same-two">附件<span>Delete</span></a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" class="same-two">汇总<span>Delete</span></a>
                 </li>
             </ul>
         </div>
@@ -185,140 +170,287 @@
                 </ul>
                 <footer class="footer"> <div class="pagination-click" id="pages"></div></footer>
             </div>
-            <div class="content-input">
+            <div class="content-input add">
                 <div class="input-list">
                     <section class="list-left">
                         <ul>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
-                                <input type="text" class="box_se">
-                                <p class="select_b1">
+                                <p>
+                                    <input type="text" class="box_se">
+                                  <span class="select_b1">
                                     <a href="javascript:void(0)">能够握紧</a>
                                     <a href="javascript:void(0)">的就别放</a>
                                     <a href="javascript:void(0)">了能够拥</a>
                                     <a href="javascript:void(0)">抱的就别</a>
                                     <a href="javascript:void(0)">拉扯</a>
+                                  </span>
                                 </p>
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>司机名称</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li>
                                 <label><em>车辆型号</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li>
                                 <label><em>车牌号码</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li>
                                 <label><em>发动机型号</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li>
                                 <label><em>汽车购买日期</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li>
                                 <label><em>汽车购买日期</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li >
                                 <label><em>购买时长</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li>
                                 <label><em>是否提供本车辆保险</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li>
                                 <label><em>是否提供本车辆保险</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li>
                                 <label><em>身份证号</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li>
                                 <label><em>结算方式</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li>
                                 <label><em>地址</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li>
                                 <label><em>备注</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
-                        </ul>
-                    </section>
-                    <section class="list-right">
-                        <ul >
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>汽车排量</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>本车耗油</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li>
                                 <label><em>是否签订租车协议</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li>
                                 <label><em>签订日期</em></label>
-                                <input type="text" id="datepicker" class="add_image">
+                                <p><input type="text" id="datepicker" class="add_image"></p>
                             </li>
                             <li>
                                 <label><em>合同开始日期</em></label>
-                                <input type="text" class="add_image">
+                                <p><input type="text" class="add_image"></p>
                             </li>
                             <li>
                                 <label><em>合同结束日期</em></label>
-                                <input type="text" class="add_image">
+                                <p><input type="text" class="add_image"></p>
                             </li>
                             <li>
                                 <label><em>是否解约</em></label>
-                                <input type="text" class="box_se">
-                                <p class="select_b1">
+                                <p>
+                                    <input type="text" class="box_se">
+                                    <span class="select_b1">
                                     <a href="javascript:void(0)">是</a>
                                     <a href="javascript:void(0)">否</a>
+                                    </span>
                                 </p>
                             </li>
                             <li>
                                 <label><em>是否提供行驶者照片</em></label>
-                                <input type="text" class="box_se">
-                                <p class="select_b1">
+                                <p>
+                                    <input type="text" class="box_se">
+                                    <span class="select_b1">
                                     <a href="javascript:void(0)">是</a>
                                     <a href="javascript:void(0)">否</a>
+                                    </span>
                                 </p>
                             </li>
                             <li>
                                 <label><em>行驶证所有者</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li>
                                 <label><em>是否提供驾驶证照片</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li>
                                 <label><em>驾驶证所有者</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li>
                                 <label><em>联系方式</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li>
                                 <label><em>开户人</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
                             </li>
                             <li>
                                 <label><em>银行卡号</em></label>
-                                <input type="text">
+                                <p><input type="text"></p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="content-input edit">
+                <div class="input-list">
+                    <section class="list-left">
+                        <ul>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
+                                <p>
+                                    <input type="text" class="box_se">
+                                  <span class="select_b1">
+                                    <a href="javascript:void(0)">能够握紧</a>
+                                    <a href="javascript:void(0)">的就别放</a>
+                                    <a href="javascript:void(0)">了能够拥</a>
+                                    <a href="javascript:void(0)">抱的就别</a>
+                                    <a href="javascript:void(0)">拉扯</a>
+                                  </span>
+                                </p>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>司机名称</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li>
+                                <label><em>车辆型号</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li>
+                                <label><em>车牌号码</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li>
+                                <label><em>发动机型号</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li>
+                                <label><em>汽车购买日期</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li>
+                                <label><em>汽车购买日期</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li >
+                                <label><em>购买时长</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li>
+                                <label><em>是否提供本车辆保险</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li>
+                                <label><em>是否提供本车辆保险</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li>
+                                <label><em>身份证号</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li>
+                                <label><em>结算方式</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li>
+                                <label><em>地址</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li>
+                                <label><em>备注</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>汽车排量</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>本车耗油</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li>
+                                <label><em>是否签订租车协议</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li>
+                                <label><em>签订日期</em></label>
+                                <p><input type="text" id="datepicker" class="add_image"></p>
+                            </li>
+                            <li>
+                                <label><em>合同开始日期</em></label>
+                                <p><input type="text" class="add_image"></p>
+                            </li>
+                            <li>
+                                <label><em>合同结束日期</em></label>
+                                <p><input type="text" class="add_image"></p>
+                            </li>
+                            <li>
+                                <label><em>是否解约</em></label>
+                                <p>
+                                    <input type="text" class="box_se">
+                                    <span class="select_b1">
+                                    <a href="javascript:void(0)">是</a>
+                                    <a href="javascript:void(0)">否</a>
+                                    </span>
+                                </p>
+                            </li>
+                            <li>
+                                <label><em>是否提供行驶者照片</em></label>
+                                <p>
+                                    <input type="text" class="box_se">
+                                    <span class="select_b1">
+                                    <a href="javascript:void(0)">是</a>
+                                    <a href="javascript:void(0)">否</a>
+                                    </span>
+                                </p>
+                            </li>
+                            <li>
+                                <label><em>行驶证所有者</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li>
+                                <label><em>是否提供驾驶证照片</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li>
+                                <label><em>驾驶证所有者</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li>
+                                <label><em>联系方式</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li>
+                                <label><em>开户人</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li>
+                                <label><em>银行卡号</em></label>
+                                <p><input type="text"></p>
                             </li>
                         </ul>
                     </section>

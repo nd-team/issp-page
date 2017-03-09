@@ -2,6 +2,15 @@
 h3{
   font-weight: normal;
 }
+.right-section{
+
+  flex: 1;
+  height: 100%;
+  background-color: #fdfdfd;
+  margin-left: 200px;
+  display: flex;
+  overflow: hidden;
+}
 .content{
   margin-top:180px;
   display: flex;
@@ -13,6 +22,7 @@ h3{
     height: 100%;
     box-shadow: 0 0 2px rgba(117, 140, 148, .2);
     background-color: #f0f6f4;
+    padding-bottom: 40px;
     .right-name{
       color: white;
       height: 40px;
@@ -83,7 +93,7 @@ h3{
      }
     }
   }
-  .content-tab{
+  .content-tab2{
     flex: 1;
     max-height:530px;
     overflow-x:hidden;
@@ -102,7 +112,6 @@ h3{
         align-items:center;
         border-radius:5px 0;
         //padding-left:60px;
-
         span{
           flex:1;
           color:#fff;
