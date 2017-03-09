@@ -8,6 +8,7 @@
     <meta name="keywords" content="物资入库">
     <meta name="description" content="物资入库">
     <link rel="stylesheet" href="/css/new_module/material/material_storage.css">
+    <link rel="stylesheet" href="/js/honor/pikaday.css">
 </head>
 <body>
 <section class="left-section">
@@ -18,11 +19,13 @@
         <span>issp平台</span>
     </div>
     <div class="nav">
-        <h3 class="header-menu"><i class="nav-arrow"></i>物资入库</h3>
-        <ul class="menu">
-            <li class="active"><a href="material_storage.html">物资入库</a></li>
-            <li><a href="javascript:void(0)">库存预警</a></li>
-        </ul>
+        <div class="nav-list">
+            <h3 class="header-menu"><i class="nav-arrow"></i>物资入库</h3>
+            <ul class="menu">
+                <li class="active"><a href="material_storage.html">物资入库</a></li>
+                <li><a href="javascript:void(0)">库存预警</a></li>
+            </ul>
+        </div>
     </div>
 </section>
 <section class="right-section">
@@ -45,27 +48,27 @@
                 <span class="arrow"></span>
             </div>
         </div>
+        <ul class="list">
+            <li>
+                <a href="javascript:void(0)" class="lis">列表<span>Tabulate</span></a>
+            </li>
+            <li  class="current">
+                <a href="javascript:void(0)" class="add">添加<span>Add</span></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="same-one">编辑<span>Compile</span></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="same-two">删除<span>Delete</span></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="same-one">冻结<span>Freeze</span></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="same-two">解冻<span>Unfreeze</span></a>
+            </li>
+        </ul>
         <div class="content">
-            <ul class="list">
-                <li>
-                    <a href="javascript:void(0)" class="lis">列表<span>Tabulate</span></a>
-                </li>
-                <li  class="current">
-                    <a href="javascript:void(0)" class="add">添加<span>Add</span></a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" class="same-one">编辑<span>Compile</span></a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" class="same-two">删除<span>Delete</span></a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" class="same-one">冻结<span>Freeze</span></a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" class="same-two">解冻<span>Unfreeze</span></a>
-                </li>
-            </ul>
              <!--中间内容-->
             <div class="contentCenter">
                   <div class="contentAll">
@@ -78,10 +81,7 @@
                                       </i>
                                       <em>需求人</em>
                                   </label>
-                                  <span class="selectBox">
-                                        <i><img src="/images/new_module/data/down.png"></i>
-                                        <input type="text" class="boxSe">
-                                  </span>
+                                  <input type="text" class="boxSe">
                                   <p class="selectB1">
                                         <a href="javascript:void(0)">能够握紧</a>
                                         <a href="javascript:void(0)">的就别放</a>
@@ -91,8 +91,11 @@
                                   </p>
                               </li>
                               <li class="veryImportant">
-                                  <label><i><img src="/images/new_module/data/mandatory.png"></i><em>需求日期</em></label>
-                                  <input type="text">
+                                  <label>
+                                      <i><img src="/images/new_module/data/mandatory.png"></i>
+                                      <em>需求日期</em>
+                                  </label>
+                                  <input type="text" id="datepicker" class="addImage">
                               </li>
                               <li class="veryImportant">
                                   <label><i><img src="/images/new_module/data/mandatory.png"></i><em>设备名称</em></label>
@@ -112,11 +115,31 @@
                           <ul class="data03">
                               <li class="veryImportant">
                                   <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
-                                  <input type="text">
+                               <!--   <span class="selectBox">
+                                        <i><img src="/images/new_module/data/down.png"></i>
+                                  </span>-->
+                                  <input type="text" class="boxSe">
+                                  <p class="selectB1">
+                                      <a href="javascript:void(0)">前面是未知</a>
+                                      <a href="javascript:void(0)">迎面是寒风</a>
+                                      <a href="javascript:void(0)">塞人的歌能</a>
+                                      <a href="javascript:void(0)">让人忘记初衷</a>
+                                      <a href="javascript:void(0)">武器就是我紧握的梦想</a>
+                                  </p>
                               </li>
                               <li class="veryImportant">
                                   <label><i><img src="/images/new_module/data/mandatory.png"></i><em>设备类型</em></label>
-                                  <input type="text">
+                                 <!-- <span class="selectBox">
+                                        <i><img src="/images/new_module/data/down.png"></i>
+                                  </span>-->
+                                  <input type="text" class="boxSe">
+                                  <p class="selectB1">
+                                      <a href="javascript:void(0)">只因当初遇见一瞬间</a>
+                                      <a href="javascript:void(0)">如果不是匆匆的离别</a>
+                                      <a href="javascript:void(0)">怎会拼命想再见</a>
+                                      <a href="javascript:void(0)">可一路太艰险</a>
+                                      <a href="javascript:void(0)">不巧我们都沦陷</a>
+                                  </p>
                               </li>
                               <li class="veryImportant">
                                   <label><i><img src="/images/new_module/data/mandatory.png"></i><em>设备型号</em></label>
@@ -133,15 +156,19 @@
                           </ul>
                       </div>
                   </div>
-                 <p class="dataBottom">
+                  <p class="dataBottom">
                       <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
                       <button>提交</button>
                   </p>
             </div>
+            <!--中间内容-->
         </div>
     </div>
 </section>
 <script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/honor/moment.min.js"></script>
+<script src="/js/honor/pikaday.js"></script>
+<script src="/js/time.js"></script>
 <!--<script src="/js/organization.js"></script>-->
 <script>
     $(function(){

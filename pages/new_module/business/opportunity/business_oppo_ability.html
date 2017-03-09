@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商业能力互动信息管理</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="岗位说明书">
+    <meta name="description" content="岗位说明书">
+    <link rel="stylesheet" href="/css/new_module/business/opportunity.css">
+</head>
+<body>
+<section class="left-section">
+    <div class="header">
+        <a href="javascript:void(0)" title="issp平台" class="logo">
+            <img src="/images/new_module/organization/logo.png" alt="">
+        </a>
+        <span>issp平台</span>
+    </div>
+    <div class="nav">
+        <div class="nav-list">
+            <h3 class="header-menu"><i class="nav-arrow"></i>商业能力展示</h3>
+            <ul class="menu">
+                <li class="active"><a href="javascript:void(0)">商业能力展示</a></li>
+            </ul>
+        </div>
+       </div>
+</section>
+<section class="right-section">
+    <div class="top-content">
+        <div class="top-fixed">
+            <div class="top">
+                <div class="top-back">
+                    <a href="javascript:void(0)" class="back">返回</a>
+                </div>
+                <div class="search">
+                    <a href="javascript:void(0)" class="search-btn"></a>
+                    <select class="selected">
+                        <option value="0">张三三</option>
+                        <option value="1">张四四</option>
+                        <option value="2">张五五</option>
+                        <option value="3">张六六</option>
+                        <option value="4">张七七</option>
+                        <option value="5">张八八</option>
+                        <option value="6">张九九</option>
+                    </select>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+            <ul class="list">
+                <li class="current">
+                    <a href="javascript:void(0)" class="lis">列表<span>Tabulate</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="add">添加<span>Add</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="same-one">详情<span>Details</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="same-one">删除<span>Delete</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="same-one">附件上传<span>Attachment</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content-right">
+                <p class="right-name">名称</p>
+                    <ul class="ability">
+                        <li>
+                            <a href="javascript:void(0)" class="current-file3 cur current-ability">艾佳公司能力展示</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)" class="current-file3">公司规模</a>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">公司规模1</a></li>
+                                        <li><a href="javascript:void(0)">公司规模2</a></li>
+                                        <li><a href="javascript:void(0)">公司规模3</a></li>
+                                        <li><a href="javascript:void(0)">公司规模4</a></li>
+                                        <li><a href="javascript:void(0)">公司规模5</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="current-file2">公司可提供的服务</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="current-file2">公司文化活动</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="current-file3">公司证书</a>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">公司证书1</a></li>
+                                        <li><a href="javascript:void(0)">公司证书2</a></li>
+                                        <li><a href="javascript:void(0)">公司证书3</a></li>
+                                        <li><a href="javascript:void(0)">公司证书4</a></li>
+                                        <li><a href="javascript:void(0)">公司证书5</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <div class="content-tab">
+                <ul class="table">
+                    <li class="list-head">
+                        <span></span>
+                        <span>状态</span>
+                        <span>内容</span>
+                        <span>描述</span>
+                        <span>类型</span>
+                        <span>附件名称</span>
+                    </li>
+                    <li class="list-all">
+                        <section>
+                            <div class="list-text odd">
+                                <p>1</p>
+                                <p>可见</p>
+                                <p>详情见附件</p>
+                                <p>公司能力展示</p>
+                                <p>项目合同模板2016-11-23</p>
+                                <p>2017-01-16 14：58：44</p>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+                <footer class="footer"></footer>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/new_modules/common.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.current-file3').click(function(){
+            if($(this).siblings('ul').css('display')=='none'){
+                $(this).parent('li').siblings('li').removeClass('current-file1');
+                $(this).addClass('current-file1');
+                $(this).siblings('ul').slideDown(100).children('li');
+                if($(this).parents('li').siblings('li').children('ul').css('display')=='block'){
+                    $(this).parents('li').siblings('li').children('ul').parent('li').children('a').removeClass('current-file1');
+                    $(this).parents('li').siblings('li').children('ul').slideUp(100);
+                }
+            }else{
+                $(this).removeClass('current-file1');
+                $(this).siblings('ul').slideUp(100);
+                $(this).siblings('ul').children('li').children('ul').parent('li').children('a').addClass('current-file1');
+                $(this).siblings('ul').children('li').children('ul').slideUp(100);
+                $(this).siblings('ul').children('li').children('a').removeClass('current-file1');
+            }
+        })
+        $('.ability a').click(function () {
+            $(".ability a").removeClass("cur");
+            $(this).addClass("cur");
+        })
+    });
+</script>
+</body>
+</html>
