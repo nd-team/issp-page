@@ -21,6 +21,28 @@ $(function(){
         $(".module ").hide();
     });
 
+    // 选择下拉菜单
+    $('.select_b1').hide();
+    function select_box(box_se,select_b1) {
+        $(document).click(function () {
+            $(select_b1).hide();
+        });
+        $(box_se).on('click',function(e){
+            $(".content-input ul li").siblings().find(".select_b1").hide();
+            //$(this).parent().find(select_b1).width($(this).width());
+            $(this).parent().find(select_b1).show();
+            e?e.stopPropagation():event.cancelBubble = true;
+            $(select_b1).find("a").click(function(e){
+                var selectText=$(this).text();
+                $(this).parents(select_b1).hide();
+                $(this).parents("li").find(box_se).val(selectText);
+                e?e.stopPropagation():event.cancelBubble = true;
+            });
+        });
+        return false;
+    }
+    select_box(".box_se",".select_b1");
+
     (function($){
         $.fn.myTab = function(options){//将对象作为参数传进去
             var defult = {parent:"",index:null},

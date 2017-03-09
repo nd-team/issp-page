@@ -8,6 +8,7 @@
     <meta name="keywords" content="组织结构管理-岗位">
     <meta name="description" content="组织结构管理-岗位">
     <link rel="stylesheet" href="/css/new_module/business/activity.css">
+    <link rel="stylesheet" href="/css/new_module/accounting/accounting.css">
 </head>
 <body>
 <section class="left-section">
@@ -91,7 +92,7 @@
         </div>
         <!--list content-->
         <div class="content">
-            <div class="content-tab tab-item">
+            <div class="content-tab">
                 <ul class="table">
                     <li class="list-head">
                         <span></span>
@@ -173,47 +174,143 @@
                     <div class="pagination-click" id="pages"></div>
                 </footer>
             </div>
-            <div class="content-input">
+            <div class="content-input tab-item add">
                 <div class="input-list">
                     <section class="list-left">
-                        <ul >
+                        <ul>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>体系</em></label>
-                                <span class="selectBox">
-                                        <i><img src="/images/new_module/data/down.png"></i>
-                                        <input type="text" class="boxSe">
+                                <p>
+                                    <input type="text" class="box_se" placeholder="一线实施体系">
+                                    <span class="select_b1">
+                                    <a href="javascript:void(0)">一线实施体系</a>
+                                    <a href="javascript:void(0)">一线实施体系</a>
+                                    <a href="javascript:void(0)">一线实施体系</a>
+                                    <a href="javascript:void(0)">一线实施体系</a>
+                                    <a href="javascript:void(0)">一线实施体系</a>
                                   </span>
-                                <p class="selectB1">
-                                    <a href="javascript:void(0)">能够握紧</a>
-                                    <a href="javascript:void(0)">的就别放</a>
-                                    <a href="javascript:void(0)">了能够拥</a>
-                                    <a href="javascript:void(0)">抱的就别</a>
-                                    <a href="javascript:void(0)">拉扯</a>
                                 </p>
                             </li>
                             <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目组/部门</em></label>
+                                <p>
+                                    <input type="text" class="box_se" placeholder="研发部">
+                                    <span class="select_b1">
+                                    <a href="javascript:void(0)">研发部</a>
+                                    <a href="javascript:void(0)">综合部</a>
+                                    <a href="javascript:void(0)">商务运营部</a>
+                                    <a href="javascript:void(0)">研发部</a>
+                                  </span>
+                                </p>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>层级</em></label>
+                                <p>
+                                    <input type="text" class="box_se" placeholder="模块负责人">
+                                    <span class="select_b1">
+                                    <a href="javascript:void(0)">项目经理</a>
+                                    <a href="javascript:void(0)">模块负责人</a>
+                                    <a href="javascript:void(0)">项目经理</a>
+                                    <a href="javascript:void(0)">模块负责人</a>
+                                  </span>
+                                </p>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>资源池</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>模块</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>岗位名称</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>上级岗位</em></label>
+                                <p>
+                                    <input type="text" class="box_se" placeholder="Java开发">
+                                    <span class="select_b1">
+                                    <a href="javascript:void(0)">前端开发</a>
+                                    <a href="javascript:void(0)">UI设计</a>
+                                    <a href="javascript:void(0)">Java开发</a>
+                                    <a href="javascript:void(0)">PHP开发</a>
+                                  </span>
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="content-input compile">
+                <div class="input-list">
+                    <section class="list-left">
+                        <ul>
+                            <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>体系</em></label>
-                                <input type="text">
+                                <p>
+                                    <input type="text" class="box_se" placeholder="一线实施体系">
+                                    <span class="select_b1">
+                                    <a href="javascript:void(0)">一线实施体系</a>
+                                    <a href="javascript:void(0)">一线实施体系</a>
+                                    <a href="javascript:void(0)">一线实施体系</a>
+                                    <a href="javascript:void(0)">一线实施体系</a>
+                                    <a href="javascript:void(0)">一线实施体系</a>
+                                  </span>
+                                </p>
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目组/部门</em></label>
-                                <input type="text">
+                                <p>
+                                    <input type="text" class="box_se" placeholder="研发部">
+                                    <span class="select_b1">
+                                    <a href="javascript:void(0)">研发部</a>
+                                    <a href="javascript:void(0)">综合部</a>
+                                    <a href="javascript:void(0)">商务运营部</a>
+                                    <a href="javascript:void(0)">研发部</a>
+                                  </span>
+                                </p>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目组/部门</em></label>
-                                <input type="text">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>层级</em></label>
+                                <p>
+                                    <input type="text" class="box_se" placeholder="模块负责人">
+                                    <span class="select_b1">
+                                    <a href="javascript:void(0)">项目经理</a>
+                                    <a href="javascript:void(0)">模块负责人</a>
+                                    <a href="javascript:void(0)">项目经理</a>
+                                    <a href="javascript:void(0)">模块负责人</a>
+                                  </span>
+                                </p>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属地区</em></label>
-                                <input type="text">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>资源池</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>模块</em></label>
+                                <p><input type="text"></p>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>岗位名称</em></label>
+                                <p><input type="text"></p>
                             </li>
                             <li>
-                                <label><em>成本分类</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>描述</em></label>
-                                <input type="text">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>上级岗位</em></label>
+                                <p>
+                                    <input type="text" class="box_se" placeholder="Java开发">
+                                    <span class="select_b1">
+                                    <a href="javascript:void(0)">前端开发</a>
+                                    <a href="javascript:void(0)">UI设计</a>
+                                    <a href="javascript:void(0)">Java开发</a>
+                                    <a href="javascript:void(0)">PHP开发</a>
+                                  </span>
+                                </p>
                             </li>
                         </ul>
                     </section>
@@ -229,30 +326,7 @@
 <script src="/js/jquery-2.1.1.min.js"></script>
 <script src="/laypage/laypage.js"></script>
 <script src="/js/new_modules/common.js"></script>
-<script>
-    $(function(){
-        $('.selectB1').hide();
-        function select_box(boxSe,selectB1) {
-            $(document).click(function () {
-                $(selectB1).hide();
-            });
-            $(boxSe).on('click',function(e){
-                $(this).parents("li").siblings().find(selectB1).hide();
-                // $(this).parents("li").find(selectB1).width($(".boxSe").width());
-                $(this).parent().parent().find(selectB1).show();
-                e?e.stopPropagation():event.cancelBubble = true;
-                $(selectB1).find("a").click(function(e){
-                    var selectText=$(this).text();
-                    $(this).parents(selectB1).hide();
-                    $(this).parents("li").find(boxSe).val(selectText);
-                    e?e.stopPropagation():event.cancelBubble = true;
-                });
-            });
-            return false;
-        }
-        select_box(".boxSe",".selectB1");
-    })
-</script>
+<script src="/js/organization.js"></script>
 <script type="text/javascript">
     laypage({
         cont : 'pages', //容器。值支持id名、原生dom对象，jquery对象,
