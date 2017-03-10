@@ -216,8 +216,9 @@
                 }
                 label{
                   width:147px;
-                  display: flex;
+                  display: inline-block;
                   text-align: right;
+
                   em{
                     display: inline-block;
                     width: 112px;
@@ -241,6 +242,9 @@
                   border: 1px solid #999999;
                   border-radius: 5px;
                   margin-left: 14px;
+                  &.date-icon{
+                    background:url("/images/new_module/data/date.png") no-repeat right 10px center;
+                  }
                 }
                 .select{
                   width:56%;
