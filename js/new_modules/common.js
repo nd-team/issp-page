@@ -9,15 +9,15 @@ $(document).ready(function(){
         $(this).addClass("current").siblings().removeClass("current")
     });
     $('.list-text').on("click",".more",function(){
-        $(this).parents("section").children('.can').stop()
+        $(this).parents("section").find('.can-see').stop();
+        $('.module').hide()
         if(!$(this).hasClass("ac")){
             $(this).addClass("ac");
-            $(this).parents("section").children('.can').slideDown()
-
+            $(this).parents("section").find('.can-see').slideDown()
         }else {
 
             $(this).removeClass("ac");
-            $(this).parents("section").children('.can').slideUp()
+            $(this).parents("section").find('.can-see').slideUp()
         }
     })
     $('.input-list').on("click",".select .arrow-down",function(){
@@ -34,7 +34,42 @@ $(document).ready(function(){
         $(this).parents('.select').children('.select-input').val(val);
         $(this).parents('.wrap-op').siblings('.arrow-down').removeClass('ac')
         $(this).parent().parent().hide()
-    })
+    });
+
+    function modal(){
+        $('.content-tab .list-all').on("mouseover",".list-text p,.see-children span",function(){
+            var boxWidth = $(this).width();
+            var textLen = $(this).text().length;
+            var textWidth = 12*textLen;
+            if(textWidth>boxWidth){
+                $(this).css("cursor","pointer");
+            }
+        });
+        $('.content-tab .list-all').on("click",".list-text p:not(p:last-child),.see-children span",function(){
+            var boxWidth = $(this).width();
+            var text = $(this).text();
+            var textLen = text.length;
+            var ind = $(this).index();
+            var textWidth = 12*textLen;
+            if(textWidth>boxWidth){
+                var title;
+                var tag = this.tagName;
+                if(tag=="P"){
+                    title =  $(".list-head span").eq(ind).text();
+                }else if(tag=="SPAN"){
+                    title = $(this).parent().siblings('.see-parent').children().eq(ind).text();
+                }
+                $('.can .module').show();
+                $('.see-module .see-type').text(title);
+                $('.see-module .see-description').text(text);
+            }
+        });
+        $('.module').on("click",".btn",function(){
+            $(".module").hide();
+        })
+    }
+    modal();
+
 
 
 
@@ -54,7 +89,11 @@ $(document).ready(function(){
     $('.content').on("click",".delete button",function(){
         $('.delete').hide();
         $("#modalbg").hide()
-    })
+    });
+
+
+    //点击弹出框详情
+
 });
 
 //日历

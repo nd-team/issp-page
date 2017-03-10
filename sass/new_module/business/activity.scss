@@ -42,6 +42,9 @@
               color:#fff;
               font-size:12px;
               margin:0 5px;
+              overflow:hidden;
+              text-overflow:ellipsis;
+              white-space:nowrap;
               &:first-child{
                 flex:0 0 50px;
               }
@@ -94,29 +97,29 @@
               }
             }
             .can{
-              display: none;
-              height: auto;
-              padding: {
-                top: 32px;
-                left: 30px;
-                bottom: 26px;
-                right: 20px;
-              }
-              background-color: #737373;
-              position: relative;
-              &:before{
-                content: "";
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 15px 20px 0 20px;
-                border-color: #f0f6f4 transparent transparent transparent ;
-                position: absolute;
-                left: 50%;
-                top: 0;
-                margin-left: -20px;
-              }
               .can-see{
+                display: none;
+                height: auto;
+                padding: {
+                  top: 32px;
+                  left: 30px;
+                  bottom: 26px;
+                  right: 20px;
+                }
+                background-color: #737373;
+                position: relative;
+                &:before{
+                  content: "";
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
+                  border-width: 15px 20px 0 20px;
+                  border-color: #f0f6f4 transparent transparent transparent ;
+                  position: absolute;
+                  left: 50%;
+                  top: 0;
+                  margin-left: -20px;
+                }
                 li{
                   margin-bottom: 5px;
                   .see-parent{
@@ -130,6 +133,9 @@
                       flex: 1;
                       font-size: 12px;
                       margin: 0 10px;
+                      overflow: hidden;
+                      text-overflow:ellipsis;
+                      white-space: nowrap;
                     }
                   }
                   .see-children{
@@ -143,7 +149,6 @@
                       flex: 1;
                       font-size: 12px;
                       color: #cfdde3;
-                      cursor: pointer;
                       overflow: hidden;
                       text-overflow:ellipsis;
                       white-space: nowrap;
@@ -159,7 +164,7 @@
                   height: 286px;
                   background-color: #fff;
                   position: absolute;
-                  top: 60px;
+                  top: 300px;
                   left: 50%;
                   margin-left: -196px;
                   box-shadow: 0 2px 10px #6f6e6e;
