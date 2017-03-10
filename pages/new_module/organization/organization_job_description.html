@@ -8,548 +8,530 @@
     <meta name="keywords" content="组织结构管理-岗位说明">
     <meta name="description" content="组织结构管理-岗位说明">
     <link rel="stylesheet" href="/css/new_module/business/activity.css">
-    <link rel="stylesheet" href="/css/new_module/accounting/accounting.css">
+    <link rel="stylesheet" href="/js/honor/pikaday.css">
 </head>
 <body>
-<section class="left-section">
-    <div class="header">
-        <a href="javascript:void(0)" title="issp平台" class="logo">
-            <img src="/images/new_module/organization/logo.png" alt="">
-        </a>
-        <span>issp平台</span>
-    </div>
-    <div class="nav">
-        <div class="nav-list">
-            <h3 class="header-menu big"><i class="nav-arrow"></i>组织结构</h3>
-            <ul class="menu">
-                <li><a href="javascript:void(0)">组织结构视图</a></li>
-            </ul>
+    <section class="left-section">
+        <div class="header">
+            <a href="javascript:void(0)" title="issp平台" class="logo">
+                <img src="/images/new_module/organization/logo.png" alt="">
+            </a>
+            <span>issp平台</span>
         </div>
-        <div class="nav-list">
-            <h3 class="header-menu"><i class="nav-arrow"></i>组织结构管理</h3>
-            <ul class="menu">
-                <li><a href="/pages/new_module/organization/organization_serial_design.html">编号设计信息</a></li>
-                <li><a href="/pages/new_module/organization/organization_system.html">体系</a></li>
-                <li><a href="/pages/new_module/organization/organization_department.html">部门</a></li>
-                <li><a href="/pages/new_module/organization/organization_post_hierarchy.html">岗位层级</a></li>
-                <li><a href="/pages/new_module/organization/organization_post.html">岗位</a></li>
-                <li><a href="/pages/new_module/organization/organization_work_project.html">项目部门工作范围</a></li>
-                <li><a href="/pages/new_module/organization/organization_operation.html">操作类型</a></li>
-                <li><a href="/pages/new_module/organization/organization_angle.html">角度</a></li>
-                <li><a href="/pages/new_module/organization/organization_dimension.html">维度</a></li>
-                <li><a href="/pages/new_module/organization/organization_classification.html">分类</a></li>
-                <li><a href="/pages/new_module/organization/organization_reflect.html">体现类型</a></li>
-                <li class="active"><a href="/pages/new_module/organization/organization_job_description.html">岗位说明</a></li>
-                <li><a href="/pages/new_module/organization/organization_job_details.html">岗位工作明细</a></li>
-                <li><a href="/pages/new_module/organization/organization_person_composition.html">人员构成</a></li>
-            </ul>
-        </div>
-    </div>
-</section>
-<section class="right-section">
-    <div class="top-content">
-        <div class="top-fixed">
-            <div class="top">
-                <div class="top-back">
-                    <a href="javascript:void(0)" class="back">返回</a>
-                </div>
-                <div class="search">
-                    <a href="javascript:void(0)" class="search-btn"></a>
-                    <select class="selected">
-                        <option value="0">张三三</option> <option value="1">张四四</option> <option value="2">张五五</option>
-                        <option value="3">张六六</option> <option value="4">张七七</option> <option value="5">张八八</option>
-                        <option value="6">张九九</option>
-                    </select>
-                    <span class="arrow"></span>
-                </div>
+        <div class="nav">
+            <div class="nav-list">
+                <h3 class="header-menu big"><i class="nav-arrow"></i>组织结构</h3>
+                <ul class="menu">
+                    <li><a href="javascript:void(0)">组织结构视图</a></li>
+                </ul>
             </div>
-            <ul class="list">
-                <li class="current">
-                    <a href="javascript:void(0)" class="lis">列表<span>Tabulate</span></a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" class="add">添加<span>Add</span></a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" class="same-one">编辑<span>Compile</span></a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" class="same-two">删除<span>Delete</span></a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" class="same-three">我的岗位<span>Post</span></a>
-                </li>
-            </ul>
+            <div class="nav-list">
+                <h3 class="header-menu"><i class="nav-arrow"></i>组织结构管理</h3>
+                <ul class="menu">
+                    <li><a href="/pages/new_module/organization/organization_serial_design.html">编号设计信息</a></li>
+                    <li><a href="/pages/new_module/organization/organization_system.html">体系</a></li>
+                    <li><a href="/pages/new_module/organization/organization_department.html">部门</a></li>
+                    <li><a href="/pages/new_module/organization/organization_post_hierarchy.html">岗位层级</a></li>
+                    <li><a href="/pages/new_module/organization/organization_post.html">岗位</a></li>
+                    <li><a href="/pages/new_module/organization/organization_work_project.html">项目部门工作范围</a></li>
+                    <li><a href="/pages/new_module/organization/organization_operation.html">操作类型</a></li>
+                    <li><a href="/pages/new_module/organization/organization_angle.html">角度</a></li>
+                    <li><a href="/pages/new_module/organization/organization_dimension.html">维度</a></li>
+                    <li><a href="/pages/new_module/organization/organization_classification.html">分类</a></li>
+                    <li><a href="/pages/new_module/organization/organization_reflect.html">体现类别</a></li>
+                    <li class="active"><a href="/pages/new_module/organization/organization_job_description.html">岗位说明</a></li>
+                    <li><a href="/pages/new_module/organization/organization_job_details.html">岗位工作明细</a></li>
+                    <li><a href="/pages/new_module/organization/organization_person_composition.html">人员构成</a></li>
+                </ul>
+            </div>
         </div>
-        <!--list content-->
-        <div class="content">
-            <div class="content-tab tab-item">
-                <ul class="table">
-                    <li class="list-head">
-                        <span></span>
-                        <span>编号</span>
-                        <span>岗位编号</span>
-                        <span>岗位名称</span>
-                        <span>岗位层级</span>
-                        <span>所属体系</span>
-                        <span>所属部门</span>
-                        <span>所属人员池</span>
-                        <span></span>
+    </section>
+    <section class="right-section">
+        <div class="top-content">
+            <div class="top-fixed">
+                <div class="top">
+                    <div class="top-back">
+                        <a href="javascript:void(0)" class="back">返回</a>
+                    </div>
+                    <div class="search">
+                        <a href="javascript:void(0)" class="search-btn"></a>
+                        <select class="selected">
+                            <option value="0">张三三</option> <option value="1">张四四</option> <option value="2">张五五</option>
+                            <option value="3">张六六</option> <option value="4">张七七</option> <option value="5">张八八</option>
+                            <option value="6">张九九</option>
+                        </select>
+                        <span class="arrow"></span>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li class="current" data-title="list">
+                        <a href="javascript:void(0)" class="lis">列表<span>Tabulate</span></a>
                     </li>
-                    <li class="list-all">
-                        <section>
-                            <div class="list-text odd">
-                                <p></p>
-                                <p>01</p>
-                                <p>ike0025522</p>
-                                <p>java开发</p>
-                                <p>项目经理</p>
-                                <p>一线实施体系</p>
-                                <p>研发部</p>
-                                <p>一线实施体系</p>
-                                <p>
-                                    <a href="javascript:void(0)" class="more">更多详细</a>
-                                </p>
-                            </div>
-                            <div class="can">
-                                <ul class="can-see">
-
-                                    <li>
-                                        <p class="see-parent">
-                                            <span>编制</span> <span>直接上级</span> <span>角度</span> <span>维度</span>
-                                            <span>分类</span> <span>体现类别</span> <span>操作类型</span> <span>工作描述</span>
-                                        </p>
-                                        <p class="see-children">
-                                            <span>一线实施体系一线实施体系一线实施体系</span><span>一线实施体系</span><span>一线实施体系</span> <span>一线实施体系</span>
-                                            <span>一线实施体系</span> <span>一线实施体系</span> <span>一线实施体系</span> <span>一线实施体系</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="see-parent">
-                                            <span>对应功能</span> <span>工作时间/频率</span> <span>工作时间节点</span>
-                                            <span>输出结果</span>
-                                        </p>
-                                        <p class="see-children">
-                                            <span>一线实施体系</span> <span>24小时</span> <span>24小时</span> <span>一线实施体系</span>
-                                        </p>
-                                    </li>
-                                </ul>
-                                <div class="module">
-                                    <div class="see-module">
-                                        <p class="see-type">体现类型</p>
-                                        <p class="see-description"></p>
-                                        <button class="btn">关闭</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="list-text odd">
-                                <p></p>
-                                <p>01</p>
-                                <p>ike0025522</p>
-                                <p>java开发</p>
-                                <p>项目经理</p>
-                                <p>一线实施体系</p>
-                                <p>研发部</p>
-                                <p>一线实施体系</p>
-                                <p>
-                                    <a href="javascript:void(0)" class="more">更多详细</a>
-                                </p>
-                            </div>
-                            <div class="can">
-                                <ul class="can-see">
-
-                                    <li>
-                                        <p class="see-parent">
-                                            <span>编制</span> <span>直接上级</span> <span>角度</span> <span>维度</span>
-                                            <span>分类</span> <span>体现类别</span> <span>操作类型</span> <span>工作描述</span>
-                                        </p>
-                                        <p class="see-children">
-                                            <span>一线实施体系一线实施体系一线实施体系</span><span>一线实施体系</span><span>一线实施体系</span> <span>一线实施体系</span>
-                                            <span>一线实施体系</span> <span>一线实施体系</span> <span>一线实施体系</span> <span>一线实施体系</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="see-parent">
-                                            <span>对应功能</span> <span>工作时间/频率</span> <span>工作时间节点</span>
-                                            <span>输出结果</span>
-                                        </p>
-                                        <p class="see-children">
-                                            <span>一线实施体系</span> <span>24小时</span> <span>24小时</span> <span>一线实施体系</span>
-                                        </p>
-                                    </li>
-                                </ul>
-                                <div class="module">
-                                    <div class="see-module">
-                                        <p class="see-type">体现类型</p>
-                                        <p class="see-description"></p>
-                                        <button class="btn">关闭</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="list-text odd">
-                                <p></p>
-                                <p>01</p>
-                                <p>ike0025522</p>
-                                <p>java开发</p>
-                                <p>项目经理</p>
-                                <p>一线实施体系</p>
-                                <p>研发部</p>
-                                <p>一线实施体系</p>
-                                <p>
-                                    <a href="javascript:void(0)" class="more">更多详细</a>
-                                </p>
-                            </div>
-                            <div class="can">
-                                <ul class="can-see">
-
-                                    <li>
-                                        <p class="see-parent">
-                                            <span>编制</span> <span>直接上级</span> <span>角度</span> <span>维度</span>
-                                            <span>分类</span> <span>体现类别</span> <span>操作类型</span> <span>工作描述</span>
-                                        </p>
-                                        <p class="see-children">
-                                            <span>一线实施体系一线实施体系一线实施体系</span><span>一线实施体系</span><span>一线实施体系</span> <span>一线实施体系</span>
-                                            <span>一线实施体系</span> <span>一线实施体系</span> <span>一线实施体系</span> <span>一线实施体系</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="see-parent">
-                                            <span>对应功能</span> <span>工作时间/频率</span> <span>工作时间节点</span>
-                                            <span>输出结果</span>
-                                        </p>
-                                        <p class="see-children">
-                                            <span>一线实施体系</span> <span>24小时</span> <span>24小时</span> <span>一线实施体系</span>
-                                        </p>
-                                    </li>
-                                </ul>
-                                <div class="module">
-                                    <div class="see-module">
-                                        <p class="see-type">体现类型</p>
-                                        <p class="see-description"></p>
-                                        <button class="btn">关闭</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+                    <li data-title="add">
+                        <a href="javascript:void(0)" class="add">添加<span>Add</span></a>
+                    </li>
+                    <li data-title="edit">
+                        <a href="javascript:void(0)" class="same-one">编辑<span>edit</span></a>
+                    </li>
+                    <li data-title="delete">
+                        <a href="javascript:void(0)" class="same-two">删除<span>Delete</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="same-three">我的岗位<span>Post</span></a>
+                    </li>
+                    <li class="last-select">
+                        <select class="job-select">
+                            <option value="0">请选择</option>
+                            <option value="0">Java开发</option>
+                            <option value="0">前端开发</option>
+                            <option value="0">PHP开发</option>
+                            <option value="0">IOS开发</option>
+                            <option value="0">安卓开发</option>
+                        </select>
+                        <i class="arrow-select"><img src="/images/new_module/organization/job-arrow.png" alt=""></i>
                     </li>
                 </ul>
-                <footer class="footer">
-                    <div class="pagination-click" id="pages"></div>
-                </footer>
             </div>
-            <div class="content-input">
-                <div class="input-list">
-                    <section class="list-left">
-                        <ul>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属部门</em></label>
-                                <p>
-                                    <input type="text" class="box_se">
-                                    <span class="select_b1">
-                                    <a href="javascript:void(0)">研发部</a>
-                                    <a href="javascript:void(0)">综合部</a>
-                                    <a href="javascript:void(0)">商务运营部</a>
-                                    <a href="javascript:void(0)">研发部</a>
-                                  </span>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属体系</em></label>
-                                <p>
-                                    <input type="text" class="box_se">
-                                    <span class="select_b1">
-                                    <a href="javascript:void(0)">一线体系</a>
-                                    <a href="javascript:void(0)">一线体系</a>
-                                    <a href="javascript:void(0)">一线体系</a>
-                                    <a href="javascript:void(0)">一线体系</a>
-                                  </span>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>岗位</em></label>
-                                <p>
-                                    <input type="text" class="box_se">
-                                    <span class="select_b1">
-                                    <a href="javascript:void(0)">前端开发</a>
-                                    <a href="javascript:void(0)">Java开发</a>
-                                    <a href="javascript:void(0)">UI设计</a>
-                                    <a href="javascript:void(0)">PHP开发</a>
-                                    <a href="javascript:void(0)">安卓开发</a>
-                                  </span>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>角度</em></label>
-                                <p>
-                                    <input type="text" class="box_se">
-                                    <span class="select_b1">
-                                    <a href="javascript:void(0)">01</a>
-                                    <a href="javascript:void(0)">02</a>
-                                    <a href="javascript:void(0)">03</a>
-                                    <a href="javascript:void(0)">04</a>
-                                    <a href="javascript:void(0)">05</a>
-                                  </span>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>维度</em></label>
-                                <p>
-                                    <input type="text" class="box_se">
-                                    <span class="select_b1">
-                                    <a href="javascript:void(0)">01</a>
-                                    <a href="javascript:void(0)">02</a>
-                                    <a href="javascript:void(0)">03</a>
-                                    <a href="javascript:void(0)">04</a>
-                                    <a href="javascript:void(0)">05</a>
-                                  </span>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>分类</em></label>
-                                <p>
-                                    <input type="text" class="box_se">
-                                    <span class="select_b1">
-                                    <a href="javascript:void(0)">01</a>
-                                    <a href="javascript:void(0)">02</a>
-                                    <a href="javascript:void(0)">03</a>
-                                    <a href="javascript:void(0)">04</a>
-                                    <a href="javascript:void(0)">05</a>
-                                  </span>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>体现类别</em></label>
-                                <p>
-                                    <input type="text" class="box_se">
-                                    <span class="select_b1">
-                                    <a href="javascript:void(0)">01</a>
-                                    <a href="javascript:void(0)">02</a>
-                                    <a href="javascript:void(0)">03</a>
-                                    <a href="javascript:void(0)">04</a>
-                                    <a href="javascript:void(0)">05</a>
-                                  </span>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>操作类型</em></label>
-                                <p>
-                                    <input type="text" class="box_se">
-                                    <span class="select_b1">
-                                        <a href="javascript:void(0)">01</a>
-                                        <a href="javascript:void(0)">02</a>
-                                        <a href="javascript:void(0)">03</a>
-                                        <a href="javascript:void(0)">04</a>
-                                        <a href="javascript:void(0)">05</a>
-                                    </span>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作描述</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>对应功能</em></label>
-                                <p>
-                                    <input type="text" class="box_se">
-                                    <span class="select_b1">
-                                        <a href="javascript:void(0)">01</a>
-                                        <a href="javascript:void(0)">02</a>
-                                        <a href="javascript:void(0)">03</a>
-                                        <a href="javascript:void(0)">04</a>
-                                        <a href="javascript:void(0)">05</a>
-                                    </span>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作时间/频率</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作时间开始节点</em></label>
-                                <p><input type="text"  class="add_image"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作时间结束节点</em></label>
-                                <p><input type="text"  class="add_image"></p>
-                            </li>
-                            <li>
-                                <label><em>输出结果</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                        </ul>
-                    </section>
+            <!--list content-->
+            <div class="content">
+                <div class="content-tab list">
+                    <ul class="table">
+                        <li class="list-head">
+                            <span></span>
+                            <span>编号</span>
+                            <span>岗位编号</span>
+                            <span>岗位名称</span>
+                            <span>岗位层级</span>
+                            <span>所属体系</span>
+                            <span>所属部门</span>
+                            <span>所属人员池</span>
+                            <span></span>
+                        </li>
+                        <li class="list-all">
+                            <section>
+                                <div class="list-text odd">
+                                    <p></p>
+                                    <p>01</p>
+                                    <p>ike0025522</p>
+                                    <p>java开发</p>
+                                    <p>项目经理</p>
+                                    <p>一线实施体系</p>
+                                    <p>研发部</p>
+                                    <p>一线实施体系</p>
+                                    <p>
+                                        <a href="javascript:void(0)" class="more">更多详细</a>
+                                    </p>
+                                </div>
+                                <div class="can">
+                                    <ul class="can-see">
+                                        <li>
+                                            <p class="see-parent">
+                                                <span>编制</span> <span>直接上级</span> <span>角度</span> <span>维度</span>
+                                                <span>分类</span> <span>体现类别</span> <span>操作类型</span> <span>工作描述</span>
+                                            </p>
+                                            <p class="see-children">
+                                                <span>一线实施体系一线实施体系一线实施体系</span><span>一线实施体系</span><span>一线实施体系</span> <span>一线实施体系</span>
+                                                <span>一线实施体系</span> <span>一线实施体系</span> <span>一线实施体系</span> <span>一线实施体系</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="see-parent">
+                                                <span>对应功能</span> <span>工作时间/频率</span> <span>工作时间节点</span>
+                                                <span>输出结果</span>
+                                            </p>
+                                            <p class="see-children">
+                                                <span>一线实施体系</span> <span>24小时</span> <span>24小时</span> <span>一线实施体系</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <div class="module">
+                                        <div class="see-module">
+                                            <p class="see-type">体现类型</p>
+                                            <p class="see-description"></p>
+                                            <button class="btn">关闭</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="list-text odd">
+                                    <p></p>
+                                    <p>01</p>
+                                    <p>ike0025522</p>
+                                    <p>java开发</p>
+                                    <p>项目经理</p>
+                                    <p>一线实施体系</p>
+                                    <p>研发部</p>
+                                    <p>一线实施体系</p>
+                                    <p>
+                                        <a href="javascript:void(0)" class="more">更多详细</a>
+                                    </p>
+                                </div>
+                                <div class="can">
+                                    <ul class="can-see">
+
+                                        <li>
+                                            <p class="see-parent">
+                                                <span>编制</span> <span>直接上级</span> <span>角度</span> <span>维度</span>
+                                                <span>分类</span> <span>体现类别</span> <span>操作类型</span> <span>工作描述</span>
+                                            </p>
+                                            <p class="see-children">
+                                                <span>一线实施体系一线实施体系一线实施体系</span><span>一线实施体系</span><span>一线实施体系</span> <span>一线实施体系</span>
+                                                <span>一线实施体系</span> <span>一线实施体系</span> <span>一线实施体系</span> <span>一线实施体系</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="see-parent">
+                                                <span>对应功能</span> <span>工作时间/频率</span> <span>工作时间节点</span>
+                                                <span>输出结果</span>
+                                            </p>
+                                            <p class="see-children">
+                                                <span>一线实施体系</span> <span>24小时</span> <span>24小时</span> <span>一线实施体系</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <div class="module">
+                                        <div class="see-module">
+                                            <p class="see-type">体现类型</p>
+                                            <p class="see-description"></p>
+                                            <button class="btn">关闭</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="list-text odd">
+                                    <p></p>
+                                    <p>01</p>
+                                    <p>ike0025522</p>
+                                    <p>java开发</p>
+                                    <p>项目经理</p>
+                                    <p>一线实施体系</p>
+                                    <p>研发部</p>
+                                    <p>一线实施体系</p>
+                                    <p>
+                                        <a href="javascript:void(0)" class="more">更多详细</a>
+                                    </p>
+                                </div>
+                                <div class="can">
+                                    <ul class="can-see">
+
+                                        <li>
+                                            <p class="see-parent">
+                                                <span>编制</span> <span>直接上级</span> <span>角度</span> <span>维度</span>
+                                                <span>分类</span> <span>体现类别</span> <span>操作类型</span> <span>工作描述</span>
+                                            </p>
+                                            <p class="see-children">
+                                                <span>一线实施体系一线实施体系一线实施体系</span><span>一线实施体系</span><span>一线实施体系</span> <span>一线实施体系</span>
+                                                <span>一线实施体系</span> <span>一线实施体系</span> <span>一线实施体系</span> <span>一线实施体系</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="see-parent">
+                                                <span>对应功能</span> <span>工作时间/频率</span> <span>工作时间节点</span>
+                                                <span>输出结果</span>
+                                            </p>
+                                            <p class="see-children">
+                                                <span>一线实施体系</span> <span>24小时</span> <span>24小时</span> <span>一线实施体系</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <div class="module">
+                                        <div class="see-module">
+                                            <p class="see-type">体现类型</p>
+                                            <p class="see-description"></p>
+                                            <button class="btn">关闭</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </li>
+                    </ul>
+                    <footer class="footer">
+                        <div class="pagination-click" id="pages"></div>
+                    </footer>
                 </div>
-                <p class="dataBottom">
-                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
-                    <button>提交</button>
-                </p>
-            </div>
-            <div class="content-input tab-item">
-                <div class="input-list">
-                    <section class="list-left">
-                        <ul>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属部门</em></label>
-                                <p>
-                                    <input type="text" class="box_se">
-                                    <span class="select_b1">
-                                    <a href="javascript:void(0)">研发部</a>
-                                    <a href="javascript:void(0)">综合部</a>
-                                    <a href="javascript:void(0)">商务运营部</a>
-                                    <a href="javascript:void(0)">研发部</a>
-                                  </span>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属体系</em></label>
-                                <p>
-                                    <input type="text" class="box_se">
-                                    <span class="select_b1">
-                                    <a href="javascript:void(0)">一线体系</a>
-                                    <a href="javascript:void(0)">一线体系</a>
-                                    <a href="javascript:void(0)">一线体系</a>
-                                    <a href="javascript:void(0)">一线体系</a>
-                                  </span>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>岗位</em></label>
-                                <p>
-                                    <input type="text" class="box_se">
-                                    <span class="select_b1">
-                                    <a href="javascript:void(0)">前端开发</a>
-                                    <a href="javascript:void(0)">Java开发</a>
-                                    <a href="javascript:void(0)">UI设计</a>
-                                    <a href="javascript:void(0)">PHP开发</a>
-                                    <a href="javascript:void(0)">安卓开发</a>
-                                  </span>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>角度</em></label>
-                                <p>
-                                    <input type="text" class="box_se">
-                                    <span class="select_b1">
-                                    <a href="javascript:void(0)">01</a>
-                                    <a href="javascript:void(0)">02</a>
-                                    <a href="javascript:void(0)">03</a>
-                                    <a href="javascript:void(0)">04</a>
-                                    <a href="javascript:void(0)">05</a>
-                                  </span>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>维度</em></label>
-                                <p>
-                                    <input type="text" class="box_se">
-                                    <span class="select_b1">
-                                    <a href="javascript:void(0)">01</a>
-                                    <a href="javascript:void(0)">02</a>
-                                    <a href="javascript:void(0)">03</a>
-                                    <a href="javascript:void(0)">04</a>
-                                    <a href="javascript:void(0)">05</a>
-                                  </span>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>分类</em></label>
-                                <p>
-                                    <input type="text" class="box_se">
-                                    <span class="select_b1">
-                                    <a href="javascript:void(0)">01</a>
-                                    <a href="javascript:void(0)">02</a>
-                                    <a href="javascript:void(0)">03</a>
-                                    <a href="javascript:void(0)">04</a>
-                                    <a href="javascript:void(0)">05</a>
-                                  </span>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>体现类别</em></label>
-                                <p>
-                                    <input type="text" class="box_se">
-                                    <span class="select_b1">
-                                    <a href="javascript:void(0)">01</a>
-                                    <a href="javascript:void(0)">02</a>
-                                    <a href="javascript:void(0)">03</a>
-                                    <a href="javascript:void(0)">04</a>
-                                    <a href="javascript:void(0)">05</a>
-                                  </span>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>操作类型</em></label>
-                                <p>
-                                    <input type="text" class="box_se">
-                                    <span class="select_b1">
-                                        <a href="javascript:void(0)">01</a>
-                                        <a href="javascript:void(0)">02</a>
-                                        <a href="javascript:void(0)">03</a>
-                                        <a href="javascript:void(0)">04</a>
-                                        <a href="javascript:void(0)">05</a>
-                                    </span>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作描述</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>对应功能</em></label>
-                                <p>
-                                    <input type="text" class="box_se">
-                                    <span class="select_b1">
-                                        <a href="javascript:void(0)">01</a>
-                                        <a href="javascript:void(0)">02</a>
-                                        <a href="javascript:void(0)">03</a>
-                                        <a href="javascript:void(0)">04</a>
-                                        <a href="javascript:void(0)">05</a>
-                                    </span>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作时间/频率</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作时间开始节点</em></label>
-                                <p><input type="text"  class="add_image"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作时间结束节点</em></label>
-                                <p><input type="text"  class="add_image"></p>
-                            </li>
-                            <li>
-                                <label><em>输出结果</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                        </ul>
-                    </section>
+                <div class="content-input add">
+                    <div class="input-list">
+                        <section class="list-left">
+                            <ul>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属部门</em></label>
+                                    <select class="sele">
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属体系</em></label>
+                                    <select class="sele">
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>岗位</em></label>
+                                    <select class="sele">
+                                        <option value="">前端开发</option>
+                                        <option value="">Java开发</option>
+                                        <option value="">UI设计</option>
+                                        <option value="">PHP开发</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>角度</em></label>
+                                    <select class="sele">
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>维度</em></label>
+                                    <select class="sele">
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>分类</em></label>
+                                    <select class="sele">
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>体现类别</em></label>
+                                    <select class="sele">
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>操作类型</em></label>
+                                    <select class="sele">
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作描述</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>对应功能</em></label>
+                                    <select class="sele">
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作时间/频率</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作时间开始节点</em></label>
+                                    <input type="text" class="date-icon" id="start-time">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作时间结束节点</em></label>
+                                    <input type="text" class="date-icon" id="end-time">
+                                </li>
+                                <li>
+                                    <label><em>输出结果</em></label>
+                                    <input type="text">
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <p class="dataBottom">
+                        <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                        <button>提交</button>
+                    </p>
                 </div>
-                <p class="dataBottom">
-                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
-                    <button>提交</button>
-                </p>
+                <div class="content-input edit">
+                    <div class="input-list">
+                        <section class="list-left">
+                            <ul>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属部门</em></label>
+                                    <select class="sele">
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属体系</em></label>
+                                    <select class="sele">
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>岗位</em></label>
+                                    <select class="sele">
+                                        <option value="">前端开发</option>
+                                        <option value="">Java开发</option>
+                                        <option value="">UI设计</option>
+                                        <option value="">PHP开发</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>角度</em></label>
+                                    <select class="sele">
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>维度</em></label>
+                                    <select class="sele">
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>分类</em></label>
+                                    <select class="sele">
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>体现类别</em></label>
+                                    <select class="sele">
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>操作类型</em></label>
+                                    <select class="sele">
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作描述</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>对应功能</em></label>
+                                    <select class="sele">
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作时间/频率</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作时间开始节点</em></label>
+                                    <input type="text" class="date-icon" id="start">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作时间结束节点</em></label>
+                                    <input type="text" class="date-icon" id="end">
+                                </li>
+                                <li>
+                                    <label><em>输出结果</em></label>
+                                    <input type="text">
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <p class="dataBottom">
+                        <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                        <button>提交</button>
+                    </p>
+                </div>
+                <div class="delete">
+                    <div class="del-head">
+                        <h5>温馨提示</h5>
+                    </div>
+                    <div class="del-con">
+                        <p>确定要删除这条数据？</p>
+                        <div class="btn">
+                            <button>确定</button>
+                            <button>取消</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<script src="/js/jquery-2.1.1.min.js"></script>
-<script src="/laypage/laypage.js"></script>
-<script src="/js/new_modules/common.js"></script>
-<script src="/js/organization.js"></script>
-<script type="text/javascript">
-    laypage({
-        cont : 'pages', //容器。值支持id名、原生dom对象，jquery对象,
-        pages : 20, //总页数
-        skin : 'molv', //皮肤
-        first : 1, //将首页显示为数字1,。若不显示，设置false即可
-        last : 20, //将尾页显示为总页数。若不显示，设置false即可
-    });
-</script>
+    </section>
+    <div id="modalbg"></div>
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/honor/moment.min.js"></script>
+    <script src="/laypage/laypage.js"></script>
+    <script src="/js/honor/pikaday.js"></script>
+    <script src="/js/new_modules/common.js"></script>
+    <script type="text/javascript">
+        laypage({
+            cont : 'pages', //容器。值支持id名、原生dom对象，jquery对象,
+            pages : 20, //总页数
+            skin : 'molv', //皮肤
+            first : 1, //将首页显示为数字1,。若不显示，设置false即可
+            last : 20, //将尾页显示为总页数。若不显示，设置false即可
+        });
+
+        //    日历
+        var start = new Pikaday({
+            numberOfMonths: 1,
+            field:jQuery('#start-time')[0],
+            minDate: new Date('2000-01-01'),
+            maxDate: new Date('2020-12-31'),
+            yearRange: [2000,2020],
+            i18n: i18n,
+            onSelect: function() {
+                var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+                $('#datepicker').appendChild(date);
+            }
+        });
+        var end = new Pikaday({
+            numberOfMonths: 1,
+            field:jQuery('#end-time')[0],
+            minDate: new Date('2000-01-01'),
+            maxDate: new Date('2020-12-31'),
+            yearRange: [2000,2020],
+            i18n: i18n,
+            onSelect: function() {
+                var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+                $('#datepicker').appendChild(date);
+            }
+        });
+    </script>
 </body>
 </html>
