@@ -213,6 +213,12 @@
                       box-shadow: 0 0 3px #1aafea;
                     }
                   }
+                  select{
+                    border: 1px solid #1aafea;
+                    &:hover{
+                      box-shadow: 0 0 3px #1aafea;
+                    }
+                  }
                 }
                 label{
                   width:147px;
@@ -246,6 +252,22 @@
                     background:url("/images/new_module/data/date.png") no-repeat right 10px center;
                   }
                 }
+                .sele{
+                  width:55%;
+                  height: 36px;
+                  border: 1px solid #999999;
+                  background:url("/images/new_module/data/down.png") no-repeat right 10px center;
+                  padding: {
+                    left: 15px;
+                    right: 15px;
+                  }
+                  border-radius: 5px;
+                  margin-left: 14px;
+                  option{
+                    background:#f6f6f6;
+
+                  }
+                }
                 .select{
                   width:56%;
                   display:flex;
@@ -268,6 +290,7 @@
                     background:#f6f6f6;
                     width:96%;
                     top:40px;
+                    left:15px;
                     z-index:5;
                     .option{
                       display:flex;
