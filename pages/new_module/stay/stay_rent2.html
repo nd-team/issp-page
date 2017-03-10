@@ -22,10 +22,10 @@
         <div class="nav-list">
             <h3 class="header-menu"><i class="nav-arrow"></i>租房管理</h3>
             <ul class="menu">
-                <li class="active" >
+                <li >
                     <a href="/pages/new_module/stay/stay_rent.html">租房方案</a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="/pages/new_module/stay/stay_rent2.html">租房申请</a>
                 </li>
                 <li>
@@ -65,7 +65,7 @@
                     <a href="javascript:void(0)" class="lis" >列表<span>Tabulate</span></a>
                 </li>
                 <li data-title="add">
-                    <a href="javascript:void(0)" class="add" >添加<span>Add</span></a>
+                    <a href="javascript:void(0)" class="add" >申请<span>Add</span></a>
                 </li>
                 <li data-title="edit">
                     <a href="javascript:void(0)" class="same-two" >编辑<span>Edit</span></a>
@@ -84,13 +84,13 @@
                 <ul class="table">
                     <li class="list-head">
                         <span></span>
-                        <span>姓名（用户名称）</span>
                         <span>员工编号</span>
+                        <span>姓名（用户名称）</span>
                         <span>岗位</span>
                         <span>地区</span>
                         <span>项目组</span>
-                        <span>项目名称（多选）</span>
-                        <span>租房用途</span>
+                        <span>项目名称</span>
+                        <span>租赁人</span>
                         <span></span>
                     </li>
                     <li class="list-all">
@@ -110,11 +110,10 @@
                             </div>
                             <div class="can">
                                 <ul class="can-see">
-
                                     <li>
                                         <p class="see-parent">
-                                            <span>住宿人数</span> <span>租房规格</span> <span>租房要求</span> <span>租房期限</span>
-                                            <span>完成租房时间</span> <span>资金意见</span> <span>注意事项</span> <span>商务发展部意见</span>
+                                            <span>住宿人</span> <span>申请原因	</span> <span>租房用途</span> <span>租房地址</span>
+                                            <span>房东姓名 </span> <span>联系方式</span> <span>中介费</span> <span>押金 </span>
                                         </p>
                                         <p class="see-children">
                                             <span>湖南省益阳市赫山区同心巷20号</span> <span></span> <span></span> <span></span>
@@ -123,8 +122,8 @@
                                     </li>
                                     <li>
                                         <p class="see-parent">
-                                            <span>运营财务部意见</span> <span>综合资源部核实</span> <span>项目经理审批</span>
-                                            <span>总经办审批</span> <span>介绍人</span> <span>邮箱</span> <span>手机号码</span>
+                                            <span>房租</span> <span>房租管理费</span> <span>卫生费</span>
+                                            <span>水费计价 </span> <span>电费计价</span> <span>网络套餐费用 </span> <span>项目经理审批 </span>
                                             <span>座机</span>
                                         </p>
                                         <p class="see-children">
@@ -135,23 +134,10 @@
                                     </li>
                                     <li>
                                         <p class="see-parent">
-                                            <span>微信</span> <span>QQ</span> <span>行业</span> <span>组织结构名称</span>
-                                            <span>组织规模</span> <span>岗位</span> <span>职级</span> <span>职权</span>
+                                            <span>商务发展部意见  </span> <span>综合资源部核实</span> <span>运营财务部审核</span> <span>备注</span>
                                         </p>
                                         <p class="see-children">
                                             <span></span> <span></span> <span></span> <span>益阳市赫山区商务局</span>
-                                            <span></span> <span>局长</span> <span></span> <span></span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="see-parent">
-                                            <span>客户详细资料完成</span> <span>最后一次市场招待</span> <span>最后一次更新人</span>
-                                            <span>更新时间</span>
-
-                                        </p>
-                                        <p class="see-children">
-                                            <span>50%</span> <span></span> <span>admin</span> <span>2017-3-7</span>
-
                                         </p>
                                     </li>
                                 </ul>
@@ -174,10 +160,9 @@
                 <div class="input-list">
                     <section>
                         <ul >
-
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>员工编号</em></label>
-                                <input type="text" value="ike12345" disabled>
+                                <input type="text" value="ike12345" >
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>姓名（用户名称）</em></label>
@@ -189,19 +174,7 @@
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
-                                <div class="select">
-                                    <input type="text" class="select-input">
-                                    <i class="arrow-down"><img src="/images/new_module/data/down.png" alt=""></i>
-                                    <p class="wrap-op">
-                                        <span class="option">
-                                            <a href="javascript:void(0)">能够握紧</a>
-                                            <a href="javascript:void(0)">的就别放</a>
-                                            <a href="javascript:void(0)">了能够拥</a>
-                                            <a href="javascript:void(0)">抱的就别</a>
-                                            <a href="javascript:void(0)">拉扯</a>
-                                        </span>
-                                    </p>
-                                </div>
+                                <input type="text">
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目组</em></label>
@@ -213,63 +186,47 @@
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>租房用途</em></label>
-                                <div class="select">
-                                    <input type="text" class="select-input">
-                                    <i class="arrow-down"><img src="/images/new_module/data/down.png" alt=""></i>
-                                    <p class="wrap-op">
-                                        <span class="option">
-                                            <a href="javascript:void(0)">能够握紧</a>
-                                            <a href="javascript:void(0)">的就别放</a>
-                                            <a href="javascript:void(0)">了能够拥</a>
-                                            <a href="javascript:void(0)">抱的就别</a>
-                                            <a href="javascript:void(0)">拉扯</a>
-                                        </span>
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>住宿人数</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>租房规格</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>房东姓名</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>租房要求</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>联系方式</em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>中介费</em></label>
                                 <input type="text">
                             </li>
 
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>租房期限</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>押金</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>完成租房时间</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>房租</em></label>
                                     <input type="text"  id="adddate">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>代表性简称</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>房租管理费</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>资金意见</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>卫生费</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>注意事项</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>水费计价</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>商务发展部意见</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>电费计价</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>运营财务部意见</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>综合资源部核实</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>网络套餐费用</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
@@ -277,7 +234,15 @@
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>总经办审批</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>商务发展部意见 </em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>综合资源部核实</em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>运营财务部审核</em></label>
                                 <input type="text">
                             </li>
                             <li>
@@ -295,11 +260,11 @@
             </div>
             <div class="content-input edit">
                 <div class="input-list">
-                    <section class="list-left">
+                    <section>
                         <ul >
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>员工编号</em></label>
-                                <input type="text" value="ike12345" disabled>
+                                <input type="text" value="ike12345">
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>姓名（用户名称）</em></label>
@@ -311,19 +276,7 @@
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
-                                <div class="select">
-                                    <input type="text" class="select-input">
-                                    <i class="arrow-down"><img src="/images/new_module/data/down.png" alt=""></i>
-                                    <p class="wrap-op">
-                                        <span class="option">
-                                            <a href="javascript:void(0)">能够握紧</a>
-                                            <a href="javascript:void(0)">的就别放</a>
-                                            <a href="javascript:void(0)">了能够拥</a>
-                                            <a href="javascript:void(0)">抱的就别</a>
-                                            <a href="javascript:void(0)">拉扯</a>
-                                        </span>
-                                    </p>
-                                </div>
+                                <input type="text">
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目组</em></label>
@@ -335,63 +288,47 @@
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>租房用途</em></label>
-                                <div class="select">
-                                    <input type="text" class="select-input">
-                                    <i class="arrow-down"><img src="/images/new_module/data/down.png" alt=""></i>
-                                    <p class="wrap-op">
-                                        <span class="option">
-                                            <a href="javascript:void(0)">能够握紧</a>
-                                            <a href="javascript:void(0)">的就别放</a>
-                                            <a href="javascript:void(0)">了能够拥</a>
-                                            <a href="javascript:void(0)">抱的就别</a>
-                                            <a href="javascript:void(0)">拉扯</a>
-                                        </span>
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>住宿人数</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>租房规格</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>房东姓名</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>租房要求</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>联系方式</em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>中介费</em></label>
                                 <input type="text">
                             </li>
 
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>租房期限</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>押金</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>完成租房时间</em></label>
-                                <input type="text" id="editdate">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>房租</em></label>
+                                <input type="text"  id="editdate">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>代表性简称</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>房租管理费</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>资金意见</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>卫生费</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>注意事项</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>水费计价</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>商务发展部意见</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>电费计价</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>运营财务部意见</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>综合资源部核实</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>网络套餐费用</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
@@ -399,7 +336,15 @@
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>总经办审批</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>商务发展部意见 </em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>综合资源部核实</em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>运营财务部审核</em></label>
                                 <input type="text">
                             </li>
                             <li>
@@ -430,89 +375,94 @@
                 <div class="input-list">
                     <section>
                         <ul >
-                            <li>
+                            <li class="required">
                                 <label><em>员工编号</em></label>
                                 <input type="text" value="ike12345" disabled>
                             </li>
-                            <li>
+                            <li class="required">
                                 <label><em>姓名（用户名称）</em></label>
                                 <input type="text" disabled>
                             </li>
-                            <li>
+                            <li class="required">
                                 <label><em>岗位</em></label>
                                 <input type="text" disabled>
                             </li>
-                            <li>
+                            <li class="required">
                                 <label><em>地区</em></label>
                                 <input type="text" disabled>
                             </li>
-                            <li>
+                            <li class="required">
                                 <label><em>项目组</em></label>
                                 <input type="text" disabled>
                             </li>
-                            <li >
+                            <li class="required">
                                 <label><em>项目名称</em></label>
                                 <input type="text" disabled>
                             </li>
-                            <li >
+                            <li class="required">
                                 <label><em>租房用途</em></label>
                                 <input type="text" disabled>
                             </li>
-                            <li >
-                                <label><em>住宿人数</em></label>
+                            <li class="required">
+                                <label><em>房东姓名</em></label>
                                 <input type="text" disabled>
                             </li>
-                            <li >
-                                <label><em>租房规格</em></label>
+                            <li class="required">
+                                <label><em>联系方式</em></label>
                                 <input type="text" disabled>
                             </li>
-                            <li >
-                                <label><em>租房要求</em></label>
+                            <li class="required">
+                                <label><em>中介费</em></label>
                                 <input type="text" disabled>
                             </li>
-                            <li >
-                                <label><em>租房期限</em></label>
+
+                            <li class="required">
+                                <label><em>押金</em></label>
                                 <input type="text" disabled>
                             </li>
-                            <li >
-                                <label><em>完成租房时间</em></label>
+                            <li class="required">
+                                <label><em>房租</em></label>
                                 <input type="text" disabled>
                             </li>
-                            <li >
-                                <label><em>代表性简称</em></label>
+                            <li class="required">
+                                <label><em>房租管理费</em></label>
                                 <input type="text" disabled>
                             </li>
-                            <li >
-                                <label><em>资金意见</em></label>
+                            <li class="required">
+                                <label><em>卫生费</em></label>
                                 <input type="text" disabled>
                             </li>
-                            <li >
-                                <label><em>注意事项</em></label>
+                            <li class="required">
+                                <label><em>水费计价</em></label>
                                 <input type="text" disabled>
                             </li>
-                            <li >
-                                <label><em>商务发展部意见</em></label>
+                            <li class="required">
+                                <label><em>电费计价</em></label>
+                                <input type="text" disabled>
+                            </li>
+                            <li class="required">
+                                <label><em>网络套餐费用</em></label>
+                                <input type="text" disabled>
+                            </li>
+                            <li class="required">
+                                <label><em>项目经理审批</em></label>
+                                <input type="text" >
+                            </li>
+                            <li class="required">
+                                <label><em>商务发展部意见 </em></label>
                                 <input type="text">
                             </li>
-                            <li >
-                                <label><em>运营财务部意见</em></label>
-                                <input type="text">
-                            </li>
-                            <li >
+                            <li class="required">
                                 <label><em>综合资源部核实</em></label>
                                 <input type="text">
                             </li>
-                            <li >
-                                <label><em>项目经理审批</em></label>
-                                <input type="text">
-                            </li>
-                            <li >
-                                <label><em>总经办审批</em></label>
+                            <li class="required">
+                                <label><em>运营财务部审核</em></label>
                                 <input type="text">
                             </li>
                             <li>
                                 <label><em>备注</em></label>
-                                <input type="text" >
+                                <input type="text">
                             </li>
                         </ul>
                     </section>
