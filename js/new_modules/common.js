@@ -77,7 +77,7 @@ $(document).ready(function(){
             $('.content').children('.delete').show();
             $("#modalbg").show()
         }else {
-            $('.content').children("."+listTitle).show().siblings().hide()
+            $('.content').children("."+listTitle).show().siblings().hide();
         }
     });
     //删除框
