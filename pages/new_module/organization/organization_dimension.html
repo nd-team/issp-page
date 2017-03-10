@@ -63,29 +63,29 @@
                 </div>
             </div>
             <ul class="list">
-                <li class="current">
+                <li class="current" data-title="list">
                     <a href="javascript:void(0)" class="lis">列表<span>Tabulate</span></a>
                 </li>
-                <li>
+                <li data-title="add">
                     <a href="javascript:void(0)" class="add">添加<span>Add</span></a>
                 </li>
-                <li>
-                    <a href="javascript:void(0)" class="same-one">编辑<span>Compile</span></a>
+                <li data-title="edit">
+                    <a href="javascript:void(0)" class="same-one">编辑<span>edit</span></a>
                 </li>
-                <li>
+                <li data-title="delete">
                     <a href="javascript:void(0)" class="same-two">删除<span>Delete</span></a>
                 </li>
-                <li>
+                <li data-title="close">
                     <a href="javascript:void(0)" class="same-one">关闭使用<span>Close</span></a>
                 </li>
-                <li>
+                <li data-title="start">
                     <a href="javascript:void(0)" class="same-two">开始使用<span>Start</span></a>
                 </li>
             </ul>
         </div>
         <!--list content-->
         <div class="content">
-            <div class="content-tab tab-item">
+            <div class="content-tab list">
                 <ul class="table">
                     <li class="list-head">
                         <span></span>
@@ -135,7 +135,7 @@
             <div class="content-input add">
                 <div class="input-list">
                     <section class="list-left">
-                        <ul >
+                        <ul>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>名称</em></label>
                                 <input type="text">
@@ -152,10 +152,10 @@
                     <button>提交</button>
                 </p>
             </div>
-            <div class="content-input compile">
+            <div class="content-input edit">
                 <div class="input-list">
                     <section class="list-left">
-                        <ul >
+                        <ul>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>名称</em></label>
                                 <input type="text">
@@ -171,10 +171,23 @@
                     <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
                     <button>提交</button>
                 </p>
+            </div>
+            <div class="delete">
+                <div class="del-head">
+                    <h5>温馨提示</h5>
+                </div>
+                <div class="del-con">
+                    <p>确定要删除这条数据？</p>
+                    <div class="btn">
+                        <button>确定</button>
+                        <button>取消</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
+<div id="modalbg"></div>
 <script src="/js/jquery-2.1.1.min.js"></script>
 <script src="/laypage/laypage.js"></script>
 <script src="/js/new_modules/common.js"></script>

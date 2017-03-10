@@ -253,15 +253,16 @@ body{
               line-height: 1.5;
             }
           }
-          &.last-select{
 
+          &.last-select{
+            padding-right: 20px;
             @media screen and (max-width: 1920px) {
               margin-left: -120px;
             }
             @media screen and (min-width: 1280px) {
-              margin-left: -50px;
+              margin-left: 0;
             }
-            .select{
+            .job-select{
               width: 100%;
               height: 28px;
               border: 1px solid #e1e1e1;
@@ -269,12 +270,13 @@ body{
               padding-left: 10px;
             }
             .arrow-select{
+              display: inline-block;
               width: 28px;
               height: 28px;
               background-color: #cdeefb;
               line-height: 28px;
               text-align: center;
-              margin-left: -29px;
+              margin-left: -9px;
             }
           }
           a{
