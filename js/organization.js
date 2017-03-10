@@ -1,8 +1,47 @@
 $(function(){
 
-    $(".header-menu").on('click',function() {
-        $(".menu").slideToggle();
+    $(".see-children").on('click','span',function() {
+        var inx = $(this).index(),
+            selfText = $(this).text(),
+            num = selfText.length,
+            width = $(this).width(),
+            titleText = $(this).parent().siblings().children().eq(inx).text(),
+            fontSize = $(this).css("font-size").split("p")[0]*num;
+            console.log(fontSize,width);
+        if (fontSize>width){
+            $(".module").show();
+            $(".module .see-type").text(titleText);
+            $(".module .see-description").text(selfText);
+        }else {
+            return
+        }
     });
+
+    $(".module .see-module").on('click','.btn',function() {
+        $(".module ").hide();
+    });
+
+    // 选择下拉菜单
+    $('.select_b1').hide();
+    function select_box(box_se,select_b1) {
+        $(document).click(function () {
+            $(select_b1).hide();
+        });
+        $(box_se).on('click',function(e){
+            $(".content-input ul li").siblings().find(".select_b1").hide();
+            //$(this).parent().find(select_b1).width($(this).width());
+            $(this).parent().find(select_b1).show();
+            e?e.stopPropagation():event.cancelBubble = true;
+            $(select_b1).find("a").click(function(e){
+                var selectText=$(this).text();
+                $(this).parents(select_b1).hide();
+                $(this).parents("li").find(box_se).val(selectText);
+                e?e.stopPropagation():event.cancelBubble = true;
+            });
+        });
+        return false;
+    }
+    select_box(".box_se",".select_b1");
 
     (function($){
         $.fn.myTab = function(options){//将对象作为参数传进去

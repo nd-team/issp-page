@@ -1,0 +1,221 @@
+//浏览器重置样式
+html, body, div, span, nav, header, iframe,
+h1, h2, h3, h4, h5, h6, p, section, footer,
+a, form, address, big, cite, code,
+del, dfn, em, img, ins, fieldset, q, s, samp,
+small, strike, strong, sub, sup,label, var,
+b, u, i,input, dl, dt, dd, ol, ul, li,figure,figcaption{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+$main-font: "Microsoft YaHei";
+html,body{
+  font:{
+    size: 14px;
+    family: $main-font;
+  }
+  background:#fdfdfd;
+}
+form,fieldset{
+  border: 0 none;
+}
+ol,ul li{
+  list-style: none;
+}
+img{
+  border: 0 none;
+  max-width: 100%;
+}
+input{
+  outline: none;
+  font-family: $main-font;
+}
+button{
+  border: 0;
+  font-family: $main-font;
+}
+select{
+  appearance:none;
+  -moz-appearance:none;
+}
+i,em{
+  font-style: normal;
+}
+a {
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+svg{
+  width:1.375rem;
+  height:1.375rem;
+  vertical-align: middle;
+}
+body{
+  display: flex;
+}
+.left-section{
+  width: 198px;
+  height: 100%;
+  background-color: #33383b;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  .header{
+    width: 100%;
+    height: 60px;
+    background-color: #05a9e9;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .logo{
+      width: 99px;
+      height: 100px;
+      margin-top: -85px;
+    }
+    span{
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+  .nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: #999;
+    h3{
+      height: 30px;
+      font-size: 16px;
+      padding-left: 15px;
+      margin-left: -60px;
+      cursor: pointer;
+      .nav-arrow{
+        display: inline-block;
+        width: 9px;
+        height: 7px;
+        background: url("/images/organization/nav-down.png") no-repeat;
+        padding-left: 10px;
+        vertical-align: middle;
+      }
+
+    }
+    .menu{
+      width: 100%;
+      li{
+        height: 40px;
+        line-height: 40px;
+        padding-left: 50px;
+        a{
+          color: #999;
+        }
+        &.active{
+          background-color: #fff;
+          background-image: url("/images/organization/nav_rrow.png");
+          background-repeat: no-repeat;
+          background-position: left center;
+          a{
+            color: #06afe1;
+          }
+        }
+      }
+    }
+  }
+}
+.right-section{
+  flex: 1;
+  height: 100%;
+  background-color: #fdfdfd;
+  margin-left: 198px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  .top-content{
+    .top{
+      width: 100%;
+      height: 100px;
+      background-color: #33383b;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      .top-back{
+        flex: 1;
+        .back{
+          display: inline-block;
+          width: 54px;
+          height: 24px;
+          background-color: #fff;
+          margin-left: 15px;
+          text-align: center;
+          line-height: 24px;
+          border-radius: 5px;
+          border: 1px solid #bfbfbf;
+        }
+      }
+      .search{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+        align-items: center;
+        .search-btn{
+          width: 19px;
+          height: 18px;
+          background: url("/images/organization/search.png") no-repeat center;
+          margin-right: 18px;
+        }
+        .selected{
+          width: 137px;
+          height: 37px;
+          background: url("/images/organization/searchbg.png") no-repeat;
+          color: #fff;
+          padding-left: 18px;
+          option{
+            color: #666;
+          }
+        }
+        .arrow{
+          width: 9px;
+          height: 7px;
+          background: url("/images/organization/down.png") no-repeat center;
+          cursor: pointer;
+          margin: {
+            left: -20px;
+          }
+        }
+      }
+    }
+    .pagination-click{
+      margin:{
+        left: 15px;
+        top: 20px;
+      }
+    }
+    .laypageskin_molv {
+      .laypage_curr{
+        background-color: #05a9e9;
+        border-radius: 3px;
+      }
+      a{
+        border: 1px solid #cecece;
+        border-radius: 3px;
+        &:last-child{
+          border-color: #05a9e9;
+        }
+      }
+    }
+  }
+  //footer
+  .footer{
+    width: 100%;
+    height: 70px;
+    background-color: #758c94;
+  }
+}
