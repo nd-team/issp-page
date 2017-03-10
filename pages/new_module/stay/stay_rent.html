@@ -245,8 +245,8 @@
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>完成租房时间</em></label>
-                                    <input type="text"  id="adddate">
+                                <label ><i><img src="/images/new_module/data/mandatory.png"></i><em>完成租房时间</em></label>
+                                    <input type="text" class="date-icon"  id="adddate">
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>代表性简称</em></label>
@@ -368,7 +368,7 @@
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>完成租房时间</em></label>
-                                <input type="text" id="editdate">
+                                <input type="text" class="date-icon" id="editdate">
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>代表性简称</em></label>
@@ -476,7 +476,7 @@
                             </li>
                             <li >
                                 <label><em>完成租房时间</em></label>
-                                <input type="text" disabled>
+                                <input type="text" class="date-icon" disabled>
                             </li>
                             <li >
                                 <label><em>代表性简称</em></label>
@@ -534,6 +534,7 @@
 <script src="/laypage/laypage.js"></script>
 <script src="/js/honor/pikaday.js"></script>
 <script src="/js/new_modules/common.js"></script>
+<script src="/js/new_modules/date.js"></script>
 <script type="text/javascript">
     laypage({
         cont : 'pages', //容器。值支持id名、原生dom对象，jquery对象,
