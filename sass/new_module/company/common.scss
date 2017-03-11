@@ -134,330 +134,115 @@ header{
   width: 100%;
   height: 100%;
   //overflow: hidden;
-  .all-module{
+  .company-module{
     width: 100%;
     height: auto;
     display: flex;
     margin:80px auto 0;
-    flex-direction: column;
+    justify-content: center;
     overflow: auto;
-    @media screen and (max-width: 1600px) {
-      width: 1220px;
-    }
-    .company{
-      width: 100%;
-      height: auto;
+    li{
+      flex: 1;
+      height: 300px;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      justify-content: center;
       cursor: pointer;
-      overflow: hidden;
-      transform-origin: center;
-      margin-bottom: 15px;
-      @media screen and (max-width: 1600px) {
-        height: 190px;
-        margin-bottom: 15px;
-      }
-      .same-type{
-        height: auto;
-        display: flex;
-        justify-content: center;
-        margin-right: 15px;
-        will-change: transform;
-        transition: box-shadow .3s ease;
-        box-shadow: 0 10px 30px transparent;
-        &:last-child{
-          margin-right: 0;
+      transition: all 1s ease-out;
+      &:hover{
+        .head-number{
+          width: 201px;
+          height: 30px;
+          background: url("/images/new_module/company/bg02.png") no-repeat top center;
+          margin: {
+            bottom: -30px;
+            right: 8px;
+          }
+          z-index: 100;
+          line-height: 30px;
+          padding-left: 10px;
+          font-size: 18px;
         }
-        @media screen and (max-width: 1600px) {
+        .angle{
+          margin:{
+            top: 30px;
+            left: -194px;
+          }
+        }
+        .company-article{
           width: 190px;
-          height: 100%;
-          margin-right: 15px;
-        }
-        .first{
-            width: 246px;
-            height: 246px;
-            border: 2px solid #666;
-            @media screen and (max-width: 1600px) {
-              width: 186px;
-              height: 186px;
-            }
-            .border-bg{
-              height: 224px;
-              border: 1px solid #bbb;
-              margin: 10px;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-              background-color: #fff;
-              transition: all .3s ease-out;
-              @media screen and (max-width: 1600px) {
-                height: 164px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-              }
-              .icon-one{
-                display: block;
-                width: 34px;
-                height: 40px;
-                margin: 0 auto;
-
-                &.icon-bus{
-                  width: 48px;
-                  height: 34px;
-                  @media screen and (max-width: 1600px) {
-                    padding-top: 10px;
-                  }
-                }
-                &.home{
-                  width: 42px;
-                  height: 36px;
-                  @media screen and (max-width: 1600px) {
-                    padding-top: 10px;
-                  }
-                }
-              }
-              .top-text{
-                font-size: 24px;
-                color: #333;
-                @media screen and (max-width: 1600px) {
-                  font-size: 18px;
-                  text-align: center;
-                }
-              }
-
-              p{
-                width: 200px;
-                padding-top: 12px;
-                text-align: center;
-                margin: 15px auto 0;
-                border-top: 1px solid #bababa;
-                @media screen and (max-width: 1600px) {
-                  width: 145px;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  margin-top: 12px;
-                  padding-top: 5px;
-                }
-                span{
-                  display: block;
-                  line-height: 30px;
-                  &.word-text{
-                    font:{
-                      size: 18px !important;
-                      family: Arial;
-                    }
-                    color: #999 !important;
-                  }
-                  &:first-child{
-                    font-size: 22px;
-                    color: #333;
-                  }
-                  &:last-child{
-                    font-family:Arial;
-                    font-size: 18px;
-                    color: #999;
-                  }
-                  @media screen and (max-width: 1600px) {
-                    width: 145px;
-                    &.word-text{
-                      line-height: 20px;
-                      font:{
-                        size: 16px !important;
-                      }
-                    }
-                    &:first-child{
-                      font-size: 20px;
-                    }
-                    &:last-child{
-                      font-size: 15px;
-                      line-height: 20px;
-                    }
-                  }
-                }
-              }
-            }
+          height: 220px;
+          z-index: 1;
+          margin-top: -45px;
+          box-shadow: 0 10px 40px 8px rgba(0, 0, 0, 0.3);
+          p{
+            width: 125px;
+            font-size: 20px;
           }
-      }
-      .type-two{
-        display: flex;
-        justify-content: center;
-        position: relative;
-        .second{
-          width: 250px;
-          height: 250px;
-          background-color: #33383b;
-          @media screen and (max-width: 1600px) {
-            width: 190px;
-            height: 190px;
-          }
-          .border-bg{
-            height: 228px;
-            margin: 10px;
-            border: 1px solid #bbb;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            @media screen and (max-width: 1600px) {
-              height: 168px;
-              .top-text{
-                font:{
-                  size: 16px;
-                  family: Arial;
-                }
-                color: #fff;
-              }
-            }
-            .icon-one{
-              display: block;
-              width: 34px;
-              height: 40px;
-            }
-            .top-text{
-              font:{
-                size: 22px;
-                family: Arial;
-              }
-              color: #fff;
-              @media screen and (max-width: 1600px) {
-                font-size: 20px;
-                line-height: 30px;
-              }
-            }
-            p{
-              width: 200px;
-              padding-top: 10px;
-              text-align: center;
-              margin-top: 10px;
-              border-top: 1px solid #b6babb;
-              @media screen and (max-width: 1600px) {
-                width: 150px;
-                text-align: center;
-                padding-top: 5px;
-                margin-top: 5px;
-              }
-              span{
-                display: block;
-                line-height: 30px;
-                color: #999;
-                &.word-text{
-                  color: #999 !important;
-                  font:{
-                    size: 18px !important;
-                    family: Arial;
-                  }
-                }
-                &:first-child{
-                  font-size: 22px;
-                  color: #fff;
-                }
-                &:last-child{
-                  font-family:Arial;
-                  font-size: 18px;
-                  color: #999;
-                }
-                @media screen and (max-width: 1600px) {
-                  &.word-text{
-                    font:{
-                      size: 16px !important;
-                    }
-                  }
-                  &:first-child{
-                    font-size: 18px;
-                  }
-                  &:last-child{
-                    line-height: 22px;
-                    font-size: 14px;
-                  }
-                }
-              }
-            }
-          }
-
         }
       }
-      .type-three{
-        width: 516px;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        position: relative;
-        @media screen and (max-width: 1600px) {
-          width: 396px;
+      &.company-first{
+        .company-article{
+          background-color: #333;
         }
-        .three{
-          width: 100%;
-          height: 246px;
-          border: 2px solid #666;
-          transition: all 0.5s ease-out;
-          @media screen and (max-width: 1600px) {
-            width: 396px;
-            height: 186px;
+      }
+      &.company-second{
+        .company-article{
+          background-color: #f8f8f8;
+          p{
+            color: #333;
           }
-          .border-bg{
-            height: 228px;
-            margin: 8px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            justify-content: center;
-            transition: all 0.3s ease-out;
-            border: 1px solid #9a9997;
-            background: url("/images/new_module/index/tu01.jpg") no-repeat center center;
-            padding-right: 40px;
-            &.tracking{
-              background: url("/images/new_module/index/tracking_remind.jpg") no-repeat center center;
-            }
-            &.person{
-              background: url("/images/new_module/index/tu02.jpg") no-repeat center center;
-            }
-            &.business{
-              background: url("/images/new_module/index/chooser.jpg") no-repeat center center;
-            }
-            &.assessment{
-              background: url("/images/new_module/index/tu03.jpg") no-repeat center center;
-            }
-            @media screen and (max-width: 1600px) {
-              height: 168px;
-              padding-right: 25px;
-              &.business{
-                background-position: 62% 20%;
-              }
-            }
-            .things-management{
-              display: block;
-              height: 45px;
-              line-height: 45px;
-              text-align: center;
-              background-color: #01c5ff;
-              width: 195px;
-              font-size: 22px;
-              color: #31302c;
-              @media screen and (max-width: 1600px) {
-                width: 150px;
-                font-size: 20px;
-              }
-            }
-            span{
-              width: 192px;
-              text-align: center;
-              color: #989896;
-              line-height: 28px;
-              font:{
-                family: Arial;
-                size: 19px;
-              }
-              @media screen and (max-width: 1600px) {
-                width: 145px;
-                font-size: 15px;
-              }
-            }
-          }
+        }
+      }
+      .head-number{
+        width: 170px;
+        height: 25px;
+        background: url("/images/new_module/company/bg01.jpg") no-repeat top center;
+        margin: {
+          bottom: -25px;
+          right: 8px;
+        }
+        z-index: 100;
+        line-height: 25px;
+        padding-left: 10px;
+        color: #fff;
+      }
+      .angle{
+        display: block;
+        width: 0;
+        height: 0;
+        margin:{
+          top: 25px;
+          left: -163px;
+        }
+        border-style: solid;
+        border-width: 0 15px 15px 0;
+        border-color: transparent #0073b8 transparent transparent;
+      }
+      .company-article{
+        width: 160px;
+        height: 182px;
+        border: 1px solid #0d9ee1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        margin-top: -40px;
+        .icon-pic{
+          width: 40px;
+          height: 40px;
+
+        }
+        p{
+          width: 105px;
+          text-align: center;
+          padding-top: 15px;
+          border-top: 1px solid #a0a0a0;
+          margin-top: 15px;
+          font-size: 16px;
+          color: #fff;
         }
       }
     }
