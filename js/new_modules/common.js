@@ -10,12 +10,11 @@ $(document).ready(function(){
     });
     $('.list-text').on("click",".more",function(){
         $(this).parents("section").find('.can-see').stop();
-        $('.module').hide()
+        $('.module').hide();
         if(!$(this).hasClass("ac")){
             $(this).addClass("ac");
             $(this).parents("section").find('.can-see').slideDown()
         }else {
-
             $(this).removeClass("ac");
             $(this).parents("section").find('.can-see').slideUp()
         }
