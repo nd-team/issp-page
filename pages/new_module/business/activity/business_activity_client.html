@@ -48,31 +48,31 @@
                 </div>
             </div>
             <ul class="list">
-                <li class="current">
+                <li class="current" data-title="list">
                     <a href="javascript:void(0)" class="lis">列表<span>Tabulate</span></a>
                 </li>
-                <li>
+                <li data-title="add">
                     <a href="javascript:void(0)" class="add">添加<span>Add</span></a>
                 </li>
-                <li>
+                <li data-title="edit">
                     <a href="javascript:void(0)" class="same-one">编辑<span>Compile</span></a>
                 </li>
-                <li>
+                <li data-title="delete">
                     <a href="javascript:void(0)" class="same-two">删除<span>Delete</span></a>
                 </li>
-                <li>
+                <li data-title="updata-file">
                     <a href="javascript:void(0)" class="same-three">上传<span>Post</span></a>
                 </li>
-                <li>
+                <li data-title="info">
                     <a href="javascript:void(0)" class="same-three">市场信息<span>Info</span></a>
                 </li>
-                <li>
+                <li data-title="act-record">
                     <a href="javascript:void(0)" class="same-three">活动记录<span>Record</span></a>
                 </li>
-                <li>
-                    <a href="javascript:void(0)" class="same-three">招待记录<span>Info</span></a>
+                <li data-title="ent-record">
+                    <a href="javascript:void(0)" class="same-three">招待记录<span>Entertain</span></a>
                 </li>
-                <li>
+                <li data-title="detail">
                     <a href="javascript:void(0)" class="same-three">客户详情<span>Detail</span></a>
                 </li>
 
@@ -80,7 +80,7 @@
         </div>
 
         <div class="content">
-            <div class="content-tab">
+            <div class="content-tab list">
                 <ul class="table">
                     <li class="list-head">
                         <span></span>
@@ -169,119 +169,371 @@
                     <div class="pagination-click" id="pages"></div>
                 </footer>
             </div>
-            <div class="content-input">
+            <div class="content-input add">
                 <div class="input-list">
-                    <section class="list-left">
+                    <section>
                         <ul >
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区简称</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>客户姓名</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>员工姓名</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>厂家简称</em></label>
-                                <input type="text">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>性别</em></label>
+                                <select class="sele">
+                                    <option value="">男</option>
+                                    <option value="">女</option>
+
+                                </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>符号</em></label>
-                                <input type="text">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>客户类别</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属部门简称</em></label>
-                                <input type="text">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>客户状态</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>简称后缀</em></label>
-                                <input type="text">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>重要性级别</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>公司正式员工简称</em></label>
-                                <input type="text">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>客户来源</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>外帐人员检查</em></label>
-                                <input type="text">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>手机号码</em></label>
+                                <input type="number">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>数字序号</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>关系程度</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>介绍人</em></label>
                                 <input type="text">
                             </li>
                             <li >
-                                <label><em>密码规范</em></label>
+                                <label><em>邮箱</em></label>
+                                <input type="text">
+                            </li>
+
+
+                            <li >
+                                <label><em>座机</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>微信</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>QQ</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>行业</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>组织机构名称</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>组织规模</em></label>
+                                <input type="text">
+                            </li>
+
+                            <li>
+                                <label><em>职级</em></label>
                                 <input type="text">
                             </li>
                             <li>
-                                <label><em>所属项目简称</em></label>
+                                <label><em>职权</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>生活地区</em></label>
                                 <input type="text">
                             </li>
                             <li>
-                                <label><em>数字序号</em></label>
+                                <label><em>成长地区</em></label>
                                 <input type="text">
+                            </li>
+                            <li>
+                                <label><em>以往工作地区</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>岗位</em></label>
+                                <input type="number">
                             </li>
                         </ul>
                     </section>
-                    <section class="list-right">
-                        <ul >
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>代表性简称</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>运营商简称</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>总包厂简称</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属公司简称</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属模块简称</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>邮箱号</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>社保人员简称</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>游客简称</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>备注</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>所属公司简称</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>初始英文简称</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>备注</em></label>
-                                <input type="text">
-                            </li>
-                        </ul>
-                    </section>
+
                 </div>
                 <p class="dataBottom">
                     <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
                     <button>提交</button>
                 </p>
             </div>
+            <div class="content-input edit">
+                <div class="input-list">
+                    <section>
+                        <ul >
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>客户姓名</em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>性别</em></label>
+                                <select class="sele">
+                                    <option value="">男</option>
+                                    <option value="">女</option>
 
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>客户类别</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>客户状态</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>重要性级别</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>客户来源</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>手机号码</em></label>
+                                <input type="number">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>关系程度</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>介绍人</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>邮箱</em></label>
+                                <input type="text">
+                            </li>
+
+
+                            <li >
+                                <label><em>座机</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>微信</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>QQ</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>行业</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>组织机构名称</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>组织规模</em></label>
+                                <input type="text">
+                            </li>
+
+                            <li>
+                                <label><em>职级</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>职权</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>生活地区</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>成长地区</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>以往工作地区</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>岗位</em></label>
+                                <input type="number">
+                            </li>
+                        </ul>
+                    </section>
+
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="delete">
+                <div class="del-head">
+                    <h5>温馨提示</h5>
+                </div>
+                <div class="del-con">
+                    <p>确定要删除这条数据？</p>
+                    <div class="btn">
+                        <button>确定</button>
+                        <button>取消</button>
+                    </div>
+                </div>
+            </div>
+            <div class="updata-file">
+                <section>
+                    <div class="file">
+                        <input type="file" id="updata-file">
+                        <label for="updata-file">
+                            <p>
+                                <img src="/images/new_module/data/updata_file.png" alt="">
+                                <span>选择文件</span>
+                            </p>
+                        </label>
+                        <span class="imPrompt">
+                            <i><img src="/images/new_module/data/prompt.png"></i>
+                            带有
+                            <i><img src="/images/new_module/data/mandatory.png"></i>
+                            的为必填项
+                        </span>
+                    </div>
+                    <div class="file-right">
+                        <div>
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>文件名</em></label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>文件简述</em></label>
+                            <textarea></textarea>
+                        </div>
+                        <div class="btn">
+                            <button>浏览</button>
+                            <button>上传</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="content-tab act-record">
+                <ul class="table">
+                    <li class="list-head">
+                        <span></span>
+                        <span>市场编号</span>
+                        <span>地区</span>
+                        <span>项目名称</span>
+                        <span>项目性质</span>
+                        <span>商务活动类型</span>
+                        <span>活动目的</span>
+                        <span>商务活动开始时间</span>
+                        <span></span>
+                    </li>
+                    <li class="list-all">
+                        <section>
+                            <div class="list-text odd">
+                                <p>1</p>
+                                <p>SW20160622</p>
+                                <p>高令军</p>
+                                <p>湖南</p>
+                                <p>男</p>
+                                <p>合作伙伴</p>
+                                <p>潜在客户</p>
+                                <p>50%</p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">更多详细</a>
+                                </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-parent">
+                                            <span>商务活动结束时间</span> <span>活动时长</span> <span>商务活动具体地点</span>
+                                            <span>我方参与人员</span> <span>负责人</span> <span>参加客户信息</span>
+                                        </p>
+                                        <p class="see-children">
+                                            <span>一星</span> <span>2</span> <span>0</span> <span>合作伙伴</span>
+                                            <span></span> <span>hlj@126.com</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="module">
+                                    <div class="see-module">
+                                        <p class="see-type">体现类型</p>
+                                        <p class="see-description"></p>
+                                        <button class="btn">关闭</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+                <footer class="footer">
+                    <div class="pagination-click" id="pages2"></div>
+                </footer>
+            </div>
         </div>
 
     </div>
@@ -293,6 +545,13 @@
 <script type="text/javascript">
     laypage({
         cont : 'pages', //容器。值支持id名、原生dom对象，jquery对象,
+        pages : 20, //总页数
+        skin : 'molv', //皮肤
+        first : 1, //将首页显示为数字1,。若不显示，设置false即可
+        last : 20, //将尾页显示为总页数。若不显示，设置false即可
+    });
+    laypage({
+        cont : 'pages2', //容器。值支持id名、原生dom对象，jquery对象,
         pages : 20, //总页数
         skin : 'molv', //皮肤
         first : 1, //将首页显示为数字1,。若不显示，设置false即可
