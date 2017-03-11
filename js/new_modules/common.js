@@ -99,13 +99,17 @@ $(document).ready(function(){
         if(listTitle=="delete"){
             $('.content').children('.delete').show();
             $("#modalbg").show()
+        }else if(listTitle=="review"){
+            $('.content').children('.review').show();
+            $("#modalbg").show()
         }else {
             $('.content').children("."+listTitle).show().siblings().hide();
         }
     });
     //删除框
-    $('.content').on("click",".delete button",function(){
+    $('.content').on("click",".delete button,.review button",function(){
         $('.delete').hide();
+        $('.review').hide();
         $("#modalbg").hide()
     });
 

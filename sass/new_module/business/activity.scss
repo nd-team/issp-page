@@ -24,6 +24,7 @@
       &.notop-list{
         margin-top:110px;
       }
+      //列表
       .content-tab{
         max-height:530px;
         overflow-x:hidden;
@@ -136,7 +137,7 @@
                     border-radius: 5px 5px 0 0;
                     padding-left: 30px;
                     span{
-                      flex: 1;
+                      flex: 0 0 11%;
                       font-size: 12px;
                       margin: 0 10px;
                       overflow: hidden;
@@ -152,7 +153,7 @@
                     border-radius: 0 5px;
                     padding-left: 30px;
                     span{
-                      flex: 1;
+                      flex: 0 0 11%;
                       font-size: 12px;
                       color: #cfdde3;
                       overflow: hidden;
@@ -374,6 +375,7 @@
           }
         }
       }
+      //删除
       .delete{
         width:347px;
         height:172px;
@@ -428,8 +430,66 @@
           }
         }
       }
-      .tab-item{
+      //审核
+      .review{
+        width:347px;
+        position:fixed;
+        top:50%;
+        left:50%;
+        z-index:10;
+        margin-top:-100px;
+        margin-left:-170px;
+        .review-head{
+          border-top-left-radius:5px;
+          border-top-right-radius:5px;
+          font-size:18px;
+          display:flex;
+          justify-content:center;
+          color:#fff;
+          height:40px;
+          line-height:38px;
+          background:#1aaeea;
+          box-shadow:0 0 5px #106d92 inset;
+        }
+        .review-con{
+          height:150px;
+          box-shadow:0 0 5px #066388 inset;
+          display:flex;
+          justify-content:center;
+          flex-direction:column;
+          align-items:center;
+          background:#fff;
+          .btn{
+            display:flex;
+            justify-content:center;
+            button{
+              width:80px;
+              height:24px;
+              outline:none;
+              border-radius:12px;
+              margin:0 27px;
+              &:first-child{
+                border:1px solid #64a9e2;
+                background:#19afea;
+                color:#fff;
+              }
+              &:last-child{
+                border:1px solid #1dadea;
+                background:#fff;
+              }
+            }
+          }
+          .opinion{
+            margin:20px 0;
+            input{
+              border:1px solid #1aaeea;
+              border-radius:3px;
+              padding:5px;
+            }
+          }
+        }
       }
+
       .updata-file{
         margin-top:35px;
         section{

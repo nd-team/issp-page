@@ -10,15 +10,15 @@
         #msg{ font-size:20px; margin:0 30px; position:absolute; left:220px; top:25px; line-height:30px; }
         #msg strong{ color:#f84e4e; animation:move 0.8s infinite; width:150px; display:inline-block; text-align:center; }
         #content{ width:100%; height:600px; }
-        #list{ width:1600px; margin:20px auto; }
-        #list li{ list-style:none; float:left; width:33%; margin:10px 0; }
-        #list li a{ color:rgba(10, 91, 192, 1); text-decoration:none; font-size:20px; font-weight:bold; }
+        #list{ width:1600px; margin:20px auto; display:flex; flex-wrap:wrap;}
+        #list li{ list-style:none;  margin:10px 0; flex:0 0 33%;justify-content:center; display:flex;}
+        #list li a{ color:rgba(10, 91, 192, 1); text-decoration:none; font-size:20px;  }
         #list li a:hover{ color:#3cc3fb; }
         @keyframes move{
             from{ color:#f84e4e; }
             25%{ color:#ff855a; }
             50%{ color:#3cc3fb; }
-            50%{ color:#46d434; }
+            75%{ color:#46d434; }
             to{ color:#000000; }
         }
     </style>
