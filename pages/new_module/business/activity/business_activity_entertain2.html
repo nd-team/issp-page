@@ -50,29 +50,30 @@
                 </div>
             </div>
             <ul class="list width-10">
-                <li class="current">
+                <li class="current" data-title="list">
                     <a href="javascript:void(0)" class="lis">列表<span>Tabulate</span></a>
                 </li>
-                <li>
+                <li data-title="add">
                     <a href="javascript:void(0)" class="add">添加<span>Add</span></a>
                 </li>
-                <li>
+                <li data-title="edit">
                     <a href="javascript:void(0)" class="same-one">编辑<span>Compile</span></a>
                 </li>
-                <li>
+                <li data-title="reim">
                     <a href="javascript:void(0)" class="same-two">报销<span>Reim</span></a>
                 </li>
-                <li>
+                <li data-title="info">
                     <a href="javascript:void(0)" class="same-one">增加客户活动信息<span>Info</span></a>
                 </li>
             </ul>
         </div>
 
         <div class="content">
-            <div class="content-tab">
+            <div class="content-tab list">
                 <ul class="table">
                     <li class="list-head">
                         <span></span>
+                        <span class="data-id"></span>
                         <span>计划活动时间点</span>
                         <span>地区</span>
                         <span>目的</span>
@@ -85,10 +86,9 @@
                     <li class="list-all">
                         <section>
                             <div class="list-text odd">
-
                                 <p></p>
+                                <p class="data-id"></p>
                                 <p></p>
-
                                 <p></p>
                                 <p></p>
                                 <p></p>
@@ -144,11 +144,12 @@
 
                     </li>
                 </ul>
+                <footer class="footer"> <div class="pagination-click" id="pages"></div></footer>
             </div>
         </div>
 
     </div>
-    <footer class="footer"> <div class="pagination-click" id="pages"></div></footer>
+
 </section>
 <script src="/js/jquery-2.1.1.min.js"></script>
 <script src="/laypage/laypage.js"></script>

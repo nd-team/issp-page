@@ -48,35 +48,36 @@
                 </div>
             </div>
             <ul class="list">
-                <li class="current">
+                <li class="current" data-title="list">
                     <a href="javascript:void(0)" class="lis">列表<span>Tabulate</span></a>
                 </li>
-                <li>
+                <li data-title="add">
                     <a href="javascript:void(0)" class="add">添加<span>Add</span></a>
                 </li>
-                <li>
+                <li data-title="edit">
                     <a href="javascript:void(0)" class="same-one">编辑<span>Compile</span></a>
                 </li>
-                <li>
+                <li data-title="delete">
                     <a href="javascript:void(0)" class="same-two">删除<span>Detele</span></a>
                 </li>
-                <li>
+                <li data-title="review">
                     <a href="javascript:void(0)" class="same-one">审核<span>Review</span></a>
                 </li>
-                <li>
+                <li data-title="updata-file">
                     <a href="javascript:void(0)" class="same-two">上传附件<span>Updata</span></a>
                 </li>
-                <li>
+                <li data-title="view">
                     <a href="javascript:void(0)" class="same-one">查看附件<span>View</span></a>
                 </li>
             </ul>
         </div>
 
         <div class="content">
-            <div class="content-tab">
+            <div class="content-tab list">
                 <ul class="table">
                     <li class="list-head">
                         <span></span>
+                        <span class="data-id"></span>
                         <span>市场编号</span>
                         <span>地区</span>
                         <span>项目名称</span>
@@ -89,8 +90,9 @@
                     <li class="list-all">
                         <section>
                             <div class="list-text odd">
-                                <span>1</span>
-                                <span>SWSC201606001</span>
+                                <p>1</p>
+                                <p class="data-id"></p>
+                                <p>SWSC201606001</p>
                                 <p>湛江</p>
                                 <p>移动F频升级</p>
                                 <p>新项目</p>
@@ -155,13 +157,222 @@
                     </li>
                 </ul>
             </div>
+            <div class="content-input add">
+                <div class="input-list">
+                    <section>
+                        <ul >
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>市场信息</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目性质</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>商务活动类型</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>活动目的</em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>商务活动开始时间</em></label>
+                                <input type="text" id="adddate" class="date-icon">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>商务活动结束时间</em></label>
+                                <input type="text" id="adddate2" class="date-icon">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>商务活动具体地点</em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>活动效果</em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目结果</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>负责人</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
+                            </li>
+
+                            <li>
+                                <label><em>我方参与人员</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>参加客户信息</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>效果相关员工</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </section>
+
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="content-input edit">
+                <div class="input-list">
+                    <section>
+                        <ul >
+
+                            <li>
+                                <label><em>我方参与人员</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>参加客户信息</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>效果相关员工</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </section>
+
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="delete">
+                <div class="del-head">
+                    <h5>温馨提示</h5>
+                </div>
+                <div class="del-con">
+                    <p>确定要删除这条数据？</p>
+                    <div class="btn">
+                        <button>确定</button>
+                        <button>取消</button>
+                    </div>
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-head">
+                    <h5>温馨提示</h5>
+                </div>
+                <div class="review-con">
+                    <p>审核是否通过？</p>
+                    <div class="opinion">
+                        意见：<input type="text">
+                    </div>
+                    <div class="btn">
+                        <button>确定</button>
+                        <button>取消</button>
+                    </div>
+                </div>
+            </div>
+            <div class="updata-file">
+                <section>
+                    <div class="file">
+                        <input type="file" id="updata-file">
+                        <label for="updata-file">
+                            <p>
+                                <img src="/images/new_module/data/updata_file.png" alt="">
+                                <span>选择文件</span>
+                            </p>
+                        </label>
+                        <span class="imPrompt">
+                            <i><img src="/images/new_module/data/prompt.png"></i>
+                            带有
+                            <i><img src="/images/new_module/data/mandatory.png"></i>
+                            的为必填项
+                        </span>
+                    </div>
+                    <div class="file-right">
+                        <div>
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>文件名</em></label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>文件简述</em></label>
+                            <textarea></textarea>
+                        </div>
+                        <div class="btn">
+                            <button>浏览</button>
+                            <button>上传</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
 
     </div>
     <footer class="footer"> <div class="pagination-click" id="pages"></div></footer>
 </section>
+<div id="modalbg"></div>
 <script src="/js/jquery-2.1.1.min.js"></script>
 <script src="/laypage/laypage.js"></script>
+<script src="/js/honor/pikaday.js"></script>
 <script src="/js/new_modules/common.js"></script>
 <script type="text/javascript">
     laypage({
@@ -170,6 +381,30 @@
         skin: 'molv', //皮肤
         first: 1, //将首页显示为数字1,。若不显示，设置false即可
         last: 20, //将尾页显示为总页数。若不显示，设置false即可
+    });
+    var adddate = new Pikaday({
+        numberOfMonths: 1,
+        field:jQuery('#adddate')[0],
+        minDate: new Date('2000-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020],
+        i18n: i18n,
+        onSelect: function() {
+            var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+            $('#datepicker').appendChild(date);
+        }
+    });
+    var adddate2 = new Pikaday({
+        numberOfMonths: 1,
+        field:jQuery('#adddate2')[0],
+        minDate: new Date('2000-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020],
+        i18n: i18n,
+        onSelect: function() {
+            var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+            $('#datepicker').appendChild(date);
+        }
     });
 </script>
 </body>
