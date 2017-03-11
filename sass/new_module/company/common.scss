@@ -83,7 +83,7 @@ header{
     height: 80px;
     display: flex;
     justify-content: flex-end;
-    margin-right: 10%;
+    margin-right: 5%;
     align-items: center;
     .search-btn{
       width: 19px;
@@ -126,6 +126,27 @@ header{
     height: 140px;
     margin-left: 15%;
     margin-top: -20px;
+    flex: 1;
+  }
+  .company-title{
+    width: 200px;
+    height: 48px;
+    background-color: #000;
+    margin-right: 18%;
+    padding-right: 5px;
+    p{
+      width: 202px;
+      height: 48px;
+      background-color: #fff;
+      text-align: center;
+      line-height: 48px;
+      font-size: 18px;
+      color: #333;
+      margin: {
+        top: -12px;
+        left: -13px;
+      }
+    }
   }
 }
 
@@ -241,7 +262,7 @@ header{
           padding-top: 15px;
           border-top: 1px solid #a0a0a0;
           margin-top: 15px;
-          font-size: 16px;
+          font-size: 17px;
           color: #fff;
         }
       }
