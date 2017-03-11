@@ -1,0 +1,4 @@
+@import "../business/activity";
+.frozen{
+ @extend .delete;
+}
