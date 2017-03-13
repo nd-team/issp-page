@@ -8,6 +8,7 @@
     <meta name="keywords" content="人员编制-人员编制明细">
     <meta name="description" content="人员编制-人员编制明细">
     <link rel="stylesheet" href="/css/new_module/business/activity.css">
+    <link rel="stylesheet" href="/js/honor/pikaday.css">
 </head>
 <body>
 <section class="left-section">
@@ -79,29 +80,29 @@
             <div class="content-tab list">
                 <ul class="table">
                     <li class="list-head">
-                        <span></span>
+                        <span>序号</span>
                         <span class="data-id">id</span>
-                        <span>分类</span>
-                        <span>总权重</span>
+                        <span>地区</span>
                         <span>部门</span>
-                        <span>权重比例</span>
-                        <span>项目分类</span>
-                        <span>决策层占比</span>
-                        <span>决策层人数</span>
+                        <span>项目名称</span>
+                        <span>层级</span>
+                        <span>岗位</span>
+                        <span>姓名</span>
+                        <span>员工编号</span>
                         <span></span>
                     </li>
                     <li class="list-all">
                         <section>
                             <div class="list-text odd">
-                                <p></p>
+                                <p>1</p>
                                 <p class="data-id"></p>
-                                <p>一线实施体系</p>
-                                <p>100%</p>
-                                <p>研发部</p>
-                                <p>1:1</p>
-                                <p>一线实施项目</p>
-                                <p>2:1</p>
-                                <p>22</p>
+                                <p>广州</p>
+                                <p>研发部%</p>
+                                <p>issp智能服务平台</p>
+                                <p>技术管理</p>
+                                <p>项目经理</p>
+                                <p>小明</p>
+                                <p>ike0025432</p>
                                 <p>
                                     <a href="javascript:void(0)" class="more">更多详细</a>
                                 </p>
@@ -110,13 +111,21 @@
                                 <ul class="can-see">
                                     <li>
                                         <p class="see-parent">
-                                            <span>技术管理人数占比</span><span>技术管理人数人数</span>
-                                            <span>行政管理人数占比</span><span>行政管理人数人数</span>
-                                            <span>执行层占比</span><span>执行层人数</span><span>总人数</span>
+                                            <span>技能级别</span><span>管理级别</span>
+                                            <span>现有工资</span><span>编制类型</span>
+                                            <span>代表公司</span><span>可调配地区</span><span>入职时间</span>
                                         </p>
                                         <p class="see-children">
-                                            <span>1:1</span> <span>20</span> <span>1:1</span> <span>3</span>
-                                            <span>2:1</span> <span>8</span><span>200</span>
+                                            <span>2</span> <span>2</span> <span>10000</span> <span>编制类型</span>
+                                            <span></span> <span>广州</span><span>2017-03-11</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-parent">
+                                            <span>在职状态</span><span>备注</span>
+                                        </p>
+                                        <p class="see-children">
+                                            <span>离职</span> <span>降低高呼呼</span>
                                         </p>
                                     </li>
                                 </ul>
@@ -140,17 +149,17 @@
                     <section>
                         <ul>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>分类</em></label>
-                                <select class="sele">
-                                    <option value="0">一线实施体系</option>
-                                    <option value="1">一线实施体系</option>
-                                    <option value="2">一线实施体系</option>
-                                    <option value="3">一线实施体系</option>
-                                </select>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>序号</em></label>
+                                <input type="number" name="number" min="1">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>总权重</em></label>
-                                <input type="text" value="100%">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
+                                <select class="sele">
+                                    <option value="0">北京</option>
+                                    <option value="1">广州</option>
+                                    <option value="2">佛山</option>
+                                    <option value="3">湛江</option>
+                                </select>
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>部门</em></label>
@@ -158,15 +167,11 @@
                                     <option value="0">研发部</option>
                                     <option value="1">综合部</option>
                                     <option value="2">商务运营部</option>
-                                    <option value="3">项目组</option>
+                                    <option value="3">总经办</option>
                                 </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>权重比例</em></label>
-                                <input type="number" name="number" min="1">
-                            </li>
-                            <li>
-                                <label><em>项目分类</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目名称</em></label>
                                 <select class="sele">
                                     <option value="0">一线实施体系</option>
                                     <option value="1">一线实施体系</option>
@@ -175,40 +180,66 @@
                                 </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>决策层占比</em></label>
-                                <input type="number" name="number" min="1">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>层级</em></label>
+                                <select class="sele">
+                                    <option value="0">一线实施体系</option>
+                                    <option value="1">一线实施体系</option>
+                                    <option value="2">一线实施体系</option>
+                                    <option value="3">一线实施体系</option>
+                                </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>决策层人数</em></label>
-                                <input type="number" name="number" min="1">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>岗位</em></label>
+                                <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技术管理人数占比</em></label>
-                                <input type="number" name="number" min="1">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>姓名</em></label>
+                                <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技术管理人数</em></label>
-                                <input type="number" name="number" min="1">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>员工编号</em></label>
+                                <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>行政管理人数占比</em></label>
-                                <input type="number" name="number" min="1">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技能级别</em></label>
+                                <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>行政管理人数人数</em></label>
-                                <input type="number" name="number" min="1">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>管理级别</em></label>
+                                <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>执行层占比</em></label>
-                                <input type="number" name="number" min="1">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>现有工资</em></label>
+                                <input type="number" name="number">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>执行层人数</em></label>
-                                <input type="number" name="number" min="1">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>编制类型</em></label>
+                                <select class="sele">
+                                    <option value="0">编制内</option>
+                                    <option value="1">编制外</option>
+                                    <option value="2">编内超编</option>
+                                    <option value="3">编外超编</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>代表公司</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>可调配地区</em></label>
+                                <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>总人数</em></label>
-                                <input type="number" name="number" min="1">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>入职时间</em></label>
+                                <input type="text" class="date-icon" id="time">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>在职状态</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>备注</em></label>
+                                <input type="text">
                             </li>
                         </ul>
                     </section>
@@ -223,17 +254,17 @@
                     <section class="list-left">
                         <ul>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>分类</em></label>
-                                <select class="sele">
-                                    <option value="0">一线实施体系</option>
-                                    <option value="1">一线实施体系</option>
-                                    <option value="2">一线实施体系</option>
-                                    <option value="3">一线实施体系</option>
-                                </select>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>序号</em></label>
+                                <input type="number" name="number" min="1">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>总权重</em></label>
-                                <input type="text" value="100%">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
+                                <select class="sele">
+                                    <option value="0">北京</option>
+                                    <option value="1">广州</option>
+                                    <option value="2">佛山</option>
+                                    <option value="3">湛江</option>
+                                </select>
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>部门</em></label>
@@ -241,15 +272,11 @@
                                     <option value="0">研发部</option>
                                     <option value="1">综合部</option>
                                     <option value="2">商务运营部</option>
-                                    <option value="3">项目组</option>
+                                    <option value="3">总经办</option>
                                 </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>权重比例</em></label>
-                                <input type="number" name="number" min="1">
-                            </li>
-                            <li>
-                                <label><em>项目分类</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目名称</em></label>
                                 <select class="sele">
                                     <option value="0">一线实施体系</option>
                                     <option value="1">一线实施体系</option>
@@ -258,40 +285,66 @@
                                 </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>决策层占比</em></label>
-                                <input type="number" name="number" min="1">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>层级</em></label>
+                                <select class="sele">
+                                    <option value="0">一线实施体系</option>
+                                    <option value="1">一线实施体系</option>
+                                    <option value="2">一线实施体系</option>
+                                    <option value="3">一线实施体系</option>
+                                </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>决策层人数</em></label>
-                                <input type="number" name="number" min="1">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>岗位</em></label>
+                                <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技术管理人数占比</em></label>
-                                <input type="number" name="number" min="1">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>姓名</em></label>
+                                <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技术管理人数</em></label>
-                                <input type="number" name="number" min="1">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>员工编号</em></label>
+                                <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>行政管理人数占比</em></label>
-                                <input type="number" name="number" min="1">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技能级别</em></label>
+                                <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>行政管理人数人数</em></label>
-                                <input type="number" name="number" min="1">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>管理级别</em></label>
+                                <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>执行层占比</em></label>
-                                <input type="number" name="number" min="1">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>现有工资</em></label>
+                                <input type="number" name="number">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>执行层人数</em></label>
-                                <input type="number" name="number" min="1">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>编制类型</em></label>
+                                <select class="sele">
+                                    <option value="0">编制内</option>
+                                    <option value="1">编制外</option>
+                                    <option value="2">编内超编</option>
+                                    <option value="3">编外超编</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>代表公司</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>可调配地区</em></label>
+                                <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>总人数</em></label>
-                                <input type="number" name="number" min="1">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>入职时间</em></label>
+                                <input type="text" class="date-icon" id="time">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>在职状态</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>备注</em></label>
+                                <input type="text">
                             </li>
                         </ul>
                     </section>
@@ -318,6 +371,8 @@
 </section>
 <div id="modalbg"></div>
 <script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/honor/moment.min.js"></script>
+<script src="/js/honor/pikaday.js"></script>
 <script src="/laypage/laypage.js"></script>
 <script src="/js/new_modules/common.js"></script>
 <script type="text/javascript">
@@ -327,6 +382,19 @@
         skin : 'molv', //皮肤
         first : 1, //将首页显示为数字1,。若不显示，设置false即可
         last : 20, //将尾页显示为总页数。若不显示，设置false即可
+    });
+    //日历
+    var time = new Pikaday({
+        numberOfMonths: 1,
+        field:jQuery('#time')[0],
+        minDate: new Date('2000-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020],
+        i18n: i18n,
+        onSelect: function() {
+            var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+            $('#datepicker').appendChild(date);
+        }
     });
 </script>
 </body>
