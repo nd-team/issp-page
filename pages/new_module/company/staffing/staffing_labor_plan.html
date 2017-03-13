@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>人员编制-人工成本计划</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="人员编制-人工成本计划">
+    <meta name="description" content="人员编制-人工成本计划">
+    <link rel="stylesheet" href="/css/new_module/business/activity.css">
+    <link rel="stylesheet" href="/js/honor/pikaday.css">
+</head>
+<body>
+<section class="left-section">
+    <div class="header">
+        <a href="javascript:void(0)" title="issp平台" class="logo">
+            <img src="/images/new_module/organization/logo.png" alt="">
+        </a>
+        <span>issp平台</span>
+    </div>
+    <div class="nav">
+        <div class="nav-list">
+            <h3 class="header-menu"><i class="nav-arrow"></i>人员编制</h3>
+            <ul class="menu">
+                <li class="active">
+                    <a href="/pages/new_module/company/staffing/staffing_labor_plan.html">人工成本计划</a>
+                </li>
+                <li>
+                    <a href="/pages/new_module/company/staffing/staffing_people_plan.html">人数配置计划</a>
+                </li>
+                <li>
+                    <a href="/pages/new_module/company/staffing/staffing_current_number.html">当前人数配置</a>
+                </li>
+                <li>
+                    <a href="/pages/new_module/company/staffing/staffing_skill_level.html">人员编制技能/管理等级配置</a>
+                </li>
+                <li>
+                    <a href="/pages/new_module/company/staffing/staffing_summary.html">人员编制汇总</a>
+                </li>
+                <li>
+                    <a href="/pages/new_module/company/staffing/staffing_details.html">人员编制明细</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="right-section">
+    <div class="top-content">
+        <div class="top-fixed">
+            <div class="top">
+                <div class="top-back">
+                    <a href="javascript:void(0)" class="back">返回</a>
+                </div>
+                <div class="search">
+                    <a href="javascript:void(0)" class="search-btn"></a>
+                    <select class="selected">
+                        <option value="0">张三三</option> <option value="1">张四四</option> <option value="2">张五五</option>
+                        <option value="3">张六六</option> <option value="4">张七七</option> <option value="5">张八八</option>
+                        <option value="6">张九九</option>
+                    </select>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+            <ul class="list width-10">
+                <li class="current" data-title="list">
+                    <a href="javascript:void(0)" class="lis" >列表<span>Tabulate</span></a>
+                </li>
+                <li data-title="add">
+                    <a href="javascript:void(0)" class="add" >添加人工成本计划 <span>Add</span></a>
+                </li>
+                <li data-title="edit">
+                    <a href="javascript:void(0)" class="same-two" >编辑人工成本计划<span>Edit</span></a>
+                </li>
+                <li data-title="delete">
+                    <a href="javascript:void(0)" class="same-one" >删除<span>Delete</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content-tab list">
+                <ul class="table">
+                    <li class="list-head">
+                        <span></span>
+                        <span class="data-id">id</span>
+                        <span>更新日期</span>
+                        <span>计划人工总成本</span>
+                        <span>公司整体平均工资水平</span>
+                        <span>公司总人数配置</span>
+                        <span>薪资区间</span>
+                        <span>计划人数</span>
+                        <span>计划成本</span>
+                        <span></span>
+                    </li>
+                    <li class="list-all">
+                        <section>
+                            <div class="list-text odd">
+                                <p></p>
+                                <p class="data-id"></p>
+                                <p>2017-03-11</p>
+                                <p>10000</p>
+                                <p>1000</p>
+                                <p>220</p>
+                                <p>[5000,7000]</p>
+                                <p>222222</p>
+                                <p>222222</p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">更多详细</a>
+                                </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-parent">
+                                            <span>现有总人数</span> <span>现有总成本</span> <span>分类</span> <span>部门</span>
+                                            <span>一线实施体系占比</span> <span>职能部门占比</span>
+                                        </p>
+                                        <p class="see-children">
+                                            <span>100</span> <span>2000</span> <span>99</span> <span>3</span>
+                                            <span>2:1</span> <span>1:1</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="module">
+                                    <div class="see-module">
+                                        <p class="see-type">体现类型</p>
+                                        <p class="see-description"></p>
+                                        <button class="btn">关闭</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+                <footer class="footer">
+                    <div class="pagination-click" id="pages"></div>
+                </footer>
+            </div>
+            <div class="content-input add">
+                <div class="input-list">
+                    <section>
+                        <ul>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>日期</em></label>
+                                <input type="text" class="date-icon" id="add-date">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>计划人工总成本</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>公司整体平均工资水平</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>公司总人数配置</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>薪资区间</em></label>
+                                <select class="sele">
+                                    <option value="">[2000,3000] </option>
+                                    <option value="">[3000,5000] </option>
+                                    <option value="">[5000,7000] </option>
+                                    <option value="">[7000,10000] </option>
+                                    <option value="">[10000,13000] </option>
+                                    <option value="">[13000,17000] </option>
+                                    <option value="">[17000以上] </option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>计划人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>计划成本</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>现有总人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>现有总成本</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>分类</em></label>
+                                <select class="sele">
+                                    <option value="0">一线实施体系</option>
+                                    <option value="1">一线实施体系</option>
+                                    <option value="2">一线实施体系</option>
+                                    <option value="3">一线实施体系</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>部门名称</em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>一线实施体系占比</em></label>
+                                <input type="number" name="number">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>职能部门占比</em></label>
+                                <input type="number" name="number">
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="content-input edit">
+                <div class="input-list">
+                    <section class="list-left">
+                        <ul>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>日期</em></label>
+                                <input type="text" class="date-icon" id="date">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>计划人工总成本</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>公司整体平均工资水平</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>公司总人数配置</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>薪资区间</em></label>
+                                <select class="sele">
+                                    <option value="">[2000,3000] </option>
+                                    <option value="">[3000,5000] </option>
+                                    <option value="">[5000,7000] </option>
+                                    <option value="">[7000,10000] </option>
+                                    <option value="">[10000,13000] </option>
+                                    <option value="">[13000,17000] </option>
+                                    <option value="">[17000以上] </option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>计划人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>计划成本</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>现有总人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>现有总成本</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>分类</em></label>
+                                <select class="sele">
+                                    <option value="0">一线实施体系</option>
+                                    <option value="1">一线实施体系</option>
+                                    <option value="2">一线实施体系</option>
+                                    <option value="3">一线实施体系</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>部门名称</em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>一线实施体系占比</em></label>
+                                <input type="number" name="number">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>职能部门占比</em></label>
+                                <input type="number" name="number">
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="delete">
+                <div class="del-head">
+                    <h5>温馨提示</h5>
+                </div>
+                <div class="del-con">
+                    <p>确定要删除这条数据？</p>
+                    <div class="btn">
+                        <button>确定</button>
+                        <button>取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<div id="modalbg"></div>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/honor/moment.min.js"></script>
+<script src="/laypage/laypage.js"></script>
+<script src="/js/honor/pikaday.js"></script>
+<script src="/js/new_modules/common.js"></script>
+<script type="text/javascript">
+    laypage({
+        cont : 'pages', //容器。值支持id名、原生dom对象，jquery对象,
+        pages : 20, //总页数
+        skin : 'molv', //皮肤
+        first : 1, //将首页显示为数字1,。若不显示，设置false即可
+        last : 20, //将尾页显示为总页数。若不显示，设置false即可
+    });
+
+    //日历
+    var date = new Pikaday({
+        numberOfMonths: 1,
+        field:jQuery('#date')[0],
+        minDate: new Date('2000-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020],
+        i18n: i18n,
+        onSelect: function() {
+            var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+            $('#datepicker').appendChild(date);
+        }
+    });
+
+    var add = new Pikaday({
+        numberOfMonths: 1,
+        field:jQuery('#add-date')[0],
+        minDate: new Date('2000-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020],
+        i18n: i18n,
+        onSelect: function() {
+            var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+            $('#datepicker').appendChild(date);
+        }
+    });
+</script>
+</body>
+</html>

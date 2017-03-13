@@ -259,7 +259,9 @@
                     text-align-last: justify;
                   }
                   i{
+                    display: inline-block;
                     margin-right: 10px;
+                    vertical-align: -3px;
                   }
                   &:after{
                     content: '\FF1A';

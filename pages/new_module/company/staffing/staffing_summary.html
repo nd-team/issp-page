@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>人员编制-人员编制汇总</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="人员编制-人员编制汇总">
+    <meta name="description" content="人员编制-人员编制汇总">
+    <link rel="stylesheet" href="/css/new_module/business/activity.css">
+</head>
+<body>
+<section class="left-section">
+    <div class="header">
+        <a href="javascript:void(0)" title="issp平台" class="logo">
+            <img src="/images/new_module/organization/logo.png" alt="">
+        </a>
+        <span>issp平台</span>
+    </div>
+    <div class="nav">
+        <div class="nav-list">
+            <h3 class="header-menu"><i class="nav-arrow"></i>人员编制</h3>
+            <ul class="menu">
+                <li>
+                    <a href="/pages/new_module/company/staffing/staffing_labor_plan.html">人工成本计划</a>
+                </li>
+                <li>
+                    <a href="/pages/new_module/company/staffing/staffing_people_plan.html">人数配置计划</a>
+                </li>
+                <li>
+                    <a href="/pages/new_module/company/staffing/staffing_current_number.html">当前人数配置</a>
+                </li>
+                <li>
+                    <a href="/pages/new_module/company/staffing/staffing_skill_level.html">人员编制技能/管理等级配置</a>
+                </li>
+                <li class="active">
+                    <a href="/pages/new_module/company/staffing/staffing_summary.html">人员编制汇总</a>
+                </li>
+                <li>
+                    <a href="/pages/new_module/company/staffing/staffing_details.html">人员编制明细</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="right-section">
+    <div class="top-content">
+        <div class="top-fixed">
+            <div class="top">
+                <div class="top-back">
+                    <a href="javascript:void(0)" class="back">返回</a>
+                </div>
+                <div class="search">
+                    <a href="javascript:void(0)" class="search-btn"></a>
+                    <select class="selected">
+                        <option value="0">张三三</option> <option value="1">张四四</option> <option value="2">张五五</option>
+                        <option value="3">张六六</option> <option value="4">张七七</option> <option value="5">张八八</option>
+                        <option value="6">张九九</option>
+                    </select>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+            <ul class="list width-10">
+                <li class="current" data-title="list">
+                    <a href="javascript:void(0)" class="lis" >列表<span>Tabulate</span></a>
+                </li>
+                <li data-title="add">
+                    <a href="javascript:void(0)" class="add" >添加<span>Add</span></a>
+                </li>
+                <li data-title="edit">
+                    <a href="javascript:void(0)" class="same-two" >编辑<span>Edit</span></a>
+                </li>
+                <li data-title="delete">
+                    <a href="javascript:void(0)" class="same-one" >删除<span>Delete</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content-tab list">
+                <ul class="table">
+                    <li class="list-head">
+                        <span>序号</span>
+                        <span class="data-id">id</span>
+                        <span>地区</span>
+                        <span>分类</span>
+                        <span>部门</span>
+                        <span>决策层人数</span>
+                        <span>管理层人数</span>
+                        <span>执行层人数</span>
+                        <span>编制员工人数</span>
+                        <span></span>
+                    </li>
+                    <li class="list-all">
+                        <section>
+                            <div class="list-text odd">
+                                <p>01</p>
+                                <p class="data-id"></p>
+                                <p>广州</p>
+                                <p>一线实施体系</p>
+                                <p>研发部</p>
+                                <p>6</p>
+                                <p>6</p>
+                                <p>6</p>
+                                <p>22</p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">更多详细</a>
+                                </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-parent">
+                                            <span>实际员工人数</span><span>预算人工成本</span>
+                                            <span>实际人工成本汇总</span><span>人员缺口隐患</span>
+                                            <span>备注</span><span>执行层管理等级</span><span>编制汇总</span>
+                                        </p>
+                                        <p class="see-children">
+                                                <span>12</span> <span>100</span> <span>88</span> <span>6</span>
+                                            <span>绝对不V好</span> <span>8</span><span>200</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="module">
+                                    <div class="see-module">
+                                        <p class="see-type">体现类型</p>
+                                        <p class="see-description"></p>
+                                        <button class="btn">关闭</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+                <footer class="footer">
+                    <div class="pagination-click" id="pages"></div>
+                </footer>
+            </div>
+            <div class="content-input add">
+                <div class="input-list">
+                    <section>
+                        <ul>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>序号</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
+                                <select class="sele">
+                                    <option value="0">北京</option>
+                                    <option value="1">广州</option>
+                                    <option value="2">佛山</option>
+                                    <option value="3">湛江</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>分类</em></label>
+                                <select class="sele">
+                                    <option value="0">一线实施体系</option>
+                                    <option value="1">一线实施体系</option>
+                                    <option value="2">一线实施体系</option>
+                                    <option value="3">一线实施体系</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>部门</em></label>
+                                <select class="sele">
+                                    <option value="0">研发部</option>
+                                    <option value="1">综合部</option>
+                                    <option value="2">商务运营部</option>
+                                    <option value="3">项目组</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>决策层人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>编制员工人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>实际员工人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>预算人工成本</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>实际人工成本汇总</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>人员缺口隐患</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li>
+                                <label><em>备注</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label></i><em>执行层管理等级</em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>编制汇总</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="content-input edit">
+                <div class="input-list">
+                    <section class="list-left">
+                        <ul>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>序号</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
+                                <select class="sele">
+                                    <option value="0">北京</option>
+                                    <option value="1">广州</option>
+                                    <option value="2">佛山</option>
+                                    <option value="3">湛江</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>分类</em></label>
+                                <select class="sele">
+                                    <option value="0">一线实施体系</option>
+                                    <option value="1">一线实施体系</option>
+                                    <option value="2">一线实施体系</option>
+                                    <option value="3">一线实施体系</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>部门</em></label>
+                                <select class="sele">
+                                    <option value="0">研发部</option>
+                                    <option value="1">综合部</option>
+                                    <option value="2">商务运营部</option>
+                                    <option value="3">项目组</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>决策层人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>编制员工人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>实际员工人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>预算人工成本</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>实际人工成本汇总</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>人员缺口隐患</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li>
+                                <label><em>备注</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label></i><em>执行层管理等级</em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>编制汇总</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="delete">
+                <div class="del-head">
+                    <h5>温馨提示</h5>
+                </div>
+                <div class="del-con">
+                    <p>确定要删除这条数据？</p>
+                    <div class="btn">
+                        <button>确定</button>
+                        <button>取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="modalbg"></div>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/laypage/laypage.js"></script>
+<script src="/js/new_modules/common.js"></script>
+<script type="text/javascript">
+    laypage({
+        cont : 'pages', //容器。值支持id名、原生dom对象，jquery对象,
+        pages : 20, //总页数
+        skin : 'molv', //皮肤
+        first : 1, //将首页显示为数字1,。若不显示，设置false即可
+        last : 20, //将尾页显示为总页数。若不显示，设置false即可
+    });
+</script>
+</body>
+</html>
