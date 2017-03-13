@@ -251,15 +251,21 @@
       display: flex;
       flex-direction: row;
       li {
+        width: 35px;
+        text-align: center;
         margin-left: 13px;
+          svg{
+            fill: #cbcbcb;
+            width: 19px;
+            height: 19px;
+            text-align: center;
+            margin: 0 auto;
+          }
         &.cur {
           border-bottom: 2px solid #02c4ff;
-        }
-        a {
-          display: inline-block;
-          width: 35px;
-          height: 31px;
-          text-align: center;
+          svg{
+              fill:#02c4ff;
+          }
         }
       }
     }
@@ -302,7 +308,7 @@
   display: none;
 }
 //用户注册
-    .inform{
+ .inform{
       width: 50%;
       margin: 30px auto;
        label{
@@ -365,9 +371,11 @@
       }
   }
    .boa-body{
+    height: 650px;
+     padding-top: 30px;
      ul{
        display: flex;
-       width: 100%;
+       width: 99%;
        flex-wrap: wrap;
        li{
          margin: 19px 0;
@@ -394,6 +402,22 @@
            flex: 0 0 50%;
            input{
              width: 70%;
+           }
+         }
+         &.last{
+           margin-right: 60%;
+         }
+         &.but{
+           flex: 0 0 100%;
+           display: flex;
+           justify-content: flex-end;
+           button{
+             color: white;
+             width: 111px;
+             height: 42px;
+             font-size: 18px;
+             cursor: pointer;
+             background: url(/images/new_module/data/button.png) no-repeat;
            }
          }
          label{
@@ -423,7 +447,7 @@
            background-color: white;
          }
          .sele {
-           width: 45%;
+           width: 55%;
            height: 36px;
            border: 1px solid #999999;
            background: url(/images/new_module/data/down.png) no-repeat right 10px center;
@@ -436,6 +460,58 @@
        }
      }
    }
+}
+ //租车协议管理--司机信息
+.frozen{
+  width: 347px;
+  height: 172px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  margin-top: -100px;
+  margin-left: -170px;
+  display: none;
+  .fro-head {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    height: 40px;
+    line-height: 38px;
+    background: #1aaeea;
+    box-shadow: 0 0 5px #106d92 inset;
+  }
+  .fro-con {
+    height: 131px;
+    box-shadow: 0 0 5px #066388 inset;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    p {
+      margin: 0 0 30px;
+    }
+    .btn {
+      display: flex;
+      justify-content: center;
+      button {
+        width: 80px;
+        height: 24px;
+        outline: none;
+        border-radius: 12px;
+        margin: 0 27px;
+        &:first-child {
+          border: 1px solid #64a9e2;
+          background: #19afea;
+          color: #fff;
+        }
+      }
+    }
+  }
 }
 //日历颜色
 .pika-title{
