@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>租车协议管理</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-    <link rel="stylesheet" href="/css/new_module/common.css">
     <link rel="stylesheet" href="/css/new_module/accounting/accounting.css">
-    <link rel="stylesheet" href="/css/new_module/business/activity.css">
 </head>
 <body>
 <section class="left-section">
@@ -49,22 +47,38 @@
                 </div>
             </div>
             <ul class="list">
-                <li class="current">
+                <li class="current" data-title="list">
                     <a href="javascript:void(0)" class="lis">列表<span>Tabulate</span></a>
                 </li>
-                <li>
+                <li data-title="add">
                     <a href="javascript:void(0)" class="add">添加<span>Add</span></a>
                 </li>
-                <li>
+                <li data-title="edit">
                     <a href="javascript:void(0)" class="same-one">编辑<span>Compile</span></a>
+                </li>
+                <li data-title="frozen">
+                    <a href="javascript:void(0)" class="same-one">冻结<span>Compile</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="same-one">附件<span>Compile</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="same-one">审核<span>Compile</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="same-one">导入<span>Compile</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="same-one">导出<span>Compile</span></a>
                 </li>
             </ul>
         </div>
         <div class="content">
-            <div class="content-tab">
+            <div class="content-tab list">
                 <ul class="table">
                     <li class="list-head">
                         <span></span>
+                        <span class="data-id">id</span>
                         <span>审核人</span>
                         <span>审核意见</span>
                         <span>地区</span>
@@ -78,6 +92,7 @@
                         <section>
                             <div class="list-text odd">
                                 <p>1</p>
+                                <p class="data-id"></p>
                                 <p>测试</p>
                                 <p>通过</p>
                                 <p>广州</p>
@@ -103,14 +118,14 @@
                                             <span>本车耗油</span>
                                         </p>
                                         <p class="see-children">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
                                         </p>
 
                                     </li>
@@ -126,13 +141,14 @@
                                             <span>驾驶证所有者</span>
                                         </p>
                                         <p class="see-children">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
                                         </p>
                                     </li>
                                     <li>
@@ -146,13 +162,13 @@
                                             <span>状态</span>
                                         </p>
                                         <p class="see-children">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
                                         </p>
                                     </li>
                                 </ul>
@@ -171,6 +187,290 @@
                 <footer class="footer"> <div class="pagination-click" id="pages"></div></footer>
             </div>
             <div class="content-input add">
+                <div class="input-list">
+                    <section>
+                        <ul>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
+                                <select class="sele">
+                                    <option value="">北京</option>
+                                    <option value="">广州</option>
+                                    <option value="">湖南</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>本车耗油</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>车辆型号</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>车辆号码</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>发动机型号</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>汽车购买日期</em></label>
+                                <input type="text" class="add_image">
+                            </li>
+                            <li>
+                                <label><em>购买时长</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>是否提供本车辆保险</em></label>
+                                <select class="sele">
+                                    <option value="">是</option>
+                                    <option value="">否</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>是否签订租车协议</em></label>
+                                <select class="sele">
+                                    <option value="">是</option>
+                                    <option value="">否</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>签订日期</em></label>
+                                <input type="text" class="add_image">
+                            </li>
+                            <li>
+                                <label><em>合同开始日期</em></label>
+                                <input type="text" class="add_image">
+                            </li>
+                            <li>
+                                <label><em>合同结束日期</em></label>
+                                <input type="text" class="add_image">
+                            </li>
+                            <li>
+                                <label><em>是否解约</em></label>
+                                <select class="sele">
+                                    <option value="">是</option>
+                                    <option value="">否</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>是否提供行驶证照片</em></label>
+                                <select class="sele">
+                                    <option value="">是</option>
+                                    <option value="">否</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>行驶证所有者</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>是否提供驾驶证照片</em></label>
+                                <select class="sele">
+                                    <option value="">是</option>
+                                    <option value="">否</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>驾驶证所有者</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>联系方式</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>开户人</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>银行卡号</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>身份证号</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>结算方式</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>地址</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>备注</em></label>
+                                <input type="text">
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="content-input edit">
+                <div class="input-list">
+                    <section>
+                        <ul>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
+                                <select class="sele">
+                                    <option value="">广州</option>
+                                    <option value="">佛山</option>
+                                    <option value="">江门</option>
+                                    <option value="">湛江</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
+                                <select class="sele">
+                                    <option value="">北京</option>
+                                    <option value="">广州</option>
+                                    <option value="">湖南</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>本车耗油</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>车辆型号</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>车辆号码</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>发动机型号</em></label>
+                                <input type="text">
+                            </li>
+                            <li >
+                                <label><em>汽车购买日期</em></label>
+                                <input type="text" class="add_image">
+                            </li>
+                            <li>
+                                <label><em>购买时长</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>是否提供本车辆保险</em></label>
+                                <select class="sele">
+                                    <option value="">是</option>
+                                    <option value="">否</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>是否签订租车协议</em></label>
+                                <select class="sele">
+                                    <option value="">是</option>
+                                    <option value="">否</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>签订日期</em></label>
+                                <input type="text" class="add_image">
+                            </li>
+                            <li>
+                                <label><em>合同开始日期</em></label>
+                                <input type="text" class="add_image">
+                            </li>
+                            <li>
+                                <label><em>合同结束日期</em></label>
+                                <input type="text" class="add_image">
+                            </li>
+                            <li>
+                                <label><em>是否解约</em></label>
+                                <select class="sele">
+                                    <option value="">是</option>
+                                    <option value="">否</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>是否提供行驶证照片</em></label>
+                                <select class="sele">
+                                    <option value="">是</option>
+                                    <option value="">否</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>行驶证所有者</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>是否提供驾驶证照片</em></label>
+                                <select class="sele">
+                                    <option value="">是</option>
+                                    <option value="">否</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>驾驶证所有者</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>联系方式</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>开户人</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>银行卡号</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>身份证号</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>结算方式</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>地址</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>备注</em></label>
+                                <input type="text">
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="content-input frozen">
+                <div class="fro-head">
+                    <h5>温馨提示</h5>
+                </div>
+                <div class="fro-con">
+                    <p>确定要冻结这条数据？</p>
+                    <div class="btn">
+                        <button>确定</button>
+                        <button>取消</button>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="content-input add">
                 <div class="input-list">
                     <section class="list-left">
                         <ul>
@@ -459,17 +759,27 @@
                     <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
                     <button>提交</button>
                 </p>
-            </div>
+            </div>-->
+
         </div>
 
     </div>
 </section>
+<div id="modalbg"></div>
 <script src="/js/jquery-2.1.1.min.js"></script>
 <script src="/js/honor/moment.min.js"></script>
 <script src="/js/honor/pikaday.js"></script>
 <script src="/js/time.js"></script>
 <script src="/laypage/laypage.js"></script>
 <script src="/js/new_modules/common.js"></script>
+<script>
+    $(function () {
+        $('.content').on("click",".frozen button",function(){
+            $('.frozen').hide();
+            $("#modalbg").hide()
+        })
+    })
+</script>
 <script type="text/javascript">
     laypage({
         cont: 'pages', //容器。值支持id名、原生dom对象，jquery对象,
