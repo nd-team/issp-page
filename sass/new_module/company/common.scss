@@ -1,0 +1,277 @@
+//浏览器重置样式
+html, body, div, span, nav, header, iframe,
+h1, h2, h3, h4, h5, h6, p, section, footer,
+a, form, address, big, cite, code,
+del, dfn, em, img, ins, fieldset, q, s, samp,
+small, strike, strong, sub, sup,label, var,
+b, u, i,input, dl, dt, dd, ol, ul, li,figure,figcaption{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+$main-font: "Microsoft YaHei";
+html,body{
+  width: 100%;
+  font:{
+    size: 14px;
+    family: $main-font;
+  }
+  background:#fff;
+}
+form,fieldset{
+  border: 0 none;
+}
+ol,ul li{
+  list-style: none;
+}
+img{
+  border: 0 none;
+  max-width: 100%;
+}
+input,select{
+  outline: none;
+  font-family: $main-font;
+}
+button{
+  border: 0;
+  font-family: $main-font;
+}
+select{
+  appearance:none;
+  -moz-appearance:none;
+}
+i,em{
+  font-style: normal;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+a {
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+//header style
+header{
+  display: flex;
+  width: 100%;
+  height: 80px;
+  .back{
+    display: flex;
+    margin-left: 10%;
+    align-items: center;
+    justify-content: center;
+    a{
+      width: 50px;
+      height: 22px;
+      line-height: 22px;
+      text-align: center;
+      border: 1px solid #bfbfbf;
+      border-radius: 5px;
+      color: #333;
+      font-size: 14px;
+    }
+  }
+  .search{
+    flex: 1;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    align-items: center;
+    .search-btn{
+      width: 19px;
+      height: 18px;
+      background: url("/images/new_module/organization/search.png") no-repeat center;
+      margin-right: 18px;
+    }
+    .selected{
+      width: 137px;
+      height: 37px;
+      background: url("/images/new_module/organization/searchbg.png") no-repeat;
+      color: #fff;
+      padding-left: 18px;
+      option{
+        color: #666;
+      }
+    }
+    .arrow{
+      width: 9px;
+      height: 7px;
+      background: url("/images/new_module/organization/down.png") no-repeat center;
+      cursor: pointer;
+      margin: {
+        left: -20px;
+      }
+    }
+  }
+}
+//banner style
+.banner{
+  width: 100%;
+  height: 115px;
+  background: url("/images/new_module/company/top-bg.jpg") no-repeat center center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  .logo{
+    display: block;
+    width: 139px;
+    height: 140px;
+    margin-left: 15%;
+    margin-top: -20px;
+    flex: 1;
+  }
+  .company-title{
+    width: 200px;
+    height: 48px;
+    background-color: #000;
+    margin-right: 18%;
+    padding-right: 5px;
+    p{
+      width: 202px;
+      height: 48px;
+      background-color: #fff;
+      text-align: center;
+      line-height: 48px;
+      font-size: 18px;
+      color: #333;
+      margin: {
+        top: -12px;
+        left: -13px;
+      }
+    }
+  }
+}
+
+//important content section
+.main{
+  width: 100%;
+  height: 100%;
+  //overflow: hidden;
+  .company-module{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin:80px auto 0;
+    justify-content: center;
+    overflow: auto;
+    li{
+      flex: 1;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 1s ease-out;
+      &:hover{
+        .head-number{
+          width: 201px;
+          height: 30px;
+          background: url("/images/new_module/company/bg02.png") no-repeat top center;
+          margin: {
+            bottom: -30px;
+            right: 8px;
+          }
+          z-index: 100;
+          line-height: 30px;
+          padding-left: 10px;
+          font-size: 18px;
+        }
+        .angle{
+          margin:{
+            top: 30px;
+            left: -194px;
+          }
+        }
+        .company-article{
+          width: 190px;
+          height: 220px;
+          z-index: 1;
+          margin-top: -45px;
+          box-shadow: 0 10px 40px 8px rgba(0, 0, 0, 0.3);
+          p{
+            width: 125px;
+            font-size: 20px;
+          }
+        }
+      }
+      &.company-first{
+        .company-article{
+          background-color: #333;
+        }
+      }
+      &.company-second{
+        .company-article{
+          background-color: #f8f8f8;
+          p{
+            color: #333;
+          }
+        }
+      }
+      .head-number{
+        width: 170px;
+        height: 25px;
+        background: url("/images/new_module/company/bg01.jpg") no-repeat top center;
+        margin: {
+          bottom: -25px;
+          right: 8px;
+        }
+        z-index: 100;
+        line-height: 25px;
+        padding-left: 10px;
+        color: #fff;
+      }
+      .angle{
+        display: block;
+        width: 0;
+        height: 0;
+        margin:{
+          top: 25px;
+          left: -163px;
+        }
+        border-style: solid;
+        border-width: 0 15px 15px 0;
+        border-color: transparent #0073b8 transparent transparent;
+      }
+      .company-article{
+        width: 160px;
+        height: 182px;
+        border: 1px solid #0d9ee1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        margin-top: -40px;
+        .icon-pic{
+          width: 40px;
+          height: 40px;
+
+        }
+        p{
+          width: 105px;
+          text-align: center;
+          padding-top: 15px;
+          border-top: 1px solid #a0a0a0;
+          margin-top: 15px;
+          font-size: 17px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.footer{
+  width: 100%;
+  height: 70px;
+  background-color: #758c94;
+  margin-top: 80px;
+}
