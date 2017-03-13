@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>人员编制-当前人数配置</title>
+    <title>人员编制-人员编制技能</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-    <meta name="keywords" content="人员编制-当前人数配置">
-    <meta name="description" content="人员编制-当前人数配置">
+    <meta name="keywords" content="人员编制-人员编制技能">
+    <meta name="description" content="人员编制-人员编制技能">
     <link rel="stylesheet" href="/css/new_module/business/activity.css">
 </head>
 <body>
@@ -27,17 +27,17 @@
                 <li>
                     <a href="/pages/new_module/company/staffing/staffing_people_plan.html">人数配置计划</a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="/pages/new_module/company/staffing/staffing_current_number.html">当前人数配置</a>
                 </li>
-                <li>
-                    <a href="/pages/new_module/company/staffing/staffing_labor_plan.html">人员编制技能/管理等级配置</a>
+                <li class="active">
+                    <a href="/pages/new_module/company/staffing/staffing_skill_level.html">人员编制技能/管理等级配置</a>
                 </li>
                 <li>
-                    <a href="/pages/new_module/company/staffing/staffing_labor_plan.html">人员编制汇总</a>
+                    <a href="/pages/new_module/company/staffing/staffing_summary.html">人员编制汇总</a>
                 </li>
                 <li>
-                    <a href="/pages/new_module/company/staffing/staffing_labor_plan.html">人员编制明细</a>
+                    <a href="/pages/new_module/company/staffing/staffing_details.html">人员编制明细</a>
                 </li>
             </ul>
         </div>
@@ -82,12 +82,12 @@
                         <span></span>
                         <span class="data-id">id</span>
                         <span>分类</span>
-                        <span>总权重</span>
                         <span>部门</span>
-                        <span>权重比例</span>
                         <span>项目分类</span>
-                        <span>决策层占比</span>
                         <span>决策层人数</span>
+                        <span>决策层技能等级</span>
+                        <span>决策层管理等级</span>
+                        <span>管理层(技术管理)人数</span>
                         <span></span>
                     </li>
                     <li class="list-all">
@@ -96,12 +96,12 @@
                                 <p></p>
                                 <p class="data-id"></p>
                                 <p>一线实施体系</p>
-                                <p>100%</p>
                                 <p>研发部</p>
-                                <p>1:1</p>
                                 <p>一线实施项目</p>
-                                <p>2:1</p>
                                 <p>22</p>
+                                <p>项目经理</p>
+                                <p>项目经理</p>
+                                <p>11</p>
                                 <p>
                                     <a href="javascript:void(0)" class="more">更多详细</a>
                                 </p>
@@ -110,13 +110,21 @@
                                 <ul class="can-see">
                                     <li>
                                         <p class="see-parent">
-                                            <span>技术管理人数占比</span><span>技术管理人数人数</span>
-                                            <span>行政管理人数占比</span><span>行政管理人数人数</span>
-                                            <span>执行层占比</span><span>执行层人数</span><span>总人数</span>
+                                            <span>管理层(技术管理)技能等级</span><span>管理层(技术管理)管理等级</span>
+                                            <span>管理层(行政管理)人数</span><span>管理层(行政管理)技能等级</span>
+                                            <span>执行层人数</span><span>执行层技能等级</span><span>执行层管理等级</span>
                                         </p>
                                         <p class="see-children">
-                                            <span>1:1</span> <span>20</span> <span>1:1</span> <span>3</span>
-                                            <span>2:1</span> <span>8</span><span>200</span>
+                                            <span>6</span> <span>6</span> <span>5</span> <span>3</span>
+                                            <span>6</span> <span>5</span> <span>6</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-parent">
+                                            <span>编制汇总</span>
+                                        </p>
+                                        <p class="see-children">
+                                            <span>666</span>
                                         </p>
                                     </li>
                                 </ul>
@@ -149,10 +157,6 @@
                                 </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>总权重</em></label>
-                                <input type="text" value="100%">
-                            </li>
-                            <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>部门</em></label>
                                 <select class="sele">
                                     <option value="0">研发部</option>
@@ -160,10 +164,6 @@
                                     <option value="2">商务运营部</option>
                                     <option value="3">项目组</option>
                                 </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>权重比例</em></label>
-                                <input type="number" name="number" min="1">
                             </li>
                             <li>
                                 <label><em>项目分类</em></label>
@@ -175,39 +175,51 @@
                                 </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>决策层占比</em></label>
-                                <input type="number" name="number" min="1">
-                            </li>
-                            <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>决策层人数</em></label>
                                 <input type="number" name="number" min="1">
                             </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技术管理人数占比</em></label>
-                                <input type="number" name="number" min="1">
+                            <li>
+                                <label><em>决策层技能等级</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>决策层管理等级</em></label>
+                                <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技术管理人数</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>管理层(技术管理)人数</em></label>
                                 <input type="number" name="number" min="1">
                             </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>行政管理人数占比</em></label>
-                                <input type="number" name="number" min="1">
+                            <li>
+                                <label><em>管理层(技术管理)技能等级</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>管理层(技术管理)管理等级</em></label>
+                                <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>行政管理人数人数</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>管理层(行政管理)人数</em></label>
                                 <input type="number" name="number" min="1">
                             </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>执行层占比</em></label>
-                                <input type="number" name="number" min="1">
+                            <li>
+                                <label><em>管理层(行政管理)技能等级</em></label>
+                                <input type="text">
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>执行层人数</em></label>
                                 <input type="number" name="number" min="1">
                             </li>
+                            <li>
+                                <label><em>执行层技能等级</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>执行层管理等级</em></label>
+                                <input type="text">
+                            </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>总人数</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>编制汇总</em></label>
                                 <input type="number" name="number" min="1">
                             </li>
                         </ul>
@@ -232,10 +244,6 @@
                                 </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>总权重</em></label>
-                                <input type="text" value="100%">
-                            </li>
-                            <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>部门</em></label>
                                 <select class="sele">
                                     <option value="0">研发部</option>
@@ -243,10 +251,6 @@
                                     <option value="2">商务运营部</option>
                                     <option value="3">项目组</option>
                                 </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>权重比例</em></label>
-                                <input type="number" name="number" min="1">
                             </li>
                             <li>
                                 <label><em>项目分类</em></label>
@@ -258,39 +262,51 @@
                                 </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>决策层占比</em></label>
-                                <input type="number" name="number" min="1">
-                            </li>
-                            <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>决策层人数</em></label>
                                 <input type="number" name="number" min="1">
                             </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技术管理人数占比</em></label>
-                                <input type="number" name="number" min="1">
+                            <li>
+                                <label><em>决策层技能等级</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>决策层管理等级</em></label>
+                                <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技术管理人数</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>管理层(技术管理)人数</em></label>
                                 <input type="number" name="number" min="1">
                             </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>行政管理人数占比</em></label>
-                                <input type="number" name="number" min="1">
+                            <li>
+                                <label><em>管理层(技术管理)技能等级</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>管理层(技术管理)管理等级</em></label>
+                                <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>行政管理人数人数</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>管理层(行政管理)人数</em></label>
                                 <input type="number" name="number" min="1">
                             </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>执行层占比</em></label>
-                                <input type="number" name="number" min="1">
+                            <li>
+                                <label><em>管理层(行政管理)技能等级</em></label>
+                                <input type="text">
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>执行层人数</em></label>
                                 <input type="number" name="number" min="1">
                             </li>
+                            <li>
+                                <label><em>执行层技能等级</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>执行层管理等级</em></label>
+                                <input type="text">
+                            </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>总人数</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>编制汇总</em></label>
                                 <input type="number" name="number" min="1">
                             </li>
                         </ul>
