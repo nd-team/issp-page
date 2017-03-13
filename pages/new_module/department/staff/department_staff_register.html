@@ -65,7 +65,7 @@
                 <li data-title="delete">
                     <a href="javascript:void(0)" class="same-one">删除<span>Delete</span></a>
                 </li>
-                <li>
+                <li data-title="details">
                     <a href="javascript:void(0)" class="same-one">查看详情<span>Compile</span></a>
                 </li>
             </ul>
@@ -159,7 +159,7 @@
                 </ul>
                 <footer class="footer"> <div class="pagination-click" id="pages"></div></footer>
             </div>
-            <div class="boarding add">
+            <div class="content-input boarding add">
                 <div class="boa-title">
                     <ul>
                         <li class="boa-cur"><a href="javascript:void(0)">员工入职基本信息</a></li>
@@ -235,10 +235,10 @@
                               <input type="text">
                           </li>
                           <li class="required">
-                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>紧急情况联系人</em></label>
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>紧急联系人</em></label>
                               <input type="text">
                           </li>
-                          <li class="required">
+                          <li class="required last">
                               <label><i><img src="/images/new_module/data/mandatory.png"></i><em>联系电话</em></label>
                               <input type="text">
                           </li>
@@ -259,218 +259,264 @@
                               <input type="text ">
                           </li>
                       </ul>
+                      <ul>
+                         <li class="big">
+                             <label><em>称谓</em></label>
+                             <input type="text">
+                         </li>
+                         <li class="big">
+                             <label><em>姓名</em></label>
+                             <input type="text">
+                         </li>
+                         <li class="big">
+                             <label><em>年龄</em></label>
+                             <input type="text" >
+                         </li>
+                         <li class="big">
+                             <label><em>单位</em></label>
+                             <input type="text">
+                         </li>
+                         <li class="big">
+                             <label><em>职位</em></label>
+                             <input type="text">
+                         </li>
+                         <li class="big">
+                             <label><em>联系方式</em></label>
+                             <input type="text">
+                         </li>
+                          <li class="but"><button>添加</button></li>
+                     </ul>
+                      <ul>
+                         <li class="big">
+                             <label><em>开始时间</em></label>
+                             <input type="text" class="add_image">
+                         </li>
+                         <li class="big">
+                             <label><em>结束时间</em></label>
+                             <input type="text" class="add_image">
+                         </li>
+                         <li class="big">
+                             <label><em>就读学校</em></label>
+                             <input type="text" >
+                         </li>
+                         <li class="big">
+                             <label><em>毕业证书</em></label>
+                             <input type="text">
+                         </li>
+                         <li class="but"><button>添加</button></li>
+                     </ul>
+                      <ul>
+                         <li class="big">
+                             <label><em>开始时间</em></label>
+                             <input type="text" class="add_image">
+                         </li>
+                         <li class="big">
+                             <label><em>结束时间</em></label>
+                             <input type="text" class="add_image">
+                         </li>
+                         <li class="big">
+                             <label><em>公司名称</em></label>
+                             <input type="text" >
+                         </li>
+                         <li class="big">
+                             <label><em>工作描述</em></label>
+                             <input type="text">
+                         </li>
+                         <li class="but"><button>添加</button></li>
+                     </ul>
+                      <ul>
+                         <li class="big">
+                             <label><em>证书名称</em></label>
+                             <input type="text">
+                         </li>
+                         <li class="big">
+                             <label><em>获得证书时间</em></label>
+                             <input type="text" class="add_image">
+                         </li>
+                          <li class="but"><button>添加</button></li>
+                     </ul>
+                      <div class="footer"></div>
                  </div>
             </div>
-           <!-- <div class="content-input add">
-                <div class="input-list">
-                    <section>
-                        <ul>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>姓名</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>性别</em></label>
-                                <select class="sele">
-                                    <option value="">男</option>
-                                    <option value="">女</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>出生年月日</em></label>
-                                <input type="text" class="add_image">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>民族</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>婚姻状况</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>政治面貌</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>籍贯</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>身高</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>专业</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>学历</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>毕业学校</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>毕业时间</em></label>
-                                <input type="text" class="add_image">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>健康状况</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>QQ号</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>手机号</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>个人邮箱账号</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>紧急情况联系人</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>联系电话</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>身份证号码</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>户口地址</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>目前住宿地址</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>兴趣爱好</em></label>
-                                <input type="text">
-                            </li>
-                        </ul>
-                    </section>
+            <div class="content-input boarding edit">
+                <div class="boa-title">
+                    <ul>
+                        <li class="boa-cur"><a href="javascript:void(0)">员工入职基本信息</a></li>
+                        <li><a href="javascript:void(0)">家庭成员</a></li>
+                        <li><a href="javascript:void(0)">学习经历</a></li>
+                        <li><a href="javascript:void(0)">工作经历</a></li>
+                        <li><a href="javascript:void(0)">证书情况</a></li>
+                    </ul>
                 </div>
-                <p class="dataBottom">
-                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
-                    <button>提交</button>
-                </p>
+                 <div class="boa-body">
+                      <ul>
+                          <li class="required">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>姓名</em></label>
+                              <input type="text">
+                          </li>
+                          <li class="required">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>性别</em></label>
+                              <select class="sele">
+                                  <option value="">男</option>
+                                  <option value="">女</option>
+                              </select>
+                          </li>
+                          <li class="required">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>出生年月日</em></label>
+                              <input type="text" class="add_image">
+                          </li>
+                          <li class="required">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>民族</em></label>
+                              <input type="text">
+                          </li>
+                          <li class="required">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>婚姻状况</em></label>
+                              <input type="text">
+                          </li>
+                          <li class="required">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>政治面貌</em></label>
+                              <input type="text">
+                          </li>
+                          <li class="required">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>籍贯</em></label>
+                              <input type="text">
+                          </li>
+                          <li class="required">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>身高</em></label>
+                              <input type="text">
+                          </li>
+                          <li class="required">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>专业</em></label>
+                              <input type="text">
+                          </li>
+                          <li class="required">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>学历</em></label>
+                              <input type="text">
+                          </li>
+                          <li class="required">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>毕业学校</em></label>
+                              <input type="text">
+                          </li>
+                          <li class="required">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>健康状况</em></label>
+                              <input type="text">
+                          </li>
+                          <li class="required">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>QQ号</em></label>
+                              <input type="text">
+                          </li>
+                          <li class="required">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>手机号</em></label>
+                              <input type="text">
+                          </li>
+                          <li class="required">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>个人邮箱账号</em></label>
+                              <input type="text">
+                          </li>
+                          <li class="required">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>紧急联系人</em></label>
+                              <input type="text">
+                          </li>
+                          <li class="required last">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>联系电话</em></label>
+                              <input type="text">
+                          </li>
+                          <li class="required big">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>身份证号码</em></label>
+                              <input type="text">
+                          </li>
+                          <li class="required big">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>户口地址</em></label>
+                              <input type="text">
+                          </li>
+                          <li class="required big">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>目前住宿地址</em></label>
+                              <input type="text">
+                          </li>
+                          <li class="required big">
+                              <label><i><img src="/images/new_module/data/mandatory.png"></i><em>兴趣爱好</em></label>
+                              <input type="text ">
+                          </li>
+                      </ul>
+                      <ul>
+                         <li class="big">
+                             <label><em>称谓</em></label>
+                             <input type="text">
+                         </li>
+                         <li class="big">
+                             <label><em>姓名</em></label>
+                             <input type="text">
+                         </li>
+                         <li class="big">
+                             <label><em>年龄</em></label>
+                             <input type="text" >
+                         </li>
+                         <li class="big">
+                             <label><em>单位</em></label>
+                             <input type="text">
+                         </li>
+                         <li class="big">
+                             <label><em>职位</em></label>
+                             <input type="text">
+                         </li>
+                         <li class="big">
+                             <label><em>联系方式</em></label>
+                             <input type="text">
+                         </li>
+                          <li class="but"><button>添加</button></li>
+                     </ul>
+                      <ul>
+                         <li class="big">
+                             <label><em>开始时间</em></label>
+                             <input type="text" class="add_image">
+                         </li>
+                         <li class="big">
+                             <label><em>结束时间</em></label>
+                             <input type="text" class="add_image">
+                         </li>
+                         <li class="big">
+                             <label><em>就读学校</em></label>
+                             <input type="text" >
+                         </li>
+                         <li class="big">
+                             <label><em>毕业证书</em></label>
+                             <input type="text">
+                         </li>
+                         <li class="but"><button>添加</button></li>
+                     </ul>
+                      <ul>
+                         <li class="big">
+                             <label><em>开始时间</em></label>
+                             <input type="text" class="add_image">
+                         </li>
+                         <li class="big">
+                             <label><em>结束时间</em></label>
+                             <input type="text" class="add_image">
+                         </li>
+                         <li class="big">
+                             <label><em>公司名称</em></label>
+                             <input type="text" >
+                         </li>
+                         <li class="big">
+                             <label><em>工作描述</em></label>
+                             <input type="text">
+                         </li>
+                         <li class="but"><button>添加</button></li>
+                     </ul>
+                      <ul>
+                         <li class="big">
+                             <label><em>证书名称</em></label>
+                             <input type="text">
+                         </li>
+                         <li class="big">
+                             <label><em>获得证书时间</em></label>
+                             <input type="text" class="add_image">
+                         </li>
+                         <li class="but"><button>添加</button></li>
+                     </ul>
+                      <div class="footer"></div>
+                 </div>
             </div>
-            <div class="content-input edit">
-                <div class="input-list">
-                    <section>
-                        <ul>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>员工编号</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>姓名</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>性别</em></label>
-                                <select class="sele">
-                                    <option value="">男</option>
-                                    <option value="">女</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>出生年月日</em></label>
-                                <input type="text" class="add_image">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>民族</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>婚姻状况</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>政治面貌</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>籍贯</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>身高</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>专业</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>学历</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>毕业学校</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>毕业时间</em></label>
-                                <input type="text" class="add_image">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>健康状况</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>QQ号</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>手机号</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>个人邮箱账号</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>紧急情况联系人</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>联系电话</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>身份证号码</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>户口地址</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>目前住宿地址</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>兴趣爱好</em></label>
-                                <input type="text">
-                            </li>
-                        </ul>
-                    </section>
-                </div>
-                <p class="dataBottom">
-                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
-                    <button>提交</button>
-                </p>
-            </div>-->
             <div class="delete">
                 <div class="del-head">
                     <h5>温馨提示</h5>
@@ -483,107 +529,184 @@
                     </div>
                 </div>
             </div>
-            <div class="content-input details">
-                <div class="input-list">
-                    <section class="list-left">
-                        <ul>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>员工编号</em></label>
-                                <p>
-                                    <input type="text" value="ike22222" disabled>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>姓名</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>性别</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>出生年月日</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>民族</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>婚姻状况</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>籍贯</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>身高</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>专业</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>学历</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>毕业学校</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>毕业时间</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>健康状况</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>QQ号</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>手机号</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>个人邮箱账号</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>紧急情况联系人</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>联系电话</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>身份证号码</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>户口地址</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>目前住宿地址</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>兴趣爱好</em></label>
-                                <p><input type="text"></p>
-                            </li>
-                        </ul>
-                    </section>
+            <div class="content-input boarding details">
+                <div class="boa-title">
+                    <ul>
+                        <li class="boa-cur"><a href="javascript:void(0)">员工入职基本信息</a></li>
+                        <li><a href="javascript:void(0)">家庭成员</a></li>
+                        <li><a href="javascript:void(0)">学习经历</a></li>
+                        <li><a href="javascript:void(0)">工作经历</a></li>
+                        <li><a href="javascript:void(0)">证书情况</a></li>
+                    </ul>
                 </div>
-                <p class="dataBottom">
-                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
-                    <button>提交</button>
-                </p>
+                <div class="boa-body">
+                    <ul>
+                        <li>
+                            <label><em>姓名</em></label>
+                            <input type="text" value="期待" disabled>
+                        </li>
+                        <li>
+                            <label><em>性别</em></label>
+                            <select class="sele">
+                                <option value="">男</option>
+                                <option value="">女</option>
+                            </select>
+                        </li>
+                        <li >
+                            <label><em>出生年月日</em></label>
+                            <input type="text" value="1996-4-20" class="add_image" disabled>
+                        </li>
+                        <li>
+                            <label><em>民族</em></label>
+                            <input type="text" value="汉" disabled>
+                        </li>
+                        <li>
+                            <label><em>婚姻状况</em></label>
+                            <input type="text" value="未婚" disabled>
+                        </li>
+                        <li>
+                            <label><em>政治面貌</em></label>
+                            <input type="text" value="党员" disabled>
+                        </li>
+                        <li>
+                            <label><em>籍贯</em></label>
+                            <input type="text" value="北京朝阳" disabled>
+                        </li>
+                        <li>
+                            <label><em>身高</em></label>
+                            <input type="text" value="169" disabled>
+                        </li>
+                        <li>
+                            <label><em>专业</em></label>
+                            <input type="text" value="音乐" disabled>
+                        </li>
+                        <li>
+                            <label><em>学历</em></label>
+                            <input type="text" value="大专" disabled>
+                        </li>
+                        <li>
+                            <label><em>毕业学校</em></label>
+                            <input type="text" value="艺术学校" disabled>
+                        </li>
+                        <li>
+                            <label><em>健康状况</em></label>
+                            <input type="text" value="健康" disabled>
+                        </li>
+                        <li>
+                            <label><em>QQ号</em></label>
+                            <input type="text" value="123456963" disabled>
+                        </li>
+                        <li>
+                            <label><em>手机号</em></label>
+                            <input type="text" value="12366269856" disabled>
+                        </li>
+                        <li>
+                            <label><em>个人邮箱账号</em></label>
+                            <input type="text" value="1236626985@qq.com" disabled>
+                        </li>
+                        <li>
+                            <label><em>紧急联系人</em></label>
+                            <input type="text" value="刘娜" disabled>
+                        </li>
+                        <li class="last">
+                            <label><em>联系电话</em></label>
+                            <input type="text" value="12366269856" disabled>
+                        </li>
+                        <li class="big">
+                            <label><em>身份证号码</em></label>
+                            <input type="text" value="45698236952145698" disabled>
+                        </li>
+                        <li class="big">
+                            <label><em>户口地址</em></label>
+                            <input type="text" value="湖南邵阳高桥" disabled>
+                        </li>
+                        <li class="big">
+                            <label><em>目前住宿地址</em></label>
+                            <input type="text" value="湖南邵阳" disabled>
+                        </li>
+                        <li class="big">
+                            <label><em>兴趣爱好</em></label>
+                            <input type="text" value="打乒乓" disabled>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="big">
+                            <label><em>称谓</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>姓名</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>年龄</em></label>
+                            <input type="text" >
+                        </li>
+                        <li class="big">
+                            <label><em>单位</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>职位</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>联系方式</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="but"><button>添加</button></li>
+                    </ul>
+                    <ul>
+                        <li class="big">
+                            <label><em>开始时间</em></label>
+                            <input type="text" class="add_image">
+                        </li>
+                        <li class="big">
+                            <label><em>结束时间</em></label>
+                            <input type="text" class="add_image">
+                        </li>
+                        <li class="big">
+                            <label><em>就读学校</em></label>
+                            <input type="text" >
+                        </li>
+                        <li class="big">
+                            <label><em>毕业证书</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="but"><button>添加</button></li>
+                    </ul>
+                    <ul>
+                        <li class="big">
+                            <label><em>开始时间</em></label>
+                            <input type="text" class="add_image">
+                        </li>
+                        <li class="big">
+                            <label><em>结束时间</em></label>
+                            <input type="text" class="add_image">
+                        </li>
+                        <li class="big">
+                            <label><em>公司名称</em></label>
+                            <input type="text" >
+                        </li>
+                        <li class="big">
+                            <label><em>工作描述</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="but"><button>添加</button></li>
+                    </ul>
+                    <ul>
+                        <li class="big">
+                            <label><em>证书名称</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>获得证书时间</em></label>
+                            <input type="text" class="add_image">
+                        </li>
+                        <li class="but"><button>添加</button></li>
+                    </ul>
+                    <div class="footer"></div>
+                </div>
             </div>
         </div>
 
@@ -595,10 +718,10 @@
 <script src="/js/new_modules/common.js"></script>
 <script>
     $(function () {
-
+        $('.boa-body').find("ul").not("ul:nth-of-type(1),.footer").hide();
         $('.boa-title ul li').click(function () {
-            $(this).addClass('boa-cur').siblings().removeClass('boa-cur');
-
+                $(this).addClass('boa-cur').siblings().removeClass('boa-cur');
+                $(this).parents().find('.boa-body ul').eq($(this).index() ).show().siblings().hide();
         })
     })
 </script>

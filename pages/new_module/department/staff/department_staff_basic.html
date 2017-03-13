@@ -480,19 +480,18 @@
                 </section>
             </div>
             <div class="content-input annex">
-              <!--  <p>
-                    <span>文件名 :</span>
-                    <a href="javascript:void(0)" class="cur"><img src="/images/new_module/department/pickup.png"></a>
-                    <a href="javascript:void(0)"><img src="/images/new_module/department/four.png"></a>
-                </p>-->
                 <div class="fill-title">
                     <span>文件名 :</span>
                     <ul>
                         <li>
-                            <a href="javascript:void(0)"><img src="/images/new_module/department/pickup.png"></a>
+                                <svg role="img" class="vertical">
+                                    <use xlink:href="#vertical"></use>
+                                </svg>
                         </li>
                         <li class="cur">
-                            <a href="javascript:void(0)"><img src="/images/new_module/department/four.png"></a>
+                            <svg role="img" class="side">
+                                <use xlink:href="#side"></use>
+                            </svg>
                         </li>
                     </ul>
                 </div>
@@ -551,28 +550,8 @@
 <script src="/js/jquery-2.1.1.min.js"></script>
 <script src="/laypage/laypage.js"></script>
 <script src="/js/new_modules/common.js"></script>
-<script>
-    $(function () {
-        $(".select-left button").click(function () {
-            $obj = $('.select-sele select option:selected').clone(true);
-            $('.select-right select').append($obj);
-        });
-        $('option').dblclick(function(){
-            $(this).remove();
-        });
-        //入职情况统计
-        $(".summary .sum-bot").hide();
-        $(".dataBottom2 button").click(function () {
-            $(".summary .sum-bot").show();
-        });
-        //查看附件
-        $(".file-four").hide();
-        $('.fill-title ul li').click(function () {
-            $(this).addClass('cur').siblings().removeClass('cur');
-            $('.file-all>ul:eq(' + $(this).index() + ')').show().siblings().hide();
-        })
-    })
-</script>
+<script src="/js/common.js"></script>
+<script src="/js/new_modules/other.js"></script>
 <script type="text/javascript">
     laypage({
         cont: $('#pages'),  //容器。值支持id名、原生dom对象，jquery对象,
