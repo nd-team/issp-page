@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>快递收发管理</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="岗位说明书">
+    <meta name="description" content="岗位说明书">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="/css/new_module/accounting/accounting.css">
+</head>
+<body>
+<section class="left-section">
+    <div class="header">
+        <a href="javascript:void(0)" title="issp平台" class="logo">
+            <img src="/images/new_module/organization/logo.png" alt="">
+        </a>
+        <span>issp平台</span>
+    </div>
+    <div class="nav">
+        <div class="nav-list">
+            <h3 class="header-menu big"><i class="nav-arrow"></i>快递收发管理</h3>
+            <ul class="menu">
+                <li class="active"><a href="/pages/new_module/material/courier/material_courier_management.html">快递收发登记</a></li>
+                <li><a  href="javascript:void(0)">收发人员管理</a></li>
+            </ul>
+        </div>
+        <div class="nav-list">
+            <h3 class="header-menu big"><i class="nav-arrow"></i>功能说明</h3>
+            <ul class="menu">
+                <li><a href="javascript:void(0)">版本管理</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="right-section">
+    <div class="top-content">
+        <div class="top-fixed">
+            <div class="top">
+                <div class="top-back">
+                    <a href="javascript:void(0)" class="back">返回</a>
+                </div>
+                <div class="search">
+                    <a href="javascript:void(0)" class="search-btn"></a>
+                    <select class="selected">
+                        <option value="0">张三三</option>
+                        <option value="1">张四四</option>
+                        <option value="2">张五五</option>
+                        <option value="3">张六六</option>
+                        <option value="4">张七七</option>
+                        <option value="5">张八八</option>
+                        <option value="6">张九九</option>
+                    </select>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+            <ul class="list">
+                <li class="current" data-title="edit">
+                    <a href="javascript:void(0)" class="same-two">编辑物品/确认收到物品<span>Edit</span></a>
+                </li>
+                <li data-title="edit-goods">
+                    <a href="javascript:void(0)" class="same-two">编辑快递<span>Edit</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="edit item-attributes" style="display: block">
+                <section>
+                    <div class="item-all">
+                        <ul>
+                            <li class="goods-head">
+                                <span>物品属性</span>
+                                <span>物品名称</span>
+                                <span>物品数量</span>
+                                <span>确认收货</span>
+                                <span></span>
+                            </li>
+                            <li class="goods-body">
+                                <p>
+                                    <input type="text" class="box_se">
+                                </p>
+                                <p>
+                                    <input type="text">
+                                </p>
+                                <p> <input type="text" class="box_se"></p>
+                                <p>
+                                    <input type="text">
+                                </p>
+                                <p>
+                                    <a href="javascript:void(0)" class="remove-del"></a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="add-goods">
+                        <button class="add-but">添加</button>
+                        <button>提交</button>
+                    </p>
+                </section>
+            </div>
+            <div class="content-input edit-goods">
+                <div class="receive-goods">
+                    <section >
+                        <div class="send-info">
+                        <p class="send-title">
+                            <span>寄件人信息</span>
+                            <span>The sender information</span>
+                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <label><em>寄件人</em></label>
+                                    <input type="text">
+                                </p>
+                                <p>
+                                    <label><em>寄件时间</em></label>
+                                    <input type="text" class="add_image">
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <label><em>希望收件时间</em></label>
+                                    <input type="text" class="add_image">
+                                </p>
+                                <p>
+                                    <label><em>部门项目组</em></label>
+                                    <input type="text" class="box_se">
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <label><em>收件地址</em></label>
+                                    <input type="text">
+                                </p>
+                                <p>
+                                    <label><em>联系方式(寄)</em></label>
+                                    <input type="text">
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <label><em>寄件地址</em></label>
+                                    <input type="text">
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                        <div class="send-info">
+                            <p class="send-title">
+                                <span>收件人信息</span>
+                                <span>The sender information</span>
+                            </p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        <label><em>收件人</em></label>
+                                        <input type="text" class="box_se">
+                                    </p>
+                                    <p>
+                                        <label><em>快递公司</em></label>
+                                        <input type="text">
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <label><em>快递公司联系方式</em></label>
+                                        <input type="text">
+                                    </p>
+                                    <p>
+                                        <label><em>运费(元)</em></label>
+                                        <input type="text">
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <label><em>快递单号</em></label>
+                                        <input type="text">
+                                    </p>
+                                    <p>
+                                        <label><em>联系方式(收)</em></label>
+                                        <input type="text">
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <label><em>保险费(元)</em></label>
+                                        <input type="text">
+                                    </p>
+                                    <p>
+                                        <label><em>是否有发票</em></label>
+                                        <input type="text" class="box_se">
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <label><em>是否寄件人支付</em></label>
+                                        <input type="text" class="box_se">
+                                    </p>
+                                    <p>
+                                        <label><em>支付人</em></label>
+                                        <input type="text" class="box_se">
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <label><em>支付人账户</em></label>
+                                        <input type="text">
+                                    </p>
+                                    <p>
+                                        <label><em>银行账户开户信息</em></label>
+                                        <input type="text">
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <label><em>是否收件</em></label>
+                                        <input type="text" class="box_se">
+                                    </p>
+                                    <p>
+                                        <label><em>具体收件时间</em></label>
+                                        <input type="text" class="add_image">
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <label><em>是否有遗漏件未发</em></label>
+                                        <input type="text" class="box_se">
+                                    </p>
+                                    <p>
+                                        <label><em>备注</em></label>
+                                        <input type="text">
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="dataBottom">
+                            <button>提交</button>
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="modalbg"></div>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/new_modules/common.js"></script>
+<script>
+    $(function () {
+        var tem="";
+        $(".item-attributes .add-but").click(function() {
+            tem = "<li class='goods-head'>" +"<span>物品属性</span><span>物品名称</span><span>物品数量</span><span>确认收货</span><span></span>"+
+                    "</li>"+"<li class='goods-body'>" +"<p><input type='text' class='box_se'></p><p><input type='text'></p><p><input type='text' class='box_se'></p>" +
+                    "<p><input type='text'></p><p><a href='javascript:void(0)' class='remove-del'>删除</a></p>"+
+                    "</li>";
+            var div = $("<ul>" + tem + "</ul>");
+            $(".item-attributes .item-all").append(div)
+        });
+        $(document).on('click','.remove-del', function() {
+            $(this).parent().parent().parent().remove();
+        });
+    })
+</script>
+</body>
+</html>
