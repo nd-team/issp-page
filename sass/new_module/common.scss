@@ -121,6 +121,7 @@ body{
       height: auto;
       display:flex;
       flex-direction: column;
+      overflow-x: hidden;
       h3{
         height: 45px;
         font-size: 16px;
