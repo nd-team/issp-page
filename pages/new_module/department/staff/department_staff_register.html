@@ -632,76 +632,76 @@
                     <ul>
                         <li class="big">
                             <label><em>称谓</em></label>
-                            <input type="text">
+                            <input type="text" value="大爷" disabled>
                         </li>
                         <li class="big">
                             <label><em>姓名</em></label>
-                            <input type="text">
+                            <input type="text" value="刘娜" disabled>
                         </li>
                         <li class="big">
                             <label><em>年龄</em></label>
-                            <input type="text" >
+                            <input type="text" value="17" disabled>
                         </li>
                         <li class="big">
                             <label><em>单位</em></label>
-                            <input type="text">
+                            <input type="text" value="先填着" disabled>
                         </li>
                         <li class="big">
                             <label><em>职位</em></label>
-                            <input type="text">
+                            <input type="text" value="先填着" disabled>
                         </li>
                         <li class="big">
                             <label><em>联系方式</em></label>
-                            <input type="text">
+                            <input type="text" value="12356623562" disabled>
                         </li>
                         <li class="but"><button>添加</button></li>
                     </ul>
                     <ul>
                         <li class="big">
                             <label><em>开始时间</em></label>
-                            <input type="text" class="add_image">
+                            <input type="text" value="2016-9-20" class="add_image">
                         </li>
                         <li class="big">
                             <label><em>结束时间</em></label>
-                            <input type="text" class="add_image">
+                            <input type="text" value="2016-9-21" class="add_image" disabled>
                         </li>
                         <li class="big">
                             <label><em>就读学校</em></label>
-                            <input type="text" >
+                            <input type="text" value="魔法学校" disabled>
                         </li>
                         <li class="big">
                             <label><em>毕业证书</em></label>
-                            <input type="text">
+                            <input type="text" value="一级魔法" disabled>
                         </li>
                         <li class="but"><button>添加</button></li>
                     </ul>
                     <ul>
                         <li class="big">
                             <label><em>开始时间</em></label>
-                            <input type="text" class="add_image">
+                            <input type="text" value="2016-9-20" class="add_image" disabled>
                         </li>
                         <li class="big">
                             <label><em>结束时间</em></label>
-                            <input type="text" class="add_image">
+                            <input type="text" value="2016-9-21" class="add_image" disabled>
                         </li>
                         <li class="big">
                             <label><em>公司名称</em></label>
-                            <input type="text" >
+                            <input type="text" value="爱笑魔法" disabled>
                         </li>
                         <li class="big">
                             <label><em>工作描述</em></label>
-                            <input type="text">
+                            <input type="text" value="负责开花" disabled>
                         </li>
                         <li class="but"><button>添加</button></li>
                     </ul>
                     <ul>
                         <li class="big">
                             <label><em>证书名称</em></label>
-                            <input type="text">
+                            <input type="text" value="先填着" disabled>
                         </li>
                         <li class="big">
                             <label><em>获得证书时间</em></label>
-                            <input type="text" class="add_image">
+                            <input type="text" value="2016-9-20" class="add_image" disabled>
                         </li>
                         <li class="but"><button>添加</button></li>
                     </ul>
@@ -720,8 +720,8 @@
     $(function () {
         $('.boa-body').find("ul").not("ul:nth-of-type(1),.footer").hide();
         $('.boa-title ul li').click(function () {
-                $(this).addClass('boa-cur').siblings().removeClass('boa-cur');
-                $(this).parents().find('.boa-body ul').eq($(this).index() ).show().siblings().hide();
+                    $(this).addClass('boa-cur').siblings().removeClass('boa-cur');
+                    $(this).parents('.boarding').find('.boa-body ul').eq($(this).index()).show().siblings().hide();
         })
     })
 </script>
