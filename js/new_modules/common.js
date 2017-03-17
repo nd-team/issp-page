@@ -97,10 +97,10 @@ $(document).ready(function(){
         console.info(listTitle);
         if(listTitle=="delete"){
             $('.content').children('.delete').show();
-            $("#modalbg").show()
+            $("#modalbg").show();
         }else if(listTitle=="review"){
             $('.content').children('.review').show();
-            $("#modalbg").show()
+            $("#modalbg").show();
         }else {
             $('.content').children("."+listTitle).show().siblings().hide();
         }
@@ -110,6 +110,18 @@ $(document).ready(function(){
         $('.delete').hide();
         $('.review').hide();
         $("#modalbg").hide()
+    });
+    //冻结
+    $('.content').on("click",".freeze button,.review button",function(){
+        $('.freeze').hide();
+        $('.review').hide();
+        $("#freeze").hide()
+    });
+    //解冻
+    $('.content').on("click",".unfreeze button,.review button",function(){
+        $('.unfreeze').hide();
+        $('.review').hide();
+        $("#unfreeze").hide()
     });
 
 

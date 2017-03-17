@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>油卡管理</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="油卡基本信息">
+    <meta name="description" content="油卡基本信息">
+    <link rel="stylesheet" href="/css/new_module/business/activity.css">
+    <link rel="stylesheet" href="/js/honor/pikaday.css">
+</head>
+<body>
+<section class="left-section">
+    <div class="header">
+        <a href="javascript:void(0)" title="issp平台" class="logo">
+            <img src="/images/new_module/organization/logo.png" alt="">
+        </a>
+        <span>issp平台</span>
+    </div>
+    <div class="nav">
+        <div class="nav-list">
+            <h3 class="header-menu"><i class="nav-arrow"></i>油卡管理</h3>
+            <ul class="menu">
+                <li class="active">
+                    <a href="/pages/new_module/company/oilCard/oil_base_info.html">油卡基本信息</a>
+                </li>
+                <li>
+                    <a href="/pages/new_module/company/oilCard/oil_collection_records.html">油卡领用记录</a>
+                </li>
+                <li>
+                    <a href="/pages/new_module/company/oilCard/oil_base_info.html">油卡充值记录</a>
+                </li>
+                <li>
+                    <a href="/pages/new_module/company/oilCard/oil_base_info.html">油卡使用记录</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="right-section">
+    <div class="top-content">
+        <div class="top-fixed">
+            <div class="top">
+                <div class="top-back">
+                    <a href="javascript:void(0)" class="back">返回</a>
+                </div>
+                <div class="search">
+                    <a href="javascript:void(0)" class="search-btn"></a>
+                    <select class="selected">
+                        <option value="0">张三三</option> <option value="1">张四四</option> <option value="2">张五五</option>
+                        <option value="3">张六六</option> <option value="4">张七七</option> <option value="5">张八八</option>
+                        <option value="6">张九九</option>
+                    </select>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+            <ul class="list width-10">
+                <li class="current" data-title="list">
+                    <a href="javascript:void(0)" class="lis" >列表<span>Tabulate</span></a>
+                </li>
+                <li data-title="add">
+                    <a href="javascript:void(0)" class="add" >添加<span>Add</span></a>
+                </li>
+                <li data-title="edit">
+                    <a href="javascript:void(0)" class="same-one" >编辑<span>Edit</span></a>
+                </li>
+                <li data-title="delete">
+                    <a href="javascript:void(0)" class="same-two" >删除<span>Delete</span></a>
+                </li>
+                <li data-title="freeze">
+                    <a href="javascript:void(0)" class="same-one">冻结<span>Freeze</span></a>
+                </li>
+                <li data-title="unfreeze">
+                    <a href="javascript:void(0)" class="same-two">解冻<span>Unfreeze</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content-tab list">
+                <ul class="table">
+                    <li class="list-head">
+                        <span></span>
+                        <span class="data-id">id</span>
+                        <span>油卡编号</span>
+                        <span>卡号</span>
+                        <span>主卡/副卡</span>
+                        <span>所属主卡</span>
+                        <span>办理人</span>
+                        <span>办理时间</span>
+                        <span>密码</span>
+                        <span></span>
+                    </li>
+                    <li class="list-all">
+                        <section>
+                            <div class="list-text odd">
+                                <p></p>
+                                <p class="data-id"></p>
+                                <p>SW20160622</p>
+                                <p>002</p>
+                                <p>主卡</p>
+                                <p>招商</p>
+                                <p>小明</p>
+                                <p>017-03-15</p>
+                                <p>you123456</p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">更多详细</a>
+                                </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-parent">
+                                            <span>使用地区</span> <span>项目名称</span> <span>使用状态</span> <span>使用状态更新时间</span>
+                                            <span>期初金额</span> <span>余额</span>
+                                        </p>
+                                        <p class="see-children">
+                                            <span>广州</span> <span></span> <span>issp服务平台</span> <span></span>
+                                            <span>正常</span> <span>2017-02-10</span> <span>20000</span> <span>1000</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="module">
+                                    <div class="see-module">
+                                        <p class="see-type">体现类型</p>
+                                        <p class="see-description"></p>
+                                        <button class="btn">关闭</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+                <footer class="footer">
+                    <div class="pagination-click" id="pages"></div>
+                </footer>
+            </div>
+            <div class="content-input add">
+                <div class="input-list">
+                    <section>
+                        <ul>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>油卡编号</em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>卡号</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>主卡/副卡</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>所属主卡</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>办理人</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>办理日期</em></label>
+                                <input type="text" id="date" class="date-icon">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>密码</em></label>
+                                <input type="password">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>期初金额</em></label>
+                                <input type="">
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="content-input edit">
+                <div class="input-list">
+                    <section>
+                        <ul>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>油卡编号</em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>卡号</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>主卡/副卡</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>所属主卡</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>办理人</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>办理日期</em></label>
+                                <input type="text" id="edit-date" class="date-icon">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>密码</em></label>
+                                <input type="password">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>期初金额</em></label>
+                                <input type="number">
+                            </li>
+                        </ul>
+                    </section>
+
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="delete">
+                <div class="del-head">
+                    <h5>温馨提示</h5>
+                </div>
+                <div class="del-con">
+                    <p>确定要删除这条数据？</p>
+                    <div class="btn">
+                        <button>确定</button>
+                        <button>取消</button>
+                    </div>
+                </div>
+            </div>
+            <div class="freeze">
+                <div class="del-head">
+                    <h5>温馨提示</h5>
+                </div>
+                <div class="del-con">
+                    <p>确定要冻结这条数据么？</p>
+                    <div class="btn">
+                        <button>确定</button>
+                        <button>取消</button>
+                    </div>
+                </div>
+            </div>
+            <div class="unfreeze">
+                <div class="del-head">
+                    <h5>温馨提示</h5>
+                </div>
+                <div class="del-con">
+                    <p>确定要解冻这条数据么？</p>
+                    <div class="btn">
+                        <button>确定</button>
+                        <button>取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<div id="modalbg"></div>
+<div id="freeze"></div>
+<div id="unfreeze"></div>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/honor/moment.min.js"></script>
+<script src="/laypage/laypage.js"></script>
+<script src="/js/honor/pikaday.js"></script>
+<script src="/js/new_modules/common.js"></script>
+<script type="text/javascript">
+    laypage({
+        cont : 'pages', //容器。值支持id名、原生dom对象，jquery对象,
+        pages : 20, //总页数
+        skin : 'molv', //皮肤
+        first : 1, //将首页显示为数字1,。若不显示，设置false即可
+        last : 20, //将尾页显示为总页数。若不显示，设置false即可
+    });
+
+    //日历
+    var date = new Pikaday({
+        numberOfMonths: 1,
+        field:jQuery('#date')[0],
+        minDate: new Date('2000-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020],
+        i18n: i18n,
+        onSelect: function() {
+            var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+            $('#datepicker').appendChild(date);
+        }
+    });
+
+    var edit = new Pikaday({
+        numberOfMonths: 1,
+        field:jQuery('#edit-date')[0],
+        minDate: new Date('2000-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020],
+        i18n: i18n,
+        onSelect: function() {
+            var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+            $('#datepicker').appendChild(date);
+        }
+    });
+
+</script>
+</body>
+</html>
