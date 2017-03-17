@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>招投标管理</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="标书资料">
+    <meta name="description" content="标书资料">
+    <link rel="stylesheet" href="/css/new_module/business/activity.css">
+</head>
+<body>
+<section class="left-section">
+    <div class="header">
+        <a href="javascript:void(0)" title="issp平台" class="logo">
+            <img src="/images/new_module/organization/logo.png" alt="">
+        </a>
+        <span>issp平台</span>
+    </div>
+    <div class="nav">
+        <div class="nav-list">
+            <h3 class="header-menu"><i class="nav-arrow"></i>招投标管理</h3>
+            <ul class="menu">
+                <li>
+                    <a href="/pages/new_module/company/bidding/bidding_webInfo.html">招投标网站信息</a>
+                </li>
+                <li>
+                    <a href="/pages/new_module/company/bidding/bidding_information.html">招标信息</a>
+                </li>
+                <li>
+                    <a href="/pages/new_module/company/bidding/bidding_questions_answers.html">投标答疑问题记录</a>
+                </li>
+                <li class="active">
+                    <a href="/pages/new_module/company/bidding/bidding_tender_info.html">标书资料</a>
+                </li>
+                <li>
+                    <a href="/pages/new_module/company/bidding/bidding_open_info.html">开标信息</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="right-section">
+    <div class="top-content">
+        <div class="top-fixed">
+            <div class="top">
+                <div class="top-back">
+                    <a href="javascript:void(0)" class="back">返回</a>
+                </div>
+                <div class="search">
+                    <a href="javascript:void(0)" class="search-btn"></a>
+                    <select class="selected">
+                        <option value="0">张三三</option> <option value="1">张四四</option> <option value="2">张五五</option>
+                        <option value="3">张六六</option> <option value="4">张七七</option> <option value="5">张八八</option>
+                        <option value="6">张九九</option>
+                    </select>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+            <ul class="list width-10">
+                <li class="current" data-title="list">
+                    <a href="javascript:void(0)" class="lis" >列表<span>Tabulate</span></a>
+                </li>
+                <li data-title="add">
+                    <a href="javascript:void(0)" class="add" >添加<span>Add</span></a>
+                </li>
+                <li data-title="edit">
+                    <a href="javascript:void(0)" class="same-two" >编辑<span>Edit</span></a>
+                </li>
+                <li data-title="delete">
+                    <a href="javascript:void(0)" class="same-one" >删除<span>Delete</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content-tab list">
+                <ul class="table">
+                    <li class="list-head">
+                        <span></span>
+                        <span class="data-id">id</span>
+                        <span>分类</span>
+                        <span>总权重</span>
+                        <span>部门</span>
+                        <span>权重比例</span>
+                        <span>项目分类</span>
+                        <span>决策层占比</span>
+                        <span>决策层人数</span>
+                        <span></span>
+                    </li>
+                    <li class="list-all">
+                        <section>
+                            <div class="list-text odd">
+                                <p></p>
+                                <p class="data-id"></p>
+                                <p>一线实施体系</p>
+                                <p>100%</p>
+                                <p>研发部</p>
+                                <p>1:1</p>
+                                <p>一线实施项目</p>
+                                <p>2:1</p>
+                                <p>22</p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">更多详细</a>
+                                </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-parent">
+                                            <span>技术管理人数占比</span><span>技术管理人数人数</span>
+                                            <span>行政管理人数占比</span><span>行政管理人数人数</span>
+                                            <span>执行层占比</span><span>执行层人数</span><span>总人数</span>
+                                        </p>
+                                        <p class="see-children">
+                                            <span>1:1</span> <span>20</span> <span>1:1</span> <span>3</span>
+                                            <span>2:1</span> <span>8</span><span>200</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="module">
+                                    <div class="see-module">
+                                        <p class="see-type">体现类型</p>
+                                        <p class="see-description"></p>
+                                        <button class="btn">关闭</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+                <footer class="footer">
+                    <div class="pagination-click" id="pages"></div>
+                </footer>
+            </div>
+            <div class="content-input add">
+                <div class="input-list">
+                    <section>
+                        <ul>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>分类</em></label>
+                                <select class="sele">
+                                    <option value="0">一线实施体系</option>
+                                    <option value="1">一线实施体系</option>
+                                    <option value="2">一线实施体系</option>
+                                    <option value="3">一线实施体系</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>总权重</em></label>
+                                <input type="text" value="100%">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>部门</em></label>
+                                <select class="sele">
+                                    <option value="0">研发部</option>
+                                    <option value="1">综合部</option>
+                                    <option value="2">商务运营部</option>
+                                    <option value="3">项目组</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>权重比例</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li>
+                                <label><em>项目分类</em></label>
+                                <select class="sele">
+                                    <option value="0">一线实施体系</option>
+                                    <option value="1">一线实施体系</option>
+                                    <option value="2">一线实施体系</option>
+                                    <option value="3">一线实施体系</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>决策层占比</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>决策层人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技术管理人数占比</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技术管理人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>行政管理人数占比</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>行政管理人数人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>执行层占比</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>执行层人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>总人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="content-input edit">
+                <div class="input-list">
+                    <section class="list-left">
+                        <ul>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>分类</em></label>
+                                <select class="sele">
+                                    <option value="0">一线实施体系</option>
+                                    <option value="1">一线实施体系</option>
+                                    <option value="2">一线实施体系</option>
+                                    <option value="3">一线实施体系</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>总权重</em></label>
+                                <input type="text" value="100%">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>部门</em></label>
+                                <select class="sele">
+                                    <option value="0">研发部</option>
+                                    <option value="1">综合部</option>
+                                    <option value="2">商务运营部</option>
+                                    <option value="3">项目组</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>权重比例</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li>
+                                <label><em>项目分类</em></label>
+                                <select class="sele">
+                                    <option value="0">一线实施体系</option>
+                                    <option value="1">一线实施体系</option>
+                                    <option value="2">一线实施体系</option>
+                                    <option value="3">一线实施体系</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>决策层占比</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>决策层人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技术管理人数占比</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技术管理人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>行政管理人数占比</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>行政管理人数人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>执行层占比</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>执行层人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>总人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="delete">
+                <div class="del-head">
+                    <h5>温馨提示</h5>
+                </div>
+                <div class="del-con">
+                    <p>确定要删除这条数据？</p>
+                    <div class="btn">
+                        <button>确定</button>
+                        <button>取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="modalbg"></div>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/laypage/laypage.js"></script>
+<script src="/js/new_modules/common.js"></script>
+<script type="text/javascript">
+    laypage({
+        cont : 'pages', //容器。值支持id名、原生dom对象，jquery对象,
+        pages : 20, //总页数
+        skin : 'molv', //皮肤
+        first : 1, //将首页显示为数字1,。若不显示，设置false即可
+        last : 20, //将尾页显示为总页数。若不显示，设置false即可
+    });
+</script>
+</body>
+</html>
