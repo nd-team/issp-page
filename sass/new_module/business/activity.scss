@@ -377,6 +377,9 @@
           }
         }
       }
+      .summary{
+        @extend .content-tab;
+      }
       //删除
       .delete{
         width:347px;
@@ -752,6 +755,12 @@
           }
         }
 
+      }
+      .upload-file{
+        @extend .updata-file;
+      }
+      .upload-file{
+        @extend .updata-file;
       }
     }
   }

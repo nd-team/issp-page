@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>油卡管理</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-    <meta name="keywords" content="油卡领用记录">
-    <meta name="description" content="油卡领用记录">
+    <meta name="keywords" content="油卡充值记录">
+    <meta name="description" content="油卡充值记录">
     <link rel="stylesheet" href="/css/new_module/business/activity.css">
     <link rel="stylesheet" href="/js/honor/pikaday.css">
 </head>
@@ -25,14 +25,14 @@
                 <li>
                     <a href="/pages/new_module/company/oilCard/oil_base_info.html">油卡基本信息</a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="/pages/new_module/company/oilCard/oil_collection_records.html">油卡领用记录</a>
                 </li>
-                <li>
-                    <a href="/pages/new_module/company/oilCard/oil_base_info.html">油卡充值记录</a>
+                <li class="active">
+                    <a href="/pages/new_module/company/oilCard/oil_recharge.html">油卡充值记录</a>
                 </li>
                 <li>
-                    <a href="/pages/new_module/company/oilCard/oil_base_info.html">油卡使用记录</a>
+                    <a href="/pages/new_module/company/oilCard/oil_used.html">油卡使用记录</a>
                 </li>
             </ul>
         </div>
@@ -68,11 +68,14 @@
                 <li data-title="delete">
                     <a href="javascript:void(0)" class="same-two" >删除<span>Delete</span></a>
                 </li>
-                <li data-title="review">
-                    <a href="javascript:void(0)" class="same-one">审核<span>Review</span></a>
+                <li data-title="upload-file">
+                    <a href="javascript:void(0)" class="same-one" >上传附件简历<span>upload</span></a>
                 </li>
-                <li data-title="remand">
-                    <a href="javascript:void(0)" class="same-two">归还 <span>Remand</span></a>
+                <li data-title="view-file">
+                    <a href="javascript:void(0)" class="same-two">查看附件<span>View</span></a>
+                </li>
+                <li data-title="summary">
+                    <a href="javascript:void(0)" class="same-one">油卡充值汇总<span>Summary</span></a>
                 </li>
             </ul>
         </div>
@@ -84,49 +87,24 @@
                         <span class="data-id">id</span>
                         <span>油卡编号</span>
                         <span>卡号</span>
-                        <span>主卡/副卡</span>
-                        <span>所属主卡</span>
-                        <span>领用日期</span>
-                        <span>地区</span>
-                        <span>领卡人</span>
-                        <span></span>
+                        <span>充值日期</span>
+                        <span>充值金额</span>
+                        <span>充值人</span>
+                        <span>充值方式</span>
+                        <span>初期余额</span>
                     </li>
                     <li class="list-all">
                         <section>
                             <div class="list-text odd">
                                 <p></p>
                                 <p class="data-id"></p>
-                                <p>SW20160622</p>
+                                <p>60622</p>
                                 <p>002</p>
-                                <p>主卡</p>
-                                <p>招商</p>
                                 <p>2017-02-20</p>
-                                <p>广州</p>
+                                <p>2093</p>
                                 <p>小明</p>
-                                <p>
-                                    <a href="javascript:void(0)" class="more">更多详细</a>
-                                </p>
-                            </div>
-                            <div class="can">
-                                <ul class="can-see">
-                                    <li>
-                                        <p class="see-parent">
-                                            <span>原因</span> <span>审核人</span> <span>审核意见</span> <span>归还日期</span>
-                                            <span>备注</span> <span>状态</span>
-                                        </p>
-                                        <p class="see-children">
-                                            <span>回公司</span> <span>小红</span> <span>高级神经活动</span>
-                                            <span>2017-03-20</span> <span>关键是关键</span> <span>未还</span>
-                                        </p>
-                                    </li>
-                                </ul>
-                                <div class="module">
-                                    <div class="see-module">
-                                        <p class="see-type">体现类型</p>
-                                        <p class="see-description"></p>
-                                        <button class="btn">关闭</button>
-                                    </div>
-                                </div>
+                                <p>银行卡</p>
+                                <p>1002</p>
                             </div>
                         </section>
                     </li>
@@ -140,7 +118,7 @@
                     <section>
                         <ul>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>选择油卡 </em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>油卡编号</em></label>
                                 <select class="sele">
                                     <option value="">01</option>
                                     <option value="">02</option>
@@ -148,34 +126,16 @@
                                     <option value="">04</option>
                                 </select>
                             </li>
-                            <li>
-                                <label><em>领用日期</em></label>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>充值金额</em></label>
+                                <input type="number">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>充值日期</em></label>
                                 <input type="text" id="date" class="date-icon">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
-                                <select class="sele">
-                                    <option value="">广州</option>
-                                    <option value="">佛山</option>
-                                    <option value="">江门</option>
-                                    <option value="">湛江</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>审核人</em></label>
-                                <select class="sele">
-                                    <option value="">小明</option>
-                                    <option value="">小明</option>
-                                    <option value="">小明</option>
-                                    <option value="">小明</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>原因</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>备注</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>充值方式</em></label>
                                 <input type="text">
                             </li>
                         </ul>
@@ -191,7 +151,7 @@
                     <section>
                         <ul>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>选择油卡 </em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>油卡编号</em></label>
                                 <select class="sele">
                                     <option value="">01</option>
                                     <option value="">02</option>
@@ -199,34 +159,16 @@
                                     <option value="">04</option>
                                 </select>
                             </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>充值金额</em></label>
+                                <input type="number">
+                            </li>
                             <li>
-                                <label><em>办理日期</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>充值日期</em></label>
                                 <input type="text" id="edit-date" class="date-icon">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
-                                <select class="sele">
-                                    <option value="">广州</option>
-                                    <option value="">佛山</option>
-                                    <option value="">江门</option>
-                                    <option value="">湛江</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>审核人</em></label>
-                                <select class="sele">
-                                    <option value="">小明</option>
-                                    <option value="">小明</option>
-                                    <option value="">小明</option>
-                                    <option value="">小明</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>原因</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>备注</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>充值方式</em></label>
                                 <input type="text">
                             </li>
                         </ul>
@@ -250,19 +192,40 @@
                     </div>
                 </div>
             </div>
-            <div class="freeze review">
-                <div class="del-head">
-                    <h5>温馨提示</h5>
-                </div>
-                <div class="del-con">
-                    <p>确定要审核这条数据么？</p>
-                    <div class="btn">
-                        <button>确定</button>
-                        <button>取消</button>
+            <div class="upload-file">
+                <section>
+                    <div class="file">
+                        <input type="file" id="updata-file">
+                        <label for="updata-file">
+                            <p>
+                                <img src="/images/new_module/data/updata_file.png" alt="">
+                                <span>选择文件</span>
+                            </p>
+                        </label>
+                        <span class="imPrompt">
+                            <i><img src="/images/new_module/data/prompt.png"></i>
+                            带有
+                            <i><img src="/images/new_module/data/mandatory.png"></i>
+                            的为必填项
+                        </span>
                     </div>
-                </div>
+                    <div class="file-right">
+                        <div>
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>文件名</em></label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>文件简述</em></label>
+                            <textarea></textarea>
+                        </div>
+                        <div class="btn">
+                            <button>浏览</button>
+                            <button>上传</button>
+                        </div>
+                    </div>
+                </section>
             </div>
-            <div class="freeze remand">
+            <div class="delete view-file">
                 <div class="del-head">
                     <h5>温馨提示</h5>
                 </div>
@@ -273,6 +236,64 @@
                         <button>取消</button>
                     </div>
                 </div>
+            </div>
+            <div class="content-input summary">
+                <div class="input-list">
+                    <section>
+                        <ul>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>卡号</em></label>
+                                <select class="sele">
+                                    <option value="">01</option>
+                                    <option value="">02</option>
+                                    <option value="">03</option>
+                                    <option value="">04</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>开始日期</em></label>
+                                <input type="text" id="start" class="date-icon">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>结束日期</em></label>
+                                <input type="text" id="end" class="date-icon">
+                            </li>
+                        </ul>
+                    </section>
+
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必选</span>
+                    <button>汇总</button>
+                </p>
+                <ul class="table">
+                    <li class="list-head">
+                        <span></span>
+                        <span class="data-id">id</span>
+                        <span>油卡编号</span>
+                        <span>卡号</span>
+                        <span>充值日期</span>
+                        <span>充值金额</span>
+                        <span>充值人</span>
+                        <span>充值方式</span>
+                        <span>初期余额</span>
+                    </li>
+                    <li class="list-all">
+                        <section>
+                            <div class="list-text odd">
+                                <p></p>
+                                <p class="data-id"></p>
+                                <p>60622</p>
+                                <p>002</p>
+                                <p>2017-02-20</p>
+                                <p>2093</p>
+                                <p>小明</p>
+                                <p>银行卡</p>
+                                <p>1002</p>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -313,6 +334,30 @@
     var edit = new Pikaday({
         numberOfMonths: 1,
         field:jQuery('#edit-date')[0],
+        minDate: new Date('2000-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020],
+        i18n: i18n,
+        onSelect: function() {
+            var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+            $('#datepicker').appendChild(date);
+        }
+    });
+    var start = new Pikaday({
+        numberOfMonths: 1,
+        field:jQuery('#start')[0],
+        minDate: new Date('2000-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020],
+        i18n: i18n,
+        onSelect: function() {
+            var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+            $('#datepicker').appendChild(date);
+        }
+    });
+    var end = new Pikaday({
+        numberOfMonths: 1,
+        field:jQuery('#end')[0],
         minDate: new Date('2000-01-01'),
         maxDate: new Date('2020-12-31'),
         yearRange: [2000,2020],
