@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>招投标管理</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-    <meta name="keywords" content="招标信息">
-    <meta name="description" content="招标信息">
+    <meta name="keywords" content="投标答疑问题记录">
+    <meta name="description" content="投标答疑问题记录">
     <link rel="stylesheet" href="/css/new_module/business/activity.css">
 </head>
 <body>
@@ -22,19 +22,19 @@
             <h3 class="header-menu"><i class="nav-arrow"></i>招投标管理</h3>
             <ul class="menu">
                 <li>
-                    <a href="/pages/new_module/company/bidding/bidding_webInfo.html">招投标网站信息</a>
+                    <a href="/pages/new_module/business/bidding/bidding_webInfo.html">招投标网站信息</a>
+                </li>
+                <li>
+                    <a href="/pages/new_module/business/bidding/bidding_information.html">招标信息</a>
                 </li>
                 <li class="active">
-                    <a href="/pages/new_module/company/bidding/bidding_information.html">招标信息</a>
+                    <a href="/pages/new_module/business/bidding/bidding_questions_answers.html">投标答疑问题记录</a>
                 </li>
                 <li>
-                    <a href="/pages/new_module/company/bidding/bidding_questions_answers.html">投标答疑问题记录</a>
+                    <a href="/pages/new_module/business/bidding/bidding_tender_info.html">标书资料</a>
                 </li>
                 <li>
-                    <a href="/pages/new_module/company/bidding/bidding_tender_info.html">标书资料</a>
-                </li>
-                <li>
-                    <a href="/pages/new_module/company/bidding/bidding_open_info.html">开标信息</a>
+                    <a href="/pages/new_module/business/bidding/bidding_open_info.html">开标信息</a>
                 </li>
             </ul>
         </div>
@@ -78,13 +78,13 @@
                     <li class="list-head">
                         <span></span>
                         <span class="data-id">id</span>
-                        <span>网站名称</span>
-                        <span>网址</span>
-                        <span>招投标类型</span>
-                        <span>业务类型</span>
-                        <span>业务方向科目</span>
-                        <span>标书模块</span>
-                        <span>招标编号</span>
+                        <span>分类</span>
+                        <span>总权重</span>
+                        <span>部门</span>
+                        <span>权重比例</span>
+                        <span>项目分类</span>
+                        <span>决策层占比</span>
+                        <span>决策层人数</span>
                         <span></span>
                     </li>
                     <li class="list-all">
@@ -93,12 +93,12 @@
                                 <p></p>
                                 <p class="data-id"></p>
                                 <p>一线实施体系</p>
-                                <p>未知</p>
-                                <p>未知</p>
-                                <p>未知</p>
-                                <p>未知</p>
-                                <p>未知1</p>
-                                <p>007</p>
+                                <p>100%</p>
+                                <p>研发部</p>
+                                <p>1:1</p>
+                                <p>一线实施项目</p>
+                                <p>2:1</p>
+                                <p>22</p>
                                 <p>
                                     <a href="javascript:void(0)" class="more">更多详细</a>
                                 </p>
@@ -107,32 +107,13 @@
                                 <ul class="can-see">
                                     <li>
                                         <p class="see-parent">
-                                            <span>项目名称</span><span>报名时间</span>
-                                            <span>投标时间</span><span>投标资格要求</span>
-                                            <span>省份</span><span>地市</span><span>账号</span><span>密码</span>
+                                            <span>技术管理人数占比</span><span>技术管理人数人数</span>
+                                            <span>行政管理人数占比</span><span>行政管理人数人数</span>
+                                            <span>执行层占比</span><span>执行层人数</span><span>总人数</span>
                                         </p>
                                         <p class="see-children">
-                                            <span>issp服务平台</span> <span>2017-03-18</span> <span>2017-04-18</span> <span>不限</span>
-                                            <span>广东省</span> <span>广州市</span><span>028394</span><span>123456</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="see-parent">
-                                            <span>注册人</span><span>注册信息</span>
-                                            <span>状态</span><span>购买标书时间</span>
-                                            <span>价格</span><span>购买标书要求</span><span>交保证金时间</span><span>交保证金方式</span>
-                                        </p>
-                                        <p class="see-children">
-                                            <span>小明</span> <span>西欧的感觉</span> <span>已注册</span> <span>2017-03-16</span>
-                                            <span>5858</span> <span>可供而空</span><span>2017-03-22</span><span>现金</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="see-parent">
-                                            <span>保证金退回时间</span><span>备注</span>
-                                        </p>
-                                        <p class="see-children">
-                                            <span>2017-06-06</span> <span>不还不还不还</span>
+                                            <span>1:1</span> <span>20</span> <span>1:1</span> <span>3</span>
+                                            <span>2:1</span> <span>8</span><span>200</span>
                                         </p>
                                     </li>
                                 </ul>
@@ -156,77 +137,51 @@
                     <section>
                         <ul>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>网站名称</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>分类</em></label>
                                 <select class="sele">
-                                    <option value="0">网站名称</option>
-                                    <option value="1">网站名称</option>
-                                    <option value="2">网站名称</option>
-                                    <option value="3">网站名称</option>
+                                    <option value="0">一线实施体系</option>
+                                    <option value="1">一线实施体系</option>
+                                    <option value="2">一线实施体系</option>
+                                    <option value="3">一线实施体系</option>
                                 </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>网址</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>总权重</em></label>
+                                <input type="text" value="100%">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>部门</em></label>
                                 <select class="sele">
-                                    <option value="0">网址</option>
-                                    <option value="1">网址</option>
-                                    <option value="2">网址</option>
-                                    <option value="3">网址</option>
+                                    <option value="0">研发部</option>
+                                    <option value="1">综合部</option>
+                                    <option value="2">商务运营部</option>
+                                    <option value="3">项目组</option>
                                 </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>招投标类型</em></label>
-                                <select class="sele">
-                                    <option value="0">招投标类型</option>
-                                    <option value="1">招投标类型</option>
-                                    <option value="2">招投标类型</option>
-                                    <option value="3">招投标类型</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务类型</em></label>
-                                <select class="sele">
-                                    <option value="0">业务类型</option>
-                                    <option value="1">业务类型</option>
-                                    <option value="2">业务类型</option>
-                                    <option value="3">业务类型</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务方向科目</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>标书模块</em></label>
-                                <select class="sele">
-                                    <option value="0">标书模块</option>
-                                    <option value="1">标书模块</option>
-                                    <option value="2">标书模块</option>
-                                    <option value="3">标书模块</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>招标编号</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目名称</em></label>
-                                <input type="text">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>权重比例</em></label>
+                                <input type="number" name="number" min="1">
                             </li>
                             <li>
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>报名时间</em></label>
-                                <input type="text" id="name-time" class="date-icon">
-                            </li>
-                            <li>
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>投标时间</em></label>
-                                <input type="text" id="bidding-time" class="date-icon">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>投标资格要求</em></label>
-                                <input type="text">
+                                <label><em>项目分类</em></label>
+                                <select class="sele">
+                                    <option value="0">一线实施体系</option>
+                                    <option value="1">一线实施体系</option>
+                                    <option value="2">一线实施体系</option>
+                                    <option value="3">一线实施体系</option>
+                                </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>省份</em></label>
-                                <input type="text" name="number" min="1">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>决策层占比</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>决策层人数</em></label>
+                                <input type="number" name="number" min="1">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技术管理人数占比</em></label>
+                                <input type="number" name="number" min="1">
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技术管理人数</em></label>
