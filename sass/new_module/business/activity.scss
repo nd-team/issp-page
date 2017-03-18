@@ -765,6 +765,12 @@
       .upload-file{
         @extend .updata-file;
       }
+      .upload{
+        @extend .updata-file;
+      }
+      .upload{
+        @extend .updata-file;
+      }
     }
   }
 }
