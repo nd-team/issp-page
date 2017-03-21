@@ -377,6 +377,12 @@
           }
         }
       }
+      .summary{
+        @extend .content-tab;
+      }
+      .total{
+        @extend .content-tab;
+      }
       //删除
       .delete{
         width:347px;
@@ -431,6 +437,12 @@
             }
           }
         }
+      }
+      .freeze{
+        @extend .delete;
+      }
+      .unfreeze{
+        @extend .delete;
       }
       //审核
       .review{
@@ -747,6 +759,18 @@
         }
 
       }
+      .upload-file{
+        @extend .updata-file;
+      }
+      .upload-file{
+        @extend .updata-file;
+      }
+      .upload{
+        @extend .updata-file;
+      }
+      .upload{
+        @extend .updata-file;
+      }
     }
   }
 }
@@ -773,3 +797,24 @@
 .pika-button:hover {
   background: #00c6ff;
 }
+#freeze{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:9;
+  background:rgba(255,255,255,0.3);
+  display:none;
+}
+#unfreeze{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:9;
+  background:rgba(255,255,255,0.3);
+  display:none;
+}
+
