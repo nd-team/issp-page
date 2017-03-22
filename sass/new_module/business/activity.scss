@@ -386,6 +386,9 @@
       .total{
         @extend .content-tab;
       }
+      .sign-summary{
+        @extend .content-tab;
+      }
       //删除
       .delete{
         width:347px;
