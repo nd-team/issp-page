@@ -8,6 +8,7 @@
     <meta name="keywords" content="合同单价资料">
     <meta name="description" content="合同单价资料">
     <link rel="stylesheet" href="/css/new_module/business/activity.css">
+    <link rel="stylesheet" href="/js/honor/pikaday.css">
 </head>
 <body>
     <section class="left-section">
@@ -68,7 +69,13 @@
                         <a href="javascript:void(0)" class="same-one" >上传附件<span>Upload</span></a>
                     </li>
                     <li data-title="Download">
-                        <a href="javascript:void(0)" class="same-two" >查看附件下载<span>Download</span></a>
+                        <a href="javascript:void(0)" class="same-two" >附件下载<span>Download</span></a>
+                    </li>
+                    <li data-title="summary">
+                        <a href="javascript:void(0)" class="same-one" >汇总<span>Summary</span></a>
+                    </li>
+                    <li data-title="search">
+                        <a href="javascript:void(0)" class="same-two" >搜索<span>Search</span></a>
                     </li>
                 </ul>
             </div>
@@ -78,15 +85,21 @@
                         <li class="list-head">
                             <span></span>
                             <span class="data-id">id</span>
-                            <span>合同类型名称</span>
-                            <span>备注</span>
-                            <span>创建时间</span>
+                            <span>客户名称</span>
+                            <span>项目</span>
+                            <span>地区</span>
+                            <span>适用日期</span>
+                            <span>附件</span>
+                            <span>使用状态</span>
                         </li>
                         <li class="list-all">
                             <section>
                                 <div class="list-text odd">
                                     <p></p>
                                     <p class="data-id"></p>
+                                    <p>未知</p>
+                                    <p>未知</p>
+                                    <p>未知</p>
                                     <p>未知</p>
                                     <p>未知</p>
                                     <p>未知</p>
@@ -103,12 +116,36 @@
                         <section>
                             <ul>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>合同类型名称</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>客户名称</em></label>
                                     <input type="text">
                                 </li>
-                                <li>
-                                    <label><em>备注</em></label>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目</em></label>
                                     <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
+                                    <select class="sele">
+                                        <option value="0">广州</option>
+                                        <option value="1">北京</option>
+                                        <option value="2">深圳</option>
+                                        <option value="3">佛山</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>适用时间</em></label>
+                                    <input type="text" id="applicable" class="date-icon">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>使用状态</em></label>
+                                    <select class="sele">
+                                        <option value="0">正常</option>
+                                        <option value="1">过期</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label><em>附件</em></label>
+                                    <input type="file" class="file">
                                 </li>
                             </ul>
                         </section>
@@ -122,16 +159,37 @@
                     <div class="input-list">
                         <section class="list-left">
                             <ul>
-                                <li class="required hidden">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>合同类型名称</em></label>
-                                    <input type="text">
-                                </li><li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>合同类型名称</em></label>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>客户名称</em></label>
                                     <input type="text">
                                 </li>
-                                <li>
-                                    <label><em>备注</em></label>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目</em></label>
                                     <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
+                                    <select class="sele">
+                                        <option value="0">广州</option>
+                                        <option value="1">北京</option>
+                                        <option value="2">深圳</option>
+                                        <option value="3">佛山</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>适用时间</em></label>
+                                    <input type="text" id="applicable_edit" class="date-icon">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>使用状态</em></label>
+                                    <select class="sele">
+                                        <option value="0">正常</option>
+                                        <option value="1">过期</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label><em>附件</em></label>
+                                    <input type="file" class="file">
                                 </li>
                             </ul>
                         </section>
@@ -152,112 +210,6 @@
                             <button>取消</button>
                         </div>
                     </div>
-                </div>
-                <div class="content-input check">
-                    <div class="input-list">
-                        <section class="list-left">
-                            <ul>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目名称</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>资格要求</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>标书编号</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>同类项目经验</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>主营业务收入</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>专业资质认证</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>管理体系认证</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目经理素质</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>团队成员素质</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>资源投入</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技术方案</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>额外承诺</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>补充资料</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>经济分册</em></label>
-                                    <input type="text">
-                                </li>
-                            </ul>
-                        </section>
-                    </div>
-                    <p class="dataBottom">
-                        <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
-                        <button>提交</button>
-                    </p>
-                </div>
-                <div class="content-input export">
-                    <div class="input-list">
-                        <section class="list-left">
-                            <ul>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
-                                    <select class="sele">
-                                        <option value="0">北京</option>
-                                        <option value="1">广州</option>
-                                        <option value="2">湛江</option>
-                                        <option value="3">佛山</option>
-                                    </select>
-                                </li>
-                            </ul>
-                        </section>
-                    </div>
-                    <p class="dataBottom">
-                        <button>导出明细</button>
-                    </p>
-                </div>
-                <div class="upload">
-                    <section>
-                        <div class="file">
-                            <input type="file" id="updata-file">
-                            <label for="updata-file">
-                                <p>
-                                    <img src="/images/new_module/data/updata_file.png" alt="">
-                                    <span>选择文件</span>
-                                </p>
-                            </label>
-                        </div>
-                        <div class="file-right">
-                            <div class="btn">
-                                <button>上传</button>
-                            </div>
-                        </div>
-                    </section>
                 </div>
                 <div class="upload-file">
                     <section>
@@ -292,12 +244,52 @@
                         </div>
                     </section>
                 </div>
+                <div class="content-input summary">
+                    <div class="input-list">
+                        <section class="list-left">
+                            <ul>
+                                <li>
+                                    <label><em>地区</em></label>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <label><em>客户名称</em></label>
+                                    <input type="text">
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <p class="dataBottom">
+                        <button>汇总</button>
+                    </p>
+                </div>
+                <div class="content-input search">
+                    <div class="input-list">
+                        <section class="list-left">
+                            <ul>
+                                <li>
+                                    <label><em>地区</em></label>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <label><em>客户名称</em></label>
+                                    <input type="text">
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <p class="dataBottom">
+                        <button>提交</button>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
     <div id="modalbg"></div>
     <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/honor/moment.min.js"></script>
     <script src="/laypage/laypage.js"></script>
+    <script src="/js/honor/pikaday.js"></script>
     <script src="/js/new_modules/common.js"></script>
     <script type="text/javascript">
         laypage({
@@ -306,6 +298,31 @@
             skin : 'molv', //皮肤
             first : 1, //将首页显示为数字1,。若不显示，设置false即可
             last : 20, //将尾页显示为总页数。若不显示，设置false即可
+        });
+        //日历
+        var applicable = new Pikaday({
+            numberOfMonths: 1,
+            field:jQuery('#applicable')[0],
+            minDate: new Date('2000-01-01'),
+            maxDate: new Date('2020-12-31'),
+            yearRange: [2000,2020],
+            i18n: i18n,
+            onSelect: function() {
+                var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+                $('#datepicker').appendChild(date);
+            }
+        });
+        var applicable_edit = new Pikaday({
+            numberOfMonths: 1,
+            field:jQuery('#applicable_edit')[0],
+            minDate: new Date('2000-01-01'),
+            maxDate: new Date('2020-12-31'),
+            yearRange: [2000,2020],
+            i18n: i18n,
+            onSelect: function() {
+                var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+                $('#datepicker').appendChild(date);
+            }
         });
     </script>
 </body>

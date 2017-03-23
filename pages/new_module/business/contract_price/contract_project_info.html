@@ -25,10 +25,10 @@
                         <a href="/pages/new_module/business/contract_price/contract_project_info.html">合同项目基本信息</a>
                     </li>
                     <li>
-                        <a href="/pages/new_module/business/contract_price/contract_project_info.html">合同单价资料</a>
+                        <a href="/pages/new_module/business/contract_price/contract_price_info.html">合同单价资料</a>
                     </li>
                     <li>
-                        <a href="/pages/new_module/business/contract_price/contract_project_info.html">节点标准</a>
+                        <a href="/pages/new_module/business/contract_price/contract_node_ready.html">节点标准</a>
                     </li>
                 </ul>
             </div>
@@ -55,21 +55,6 @@
                     <li class="current" data-title="list">
                         <a href="javascript:void(0)" class="lis" >列表<span>Tabulate</span></a>
                     </li>
-                    <li data-title="add">
-                        <a href="javascript:void(0)" class="add" >添加<span>Add</span></a>
-                    </li>
-                    <li data-title="edit">
-                        <a href="javascript:void(0)" class="same-two" >编辑<span>Edit</span></a>
-                    </li>
-                    <li data-title="delete">
-                        <a href="javascript:void(0)" class="same-one" >删除<span>Delete</span></a>
-                    </li>
-                    <li data-title="upload-file">
-                        <a href="javascript:void(0)" class="same-one" >上传附件<span>Upload</span></a>
-                    </li>
-                    <li data-title="Download">
-                        <a href="javascript:void(0)" class="same-two" >查看附件下载<span>Download</span></a>
-                    </li>
                 </ul>
             </div>
             <div class="content">
@@ -78,18 +63,54 @@
                         <li class="list-head">
                             <span></span>
                             <span class="data-id">id</span>
-                            <span>合同类型名称</span>
-                            <span>备注</span>
-                            <span>创建时间</span>
+                            <span>地区</span>
+                            <span>项目组</span>
+                            <span>项目内部名称</span>
+                            <span>派工项目名称</span>
+                            <span>派工合同号</span>
+                            <span>派工单编号</span>
+                            <span>开工时间</span>
+                            <span></span>
                         </li>
                         <li class="list-all">
                             <section>
                                 <div class="list-text odd">
                                     <p></p>
                                     <p class="data-id"></p>
+                                    <p>广州</p>
                                     <p>未知</p>
                                     <p>未知</p>
                                     <p>未知</p>
+                                    <p>未知</p>
+                                    <p>未知</p>
+                                    <p>未知</p>
+                                    <p>
+                                        <a href="javascript:void(0)" class="more">更多详细</a>
+                                    </p>
+                                </div>
+                                <div class="can">
+                                    <ul class="can-see">
+                                        <li>
+                                            <p class="see-parent">
+                                                <span>完工时间</span><span>合同金额</span>
+                                                <span>派工单价</span><span>合同规模数量</span>
+                                                <span>回款周期</span><span>重点性</span>
+                                                <span>难易成度</span>
+                                            </p>
+                                            <p class="see-children">
+                                                <span>未知</span> <span>未知</span><span>未知</span>
+                                                <span>未知</span> <span>未知</span><span>未知</span>
+                                                <span>未知</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <div class="module">
+                                        <div class="see-module">
+                                            <p class="see-type">体现类型</p>
+                                            <p class="see-description"></p>
+                                            <button class="btn">关闭</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </section>
                         </li>
@@ -97,200 +118,6 @@
                     <footer class="footer">
                         <div class="pagination-click" id="pages"></div>
                     </footer>
-                </div>
-                <div class="content-input add">
-                    <div class="input-list">
-                        <section>
-                            <ul>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>合同类型名称</em></label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label><em>备注</em></label>
-                                    <input type="text">
-                                </li>
-                            </ul>
-                        </section>
-                    </div>
-                    <p class="dataBottom">
-                        <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
-                        <button>提交</button>
-                    </p>
-                </div>
-                <div class="content-input edit">
-                    <div class="input-list">
-                        <section class="list-left">
-                            <ul>
-                                <li class="required hidden">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>合同类型名称</em></label>
-                                    <input type="text">
-                                </li><li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>合同类型名称</em></label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label><em>备注</em></label>
-                                    <input type="text">
-                                </li>
-                            </ul>
-                        </section>
-                    </div>
-                    <p class="dataBottom">
-                        <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
-                        <button>提交</button>
-                    </p>
-                </div>
-                <div class="delete">
-                    <div class="del-head">
-                        <h5>温馨提示</h5>
-                    </div>
-                    <div class="del-con">
-                        <p>确定要删除这条数据？</p>
-                        <div class="btn">
-                            <button>确定</button>
-                            <button>取消</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-input check">
-                    <div class="input-list">
-                        <section class="list-left">
-                            <ul>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目名称</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>资格要求</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>标书编号</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>同类项目经验</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>主营业务收入</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>专业资质认证</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>管理体系认证</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目经理素质</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>团队成员素质</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>资源投入</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技术方案</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>额外承诺</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>补充资料</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>经济分册</em></label>
-                                    <input type="text">
-                                </li>
-                            </ul>
-                        </section>
-                    </div>
-                    <p class="dataBottom">
-                        <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
-                        <button>提交</button>
-                    </p>
-                </div>
-                <div class="content-input export">
-                    <div class="input-list">
-                        <section class="list-left">
-                            <ul>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
-                                    <select class="sele">
-                                        <option value="0">北京</option>
-                                        <option value="1">广州</option>
-                                        <option value="2">湛江</option>
-                                        <option value="3">佛山</option>
-                                    </select>
-                                </li>
-                            </ul>
-                        </section>
-                    </div>
-                    <p class="dataBottom">
-                        <button>导出明细</button>
-                    </p>
-                </div>
-                <div class="upload">
-                    <section>
-                        <div class="file">
-                            <input type="file" id="updata-file">
-                            <label for="updata-file">
-                                <p>
-                                    <img src="/images/new_module/data/updata_file.png" alt="">
-                                    <span>选择文件</span>
-                                </p>
-                            </label>
-                        </div>
-                        <div class="file-right">
-                            <div class="btn">
-                                <button>上传</button>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="upload-file">
-                    <section>
-                        <div class="file">
-                            <input type="file" id="updata">
-                            <label for="updata-file">
-                                <p>
-                                    <img src="/images/new_module/data/updata_file.png" alt="">
-                                    <span>选择文件</span>
-                                </p>
-                            </label>
-                            <span class="imPrompt">
-                                <i><img src="/images/new_module/data/prompt.png"></i>
-                                带有
-                                <i><img src="/images/new_module/data/mandatory.png"></i>
-                                的为必填项
-                            </span>
-                        </div>
-                        <div class="file-right">
-                            <div>
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>文件名</em></label>
-                                <input type="text">
-                            </div>
-                            <div>
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>文件简述</em></label>
-                                <textarea></textarea>
-                            </div>
-                            <div class="btn">
-                                <button>浏览</button>
-                                <button>上传</button>
-                            </div>
-                        </div>
-                    </section>
                 </div>
             </div>
         </div>
