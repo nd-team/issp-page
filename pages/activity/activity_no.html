@@ -8,7 +8,7 @@
 
 </head>
 <body>
-<header>
+ <header>
     <a href="/pages/activity/activity_index.html" class="chat-life" title="生活价值平台">
         <svg role="img" class="life">
             <use xlink:href="#life"></use>
@@ -16,12 +16,12 @@
     </a>
     <ul class="header-icon">
         <li>
-            <a href="/pages/honor/bonus.html">
+            <a href="/pages/honor/bonus_add.html">
                 <svg role="img" class="honor">
                     <use xlink:href="#honor"></use>
                 </svg>
             </a>
-            <a href="/pages/honor/bonus.html" class="icon-text">荣誉</a>
+            <a href="/pages/honor/bonus_add.html" class="icon-text">荣誉</a>
         </li>
         <li>
             <a href="/pages/reward/reward_circle.html">
@@ -31,13 +31,14 @@
             </a>
             <a href="/pages/reward/reward_circle.html" class="icon-text">奖励</a>
         </li>
+        <!--如果没有登陆弹出登录框-->
         <li>
             <a href="/pages/chatRoom/private_chat.html">
                 <svg role="img" class="bbs">
                     <use xlink:href="#bbs"></use>
                 </svg>
             </a>
-            <a href="/pages/chatRoom/moving.html" class="icon-text">聊天室</a>
+            <a href="/pages/chatRoom/private_chat.html" class="icon-text">聊天室</a>
         </li>
         <li>
             <a href="/pages/activity/activity_all.html">
@@ -56,34 +57,28 @@
             <a href="/pages/activity/social.html" class="icon-text">社交</a>
         </li>
         <li>
-            <a href="/pages/activity/indiana.html">
-                <svg role="img" class="yiyuan">
-                    <use xlink:href="#yiyuan"></use>
-                </svg>
-            </a>
-            <a href="/pages/activity/indiana.html" class="icon-text">夺宝</a>
-        </li>
-        <li>
-            <a href="/pages/funding/crowd_funding.html">
+            <a href="/pages/funding/indiana.html">
                 <svg role="img" class="zongchou">
                     <use xlink:href="#zongchou"></use>
                 </svg>
             </a>
-            <a href="/pages/funding/crowd_funding.html" class="icon-text">众筹</a>
+            <a href="/pages/funding/indiana.html" class="icon-text">众筹</a>
         </li>
     </ul>
-    <a href="/pages/activity/activity_no.html" class="myself">
+    <a href="javascript:void(0)" class="myself">
         <svg role="img" class="activity">
             <use xlink:href="#activity"></use>
         </svg>
     </a>
     <div class="search-input">
-        <a href="javascript:void(0)" class="input-box">
+        <div class="input-box">
             <input type="text" class="search" placeholder="输入要搜索的内容">
-            <svg role="img" class="magnifier">
-                <use xlink:href="#magnifier"></use>
-            </svg>
-        </a>
+            <a href="javascript:void(0)">
+                <svg role="img" class="magnifier">
+                    <use xlink:href="#magnifier"></use>
+                </svg>
+            </a>
+        </div>
         <div class="photo">
             <a href="javascript:void(0)" class="head-photo">
                 <img src="/images/honor/user01.jpg" alt="">
@@ -114,13 +109,13 @@
     </div>
 </header>
 <div class="content">
-      <div class="act-head2">
+   <div class="act-head2">
                 <a href="javascript:void(0)" class="cur">全部活动</a>
                 <a href="javascript:void(0)">进行中的活动</a>
                 <a href="javascript:void(0)">已结束的活动</a>
-                <a href="javascript:void(0)"><em><img src="/images/activity/notice.jpg"/></em>我要举办活动</a>
+                <a href="javascript:void(0)" data-title="login-box"><em><img src="/images/activity/notice.jpg"/></em>我要举办活动</a>
       </div>
-    <div class="have-in-hand">
+   <div class="have-in-hand">
         <p class="act-title">
             <svg role="img" class="all_activity">
                 <use xlink:href="#all_activity"></use>
@@ -161,7 +156,7 @@
                         </a>
                     </p>
                 </div>
-                <a href="javascript:void(0)" class="act-img"><img src="/images/activity/activity2.jpg"/></a>
+                <a href="javascript:void(0)" class="act-img"><img src="/images/activity/02.jpg"/></a>
             </li>
             <li>
                 <div class="sign-up">
@@ -196,7 +191,7 @@
                         </a>
                     </p>
                 </div>
-                <a href="javascript:void(0)" class="act-img"><img src="/images/activity/activity3.jpg"/></a>
+                <a href="javascript:void(0)" class="act-img"><img src="/images/activity/02.jpg"/></a>
             </li>
             <li>
                 <div class="sign-up">
@@ -232,7 +227,7 @@
                     </p>
                 </div>
                 <div class="act-img02">
-                    <p class="act-evaluate03"><img src="/images/activity/activity4.jpg"/></p>
+                    <p class="act-evaluate03"><img src="/images/activity/02.jpg"/></p>
                     <p class="act-evaluate01">
                         <span>路途——北京</span>
                         <span>活动已结束</span>
@@ -274,7 +269,7 @@
                     </p>
                 </div>
                 <div class="act-img03">
-                    <p class="act-evaluate03"><img src="/images/activity/activity5.jpg"/></p>
+                    <p class="act-evaluate03"><img src="/images/activity/02.jpg"/></p>
                     <p class="act-evaluate01">
                         <span>路途——北京</span>
                         <span>活动已结束</span>
@@ -292,6 +287,62 @@
             <a href="javascript:void(0)" class="next">下一页</a>
         </div>
     </div>
+    <!--未登陆的活动-->
+    <div id="modal">
+        <div class="login-box m-con">
+            <div class="box-title">
+                <h3>
+                    <img src="/images/reward/login.png"/>
+                </h3>
+                <span>
+                         <i class="lifed"><img src="/images/reward/life.png"/></i>
+                         <i class="close"><img src="/images/reward/close.png"/></i>
+                     </span>
+            </div>
+            <div class="login-tabs">
+                <a href="javascript:void(0)" class="current">帐号</a>
+                <a href="javascript:void(0)">二维码登录</a>
+            </div>
+            <div class="login-big">
+                <div class="login-page">
+                    <form>
+                        <ul>
+                            <li class="form-item">
+                                <label>
+                                    <svg role="img" class="woman">
+                                        <use xlink:href="#woman"></use>
+                                    </svg>
+                                </label>
+                                <input type="text" placeholder="IKE0000" required name="username" >
+                            </li>
+                            <li class="form-item">
+                                <label>
+                                    <svg role="img" class="hkey">
+                                        <use xlink:href="#hkey"></use>
+                                    </svg>
+                                </label>
+                                <input type="password" name="password" placeholder="************">
+                            </li>
+                            <li class="form-rem">
+                                <p>
+                                    <input type="checkbox" data-style="checkeds" class="checkedNum" />
+                                    <label class="icon"></label>
+                                    <span>记住我</span>
+                                </p>
+                                <a href="/pages/forget_password.html">忘记密码？</a>
+                            </li>
+                        </ul>
+                        <button class="please-login">登录</button>
+                    </form>
+                </div>
+                <div class="login-page">
+                    <img src="/images/QR-code.jpg"/>
+                    <p>扫一扫登录</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalbg"></div>
 </div>
 <footer>
     <div class="wrap">
@@ -341,5 +392,6 @@
 <script src="/js/common.js"></script>
 <script src="/js/jquery-2.1.1.min.js"></script>
 <script src="/js/bonus.js"></script>
+<script src="/js/login.js"></script>
 </body>
 </html>

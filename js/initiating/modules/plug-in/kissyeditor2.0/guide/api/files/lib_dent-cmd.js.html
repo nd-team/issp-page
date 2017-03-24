@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>lib/dent-cmd.js - editor-plugins</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title="editor-plugins"></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: editor-plugins 1.1.0</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/BackColor.html">BackColor</a></li>
+            
+                <li><a href="../classes/Bold.html">Bold</a></li>
+            
+                <li><a href="../classes/Button.html">Button</a></li>
+            
+                <li><a href="../classes/CheckBoxSourceArea.html">CheckBoxSourceArea</a></li>
+            
+                <li><a href="../classes/Code.html">Code</a></li>
+            
+                <li><a href="../classes/Draft.html">Draft</a></li>
+            
+                <li><a href="../classes/DragUpload.html">DragUpload</a></li>
+            
+                <li><a href="../classes/ElementPath.html">ElementPath</a></li>
+            
+                <li><a href="../classes/Flash.html">Flash</a></li>
+            
+                <li><a href="../classes/FontColor.html">FontColor</a></li>
+            
+                <li><a href="../classes/FontFamily.html">FontFamily</a></li>
+            
+                <li><a href="../classes/FontSize.html">FontSize</a></li>
+            
+                <li><a href="../classes/Heading.html">Heading</a></li>
+            
+                <li><a href="../classes/Image.html">Image</a></li>
+            
+                <li><a href="../classes/Indent.html">Indent</a></li>
+            
+                <li><a href="../classes/Italic.html">Italic</a></li>
+            
+                <li><a href="../classes/JustifyCenter.html">JustifyCenter</a></li>
+            
+                <li><a href="../classes/JustifyLeft.html">JustifyLeft</a></li>
+            
+                <li><a href="../classes/JustifyRight.html">JustifyRight</a></li>
+            
+                <li><a href="../classes/Link.html">Link</a></li>
+            
+                <li><a href="../classes/Maximize.html">Maximize</a></li>
+            
+                <li><a href="../classes/MultipleUpload.html">MultipleUpload</a></li>
+            
+                <li><a href="../classes/OrderedList.html">OrderedList</a></li>
+            
+                <li><a href="../classes/Outdent.html">Outdent</a></li>
+            
+                <li><a href="../classes/PageBreak.html">PageBreak</a></li>
+            
+                <li><a href="../classes/Preview.html">Preview</a></li>
+            
+                <li><a href="../classes/RemoveFormat.html">RemoveFormat</a></li>
+            
+                <li><a href="../classes/Resize.html">Resize</a></li>
+            
+                <li><a href="../classes/Separator.html">Separator</a></li>
+            
+                <li><a href="../classes/Smiley.html">Smiley</a></li>
+            
+                <li><a href="../classes/SourceArea.html">SourceArea</a></li>
+            
+                <li><a href="../classes/StrikeThrough.html">StrikeThrough</a></li>
+            
+                <li><a href="../classes/Table.html">Table</a></li>
+            
+                <li><a href="../classes/Underline.html">Underline</a></li>
+            
+                <li><a href="../classes/Undo.html">Undo</a></li>
+            
+                <li><a href="../classes/UnorderedList.html">UnorderedList</a></li>
+            
+                <li><a href="../classes/Video.html">Video</a></li>
+            
+                <li><a href="../classes/XiaMiMusic.html">XiaMiMusic</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/back-color.html">back-color</a></li>
+            
+                <li><a href="../modules/bold.html">bold</a></li>
+            
+                <li><a href="../modules/button.html">button</a></li>
+            
+                <li><a href="../modules/checkbox-source-area.html">checkbox-source-area</a></li>
+            
+                <li><a href="../modules/code.html">code</a></li>
+            
+                <li><a href="../modules/draft.html">draft</a></li>
+            
+                <li><a href="../modules/drag-upload.html">drag-upload</a></li>
+            
+                <li><a href="../modules/eindent.html">eindent</a></li>
+            
+                <li><a href="../modules/element-path.html">element-path</a></li>
+            
+                <li><a href="../modules/flash.html">flash</a></li>
+            
+                <li><a href="../modules/font-color.html">font-color</a></li>
+            
+                <li><a href="../modules/font-family.html">font-family</a></li>
+            
+                <li><a href="../modules/font-size.html">font-size</a></li>
+            
+                <li><a href="../modules/heading.html">heading</a></li>
+            
+                <li><a href="../modules/image.html">image</a></li>
+            
+                <li><a href="../modules/italic.html">italic</a></li>
+            
+                <li><a href="../modules/justify-center.html">justify-center</a></li>
+            
+                <li><a href="../modules/justify-left.html">justify-left</a></li>
+            
+                <li><a href="../modules/justify-right.html">justify-right</a></li>
+            
+                <li><a href="../modules/link.html">link</a></li>
+            
+                <li><a href="../modules/maximize.html">maximize</a></li>
+            
+                <li><a href="../modules/multiple-upload.html">multiple-upload</a></li>
+            
+                <li><a href="../modules/ordered-list.html">ordered-list</a></li>
+            
+                <li><a href="../modules/outdent.html">outdent</a></li>
+            
+                <li><a href="../modules/page-break.html">page-break</a></li>
+            
+                <li><a href="../modules/preview.html">preview</a></li>
+            
+                <li><a href="../modules/remove-format.html">remove-format</a></li>
+            
+                <li><a href="../modules/resize.html">resize</a></li>
+            
+                <li><a href="../modules/separator.html">separator</a></li>
+            
+                <li><a href="../modules/smiley.html">smiley</a></li>
+            
+                <li><a href="../modules/source-area.html">source-area</a></li>
+            
+                <li><a href="../modules/strike-through.html">strike-through</a></li>
+            
+                <li><a href="../modules/table.html">table</a></li>
+            
+                <li><a href="../modules/underline.html">underline</a></li>
+            
+                <li><a href="../modules/undo.html">undo</a></li>
+            
+                <li><a href="../modules/unordered-list.html">unordered-list</a></li>
+            
+                <li><a href="../modules/video.html">video</a></li>
+            
+                <li><a href="../modules/xiami-music.html">xiami-music</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: lib/dent-cmd.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * @ignore
+ * Add indent and outdent command identifier for KISSY Editor.
+ * @author yiminghe@gmail.com
+ */
+/*
+ Copyright (c) 2003-2010, CKSource - Frederico Knabben. All rights reserved.
+ For licensing, see LICENSE.html or http://ckeditor.com/license
+ */
+
+    var Editor = require(&#x27;editor&#x27;);
+    var ListUtils = require(&#x27;./list-utils&#x27;);
+
+    var listNodeNames = {ol: 1, ul: 1},
+        Walker = Editor.Walker,
+        Dom = require(&#x27;dom&#x27;),
+        $ = require(&#x27;node&#x27;),
+        UA = require(&#x27;ua&#x27;),
+        isNotWhitespaces = Walker.whitespaces(true),
+        INDENT_CSS_PROPERTY = &#x27;margin-left&#x27;,
+        INDENT_OFFSET = 40,
+        INDENT_UNIT = &#x27;px&#x27;,
+        isNotBookmark = Walker.bookmark(false, true);
+
+    function isListItem(node) {
+        return node.nodeType === Dom.NodeType.ELEMENT_NODE &amp;&amp; Dom.nodeName(node) === &#x27;li&#x27;;
+    }
+
+    function indentList(range, listNode, type) {
+        // Our starting and ending points of the range might be inside some blocks under a list item...
+        // So before playing with the iterator, we need to expand the block to include the list items.
+
+        var startContainer = range.startContainer,
+            endContainer = range.endContainer;
+        while (startContainer &amp;&amp; !startContainer.parent().equals(listNode)) {
+            startContainer = startContainer.parent();
+        }
+        while (endContainer &amp;&amp; !endContainer.parent().equals(listNode)) {
+            endContainer = endContainer.parent();
+        }
+
+        if (!startContainer || !endContainer) {
+            return;
+        }
+
+        // Now we can iterate over the individual items on the same tree depth.
+        var block = startContainer,
+            itemsToMove = [],
+            stopFlag = false;
+        while (!stopFlag) {
+            if (block.equals(endContainer)) {
+                stopFlag = true;
+            }
+            itemsToMove.push(block);
+            block = block.next();
+        }
+        if (itemsToMove.length &lt; 1) {
+            return;
+        }
+
+        // Do indent or outdent operations on the array model of the list, not the
+        // list&#x27;s Dom tree itself. The array model demands that it knows as much as
+        // possible about the surrounding lists, we need to feed it the further
+        // ancestor node that is still a list.
+        var listParents = listNode._4eParents(true, undefined);
+
+        listParents.each(function (n, i) {
+            listParents[i] = n;
+        });
+
+        for (var i = 0; i &lt; listParents.length; i++) {
+            if (listNodeNames[ listParents[i].nodeName() ]) {
+                listNode = listParents[i];
+                break;
+            }
+        }
+        var indentOffset = type === &#x27;indent&#x27; ? 1 : -1,
+            startItem = itemsToMove[0],
+            lastItem = itemsToMove[ itemsToMove.length - 1 ],
+            database = {};
+
+        // Convert the list Dom tree into a one dimensional array.
+        var listArray = ListUtils.listToArray(listNode, database);
+
+        // Apply indenting or outdenting on the array.
+        // listarray_index 为 item 在数组中的下标，方便计算
+        var baseIndent = listArray[ lastItem.data(&#x27;listarray_index&#x27;) ].indent;
+        for (i = startItem.data(&#x27;listarray_index&#x27;);
+             i &lt;= lastItem.data(&#x27;listarray_index&#x27;); i++) {
+            listArray[ i ].indent += indentOffset;
+            // Make sure the newly created sublist get a brand-new element of the same type. (#5372)
+            var listRoot = listArray[ i ].parent;
+            listArray[ i ].parent =
+                $(listRoot[0].ownerDocument.createElement(listRoot.nodeName()));
+        }
+        /*
+         嵌到下层的li
+         &lt;li&gt;鼠标所在开始&lt;/li&gt;
+         &lt;li&gt;ss鼠标所在结束ss
+         &lt;ul&gt;
+         &lt;li&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+         &lt;/li&gt;
+         baseIndent 为鼠标所在结束的嵌套层次，
+         如果下面的比结束li的indent大，那么证明是嵌在结束li里面的，也要缩进
+         一直处理到大于或等于，跳出了当前嵌套
+         */
+        for (i = lastItem.data(&#x27;listarray_index&#x27;) + 1;
+             i &lt; listArray.length &amp;&amp; listArray[i].indent &gt; baseIndent; i++) {
+            listArray[i].indent += indentOffset;
+        }
+
+        // Convert the array back to a Dom forest (yes we might have a few subtrees now).
+        // And replace the old list with the new forest.
+        var newList = ListUtils.arrayToList(listArray, database, null, &#x27;p&#x27;);
+
+        // Avoid nested &lt;li&gt; after outdent even they&#x27;re visually same,
+        // recording them for later refactoring.(#3982)
+        var pendingList = [];
+        var parentLiElement;
+        if (type === &#x27;outdent&#x27;) {
+
+            if (( parentLiElement = listNode.parent() ) &amp;&amp;
+                parentLiElement.nodeName() === &#x27;li&#x27;) {
+                var children = newList.listNode.childNodes, count = children.length,
+                    child;
+
+                for (i = count - 1; i &gt;= 0; i--) {
+                    if (( child = $(children[i]) ) &amp;&amp;
+                        child.nodeName() === &#x27;li&#x27;) {
+                        pendingList.push(child);
+                    }
+                }
+            }
+        }
+
+        if (newList) {
+            Dom.insertBefore(newList.listNode[0] || newList.listNode,
+                listNode[0] || listNode);
+            listNode.remove();
+        }
+        // Move the nested &lt;li&gt; to be appeared after the parent.
+        if (pendingList &amp;&amp; pendingList.length) {
+            for (i = 0; i &lt; pendingList.length; i++) {
+                var li = pendingList[ i ],
+                    followingList = li;
+
+                // Nest preceding &lt;ul&gt;/&lt;ol&gt; inside current &lt;li&gt; if any.
+                while (( followingList = followingList.next() ) &amp;&amp;
+
+                    followingList.nodeName() in listNodeNames) {
+                    // IE requires a filler NBSP for nested list inside empty list item,
+                    // otherwise the list item will be inaccessiable. (#4476)
+                    /*jshint loopfunc:true*/
+                    if (UA.ie &amp;&amp; !li.first(function (node) {
+                        return isNotWhitespaces(node) &amp;&amp; isNotBookmark(node);
+                    }, 1)) {
+                        li[0].appendChild(range.document.createTextNode(&#x27;\u00a0&#x27;));
+                    }
+                    li[0].appendChild(followingList[0]);
+                }
+                Dom.insertAfter(li[0], parentLiElement[0]);
+            }
+        }
+
+        // Clean up the markers.
+        Editor.Utils.clearAllMarkers(database);
+    }
+
+    function indentBlock(range, type) {
+        var iterator = range.createIterator(),
+            block;
+        //  enterMode = &#x27;p&#x27;;
+        iterator.enforceRealBlocks = true;
+        iterator.enlargeBr = true;
+        while ((block = iterator.getNextParagraph())) {
+            indentElement(block, type);
+        }
+    }
+
+    function indentElement(element, type) {
+        var currentOffset = parseInt(element.style(INDENT_CSS_PROPERTY), 10);
+        if (isNaN(currentOffset)) {
+            currentOffset = 0;
+        }
+        currentOffset += ( type === &#x27;indent&#x27; ? 1 : -1 ) * INDENT_OFFSET;
+        if (currentOffset &lt; 0) {
+            return false;
+        }
+        currentOffset = Math.max(currentOffset, 0);
+        currentOffset = Math.ceil(currentOffset / INDENT_OFFSET) * INDENT_OFFSET;
+        element.css(INDENT_CSS_PROPERTY, currentOffset ? currentOffset + INDENT_UNIT : &#x27;&#x27;);
+        if (element[0].style.cssText === &#x27;&#x27;) {
+            element.removeAttr(&#x27;style&#x27;);
+        }
+
+        return true;
+    }
+
+
+    function indentEditor(editor, type) {
+        var selection = editor.getSelection(),
+            range = selection &amp;&amp; selection.getRanges()[0];
+        if (!range) {
+            return;
+        }
+        var startContainer = range.startContainer,
+            endContainer = range.endContainer,
+            rangeRoot = range.getCommonAncestor(),
+            nearestListBlock = rangeRoot;
+
+        while (nearestListBlock &amp;&amp; !( nearestListBlock[0].nodeType === Dom.NodeType.ELEMENT_NODE &amp;&amp;
+            listNodeNames[ nearestListBlock.nodeName() ] )) {
+            nearestListBlock = nearestListBlock.parent();
+        }
+        var walker;
+        // Avoid selection anchors under list root.
+        // &lt;ul&gt;[&lt;li&gt;...&lt;/li&gt;]&lt;/ul&gt; =&gt;	&lt;ul&gt;&lt;li&gt;[...]&lt;/li&gt;&lt;/ul&gt;
+        //注：firefox 永远不会出现
+        //注2：哪种情况会出现？
+        if (nearestListBlock &amp;&amp; startContainer[0].nodeType === Dom.NodeType.ELEMENT_NODE &amp;&amp;
+            startContainer.nodeName() in listNodeNames) {
+            walker = new Walker(range);
+            walker.evaluator = isListItem;
+            range.startContainer = walker.next();
+        }
+
+        if (nearestListBlock &amp;&amp; endContainer[0].nodeType === Dom.NodeType.ELEMENT_NODE &amp;&amp;
+            endContainer.nodeName() in listNodeNames) {
+            walker = new Walker(range);
+            walker.evaluator = isListItem;
+            range.endContainer = walker.previous();
+        }
+
+        var bookmarks = selection.createBookmarks(true);
+
+        if (nearestListBlock) {
+            var firstListItem = nearestListBlock.first();
+            while (firstListItem &amp;&amp; firstListItem.nodeName() !== &#x27;li&#x27;) {
+                firstListItem = firstListItem.next();
+            }
+            var rangeStart = range.startContainer,
+                indentWholeList = firstListItem[0] === rangeStart[0] || firstListItem.contains(rangeStart);
+
+            // Indent the entire list if  cursor is inside the first list item. (#3893)
+            if (!( indentWholeList &amp;&amp;
+                indentElement(nearestListBlock, type) )) {
+                indentList(range, nearestListBlock, type);
+            }
+        }
+        else {
+            indentBlock(range, type);
+        }
+        selection.selectBookmarks(bookmarks);
+    }
+
+    function addCommand(editor, cmdType) {
+        if (!editor.hasCommand(cmdType)) {
+            editor.addCommand(cmdType, {
+                exec: function (editor) {
+                    editor.execCommand(&#x27;save&#x27;);
+                    indentEditor(editor, cmdType);
+                    editor.execCommand(&#x27;save&#x27;);
+                    editor.notifySelectionChange();
+                }
+            });
+        }
+    }
+
+    module.exports = {
+        checkOutdentActive: function (elementPath) {
+            var blockLimit = elementPath.blockLimit;
+            if (elementPath.contains(listNodeNames)) {
+                return true;
+            } else {
+                var block = elementPath.block || blockLimit;
+                return block &amp;&amp; block.style(INDENT_CSS_PROPERTY);
+            }
+        },
+        addCommand: addCommand
+    };
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

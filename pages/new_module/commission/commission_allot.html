@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>项目提成</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="/css/new_module/business/activity.css">
+
+</head>
+<body>
+<section class="left-section">
+    <div class="header">
+        <a href="javascript:void(0)" title="issp平台" class="logo">
+            <img src="/images/new_module/organization/logo.png" alt="">
+        </a>
+        <span>issp平台</span>
+    </div>
+    <div class="nav">
+        <div class="nav-list">
+            <h3 class="header-menu"><i class="nav-arrow"></i>项目提成</h3>
+            <ul class="menu">
+                <li class="active">
+                    <a href="javascript:void(0)">权重分配</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">定额</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="right-section">
+<div class="top-content">
+<div class="top-fixed">
+    <div class="top">
+        <div class="top-back">
+            <a href="javascript:void(0)" class="back">返回</a>
+        </div>
+        <div class="search">
+            <a href="javascript:void(0)" class="search-btn"></a>
+            <select class="selected">
+                <option value="0">张三三</option> <option value="1">张四四</option> <option value="2">张五五</option>
+                <option value="3">张六六</option> <option value="4">张七七</option> <option value="5">张八八</option>
+                <option value="6">张九九</option>
+            </select>
+            <span class="arrow"></span>
+        </div>
+    </div>
+    <ul class="list">
+        <li class="current" data-title="list">
+            <a href="javascript:void(0)" class="lis">列表<span>Tabulate</span></a>
+        </li>
+        <li data-title="add">
+            <a href="javascript:void(0)" class="add">添加<span>Add</span></a>
+        </li>
+        <li data-title="edit">
+            <a href="javascript:void(0)" class="same-one">编辑<span>Compile</span></a>
+        </li>
+        <li data-title="weight">
+            <a href="javascript:void(0)" class="same-two">实际权重<span>Weight</span></a>
+        </li>
+        <li data-title="delete">
+            <a href="javascript:void(0)" class="same-three">删除<span>Delete</span></a>
+        </li>
+
+
+    </ul>
+</div>
+
+<div class="content">
+    <div class="content-input weight">
+        <div class="input-list">
+            <section>
+                <ul>
+                    <li>
+                        <label><em>完工时间（月）</em></label> <input type="text">
+                    </li>
+                    <li>
+                        <label><em>回款周期</em></label> <input type="text">
+                    </li>
+                    <li>
+                        <label><em>合同金额（万年）</em></label> <input type="text">
+                    </li>
+                    <li>
+                        <label><em>难易程度</em></label> <input type="text">
+                    </li>
+                    <li>
+                        <label><em>重点性</em></label> <input type="text">
+                    </li>
+                    <li>
+                        <label><em>备注</em></label> <input type="number">
+                    </li>
+                </ul>
+            </section>
+            <section class="progress">
+                <ul>
+                    <li>
+                        <p class="per"><span>55</span>%</p>
+                        <input type="range" max="100" min="0" value="55" oninput="proChange(this)"/>
+                        <span class="msg">业务提成平均比例</span>
+                    </li>
+                    <li>
+                        <p class="per"><span>55</span>%</p>
+                        <input type="range" max="100" min="0" value="55" oninput="proChange(this)"/>
+                        <span class="msg">业务提成平均比例</span>
+                    </li>
+                    <li>
+                        <p class="per"><span>55</span>%</p>
+                        <input type="range" max="100" min="0" value="55" oninput="proChange(this)"/>
+                        <span class="msg">业务提成平均比例</span>
+                    </li>
+                    <li>
+                        <p class="per"><span>55</span>%</p>
+                        <input type="range" max="100" min="0" value="55" oninput="proChange(this)"/>
+                        <span class="msg">业务提成平均比例</span>
+                    </li>
+                    <li>
+                        <p class="per"><span>55</span>%</p>
+                        <input type="range" max="100" min="0" value="55" oninput="proChange(this)"/>
+                        <span class="msg">业务提成平均比例</span>
+                    </li>
+                </ul>
+            </section>
+            <p class="dataBottom">
+                <button>提交</button>
+            </p>
+        </div>
+
+    </div>
+</div>
+</div>
+</section>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/laypage/laypage.js"></script>
+<script src="/js/new_modules/common.js"></script>
+<!--<script type="text/javascript">-->
+    <!--var change = function($input) {-->
+        <!--/*内容可自行定义*/-->
+        <!--console.log("123");-->
+    <!--}-->
+
+    <!--$('input').RangeSlider({ min: 0,   max: 100,  step: 0.1,  callback: change});-->
+
+<!--</script>-->
+</body>
+</html>

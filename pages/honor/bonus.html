@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/honor/bonus.css">
 </head>
 <body>
-<header>
+     <header>
     <a href="/pages/activity/activity_index.html" class="chat-life" title="生活价值平台">
         <svg role="img" class="life">
             <use xlink:href="#life"></use>
@@ -30,13 +30,14 @@
             </a>
             <a href="/pages/reward/reward_circle.html" class="icon-text">奖励</a>
         </li>
+        <!--如果没有登陆弹出登录框-->
         <li>
-            <a href="/pages/chatRoom/moving.html">
+            <a href="/pages/chatRoom/private_chat.html">
                 <svg role="img" class="bbs">
                     <use xlink:href="#bbs"></use>
                 </svg>
             </a>
-            <a href="/pages/chatRoom/moving.html" class="icon-text">聊天室</a>
+            <a href="/pages/chatRoom/private_chat.html" class="icon-text">聊天室</a>
         </li>
         <li>
             <a href="/pages/activity/activity_all.html">
@@ -55,34 +56,28 @@
             <a href="/pages/activity/social.html" class="icon-text">社交</a>
         </li>
         <li>
-            <a href="/pages/activity/indiana.html">
-                <svg role="img" class="yiyuan">
-                    <use xlink:href="#yiyuan"></use>
-                </svg>
-            </a>
-            <a href="/pages/activity/indiana.html" class="icon-text">夺宝</a>
-        </li>
-        <li>
-            <a href="/pages/funding/crowd_funding.html">
+            <a href="/pages/funding/indiana.html">
                 <svg role="img" class="zongchou">
                     <use xlink:href="#zongchou"></use>
                 </svg>
             </a>
-            <a href="/pages/funding/crowd_funding.html" class="icon-text">众筹</a>
+            <a href="/pages/funding/indiana.html" class="icon-text">众筹</a>
         </li>
     </ul>
-    <a href="/pages/honor/bonus.html" class="myself">
+    <a href="javascript:void(0)" class="myself">
         <svg role="img" class="honor">
             <use xlink:href="#honor"></use>
         </svg>
     </a>
     <div class="search-input">
-        <a href="javascript:void(0)" class="input-box">
+        <div class="input-box">
             <input type="text" class="search" placeholder="输入要搜索的内容">
-            <svg role="img" class="magnifier">
-                <use xlink:href="#magnifier"></use>
-            </svg>
-        </a>
+            <a href="javascript:void(0)">
+                <svg role="img" class="magnifier">
+                    <use xlink:href="#magnifier"></use>
+                </svg>
+            </a>
+        </div>
         <div class="photo">
             <a href="javascript:void(0)" class="head-photo">
                 <img src="/images/honor/user01.jpg" alt="">
@@ -120,7 +115,7 @@
          <img src="/images/honor/banner1.png"/>
      </div>
      <div class="content">
-          <div class="center-like">
+     <div class="center-like">
                <ul>
                    <li>
                        <a href="javascript:void(0)" class="honor01">

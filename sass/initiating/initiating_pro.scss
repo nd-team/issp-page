@@ -1,0 +1,117 @@
+@import "../base";
+body{
+   background-color: white;
+}
+border{
+   outline:none;
+}
+.title-tit{
+   width: 1200px;
+   margin: 0 auto 13px;
+   padding-top: 93px;
+   height: 74px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   .menu{
+      display: flex;
+      flex-direction: row;
+      width: 60%;
+      li{
+         font-size: 14px;
+         flex: 1;
+        text-align: right;
+        a{
+           color: #787878;
+        }
+         &.cur{
+           a{
+              color: #22c2eb;
+           }
+         }
+      }
+   }
+}
+.content{
+   background: url("/images/initiating/bg.png") center top no-repeat;
+   background-size: 100% 100%;
+   .start-init{
+      width: 1054px;
+      margin: 0 auto;
+      padding-bottom: 92px;
+      .title{
+          height: 163px;
+         text-align: center;
+         h1{
+            color: #333;
+            font-size: 28px;
+            font-weight: normal;
+            padding: 92px 0 13px;
+         }
+      }
+      .all-init{
+         display: flex;
+         width: 100%;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         li{
+            cursor: pointer;
+            text-align: center;
+            display: flex;
+            flex: 0 0 45%;
+            width: 100%;
+            flex-direction: column;
+            background-color: white;
+            padding: {
+               bottom: 33px;
+            };
+            box-shadow: 0 0 8px rgba(34,194,235, .5);
+            .init-img{
+               height: 147px;
+               display: flex;
+               justify-content: center;
+               align-items: flex-end;
+            }
+            .in-title{
+               font-size: 22px;
+               color: #22c2eb;
+               margin: {
+                  top:25px;
+                  bottom: 20px;
+               };
+            }
+            .in-ques{
+               color: #22c2eb;
+               font-size: 16px;
+               margin-bottom: 15px;
+            }
+            .in-small{
+               width: 55%;
+               margin: 0 auto;
+               font-size: 12px;
+               color: #666;
+               display: flex;
+               flex-direction: column;
+               span{
+                  display: flex;
+                  text-align: left;
+                  align-items: center;
+                  justify-content:flex-start;
+                  &:before{
+                     display: inline-block;
+                     content: '';
+                     width: 3px;
+                     height: 3px;
+                     background-color: #666;
+                     margin-right: 6px;
+                  }
+                  &:nth-of-type(2){
+                     margin-top: 10px;
+                  }
+               }
+            }
+         }
+         margin-bottom: 30px;
+      }
+  }
+}
