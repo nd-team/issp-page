@@ -431,3 +431,234 @@ body{
     }
   }
 }
+.login-box{
+  display: flex;
+  flex: 1;
+  max-width: 714px;
+  margin-bottom: 200px;
+  background-color: #ffffff;
+  flex-direction: column;
+  .box-title{
+    display: flex;
+    flex: 1;
+    h3{
+      margin: 0 14px;
+      font:{
+        size: 14px;
+        weight: bold;
+      };
+      color: #208dcf;
+    }
+    span{
+      display: flex;
+      flex: 1;
+      height: 38px;
+      background-color: #a8cae8;
+      .lifed{
+        flex: 1;
+        img{
+          margin:{
+            top:-55px;
+            left: 25%;
+          }
+        }
+      }
+      .close{
+        margin: {
+          right: 14px;
+          top:6px;
+        };
+        cursor: pointer;
+      }
+    }
+  }
+  .login-tabs{
+    display: flex;
+    font:{
+      size: 14px;
+    }
+    align-items: center;
+    padding: {
+      top:23px;
+    };
+    a{
+      flex: 1;
+      text-align: center;
+      align-items: center;
+      color: #567ea3;
+      border-bottom: 2px solid #abc9e7;
+      padding-bottom: 8px;
+      &.current{
+        color:#5380a8;
+        font-weight: bold;
+        border-bottom: 4px solid #5380a8;
+      }
+    }
+    margin: 0 15%;
+  }
+  .login-big{
+    overflow: hidden;
+    .login-page{
+      display: flex;
+      &:nth-of-type(2){
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img{
+          width: 147px;
+          height: 147px;
+          margin: 15px 0;
+        }
+        color: #5475a8;
+        font-size: 14px;
+        font-weight: bold;
+        p{
+          padding: {
+            bottom: 12px;
+          };
+        }
+        border-bottom:4px solid #577ca6;
+      }
+      &:nth-of-type(1){
+        display: flex;
+        form{
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          ul{
+            .form-item{
+              display: flex;
+              width: 402px;
+              height: 42px;
+              line-height: 42px;
+              border: 1px solid #bfd1de;
+              font-size: 16px;
+              color: #666;
+              background: white;
+              border-radius: 5px;
+              margin:0 0 20px 19px;
+              position: relative;
+              &:nth-of-type(1){
+                margin-top: 19px;
+              }
+              label{
+                width: 25px;
+                height: 25px;
+                color: #666;
+                margin:0 0 0 9px;
+                svg{
+                  width: 25px;
+                  height: 25px;
+                }
+                &.error{
+                  color:#f00;
+                  width:auto;
+                  position:absolute;
+                  right:10px;
+                  top:0;
+                  line-height:28px;
+                }
+              }
+              input{
+                padding: {
+                  top:10px;
+                  left: 6px;
+                };
+                width: 300px;
+                height: 24px;
+                border: 0 none;
+                line-height: 24px;
+                font-size: 14px;
+
+              }
+            }
+            .form-rem{
+              font-size: 12px;
+              padding-left: 20px;
+              display: flex;
+              flex: 1;
+              p{
+                flex: 1;
+                .checkedNum[data-style="checkeds"] {
+                  display: none;
+                }
+                .checkedNum[data-style="checkeds"] + label {
+                  width: 9px;
+                  height: 9px;
+                  background-color: #567ca0;
+                  padding: 6px;
+                  border-radius: 3px;
+                  display: inline-block;
+                  overflow: hidden;
+                }
+                .checkedNum[data-style="checkeds"]:checked + label{
+                  background: url("/images/gou_pic.png") #567ca0 center  no-repeat;
+                }
+                .checkedNum[data-style="checkeds"] + label:before{
+                  width: 15px;
+                  height: 11px;
+                  background: url("/images/gou_pic.png") #567ca0 center  no-repeat;
+                  text-align: center;
+                  -webkit-transition: all 0.2s linear;
+                  transition: all 0.2s linear;
+                }
+                label{
+                  vertical-align: middle;
+                }
+                span{
+                  font-size: 14px;
+                  color: #6c6c6c;
+                  padding: 5px 0 0 3px;
+                }
+              }
+              a{
+
+                color: #ff0000
+              }
+            }
+          }
+          .please-login{
+            width: 100%;
+            color: white;
+            font: {
+              size: 14px;
+              weight: bold;
+            };
+            background-color: #557fa2;
+            cursor: pointer;
+            padding: 13px 0;
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+#modal {
+  display: none;
+  width: 60%;
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  z-index: 1001;
+  .m-con{
+    display: none;
+  }
+  .login-box{
+    margin-left: -35%;
+  }
+}
+#modalbg{
+  display:none;
+  position: fixed;
+  background: #000;
+  opacity: 0.5;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}

@@ -1,0 +1,254 @@
+@import "../initiating/initiating_basic";
+body{
+   background-color: white;
+}
+.content{
+  background: url("/images/initiating/step2.png") center top no-repeat;
+  background-size: 100% 100%;
+}
+.pro-input{
+  li{
+    margin-top: 23px;
+    .pro-all{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      label{
+        display: inline-block;
+        width: 70px;
+        font-size: 14px;
+        color: #333;
+        margin-right: 25px;;
+        &:after{
+          content: '\FF1A';
+        }
+      }
+      .pic{
+        margin: {
+          right: 8px;
+        };
+      }
+      .sug{
+        font-size: 12px;
+        color: #999;
+      }
+      b{
+        font-size: 16px;
+        font-weight: normal;
+        color: #333;
+        margin: {
+          left: 14px;
+        };
+      }
+    }
+    .red-notes{
+      font-size: 12px;
+      color: #f92222;
+      margin: {
+        left: 95px;
+        top: 12px;
+      };
+    }
+    input{
+      width: 576px;
+      height: 47px;
+      padding: {
+        left: 23px;
+      };
+      box-shadow: inset 0 0 3px rgba(173, 173, 175, 0.8);
+    }
+    textarea{
+      height: 99px;
+      @extend input;
+      resize: none;
+      padding: {
+        top:18px;
+      };
+    }
+  }
+}
+.step-all{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 853px;
+  margin: 98px auto 0;
+  a{
+    color: white;
+    font-size: 14px;
+    background-color: #22c2eb;
+    border-radius: 5px;
+    text-align: center;
+    &.next-submit{
+      width: 199px;
+      height: 46px;
+      line-height: 46px;
+      margin-right: 83px;
+      background-color: #a8a8a8;
+    }
+    &.prev-step{
+      width: 199px;
+      height: 46px;
+      line-height: 46px;
+      margin-right: 83px;
+    }
+    &.next-step{
+      width: 199px;
+      height: 46px;
+      line-height: 46px;
+      margin-right: 143px;
+    }
+    &.preview{
+      width: 76px;
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+}
+.step-all2{
+  @extend .step-all;
+  margin: 50px auto 0;
+}
+.editer-detail{
+  font-size: 14px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #d4d7d6;
+}
+.last-cur{
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #22c2eb;
+}
+//编辑器开始
+.sh-edit {
+  width: 755px;
+}
+.ks-editor-status{
+  span{
+    display: none !important; //编辑源代码
+  }
+}
+.ks-editor-button-content{
+  color: #3366cc;
+}
+.ks-editor-toolbar-item{
+  margin-top: 8px;
+}
+//回报设置
+.gods{
+  margin-bottom: 15px;
+}
+.gods1{
+  font-size: 16px;
+  color: #333333;
+  font-weight: bold;
+  margin: {
+    top:12px;
+    bottom: 10px;
+  };
+}
+.pro-gods1{
+  padding: {
+    left: 14px;
+    top:5px;
+  };
+  li{
+    margin-top: 23px;
+    .pro-all{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      label{
+        display: inline-block;
+        width: 70px;
+        font-size: 14px;
+        color: #333;
+        margin-right: 25px;;
+        &:after{
+          content: '\FF1A';
+        }
+      }
+      .pic{
+        margin: {
+          right: 8px;
+        };
+      }
+      .sug{
+        font-size: 12px;
+        color: #999;
+      }
+    }
+    .red-notes{
+      font-size: 12px;
+      color: #f92222;
+      margin: {
+        left: 95px;
+        top: 12px;
+      };
+    }
+    input{
+      width: 535px;
+      height: 47px;
+      padding: {
+        left: 23px;
+      };
+      box-shadow: inset 0 0 3px rgba(173, 173, 175, 0.8);
+    }
+    textarea{
+      height: 99px;
+      @extend input;
+      resize: none;
+      padding: {
+        top:18px;
+      };
+    }
+  }
+  .pro-sma{
+    input{
+      width: 395px;
+    }
+    b{
+      font-weight: normal;
+      font-size: 14px;
+      color:#999999;
+      margin-left: 10px;
+    }
+  }
+  background-color: #e7edef;
+}
+.pro-last{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: {
+    right: 40px;
+  };
+  padding-bottom: 15px;
+  button{
+     font-size: 16px;
+     color: white;
+      width: 141px;
+      height: 41px;
+     border-radius: 5px;
+    &.del{
+      background-color: #f2273f;
+    }
+    &.save{
+      background-color: #A8A8A8;
+      margin-left: 40px;
+    }
+  }
+}
+.alt-gods{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 755px;
+  margin: 30px auto;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration:underline;
+  color: #f2273f;
+}

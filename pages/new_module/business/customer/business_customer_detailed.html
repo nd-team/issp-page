@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>客户详细信息</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="/css/new_module/accounting/accounting.css">
+</head>
+<body>
+<section class="left-section">
+    <div class="header">
+        <a href="javascript:void(0)" title="issp平台" class="logo">
+            <img src="/images/new_module/organization/logo.png" alt="">
+        </a>
+        <span>issp平台</span>
+    </div>
+    <div class="nav">
+        <div class="nav-list">
+            <h3 class="header-menu big"><i class="nav-arrow"></i>客户信息</h3>
+            <ul class="menu">
+                <li><a  href="/pages/new_module/business/customer/business_customer_basic.html">客户基本信息</a></li>
+                <li class="active"><a  href="/pages/new_module/business/customer/business_customer_detailed.html">客户详细信息</a></li>
+                <li><a href="/pages/new_module/business/customer/business_customer_level.html">客户级别设置</a></li>
+                <li><a href="/pages/new_module/business/customer/business_customer_email.html">邮件发送定制</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="right-section">
+    <div class="top-content">
+        <div class="top-fixed">
+            <div class="top">
+                <div class="top-back">
+                    <a href="javascript:void(0)" class="back">返回</a>
+                </div>
+                <div class="search">
+                    <a href="javascript:void(0)" class="search-btn"></a>
+                    <select class="selected">
+                        <option value="0">张三三</option>
+                        <option value="1">张四四</option>
+                        <option value="2">张五五</option>
+                        <option value="3">张六六</option>
+                        <option value="4">张七七</option>
+                        <option value="5">张八八</option>
+                        <option value="6">张九九</option>
+                    </select>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+            <ul class="list">
+                <li class="current" data-title="list">
+                    <a href="javascript:void(0)" class="lis">列表<span>Tabulate</span></a>
+                </li>
+                <li data-title="add">
+                    <a href="javascript:void(0)" class="add">添加<span>Add</span></a>
+                </li>
+                <li data-title="edit">
+                    <a href="javascript:void(0)" class="same-one">编辑<span>Compile</span></a>
+                </li>
+                <li data-title="delete">
+                    <a href="javascript:void(0)" class="same-one">删除<span>Compile</span></a>
+                </li>
+                <li data-title="details">
+                    <a href="javascript:void(0)" class="same-one">查看详情<span>Compile</span></a>
+                </li>
+                <li data-title="export">
+                    <a href="javascript:void(0)" class="same-one">导出<span>Compile</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content-tab list">
+                <ul class="table">
+                    <li class="list-head">
+                        <span></span>
+                        <span class="data-id">id</span>
+                        <span>客户信息编号</span>
+                        <span>客户年龄</span>
+                        <span>出生年月</span>
+                        <span>工作经历</span>
+                        <span>求学经历</span>
+                        <span>爱好</span>
+                        <span>性格评价</span>
+                        <span></span>
+                    </li>
+                    <li class="list-all">
+                        <section>
+                            <div class="list-text odd">
+                                <p>1</p>
+                                <p class="data-id"></p>
+                                <p>SW20160622</p>
+                                <p>20</p>
+                                <p>1997-5-1</p>
+                                <p>男</p>
+                                <p></p>
+                                <p>打乒乓</p>
+                                <p>温和</p>
+                                <p></p>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+                <footer class="footer"> <div class="pagination-click" id="pages"></div></footer>
+            </div>
+            <div class="content-input boarding add">
+                <div class="boa-title">
+                    <ul>
+                        <li class="boa-cur"><a href="javascript:void(0)">客户基本信息</a></li>
+                        <li><a href="javascript:void(0)">联系方式</a></li>
+                        <li><a href="javascript:void(0)">组织机构</a></li>
+                        <li><a href="javascript:void(0)">职务</a></li>
+                        <li><a href="javascript:void(0)">籍贯</a></li>
+                        <li><a href="javascript:void(0)">工作经历</a></li>
+                        <li><a href="javascript:void(0)">求学和培训经历</a></li>
+                        <li><a href="javascript:void(0)">爱好</a></li>
+                        <li><a href="javascript:void(0)">性格评价</a></li>
+                        <li><a href="javascript:void(0)">家庭成员</a></li>
+                    </ul>
+                </div>
+                <div class="boa-body">
+                    <ul>
+                        <li>
+                            <label><em>客户信息编号</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li>
+                            <label><em>重要性级别</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li>
+                            <label><em>客户类别</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li>
+                            <label><em>客户状态</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li>
+                            <label><em>客户来源</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li>
+                            <label><em>关系程度</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li>
+                            <label><em>姓名</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li>
+                            <label><em>性别</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li class="last">
+                            <label><em>年龄</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>出生年月日</em></label>
+                            <input type="text" disabled class="add_image">
+                        </li>
+                        <li class="big">
+                            <label><em>地区</em></label>
+                            <input type="text" disabled>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="big">
+                            <label><em>邮箱</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li class="big">
+                            <label><em>手机</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>座机</em></label>
+                            <input type="text" disabled >
+                        </li>
+                        <li class="big">
+                            <label><em>QQ /微信</em></label>
+                            <input type="text" disabled>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="big">
+                            <label><em>组织名称</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li class="big">
+                            <label><em>组织规模</em></label>
+                            <input type="text"  disabled>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="big">
+                            <label><em>级别</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li class="big">
+                            <label><em>岗位</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li class="big">
+                            <label><em>职权</em></label>
+                            <input type="text" disabled>
+                        </li>
+                      </ul>
+                    <ul>
+                        <li class="big">
+                            <label><em>生活地区</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li class="big">
+                            <label><em>成长地区</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li class="big">
+                            <label><em>以往工作地区</em></label>
+                            <input type="text" disabled>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="l-big">
+                            <label><em>工作经历</em></label>
+                            <textarea class="big-input"></textarea>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="l-big">
+                            <label><em>求学培训经历</em></label>
+                            <textarea class="big-input"></textarea>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="l-big">
+                            <label><em>爱好</em></label>
+                            <textarea class="big-input"></textarea>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="l-big">
+                            <label><em>性格评价</em></label>
+                            <textarea class="big-input"></textarea>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="big">
+                            <label><em>称谓</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>姓名</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>联系方式</em></label>
+                            <input type="text" >
+                        </li>
+                        <li class="big">
+                            <label><em>性格爱好</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>工作单位</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>职位</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="but"><button>添加</button></li>
+                    </ul>
+                    <div class="footer"></div>
+                </div>
+            </div>
+            <div class="content-input boarding edit">
+                <div class="boa-title">
+                    <ul>
+                        <li class="boa-cur"><a href="javascript:void(0)">客户基本信息</a></li>
+                        <li><a href="javascript:void(0)">联系方式</a></li>
+                        <li><a href="javascript:void(0)">组织机构</a></li>
+                        <li><a href="javascript:void(0)">职务</a></li>
+                        <li><a href="javascript:void(0)">籍贯</a></li>
+                        <li><a href="javascript:void(0)">工作经历</a></li>
+                        <li><a href="javascript:void(0)">求学和培训经历</a></li>
+                        <li><a href="javascript:void(0)">爱好</a></li>
+                        <li><a href="javascript:void(0)">性格评价</a></li>
+                        <li><a href="javascript:void(0)">家庭成员</a></li>
+                    </ul>
+                </div>
+                <div class="boa-body">
+                    <ul>
+                        <li class="l-hide">
+                            <label><em>id编号</em></label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label><em>客户信息编号</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li>
+                            <label><em>重要性级别</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li>
+                            <label><em>客户类别</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li>
+                            <label><em>客户状态</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li>
+                            <label><em>客户来源</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li>
+                            <label><em>关系程度</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li>
+                            <label><em>姓名</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li>
+                            <label><em>性别</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li class="last">
+                            <label><em>年龄</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>出生年月日</em></label>
+                            <input type="text" disabled class="add_image">
+                        </li>
+                        <li class="big">
+                            <label><em>地区</em></label>
+                            <input type="text" disabled>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="big">
+                            <label><em>邮箱</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li class="big">
+                            <label><em>手机</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>座机</em></label>
+                            <input type="text" disabled >
+                        </li>
+                        <li class="big">
+                            <label><em>QQ /微信</em></label>
+                            <input type="text" disabled>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="big">
+                            <label><em>组织名称</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li class="big">
+                            <label><em>组织规模</em></label>
+                            <input type="text"  disabled>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="big">
+                            <label><em>级别</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li class="big">
+                            <label><em>岗位</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li class="big">
+                            <label><em>职权</em></label>
+                            <input type="text" disabled>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="big">
+                            <label><em>生活地区</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li class="big">
+                            <label><em>成长地区</em></label>
+                            <input type="text" disabled>
+                        </li>
+                        <li class="big">
+                            <label><em>以往工作地区</em></label>
+                            <input type="text" disabled>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="l-big">
+                            <label><em>工作经历</em></label>
+                            <textarea class="big-input"></textarea>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="l-big">
+                            <label><em>求学培训经历</em></label>
+                            <textarea class="big-input"></textarea>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="l-big">
+                            <label><em>爱好</em></label>
+                            <textarea class="big-input"></textarea>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="l-big">
+                            <label><em>性格评价</em></label>
+                            <textarea class="big-input"></textarea>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="big">
+                            <label><em>称谓</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>姓名</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>联系方式</em></label>
+                            <input type="text" >
+                        </li>
+                        <li class="big">
+                            <label><em>性格爱好</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>工作单位</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>职位</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="but"><button>添加</button></li>
+                    </ul>
+                    <div class="footer"></div>
+                </div>
+            </div>
+            <div class="delete">
+                <div class="del-head">
+                    <h5>温馨提示</h5>
+                </div>
+                <div class="del-con">
+                    <p>确定要删除这条数据？</p>
+                    <div class="btn">
+                        <button>确定</button>
+                        <button>取消</button>
+                    </div>
+                </div>
+            </div>
+            <div class="content-input boarding details">
+                <div class="boa-title">
+                    <ul>
+                        <li class="boa-cur"><a href="javascript:void(0)">客户基本信息</a></li>
+                        <li><a href="javascript:void(0)">联系方式</a></li>
+                        <li><a href="javascript:void(0)">组织机构</a></li>
+                        <li><a href="javascript:void(0)">职务</a></li>
+                        <li><a href="javascript:void(0)">籍贯</a></li>
+                        <li><a href="javascript:void(0)">工作经历</a></li>
+                        <li><a href="javascript:void(0)">求学和培训经历</a></li>
+                        <li><a href="javascript:void(0)">爱好</a></li>
+                        <li><a href="javascript:void(0)">性格评价</a></li>
+                        <li><a href="javascript:void(0)">家庭成员</a></li>
+                    </ul>
+                </div>
+                <div class="boa-body">
+                    <ul>
+                        <li>
+                            <label><em>客户信息编号</em></label>
+                            <input type="text" value="sxsseee123" disabled>
+                        </li>
+                        <li>
+                            <label><em>重要性级别</em></label>
+                            <input type="text" value="1星" disabled>
+                        </li>
+                        <li>
+                            <label><em>客户类别</em></label>
+                            <input type="text" value="合作伙伴" disabled>
+                        </li>
+                        <li>
+                            <label><em>客户状态</em></label>
+                            <input type="text" value="潜在客户" disabled>
+                        </li>
+                        <li>
+                            <label><em>客户来源</em></label>
+                            <input type="text" value="合作伙伴" disabled>
+                        </li>
+                        <li>
+                            <label><em>关系程度</em></label>
+                            <input type="text" value="50%" disabled>
+                        </li>
+                        <li>
+                            <label><em>姓名</em></label>
+                            <input type="text" value="高令军" disabled>
+                        </li>
+                        <li>
+                            <label><em>性别</em></label>
+                            <input type="text" value="男" disabled>
+                        </li>
+                        <li class="last">
+                            <label><em>年龄</em></label>
+                            <input type="text" value="20">
+                        </li>
+                        <li class="big">
+                            <label><em>出生年月日</em></label>
+                            <input type="text" disabled class="add_image" value="1996-3-1">
+                        </li>
+                        <li class="big">
+                            <label><em>地区</em></label>
+                            <input type="text" disabled value="广州">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="big">
+                            <label><em>邮箱</em></label>
+                            <input type="text" disabled value="15862255@163.com">
+                        </li>
+                        <li class="big">
+                            <label><em>手机</em></label>
+                            <input type="text" value="12345678912">
+                        </li>
+                        <li class="big">
+                            <label><em>座机</em></label>
+                            <input type="text" disabled value="123456">
+                        </li>
+                        <li class="big">
+                            <label><em>QQ /微信</em></label>
+                            <input type="text" disabled value="15862255">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="big">
+                            <label><em>组织名称</em></label>
+                            <input type="text" disabled value="益阳市赫山区商务">
+                        </li>
+                        <li class="big">
+                            <label><em>组织规模</em></label>
+                            <input type="text"  disabled>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="big">
+                            <label><em>级别</em></label>
+                            <input type="text" disabled value="1星">
+                        </li>
+                        <li class="big">
+                            <label><em>岗位</em></label>
+                            <input type="text" disabled value="成语">
+                        </li>
+                        <li class="big">
+                            <label><em>职权</em></label>
+                            <input type="text" disabled>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="big">
+                            <label><em>生活地区</em></label>
+                            <input type="text" disabled value="湖南">
+                        </li>
+                        <li class="big">
+                            <label><em>成长地区</em></label>
+                            <input type="text" disabled value="广州">
+                        </li>
+                        <li class="big">
+                            <label><em>以往工作地区</em></label>
+                            <input type="text" disabled value="北京">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="l-big">
+                            <label><em>工作经历</em></label>
+                            <textarea class="big-input">
+                                曾经在什么什么地方
+                            </textarea>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="l-big">
+                            <label><em>求学培训经历</em></label>
+                            <textarea class="big-input"></textarea>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="l-big">
+                            <label><em>爱好</em></label>
+                            <textarea class="big-input"></textarea>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="l-big">
+                            <label><em>性格评价</em></label>
+                            <textarea class="big-input"></textarea>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="big">
+                            <label><em>称谓</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>姓名</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>联系方式</em></label>
+                            <input type="text" >
+                        </li>
+                        <li class="big">
+                            <label><em>性格爱好</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>工作单位</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="big">
+                            <label><em>职位</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="but"><button>添加</button></li>
+                    </ul>
+                    <div class="footer"></div>
+                </div>
+            </div>
+            <div class="export">
+                <div class="ex-head">
+                    <h5>温馨提示</h5>
+                </div>
+                <div class="ex-con">
+                    <p>是否导出数据？</p>
+                    <div class="export-input">
+                        <p class="export2">
+                            <label><em>地区</em></label>
+                            <select class="sele">
+                                <option value="">北京</option>
+                                <option value="">广州</option>
+                                <option value="">湖南</option>
+                            </select>
+                        </p>
+                        <p class="export2">
+                            <label><em>客户</em></label>
+                            <select class="sele">
+                                <option value="">张三</option>
+                                <option value="">李四</option>
+                                <option value="">王麻子</option>
+                            </select>
+                        </p>
+
+                    </div>
+                    <div class="btn">
+                        <button>导出</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="modalbg"></div>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/laypage/laypage.js"></script>
+<script src="/js/new_modules/common.js"></script>
+<script src="/js/new_modules/other.js"></script>
+<script type="text/javascript">
+    laypage({
+        cont: $('#pages'),  //容器。值支持id名、原生dom对象，jquery对象,
+        pages: 20, //总页数
+        skin: 'molv', //皮肤
+        first: 1, //将首页显示为数字1,。若不显示，设置false即可
+        last: 20, //将尾页显示为总页数。若不显示，设置false即可
+    });
+</script>
+</body>
+</html>

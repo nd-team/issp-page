@@ -1,0 +1,14 @@
+{
+	"name" : "editor-plugins",
+	"description" : "plugins for kissy editor",
+	"version" : "1.1.0",
+	"url" : "http://gallery.kissyui.com/editor-plugins/doc/guide/index.html",
+	"options" : {
+		"linkNatives": true,        
+        "attributesEmit": false,
+        "selleck": true,
+        "paths" : "./guide/src-api/",
+		"outdir" : "./guide/api/",
+		"themedir" : "./guide/src-api/themes/default/"
+	}
+}

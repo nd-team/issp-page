@@ -20,4 +20,10 @@ $(function () {
         $(this).addClass('cur').siblings().removeClass('cur');
         $('.file-all>ul:eq(' + $(this).index() + ')').show().siblings().hide();
     })
-})
+    //切换
+        $('.boa-body').find("ul").not("ul:nth-of-type(1),.footer").hide();
+        $('.boa-title ul li').click(function () {
+            $(this).addClass('boa-cur').siblings().removeClass('boa-cur');
+            $(this).parents('.boarding').find('.boa-body ul').eq($(this).index()).show().siblings().hide();
+        })
+});
