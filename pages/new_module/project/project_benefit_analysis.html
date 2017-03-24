@@ -22,11 +22,11 @@
         <div class="nav-list">
             <h3 class="header-menu"><i class="nav-arrow"></i>项目前期的市场费用管理</h3>
             <ul class="menu">
-                <li class="active">
+                <li>
                     <a href="/pages/new_module/project/project_sales_info.html">销售费用信息</a>
                 </li>
-                <li>
-                    <a href="/pages/new_module/project/project_sales_info.html">费用效益分析</a>
+                <li class="active">
+                    <a href="/pages/new_module/project/project_benefit_analysis.html">费用效益分析</a>
                 </li>
             </ul>
         </div>
@@ -65,15 +65,6 @@
                 <li data-title="summary">
                     <a href="javascript:void(0)" class="same-one">汇总<span>summary</span></a>
                 </li>
-                <li data-title="area-summary">
-                    <a href="javascript:void(0)" class="same-two">地区汇总<span>summary</span></a>
-                </li>
-                <li data-title="project-summary">
-                    <a href="javascript:void(0)" class="same-one">项目汇总<span>summary</span></a>
-                </li>
-                <li data-title="group-summary">
-                    <a href="javascript:void(0)" class="same-two">项目组汇总<span>summary</span></a>
-                </li>
             </ul>
         </div>
         <div class="content">
@@ -82,13 +73,13 @@
                     <li class="list-head">
                         <span></span>
                         <span class="data-id">id</span>
-                        <span>日期</span>
                         <span>地区</span>
+                        <span>年份</span>
+                        <span>月份</span>
                         <span>项目名称</span>
-                        <span>用户名称</span>
-                        <span>分类</span>
-                        <span>一级科目(总账科目)</span>
-                        <span>二级科目</span>
+                        <span>预计收入</span>
+                        <span>预计市场费</span>
+                        <span>实际市场费</span>
                         <span></span>
                     </li>
                     <li class="list-all">
@@ -111,12 +102,14 @@
                                 <ul class="can-see">
                                     <li>
                                         <p class="see-parent">
-                                            <span>三级科目(明细科目)</span> <span>摘要</span>
-                                            <span>借方金额</span> <span>贷方金额</span>
+                                            <span>差额</span> <span>预计占比</span>
+                                            <span>实际占比</span> <span>预警</span>
+                                            <span>等级评定</span>
                                         </p>
                                         <p class="see-children">
                                             <span>未知</span> <span>未知</span>
                                             <span>未知</span> <span>未知</span>
+                                            <span>未知</span>
                                         </p>
                                     </li>
                                 </ul>
@@ -140,10 +133,6 @@
                     <section>
                         <ul>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>日期</em></label>
-                                <input type="text" id="date" class="date-icon">
-                            </li>
-                            <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
                                 <select class="sele">
                                     <option value="0">北京</option>
@@ -153,45 +142,53 @@
                                 </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目名称</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>年份</em></label>
+                                <input type="text" id="date" class="date-icon">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>月份</em></label>
                                 <select class="sele">
-                                    <option value="0">01</option>
-                                    <option value="1">02</option>
-                                    <option value="2">03</option>
-                                    <option value="3">04</option>
+                                    <option value="0">1月</option>
+                                    <option value="1">2月</option>
+                                    <option value="2">3月</option>
+                                    <option value="3">4月</option>
                                 </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>用户名称</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目名称</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>分类</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>一级科目(总账科目)</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>二级科目</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>三级科目(明细科目)</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>摘要</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>借方金额</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>预计收入</em></label>
                                 <input type="number">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>贷方金额</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>预计市场费</em></label>
                                 <input type="number">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>实际市场费</em></label>
+                                <input type="number">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>差额</em></label>
+                                <input type="number">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>预计占比</em></label>
+                                <input type="number">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>实际占比</em></label>
+                                <input type="number">
+                            </li>
+                            <li>
+                                <label><em>预警</em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>等级评定</em></label>
+                                <input type="text">
                             </li>
                         </ul>
                     </section>
@@ -285,170 +282,12 @@
                     <section>
                         <ul>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>二级科目</em></label>
-                                <select class="sele">
-                                    <option value="0">01</option>
-                                    <option value="1">02</option>
-                                    <option value="2">03</option>
-                                    <option value="3">04</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>三级科目</em></label>
-                                <select class="sele">
-                                    <option value="0">01</option>
-                                    <option value="1">02</option>
-                                    <option value="2">03</option>
-                                    <option value="3">04</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
-                                <select class="sele">
-                                    <option value="0">北京</option>
-                                    <option value="1">广州</option>
-                                    <option value="2">深圳</option>
-                                    <option value="3">佛山</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目名称</em></label>
-                                <select class="sele">
-                                    <option value="0">01</option>
-                                    <option value="1">02</option>
-                                    <option value="2">03</option>
-                                    <option value="3">04</option>
-                                </select>
-                            </li>
-                        </ul>
-                    </section>
-
-                </div>
-                <p class="dataBottom">
-                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
-                    <button>提交</button>
-                </p>
-            </div>
-            <div class="content-input area-summary">
-                <div class="input-list">
-                    <section>
-                        <ul>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>三级科目</em></label>
-                                <select class="sele">
-                                    <option value="0">01</option>
-                                    <option value="1">02</option>
-                                    <option value="2">03</option>
-                                    <option value="3">04</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
-                                <select class="sele">
-                                    <option value="0">北京</option>
-                                    <option value="1">广州</option>
-                                    <option value="2">深圳</option>
-                                    <option value="3">佛山</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>日期</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>年份</em></label>
                                 <input type="text" id="time" class="date-icon">
                             </li>
                             <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目</em></label>
-                                <select class="sele">
-                                    <option value="0">01</option>
-                                    <option value="1">02</option>
-                                    <option value="2">03</option>
-                                    <option value="3">04</option>
-                                </select>
-                            </li>
-                        </ul>
-                    </section>
-                </div>
-                <p class="dataBottom">
-                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
-                    <button>提交</button>
-                </p>
-            </div>
-            <div class="content-input project-summary">
-                <div class="input-list">
-                    <section>
-                        <ul>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>三级科目</em></label>
-                                <select class="sele">
-                                    <option value="0">01</option>
-                                    <option value="1">02</option>
-                                    <option value="2">03</option>
-                                    <option value="3">04</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
-                                <select class="sele">
-                                    <option value="0">北京</option>
-                                    <option value="1">广州</option>
-                                    <option value="2">深圳</option>
-                                    <option value="3">佛山</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>日期</em></label>
-                                <input type="text" id="time_project" class="date-icon">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目</em></label>
-                                <select class="sele">
-                                    <option value="0">01</option>
-                                    <option value="1">02</option>
-                                    <option value="2">03</option>
-                                    <option value="3">04</option>
-                                </select>
-                            </li>
-                        </ul>
-                    </section>
-                </div>
-                <p class="dataBottom">
-                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
-                    <button>提交</button>
-                </p>
-            </div>
-            <div class="content-input group-summary">
-                <div class="input-list">
-                    <section>
-                        <ul>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>三级科目</em></label>
-                                <select class="sele">
-                                    <option value="0">01</option>
-                                    <option value="1">02</option>
-                                    <option value="2">03</option>
-                                    <option value="3">04</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
-                                <select class="sele">
-                                    <option value="0">北京</option>
-                                    <option value="1">广州</option>
-                                    <option value="2">深圳</option>
-                                    <option value="3">佛山</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>日期</em></label>
-                                <input type="text" id="time_group" class="date-icon">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目</em></label>
-                                <select class="sele">
-                                    <option value="0">01</option>
-                                    <option value="1">02</option>
-                                    <option value="2">03</option>
-                                    <option value="3">04</option>
-                                </select>
+                                <input type="text">
                             </li>
                         </ul>
                     </section>
@@ -507,30 +346,6 @@
     var time = new Pikaday({
         numberOfMonths: 1,
         field:jQuery('#time')[0],
-        minDate: new Date('2000-01-01'),
-        maxDate: new Date('2020-12-31'),
-        yearRange: [2000,2020],
-        i18n: i18n,
-        onSelect: function() {
-            var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
-            $('#datepicker').appendChild(date);
-        }
-    });
-    var time_project = new Pikaday({
-        numberOfMonths: 1,
-        field:jQuery('#time_project')[0],
-        minDate: new Date('2000-01-01'),
-        maxDate: new Date('2020-12-31'),
-        yearRange: [2000,2020],
-        i18n: i18n,
-        onSelect: function() {
-            var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
-            $('#datepicker').appendChild(date);
-        }
-    });
-    var time_group = new Pikaday({
-        numberOfMonths: 1,
-        field:jQuery('#time_group')[0],
         minDate: new Date('2000-01-01'),
         maxDate: new Date('2020-12-31'),
         yearRange: [2000,2020],
