@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>申诉</title>
+    <link rel="stylesheet" href="/css/reward/appeal.css">
+</head>
+<body>
+   <header>
+    <a href="/pages/activity/activity_index.html" class="chat-life" title="生活价值平台">
+        <svg role="img" class="life">
+            <use xlink:href="#life"></use>
+        </svg>
+    </a>
+    <ul class="header-icon">
+        <li>
+            <a href="/pages/honor/bonus_add.html">
+                <svg role="img" class="honor">
+                    <use xlink:href="#honor"></use>
+                </svg>
+            </a>
+            <a href="/pages/honor/bonus_add.html" class="icon-text">荣誉</a>
+        </li>
+        <li>
+            <a href="/pages/reward/reward_circle.html">
+                <svg role="img" class="bonuses">
+                    <use xlink:href="#bonuses"></use>
+                </svg>
+            </a>
+            <a href="/pages/reward/reward_circle.html" class="icon-text">奖励</a>
+        </li>
+        <!--如果没有登陆弹出登录框-->
+        <li>
+            <a href="/pages/chatRoom/private_chat.html">
+                <svg role="img" class="bbs">
+                    <use xlink:href="#bbs"></use>
+                </svg>
+            </a>
+            <a href="/pages/chatRoom/private_chat.html" class="icon-text">聊天室</a>
+        </li>
+        <li>
+            <a href="/pages/activity/activity_all.html">
+                <svg role="img" class="activity">
+                    <use xlink:href="#activity"></use>
+                </svg>
+            </a>
+            <a href="/pages/activity/activity_all.html" class="icon-text">活动</a>
+        </li>
+        <li>
+            <a href="/pages/activity/social.html">
+                <svg role="img" class="society">
+                    <use xlink:href="#society"></use>
+                </svg>
+            </a>
+            <a href="/pages/activity/social.html" class="icon-text">社交</a>
+        </li>
+        <li>
+            <a href="/pages/funding/indiana.html">
+                <svg role="img" class="zongchou">
+                    <use xlink:href="#zongchou"></use>
+                </svg>
+            </a>
+            <a href="/pages/funding/indiana.html" class="icon-text">众筹</a>
+        </li>
+    </ul>
+    <a href="javascript:void(0)" class="myself">
+        <svg role="img" class="bonuses">
+            <use xlink:href="#bonuses"></use>
+        </svg>
+    </a>
+    <div class="search-input">
+        <div class="input-box">
+            <input type="text" class="search" placeholder="输入要搜索的内容">
+            <a href="javascript:void(0)">
+                <svg role="img" class="magnifier">
+                    <use xlink:href="#magnifier"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="photo">
+            <a href="javascript:void(0)" class="head-photo">
+                <img src="/images/honor/user01.jpg" alt="">
+            </a>
+            <div class="modal-box">
+                <div class="modal-message">
+                    <p>
+                        <i class="triangle"></i>
+                    </p>
+                    <div class="get-info">
+                        <a href="/pages/chatRoom/moving.html" class="me">
+                            <svg role="img" class="my">
+                                <use xlink:href="#my"></use>
+                            </svg>
+                            <span>我的</span>
+                        </a>
+                        <a href="/pages/chatRoom/chat_message.html" class="my-news">
+                            <svg role="img" class="news">
+                                <use xlink:href="#news"></use>
+                            </svg>
+                            <span>消息</span>
+                            <strong>99</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+   <div class="content">
+       <div class="title">
+           <div class="wrap_t">
+               <span>发起惩罚</span>
+               <span><b><img src="/images/reward/inUser.png"></b>目前<i>30</i>人处罚中</span>
+           </div>
+       </div>
+       <div class="title">
+           <div class="wrap_t">
+               <a  href="/pages/reward/in_punishment.html">
+                   发起处罚
+               </a>
+               <a class="but-cu b-green f-f" href="/pages/reward/appeal.html">申诉</a>
+           </div>
+       </div>
+       <div class="appeal-flow">
+             <ul class="in1 initiate-penalty">
+                     <li class="init-head"><p>发起处罚</p><button class="in1-but">5</button></li>
+                     <li class="init-body" data-title="pun-person">
+                         <i class="init-img"><img src="/images/reward/appeal/1.png"></i>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-time">
+                                 <i><img src="/images/reward/appeal/date.png"></i>
+                                 <i>2015-10-12</i>
+                                 <i>10:30:50</i>
+                             </span>
+                         </p>
+                         <span class="details"><img src="/images/reward/appeal/more.png"></span>
+                     </li>
+                     <li class="init-body">
+                         <i class="init-img"><img src="/images/reward/appeal/2.png"></i>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-time">
+                                 <i><img src="/images/reward/appeal/date.png"></i>
+                                 <i>2015-10-12</i>
+                                 <i>10:30:50</i>
+                             </span>
+                         </p>
+                         <span class="details"><img src="/images/reward/appeal/more.png"></span>
+                     </li>
+                     <li class="init-body">
+                         <i class="init-img"><img src="/images/reward/appeal/3.png"></i>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-time">
+                                 <i><img src="/images/reward/appeal/date.png"></i>
+                                 <i>2015-10-12</i>
+                                 <i>10:30:50</i>
+                             </span>
+                         </p>
+                         <span class="details"><img src="/images/reward/appeal/more.png"></span>
+                     </li>
+                     <li class="init-body">
+                         <i class="init-img"><img src="/images/reward/appeal/4.png"></i>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-time">
+                                 <i><img src="/images/reward/appeal/date.png"></i>
+                                 <i>2015-10-12</i>
+                                 <i>10:30:50</i>
+                             </span>
+                         </p>
+                         <span class="details"><img src="/images/reward/appeal/more.png"></span>
+                     </li>
+                     <li class="init-body">
+                         <i class="init-img"><img src="/images/reward/appeal/5.png"></i>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-time">
+                                 <i><img src="/images/reward/appeal/date.png"></i>
+                                 <i>2015-10-12</i>
+                                 <i>10:30:50</i>
+                             </span>
+                         </p>
+                         <span class="details"><img src="/images/reward/appeal/more.png"></span>
+                     </li>
+                     <li class="init-body">
+                         <i class="init-img"><img src="/images/reward/appeal/6.png"></i>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-time">
+                                 <i><img src="/images/reward/appeal/date.png"></i>
+                                 <i>2015-10-12</i>
+                                 <i>10:30:50</i>
+                             </span>
+                         </p>
+                         <span class="details"><img src="/images/reward/appeal/more.png"></span>
+                     </li>
+                     <li class="init-body">
+                         <i class="init-img"><img src="/images/reward/appeal/7.png"></i>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-time">
+                                 <i><img src="/images/reward/appeal/date.png"></i>
+                                 <i>2015-10-12</i>
+                                 <i>10:30:50</i>
+                             </span>
+                         </p>
+                         <span class="details"><img src="/images/reward/appeal/more.png"></span>
+                     </li>
+                     <li class="init-body">
+                         <i class="init-img"><img src="/images/reward/appeal/7.png"></i>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-time">
+                                 <i><img src="/images/reward/appeal/date.png"></i>
+                                 <i>2015-10-12</i>
+                                 <i>10:30:50</i>
+                             </span>
+                         </p>
+                         <span class="details"><img src="/images/reward/appeal/more.png"></span>
+                     </li>
+                     <li class="init-fot">
+                         <button>更多<i>v</i></button>
+                     </li>
+                 </ul>
+             <ul class="in1 in-appeal">
+                     <li class="init-head"><p>申诉中</p><button>20</button></li>
+                     <li class="init-body">
+                         <i class="init-img"><img src="/images/reward/appeal/8.png"></i>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-chat">
+                                 <i><img src="/images/reward/appeal/chat.png"></i>
+                                 <i class="chat-cont">我那天上班咯</i>
+                             </span>
+                             <span class="condition">
+                                 <a href="javascript:void(0)" class="con-rep" data-title="pun-reply">回复</a>
+                                 <a href="javascript:void(0)" class="con-reo"><i><img src="/images/reward/appeal/revoke.png"> </i>撤销</a>
+                                 <a href="javascript:void(0)" class="con-pui">确定处罚</a>
+                             </span>
+                         </p>
+                     </li>
+                     <li class="init-body">
+                         <i class="init-img"><img src="/images/reward/appeal/9.png"></i>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-chat">
+                                 <i class="already-chat"><img src="/images/reward/appeal/already-chat.png"></i>
+                                 <i class="chat-cont">我那天上班咯</i>
+                             </span>
+                             <span class="condition">
+                                 <a href="javascript:void(0)" class="con-rep">回复</a>
+                                 <a href="javascript:void(0)" class="con-reo"><i><img src="/images/reward/appeal/revoke.png"> </i>撤销</a>
+                                 <a href="javascript:void(0)" class="con-pui">确定处罚</a>
+                             </span>
+                         </p>
+                     </li>
+                     <li class="init-body">
+                         <i class="init-img"><img src="/images/reward/appeal/10.png"></i>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-chat">
+                                 <i><img src="/images/reward/appeal/chat.png"></i>
+                                 <i class="chat-cont">我那天上班咯</i>
+                             </span>
+                             <span class="condition">
+                                 <a href="javascript:void(0)" class="con-rep">回复</a>
+                                 <a href="javascript:void(0)" class="con-reo"><i><img src="/images/reward/appeal/revoke.png"> </i>撤销</a>
+                                 <a href="javascript:void(0)" class="con-pui">确定处罚</a>
+                             </span>
+                         </p>
+                     </li>
+                     <li class="init-body">
+                         <i class="init-img"><img src="/images/reward/appeal/11.png"></i>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-chat">
+                                 <i><img src="/images/reward/appeal/chat.png"></i>
+                                 <i class="chat-cont">我那天上班咯</i>
+                             </span>
+                             <span class="condition">
+                                 <a href="javascript:void(0)" class="con-rep">回复</a>
+                                 <a href="javascript:void(0)" class="con-reo"><i><img src="/images/reward/appeal/revoke.png"> </i>撤销</a>
+                                 <a href="javascript:void(0)" class="con-pui">确定处罚</a>
+                             </span>
+                         </p>
+                     </li>
+                     <li class="init-body">
+                         <i class="init-img"><img src="/images/reward/appeal/12.png"></i>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-chat">
+                                 <i><img src="/images/reward/appeal/chat.png"></i>
+                                 <i class="chat-cont">我那天上班咯</i>
+                             </span>
+                             <span class="condition">
+                                 <a href="javascript:void(0)" class="con-rep">回复</a>
+                                 <a href="javascript:void(0)" class="con-reo"><i><img src="/images/reward/appeal/revoke.png"> </i>撤销</a>
+                                 <a href="javascript:void(0)" class="con-pui">确定处罚</a>
+                             </span>
+                         </p>
+                     </li>
+                     <li class="init-body">
+                         <i class="init-img"><img src="/images/reward/appeal/13.png"></i>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-chat">
+                                 <i><img src="/images/reward/appeal/chat.png"></i>
+                                 <i class="chat-cont">我那天上班咯</i>
+                             </span>
+                             <span class="condition">
+                                 <a href="javascript:void(0)" class="con-rep">回复</a>
+                                 <a href="javascript:void(0)" class="con-reo"><i><img src="/images/reward/appeal/revoke.png"> </i>撤销</a>
+                                 <a href="javascript:void(0)" class="con-pui">确定处罚</a>
+                             </span>
+                         </p>
+                     </li>
+                     <li class="init-body">
+                         <i class="init-img"><img src="/images/reward/appeal/14.png"></i>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-chat">
+                                 <i><img src="/images/reward/appeal/chat.png"></i>
+                                 <i class="chat-cont">我那天上班咯</i>
+                             </span>
+                             <span class="condition">
+                                 <a href="javascript:void(0)" class="con-rep">回复</a>
+                                 <a href="javascript:void(0)" class="con-reo"><i><img src="/images/reward/appeal/revoke.png"> </i>撤销</a>
+                                 <a href="javascript:void(0)" class="con-pui">确定处罚</a>
+                             </span>
+                         </p>
+                     </li>
+                     <li class="init-fot">
+                         <button>更多<i>v</i></button>
+                     </li>
+                 </ul>
+             <ul class="in1 determine-pun">
+                     <li class="init-head"><p>确定处罚</p><button>10</button></li>
+                     <li class="init-body">
+                         <p class="init-img">
+                             <img src="/images/reward/appeal/15.png">
+                              <i class="init-line"></i>
+                         </p>
+                         <p class="appe" data-title="al-obsolete">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-chat">
+                                 <i><img src="/images/reward/appeal/handle.png"></i>
+                                 <i class="chat-cont">已经过了处理时间</i>
+                             </span>
+                         </p>
+                         <span class="details"><img src="/images/reward/appeal/more.png"></span>
+                     </li>
+                     <li class="init-body">
+                         <p class="init-img">
+                             <img src="/images/reward/appeal/16.png">
+                              <i class="init-line"></i>
+                         </p>
+                         <p class="appe" data-title="not-pass">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-chat">
+                                 <i><img src="/images/reward/appeal/handle.png"></i>
+                                 <i class="chat-cont no">不通过</i>
+                             </span>
+                         </p>
+                         <span class="details"><img src="/images/reward/appeal/more.png"></span>
+                     </li>
+                     <li class="init-body">
+                         <p class="init-img">
+                             <img src="/images/reward/appeal/17.png">
+                              <i class="init-line"></i>
+                         </p>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-chat">
+                                 <i><img src="/images/reward/appeal/handle.png"></i>
+                                 <i class="chat-cont">已经过了处理时间</i>
+                             </span>
+                         </p>
+                         <span class="details"><img src="/images/reward/appeal/more.png"></span>
+                     </li>
+                     <li class="init-body">
+                         <p class="init-img">
+                             <img src="/images/reward/appeal/18.png">
+                              <i class="init-line"></i>
+                         </p>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-chat">
+                                 <i><img src="/images/reward/appeal/handle.png"></i>
+                                 <i class="chat-cont">已经过了处理时间</i>
+                             </span>
+                         </p>
+                         <span class="details"><img src="/images/reward/appeal/more.png"></span>
+                     </li>
+                     <li class="init-body">
+                         <p class="init-img">
+                             <img src="/images/reward/appeal/19.png">
+                              <i class="init-line"></i>
+                         </p>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-chat">
+                                 <i><img src="/images/reward/appeal/handle.png"></i>
+                                 <i class="chat-cont">已经过了处理时间</i>
+                             </span>
+                         </p>
+                         <span class="details"><img src="/images/reward/appeal/more.png"></span>
+                     </li>
+                     <li class="init-body">
+                         <p class="init-img">
+                             <img src="/images/reward/appeal/20.png">
+                              <i class="init-line"></i>
+                         </p>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-chat">
+                                 <i><img src="/images/reward/appeal/handle.png"></i>
+                                 <i class="chat-cont">已经过了处理时间</i>
+                             </span>
+                         </p>
+                         <span class="details"><img src="/images/reward/appeal/more.png"></span>
+                     </li>
+                     <li class="init-body">
+                         <p class="init-img">
+                             <img src="/images/reward/appeal/21.png">
+                         </p>
+                         <p class="appe">
+                             <span class="appe-name">咖啡店</span>
+                             <span class="appe-chat">
+                                 <i><img src="/images/reward/appeal/handle.png"></i>
+                                 <i class="chat-cont">已经过了处理时间</i>
+                             </span>
+                         </p>
+                         <span class="details"><img src="/images/reward/appeal/more.png"></span>
+                     </li>
+                     <li class="init-fot">
+                         <button>更多<i>v</i></button>
+                     </li>
+                 </ul>
+       </div>
+       <!--模态框-->
+       <div id="modal">
+           <div class="pun-person m-con">
+               <p class="per-tit">
+                   <span class="per-img"><img src="/images/reward/appeal/6.png"></span>
+                   <span class="per-name">雨巷</span>
+                   <span class="close"><img src="/images/reward/appeal/close.png"></span>
+               </p>
+               <div class="person-all">
+                   <p class="per-tit-top"></p>
+                   <div class="person-cont">
+                       <p class="per-cont">
+                           <i><img src="/images/reward/appeal/per-img.png"></i>
+                           <span class="per-text">
+                             撑着油纸伞，独自彷徨在悠长，悠长又寂寥的雨巷，我希望逢着一个丁香一样的结着愁怨的姑娘。
+                            她是有丁香一样的颜色，丁香一样的芬芳，丁香一样的忧愁，在雨中哀怨，哀怨又彷徨；她彷徨在这寂寥的雨巷，
+                            撑着油纸伞像我一样，像我一样地默默彳亍着，冷漠，凄清，又惆怅。
+                         </span>
+                       </p>
+                       <p class="per-picture">
+                           <span class="per-detail-pic"><img src="/images/reward/appeal/detail-pic.png"></span>
+                           <span class="repair" onclick="javascript:doit();"><a href="javascript:void(0)">修</a><img src="/images/reward/appeal/write.png"></span>
+                       </p>
+                       <div class="all-picture">
+                           <div class="per-big-pic">
+                               <div class="big-pic mgtb papers-demo hide s1" id="papers1">
+                                   <span><img src="/images/reward/c6.jpg"></span>
+                                   <span><img src="/images/reward/c1.jpg"></span>
+                                   <span><img src="/images/reward/c2.jpg"></span>
+                                   <span><img src="/images/reward/c3.jpg"></span>
+                               </div>
+                           </div>
+                           <span class="figure"><i class="fig-fir">1</i>/<i class="fig-last">5</i></span>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="pun-reply m-con">
+               <p class="cl-en"><span class="close"><img src="/images/reward/appeal/close.png"></span></p>
+               <div class="person-cont">
+                   <p class="per-cont">
+                       <i><img src="/images/reward/appeal/per-img.png"></i>
+                       <span class="per-text">
+                             撑着油纸伞，独自彷徨在悠长，悠长又寂寥的雨巷，我希望逢着一个丁香一样的结着愁怨的姑娘。
+                            她是有丁香一样的颜色，丁香一样的芬芳，丁香一样的忧愁，在雨中哀怨，哀怨又彷徨；她彷徨在这寂寥的雨巷，
+                            撑着油纸伞像我一样，像我一样地默默彳亍着，冷漠，凄清，又惆怅。
+                    </span>
+                   </p>
+                   <p class="per-picture">
+                       <span class="per-detail-pic"><img src="/images/reward/appeal/detail-pic.png"></span>
+                       <span class="repair" onclick="javascript:doit();"><a href="javascript:void(0)">修</a><img src="/images/reward/appeal/write.png"></span>
+                   </p>
+                   <div class="all-picture">
+                       <div class="per-big-pic">
+                           <div class="big-pic mgtb papers-demo hide s2" id="papers2">
+                               <span><img src="/images/reward/c6.jpg"></span>
+                               <span><img src="/images/reward/c1.jpg"></span>
+                               <span><img src="/images/reward/c2.jpg"></span>
+                               <span><img src="/images/reward/c3.jpg"></span>
+                           </div>
+                       </div>
+                       <span class="figure"><i class="fig-fir">1</i>/<i class="fig-last">5</i></span>
+                   </div>
+                   <div class="all-reply">
+                       <div class="reply-03">
+                           <ul>
+                               <li>
+                                   <p class="time-axis">
+                                       <i class="first-line"></i>
+                                       <span class="day">2016-12-13</span>
+                                       <span class="time">12:13:14</span>
+                                       <i class="center-line"></i>
+                                   </p>
+                                   <div class="li-all2">
+                                       <div class="li-all">
+                                           <span class="reply_pic"><img src="/images/reward/appeal/1.png"></span>
+                                           <div class="reply_name">
+                                               <p class="reply_name2">
+                                                   <a href="javascript:void(0)" class="reply_name3">好的</a>
+                                                   <span>你说什什么都是什么都是什么都是么都</span>
+                                               </p>
+                                               <a href="javascript:void(0)" class="reply_name4">回复</a>
+                                           </div>
+                                       </div>
+                                       <div class="so-and-so">
+                                           <p contenteditable="true" class="so-reply">回复<span>超级大美女</span></p>
+                                           <p class="so-reply02">
+                                               <svg role="img" class="user-expression">
+                                                   <use xlink:href="#user-expression"></use>
+                                               </svg>
+                                               <button>提交</button>
+                                           </p>
+                                       </div>
+                                   </div>
+                               </li>
+                               <li>
+                                   <p class="time-axis">
+                                       <i class="first-line"></i>
+                                       <span class="day">2016-12-13</span>
+                                       <span class="time">12:13:14</span>
+                                       <i class="center-line"></i>
+                                   </p>
+                                   <div class="li-all2">
+                                       <div class="li-all">
+                                           <span class="reply_pic"><img src="/images/reward/appeal/1.png"></span>
+                                           <div class="reply_name">
+                                               <p class="reply_name2">
+                                                   <a href="javascript:void(0)" class="reply_name3">好的</a>
+                                                   <span>你说什什么都是什么都是什么都是么都</span>
+                                               </p>
+                                               <a href="javascript:void(0)" class="reply_name4">回复</a>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </li>
+                           </ul>
+                           <p class="no-more">没有更多</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="not-pass m-con">
+               <p class="per-tit">
+                   <span class="per-img"><img src="/images/reward/appeal/6.png"></span>
+                   <span class="per-name">雨巷</span>
+                   <span class="close"><img src="/images/reward/appeal/close.png"></span>
+               </p>
+               <div class="person-all">
+                   <p class="per-tit-top"></p>
+                   <div class="person-cont">
+                       <p class="per-cont">
+                           <i><img src="/images/reward/appeal/per-img.png"></i>
+                           <span class="per-text">
+                             撑着油纸伞，独自彷徨在悠长，悠长又寂寥的雨巷，我希望逢着一个丁香一样的结着愁怨的姑娘。
+                            她是有丁香一样的颜色，丁香一样的芬芳，丁香一样的忧愁，在雨中哀怨，哀怨又彷徨；她彷徨在这寂寥的雨巷，
+                            撑着油纸伞像我一样，像我一样地默默彳亍着，冷漠，凄清，又惆怅。
+                         </span>
+                       </p>
+                       <p class="per-picture">
+                           <span class="per-detail-pic"><img src="/images/reward/appeal/detail-pic.png"></span>
+                           <span class="no">不通过</span>
+                       </p>
+                       <div class="all-picture">
+                           <div class="per-big-pic">
+                               <div class="big-pic mgtb papers-demo hide s3" id="papers3">
+                                   <span><img src="/images/reward/c6.jpg"></span>
+                                   <span><img src="/images/reward/c1.jpg"></span>
+                                   <span><img src="/images/reward/c2.jpg"></span>
+                                   <span><img src="/images/reward/c3.jpg"></span>
+                               </div>
+                           </div>
+                           <span class="figure"><i class="fig-fir">1</i>/<i class="fig-last">5</i></span>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="al-obsolete m-con">
+               <p class="per-tit">
+                   <span class="per-img"><img src="/images/reward/appeal/6.png"></span>
+                   <span class="per-name">雨巷</span>
+                   <span class="close"><img src="/images/reward/appeal/close.png"></span>
+               </p>
+               <div class="person-all">
+                   <p class="per-tit-top"></p>
+                   <div class="person-cont">
+                       <p class="per-cont">
+                           <i><img src="/images/reward/appeal/per-img.png"></i>
+                           <span class="per-text">
+                             撑着油纸伞，独自彷徨在悠长，悠长又寂寥的雨巷，我希望逢着一个丁香一样的结着愁怨的姑娘。
+                            她是有丁香一样的颜色，丁香一样的芬芳，丁香一样的忧愁，在雨中哀怨，哀怨又彷徨；她彷徨在这寂寥的雨巷，
+                            撑着油纸伞像我一样，像我一样地默默彳亍着，冷漠，凄清，又惆怅。
+                         </span>
+                       </p>
+                       <p class="per-picture">
+                           <span class="per-detail-pic"><img src="/images/reward/appeal/detail-pic.png"></span>
+                           <span class="obsolete">已经过了处理时间</span>
+                       </p>
+                       <div class="all-picture">
+                           <div class="per-big-pic">
+                               <div class="big-pic mgtb papers-demo hide s4" id="papers4">
+                                   <span><img src="/images/reward/c6.jpg"></span>
+                                   <span><img src="/images/reward/c1.jpg"></span>
+                                   <span><img src="/images/reward/c2.jpg"></span>
+                                   <span><img src="/images/reward/c3.jpg"></span>
+                               </div>
+                           </div>
+                           <span class="figure"><i class="fig-fir">1</i>/<i class="fig-last">5</i></span>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div id="modalbg"></div>
+   </div>
+   <footer>
+       <div class="wrap">
+           <ul>
+               <li>
+                   <img src="/images/activity/aboutus.png" alt="">
+                   <a href="javascript:void(0)">关于我们</a>
+                   <a href="javascript:void(0)">帮助我们</a>
+                   <a href="javascript:void(0)">意见反馈</a>
+               </li>
+               <li>
+                   <img src="/images/activity/platopen.png" alt="">
+                   <a href="javascript:void(0)">开放平台</a>
+                   <a href="javascript:void(0)">了解平台</a>
+               </li>
+               <li>
+                   <img src="/images/activity/platnav.png" alt="">
+                   <a href="javascript:void(0)">平台导航</a>
+               </li>
+               <li>
+                   <img src="/images/activity/platmana.png" alt="">
+                   <a href="javascript:void(0)">平台管理中心</a>
+               </li>
+               <li>
+                   <img src="/images/activity/publicplat.png" alt="">
+                   <a href="javascript:void(0)">平台公共</a>
+               </li>
+           </ul>
+           <section class="copyright">
+               <div>
+                   <p>Copyright @ 2010-2017 ISSO 北京艾佳天诚信息技术有限公司</p>
+                   <p>京文网[2012]0398-130号</p>
+                   <p>京ICP备12003058号</p>
+               </div>
+           </section>
+       </div>
+
+   </footer>
+   <div class="oldPlat">
+       <div class="wrap">
+           <span>返回</span>
+           <ul>
+               <li>
+                   <a href="https://issp.bjike.com/admin/login">返回issp平台</a>
+               </li>
+               <li>
+                   <a href="https://issp.bjike.com/admin/office/49713c65-a6c3-4938-a3ca-1754b2b846b0">返回奖惩平台</a>
+               </li>
+           </ul>
+       </div>
+   </div>
+</body>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/new_pages/appeal.js"></script>
+<script src="/js/reward/jquery.paper-slider.js"></script>
+<script language="javascript">
+    function doit(){
+        var per =document.getElementsByClassName("per-text");
+        for(var i=0;i<per.length;i++){
+            (function(i){
+             // alert("可以单击");
+                per[i].contentEditable=true;
+                per[i].focus();
+            })(i)
+        }
+    }
+</script>
+</html>

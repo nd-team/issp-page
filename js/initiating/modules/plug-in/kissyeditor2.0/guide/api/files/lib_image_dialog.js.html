@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>lib/image/dialog.js - editor-plugins</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title="editor-plugins"></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: editor-plugins 1.1.0</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/BackColor.html">BackColor</a></li>
+            
+                <li><a href="../classes/Bold.html">Bold</a></li>
+            
+                <li><a href="../classes/Button.html">Button</a></li>
+            
+                <li><a href="../classes/CheckBoxSourceArea.html">CheckBoxSourceArea</a></li>
+            
+                <li><a href="../classes/Code.html">Code</a></li>
+            
+                <li><a href="../classes/Draft.html">Draft</a></li>
+            
+                <li><a href="../classes/DragUpload.html">DragUpload</a></li>
+            
+                <li><a href="../classes/ElementPath.html">ElementPath</a></li>
+            
+                <li><a href="../classes/Flash.html">Flash</a></li>
+            
+                <li><a href="../classes/FontColor.html">FontColor</a></li>
+            
+                <li><a href="../classes/FontFamily.html">FontFamily</a></li>
+            
+                <li><a href="../classes/FontSize.html">FontSize</a></li>
+            
+                <li><a href="../classes/Heading.html">Heading</a></li>
+            
+                <li><a href="../classes/Image.html">Image</a></li>
+            
+                <li><a href="../classes/Indent.html">Indent</a></li>
+            
+                <li><a href="../classes/Italic.html">Italic</a></li>
+            
+                <li><a href="../classes/JustifyCenter.html">JustifyCenter</a></li>
+            
+                <li><a href="../classes/JustifyLeft.html">JustifyLeft</a></li>
+            
+                <li><a href="../classes/JustifyRight.html">JustifyRight</a></li>
+            
+                <li><a href="../classes/Link.html">Link</a></li>
+            
+                <li><a href="../classes/Maximize.html">Maximize</a></li>
+            
+                <li><a href="../classes/MultipleUpload.html">MultipleUpload</a></li>
+            
+                <li><a href="../classes/OrderedList.html">OrderedList</a></li>
+            
+                <li><a href="../classes/Outdent.html">Outdent</a></li>
+            
+                <li><a href="../classes/PageBreak.html">PageBreak</a></li>
+            
+                <li><a href="../classes/Preview.html">Preview</a></li>
+            
+                <li><a href="../classes/RemoveFormat.html">RemoveFormat</a></li>
+            
+                <li><a href="../classes/Resize.html">Resize</a></li>
+            
+                <li><a href="../classes/Separator.html">Separator</a></li>
+            
+                <li><a href="../classes/Smiley.html">Smiley</a></li>
+            
+                <li><a href="../classes/SourceArea.html">SourceArea</a></li>
+            
+                <li><a href="../classes/StrikeThrough.html">StrikeThrough</a></li>
+            
+                <li><a href="../classes/Table.html">Table</a></li>
+            
+                <li><a href="../classes/Underline.html">Underline</a></li>
+            
+                <li><a href="../classes/Undo.html">Undo</a></li>
+            
+                <li><a href="../classes/UnorderedList.html">UnorderedList</a></li>
+            
+                <li><a href="../classes/Video.html">Video</a></li>
+            
+                <li><a href="../classes/XiaMiMusic.html">XiaMiMusic</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/back-color.html">back-color</a></li>
+            
+                <li><a href="../modules/bold.html">bold</a></li>
+            
+                <li><a href="../modules/button.html">button</a></li>
+            
+                <li><a href="../modules/checkbox-source-area.html">checkbox-source-area</a></li>
+            
+                <li><a href="../modules/code.html">code</a></li>
+            
+                <li><a href="../modules/draft.html">draft</a></li>
+            
+                <li><a href="../modules/drag-upload.html">drag-upload</a></li>
+            
+                <li><a href="../modules/eindent.html">eindent</a></li>
+            
+                <li><a href="../modules/element-path.html">element-path</a></li>
+            
+                <li><a href="../modules/flash.html">flash</a></li>
+            
+                <li><a href="../modules/font-color.html">font-color</a></li>
+            
+                <li><a href="../modules/font-family.html">font-family</a></li>
+            
+                <li><a href="../modules/font-size.html">font-size</a></li>
+            
+                <li><a href="../modules/heading.html">heading</a></li>
+            
+                <li><a href="../modules/image.html">image</a></li>
+            
+                <li><a href="../modules/italic.html">italic</a></li>
+            
+                <li><a href="../modules/justify-center.html">justify-center</a></li>
+            
+                <li><a href="../modules/justify-left.html">justify-left</a></li>
+            
+                <li><a href="../modules/justify-right.html">justify-right</a></li>
+            
+                <li><a href="../modules/link.html">link</a></li>
+            
+                <li><a href="../modules/maximize.html">maximize</a></li>
+            
+                <li><a href="../modules/multiple-upload.html">multiple-upload</a></li>
+            
+                <li><a href="../modules/ordered-list.html">ordered-list</a></li>
+            
+                <li><a href="../modules/outdent.html">outdent</a></li>
+            
+                <li><a href="../modules/page-break.html">page-break</a></li>
+            
+                <li><a href="../modules/preview.html">preview</a></li>
+            
+                <li><a href="../modules/remove-format.html">remove-format</a></li>
+            
+                <li><a href="../modules/resize.html">resize</a></li>
+            
+                <li><a href="../modules/separator.html">separator</a></li>
+            
+                <li><a href="../modules/smiley.html">smiley</a></li>
+            
+                <li><a href="../modules/source-area.html">source-area</a></li>
+            
+                <li><a href="../modules/strike-through.html">strike-through</a></li>
+            
+                <li><a href="../modules/table.html">table</a></li>
+            
+                <li><a href="../modules/underline.html">underline</a></li>
+            
+                <li><a href="../modules/undo.html">undo</a></li>
+            
+                <li><a href="../modules/unordered-list.html">unordered-list</a></li>
+            
+                <li><a href="../modules/video.html">video</a></li>
+            
+                <li><a href="../modules/xiami-music.html">xiami-music</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: lib/image/dialog.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * @ignore
+ * image dialog (support upload and remote)
+ * @author yiminghe@gmail.com
+ */
+
+/*global alert*/
+var util = require(&#x27;util&#x27;);
+var Editor = require(&#x27;editor&#x27;);
+var IO = require(&#x27;io&#x27;);
+var Dialog4E = require(&#x27;../dialog&#x27;);
+var Tabs = require(&#x27;tabs&#x27;);
+var MenuButton = require(&#x27;../menubutton&#x27;);
+var bodyTpl = require(&#x27;./dialog-tpl&#x27;);
+var dtd = Editor.XHTML_DTD,
+    UA = require(&#x27;ua&#x27;),
+    $ = require(&#x27;node&#x27;),
+    HTTP_TIP = &#x27;http://&#x27;,
+    AUTOMATIC_TIP = &#x27;自动&#x27;,
+    MARGIN_DEFAULT = 10,
+    IMAGE_DIALOG_FOOT_HTML = &#x27;&lt;div style=&quot;padding:5px 20px 20px;&quot;&gt;&#x27; +
+        &#x27;&lt;a &#x27; +
+        &#x27;href=&quot;javascript:void(\&#x27;确定\&#x27;)&quot; &#x27; +
+        &#x27;class=&quot;{prefixCls}img-insert {prefixCls}button ks-inline-block&quot; &#x27; +
+        &#x27;style=&quot;margin-right:30px;&quot;&gt;确定&lt;/a&gt; &#x27; +
+        &#x27;&lt;a  &#x27; +
+        &#x27;href=&quot;javascript:void(\&#x27;取消\&#x27;)&quot; &#x27; +
+        &#x27;class=&quot;{prefixCls}img-cancel {prefixCls}button ks-inline-block&quot;&gt;取消&lt;/a&gt;&lt;/div&gt;&#x27;,
+
+    warning = &#x27;请点击浏览上传图片&#x27;,
+
+    valInput = Editor.Utils.valInput;
+
+function findAWithImg(img) {
+    var ret = img;
+    while (ret) {
+        var name = ret.nodeName();
+        if (name === &#x27;a&#x27;) {
+            return ret;
+        }
+        if (dtd.$block[name] || dtd.$blockLimit[name]) {
+            return null;
+        }
+        ret = ret.parent();
+    }
+    return null;
+}
+
+function ImageDialog(editor, config) {
+    var self = this;
+    self.editor = editor;
+    self.imageCfg = config || {};
+    self.cfg = self.imageCfg.upload || null;
+    self.suffix = self.cfg &amp;&amp; self.cfg.suffix || &#x27;png,jpg,jpeg,gif&#x27;;
+    // 不要加g：http://yiminghe.javaeye.com/blog/581347
+    self.suffixReg = new RegExp(self.suffix.split(/,/).join(&#x27;|&#x27;) + &#x27;$&#x27;, &#x27;i&#x27;);
+    self.suffixWarning = &#x27;只允许后缀名为&#x27; + self.suffix + &#x27;的图片&#x27;;
+}
+
+(ImageDialog.prototype = {
+    _prepare: function () {
+        var self = this;
+        var editor = self.editor,
+            prefixCls = editor.get(&#x27;prefixCls&#x27;) + &#x27;editor-&#x27;;
+        self.dialog = self.d = new Dialog4E({
+            width: 500,
+            headerContent: &#x27;图片&#x27;,
+            bodyContent: util.substitute(bodyTpl, {
+                prefixCls: prefixCls
+            }),
+            footerContent: util.substitute(IMAGE_DIALOG_FOOT_HTML, {
+                prefixCls: prefixCls
+            }),
+            mask: true
+        }).render();
+
+        var content = self.d.get(&#x27;el&#x27;),
+            cancel = content.one(&#x27;.&#x27; + prefixCls + &#x27;img-cancel&#x27;),
+            ok = content.one(&#x27;.&#x27; + prefixCls + &#x27;img-insert&#x27;),
+            verifyInputs = Editor.Utils.verifyInputs,
+            commonSettingTable = content.one(&#x27;.&#x27; + prefixCls + &#x27;img-setting&#x27;);
+        self.uploadForm = content.one(&#x27;.&#x27; + prefixCls + &#x27;img-upload-form&#x27;);
+        self.imgLocalUrl = content.one(&#x27;.&#x27; + prefixCls + &#x27;img-local-url&#x27;);
+        self.tab = new Tabs({
+            &#x27;srcNode&#x27;: self.d.get(&#x27;body&#x27;).one(&#x27;.&#x27; + prefixCls + &#x27;img-tabs&#x27;),
+            prefixCls: prefixCls + &#x27;img-&#x27;
+        }).render();
+        self.imgLocalUrl.val(warning);
+        self.imgUrl = content.one(&#x27;.&#x27; + prefixCls + &#x27;img-url&#x27;);
+        self.imgHeight = content.one(&#x27;.&#x27; + prefixCls + &#x27;img-height&#x27;);
+        self.imgWidth = content.one(&#x27;.&#x27; + prefixCls + &#x27;img-width&#x27;);
+        self.imgRatio = content.one(&#x27;.&#x27; + prefixCls + &#x27;img-ratio&#x27;);
+        self.imgAlign = MenuButton.Select.decorate(content.one(&#x27;.&#x27; + prefixCls + &#x27;img-align&#x27;), {
+            prefixCls: prefixCls + &#x27;big-&#x27;,
+            width: 80,
+            menuCfg: {
+                prefixCls: prefixCls + &#x27;&#x27;,
+                render: content
+            }
+        });
+        self.imgMargin = content.one(&#x27;.&#x27; + prefixCls + &#x27;img-margin&#x27;);
+        self.imgLink = content.one(&#x27;.&#x27; + prefixCls + &#x27;img-link&#x27;);
+        self.imgLinkBlank = content.one(&#x27;.&#x27; + prefixCls + &#x27;img-link-blank&#x27;);
+        var placeholder = Editor.Utils.placeholder;
+        placeholder(self.imgUrl, HTTP_TIP);
+        placeholder(self.imgHeight, AUTOMATIC_TIP);
+        placeholder(self.imgWidth, AUTOMATIC_TIP);
+        placeholder(self.imgLink, &#x27;http://&#x27;);
+
+        self.imgHeight.on(&#x27;keyup&#x27;, function () {
+            var v = parseInt(valInput(self.imgHeight), 10);
+            if (!v || !self.imgRatio[0].checked ||
+                self.imgRatio[0].disabled || !self.imgRatioValue) {
+                return;
+            }
+            valInput(self.imgWidth, Math.floor(v * self.imgRatioValue));
+        });
+
+        self.imgWidth.on(&#x27;keyup&#x27;, function () {
+            var v = parseInt(valInput(self.imgWidth), 10);
+            if (!v || !self.imgRatio[0].checked ||
+                self.imgRatio[0].disabled || !self.imgRatioValue) {
+                return;
+            }
+            valInput(self.imgHeight, Math.floor(v / self.imgRatioValue));
+        });
+
+        cancel.on(&#x27;click&#x27;, function (ev) {
+            self.d.hide();
+            ev.halt();
+        });
+
+        var loadingCancel = $(&#x27;&lt;a class=&quot;&#x27; + prefixCls + &#x27;button ks-inline-block&quot; &#x27; +
+            &#x27;style=&quot;position:absolute;&#x27; +
+            &#x27;z-index:&#x27; +
+            Editor.baseZIndex(Editor.ZIndexManager.LOADING_CANCEL) + &#x27;;&#x27; +
+            &#x27;left:-9999px;&#x27; +
+            &#x27;top:-9999px;&#x27; +
+            &#x27;&quot;&gt;取消上传&lt;/a&gt;&#x27;).appendTo(document.body, undefined);
+
+        self.loadingCancel = loadingCancel;
+
+        function getFileSize(file) {
+            if (file.files) {
+                return file.files[0].size;
+            }
+            //ie 会安全警告
+//                    try {
+//                        var fso = new window.ActiveXObject(&#x27;Scripting.FileSystemObject&#x27;),
+//                            file2 = fso.GetFile(file.value);
+//                        return file2.size;
+//                    } catch (e) {
+//                    }
+            return 0;
+        }
+
+        ok.on(&#x27;click&#x27;, function (ev) {
+            ev.halt();
+            if ((self.imageCfg.remote === false ||
+                util.indexOf(self.tab.getSelectedTab(), self.tab.getTabs()) === 1) &amp;&amp;
+                self.cfg) {
+
+                if (!verifyInputs(commonSettingTable.all(&#x27;input&#x27;))) {
+                    return;
+                }
+
+                if (self.imgLocalUrl.val() === warning) {
+                    alert(&#x27;请先选择文件!&#x27;);
+                    return;
+                }
+
+                if (!self.suffixReg.test(self.imgLocalUrl.val())) {
+                    alert(self.suffixWarning);
+                    // 清除已选文件 ie 不能使用 val(&#x27;&#x27;)
+                    self.uploadForm[0].reset();
+                    self.imgLocalUrl.val(warning);
+                    return;
+                }
+
+                var size = (getFileSize(self.fileInput[0]));
+
+                if (sizeLimit &amp;&amp; sizeLimit &lt; (size / 1000)) {
+                    alert(&#x27;上传图片最大：&#x27; + sizeLimit / 1000 + &#x27;M&#x27;);
+                    return;
+                }
+
+                self.d.loading();
+
+                // 取消当前iframe的上传
+                loadingCancel.on(&#x27;click&#x27;, function (ev) {
+                    ev.halt();
+                    uploadIO.abort();
+                });
+
+                var serverParams = Editor.Utils.normParams(self.cfg.serverParams) || {};
+
+                // 后端返回设置 domain 的 script，每次都传，防止 domain 中途变化
+                serverParams[&#x27;document-domain&#x27;] = document.domain;
+
+                var uploadIO = IO({
+                    data: serverParams,
+                    url: self.cfg.serverUrl,
+                    form: self.uploadForm[0],
+                    dataType: &#x27;json&#x27;,
+                    type: &#x27;post&#x27;,
+                    complete: function (data, status) {
+                        loadingCancel.css({
+                            left: -9999,
+                            top: -9999
+                        });
+                        self.d.unloading();
+                        if (status === &#x27;abort&#x27;) {
+                            return;
+                        }
+                        if (!data) {
+                            data = {error: &#x27;服务器出错，请重试&#x27;};
+                        }
+                        if (data.error) {
+                            alert(data.error);
+                            return;
+                        }
+                        valInput(self.imgUrl, data.imgUrl);
+                        // chrome 中空 iframe 的 img 请求 header 中没有 refer
+                        // 在主页面先请求一次，带入 header
+                        new Image().src = data.imgUrl;
+                        self._insert();
+                    }
+                });
+
+                var loadingMaskEl = self.d.get(&#x27;el&#x27;),
+                    offset = loadingMaskEl.offset(),
+                    width = loadingMaskEl[0].offsetWidth,
+                    height = loadingMaskEl[0].offsetHeight;
+
+                loadingCancel.css({
+                    left: (offset.left + width / 2.5),
+                    top: (offset.top + height / 1.5)
+                });
+
+            } else {
+                if (!verifyInputs(content.all(&#x27;input&#x27;))) {
+                    return;
+                }
+                self._insert();
+            }
+        });
+
+        if (self.cfg) {
+            if (self.cfg.extraHTML) {
+                content.one(&#x27;.&#x27; + prefixCls + &#x27;img-up-extraHTML&#x27;)
+                    .html(self.cfg.extraHTML);
+            }
+            var imageUp = content.one(&#x27;.&#x27; + prefixCls + &#x27;image-up&#x27;),
+                sizeLimit = self.cfg &amp;&amp; self.cfg.sizeLimit;
+
+            self.fileInput = $(&#x27;&lt;input &#x27; +
+                &#x27;type=&quot;file&quot; &#x27; +
+                &#x27;style=&quot;position:absolute;&#x27; +
+                &#x27;cursor:pointer;&#x27; +
+                &#x27;left:&#x27; +
+                (UA.ie ? &#x27;360&#x27; : (UA.chrome ? &#x27;319&#x27; : &#x27;369&#x27;)) +
+                &#x27;px;&#x27; +
+                &#x27;z-index:2;&#x27; +
+                &#x27;top:0px;&#x27; +
+                &#x27;height:26px;&quot; &#x27; +
+                &#x27;size=&quot;1&quot; &#x27; +
+                &#x27;name=&quot;&#x27; + (self.cfg.fileInput || &#x27;Filedata&#x27;) + &#x27;&quot;/&gt;&#x27;)
+                .insertAfter(self.imgLocalUrl);
+            if (sizeLimit) {
+                warning = &#x27;单张图片容量不超过 &#x27; + (sizeLimit / 1000) + &#x27; M&#x27;;
+            }
+            self.imgLocalUrl.val(warning);
+            self.fileInput.css(&#x27;opacity&#x27;, 0);
+            self.fileInput.on(&#x27;mouseenter&#x27;, function () {
+                imageUp.addClass(&#x27;&#x27; + prefixCls + &#x27;button-hover&#x27;);
+            });
+            self.fileInput.on(&#x27;mouseleave&#x27;, function () {
+                imageUp.removeClass(&#x27;&#x27; + prefixCls + &#x27;button-hover&#x27;);
+            });
+            self.fileInput.on(&#x27;change&#x27;, function () {
+                var file = self.fileInput.val();
+                //去除路径
+                self.imgLocalUrl.val(file.replace(/.+[\/\\]/, &#x27;&#x27;));
+            });
+
+            if (self.imageCfg.remote === false) {
+                self.tab.removeItemAt(0, 1);
+            }
+        }
+        else {
+            self.tab.removeItemAt(1, 1);
+        }
+
+        self._prepare = util.noop;
+    },
+
+    _insert: function () {
+        var self = this,
+            url = valInput(self.imgUrl),
+            img,
+            height = parseInt(valInput(self.imgHeight), 10),
+            width = parseInt(valInput(self.imgWidth), 10),
+            align = self.imgAlign.get(&#x27;value&#x27;),
+            margin = parseInt(self.imgMargin.val(), 10),
+            style = &#x27;&#x27;;
+
+        if (height) {
+            style += &#x27;height:&#x27; + height + &#x27;px;&#x27;;
+        }
+        if (width) {
+            style += &#x27;width:&#x27; + width + &#x27;px;&#x27;;
+        }
+        if (align !== &#x27;none&#x27;) {
+            style += &#x27;float:&#x27; + align + &#x27;;&#x27;;
+        }
+        if (!isNaN(margin) &amp;&amp; margin !== 0) {
+            style += &#x27;margin:&#x27; + margin + &#x27;px;&#x27;;
+        }
+
+        self.d.hide();
+
+        /*
+         2011-01-05
+         &lt;a&gt;&lt;img&gt;&lt;/a&gt; 这种结构，a不要设成 position:absolute
+         否则img select 不到？!!: editor.getSelection().selectElement(img) 选择不到
+         */
+        if (self.selectedEl) {
+            img = self.selectedEl;
+            self.editor.execCommand(&#x27;save&#x27;);
+            self.selectedEl.attr({
+                &#x27;src&#x27;: url,
+                //注意设置，取的话要从 _ke_saved_src 里取
+                &#x27;_ke_saved_src&#x27;: url,
+                &#x27;style&#x27;: style
+            });
+        } else {
+            img = $(&#x27;&lt;img &#x27; +
+                (style ? (&#x27;style=&quot;&#x27; +
+                    style +
+                    &#x27;&quot;&#x27;) : &#x27;&#x27;) +
+                &#x27; src=&quot;&#x27; +
+                url +
+                &#x27;&quot; &#x27; +
+                &#x27;_ke_saved_src=&quot;&#x27; +
+                url +
+                &#x27;&quot; alt=&quot;&quot; /&gt;&#x27;, self.editor.get(&#x27;document&#x27;)[0]);
+            self.editor.insertElement(img);
+        }
+
+        // need a breath for firefox
+        // else insertElement(img); img[0].parentNode==null
+        setTimeout(function () {
+            var link = findAWithImg(img),
+                linkVal = util.trim(valInput(self.imgLink)),
+                sel = self.editor.getSelection(),
+                target = self.imgLinkBlank.attr(&#x27;checked&#x27;) ? &#x27;_blank&#x27; : &#x27;_self&#x27;,
+                linkTarget,
+                skip = 0,
+                prev,
+                next,
+                bs;
+
+            if (link) {
+                linkTarget = link.attr(&#x27;target&#x27;) || &#x27;_self&#x27;;
+                if (linkVal !== link.attr(&#x27;href&#x27;) || linkTarget !== target) {
+                    img._4eBreakParent(link);
+                    if ((prev = img.prev()) &amp;&amp; (prev.nodeName() === &#x27;a&#x27;) &amp;&amp; !(prev[0].childNodes.length)) {
+                        prev.remove();
+                    }
+
+                    if ((next = img.next()) &amp;&amp; (next.nodeName() === &#x27;a&#x27;) &amp;&amp; !(next[0].childNodes.length)) {
+                        next.remove();
+                    }
+                } else {
+                    skip = 1;
+                }
+            }
+
+            if (!skip &amp;&amp; linkVal) {
+                // 新增需要 bookmark，标记
+                if (!self.selectedEl) {
+                    bs = sel.createBookmarks();
+                }
+                link = $(&#x27;&lt;a&gt;&#x27;);
+                link.attr(&#x27;_ke_saved_href&#x27;, linkVal)
+                    .attr(&#x27;href&#x27;, linkVal)
+                    .attr(&#x27;target&#x27;, target);
+                var t = img[0];
+                t.parentNode.replaceChild(link[0], t);
+                link.append(t);
+            }
+
+            if (bs) {
+                sel.selectBookmarks(bs);
+            }
+            else if (self.selectedEl) {
+                self.editor.getSelection().selectElement(self.selectedEl);
+            }
+            if (!skip) {
+                self.editor.execCommand(&#x27;save&#x27;);
+            }
+        }, 100);
+    },
+
+    _update: function (selectedEl) {
+        var self = this,
+            active = 0,
+            link,
+            resetInput = Editor.Utils.resetInput;
+        self.selectedEl = selectedEl;
+        if (selectedEl &amp;&amp; self.imageCfg.remote !== false) {
+            valInput(self.imgUrl, selectedEl.attr(&#x27;src&#x27;));
+            var w = parseInt(selectedEl.style(&#x27;width&#x27;), 10),
+                h = parseInt(selectedEl.style(&#x27;height&#x27;), 10);
+            if (h) {
+                valInput(self.imgHeight, h);
+            } else {
+                resetInput(self.imgHeight);
+            }
+            if (w) {
+                valInput(self.imgWidth, w);
+            } else {
+                resetInput(self.imgWidth);
+            }
+            self.imgAlign.set(&#x27;value&#x27;, selectedEl.style(&#x27;float&#x27;) || &#x27;none&#x27;);
+            var margin = parseInt(selectedEl.style(&#x27;margin&#x27;), 10) || 0;
+            self.imgMargin.val(margin);
+            self.imgRatio[0].disabled = false;
+            self.imgRatioValue = w / h;
+            link = findAWithImg(selectedEl);
+        } else {
+            var editor = self.editor;
+            var editorSelection = editor.getSelection();
+            var inElement = editorSelection &amp;&amp; editorSelection.getCommonAncestor();
+            if (inElement) {
+                link = findAWithImg(inElement);
+            }
+            var defaultMargin = self.imageCfg.defaultMargin;
+            if (defaultMargin === undefined) {
+                defaultMargin = MARGIN_DEFAULT;
+            }
+            if (self.tab.get(&#x27;bar&#x27;).get(&#x27;children&#x27;).length === 2) {
+                active = 1;
+            }
+            self.imgLinkBlank.attr(&#x27;checked&#x27;, true);
+            resetInput(self.imgUrl);
+            resetInput(self.imgLink);
+            resetInput(self.imgHeight);
+            resetInput(self.imgWidth);
+            self.imgAlign.set(&#x27;value&#x27;, &#x27;none&#x27;);
+            self.imgMargin.val(defaultMargin);
+            self.imgRatio[0].disabled = true;
+            self.imgRatioValue = null;
+        }
+        if (link) {
+            valInput(self.imgLink, link.attr(&#x27;_ke_saved_href&#x27;) || link.attr(&#x27;href&#x27;));
+            self.imgLinkBlank.attr(&#x27;checked&#x27;, link.attr(&#x27;target&#x27;) === &#x27;_blank&#x27;);
+        } else {
+            resetInput(self.imgLink);
+            self.imgLinkBlank.attr(&#x27;checked&#x27;, true);
+        }
+        self.uploadForm[0].reset();
+        self.imgLocalUrl.val(warning);
+        var tab = self.tab;
+        tab.setSelectedTab(tab.getTabAt(active));
+    },
+    show: function (_selectedEl) {
+        var self = this;
+        self._prepare();
+        self._update(_selectedEl);
+        self.d.show();
+    },
+    destroy: function () {
+        var self = this;
+        self.d.destroy();
+        self.tab.destroy();
+        if (self.loadingCancel) {
+            self.loadingCancel.remove();
+        }
+        if (self.imgAlign) {
+            self.imgAlign.destroy();
+        }
+    }
+});
+
+module.exports = ImageDialog;
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

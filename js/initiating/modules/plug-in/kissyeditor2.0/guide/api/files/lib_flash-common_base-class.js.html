@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>lib/flash-common/base-class.js - editor-plugins</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title="editor-plugins"></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: editor-plugins 1.1.0</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/BackColor.html">BackColor</a></li>
+            
+                <li><a href="../classes/Bold.html">Bold</a></li>
+            
+                <li><a href="../classes/Button.html">Button</a></li>
+            
+                <li><a href="../classes/CheckBoxSourceArea.html">CheckBoxSourceArea</a></li>
+            
+                <li><a href="../classes/Code.html">Code</a></li>
+            
+                <li><a href="../classes/Draft.html">Draft</a></li>
+            
+                <li><a href="../classes/DragUpload.html">DragUpload</a></li>
+            
+                <li><a href="../classes/ElementPath.html">ElementPath</a></li>
+            
+                <li><a href="../classes/Flash.html">Flash</a></li>
+            
+                <li><a href="../classes/FontColor.html">FontColor</a></li>
+            
+                <li><a href="../classes/FontFamily.html">FontFamily</a></li>
+            
+                <li><a href="../classes/FontSize.html">FontSize</a></li>
+            
+                <li><a href="../classes/Heading.html">Heading</a></li>
+            
+                <li><a href="../classes/Image.html">Image</a></li>
+            
+                <li><a href="../classes/Indent.html">Indent</a></li>
+            
+                <li><a href="../classes/Italic.html">Italic</a></li>
+            
+                <li><a href="../classes/JustifyCenter.html">JustifyCenter</a></li>
+            
+                <li><a href="../classes/JustifyLeft.html">JustifyLeft</a></li>
+            
+                <li><a href="../classes/JustifyRight.html">JustifyRight</a></li>
+            
+                <li><a href="../classes/Link.html">Link</a></li>
+            
+                <li><a href="../classes/Maximize.html">Maximize</a></li>
+            
+                <li><a href="../classes/MultipleUpload.html">MultipleUpload</a></li>
+            
+                <li><a href="../classes/OrderedList.html">OrderedList</a></li>
+            
+                <li><a href="../classes/Outdent.html">Outdent</a></li>
+            
+                <li><a href="../classes/PageBreak.html">PageBreak</a></li>
+            
+                <li><a href="../classes/Preview.html">Preview</a></li>
+            
+                <li><a href="../classes/RemoveFormat.html">RemoveFormat</a></li>
+            
+                <li><a href="../classes/Resize.html">Resize</a></li>
+            
+                <li><a href="../classes/Separator.html">Separator</a></li>
+            
+                <li><a href="../classes/Smiley.html">Smiley</a></li>
+            
+                <li><a href="../classes/SourceArea.html">SourceArea</a></li>
+            
+                <li><a href="../classes/StrikeThrough.html">StrikeThrough</a></li>
+            
+                <li><a href="../classes/Table.html">Table</a></li>
+            
+                <li><a href="../classes/Underline.html">Underline</a></li>
+            
+                <li><a href="../classes/Undo.html">Undo</a></li>
+            
+                <li><a href="../classes/UnorderedList.html">UnorderedList</a></li>
+            
+                <li><a href="../classes/Video.html">Video</a></li>
+            
+                <li><a href="../classes/XiaMiMusic.html">XiaMiMusic</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/back-color.html">back-color</a></li>
+            
+                <li><a href="../modules/bold.html">bold</a></li>
+            
+                <li><a href="../modules/button.html">button</a></li>
+            
+                <li><a href="../modules/checkbox-source-area.html">checkbox-source-area</a></li>
+            
+                <li><a href="../modules/code.html">code</a></li>
+            
+                <li><a href="../modules/draft.html">draft</a></li>
+            
+                <li><a href="../modules/drag-upload.html">drag-upload</a></li>
+            
+                <li><a href="../modules/eindent.html">eindent</a></li>
+            
+                <li><a href="../modules/element-path.html">element-path</a></li>
+            
+                <li><a href="../modules/flash.html">flash</a></li>
+            
+                <li><a href="../modules/font-color.html">font-color</a></li>
+            
+                <li><a href="../modules/font-family.html">font-family</a></li>
+            
+                <li><a href="../modules/font-size.html">font-size</a></li>
+            
+                <li><a href="../modules/heading.html">heading</a></li>
+            
+                <li><a href="../modules/image.html">image</a></li>
+            
+                <li><a href="../modules/italic.html">italic</a></li>
+            
+                <li><a href="../modules/justify-center.html">justify-center</a></li>
+            
+                <li><a href="../modules/justify-left.html">justify-left</a></li>
+            
+                <li><a href="../modules/justify-right.html">justify-right</a></li>
+            
+                <li><a href="../modules/link.html">link</a></li>
+            
+                <li><a href="../modules/maximize.html">maximize</a></li>
+            
+                <li><a href="../modules/multiple-upload.html">multiple-upload</a></li>
+            
+                <li><a href="../modules/ordered-list.html">ordered-list</a></li>
+            
+                <li><a href="../modules/outdent.html">outdent</a></li>
+            
+                <li><a href="../modules/page-break.html">page-break</a></li>
+            
+                <li><a href="../modules/preview.html">preview</a></li>
+            
+                <li><a href="../modules/remove-format.html">remove-format</a></li>
+            
+                <li><a href="../modules/resize.html">resize</a></li>
+            
+                <li><a href="../modules/separator.html">separator</a></li>
+            
+                <li><a href="../modules/smiley.html">smiley</a></li>
+            
+                <li><a href="../modules/source-area.html">source-area</a></li>
+            
+                <li><a href="../modules/strike-through.html">strike-through</a></li>
+            
+                <li><a href="../modules/table.html">table</a></li>
+            
+                <li><a href="../modules/underline.html">underline</a></li>
+            
+                <li><a href="../modules/undo.html">undo</a></li>
+            
+                <li><a href="../modules/unordered-list.html">unordered-list</a></li>
+            
+                <li><a href="../modules/video.html">video</a></li>
+            
+                <li><a href="../modules/xiami-music.html">xiami-music</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: lib/flash-common/base-class.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * @ignore
+ * BaseClass for Flash Based plugin.
+ * @author yiminghe@gmail.com
+ */
+
+var flashUtils = require(&#x27;./utils&#x27;);
+var Base = require(&#x27;base&#x27;);
+var Editor = require(&#x27;editor&#x27;);
+var $ = require(&#x27;node&#x27;);
+var UA = require(&#x27;ua&#x27;);
+var util = require(&#x27;util&#x27;);
+var DialogLoader = require(&#x27;../dialog-loader&#x27;);
+require(&#x27;../bubble&#x27;);
+require(&#x27;../contextmenu&#x27;);
+
+var tipHTML = &#x27; &lt;a &#x27; +
+    &#x27;class=&quot;{prefixCls}editor-bubble-url&quot; &#x27; +
+    &#x27;target=&quot;_blank&quot; &#x27; +
+    &#x27;href=&quot;#&quot;&gt;{label}&lt;/a&gt;   |   &#x27; +
+    &#x27; &lt;span class=&quot;{prefixCls}editor-bubble-link {prefixCls}editor-bubble-change&quot;&gt;编辑&lt;/span&gt;   |   &#x27; +
+    &#x27; &lt;span class=&quot;{prefixCls}editor-bubble-link {prefixCls}editor-bubble-remove&quot;&gt;删除&lt;/span&gt;&#x27;;
+
+module.exports = Base.extend({
+    initializer: function () {
+        var self = this,
+            cls = self.get(&#x27;cls&#x27;),
+            editor = self.get(&#x27;editor&#x27;),
+            prefixCls = editor.get(&#x27;prefixCls&#x27;),
+            children = [],
+            bubbleId = self.get(&#x27;bubbleId&#x27;),
+            contextMenuId = self.get(&#x27;contextMenuId&#x27;),
+            contextMenuHandlers = self.get(&#x27;contextMenuHandlers&#x27;);
+
+        util.each(contextMenuHandlers, function (h, content) {
+            children.push({
+                content: content
+            });
+        });
+
+        editor.addContextMenu(contextMenuId, &#x27;.&#x27; + cls, {
+            width: &#x27;120px&#x27;,
+            children: children,
+            listeners: {
+                click: function (e) {
+                    var content = e.target.get(&#x27;content&#x27;);
+                    if (contextMenuHandlers[content]) {
+                        contextMenuHandlers[content].call(this);
+                    }
+                }
+            }
+        });
+
+        editor.addBubble(bubbleId, function (el) {
+            return el.hasClass(cls, undefined) &amp;&amp; el;
+        }, {
+            listeners: {
+                afterRenderUI:// 注册泡泡，selectionChange时检测
+                    function () {
+                        var bubble = this,
+                            el = bubble.get(&#x27;contentEl&#x27;);
+                        el.html(util.substitute(tipHTML, {
+                            label: self.get(&#x27;label&#x27;),
+                            prefixCls: prefixCls
+                        }));
+                        var tipUrlEl = el.one(&#x27;.&#x27; + prefixCls + &#x27;editor-bubble-url&#x27;),
+                            tipChangeEl = el.one(&#x27;.&#x27; + prefixCls + &#x27;editor-bubble-change&#x27;),
+                            tipRemoveEl = el.one(&#x27;.&#x27; + prefixCls + &#x27;editor-bubble-remove&#x27;);
+
+                        // ie focus not lose
+                        Editor.Utils.preventFocus(el);
+
+                        tipChangeEl.on(&#x27;click&#x27;, function (ev) {
+                            // 回调show，传入选中元素
+                            self.show(bubble.get(&#x27;editorSelectedEl&#x27;));
+                            ev.halt();
+                        });
+
+                        tipRemoveEl.on(&#x27;click&#x27;, function (ev) {
+                            // chrome remove 后会没有焦点
+                            if (UA.webkit) {
+                                var r = editor.getSelection().getRanges(),
+                                    r0 = r &amp;&amp; r[0];
+                                if (r0) {
+                                    r0.collapse(true);
+                                    r0.select();
+                                }
+                            }
+                            bubble.get(&#x27;editorSelectedEl&#x27;).remove();
+                            bubble.hide();
+                            editor.notifySelectionChange();
+                            ev.halt();
+                        });
+
+                        /*
+                         位置变化，在显示前就设置内容，防止ie6 iframe遮罩不能正确大小
+                         */
+                        bubble.on(&#x27;show&#x27;, function () {
+                            var a = bubble.get(&#x27;editorSelectedEl&#x27;);
+                            if (a) {
+                                self._updateTip(tipUrlEl, a);
+                            }
+                        });
+                    }
+            }
+        });
+
+        editor.docReady(function () {
+            //注册双击，双击时检测
+            editor.get(&#x27;document&#x27;).on(&#x27;dblclick&#x27;, self._dbClick, self);
+        });
+    },
+
+    _getFlashUrl: function (r) {
+        return flashUtils.getUrl(r);
+    },
+
+    // 更新泡泡弹出的界面，子类覆盖
+    _updateTip: function (tipUrlElEl, selectedFlash) {
+        var self = this,
+            editor = self.get(&#x27;editor&#x27;),
+            r = editor.restoreRealElement(selectedFlash);
+        if (!r) {
+            return;
+        }
+        var url = self._getFlashUrl(r);
+        tipUrlElEl.attr(&#x27;href&#x27;, url);
+    },
+
+    //根据图片标志触发本插件应用
+    _dbClick: function (ev) {
+        var self = this,
+            t = $(ev.target);
+        if (t.nodeName() === &#x27;img&#x27; &amp;&amp; t.hasClass(self.get(&#x27;cls&#x27;), undefined)) {
+            self.show(t);
+            ev.halt();
+        }
+    },
+
+    show: function (selectedEl) {
+        var self = this,
+            editor = self.get(&#x27;editor&#x27;);
+        DialogLoader.useDialog(editor, self.get(&#x27;type&#x27;),
+            self.get(&#x27;pluginConfig&#x27;),
+            selectedEl);
+    }
+}, {
+    ATTRS: {
+        cls: {},
+        type: {},
+        label: {
+            value: &#x27;在新窗口查看&#x27;
+        },
+        bubbleId: {},
+        contextMenuId: {},
+        contextMenuHandlers: {}
+    }
+});
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

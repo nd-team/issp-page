@@ -124,22 +124,24 @@ body{
             margin-bottom:10px;
             justify-content:center;
             li{
+              position: relative; //定位
               width:220px;
-              height:260px;
+              height:285px;
               box-shadow:0 0 5px #666;
               margin:0 5px;
               background:#fff;
               font-size:12px;
+              overflow: hidden;
               &.visibity{
                 visibility:hidden;
               }
               img{
                 width:220px;
-                height:115px;
+                height:140px;
               }
               p{
-                margin:2px 0;
-                padding:0 5px;
+                //margin:2px 0;
+                padding:0 17px 0 6px;
               }
               .w-con-t{
                 a{
@@ -156,6 +158,7 @@ body{
               .progress{
                 display:flex;
                 justify-content:center;
+                margin: 14px 0 0 0;
                 .barbg{
                   width:98%;
                   border-radius:5px;
@@ -273,6 +276,101 @@ body{
       transition-delay: 0.3s;
       opacity:1;
     }
+  }
+}
+
+//新修改的样式
+.tages{
+  height: 22px;
+  overflow: hidden;
+  margin: 12px 15px 0 1px;
+  display: flex;
+  flex-direction: row;
+  a{
+    padding: 0 8px;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #e6e6e6;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    color: #a5a5a5;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all .5s;
+  }
+}
+.p-i-infos{
+  display: flex;
+  margin: {
+    top:10px;
+    left: 5px;
+  };
+  span{
+   text-align: left;
+    &:nth-of-type(1){
+      flex: 1;
+    }
+    &:nth-of-type(2){
+          flex: 1.2;
+    }
+    &:nth-of-type(3){
+      flex: 0.8;
+    }
+  }
+}
+.p-infos{
+  display: flex;
+  color: #999999;
+  margin-left: 5px;
+  span{
+    text-align: left;
+    &:nth-of-type(1){
+      flex: 1;
+    }
+    &:nth-of-type(2){
+      flex: 1.2;
+    }
+    &:nth-of-type(3){
+      flex: 0.8;
+    }
+  }
+}
+.title-position{
+  position: absolute;
+  top: 7px;
+  left: -23px;
+  width: 90px;
+  height: 30px;
+  z-index: 1;
+  text-align: center;
+  transform: rotate(-45deg);
+  i{
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: block;
+    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=1, startColorStr=#22c2eb, endColorStr=#19dce4);
+    background: -ms-linear-gradient(left, #22c2eb,#19dce4);
+    background: -moz-linear-gradient(left, #22c2eb,#19dce4);
+    background: -webkit-linear-gradient(left, #22c2eb,#19dce4);
+  }
+  span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: block;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
   }
 }
 

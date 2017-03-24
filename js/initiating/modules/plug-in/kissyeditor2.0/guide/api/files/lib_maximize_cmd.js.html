@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>lib/maximize/cmd.js - editor-plugins</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title="editor-plugins"></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: editor-plugins 1.1.0</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/BackColor.html">BackColor</a></li>
+            
+                <li><a href="../classes/Bold.html">Bold</a></li>
+            
+                <li><a href="../classes/Button.html">Button</a></li>
+            
+                <li><a href="../classes/CheckBoxSourceArea.html">CheckBoxSourceArea</a></li>
+            
+                <li><a href="../classes/Code.html">Code</a></li>
+            
+                <li><a href="../classes/Draft.html">Draft</a></li>
+            
+                <li><a href="../classes/DragUpload.html">DragUpload</a></li>
+            
+                <li><a href="../classes/ElementPath.html">ElementPath</a></li>
+            
+                <li><a href="../classes/Flash.html">Flash</a></li>
+            
+                <li><a href="../classes/FontColor.html">FontColor</a></li>
+            
+                <li><a href="../classes/FontFamily.html">FontFamily</a></li>
+            
+                <li><a href="../classes/FontSize.html">FontSize</a></li>
+            
+                <li><a href="../classes/Heading.html">Heading</a></li>
+            
+                <li><a href="../classes/Image.html">Image</a></li>
+            
+                <li><a href="../classes/Indent.html">Indent</a></li>
+            
+                <li><a href="../classes/Italic.html">Italic</a></li>
+            
+                <li><a href="../classes/JustifyCenter.html">JustifyCenter</a></li>
+            
+                <li><a href="../classes/JustifyLeft.html">JustifyLeft</a></li>
+            
+                <li><a href="../classes/JustifyRight.html">JustifyRight</a></li>
+            
+                <li><a href="../classes/Link.html">Link</a></li>
+            
+                <li><a href="../classes/Maximize.html">Maximize</a></li>
+            
+                <li><a href="../classes/MultipleUpload.html">MultipleUpload</a></li>
+            
+                <li><a href="../classes/OrderedList.html">OrderedList</a></li>
+            
+                <li><a href="../classes/Outdent.html">Outdent</a></li>
+            
+                <li><a href="../classes/PageBreak.html">PageBreak</a></li>
+            
+                <li><a href="../classes/Preview.html">Preview</a></li>
+            
+                <li><a href="../classes/RemoveFormat.html">RemoveFormat</a></li>
+            
+                <li><a href="../classes/Resize.html">Resize</a></li>
+            
+                <li><a href="../classes/Separator.html">Separator</a></li>
+            
+                <li><a href="../classes/Smiley.html">Smiley</a></li>
+            
+                <li><a href="../classes/SourceArea.html">SourceArea</a></li>
+            
+                <li><a href="../classes/StrikeThrough.html">StrikeThrough</a></li>
+            
+                <li><a href="../classes/Table.html">Table</a></li>
+            
+                <li><a href="../classes/Underline.html">Underline</a></li>
+            
+                <li><a href="../classes/Undo.html">Undo</a></li>
+            
+                <li><a href="../classes/UnorderedList.html">UnorderedList</a></li>
+            
+                <li><a href="../classes/Video.html">Video</a></li>
+            
+                <li><a href="../classes/XiaMiMusic.html">XiaMiMusic</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/back-color.html">back-color</a></li>
+            
+                <li><a href="../modules/bold.html">bold</a></li>
+            
+                <li><a href="../modules/button.html">button</a></li>
+            
+                <li><a href="../modules/checkbox-source-area.html">checkbox-source-area</a></li>
+            
+                <li><a href="../modules/code.html">code</a></li>
+            
+                <li><a href="../modules/draft.html">draft</a></li>
+            
+                <li><a href="../modules/drag-upload.html">drag-upload</a></li>
+            
+                <li><a href="../modules/eindent.html">eindent</a></li>
+            
+                <li><a href="../modules/element-path.html">element-path</a></li>
+            
+                <li><a href="../modules/flash.html">flash</a></li>
+            
+                <li><a href="../modules/font-color.html">font-color</a></li>
+            
+                <li><a href="../modules/font-family.html">font-family</a></li>
+            
+                <li><a href="../modules/font-size.html">font-size</a></li>
+            
+                <li><a href="../modules/heading.html">heading</a></li>
+            
+                <li><a href="../modules/image.html">image</a></li>
+            
+                <li><a href="../modules/italic.html">italic</a></li>
+            
+                <li><a href="../modules/justify-center.html">justify-center</a></li>
+            
+                <li><a href="../modules/justify-left.html">justify-left</a></li>
+            
+                <li><a href="../modules/justify-right.html">justify-right</a></li>
+            
+                <li><a href="../modules/link.html">link</a></li>
+            
+                <li><a href="../modules/maximize.html">maximize</a></li>
+            
+                <li><a href="../modules/multiple-upload.html">multiple-upload</a></li>
+            
+                <li><a href="../modules/ordered-list.html">ordered-list</a></li>
+            
+                <li><a href="../modules/outdent.html">outdent</a></li>
+            
+                <li><a href="../modules/page-break.html">page-break</a></li>
+            
+                <li><a href="../modules/preview.html">preview</a></li>
+            
+                <li><a href="../modules/remove-format.html">remove-format</a></li>
+            
+                <li><a href="../modules/resize.html">resize</a></li>
+            
+                <li><a href="../modules/separator.html">separator</a></li>
+            
+                <li><a href="../modules/smiley.html">smiley</a></li>
+            
+                <li><a href="../modules/source-area.html">source-area</a></li>
+            
+                <li><a href="../modules/strike-through.html">strike-through</a></li>
+            
+                <li><a href="../modules/table.html">table</a></li>
+            
+                <li><a href="../modules/underline.html">underline</a></li>
+            
+                <li><a href="../modules/undo.html">undo</a></li>
+            
+                <li><a href="../modules/unordered-list.html">unordered-list</a></li>
+            
+                <li><a href="../modules/video.html">video</a></li>
+            
+                <li><a href="../modules/xiami-music.html">xiami-music</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: lib/maximize/cmd.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * @ignore
+ * Add maximizeWindow/restoreWindow to Editor.
+ * @author yiminghe@gmail.com
+ */
+
+var Editor = require(&#x27;editor&#x27;);
+var Event = require(&#x27;event/dom&#x27;);
+var util = require(&#x27;util&#x27;);
+var UA = require(&#x27;ua&#x27;),
+    ie = UA.ie,
+    doc = document,
+    $ = require(&#x27;node&#x27;),
+    Dom = require(&#x27;dom&#x27;),
+    iframe,
+    MAXIMIZE_TOOLBAR_CLASS = &#x27;editor-toolbar-padding&#x27;,
+    init = function () {
+        if (!iframe) {
+            iframe = $(&#x27;&lt;&#x27; + &#x27;iframe &#x27; +
+                &#x27; style=&quot;&#x27; +
+                &#x27;position:absolute;&#x27; +
+                &#x27;top:-9999px;&#x27; +
+                &#x27;left:-9999px;&#x27; +
+                &#x27;&quot;&#x27; +
+                &#x27; frameborder=&quot;0&quot;&gt;&#x27;).prependTo(doc.body, undefined);
+        }
+    };
+
+function MaximizeCmd(editor) {
+    this.editor = editor;
+}
+
+util.augment(MaximizeCmd, {
+    restoreWindow: function () {
+        var self = this,
+            editor = self.editor;
+
+        if (editor.fire(&#x27;beforeRestoreWindow&#x27;) === false) {
+            return;
+        }
+
+        if (self._resize) {
+            Event.remove(window, &#x27;resize&#x27;, self._resize);
+            self._resize.stop();
+            self._resize = 0;
+        } else {
+            return;
+        }
+
+        //body overflow 变化也会引起 resize 变化！！！！先去除
+        self._saveEditorStatus();
+        self._restoreState();
+
+        //firefox 必须timeout
+        setTimeout(function () {
+            self._restoreEditorStatus();
+            editor.notifySelectionChange();
+            editor.fire(&#x27;afterRestoreWindow&#x27;);
+        }, 30);
+    },
+
+    /*
+     从内存恢复最大化前的外围状态信息到编辑器实际动作，
+     包括编辑器位置以及周围元素，浏览器窗口
+     */
+    _restoreState: function () {
+        var self = this,
+            editor = self.editor,
+            textareaEl = editor.get(&#x27;textarea&#x27;),
+        //恢复父节点的position原状态 bugfix:最大化被父元素限制
+            _savedParents = self._savedParents;
+        if (_savedParents) {
+            for (var i = 0; i &lt; _savedParents.length; i++) {
+                var po = _savedParents[i];
+                po.el.css(&#x27;position&#x27;, po.position);
+            }
+            self._savedParents = null;
+        }
+        //如果没有失去焦点，重新获得当前选取元素
+        //self._saveEditorStatus();
+        textareaEl.parent().css({
+            height: self.iframeHeight
+        });
+        textareaEl.css({
+            height: self.iframeHeight
+        });
+        Dom.css(doc.body, {
+            width: &#x27;&#x27;,
+            height: &#x27;&#x27;,
+            overflow: &#x27;&#x27;
+        });
+        //documentElement 设置宽高，ie崩溃
+        doc.documentElement.style.overflow = &#x27;&#x27;;
+
+        var editorElStyle = editor.get(&#x27;el&#x27;)[0].style;
+        editorElStyle.position = &#x27;static&#x27;;
+        editorElStyle.width = self.editorElWidth;
+
+        iframe.css({
+            left: &#x27;-99999px&#x27;,
+            top: &#x27;-99999px&#x27;
+        });
+
+        window.scrollTo(self.scrollLeft, self.scrollTop);
+
+        if (ie &lt; 8) {
+            editor.get(&#x27;toolBarEl&#x27;).removeClass(
+                    editor.get(&#x27;prefixCls&#x27;) + MAXIMIZE_TOOLBAR_CLASS, undefined);
+        }
+    },
+    /*
+     保存最大化前的外围状态信息到内存，
+     包括编辑器位置以及周围元素，浏览器窗口
+     */
+    _saveSate: function () {
+        var self = this,
+            editor = self.editor,
+            _savedParents = [],
+            editorEl = editor.get(&#x27;el&#x27;);
+        self.iframeHeight = editor.get(&#x27;textarea&#x27;).parent().style(&#x27;height&#x27;);
+        self.editorElWidth = editorEl.style(&#x27;width&#x27;);
+        //主窗口滚动条也要保存哦
+        self.scrollLeft = Dom.scrollLeft();
+        self.scrollTop = Dom.scrollTop();
+        window.scrollTo(0, 0);
+
+        //将父节点的position都改成static并保存原状态 bugfix:最大化被父元素限制
+        var p = editorEl.parent();
+
+        while (p) {
+            var pre = p.css(&#x27;position&#x27;);
+            if (pre !== &#x27;static&#x27;) {
+                _savedParents.push({
+                    el: p,
+                    position: pre
+                });
+                p.css(&#x27;position&#x27;, &#x27;static&#x27;);
+            }
+            p = p.parent();
+        }
+        self._savedParents = _savedParents;
+
+        //ie6,7 图标到了窗口边界，不可点击，给个padding
+        if (ie &lt; 8) {
+            editor.get(&#x27;toolBarEl&#x27;).addClass(
+                    editor.get(&#x27;prefixCls&#x27;) + MAXIMIZE_TOOLBAR_CLASS, undefined);
+        }
+    },
+
+    /*
+     编辑器自身核心状态保存，每次最大化最小化都要save,restore，
+     firefox修正，iframe layout变化时，range丢了
+     */
+    _saveEditorStatus: function () {
+        var self = this,
+            editor = self.editor;
+        self.savedRanges = null;
+        if (!UA.gecko || !editor.__iframeFocus) {
+            return;
+        }
+        var sel = editor.getSelection();
+        //firefox 光标丢失bug,位置丢失，所以这里保存下
+        self.savedRanges = sel &amp;&amp; sel.getRanges();
+    },
+
+    /*
+     编辑器自身核心状态恢复，每次最大化最小化都要save,restore，
+     维持编辑器核心状态不变
+     */
+    _restoreEditorStatus: function () {
+        var self = this,
+            editor = self.editor,
+            sel = editor.getSelection(),
+            savedRanges = self.savedRanges;
+
+        //firefox焦点bug
+
+        //原来是聚焦，现在刷新designmode
+        //firefox 先失去焦点才行
+        if (UA.gecko) {
+            editor.activateGecko();
+        }
+
+        if (savedRanges &amp;&amp; sel) {
+            sel.selectRanges(savedRanges);
+        }
+
+        //firefox 有焦点时才重新聚焦
+        if (editor.__iframeFocus &amp;&amp; sel) {
+            var element = sel.getStartElement();
+            //使用原生不行的，会使主窗口滚动
+            //element[0] &amp;&amp; element[0].scrollIntoView(true);
+            if (element) {
+                element.scrollIntoView(undefined, {
+                    alignWithTop: false,
+                    allowHorizontalScroll: true,
+                    onlyScrollIfNeeded: true
+                });
+            }
+        }
+    },
+
+    /*
+     将编辑器最大化-实际动作
+     必须做两次，何解？？
+     */
+    _maximize: function (stop) {
+        var self = this,
+            editor = self.editor,
+            editorEl = editor.get(&#x27;el&#x27;),
+            viewportHeight = Dom.viewportHeight(),
+            viewportWidth = Dom.viewportWidth(),
+            textareaEl = editor.get(&#x27;textarea&#x27;),
+            statusHeight = editor.get(&#x27;statusBarEl&#x27;) ?
+                editor.get(&#x27;statusBarEl&#x27;)[0].offsetHeight : 0,
+            toolHeight = editor.get(&#x27;toolBarEl&#x27;)[0].offsetHeight;
+
+        if (!ie) {
+            Dom.css(doc.body, {
+                width: 0,
+                height: 0,
+                overflow: &#x27;hidden&#x27;
+            });
+        } else {
+            doc.body.style.overflow = &#x27;hidden&#x27;;
+        }
+        doc.documentElement.style.overflow = &#x27;hidden&#x27;;
+
+        editorEl.css({
+            position: &#x27;absolute&#x27;,
+            zIndex: Editor.baseZIndex(Editor.ZIndexManager.MAXIMIZE),
+            width: viewportWidth + &#x27;px&#x27;
+        });
+        iframe.css({
+            zIndex: Editor.baseZIndex(Editor.ZIndexManager.MAXIMIZE - 5),
+            height: viewportHeight + &#x27;px&#x27;,
+            width: viewportWidth + &#x27;px&#x27;
+        });
+        editorEl.offset({
+            left: 0,
+            top: 0
+        });
+        iframe.css({
+            left: 0,
+            top: 0
+        });
+
+        textareaEl.parent().css({
+            height: (viewportHeight - statusHeight - toolHeight ) + &#x27;px&#x27;
+        });
+
+        textareaEl.css({
+            height: (viewportHeight - statusHeight - toolHeight ) + &#x27;px&#x27;
+        });
+
+        if (stop !== true) {
+            /*jshint noarg:false*/
+            arguments.callee.call(self, true);
+        }
+    },
+    _real: function () {
+        var self = this,
+            editor = self.editor;
+        if (self._resize) {
+            return;
+        }
+
+        self._saveEditorStatus();
+        self._saveSate();
+        self._maximize();
+        if (!self._resize) {
+            self._resize = util.buffer(function () {
+                self._maximize();
+                editor.fire(&#x27;afterMaximizeWindow&#x27;);
+            }, 100);
+        }
+
+        Event.on(window, &#x27;resize&#x27;, self._resize);
+
+        setTimeout(function () {
+            self._restoreEditorStatus();
+            editor.notifySelectionChange();
+            editor.fire(&#x27;afterMaximizeWindow&#x27;);
+        }, 30);
+    },
+    maximizeWindow: function () {
+        var self = this,
+            editor = self.editor;
+        if (editor.fire(&#x27;beforeMaximizeWindow&#x27;) === false) {
+            return;
+        }
+        init();
+        self._real();
+    },
+    destroy: function () {
+        var self = this;
+        if (self._resize) {
+            Event.remove(window, &#x27;resize&#x27;, self._resize);
+            self._resize.stop();
+            self._resize = 0;
+        }
+    }
+});
+
+module.exports = {
+    init: function (editor) {
+        if (!editor.hasCommand(&#x27;maximizeWindow&#x27;)) {
+            var maximizeCmd = new MaximizeCmd(editor);
+
+            editor.addCommand(&#x27;maximizeWindow&#x27;, {
+                exec: function () {
+                    maximizeCmd.maximizeWindow();
+                }
+            });
+
+            editor.addCommand(&#x27;restoreWindow&#x27;, {
+                exec: function () {
+                    maximizeCmd.restoreWindow();
+                }
+            });
+        }
+    }
+};
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

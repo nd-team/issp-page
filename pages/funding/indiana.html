@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>众筹</title>
+    <link rel="stylesheet" href="/css/activity/indiana.css">
+    <link rel="stylesheet" href="/js/libs/fulpages/jquery.fullPage.css">
+</head>
+<body >
+    <header>
+    <a href="/pages/activity/activity_index.html" class="chat-life" title="生活价值平台">
+        <svg role="img" class="life">
+            <use xlink:href="#life"></use>
+        </svg>
+    </a>
+    <ul class="header-icon">
+        <li>
+            <a href="/pages/honor/bonus_add.html">
+                <svg role="img" class="honor">
+                    <use xlink:href="#honor"></use>
+                </svg>
+            </a>
+            <a href="/pages/honor/bonus_add.html" class="icon-text">荣誉</a>
+        </li>
+        <li>
+            <a href="/pages/reward/reward_circle.html">
+                <svg role="img" class="bonuses">
+                    <use xlink:href="#bonuses"></use>
+                </svg>
+            </a>
+            <a href="/pages/reward/reward_circle.html" class="icon-text">奖励</a>
+        </li>
+        <!--如果没有登陆弹出登录框-->
+        <li>
+            <a href="/pages/chatRoom/private_chat.html">
+                <svg role="img" class="bbs">
+                    <use xlink:href="#bbs"></use>
+                </svg>
+            </a>
+            <a href="/pages/chatRoom/private_chat.html" class="icon-text">聊天室</a>
+        </li>
+        <li>
+            <a href="/pages/activity/activity_all.html">
+                <svg role="img" class="activity">
+                    <use xlink:href="#activity"></use>
+                </svg>
+            </a>
+            <a href="/pages/activity/activity_all.html" class="icon-text">活动</a>
+        </li>
+        <li>
+            <a href="/pages/activity/social.html">
+                <svg role="img" class="society">
+                    <use xlink:href="#society"></use>
+                </svg>
+            </a>
+            <a href="/pages/activity/social.html" class="icon-text">社交</a>
+        </li>
+        <li>
+            <a href="/pages/funding/indiana.html">
+                <svg role="img" class="zongchou">
+                    <use xlink:href="#zongchou"></use>
+                </svg>
+            </a>
+            <a href="/pages/funding/indiana.html" class="icon-text">众筹</a>
+        </li>
+    </ul>
+    <a href="javascript:void(0)" class="myself">
+        <svg role="img" class="zongchou">
+            <use xlink:href="#zongchou"></use>
+        </svg>
+    </a>
+    <div class="search-input">
+        <div class="input-box">
+            <input type="text" class="search" placeholder="输入要搜索的内容">
+            <a href="javascript:void(0)">
+                <svg role="img" class="magnifier">
+                    <use xlink:href="#magnifier"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="photo">
+            <a href="javascript:void(0)" class="head-photo">
+                <img src="/images/honor/user01.jpg" alt="">
+            </a>
+            <div class="modal-box">
+                <div class="modal-message">
+                    <p>
+                        <i class="triangle"></i>
+                    </p>
+                    <div class="get-info">
+                        <a href="/pages/chatRoom/moving.html" class="me">
+                            <svg role="img" class="my">
+                                <use xlink:href="#my"></use>
+                            </svg>
+                            <span>我的</span>
+                        </a>
+                        <a href="/pages/chatRoom/chat_message.html" class="my-news">
+                            <svg role="img" class="news">
+                                <use xlink:href="#news"></use>
+                            </svg>
+                            <span>消息</span>
+                            <strong>99</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="mainwrap">
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="/images/indiana/nav_av.png" alt="">
+                        影音
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="/images/indiana/nav_welfare.png" alt="">
+                        公益
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="/images/indiana/nav_book.png" alt="">书籍</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="/images/indiana/nav_ent.png" alt="">娱乐</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="/images/indiana/nav_sci.png" alt="">科技</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="/images/indiana/nav_des.png" alt="">设计</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="/images/indiana/nav_anime.png" alt="">动漫</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="/images/indiana/nav_game.png" alt="">游戏</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="/images/indiana/nav_agr.png" alt="">农业</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><img src="/images/indiana/nav_other.png" alt="">其他</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="dowebok">
+            <div class="section">
+                <div class="wrap">
+                    <div class="w-bg animate1">
+                        <h2>热门推荐</h2>
+                        <i>The Best Hit</i>
+                        <article class="banner1">
+                            <div class="t-btn">
+                                <a href="javascript:void(0)">&lt;</a>
+                                <a href="javascript:void(0)">&gt;</a>
+                            </div>
+                            <a href="javascript:void(0)" class="nowgobtn"></a>
+                        </article>
+                    </div>
+                    <div class="w-con animate2">
+                        <ul>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                <img src="/images/indiana/pic1.png" alt="">
+                                </a>
+                                <h4 class="title-position">
+                                    <i></i>
+                                    <span>热款</span>
+                                </h4>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                <img src="/images/indiana/pic2.png" alt="">
+                                </a>
+                                <h4 class="title-position">
+                                    <i></i>
+                                    <span>热款</span>
+                                </h4>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                    <img src="/images/indiana/pic2.png" alt="">
+                                </a>
+                                <h4 class="title-position">
+                                    <i></i>
+                                    <span>热款</span>
+                                </h4>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                    <img src="/images/indiana/pic2.png" alt="">
+                                </a>
+                                <h4 class="title-position">
+                                    <i></i>
+                                    <span>热款</span>
+                                </h4>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                    <img src="/images/indiana/pic5.png" alt="">
+                                </a>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                    <img src="/images/indiana/pic6.png" alt="">
+                                </a>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                    <img src="/images/indiana/pic7.png" alt="">
+                                </a>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="w-uesr">
+                            <p>最近参与夺宝的有：</p>
+                            <p class="user-list">
+                                <a href="javascript:void(0)"><img src="/images/indiana/avatar1.png" alt=""></a>
+                                <a href="javascript:void(0)"><img src="/images/indiana/avatar2.png" alt=""></a>
+                                <a href="javascript:void(0)"><img src="/images/indiana/avatar3.png" alt=""></a>
+                                <a href="javascript:void(0)"><img src="/images/indiana/avatar4.png" alt=""></a>
+                            </p>
+                            <a href="javascript:void(0)" class="moreuser"><img src="/images/indiana/avatar_more.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="wrap">
+                    <div class="w-bg animate1">
+                        <h2>最新夺宝</h2>
+                        <i>Cross-Treasures</i>
+                        <article class="banner2">
+                            <div class="t-btn">
+                                <a href="javascript:void(0)">&lt;</a>
+                                <a href="javascript:void(0)">&gt;</a>
+                            </div>
+                            <a href="javascript:void(0)" class="nowgobtn"></a>
+                        </article>
+                    </div>
+                    <div class="w-con animate2">
+                        <ul>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                    <img src="/images/indiana/pic1.png" alt="">
+                                </a>
+                                <h4 class="title-position">
+                                    <i></i>
+                                    <span>热款</span>
+                                </h4>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                    <img src="/images/indiana/pic2.png" alt="">
+                                </a>
+                                <h4 class="title-position">
+                                    <i></i>
+                                    <span>热款</span>
+                                </h4>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                    <img src="/images/indiana/pic2.png" alt="">
+                                </a>
+                                <h4 class="title-position">
+                                    <i></i>
+                                    <span>热款</span>
+                                </h4>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                    <img src="/images/indiana/pic2.png" alt="">
+                                </a>
+                                <h4 class="title-position">
+                                    <i></i>
+                                    <span>热款</span>
+                                </h4>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                    <img src="/images/indiana/pic5.png" alt="">
+                                </a>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                    <img src="/images/indiana/pic6.png" alt="">
+                                </a>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                    <img src="/images/indiana/pic7.png" alt="">
+                                </a>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="w-uesr">
+                            <p>最近参与夺宝的有：</p>
+                            <p class="user-list">
+                                <a href="javascript:void(0)"><img src="/images/indiana/avatar1.png" alt=""></a>
+                                <a href="javascript:void(0)"><img src="/images/indiana/avatar2.png" alt=""></a>
+                                <a href="javascript:void(0)"><img src="/images/indiana/avatar3.png" alt=""></a>
+                                <a href="javascript:void(0)"><img src="/images/indiana/avatar4.png" alt=""></a>
+                            </p>
+                            <a href="javascript:void(0)" class="moreuser"><img src="/images/indiana/avatar_more.png" alt=""></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="section">
+                <div class="wrap">
+                    <div class="w-bg animate1">
+                        <h2>更多</h2>
+                        <i>More</i>
+                        <article class="banner3">
+                            <div class="t-btn">
+                                <a href="javascript:void(0)">&lt;</a>
+                                <a href="javascript:void(0)">&gt;</a>
+                            </div>
+                            <a href="javascript:void(0)" class="nowgobtn"></a>
+                        </article>
+                    </div>
+                    <div class="w-con animate2">
+                        <ul>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                    <img src="/images/indiana/pic1.png" alt="">
+                                </a>
+                                <h4 class="title-position">
+                                    <i></i>
+                                    <span>热款</span>
+                                </h4>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                    <img src="/images/indiana/pic2.png" alt="">
+                                </a>
+                                <h4 class="title-position">
+                                    <i></i>
+                                    <span>热款</span>
+                                </h4>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                    <img src="/images/indiana/pic2.png" alt="">
+                                </a>
+                                <h4 class="title-position">
+                                    <i></i>
+                                    <span>热款</span>
+                                </h4>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                    <img src="/images/indiana/pic2.png" alt="">
+                                </a>
+                                <h4 class="title-position">
+                                    <i></i>
+                                    <span>热款</span>
+                                </h4>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                    <img src="/images/indiana/pic5.png" alt="">
+                                </a>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                    <img src="/images/indiana/pic6.png" alt="">
+                                </a>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/pages/initiating/pro_detail.html">
+                                    <img src="/images/indiana/pic7.png" alt="">
+                                </a>
+                                <p class="w-con-t">
+                                    <a href="/pages/initiating/pro_detail.html">MSA CARNEY:一款不需要充电的智能手表</a>
+                                </p>
+                                <p class="tages">
+                                    <a href="/pages/initiating/pro_detail.html">可穿戴</a>
+                                    <a href="/pages/initiating/pro_detail.html">科技</a>
+                                </p>
+                                <p class="progress">
+                                    <span class="barbg"><i></i></span>
+                                </p>
+                                <p class="p-i-infos">
+                                    <span>595%</span>
+                                    <span>￥8988</span>
+                                    <span>16天</span>
+                                </p>
+                                <p class="p-infos">
+                                    <span>已达</span>
+                                    <span>已筹</span>
+                                    <span>剩余时间</span>
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="w-uesr">
+                            <p>最近参与夺宝的有：</p>
+                            <p class="user-list">
+                                <a href="javascript:void(0)"><img src="/images/indiana/avatar1.png" alt=""></a>
+                                <a href="javascript:void(0)"><img src="/images/indiana/avatar2.png" alt=""></a>
+                                <a href="javascript:void(0)"><img src="/images/indiana/avatar3.png" alt=""></a>
+                                <a href="javascript:void(0)"><img src="/images/indiana/avatar4.png" alt=""></a>
+                            </p>
+                            <a href="javascript:void(0)" class="moreuser"><img src="/images/indiana/avatar_more.png" alt=""></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <footer class="section footer">
+                <div class="footerwrap">
+                    <ul>
+                        <li>
+                            <img src="/images/activity/aboutus.png" alt="">
+                            <a href="javascript:void(0)">关于我们</a>
+                            <a href="javascript:void(0)">帮助我们</a>
+                            <a href="javascript:void(0)">意见反馈</a>
+                        </li>
+                        <li>
+                            <img src="/images/activity/platopen.png" alt="">
+                            <a href="javascript:void(0)">开放平台</a>
+                            <a href="javascript:void(0)">了解平台</a>
+                        </li>
+                        <li>
+                            <img src="/images/activity/platnav.png" alt="">
+                            <a href="javascript:void(0)">平台导航</a>
+                        </li>
+                        <li>
+                            <img src="/images/activity/platmana.png" alt="">
+                            <a href="javascript:void(0)">平台管理中心</a>
+                        </li>
+                        <li>
+                            <img src="/images/activity/publicplat.png" alt="">
+                            <a href="javascript:void(0)">平台公共</a>
+                        </li>
+                    </ul>
+                    <section class="copyright">
+                        <div>
+                            <p>Copyright @ 2010-2017 ISSO 北京艾佳天诚信息技术有限公司</p>
+                            <p>京文网[2012]0398-130号</p>
+                            <p>京ICP备12003058号</p>
+                        </div>
+                    </section>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+    <div class="oldPlat">
+        <div class="wrap">
+            <span>返回</span>
+            <ul>
+                <li>
+                    <a href="https://issp.bjike.com/admin/login">返回issp平台</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">返回众筹</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+<script src="/js/common.js"></script>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/libs/fulpages/jquery.fullPage.min.js"></script>
+<script>
+    $('#dowebok').fullpage({
+        navigation: true,
+        scrollingSpeed:'1000'
+    })
+</script>

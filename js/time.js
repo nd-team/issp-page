@@ -42,53 +42,6 @@ $(document).ready(function(){
             var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
         }
     });*/
-
-
-    $('.InBodyAll').find(".InBody").not(".InBody:nth-of-type(1)").hide();
-    $(".InTop ul li:not('.InAdd')").click(function(){
-        $('.InTop ul li i').removeClass('cur2');
-        $('.InTop ul li').removeClass('cur');
-        $(this).addClass('cur');
-        $(this).children('i').addClass('cur2');
-
-        $('.InBodyAll>div:eq(' + $(this).index() + ')').show().siblings().hide();
-    });
-    $('.InTop ul li i').click(function(){
-        $(this).parent().remove();
-    });
-    $('.xBody ul li').not('.textTitle').click(function(){
-        $(this).addClass('now').siblings().removeClass('now');
-    });
-    $('a[data-title]').click(function(){
-        var dataTitle = $(this).attr("data-title");
-        $('#modalbg').show();
-        $('#modal').show();
-        $('#modal .'+dataTitle).show();
-    });
-    $('.close').click(function(){
-        $(this).parents('.m-con').hide();
-        $('#modal').hide();
-        $('#modalbg').hide();
-    });
-    //荣誉添加
-    $('.sureAward').click(function(){
-        $(".sureAward").toggleClass("cur");
-    });
-    $('.timeBranch input').bind({
-        focus:function(){
-            if (this.value == this.defaultValue){
-                $('.time').show();
-            }
-        },
-        blur:function(){
-            if (this.value == ""){
-                $('.time').hide();
-            }
-        }
-    });
-
-
-
 //分页
         laypage({
         cont: $('#pages2'),  //容器。值支持id名、原生dom对象，jquery对象,
