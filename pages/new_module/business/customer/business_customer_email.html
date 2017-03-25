@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>邮件发送定制</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-    <link rel="stylesheet" href="/css/new_module/business/customer.css">
+    <link rel="stylesheet" href="/css/new_module/accounting/accounting.css">
 </head>
 <body>
 <section class="left-section">
@@ -68,7 +68,7 @@
                 <li>
                     <a href="javascript:void(0)" class="same-one">解冻<span>Compile</span></a>
                 </li>
-                <li data-title="summary">
+                <li data-title="cole">
                     <a href="javascript:void(0)" class="same-one">汇总<span>Compile</span></a>
                 </li>
             </ul>
@@ -130,10 +130,96 @@
                 </ul>
                 <footer class="footer"> <div class="pagination-click" id="pages"></div></footer>
             </div>
-            <!--添加需要重新设计-->
-            <div class="add">我是添加</div>
-            <!--编辑需要重新设计-->
-            <div class="edit">我是编辑</div>
+            <div class="content-input add f-s-o">
+                <section class="interval">
+                    <ul class="inter-left">
+                        <li class="required">
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>汇总类型</em></label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label><em>客户姓名</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="required f-l">
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>汇总间隔</em></label>
+                            <input type="text">
+                            <input type="text" class="box_se">
+                        </li>
+                        <li class="required">
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>状态</em></label>
+                            <input type="text">
+                        </li>
+                    </ul>
+                    <ul class="inter-right">
+                        <li >
+                            <label><em>备注</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="required">
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>时效</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="f-send">
+                                <p class="send-o">
+                                    <em>发送对象:</em>
+                                    <span>(双击可以删除该条邮箱地址)</span>
+                                </p>
+                                <p class="dclick"></p>
+                        </li>
+                    </ul>
+                </section>
+                  <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="content-input edit f-s-o">
+                <section class="interval">
+                    <ul class="inter-left">
+                        <li class="required">
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>汇总类型</em></label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label><em>客户姓名</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="required f-l">
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>汇总间隔</em></label>
+                            <input type="text">
+                            <input type="text" class="box_se">
+                        </li>
+                        <li class="required">
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>状态</em></label>
+                            <input type="text">
+                        </li>
+                    </ul>
+                    <ul class="inter-right">
+                        <li >
+                            <label><em>备注</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="required">
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>时效</em></label>
+                            <input type="text">
+                        </li>
+                    </ul>
+                </section>
+                <div class="f-send">
+                    <p class="send-o">
+                        <em>发送对象:</em>
+                        <span>(双击可以删除该条邮箱地址)</span>
+                    </p>
+                    <p class="dclick">
+
+                    </p>
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
             <div class="delete">
                 <div class="del-head">
                     <h5>温馨提示</h5>
@@ -158,9 +244,43 @@
                     </div>
                 </div>
             </div>
-            <!--汇总需要重新设计-->
-            <div class="summary">
-                我是汇总
+            <div class="collect cole">
+                <p class="sum-select">
+                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
+                    <select class="sele">
+                        <option value="">北京</option>
+                        <option value="">广州</option>
+                        <option value="">湖南</option>
+                    </select>
+                </p>
+                <ul>
+                    <li class="sum-thead">
+                        <span>地区</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                    </li>
+                    <li class="sum-tbody">
+                        <span>地区</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
