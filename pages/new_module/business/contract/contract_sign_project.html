@@ -8,6 +8,7 @@
     <meta name="keywords" content="合同签订与立项管理">
     <meta name="description" content="合同签订与立项管理">
     <link rel="stylesheet" href="/css/new_module/business/activity.css">
+    <link rel="stylesheet" href="/js/honor/pikaday.css">
 </head>
 <body>
     <section class="left-section">
@@ -35,9 +36,6 @@
                     </li>
                     <li>
                         <a href="/pages/new_module/business/contract/contract_summary_mail.html">汇总和邮件发送</a>
-                    </li>
-                    <li>
-                        <a href="/pages/new_module/business/contract/contract_project_summary.html">合同签订与立项汇总</a>
                     </li>
                 </ul>
             </div>
@@ -99,13 +97,13 @@
                         <li class="list-head">
                             <span></span>
                             <span class="data-id">id</span>
-                            <span>项目名称</span>
-                            <span>资格要求</span>
-                            <span>标书编号</span>
-                            <span>同类项目经验</span>
-                            <span>主营业务收入</span>
-                            <span>专业资质认证</span>
-                            <span>管理体系认证</span>
+                            <span>业务类型</span>
+                            <span>业务方向科目</span>
+                            <span>合作方式</span>
+                            <span>合同外部项目名称</span>
+                            <span>甲方公司名称</span>
+                            <span>乙方公司名称</span>
+                            <span>地区</span>
                             <span></span>
                         </li>
                         <li class="list-all">
@@ -113,13 +111,13 @@
                                 <div class="list-text odd">
                                     <p></p>
                                     <p class="data-id"></p>
-                                    <p>一线实施体系</p>
+                                    <p>软件开发类</p>
+                                    <p>未知</p>
+                                    <p>销售合同</p>
                                     <p>未知</p>
                                     <p>未知</p>
                                     <p>未知</p>
-                                    <p>未知</p>
-                                    <p>未知</p>
-                                    <p>未知</p>
+                                    <p>广州</p>
                                     <p>
                                         <a href="javascript:void(0)" class="more">更多详细</a>
                                     </p>
@@ -128,13 +126,23 @@
                                     <ul class="can-see">
                                         <li>
                                             <p class="see-parent">
-                                                <span>项目经理素质</span><span>团队成员素质</span>
-                                                <span>资源投入</span><span>技术方案</span>
-                                                <span>额外承诺</span><span>补充资料</span><span>经济分册</span>
+                                                <span>合同金额</span><span>开工时间</span>
+                                                <span>完工时间</span><span>是否签订合同</span>
+                                                <span>合同属性</span><span>立项情况</span>
+                                                <span>内部项目名称</span><span>所属项目组</span>
                                             </p>
                                             <p class="see-children">
-                                                <span>高</span> <span>高</span> <span>高</span> <span>高</span>
-                                                <span>未知</span> <span>未知</span><span>未知</span>
+                                                <span>85968</span> <span>2017-02-22</span> <span>2017-05-02</span> <span>是</span>
+                                                <span>未知</span> <span>未知</span><span>未知</span><span>未知</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="see-parent">
+                                                <span>项目负责人</span><span>备注</span>
+                                                <span>总经办</span><span>审核意见</span>
+                                            </p>
+                                            <p class="see-children">
+                                                <span>小黄</span> <span>讲噶几个号嘎嘎I啊好噶结果</span> <span></span> <span>同意</span>
                                             </p>
                                         </li>
                                     </ul>
@@ -158,59 +166,90 @@
                         <section>
                             <ul>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目名称</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务类型</em></label>
+                                    <select class="sele">
+                                        <option value="0">移动通信类</option>
+                                        <option value="1">软件开发类</option>
+                                        <option value="2">智能系统集成类</option>
+                                        <option value="3">广告策划营销类</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务方向科目</em></label>
                                     <input type="text">
                                 </li>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>资格要求</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>合作方式</em></label>
+                                    <select class="sele">
+                                        <option value="0">租赁合同</option>
+                                        <option value="1">承包的项目合同</option>
+                                        <option value="2">分包项目合同</option>
+                                        <option value="3">销售合同</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>合同外部项目名称</em></label>
                                     <input type="text">
                                 </li>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>标书编号</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>甲方公司名称</em></label>
                                     <input type="text">
                                 </li>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>同类项目经验</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>乙方公司名称</em></label>
                                     <input type="text">
                                 </li>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>主营业务收入</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
                                     <input type="text">
                                 </li>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>专业资质认证</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>合同金额</em></label>
+                                    <input type="number">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>开工时间</em></label>
+                                    <input type="text" id="open" class="date-icon">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>完工时间</em></label>
+                                    <input type="text" id="over" class="date-icon">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>是否签订合同</em></label>
+                                    <select class="sele">
+                                        <option value="0">已签订</option>
+                                        <option value="1">未签订</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>合同属性</em></label>
+                                    <select class="sele">
+                                        <option value="0">框架合同</option>
+                                        <option value="1">单次合同</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>立项情况</em></label>
+                                    <select class="sele">
+                                        <option value="0">已立项</option>
+                                        <option value="1">未立项</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>内部项目名称</em></label>
                                     <input type="text">
                                 </li>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>管理体系认证</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属项目组</em></label>
                                     <input type="text">
                                 </li>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目经理素质</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目负责人</em></label>
                                     <input type="text">
                                 </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>团队成员素质</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>资源投入</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技术方案</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>额外承诺</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>补充资料</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>经济分册</em></label>
+                                <li>
+                                    <label><em>备注</em></label>
                                     <input type="text">
                                 </li>
                             </ul>
@@ -226,59 +265,90 @@
                         <section class="list-left">
                             <ul>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目名称</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务类型</em></label>
+                                    <select class="sele">
+                                        <option value="0">移动通信类</option>
+                                        <option value="1">软件开发类</option>
+                                        <option value="2">智能系统集成类</option>
+                                        <option value="3">广告策划营销类</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务方向科目</em></label>
                                     <input type="text">
                                 </li>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>资格要求</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>合作方式</em></label>
+                                    <select class="sele">
+                                        <option value="0">租赁合同</option>
+                                        <option value="1">承包的项目合同</option>
+                                        <option value="2">分包项目合同</option>
+                                        <option value="3">销售合同</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>合同外部项目名称</em></label>
                                     <input type="text">
                                 </li>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>标书编号</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>甲方公司名称</em></label>
                                     <input type="text">
                                 </li>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>同类项目经验</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>乙方公司名称</em></label>
                                     <input type="text">
                                 </li>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>主营业务收入</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
                                     <input type="text">
                                 </li>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>专业资质认证</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>合同金额</em></label>
+                                    <input type="number">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>开工时间</em></label>
+                                    <input type="text" id="open-edit" class="date-icon">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>完工时间</em></label>
+                                    <input type="text" id="over-edit" class="date-icon">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>是否签订合同</em></label>
+                                    <select class="sele">
+                                        <option value="0">已签订</option>
+                                        <option value="1">未签订</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>合同属性</em></label>
+                                    <select class="sele">
+                                        <option value="0">框架合同</option>
+                                        <option value="1">单次合同</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>立项情况</em></label>
+                                    <select class="sele">
+                                        <option value="0">已立项</option>
+                                        <option value="1">未立项</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>内部项目名称</em></label>
                                     <input type="text">
                                 </li>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>管理体系认证</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属项目组</em></label>
                                     <input type="text">
                                 </li>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目经理素质</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目负责人</em></label>
                                     <input type="text">
                                 </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>团队成员素质</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>资源投入</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技术方案</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>额外承诺</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>补充资料</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>经济分册</em></label>
+                                <li>
+                                    <label><em>备注</em></label>
                                     <input type="text">
                                 </li>
                             </ul>
@@ -305,60 +375,12 @@
                     <div class="input-list">
                         <section class="list-left">
                             <ul>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目名称</em></label>
+                                <li class="required hidden">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>编号</em></label>
                                     <input type="text">
                                 </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>资格要求</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>标书编号</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>同类项目经验</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>主营业务收入</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>专业资质认证</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>管理体系认证</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目经理素质</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>团队成员素质</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>资源投入</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>技术方案</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>额外承诺</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>补充资料</em></label>
-                                    <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>经济分册</em></label>
+                                <li>
+                                    <label><em>审核意见</em></label>
                                     <input type="text">
                                 </li>
                             </ul>
@@ -369,17 +391,50 @@
                         <button>提交</button>
                     </p>
                 </div>
+                <div class="upload-file">
+                <section>
+                    <div class="file">
+                        <input type="file" id="updata">
+                        <label for="updata-file">
+                            <p>
+                                <img src="/images/new_module/data/updata_file.png" alt="">
+                                <span>选择文件</span>
+                            </p>
+                        </label>
+                        <span class="imPrompt">
+                                <i><img src="/images/new_module/data/prompt.png"></i>
+                                带有
+                                <i><img src="/images/new_module/data/mandatory.png"></i>
+                                的为必填项
+                            </span>
+                    </div>
+                    <div class="file-right">
+                        <div>
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>文件名</em></label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>文件简述</em></label>
+                            <textarea></textarea>
+                        </div>
+                        <div class="btn">
+                            <button>浏览</button>
+                            <button>上传</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
                 <div class="content-input export">
                     <div class="input-list">
                         <section class="list-left">
                             <ul>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>内部项目名称</em></label>
                                     <select class="sele">
-                                        <option value="0">北京</option>
-                                        <option value="1">广州</option>
-                                        <option value="2">湛江</option>
-                                        <option value="3">佛山</option>
+                                        <option value="0">好得很</option>
+                                        <option value="1">好得很</option>
+                                        <option value="2">好得很</option>
+                                        <option value="3">好得很</option>
                                     </select>
                                 </li>
                             </ul>
@@ -389,63 +444,74 @@
                         <button>导出明细</button>
                     </p>
                 </div>
-                <div class="upload">
-                    <section>
-                        <div class="file">
-                            <input type="file" id="updata-file">
-                            <label for="updata-file">
-                                <p>
-                                    <img src="/images/new_module/data/updata_file.png" alt="">
-                                    <span>选择文件</span>
-                                </p>
-                            </label>
-                        </div>
-                        <div class="file-right">
-                            <div class="btn">
-                                <button>上传</button>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="upload-file">
-                    <section>
-                        <div class="file">
-                            <input type="file" id="updata">
-                            <label for="updata-file">
-                                <p>
-                                    <img src="/images/new_module/data/updata_file.png" alt="">
-                                    <span>选择文件</span>
-                                </p>
-                            </label>
-                            <span class="imPrompt">
-                                <i><img src="/images/new_module/data/prompt.png"></i>
-                                带有
-                                <i><img src="/images/new_module/data/mandatory.png"></i>
-                                的为必填项
-                            </span>
-                        </div>
-                        <div class="file-right">
-                            <div>
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>文件名</em></label>
-                                <input type="text">
-                            </div>
-                            <div>
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>文件简述</em></label>
-                                <textarea></textarea>
-                            </div>
-                            <div class="btn">
-                                <button>浏览</button>
-                                <button>上传</button>
-                            </div>
-                        </div>
-                    </section>
+                <div class="content-input search">
+                    <div class="input-list">
+                        <section class="list-left">
+                            <ul>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务类型</em></label>
+                                    <select class="sele">
+                                        <option value="0">移动通信类</option>
+                                        <option value="1">软件开发类</option>
+                                        <option value="2">智能系统集成类</option>
+                                        <option value="3">广告策划营销类</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label><em>业务方向科目</em></label>
+                                    <select class="sele">
+                                        <option value="0">租赁合同</option>
+                                        <option value="1">承包的项目合同</option>
+                                        <option value="2">分包项目合同</option>
+                                        <option value="3">销售合同</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label><em>合作方式</em></label>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <label><em>甲方公司</em></label>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <label><em>乙方公司</em></label>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <label><em>地区</em></label>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <label><em>合同属性</em></label>
+                                    <select class="sele">
+                                        <option value="0">框架合同</option>
+                                        <option value="1">单次合同</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label><em>立项情况</em></label>
+                                    <select class="sele">
+                                        <option value="0">已立项</option>
+                                        <option value="1">未立项</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <p class="dataBottom">
+                        <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                        <button>提交</button>
+                    </p>
                 </div>
             </div>
         </div>
     </section>
     <div id="modalbg"></div>
     <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/honor/moment.min.js"></script>
     <script src="/laypage/laypage.js"></script>
+    <script src="/js/honor/pikaday.js"></script>
     <script src="/js/new_modules/common.js"></script>
     <script type="text/javascript">
         laypage({
@@ -454,6 +520,56 @@
             skin : 'molv', //皮肤
             first : 1, //将首页显示为数字1,。若不显示，设置false即可
             last : 20, //将尾页显示为总页数。若不显示，设置false即可
+        });
+
+        //日历
+        var open = new Pikaday({
+            numberOfMonths: 1,
+            field:jQuery('#open')[0],
+            minDate: new Date('2000-01-01'),
+            maxDate: new Date('2020-12-31'),
+            yearRange: [2000,2020],
+            i18n: i18n,
+            onSelect: function() {
+                var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+                $('#datepicker').appendChild(date);
+            }
+        });
+        var over = new Pikaday({
+            numberOfMonths: 1,
+            field:jQuery('#over')[0],
+            minDate: new Date('2000-01-01'),
+            maxDate: new Date('2020-12-31'),
+            yearRange: [2000,2020],
+            i18n: i18n,
+            onSelect: function() {
+                var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+                $('#datepicker').appendChild(date);
+            }
+        });
+        var open_edit = new Pikaday({
+            numberOfMonths: 1,
+            field:jQuery('#open-edit')[0],
+            minDate: new Date('2000-01-01'),
+            maxDate: new Date('2020-12-31'),
+            yearRange: [2000,2020],
+            i18n: i18n,
+            onSelect: function() {
+                var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+                $('#datepicker').appendChild(date);
+            }
+        });
+        var over_edit = new Pikaday({
+            numberOfMonths: 1,
+            field:jQuery('#over-edit')[0],
+            minDate: new Date('2000-01-01'),
+            maxDate: new Date('2020-12-31'),
+            yearRange: [2000,2020],
+            i18n: i18n,
+            onSelect: function() {
+                var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+                $('#datepicker').appendChild(date);
+            }
         });
     </script>
 </body>

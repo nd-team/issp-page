@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>合同单价管理</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="合同项目基本信息">
+    <meta name="description" content="合同项目基本信息">
+    <link rel="stylesheet" href="/css/new_module/business/activity.css">
+</head>
+<body>
+    <section class="left-section">
+        <div class="header">
+            <a href="javascript:void(0)" title="issp平台" class="logo">
+                <img src="/images/new_module/organization/logo.png" alt="">
+            </a>
+            <span>issp平台</span>
+        </div>
+        <div class="nav">
+            <div class="nav-list">
+                <h3 class="header-menu"><i class="nav-arrow"></i>商务合同管理</h3>
+                <ul class="menu">
+                    <li class="active">
+                        <a href="/pages/new_module/business/contract_price/contract_project_info.html">合同项目基本信息</a>
+                    </li>
+                    <li>
+                        <a href="/pages/new_module/business/contract_price/contract_price_info.html">合同单价资料</a>
+                    </li>
+                    <li>
+                        <a href="/pages/new_module/business/contract_price/contract_node_ready.html">节点标准</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="right-section">
+        <div class="top-content">
+            <div class="top-fixed">
+                <div class="top">
+                    <div class="top-back">
+                        <a href="javascript:void(0)" class="back">返回</a>
+                    </div>
+                    <div class="search">
+                        <a href="javascript:void(0)" class="search-btn"></a>
+                        <select class="selected">
+                            <option value="0">张三三</option> <option value="1">张四四</option> <option value="2">张五五</option>
+                            <option value="3">张六六</option> <option value="4">张七七</option> <option value="5">张八八</option>
+                            <option value="6">张九九</option>
+                        </select>
+                        <span class="arrow"></span>
+                    </div>
+                </div>
+                <ul class="list width-10">
+                    <li class="current" data-title="list">
+                        <a href="javascript:void(0)" class="lis" >列表<span>Tabulate</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="content-tab list">
+                    <ul class="table">
+                        <li class="list-head">
+                            <span></span>
+                            <span class="data-id">id</span>
+                            <span>地区</span>
+                            <span>项目组</span>
+                            <span>项目内部名称</span>
+                            <span>派工项目名称</span>
+                            <span>派工合同号</span>
+                            <span>派工单编号</span>
+                            <span>开工时间</span>
+                            <span></span>
+                        </li>
+                        <li class="list-all">
+                            <section>
+                                <div class="list-text odd">
+                                    <p></p>
+                                    <p class="data-id"></p>
+                                    <p>广州</p>
+                                    <p>未知</p>
+                                    <p>未知</p>
+                                    <p>未知</p>
+                                    <p>未知</p>
+                                    <p>未知</p>
+                                    <p>未知</p>
+                                    <p>
+                                        <a href="javascript:void(0)" class="more">更多详细</a>
+                                    </p>
+                                </div>
+                                <div class="can">
+                                    <ul class="can-see">
+                                        <li>
+                                            <p class="see-parent">
+                                                <span>完工时间</span><span>合同金额</span>
+                                                <span>派工单价</span><span>合同规模数量</span>
+                                                <span>回款周期</span><span>重点性</span>
+                                                <span>难易成度</span>
+                                            </p>
+                                            <p class="see-children">
+                                                <span>未知</span> <span>未知</span><span>未知</span>
+                                                <span>未知</span> <span>未知</span><span>未知</span>
+                                                <span>未知</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <div class="module">
+                                        <div class="see-module">
+                                            <p class="see-type">体现类型</p>
+                                            <p class="see-description"></p>
+                                            <button class="btn">关闭</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </li>
+                    </ul>
+                    <footer class="footer">
+                        <div class="pagination-click" id="pages"></div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="modalbg"></div>
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/laypage/laypage.js"></script>
+    <script src="/js/new_modules/common.js"></script>
+    <script type="text/javascript">
+        laypage({
+            cont : 'pages', //容器。值支持id名、原生dom对象，jquery对象,
+            pages : 20, //总页数
+            skin : 'molv', //皮肤
+            first : 1, //将首页显示为数字1,。若不显示，设置false即可
+            last : 20, //将尾页显示为总页数。若不显示，设置false即可
+        });
+    </script>
+</body>
+</html>

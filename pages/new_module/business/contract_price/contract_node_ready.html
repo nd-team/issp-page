@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>招投标管理</title>
+    <title>合同单价管理</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-    <meta name="keywords" content="开标信息">
-    <meta name="description" content="开标信息">
+    <meta name="keywords" content="节点标准">
+    <meta name="description" content="节点标准">
     <link rel="stylesheet" href="/css/new_module/business/activity.css">
     <link rel="stylesheet" href="/js/honor/pikaday.css">
 </head>
@@ -20,22 +20,16 @@
         </div>
         <div class="nav">
             <div class="nav-list">
-                <h3 class="header-menu"><i class="nav-arrow"></i>招投标管理</h3>
+                <h3 class="header-menu"><i class="nav-arrow"></i>商务合同管理</h3>
                 <ul class="menu">
                     <li>
-                        <a href="/pages/new_module/business/bidding/bidding_webInfo.html">招投标网站信息</a>
+                        <a href="/pages/new_module/business/contract_price/contract_project_info.html">合同项目基本信息</a>
                     </li>
                     <li>
-                        <a href="/pages/new_module/business/bidding/bidding_information.html">招标信息</a>
-                    </li>
-                    <li>
-                        <a href="/pages/new_module/business/bidding/bidding_questions_answers.html">投标答疑问题记录</a>
-                    </li>
-                    <li>
-                        <a href="/pages/new_module/business/bidding/bidding_tender_info.html">标书资料</a>
+                        <a href="/pages/new_module/business/contract_price/contract_price_info.html">合同单价资料</a>
                     </li>
                     <li class="active">
-                        <a href="/pages/new_module/business/bidding/bidding_open_info.html">开标信息</a>
+                        <a href="/pages/new_module/business/contract_price/contract_node_ready.html">节点标准</a>
                     </li>
                 </ul>
             </div>
@@ -71,17 +65,11 @@
                     <li data-title="delete">
                         <a href="javascript:void(0)" class="same-one" >删除<span>Delete</span></a>
                     </li>
-                    <li data-title="export">
-                        <a href="javascript:void(0)" class="same-two" >导出<span>Export</span></a>
+                    <li data-title="summary">
+                        <a href="javascript:void(0)" class="same-one" >汇总<span>Summary</span></a>
                     </li>
                     <li data-title="search">
-                        <a href="javascript:void(0)" class="same-one" >搜索<span>Search</span></a>
-                    </li>
-                    <li data-title="summary">
-                        <a href="javascript:void(0)" class="same-two" >汇总<span>Summary</span></a>
-                    </li>
-                    <li data-title="email">
-                        <a href="javascript:void(0)" class="same-one" >发送邮件<span>Email</span></a>
+                        <a href="javascript:void(0)" class="same-two" >搜索<span>Search</span></a>
                     </li>
                 </ul>
             </div>
@@ -91,13 +79,13 @@
                         <li class="list-head">
                             <span></span>
                             <span class="data-id">id</span>
-                            <span>招标编号</span>
-                            <span>项目名称</span>
-                            <span>开标时间</span>
-                            <span>开标地点</span>
-                            <span>委托人</span>
-                            <span>记录人</span>
-                            <span>竞争公司</span>
+                            <span>时间</span>
+                            <span>地区</span>
+                            <span>项目组</span>
+                            <span>项目内部名称</span>
+                            <span>派工项目名称</span>
+                            <span>派工单编号</span>
+                            <span>类别</span>
                             <span></span>
                         </li>
                         <li class="list-all">
@@ -105,7 +93,7 @@
                                 <div class="list-text odd">
                                     <p></p>
                                     <p class="data-id"></p>
-                                    <p>007</p>
+                                    <p>未知</p>
                                     <p>未知</p>
                                     <p>未知</p>
                                     <p>未知</p>
@@ -120,11 +108,11 @@
                                     <ul class="can-see">
                                         <li>
                                             <p class="see-parent">
-                                                <span>地市</span><span>竞争公司报价</span>
-                                                <span>比率(%)</span>
+                                                <span>节点</span><span>单位</span>
+                                                <span>节点标准</span>>
                                             </p>
                                             <p class="see-children">
-                                                <span>广州</span> <span>392000</span><span>10%</span>
+                                                <span>未知</span> <span>未知</span><span>未知</span>
                                             </p>
                                         </li>
                                     </ul>
@@ -148,44 +136,56 @@
                         <section>
                             <ul>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>招标编号</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>时间</em></label>
+                                    <input type="text" id="time" class="date-icon">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
+                                    <select class="sele">
+                                        <option value="0">北京</option>
+                                        <option value="1">广州</option>
+                                        <option value="2">湛江</option>
+                                        <option value="3">佛山</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目组</em></label>
                                     <input type="text">
                                 </li>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>招标名称</em></label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label><em>开标时间</em></label>
-                                    <input type="text" id="bidding-open" class="date-icon">
-                                </li>
-                                <li>
-                                    <label><em>开标地点</em></label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label><em>委托人</em></label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label><em>记录人</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目内部名称</em></label>
                                     <input type="text">
                                 </li>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>竞争公司</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>派工项目名称</em></label>
                                     <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>派工单编号</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>类别</em></label>
+                                    <select class="sele">
+                                        <option value="0">有效成本</option>
+                                        <option value="1">无效成本</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>节点</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>单位</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>节点标准</em></label>
+                                    <input type="number">
                                 </li>
                                 <li>
-                                    <label><em>地市</em></label>
+                                    <label><em>备注</em></label>
                                     <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>竞争公司报价</em></label>
-                                    <input type="number" name="number" min="1">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>比率(%)</em></label>
-                                    <input type="number" name="number" min="1">
                                 </li>
                             </ul>
                         </section>
@@ -200,44 +200,56 @@
                         <section class="list-left">
                             <ul>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>招标编号</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>时间</em></label>
+                                    <input type="text" id="time_edit" class="date-icon">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
+                                    <select class="sele">
+                                        <option value="0">北京</option>
+                                        <option value="1">广州</option>
+                                        <option value="2">湛江</option>
+                                        <option value="3">佛山</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目组</em></label>
                                     <input type="text">
                                 </li>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>招标名称</em></label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label><em>开标时间</em></label>
-                                    <input type="text" id="bidding-edit" class="date-icon">
-                                </li>
-                                <li>
-                                    <label><em>开标地点</em></label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label><em>委托人</em></label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label><em>记录人</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目内部名称</em></label>
                                     <input type="text">
                                 </li>
                                 <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>竞争公司</em></label>
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>派工项目名称</em></label>
                                     <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>派工单编号</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>类别</em></label>
+                                    <select class="sele">
+                                        <option value="0">有效成本</option>
+                                        <option value="1">无效成本</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>节点</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>单位</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>节点标准</em></label>
+                                    <input type="number">
                                 </li>
                                 <li>
-                                    <label><em>地市</em></label>
+                                    <label><em>备注</em></label>
                                     <input type="text">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>竞争公司报价</em></label>
-                                    <input type="number" name="number" min="1">
-                                </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>比率(%)</em></label>
-                                    <input type="number" name="number" min="1">
                                 </li>
                             </ul>
                         </section>
@@ -259,83 +271,51 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-input export">
+                <div class="content-input summary">
                     <div class="input-list">
                         <section class="list-left">
                             <ul>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
-                                    <select class="sele">
-                                        <option value="0">北京</option>
-                                        <option value="1">广州</option>
-                                        <option value="2">湛江</option>
-                                        <option value="3">佛山</option>
-                                    </select>
+                                <li>
+                                    <label><em>日期</em></label>
+                                    <input type="text" id="date" class="date-icon">
                                 </li>
-                            </ul>
-                        </section>
-                    </div>
-                    <p class="dataBottom">
-                        <button>导出明细</button>
-                    </p>
-                </div>
-                <div class="content-input search">
-                    <div class="input-list">
-                        <section class="list-left">
-                            <ul>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>竞争公司</em></label>
+                                <li>
+                                    <label><em>地区</em></label>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <label><em>项目</em></label>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <label><em>节点</em></label>
                                     <input type="text">
                                 </li>
                             </ul>
                         </section>
                     </div>
                     <p class="dataBottom">
-                        <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
-                        <button>提交</button>
+                        <button>汇总</button>
                     </p>
                 </div>
-                <div class="content-input summary">
+                <div class="content-input search">
                     <div class="input-list">
                         <section class="list-left">
                             <ul>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>购买标书时间</em></label>
-                                    <input type="text" id="start" class="date-icon">
+                                <li>
+                                    <label><em>地区</em></label>
+                                    <input type="text">
                                 </li>
-                                <li class="required">
-                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>购买标书时间</em></label>
-                                    <input type="text" id="end" class="date-icon">
+                                <li>
+                                    <label><em>项目</em></label>
+                                    <input type="text">
                                 </li>
                             </ul>
                         </section>
                     </div>
                     <p class="dataBottom">
-                        <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>注意：时间不填就默认是本年</span>
-                        <button>汇总</button>
+                        <button>提交</button>
                     </p>
-                    <ul class="table">
-                        <li class="list-head">
-                            <span></span>
-                            <span class="data-id">id</span>
-                            <span>业务类型</span>
-                            <span>省份</span>
-                            <span>地市</span>
-                            <span>招投标类型</span>
-                        </li>
-                        <li class="list-all">
-                            <section>
-                                <div class="list-text odd">
-                                    <p></p>
-                                    <p class="data-id"></p>
-                                    <p>未知</p>
-                                    <p>广东</p>
-                                    <p>广州</p>
-                                    <p>公开招标</p>
-                                </div>
-                            </section>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -354,11 +334,10 @@
             first : 1, //将首页显示为数字1,。若不显示，设置false即可
             last : 20, //将尾页显示为总页数。若不显示，设置false即可
         });
-
         //日历
-        var open = new Pikaday({
+        var time = new Pikaday({
             numberOfMonths: 1,
-            field:jQuery('#bidding-open')[0],
+            field:jQuery('#time')[0],
             minDate: new Date('2000-01-01'),
             maxDate: new Date('2020-12-31'),
             yearRange: [2000,2020],
@@ -368,9 +347,9 @@
                 $('#datepicker').appendChild(date);
             }
         });
-        var edit = new Pikaday({
+        var time_edit = new Pikaday({
             numberOfMonths: 1,
-            field:jQuery('#bidding-edit')[0],
+            field:jQuery('#time_edit')[0],
             minDate: new Date('2000-01-01'),
             maxDate: new Date('2020-12-31'),
             yearRange: [2000,2020],
@@ -380,33 +359,6 @@
                 $('#datepicker').appendChild(date);
             }
         });
-
-        var start = new Pikaday({
-            numberOfMonths: 1,
-            field:jQuery('#start')[0],
-            minDate: new Date('2000-01-01'),
-            maxDate: new Date('2020-12-31'),
-            yearRange: [2000,2020],
-            i18n: i18n,
-            onSelect: function() {
-                var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
-                $('#datepicker').appendChild(date);
-            }
-        });
-
-        var end = new Pikaday({
-            numberOfMonths: 1,
-            field:jQuery('#end')[0],
-            minDate: new Date('2000-01-01'),
-            maxDate: new Date('2020-12-31'),
-            yearRange: [2000,2020],
-            i18n: i18n,
-            onSelect: function() {
-                var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
-                $('#datepicker').appendChild(date);
-            }
-        });
-
     </script>
 </body>
 </html>

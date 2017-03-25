@@ -225,7 +225,13 @@
                 flex:0 0 50%;
                 justify-content:center;
                 align-items:center;
+
+                &.hidden{
+                  display: none;
+                }
+
                 position: relative;
+
                 &.required{
 
                   position:relative;
@@ -250,7 +256,6 @@
                       width:163px;
                     }
                   }
-
                 }
                 label{
                   width:147px;
@@ -355,6 +360,9 @@
                   .date-input{
                     width:100%;
                   }
+                }
+                .file{
+                  line-height: 38px;
                 }
               }
             }
@@ -708,6 +716,9 @@
         @extend .content-tab;
       }
       .total{
+        @extend .content-tab;
+      }
+      .sign-summary{
         @extend .content-tab;
       }
       //删除

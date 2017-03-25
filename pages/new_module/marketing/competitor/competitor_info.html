@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>竞争对手管理</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="竞争对手信息">
+    <meta name="description" content="竞争对手信息">
+    <link rel="stylesheet" href="/css/new_module/business/activity.css">
+</head>
+<body>
+    <section class="left-section">
+        <div class="header">
+            <a href="javascript:void(0)" title="issp平台" class="logo">
+                <img src="/images/new_module/organization/logo.png" alt="">
+            </a>
+            <span>issp平台</span>
+        </div>
+        <div class="nav">
+            <div class="nav-list">
+                <h3 class="header-menu"><i class="nav-arrow"></i>竞争对手管理</h3>
+                <ul class="menu">
+                    <li class="active">
+                        <a href="/pages/new_module/marketing/competitor/competitor_info.html">竞争对手信息</a>
+                    </li>
+                    <li>
+                        <a href="/pages/new_module/marketing/competitor/competitor_summary.html">竞争对手管理汇总</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="right-section">
+        <div class="top-content">
+            <div class="top-fixed">
+                <div class="top">
+                    <div class="top-back">
+                        <a href="javascript:void(0)" class="back">返回</a>
+                    </div>
+                    <div class="search">
+                        <a href="javascript:void(0)" class="search-btn"></a>
+                        <select class="selected">
+                            <option value="0">张三三</option> <option value="1">张四四</option> <option value="2">张五五</option>
+                            <option value="3">张六六</option> <option value="4">张七七</option> <option value="5">张八八</option>
+                            <option value="6">张九九</option>
+                        </select>
+                        <span class="arrow"></span>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li class="current" data-title="list">
+                        <a href="javascript:void(0)" class="lis" >列表<span>Tabulate</span></a>
+                    </li>
+                    <li data-title="add">
+                        <a href="javascript:void(0)" class="add" >添加<span>Add</span></a>
+                    </li>
+                    <li data-title="edit">
+                        <a href="javascript:void(0)" class="same-two" >编辑<span>Edit</span></a>
+                    </li>
+                    <li data-title="organization">
+                        <a href="javascript:void(0)" class="same-one" >组织结构<span>Organizational</span></a>
+                    </li>
+                    <li data-title="delete">
+                        <a href="javascript:void(0)" class="same-two" >删除<span>Delete</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="content-tab list">
+                    <ul class="table">
+                        <li class="list-head">
+                            <span></span>
+                            <span class="data-id">id</span>
+                            <span>市场信息收集序号</span>
+                            <span>项目名称</span>
+                            <span>地区</span>
+                            <span>竞争对手名称</span>
+                            <span>业务类型</span>
+                            <span>基本资料描述</span>
+                            <span>电话</span>
+                            <span></span>
+                        </li>
+                        <li class="list-all">
+                            <section>
+                                <div class="list-text odd">
+                                    <p></p>
+                                    <p class="data-id"></p>
+                                    <p>未知</p>
+                                    <p>未知</p>
+                                    <p>未知</p>
+                                    <p>未知</p>
+                                    <p>未知</p>
+                                    <p>未知</p>
+                                    <p>未知</p>
+                                    <p>
+                                        <a href="javascript:void(0)" class="more">更多详细</a>
+                                    </p>
+                                </div>
+                                <div class="can">
+                                    <ul class="can-see">
+                                        <li>
+                                            <p class="see-parent">
+                                                <span>地址</span><span>组织结构</span>
+                                                <span>级别定义方式</span><span>其他备注</span>
+                                            </p>
+                                            <p class="see-children">
+                                                <span>未知</span> <span>未知</span> <span>未知</span> <span>未知</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <div class="module">
+                                        <div class="see-module">
+                                            <p class="see-type">体现类型</p>
+                                            <p class="see-description"></p>
+                                            <button class="btn">关闭</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </li>
+                    </ul>
+                    <footer class="footer">
+                        <div class="pagination-click" id="pages"></div>
+                    </footer>
+                </div>
+                <div class="content-input add">
+                    <div class="input-list">
+                        <section>
+                            <ul>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目名称</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>竞争对手名称</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务类型</em></label>
+                                    <select class="sele">
+                                        <option value="0">通信类</option>
+                                        <option value="1">软件类</option>
+                                        <option value="2">营销策划类</option>
+                                        <option value="3">电子商务类</option>
+                                        <option value="4">房地产类</option>
+                                        <option value="5">理财类</option>
+                                        <option value="6">食品类</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>基本资料描述</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>电话</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地址</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>组织结构</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>级别定义方式</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>其他备注</em></label>
+                                    <input type="text">
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <p class="dataBottom">
+                        <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                        <button>提交</button>
+                    </p>
+                </div>
+                <div class="content-input edit">
+                    <div class="input-list">
+                        <section class="list-left">
+                            <ul>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目名称</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>竞争对手名称</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务类型</em></label>
+                                    <select class="sele">
+                                        <option value="0">通信类</option>
+                                        <option value="1">软件类</option>
+                                        <option value="2">营销策划类</option>
+                                        <option value="3">电子商务类</option>
+                                        <option value="4">房地产类</option>
+                                        <option value="5">理财类</option>
+                                        <option value="6">食品类</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>基本资料描述</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>电话</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地址</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>组织结构</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>级别定义方式</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>其他备注</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required hidden">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>id</em></label>
+                                    <input type="text">
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <p class="dataBottom">
+                        <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                        <button>提交</button>
+                    </p>
+                </div>
+                <div class="content-input organization">
+                    <div class="input-list">
+                        <section class="list-left">
+                            <ul>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>主管部门</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>主管名称</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>主管职权</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>负责事项</em></label>
+                                    <select class="sele">
+                                        <option value="0">通信类</option>
+                                        <option value="1">软件类</option>
+                                        <option value="2">营销策划类</option>
+                                        <option value="3">电子商务类</option>
+                                        <option value="4">房地产类</option>
+                                        <option value="5">理财类</option>
+                                        <option value="6">食品类</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>客户信息表序号</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>分管部门</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>负责人名称</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>负责人职权</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>接口人</em></label>
+                                    <input type="text">
+                                </li>
+                                <li class="required hidden">
+                                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>id</em></label>
+                                    <input type="text">
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <p class="dataBottom">
+                        <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                        <button>提交</button>
+                    </p>
+                </div>
+                <div class="delete">
+                    <div class="del-head">
+                        <h5>温馨提示</h5>
+                    </div>
+                    <div class="del-con">
+                        <p>确定要删除这条数据？</p>
+                        <div class="btn">
+                            <button>确定</button>
+                            <button>取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="modalbg"></div>
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/laypage/laypage.js"></script>
+    <script src="/js/new_modules/common.js"></script>
+    <script type="text/javascript">
+        laypage({
+            cont : 'pages', //容器。值支持id名、原生dom对象，jquery对象,
+            pages : 20, //总页数
+            skin : 'molv', //皮肤
+            first : 1, //将首页显示为数字1,。若不显示，设置false即可
+            last : 20, //将尾页显示为总页数。若不显示，设置false即可
+        });
+    </script>
+</body>
+</html>

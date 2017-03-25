@@ -153,17 +153,18 @@ header{
 //important content section
 .main{
   width: 100%;
-  height: 100%;
-  //overflow: hidden;
+  height: auto;
+  overflow: hidden;
   .company-module{
-    width: 100%;
+    width: 1280px;
     height: auto;
     display: flex;
-    margin:80px auto 0;
-    justify-content: center;
-    overflow: auto;
+    margin:60px auto 0;
+    justify-content: flex-start;
+    overflow: hidden;
+    flex-wrap: wrap;
     li{
-      flex: 1;
+      flex: 0 0 212px;
       height: 300px;
       display: flex;
       flex-direction: column;
@@ -273,5 +274,10 @@ header{
   width: 100%;
   height: 70px;
   background-color: #758c94;
-  margin-top: 80px;
+  margin-top: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
