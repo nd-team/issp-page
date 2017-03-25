@@ -9,7 +9,7 @@
 });
     $(boxSe).on('click',function(e){
     $(this).parents("li").siblings().find(selectB1).hide();
-    $(this).parent().parent().find(selectB1).show();
+    $(this).parent().find(selectB1).show();
     e?e.stopPropagation():event.cancelBubble = true;
     $(selectB1).find("a").click(function(e){
     var selectText=$(this).text();
