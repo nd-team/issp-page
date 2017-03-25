@@ -128,6 +128,84 @@
       }
     }
   }
+//汇总
+.collect{
+.sum-select{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    label{
+      width: 110px;
+      display: inline-block;
+      text-align: left;
+      em{
+        display: inline-block;
+      }
+      i{
+        margin-right: 10px;
+      }
+      &:after{
+        content: '\FF1A';
+      }
+    }
+    input{
+      padding:0 15px;
+      height: 36px;
+      width: 335px;
+      border: 1px solid #00c2ff;
+      border-radius: 5px;
+      background: url(/images/new_module/data/down.png) no-repeat right 10px center;
+    }
+    .sele{
+      width: 420px;
+      padding-left: 15px;
+      padding-right: 15px;
+      height: 36px;
+      background: url(/images/new_module/data/down.png) no-repeat right 10px center;
+      border: 1px solid #00c6ff;
+      border-radius: 5px;
+      margin-left: 14px;
+    }
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    li{
+      font-size:0;
+      &.sum-thead{
+        span{
+          color: white;
+          background-color: #1aaeea;
+          border-right: 1px solid white;
+          &:nth-of-type(1){
+            border-left: 1px solid white;
+          }
+        }
+      }
+      &.sum-tbody{
+        span{
+          border-right: 1px solid #999;
+          border-bottom: 1px solid #999;
+          &:nth-of-type(1){
+            border-left: 1px solid #999;
+          }
+        }
+      }
+      span{
+        display: inline-block;
+        width: 135px;
+        height: 46px;
+        text-align: center;
+        line-height: 46px;
+        font-size: 12px;
+        float: left;
+      }
+    }
+  }
+}
 #pages2{
   max-width: 960px;
   margin-top: 129px;
@@ -574,7 +652,7 @@
        label{
          em{
              display: inline-block;
-             width: 60px;
+             width: 85px;
              text-align-last: justify;
          }
          &:after{
@@ -618,6 +696,66 @@
         width: 90px;
         height: 30px;
         cursor: pointer;
+      }
+    }
+  }
+}
+.com-search{
+  @extend .frozen;
+  width: 480px;
+  .com-search2{
+    label{
+      em{
+        display: inline-block;
+        width: 85px;
+        text-align-last: justify;
+      }
+      &:after{
+        content: '\FF1A';
+      }
+    }
+    input{
+      margin-left: 14px;
+      width: 350px;
+      height: 36px;
+      border: 1px solid #00c6ff;
+      border-radius: 5px;
+      padding: 0 14px;
+      &:nth-of-type(2){
+        margin-left: 0;
+      }
+      &:hover{
+        box-shadow: 0 0 5px #00c6ff;
+      }
+    }
+    select{
+      @extend input;
+      background: url(/images/new_module/data/down.png) no-repeat right 10px center;
+    }
+  }
+  .btn{
+    display: flex;
+    justify-content: flex-end;
+    a{
+      display: inline-block;
+      width: 90px;
+      height: 30px;
+      line-height: 30px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+      margin: {
+        right: 15px;
+        top:30px;
+      };
+      &:nth-of-type(1){
+        color: black;
+        border: 1px solid #999;
+      }
+      &:nth-of-type(2){
+        color: #fff;
+        border: 1px solid #64a9e2;
+        background: #19afea;
       }
     }
   }
@@ -761,6 +899,108 @@
   }
 }
 //business-customer(客户信息管理)
+//邮件发送定制
+.f-s-o{
+/*  position: relative;*/
+}
+.interval{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+  li{
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+  }
+  label{
+    width: 158px;
+    display: inline-block;
+    text-align: right;
+    &:after{
+      content: '\FF1A';
+    }
+    i{
+      margin-right: 10px;
+    }
+    em{
+      display: inline-block;
+      width: 120px;
+      text-align-last: justify;
+    }
+  }
+  input{
+    width: 55%;
+    border: 1px solid #999999;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 36px;
+    border-radius: 5px;
+    margin-left: 14px;
+  }
+  .sele {
+    width: 60%;
+    height: 36px;
+    border: 1px solid #999999;
+    background: url(/images/new_module/data/down.png) no-repeat right 10px center;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    margin-left: 14px;
+  }
+   .required{
+    input{
+      border: 1px solid #1aafea;
+    }
+    .sele{
+      border: 1px solid #1aafea;
+    }
+  }
+   .inter-left{
+       li{
+         &.f-l{
+           input{
+             width: 23.5%;
+           }
+           select{
+             width: 29%;
+           }
+         }
+      }
+   }
+   .inter-right{
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+.f-send{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+   margin-left: -12%;
+   width: 50%;
+  .send-o{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dclick{
+    width: 59%;
+    height: 118px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    margin-left: 37px;
+  }
+}
 //日历颜色
 .pika-title{
   background-color: #00c6ff;

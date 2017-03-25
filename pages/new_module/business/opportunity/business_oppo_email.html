@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>合作对象商务展示</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="/css/new_module/accounting/accounting.css">
+</head>
+<body>
+<section class="left-section">
+    <div class="header">
+        <a href="javascript:void(0)" title="issp平台" class="logo">
+            <img src="/images/new_module/organization/logo.png" alt="">
+        </a>
+        <span>issp平台</span>
+    </div>
+    <div class="nav">
+        <div class="nav-list">
+            <h3 class="header-menu big"><i class="nav-arrow"></i>商业能力展示</h3>
+            <ul class="menu">
+                <li><a  href="/pages/new_module/business/opportunity/business_oppo_show.html">公司能力展示</a></li>
+                <li><a href="/pages/new_module/business/opportunity/business_oppo_person.html">个人能力展示</a></li>
+                <li><a href="/pages/new_module/business/opportunity/business_oppo_cooperation.html">合作对象商务展示</a></li>
+                <li class="active"><a href="/pages/new_module/business/opportunity/business_oppo_email.html">汇总和邮件发送</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="right-section">
+    <div class="top-content">
+        <div class="top-fixed">
+            <div class="top">
+                <div class="top-back">
+                    <a href="javascript:void(0)" class="back">返回</a>
+                </div>
+                <div class="search">
+                    <a href="javascript:void(0)" class="search-btn"></a>
+                    <select class="selected">
+                        <option value="0">张三三</option>
+                        <option value="1">张四四</option>
+                        <option value="2">张五五</option>
+                        <option value="3">张六六</option>
+                        <option value="4">张七七</option>
+                        <option value="5">张八八</option>
+                        <option value="6">张九九</option>
+                    </select>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+            <ul class="list">
+                <li class="current" data-title="list">
+                    <a href="javascript:void(0)" class="lis">列表<span>Tabulate</span></a>
+                </li>
+                <li data-title="add">
+                    <a href="javascript:void(0)" class="add">添加<span>Add</span></a>
+                </li>
+                <li data-title="edit">
+                    <a href="javascript:void(0)" class="same-one">编辑<span>Compile</span></a>
+                </li>
+                <li data-title="delete">
+                    <a href="javascript:void(0)" class="same-one">删除<span>Compile</span></a>
+                </li>
+                <li data-title="frozen">
+                    <a href="javascript:void(0)" class="same-one">冻结<span>Compile</span></a>
+                </li>
+                <li data-title="thaw">
+                    <a href="javascript:void(0)" class="same-one">解冻<span>Compile</span></a>
+                </li>
+                <li data-title="bus-collect">
+                    <a href="javascript:void(0)" class="same-one">商业能力展示汇总<span>Compile</span></a>
+                </li>
+                <li data-title="per-collect">
+                    <a href="javascript:void(0)" class="same-one">个人能力展示汇总<span>Compile</span></a>
+                </li>
+                <li data-title="par-collect">
+                    <a href="javascript:void(0)" class="same-one">合作对象能力汇总<span>Compile</span></a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content-tab list">
+                <ul class="table">
+                    <li class="list-head">
+                        <span></span>
+                        <span class="data-id">id</span>
+                        <span>汇总类型</span>
+                        <span>公司名称/个人姓名</span>
+                        <span>创建/修改人</span>
+                        <span>更新时间</span>
+                        <span>上传发送时间</span>
+                        <span>备注</span>
+                        <span>发送间隔</span>
+                        <span></span>
+                    </li>
+                    <li class="list-all">
+                        <section>
+                            <div class="list-text odd">
+                                <p>1</p>
+                                <p class="data-id"></p>
+                                <p>北京艾佳</p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p>cc</p>
+                                <p>aa</p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">更多详细</a>
+                                </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-parent">
+                                            <span>汇总间隔</span>
+                                            <span>发送对象</span>
+                                            <span>状态</span>
+                                        </p>
+                                        <p class="see-children">
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
+                                            <span>填什么好呢</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="module">
+                                    <div class="see-module">
+                                        <p class="see-type">体现类型</p>
+                                        <p class="see-description"></p>
+                                        <button class="btn">关闭</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+                <footer class="footer"> <div class="pagination-click" id="pages"></div></footer>
+            </div>
+            <div class="content-input add f-s-o">
+                <section class="interval">
+                    <ul class="inter-left">
+                        <li class="required">
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>汇总类型</em></label>
+                            <select class="sele" disabled>
+                                <option value="">广州</option>
+                                <option value="">佛山</option>
+                                <option value="">江门</option>
+                                <option value="">湛江</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label><em>备注</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="required f-l">
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>发送间隔</em></label>
+                            <input type="text">
+                            <select class="sele">
+                                <option value="">分钟</option>
+                                <option value="">小时</option>
+                                <option value="">天</option>
+                                <option value="">周</option>
+                                <option value="">月</option>
+                                <option value="">季度</option>
+                                <option value="">年</option>
+                            </select>
+                        </li>
+                        <li class="required">
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>状态</em></label>
+                            <input type="text">
+                        </li>
+                    </ul>
+                    <ul class="inter-right">
+                        <li >
+                            <label><em>公司名称/个人姓名</em></label>
+                            <input type="text" class="box_se">
+                            <p class="select_b1">
+                                <a href="javascript:void(0)">运营商</a>
+                                <a href="javascript:void(0)">厂商</a>
+                                <a href="javascript:void(0)">集成商</a>
+                                <a href="javascript:void(0)">政府机关</a>
+                            </p>
+                        </li>
+                        <li class="required">
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>汇总间隔</em></label>
+                            <select class="sele">
+                                <option value="">分钟</option>
+                                <option value="">小时</option>
+                                <option value="">天</option>
+                                <option value="">周</option>
+                                <option value="">月</option>
+                                <option value="">季度</option>
+                                <option value="">年</option>
+                            </select>
+                        </li>
+                        <li class="f-send">
+                            <p class="send-o">
+                                <em>发送对象:</em>
+                                <span>(双击可以删除该条邮箱地址)</span>
+                            </p>
+                            <p class="dclick"></p>
+                        </li>
+                    </ul>
+                </section>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="content-input edit f-s-o">
+                <section class="interval">
+                    <ul class="inter-left">
+                        <li class="id-hide" style="display: none">
+                            <label><em>id</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="required">
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>汇总类型</em></label>
+                            <select class="sele" disabled>
+                                <option value="">广州</option>
+                                <option value="">佛山</option>
+                                <option value="">江门</option>
+                                <option value="">湛江</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label><em>备注</em></label>
+                            <input type="text">
+                        </li>
+                        <li class="required f-l">
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>发送间隔</em></label>
+                            <input type="text">
+                            <select class="sele">
+                                <option value="">分钟</option>
+                                <option value="">小时</option>
+                                <option value="">天</option>
+                                <option value="">周</option>
+                                <option value="">月</option>
+                                <option value="">季度</option>
+                                <option value="">年</option>
+                            </select>
+                        </li>
+                        <li class="required">
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>状态</em></label>
+                            <input type="text">
+                        </li>
+                    </ul>
+                    <ul class="inter-right">
+                        <li >
+                            <label><em>公司名称/个人姓名</em></label>
+                            <input type="text" class="box_se">
+                            <p class="select_b1">
+                                <a href="javascript:void(0)">运营商</a>
+                                <a href="javascript:void(0)">厂商</a>
+                                <a href="javascript:void(0)">集成商</a>
+                                <a href="javascript:void(0)">政府机关</a>
+                            </p>
+                        </li>
+                        <li class="required">
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>汇总间隔</em></label>
+                            <select class="sele">
+                                <option value="">分钟</option>
+                                <option value="">小时</option>
+                                <option value="">天</option>
+                                <option value="">周</option>
+                                <option value="">月</option>
+                                <option value="">季度</option>
+                                <option value="">年</option>
+                            </select>
+                        </li>
+                        <li class="f-send">
+                            <p class="send-o">
+                                <em>发送对象:</em>
+                                <span>(双击可以删除该条邮箱地址)</span>
+                            </p>
+                            <p class="dclick"></p>
+                        </li>
+                    </ul>
+                </section>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="frozen">
+                <div class="fro-head">
+                    <h5>温馨提示</h5>
+                </div>
+                <div class="fro-con">
+                    <p>确定要冻结这条数据？</p>
+                    <div class="btn">
+                        <button>确定</button>
+                        <button>取消</button>
+                    </div>
+                </div>
+            </div>
+            <div class="thaw">
+                解冻
+            </div>
+            <div class="collect bus-collect">
+                <p class="sum-select">
+                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>公司名称</em></label>
+                    <select class="sele">
+                        <option value="">北京</option>
+                        <option value="">广州</option>
+                        <option value="">湖南</option>
+                    </select>
+                </p>
+                <ul>
+                    <li class="sum-thead">
+                        <span>公司名称</span>
+                        <span>专业资质认证数量</span>
+                        <span>管理资质认证数量</span>
+                        <span>公司荣誉证书数量</span>
+                        <span>公司人员组成数量</span>
+                        <span>公司已完成的项目</span>
+                        <span>公司正在进行中项目数量</span>
+                    </li>
+                    <li class="sum-tbody">
+                        <span>广州艾佳</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>3</span>
+                        <span>36</span>
+                        <span>5</span>
+                        <span>3</span>
+                    </li>
+                    <li class="sum-tbody">
+                        <span>广州裕大</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>3</span>
+                        <span>36</span>
+                        <span>5</span>
+                        <span>3</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="collect per-collect">
+                <p class="sum-select">
+                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>个人姓名</em></label>
+                    <select class="sele">
+                        <option value="">北京</option>
+                        <option value="">广州</option>
+                        <option value="">湖南</option>
+                    </select>
+                </p>
+                <ul>
+                    <li class="sum-thead">
+                        <span>员工姓名</span>
+                        <span>个人资质数量</span>
+                        <span>个人经手项目数量</span>
+                        <span>个人社交资源数量</span>
+                    </li>
+                    <li class="sum-tbody">
+                        <span>隔壁老王</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>6</span>
+                    </li>
+                    <li class="sum-tbody">
+                        <span>隔壁老曾</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>6</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="collect par-collect">
+                <p class="sum-select">
+                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>公司名称</em></label>
+                    <select class="sele">
+                        <option value="">北京</option>
+                        <option value="">广州</option>
+                        <option value="">湖南</option>
+                    </select>
+                </p>
+                <ul>
+                    <li class="sum-thead">
+                        <span>公司名称</span>
+                        <span>专业资质认证数量</span>
+                        <span>管理资质认证数量</span>
+                        <span>公司参与项目数量</span>
+                    </li>
+                    <li class="sum-tbody">
+                        <span>北京艾佳</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>6</span>
+                    </li>
+                    <li class="sum-tbody">
+                        <span>广州裕大</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>6</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="modalbg"></div>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/laypage/laypage.js"></script>
+<script src="/js/new_modules/common.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/new_modules/other.js"></script>
+<script src="/js/new_modules/select.js"></script>
+<script type="text/javascript">
+    laypage({
+        cont: $('#pages'),  //容器。值支持id名、原生dom对象，jquery对象,
+        pages: 20, //总页数
+        skin: 'molv', //皮肤
+        first: 1, //将首页显示为数字1,。若不显示，设置false即可
+        last: 20, //将尾页显示为总页数。若不显示，设置false即可
+    });
+</script>
+</body>
+</html>

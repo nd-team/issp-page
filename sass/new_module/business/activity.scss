@@ -225,8 +225,11 @@
                 flex:0 0 50%;
                 justify-content:center;
                 align-items:center;
+                position: relative;
                 &.required{
+
                   position:relative;
+
                   input{
                     border:1px solid #1aafea;
                     &:hover{
