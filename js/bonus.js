@@ -29,20 +29,7 @@ $(document).ready(function(){
         }else{
             $(this).html("已关注");
         }
-    })
-   /* $('.pagination-click li').not(".next").click(function () {
-        $(this).addClass('active').siblings().removeClass('active');
     });
-    $('.pagination-click .next').click(function () {
-        var current = $('.pagination-click .active').index();
-        current++;
-        var length = $('.pagination-click li').not(".next").length;
-        if (current >= length) {
-            current = length - 1;
-        }
-        $('.pagination-click li').removeClass('active')
-        $('.pagination-click li').eq(current).addClass('active');
-    })*/
 //活动
     $('.act-com .close').click(function(){
         $('.act-com').remove();
@@ -56,9 +43,8 @@ $(document).ready(function(){
     $('.rank-left ul li').click(function () {
         $(this).addClass('current').siblings().removeClass('current');
         $('.rank-right>table:eq(' + $(this).index() + ')').show().siblings().hide();
-    })
+    });
    //奖励圈
-
     $('b[data-title]').click(function(){
         var dataTitle = $(this).attr("data-title");
         $('#modalbg').show();
@@ -89,14 +75,16 @@ $(document).ready(function(){
     $("#modal >div").each(function () {
         eachId += $(this).attr("id") + " ";
     });
-
     var listId = "";
     for (var key in idList) {
         listId += idList[key] + " ";
     }
-
-
-
+    $('a[data-title]').click(function(){
+        var dataTitle = $(this).attr("data-title");
+        $('#modalbg').show();
+        $('#modal').show();
+        $('#modal .'+dataTitle).show();
+    });
     $('.close').click(function(){
         $(this).parents('.m-con').hide();
         $('#modal').hide();

@@ -1,0 +1,1 @@
+KISSY.add('kg/editor-plugins/1.1.2/back-color',["./color/btn","./back-color/cmd"],function(S ,require, exports, module) {function o(o){this.config=o||{}}var i=require("./color/btn"),r=require("./back-color/cmd");o.prototype={pluginRenderUI:function(o){r.init(o),i.init(o,{defaultColor:"rgb(255, 217, 102)",cmdType:"backColor",tooltip:"背景颜色"})}},module.exports=o;});
