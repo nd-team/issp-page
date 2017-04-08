@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>日计划</title>
+    <title>市场测算</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="/css/new_module/accounting/accounting.css">
 </head>
@@ -20,9 +20,9 @@
             <h3 class="header-menu big"><i class="nav-arrow"></i>计划管理</h3>
             <ul class="menu">
                 <li><a  href="/pages/new_module/business/progress/business_progress_year.html">年计划</a></li>
-                <li ><a  href="/pages/new_module/business/progress/business_progress_month.html">月计划</a></li>
+                <li><a  href="/pages/new_module/business/progress/business_progress_month.html">月计划</a></li>
                 <li><a  href="/pages/new_module/business/progress/business_progress_week.html">周计划</a></li>
-                <li class="active"><a  href="/pages/new_module/business/progress/business_progress_day.html">日计划</a></li>
+                <li><a  href="/pages/new_module/business/progress/business_progress_day.html">日计划</a></li>
             </ul>
         </div>
         <div class="nav-list">
@@ -32,7 +32,7 @@
                 <li><a href="/pages/new_module/business/progress/business_progress_target.html">目标信息</a></li>
                 <li><a href="/pages/new_module/business/progress/business_progress_excavate.html">市场挖掘</a></li>
                 <li><a href="/pages/new_module/business/progress/business_progress_research.html">市场调研</a></li>
-                <li><a href="/pages/new_module/business/progress/business_progress_measure.html">市场测算</a></li>
+                <li class="active"><a href="/pages/new_module/business/progress/business_progress_measure.html">市场测算</a></li>
             </ul>
         </div>
         <div class="nav-list">
@@ -92,13 +92,13 @@
                     <li class="list-head">
                         <span></span>
                         <span class="data-id">id</span>
-                        <span>序号</span>
-                        <span>时间</span>
-                        <span>业务状态</span>
                         <span>业务类型</span>
                         <span>业务方向科目</span>
-                        <span>公司名称</span>
-                        <span>计划工作内容</span>
+                        <span>资金投入</span>
+                        <span>人员成本</span>
+                        <span>设备成本</span>
+                        <span>设备成本</span>
+                        <span>人员投入</span>
                         <span></span>
                     </li>
                     <li class="list-all">
@@ -121,32 +121,12 @@
                                 <ul class="can-see">
                                     <li>
                                         <p class="see-parent">
-                                            <span>所属阶段</span>
-                                            <span>任务量</span>
-                                            <span>任务人</span>
-                                            <span>负责人</span>
-                                            <span>洽谈方式</span>
-                                            <span>商务预算费</span>
-                                            <span>客户姓名</span>
-                                            <span>客户电话</span>
+                                            <span>设备投入</span>
+                                            <span>车辆投入</span>
+                                            <span>备注</span>
                                         </p>
                                         <p class="see-children">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span>姓名</span>
-                                            <span>12345678912</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="see-parent">
-                                            <span>商务内容</span>
-                                            <span>配合人</span>
-                                        </p>
-                                        <p class="see-children">
+                                            <span>ccc</span>
                                             <span></span>
                                             <span></span>
                                         </p>
@@ -170,24 +150,10 @@
                     <section>
                         <ul>
                             <li class="required">
-                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>时间</em></label>
-                                <input type="text" class="add_image">
-                            </li>
-                           <!-- 布尔框 默认立项后-->
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务状态</em></label>
-                                <select class="sele">
-                                    <option value="">立项后</option>
-                                    <option value="">立项前</option>
-                                </select>
-                            </li>
-                            <!-- 单选框-->
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务类型</em></label>
+                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务类型</em></label>
                                 <select class="sele">
                                     <option value="">业务类型7</option>
                                     <option value="">业务类型8</option>
-                                    <option value="">业务类型9</option>
                                 </select>
                             </li>
                             <li class="required">
@@ -195,77 +161,40 @@
                                 <select class="sele">
                                     <option value="">业务方向科目7</option>
                                     <option value="">业务方向科目8</option>
-                                    <option value="">业务方向科目9</option>
                                 </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>公司名称</em></label>
-                                <input type="text">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>资金投入</em></label>
+                                   <input type="number">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>计划工作内容</em></label>
-                                <input type="text">
-                            </li>
-                            <!-- 多选框-->
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属阶段</em></label>
-                                <select class="sele">
-                                    <option value="">所属阶段7</option>
-                                    <option value="">所属阶段8</option>
-                                    <option value="">所属阶段9</option>
-                                </select>
-                            </li>
-                            <!--数字框 大于0-->
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>任务量</em></label>
-                               <input type="number">
-                            </li>
-
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>任务人</em></label>
-                                <select class="sele">
-                                    <option value="">张三</option>
-                                    <option value="">李四</option>
-                                    <option value="">王五</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>负责人</em></label>
-                                <select class="sele">
-                                    <option value="">张三</option>
-                                    <option value="">李四</option>
-                                    <option value="">王五</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>洽谈方式</em></label>
-                                <input type="text">
-                            </li>
-                            <!--数字框 大于 0 保留两位小数-->
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>商务预算费</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>人员成本</em></label>
                                 <input type="number">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>客户姓名</em></label>
-                                <select class="sele">
-                                    <option value="">张三</option>
-                                    <option value="">李四</option>
-                                    <option value="">王五</option>
-                                </select>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>设备成本</em></label>
+                                <input type="number">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>商务内容</em></label>
-                                <input type="text">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>车辆成本</em></label>
+                                <input type="number">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>人员投入</em></label>
+                                <input type="number">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>设备投入</em></label>
+                                <input type="number">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>车辆投入</em></label>
+                                <input type="number">
                             </li>
                             <li>
-                                <label><em>客户电话</em></label>
+                                <label><em>备注</em></label>
                                 <input type="text">
-                            </li>
-                            <li>
-                                <label><em>配合人</em></label>
-                                <input type="text">
-                            </li>
+                             </li>
                         </ul>
                     </section>
                 </div>
@@ -279,24 +208,10 @@
                     <section>
                         <ul>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>时间</em></label>
-                                <input type="text" class="add_image">
-                            </li>
-                            <!-- 布尔框 默认立项后-->
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务状态</em></label>
-                                <select class="sele">
-                                    <option value="">立项后</option>
-                                    <option value="">立项前</option>
-                                </select>
-                            </li>
-                            <!-- 单选框-->
-                            <li class="required">
                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务类型</em></label>
                                 <select class="sele">
                                     <option value="">业务类型7</option>
                                     <option value="">业务类型8</option>
-                                    <option value="">业务类型9</option>
                                 </select>
                             </li>
                             <li class="required">
@@ -304,75 +219,38 @@
                                 <select class="sele">
                                     <option value="">业务方向科目7</option>
                                     <option value="">业务方向科目8</option>
-                                    <option value="">业务方向科目9</option>
                                 </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>公司名称</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>计划工作内容</em></label>
-                                <input type="text">
-                            </li>
-                            <!-- 多选框-->
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>所属阶段</em></label>
-                                <select class="sele">
-                                    <option value="">所属阶段7</option>
-                                    <option value="">所属阶段8</option>
-                                    <option value="">所属阶段9</option>
-                                </select>
-                            </li>
-                            <!--数字框 大于0-->
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>任务量</em></label>
-                                <input type="number">
-                            </li>
-
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>任务人</em></label>
-                                <select class="sele">
-                                    <option value="">张三</option>
-                                    <option value="">李四</option>
-                                    <option value="">王五</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>负责人</em></label>
-                                <select class="sele">
-                                    <option value="">张三</option>
-                                    <option value="">李四</option>
-                                    <option value="">王五</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>洽谈方式</em></label>
-                                <input type="text">
-                            </li>
-                            <!--数字框 大于 0 保留两位小数-->
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>商务预算费</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>资金投入</em></label>
                                 <input type="number">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>客户姓名</em></label>
-                                <select class="sele">
-                                    <option value="">张三</option>
-                                    <option value="">李四</option>
-                                    <option value="">王五</option>
-                                </select>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>人员成本</em></label>
+                                <input type="number">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>商务内容</em></label>
-                                <input type="text">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>设备成本</em></label>
+                                <input type="number">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>车辆成本</em></label>
+                                <input type="number">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>人员投入</em></label>
+                                <input type="number">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>设备投入</em></label>
+                                <input type="number">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>车辆投入</em></label>
+                                <input type="number">
                             </li>
                             <li>
-                                <label><em>客户电话</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>配合人</em></label>
+                                <label><em>备注</em></label>
                                 <input type="text">
                             </li>
                         </ul>

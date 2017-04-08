@@ -170,62 +170,59 @@ body{
             span{
               display: flex;
               justify-content: center;
-               &:nth-of-type(1){
-                 button{
-                   color: white;
-                   border: 0;
-                   border-radius: 3px;
-                   cursor: pointer;
-                   background-color: #ff5b59;
-                   width: 116px;
-                   height: 36px;
-                   text-align: center;
-                   line-height: 36px;
-                 }
-                 margin-left: 14px;
-               }
-               &:nth-of-type(2){
-                 flex: 1;
-                 color: #333;
-                 align-items: center;
-                 padding-top: -15px;
-                 &:before{
-                   display: block;
-                   content: '';
-                   width: 4px;
-                   height: 4px;
-                   margin: {
-                     right: 4px;
-                   };
-                   background: #494a47;
-                 }
+            }
+
+            .again-act{
+              color: white;
+              border: 0;
+              border-radius: 3px;
+              cursor: pointer;
+              background-color: #ff5b59;
+              width: 116px;
+              height: 36px;
+              text-align: center;
+              line-height: 36px;
+              margin-left: 14px;
+            }
+            .text-act{
+              flex: 1;
+              color: #333;
+              align-items: center;
+              padding-top: -15px;
+              &:before{
+                display: block;
+                content: '';
+                width: 4px;
+                height: 4px;
+                margin: {
+                  right: 4px;
+                };
+                background: #494a47;
               }
-               &:nth-of-type(3){
-                 a{
-                   display: flex;
-                   align-items: center;
-                   line-height: 50px;
-                   svg{
-                     width: 16px;
-                     height: 14px;
-                     fill: #454545;
-                     margin-right: 5px;
-                   }
-                   margin-right: 10px;
-                 }
-                button{
-                  width: 150px;
-                  height: 50px;
-                  color: white;
-                  background-color: #ffa83c;
-                  cursor: pointer;
-                  text-align: center;
-                  line-height: 50px;
-                }
-                 margin: {
-                   right: 8px;
-                 };
+            }
+            .evaluate-act2{
+              display: flex;
+              align-items: center;
+              line-height: 50px;
+              margin-right: 10px;
+              svg{
+                width: 16px;
+                height: 14px;
+                fill: #454545;
+                margin-right: 5px;
               }
+            }
+            .evaluate-act{
+              width: 150px;
+              height: 50px;
+              color: white;
+              background-color: #ffa83c;
+              cursor: pointer;
+              text-align: center;
+              line-height: 50px;
+              margin: {
+                right: 8px;
+              };
             }
           }
         }
@@ -241,8 +238,8 @@ body{
             align-items: center;
             i{
               display: block;
-              width: 5px;
-              height: 5px;
+              width: 3px;
+              height: 3px;
               border-radius: 5px;
               background-color: #f5ae54;
               border: 2px solid #c7baa9;

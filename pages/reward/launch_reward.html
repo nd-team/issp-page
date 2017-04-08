@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>发起奖励</title>
     <link rel="stylesheet" href="/css/reward/in_punishment.css">
     <link rel="stylesheet" href="/js/honor/pikaday.css">
@@ -198,15 +199,15 @@
         <div class="in-all">
             <div class="in-top w-blue">
                 <ul class="wrap_t">
-                    <li class="cur">
+                    <li class="cur" data-title="in-body1">
                         <a href="javascript:void(0)">已管理人员</a>
                         <i class="cur2"><img src="/images/reward/launch_rew/close.png"></i>
                     </li>
-                    <li>
+                    <li data-title="in-body2">
                         <a href="javascript:void(0)">综合资源部</a>
                         <i><img src="/images/reward/launch_rew/close.png"></i>
                     </li>
-                    <li>
+                    <li data-title="in-body3">
                         <a href="javascript:void(0)">财务部</a>
                         <i><img src="/images/reward/launch_rew/close.png"></i>
                     </li>
@@ -216,7 +217,7 @@
                 </ul>
             </div>
             <div class="body-all">
-                <div class="in-body">
+                <div class="in-body in-body1">
                     <ul>
                         <li>
                             <p class="in-title"><img src="/images/reward/pic4.png"><b class="g-blue">Jane.L</b></p>
@@ -346,7 +347,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="in-body">
+                <div class="in-body in-body2">
                     <ul>
                         <li>
                             <p class="in-title"><img src="/images/reward/pic3.png"><b class="g-blue">Jane.L</b></p>
@@ -476,7 +477,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="in-body">
+                <div class="in-body in-body3">
                     <ul>
                         <li>
                             <p class="in-title"><img src="/images/reward/pic2.png"><b class="g-blue">Jane.L</b></p>
@@ -655,19 +656,19 @@
             <div class="add-cont">
                 <p class="pic-title">选择你要添加的类别 :</p>
                 <ul class="add-type">
-                    <li class="now">
+                    <li class="now" data-title="add-ch1">
                         <span><img src="/images/reward/in_punishment/department-add.png"></span>
                         <p>部门添加</p>
                         <i></i>
                     </li>
-                    <li>
+                    <li data-title="add-ch2">
                         <span><img src="/images/reward/in_punishment/person-add.png"></span>
                         <p>个人添加</p>
                         <i></i>
                     </li>
                 </ul>
                 <div class="choice-all">
-                    <div class="choice">
+                    <div class="choice add-ch1">
                         <input type="text" value="选择" class="add-img edier" readonly>
                         <div class="depart-pop">
                             <p class="pop-tit">
@@ -714,7 +715,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="choice">
+                    <div class="choice add-ch2">
                         <input type="text" value="选择" class="add-img edier" readonly>
                         <div class="hide-s2">
                             <p class="pop-tit">

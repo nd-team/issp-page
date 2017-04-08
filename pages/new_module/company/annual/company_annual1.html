@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>年假管理</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="岗位说明书">
+    <meta name="description" content="岗位说明书">
+    <link rel="stylesheet" href="/css/new_module/accounting/accounting.css">
+    <link rel="stylesheet" href="/js/honor/pikaday.css">
+</head>
+<body>
+<section class="left-section">
+    <div class="header">
+        <a href="javascript:void(0)" title="issp平台" class="logo">
+            <img src="/images/new_module/organization/logo.png" alt="">
+        </a>
+        <span>issp平台</span>
+    </div>
+    <div class="nav">
+        <div class="nav-list">
+            <h3 class="header-menu"><i class="nav-arrow"></i>年假信息</h3>
+            <ul class="menu">
+                <li class="active" >
+                    <a href="/pages/new_module/company/annual/company_annual1.html">年假记录</a>
+                </li>
+                <li>
+                    <a href="/pages/new_module/company/annual/company_annual2.html">请假记录</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-list">
+            <h3 class="header-menu"><i class="nav-arrow"></i>年假管理</h3>
+            <ul class="menu">
+                <li>
+                    <a href="/pages/new_module/company/annual/company_annual3.html">年假标准管理</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="right-section">
+    <div class="top-content">
+        <div class="top-fixed">
+            <div class="top">
+                <div class="top-back">
+                    <a href="javascript:void(0)" class="back">返回</a>
+                </div>
+                <div class="search">
+                    <a href="javascript:void(0)" class="search-btn"></a>
+                    <select class="selected">
+                        <option value="0">张三三</option> <option value="1">张四四</option> <option value="2">张五五</option>
+                        <option value="3">张六六</option> <option value="4">张七七</option> <option value="5">张八八</option>
+                        <option value="6">张九九</option>
+                    </select>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+            <ul class="list width-10">
+                <li class="current" data-title="list">
+                    <a href="javascript:void(0)" class="lis" >列表<span>Tabulate</span></a>
+                </li>
+                <li data-title="add">
+                    <a href="javascript:void(0)" class="add" >请假申请<span>Add</span></a>
+                </li>
+                <li data-title="check">
+                    <a href="javascript:void(0)" class="same-one" >查看请假记录<span>Check</span></a>
+                </li>
+                <li data-title="leave">
+                    <a href="javascript:void(0)" class="same-two" >查看我的年假记录<span>Leave</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content-tab list">
+                <ul class="table">
+                    <li class="list-head">
+                        <span></span>
+                        <span class="data-id">id</span>
+                        <span>年度</span>
+                        <span>姓名</span>
+                        <span>地区</span>
+                        <span>项目组/部门</span>
+                        <span>岗位职级</span>
+                        <span>入职时间</span>
+                        <span>工龄</span>
+                        <span></span>
+                    </li>
+                    <li class="list-all">
+                        <section>
+                            <div class="list-text odd">
+                                <p>1</p>
+                                <p class="data-id"></p>
+                                <p>北京艾佳</p>
+                                <p>高令军高令军高令军高令军</p>
+                                <p>1000万</p>
+                                <p>我们不仅要求最好，还要求最精</p>
+                                <p>高</p>
+                                <p>发</p>
+                                <p>发送的第三方</p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">更多详细</a>
+                                </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-parent">
+                                            <span>可休年假天数</span> <span>是否已休假</span> <span>备注</span>
+                                        </p>
+                                        <p class="see-children">
+                                            <span>反反复复</span> <span></span> <span></span>
+                                        </p>
+                                    </li>
+                                 </ul>
+                                <div class="module">
+                                    <div class="see-module">
+                                        <p class="see-type">体现类型</p>
+                                        <p class="see-description"></p>
+                                        <button class="btn">关闭</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+                <footer class="footer">
+                    <div class="pagination-click" id="pages"></div>
+                </footer>
+            </div>
+            <div class="content-input add summary">
+                <p class="time-range">
+                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>时间范围</em></label>
+                    <span class="time-range2">
+                        <input type="text" id="adddate" class="add_image">
+                        <i>至</i>
+                        <input type="text" id="adddate2" class="add_image">
+                    </span>
+                </p>
+                <p class="time-range3 time-range4">
+                     <label><em>备注</em></label>
+                     <input type="text">
+                </p>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="content-input check">
+                <div class="input-list">
+                    <section>
+                        <ul >
+                            <li>
+                                <label><em>请假开始时间</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>请假结束时间</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>请假时间</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>请假天数</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>审核人</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>是否通过</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>审核意见</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>审核时间</em></label>
+                                <input type="text">
+                            </li>
+                        </ul>
+                    </section>
+
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="content-input leave">
+                <div class="input-list">
+                    <section>
+                        <ul >
+                            <li>
+                                <label><em>年度</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>地区</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>岗位</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>项目组/部门</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>岗位层级</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>入职时间</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>工龄</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>可休年假天数</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>剩余年假天数</em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><em>是否已休年假</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>备注</em></label>
+                                <input type="text">
+                            </li>
+                        </ul>
+                    </section>
+
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="modalbg"></div>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/honor/moment.min.js"></script>
+<script src="/laypage/laypage.js"></script>
+<script src="/js/honor/pikaday.js"></script>
+<script src="/js/new_modules/common.js"></script>
+<script type="text/javascript">
+    laypage({
+        cont : 'pages', //容器。值支持id名、原生dom对象，jquery对象,
+        pages : 20, //总页数
+        skin : 'molv', //皮肤
+        first : 1, //将首页显示为数字1,。若不显示，设置false即可
+        last : 20, //将尾页显示为总页数。若不显示，设置false即可
+    });
+    //日历
+    var adddate = new Pikaday({
+        numberOfMonths: 1,
+        field:jQuery('#adddate')[0],
+        minDate: new Date('2000-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020],
+        i18n: i18n,
+        onSelect: function() {
+            var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+            $('#datepicker').appendChild(date);
+        }
+    });
+    var adddate2 = new Pikaday({
+        numberOfMonths: 1,
+        field:jQuery('#adddate2')[0],
+        minDate: new Date('2000-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020],
+        i18n: i18n,
+        onSelect: function() {
+            var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+            $('#datepicker').appendChild(date);
+        }
+    });
+</script>
+</body>
+</html>

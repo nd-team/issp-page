@@ -6,6 +6,7 @@
     <title>租车协议管理</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="/css/new_module/accounting/accounting.css">
+    <link rel="stylesheet" href="/js/honor/pikaday.css">
 </head>
 <body>
 <section class="left-section">
@@ -54,22 +55,22 @@
                     <a href="javascript:void(0)" class="add">添加<span>Add</span></a>
                 </li>
                 <li data-title="edit">
-                    <a href="javascript:void(0)" class="same-one">编辑<span>Compile</span></a>
+                    <a href="javascript:void(0)" class="same-one">编辑<span>Edit</span></a>
                 </li>
                 <li data-title="frozen">
-                    <a href="javascript:void(0)" class="same-one">冻结<span>Compile</span></a>
+                    <a href="javascript:void(0)" class="same-two">冻结<span>Frozen</span></a>
                 </li>
                 <li data-title="annex">
-                    <a href="javascript:void(0)" class="same-one">附件<span>Compile</span></a>
+                    <a href="javascript:void(0)" class="same-three">附件<span>Annex</span></a>
                 </li>
                 <li data-title="review">
-                    <a href="javascript:void(0)" class="same-one">审核<span>Compile</span></a>
+                    <a href="javascript:void(0)" class="same-one">审核<span>Review</span></a>
                 </li>
                 <li data-title="updata-file">
-                    <a href="javascript:void(0)" class="same-one">导入<span>Compile</span></a>
+                    <a href="javascript:void(0)" class="same-two">导入<span>Update File</span></a>
                 </li>
                 <li data-title="export">
-                    <a href="javascript:void(0)" class="same-one">导出<span>Compile</span></a>
+                    <a href="javascript:void(0)" class="same-three">导出<span>Export</span></a>
                 </li>
             </ul>
         </div>
@@ -224,7 +225,7 @@
                             </li>
                             <li >
                                 <label><em>汽车购买日期</em></label>
-                                <input type="text" class="add_image">
+                                <input type="text" id="adddate" class="add_image">
                             </li>
                             <li>
                                 <label><em>购买时长</em></label>
@@ -246,15 +247,15 @@
                             </li>
                             <li>
                                 <label><em>签订日期</em></label>
-                                <input type="text" class="add_image">
+                                <input type="text" id="adddate2" class="add_image">
                             </li>
                             <li>
                                 <label><em>合同开始日期</em></label>
-                                <input type="text" class="add_image">
+                                <input type="text"v id="adddate3" class="add_image">
                             </li>
                             <li>
                                 <label><em>合同结束日期</em></label>
-                                <input type="text" class="add_image">
+                                <input type="text" id="editdate" class="add_image">
                             </li>
                             <li>
                                 <label><em>是否解约</em></label>
@@ -598,11 +599,84 @@
 </script>
 <script type="text/javascript">
     laypage({
-        cont: 'pages', //容器。值支持id名、原生dom对象，jquery对象,
-        pages: 20, //总页数
-        skin: 'molv', //皮肤
-        first: 1, //将首页显示为数字1,。若不显示，设置false即可
-        last: 20, //将尾页显示为总页数。若不显示，设置false即可
+        cont : 'pages', //容器。值支持id名、原生dom对象，jquery对象,
+        pages : 20, //总页数
+        skin : 'molv', //皮肤
+        first : 1, //将首页显示为数字1,。若不显示，设置false即可
+        last : 20, //将尾页显示为总页数。若不显示，设置false即可
+    });
+    //日历
+    var adddate = new Pikaday({
+        numberOfMonths: 1,
+        field:jQuery('#adddate')[0],
+        minDate: new Date('2000-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020],
+        i18n: i18n,
+        onSelect: function() {
+            var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+            $('#datepicker').appendChild(date);
+        }
+    });
+    var adddate2 = new Pikaday({
+        numberOfMonths: 1,
+        field:jQuery('#adddate2')[0],
+        minDate: new Date('2000-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020],
+        i18n: i18n,
+        onSelect: function() {
+            var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+            $('#datepicker').appendChild(date);
+        }
+    });
+    var adddate3 = new Pikaday({
+        numberOfMonths: 1,
+        field:jQuery('#adddate3')[0],
+        minDate: new Date('2000-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020],
+        i18n: i18n,
+        onSelect: function() {
+            var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+            $('#datepicker').appendChild(date);
+        }
+    });
+    var editdate = new Pikaday({
+        numberOfMonths: 1,
+        field:jQuery('#editdate')[0],
+        minDate: new Date('2000-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020],
+        i18n: i18n,
+        onSelect: function() {
+            var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+            $('#datepicker').appendChild(date);
+        }
+    });
+    var editdate2 = new Pikaday({
+        numberOfMonths: 1,
+        field:jQuery('#editdate2')[0],
+        minDate: new Date('2000-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020],
+        i18n: i18n,
+        onSelect: function() {
+            var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+            $('#datepicker').appendChild(date);
+        }
+    });
+    var editdate3 = new Pikaday({
+        numberOfMonths: 1,
+        field:jQuery('#editdate3')[0],
+        minDate: new Date('2000-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020],
+        i18n: i18n,
+        onSelect: function() {
+            var date = document.createTextNode(this.getMoment().format('YYYY-MM-DD') + ' ');
+            $('#datepicker').appendChild(date);
+        }
     });
 </script>
 </body>
