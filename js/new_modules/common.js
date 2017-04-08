@@ -1,3 +1,13 @@
+
+window.onload=function(){
+    var ajax = new XMLHttpRequest();
+    ajax.open("GET", "/font/icons/svg-symbols.svg", true);
+    ajax.onload = function(e) {
+        document.body.insertAdjacentHTML("afterBegin", '<div style="display:none;">' + ajax.responseText + '</div>');
+    }
+    ajax.send();
+}
+
 $(document).ready(function(){
     $('.nav').on("click","a",function(){
         $('.nav li').removeClass('active');
@@ -94,13 +104,12 @@ $(document).ready(function(){
     //切换菜单栏
     $('.top-fixed .list').on("click","li",function(){
         var listTitle = $(this).attr("data-title");
-        console.info(listTitle);
         if(listTitle=="delete"){
             $('.content').children('.delete').show();
-            $("#modalbg").show()
+            $("#modalbg").show();
         }else if(listTitle=="review"){
             $('.content').children('.review').show();
-            $("#modalbg").show()
+            $("#modalbg").show();
         }else {
             $('.content').children("."+listTitle).show().siblings().hide();
         }
@@ -111,9 +120,28 @@ $(document).ready(function(){
         $('.review').hide();
         $("#modalbg").hide()
     });
+    //冻结
+    $('.content').on("click",".freeze button,.review button",function(){
+        $('.freeze').hide();
+        $('.review').hide();
+        $("#freeze").hide()
+    });
+    //解冻
+    $('.content').on("click",".unfreeze button,.review button",function(){
+        $('.unfreeze').hide();
+        $('.review').hide();
+        $("#unfreeze").hide()
+    });
 
-
-    //点击弹出框详情
+    $('.annex .annex-layout').on("click","li",function(){
+        $(this).addClass('cur').siblings().removeClass('cur');
+        var layout = $(this).attr("data-title");
+        if(layout=="column"){
+            $('.annex .file-list ul').addClass('column');
+        }else {
+            $('.annex .file-list ul').removeClass('column');
+        }
+    })
 
 });
 
@@ -124,6 +152,27 @@ var i18n = {
     months          : ['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'],
     weekdays        : ['周日','周一','周二','周三','周四','周五','周六'],
     weekdaysShort   : ['S','M','T','W','T','F','S']
+}
+
+
+//子模块tab
+$('.boarding ').on("click",".boa-title li",function(){
+    $(this).addClass("boa-cur").siblings().removeClass('boa-cur');
+    var dataTitle = $(this).attr("data-title");
+    $('.boa-body .'+dataTitle).show().siblings().hide();
+});
+
+
+//进度条
+function proChange(slef){
+    var proVal = $(slef).val();
+    $(slef).parent().children('.per').children('span').text(proVal);
+    $(slef).mousemove(function(){
+        var proVal = $(slef).val();
+        $(slef).parent().children('.per').children('span').text(proVal);
+        $(slef).css( 'background-size', proVal + '% 100%' );
+
+    });
 }
 
 
