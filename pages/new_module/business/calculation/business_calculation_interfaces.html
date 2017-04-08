@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>年计划</title>
+    <title>多项目多个界面</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="/css/new_module/accounting/accounting.css">
 </head>
@@ -17,29 +17,26 @@
     </div>
     <div class="nav">
         <div class="nav-list">
-            <h3 class="header-menu big"><i class="nav-arrow"></i>计划管理</h3>
+            <h3 class="header-menu big"><i class="nav-arrow"></i>项目测算管理</h3>
             <ul class="menu">
-                <li class="active"><a  href="/pages/new_module/business/progress/business_progress_year.html">年计划</a></li>
-                <li><a  href="/pages/new_module/business/progress/business_progress_month.html">月计划</a></li>
-                <li><a  href="/pages/new_module/business/progress/business_progress_week.html">周计划</a></li>
-                <li><a  href="/pages/new_module/business/progress/business_progress_day.html">日计划</a></li>
+                <li><a  href="/pages/new_module/business/calculation/business_calculation_basic.html">项目基本信息</a></li>
+                <li><a  href="/pages/new_module/business/calculation/business_calculation_cost.html">项目费用情况</a></li>
+                <li><a  href="/pages/new_module/business/calculation/business_calculation_needs.html">项目人员需求管理</a></li>
             </ul>
         </div>
         <div class="nav-list">
-            <h3 class="header-menu big"><i class="nav-arrow"></i>市场管理</h3>
+            <h3 class="header-menu big"><i class="nav-arrow"></i>工作界面</h3>
             <ul class="menu">
-                <li><a href="/pages/new_module/business/progress/business_progress_demand.html">市场需求分析</a></li>
-                <li><a href="/pages/new_module/business/progress/business_progress_target.html">目标信息</a></li>
-                <li><a href="/pages/new_module/business/progress/business_progress_excavate.html">市场挖掘</a></li>
-                <li><a href="/pages/new_module/business/progress/business_progress_research.html">市场调研</a></li>
-                <li><a href="/pages/new_module/business/progress/business_progress_measure.html">市场测算</a></li>
+                <li><a  href="/pages/new_module/business/calculation/business_calculation_single.html">单项目单个界面</a></li>
+                <li><a  href="/pages/new_module/business/calculation/business_calculation_multiple.html">单项目多个界面</a></li>
+                <li><a  href="/pages/new_module/business/calculation/business_calculation_multi.html">多项目单个界面</a></li>
+                <li class="active"><a  href="/pages/new_module/business/calculation/business_calculation_interfaces.html">多项目多个界面</a></li>
             </ul>
         </div>
         <div class="nav-list">
-            <h3 class="header-menu big"><i class="nav-arrow"></i>其他</h3>
+            <h3 class="header-menu big"><i class="nav-arrow"></i>项目测算管理汇总</h3>
             <ul class="menu">
-                <li><a href="/pages/new_module/business/progress/business_progress_type.html">业务类型管理</a></li>
-                <li><a href="/pages/new_module/business/progress/business_progress_subject.html">业务方向科目</a></li>
+                <li><a  href="/pages/new_module/business/calculation/business_calculation_measure.html">项目测算汇总</a></li>
             </ul>
         </div>
     </div>
@@ -76,10 +73,7 @@
                     <a href="javascript:void(0)" class="same-one">编辑<span>Compile</span></a>
                 </li>
                 <li data-title="delete">
-                    <a href="javascript:void(0)" class="same-one">删除<span>Compile</span></a>
-                </li>
-                <li data-title="export">
-                    <a href="javascript:void(0)" class="same-one">导出<span>Compile</span></a>
+                    <a href="javascript:void(0)" class="same-two">删除<span>Compile</span></a>
                 </li>
             </ul>
         </div>
@@ -89,28 +83,42 @@
                     <li class="list-head">
                         <span></span>
                         <span class="data-id">id</span>
-                        <span>年份</span>
-                        <span>业务类型</span>
-                        <span>工作量权重</span>
-                        <span>业务方向科目</span>
-                        <span>业务科发展对象</span>
-                        <span>同一类业务类型中占比</span>
-                        <span>各业务科目年度占比</span>
+                        <span>项目名称</span>
+                        <span>项目类别</span>
+                        <span>界面选择</span>
+                        <span>工作量</span>
+                        <span>利润</span>
+                        <span>项目比重</span>
+                        <span>项目利润对比</span>
+                        <span></span>
                     </li>
                     <li class="list-all">
                         <section>
                             <div class="list-text odd">
                                 <p>1</p>
                                 <p class="data-id"></p>
-                                <p>2017</p>
+                                <p>sss</p>
                                 <p></p>
                                 <p></p>
                                 <p></p>
                                 <p></p>
                                 <p></p>
-                                <p>50%</p>
+                                <p>ccc</p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">更多详细</a>
+                                </p>
                             </div>
                             <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-parent">
+                                            <span>界面利润对比</span>
+                                        </p>
+                                        <p class="see-children">
+                                            <span>vvvdddd</span>
+                                        </p>
+                                    </li>
+                                </ul>
                                 <div class="module">
                                     <div class="see-module">
                                         <p class="see-type">体现类型</p>
@@ -129,45 +137,37 @@
                     <section>
                         <ul>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>年份</em></label>
+                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目名称</em></label>
+                                 <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目类别</em></label>
                                 <select class="sele">
-                                    <option value="">2017</option>
-                                    <option value="">2018</option>
-                                    <option value="">2019</option>
-                                    <option value="">2020</option>
+                                    <option value="">项目类别1</option>
+                                    <option value="">项目类别2</option>
                                 </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务类型</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>界面选择</em></label>
                                 <select class="sele">
-                                    <option value="">业务类型0</option>
-                                    <option value="">业务类型8</option>
-                                    <option value="">业务类型9</option>
+                                    <option value="">施工</option>
+                                    <option value="">设计</option>
+                                    <option value="">督导</option>
+                                    <option value="">方案提供</option>
+                                    <option value="">监理</option>
                                 </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作量权重</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作量</em></label>
+                                <input type="number">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>利润</em></label>
                                 <input type="number">
                             </li>
                             <li>
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务方向科目</em></label>
-                                <select class="sele">
-                                    <option value="">业务方向科目0</option>
-                                    <option value="">业务方向科目8</option>
-                                    <option value="">业务方向科目9</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务科发展对象</em></label>
-                                <input type="number">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>同意类业务类型中占比</em></label>
-                                <input type="number">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>各类业务科目年度占比</em></label>
-                                <input type="number">
+                                <label><em>项目比重</em></label>
+                                <input type="text">
                             </li>
                         </ul>
                     </section>
@@ -182,45 +182,37 @@
                     <section>
                         <ul>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>年份</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目名称</em></label>
+                                <input type="text">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目类别</em></label>
                                 <select class="sele">
-                                    <option value="">2017</option>
-                                    <option value="">2018</option>
-                                    <option value="">2019</option>
-                                    <option value="">2020</option>
+                                    <option value="">项目类别1</option>
+                                    <option value="">项目类别2</option>
                                 </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务类型</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>界面选择</em></label>
                                 <select class="sele">
-                                    <option value="">业务类型0</option>
-                                    <option value="">业务类型8</option>
-                                    <option value="">业务类型9</option>
+                                    <option value="">施工</option>
+                                    <option value="">设计</option>
+                                    <option value="">督导</option>
+                                    <option value="">方案提供</option>
+                                    <option value="">监理</option>
                                 </select>
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作量权重</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>工作量</em></label>
+                                <input type="number">
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>利润</em></label>
                                 <input type="number">
                             </li>
                             <li>
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务方向科目</em></label>
-                                <select class="sele">
-                                    <option value="">业务方向科目0</option>
-                                    <option value="">业务方向科目8</option>
-                                    <option value="">业务方向科目9</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>业务科发展对象</em></label>
-                                <input type="number">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>同意类业务类型中占比</em></label>
-                                <input type="number">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>各类业务科目年度占比</em></label>
-                                <input type="number">
+                                <label><em>项目比重</em></label>
+                                <input type="text">
                             </li>
                         </ul>
                     </section>
@@ -242,29 +234,7 @@
                     </div>
                 </div>
             </div>
-            <div class="export">
-                <div class="ex-head">
-                    <h5>温馨提示</h5>
-                </div>
-                <div class="ex-con">
-                    <p>是否导出数据？</p>
-                    <div class="export-input">
-                        <p class="export2">
-                            <label><em>公司</em></label>
-                            <select class="sele">
-                                <option value="">名称1</option>
-                                <option value="">名称2</option>
-                                <option value="">名称3</option>
-                            </select>
-                        </p>
-                    </div>
-                    <div class="btn">
-                        <button>确定</button>
-                        <button>取消</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+       </div>
     </div>
 </section>
 <div id="modalbg"></div>
@@ -272,7 +242,6 @@
 <script src="/laypage/laypage.js"></script>
 <script src="/js/new_modules/common.js"></script>
 <script src="/js/common.js"></script>
-<script src="/js/new_modules/select.js"></script>
 <script src="/js/new_modules/other.js"></script>
 <script type="text/javascript">
     laypage({

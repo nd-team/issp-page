@@ -1,6 +1,6 @@
 @import "../base";
 body{
- min-width: 1220px;
+   min-width: 1220px;
   overflow-x: hidden;
 }
 button{
@@ -60,7 +60,6 @@ button{
       }
       .rank{
         display: flex;
-        /*justify-content: center;*/
         .rank-left{
           font-size: 12px;
           width: 25%;
@@ -136,7 +135,6 @@ button{
                   color: #367bbb;
                   text-align: left;
                   &:nth-of-type(1){
-                   /* flex: 1;*/
                     width: 89px;
                     padding-left: 20px;
                   }
@@ -166,7 +164,6 @@ button{
                   justify-content: flex-start;
                   padding: 10px 0;
                   &.td_01{
-                 /*   flex: 1;*/
                     width: 89px;
                     padding-left: 20px;
                     .rank-top1{
@@ -212,7 +209,6 @@ button{
                     em{
                       display: block;
                       min-width: 100px;
-                   /*  padding-right: 7%;*/
                     }
                     .new{
                       text-align: center;

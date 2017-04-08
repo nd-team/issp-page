@@ -39,10 +39,10 @@ $(document).ready(function(){
     });
 
     //排行
-    $('.rank-right').find("table").not("table:nth-of-type(1)").hide();
+    $('.rank-right').find("div").not("div:nth-of-type(1)").hide();
     $('.rank-left ul li').click(function () {
         $(this).addClass('current').siblings().removeClass('current');
-        $('.rank-right>table:eq(' + $(this).index() + ')').show().siblings().hide();
+        $(this).parents('.rank').find('.'+$(this).attr("data-title")).show().siblings().hide();
     });
    //奖励圈
     $('b[data-title]').click(function(){

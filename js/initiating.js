@@ -74,20 +74,6 @@ function myhide(className1,className2,className3){
     }
 }
 //申诉
-/*   function select_box(edier,depart_pop){
- $(edier).on('click',function(e){
- $(this).parent(".choice").siblings().find(depart_pop).hide();
- $(this).parent().find(depart_pop).show();
- e?e.stopPropagation():event.cancelBubble = true;
- $(depart_pop).children(".pop").find("ul li").click(function(e){
- var selectText=$(this).text();
- $(this).parents(depart_pop).hide();
- $(this).parents(".choice").find(edier).val(selectText);
- e?e.stopPropagation():event.cancelBubble = true;
- });
- return false;
- })
- }*/
 $(function () {
     //申诉
     //产品众筹得详情页
@@ -105,27 +91,27 @@ $(function () {
 
      //发起处罚
     //切换页面
-    $('.body-all').find(".in-body").not(".in-body:nth-of-type(1)").hide();
     $(".in-top ul li:not('.in-add')").click(function(){
+        var listTitle = $(this).attr("data-title");
         $('.in-top ul li i').removeClass('cur2');
         $('.in-top ul li').removeClass('cur');
         $(this).addClass('cur');
         $(this).children('i').addClass('cur2');
-
-        $('.body-all>div:eq(' + $(this).index() + ')').show().siblings().hide();
+        $(this).parents('.in-all').find('.'+listTitle).show().siblings().hide();
     });
+    //单击关闭按钮时关闭
     $('.in-top ul li i').click(function(){
         $(this).parent().remove();
     });
+   //加号弹窗添加样式
     $('.x-body ul li').not('.text-title').click(function(){
         $(this).addClass('now').siblings().removeClass('now');
     });
-    //单击改变背景颜色
     //部门添加个人添加切换
     $(".choice:nth-of-type(2)").hide();
     $(".add-type li").click(function () {
         $(this).addClass("now").siblings().removeClass("now");
-        $('.choice-all>div:eq(' + $(this).index() + ')').show().siblings().hide();
+        $(this).parents('.add-cont').find('.'+$(this).attr("data-title")).show().siblings().hide();
     });
     //上下显示
     $(".l1").Scroll({ line: 7, speed: 500,up: "l2", down: "l3" });
@@ -165,7 +151,7 @@ $(function () {
     $(".depart-pop,.hide-s2").hide();
     $(".choice-all .choice input").click(function () {
         $(this).next().show()
-    })
+    });
     $(".all-add button").click(function () {
         $(this).parents('.all-add').hide();
         $('#modal').hide();
