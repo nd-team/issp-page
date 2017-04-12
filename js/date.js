@@ -23,19 +23,6 @@ $(function () {
 
     //发起处罚
     $('.body-all').find(".in-body").not(".in-body:nth-of-type(1)").hide();
-    $(".in-top ul li:not('.in-add')").click(function(){
-        $('.in-top ul li i').removeClass('cur2');
-        $('.in-top ul li').removeClass('cur');
-        $(this).addClass('cur');
-        $(this).children('i').addClass('cur2');
-        $('.body-all>div:eq(' + $(this).index() + ')').show().siblings().hide();
-    });
-    $('.in-top ul li i').click(function(){
-        $(this).parent().remove();
-    });
-    $('.x-body ul li').not('.text-title').click(function(){
-        $(this).addClass('now').siblings().removeClass('now');
-    });
     $('a[data-title]').click(function(){
         var dataTitle = $(this).attr("data-title");
         $('#modalbg').show();

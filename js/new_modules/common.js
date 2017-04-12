@@ -113,6 +113,7 @@ $(document).ready(function(){
         }else {
             $('.content').children("."+listTitle).show().siblings().hide();
         }
+
     });
     //删除框
     $('.content').on("click",".delete button,.review button",function(){

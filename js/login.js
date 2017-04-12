@@ -44,5 +44,4 @@ $(function(){
         var LabelInfo=$(this).parent().find("label").outerWidth(true);
         $(this).css("width",$(this).parent().width()-LabelInfo-6+"px");
     });
-
 }

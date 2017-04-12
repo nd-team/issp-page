@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>项目测算汇总</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="/css/new_module/accounting/accounting.css">
+</head>
+<body>
+<section class="left-section">
+    <div class="header">
+        <a href="javascript:void(0)" title="issp平台" class="logo">
+            <img src="/images/new_module/organization/logo.png" alt="">
+        </a>
+        <span>issp平台</span>
+    </div>
+    <div class="nav">
+        <div class="nav-list">
+            <h3 class="header-menu big"><i class="nav-arrow"></i>项目测算管理</h3>
+            <ul class="menu">
+                <li><a  href="/pages/new_module/business/calculation/business_calculation_basic.html">项目基本信息</a></li>
+                <li><a  href="/pages/new_module/business/calculation/business_calculation_cost.html">项目费用情况</a></li>
+                <li><a  href="/pages/new_module/business/calculation/business_calculation_needs.html">项目人员需求管理</a></li>
+            </ul>
+        </div>
+        <div class="nav-list">
+            <h3 class="header-menu big"><i class="nav-arrow"></i>工作界面</h3>
+            <ul class="menu">
+                <li><a  href="/pages/new_module/business/calculation/business_calculation_single.html">单项目单个界面</a></li>
+                <li><a  href="/pages/new_module/business/calculation/business_calculation_multiple.html">单项目多个界面</a></li>
+                <li><a  href="/pages/new_module/business/calculation/business_calculation_multi.html">多项目单个界面</a></li>
+                <li><a  href="/pages/new_module/business/calculation/business_calculation_interfaces.html">多项目多个界面</a></li>
+            </ul>
+        </div>
+        <div class="nav-list">
+            <h3 class="header-menu big"><i class="nav-arrow"></i>项目测算管理汇总</h3>
+            <ul class="menu">
+                <li class="active"><a  href="/pages/new_module/business/calculation/business_calculation_measure.html">项目测算汇总</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="right-section">
+    <div class="top-content">
+        <div class="top-fixed">
+            <div class="top">
+                <div class="top-back">
+                    <a href="javascript:void(0)" class="back">返回</a>
+                </div>
+                <div class="search">
+                    <a href="javascript:void(0)" class="search-btn"></a>
+                    <select class="selected">
+                        <option value="0">张三三</option>
+                        <option value="1">张四四</option>
+                        <option value="2">张五五</option>
+                        <option value="3">张六六</option>
+                        <option value="4">张七七</option>
+                        <option value="5">张八八</option>
+                        <option value="6">张九九</option>
+                    </select>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+            <ul class="list">
+                <li class="current" data-title="list">
+                    <a href="javascript:void(0)" class="lis">列表<span>Tabulate</span></a>
+                </li>
+                <li data-title="add">
+                    <a href="javascript:void(0)" class="add">添加<span>Add</span></a>
+                </li>
+                <li data-title="edit">
+                    <a href="javascript:void(0)" class="same-one">编辑<span>Compile</span></a>
+                </li>
+                <li data-title="frozen">
+                    <a href="javascript:void(0)" class="same-two">冻结<span>Compile</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="same-three">解冻<span>Compile</span></a>
+                </li>
+                <li data-title="collect">
+                    <a href="javascript:void(0)" class="same-three">汇总<span>Compile</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="same-one">现在发送<span>Compile</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content-tab list">
+                <ul class="table">
+                    <li class="list-head">
+                        <span></span>
+                        <span class="data-id">id</span>
+                        <span>项目组</span>
+                        <span>创建/修改人</span>
+                        <span>更新时间</span>
+                        <span>上次发送时间</span>
+                        <span>备注</span>
+                        <span>发送间隔</span>
+                        <span>汇总间隔</span>
+                        <span></span>
+                    </li>
+                    <li class="list-all">
+                        <section>
+                            <div class="list-text odd">
+                                <p>1</p>
+                                <p class="data-id"></p>
+                                <p>sss</p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p>ccc</p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">更多详细</a>
+                                </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-parent">
+                                            <span>发送对象</span>
+                                            <span>状态</span>
+                                        </p>
+                                        <p class="see-children">
+                                            <span>vvvdddd</span>
+                                            <span></span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="module">
+                                    <div class="see-module">
+                                        <p class="see-type">体现类型</p>
+                                        <p class="see-description"></p>
+                                        <button class="btn">关闭</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+                <footer class="footer"> <div class="pagination-click" id="pages"></div></footer>
+            </div>
+            <div class="content-input add">
+                <div class="input-list">
+                    <section>
+                        <ul>
+                            <li class="required">
+                                 <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目组</em></label>
+                                <select class="sele">
+                                    <option value="">项目组1</option>
+                                    <option value="">项目组2</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>发送间隔</em></label>
+                                <select class="sele">
+                                    <option value="">项目类别1</option>
+                                    <option value="">项目类别2</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>汇总间隔</em></label>
+                                <select class="sele">
+                                    <option value="">施工</option>
+                                    <option value="">设计</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>备注</em></label>
+                                <input type="number">
+                            </li>
+                            <li>
+                                <label><em>选择对象</em></label>
+                                <select class="sele">
+                                    <option value="">施工</option>
+                                    <option value="">设计</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>发送对象</em></label>
+                                <input type="text">
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="content-input edit">
+                <div class="input-list">
+                    <section>
+                        <ul>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>项目组</em></label>
+                                <select class="sele">
+                                    <option value="">项目组1</option>
+                                    <option value="">项目组2</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>发送间隔</em></label>
+                                <select class="sele">
+                                    <option value="">项目类别1</option>
+                                    <option value="">项目类别2</option>
+                                </select>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>汇总间隔</em></label>
+                                <select class="sele">
+                                    <option value="">施工</option>
+                                    <option value="">设计</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>备注</em></label>
+                                <input type="number">
+                            </li>
+                            <li>
+                                <label><em>选择对象</em></label>
+                                <select class="sele">
+                                    <option value="">施工</option>
+                                    <option value="">设计</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>发送对象</em></label>
+                                <input type="text">
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <p class="dataBottom">
+                    <span class="imPrompt"><i><img src="/images/new_module/data/prompt.png"></i>带有<i><img src="/images/new_module/data/mandatory.png"></i>的为必填项</span>
+                    <button>提交</button>
+                </p>
+            </div>
+            <div class="frozen">
+                <div class="fro-head">
+                    <h5>温馨提示</h5>
+                </div>
+                <div class="fro-con">
+                    <p>确定要冻结这条数据？</p>
+                    <div class="btn">
+                        <button>确定</button>
+                        <button>取消</button>
+                    </div>
+                </div>
+            </div>
+            <div class="collect cole">
+                <p class="sum-select">
+                    <label><i><img src="/images/new_module/data/mandatory.png"></i><em>选择项目组</em></label>
+                    <select class="sele">
+                        <option value="">项目组1号</option>
+                        <option value="">项目组2号</option>
+                        <option value="">项目组3号</option>
+                    </select>
+                </p>
+                <ul>
+                    <li class="sum-thead">
+                        <span>地区</span>
+                        <span>项目数量</span>
+                        <span>项目利润</span>
+                        <span>多项目多界面项目数量</span>
+                        <span>多项目多界面项目数量</span>
+                        <span>单项目单界面项目数量</span>
+                        <span>长期合作项目数量</span>
+                        <span>事项合作项目数量</span>
+                        <span>中介项目数量</span>
+                        <span>测评结果为盈利项目数量</span>
+                        <span>测评结果为亏损项目数量</span>
+                    </li>
+                    <li class="sum-tbody">
+                        <span>地区</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                        <span>移动通讯</span>
+                    </li>
+                </ul>
+            </div>
+       </div>
+    </div>
+</section>
+<div id="modalbg"></div>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/laypage/laypage.js"></script>
+<script src="/js/new_modules/common.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/new_modules/other.js"></script>
+<script type="text/javascript">
+    laypage({
+        cont: $('#pages'),  //容器。值支持id名、原生dom对象，jquery对象,
+        pages: 20, //总页数
+        skin: 'molv', //皮肤
+        first: 1, //将首页显示为数字1,。若不显示，设置false即可
+        last: 20, //将尾页显示为总页数。若不显示，设置false即可
+    });
+</script>
+</body>
+</html>

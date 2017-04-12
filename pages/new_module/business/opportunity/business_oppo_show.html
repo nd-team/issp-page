@@ -20,9 +20,9 @@
             <h3 class="header-menu big"><i class="nav-arrow"></i>商业能力展示</h3>
             <ul class="menu">
                 <li class="active"><a  href="/pages/new_module/business/opportunity/business_oppo_show.html">公司能力展示</a></li>
-                <li><a  href="">个人能力展示</a></li>
-                <li><a href="">合作对象商务展示</a></li>
-                <li><a href="">汇总和邮件发送</a></li>
+                <li><a href="/pages/new_module/business/opportunity/business_oppo_person.html">个人能力展示</a></li>
+                <li><a href="/pages/new_module/business/opportunity/business_oppo_cooperation.html">合作对象商务展示</a></li>
+                <li><a href="/pages/new_module/business/opportunity/business_oppo_email.html">汇总和邮件发送</a></li>
             </ul>
         </div>
     </div>
@@ -61,11 +61,17 @@
                 <li data-title="delete">
                     <a href="javascript:void(0)" class="same-one">删除<span>Compile</span></a>
                 </li>
-                <li data-title="frozen">
-                    <a href="javascript:void(0)" class="same-one">冻结<span>Compile</span></a>
+                <li data-title="updata-file">
+                    <a href="javascript:void(0)" class="same-one">导入<span>Compile</span></a>
                 </li>
-                <li data-title="thaw">
-                    <a href="javascript:void(0)" class="same-one">解冻<span>Compile</span></a>
+                <li data-title="export">
+                    <a href="javascript:void(0)" class="same-one">导出<span>Compile</span></a>
+                </li>
+                <li data-title="com-search">
+                    <a href="javascript:void(0)" class="same-one">搜索<span>Compile</span></a>
+                </li>
+                <li data-title="check">
+                    <a href="javascript:void(0)" class="same-one">查看公司组织结构规划<span>Compile</span></a>
                 </li>
             </ul>
         </div>
@@ -181,6 +187,16 @@
                                     <a href="javascript:void(0)">建筑业企业资质证书</a>
                                 </p>
                             </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>公司合作对象</em></label>
+                                <input type="text" class="box_se">
+                                <p class="select_b1">
+                                    <a href="javascript:void(0)">运营商</a>
+                                    <a href="javascript:void(0)">厂商</a>
+                                    <a href="javascript:void(0)">集成商</a>
+                                    <a href="javascript:void(0)">政府机关</a>
+                                </p>
+                            </li>
                             <li>
                                 <label><em>公司荣誉证书</em></label>
                                 <input type="text">
@@ -192,7 +208,6 @@
                                     <a href="javascript:void(0)">发展规划</a>
                                 </p>
                             </li>
-                            <li>
                             <li>
                                 <label><em>项目发展规划</em></label>
                                 <input type="text">
@@ -209,8 +224,8 @@
                                 <label><em>公司资金</em></label>
                                 <input type="text" class="box_se">
                                 <p class="select_b1">
-                                    <a href="javascript:void(0)">北京</a>
-                                    <a href="javascript:void(0)">广州</a>
+                                    <a href="javascript:void(0)">1000</a>
+                                    <a href="javascript:void(0)">2000</a>
                                 </p>
                             </li>
                             <li>
@@ -222,72 +237,44 @@
                                 </p>
                             </li>
                             <li>
-                                <label><em>公司所在地区</em></label>
-                                <input type="text" class="box_se">
-                                <p class="select_b1">
-                                    <a href="javascript:void(0)">北京</a>
-                                    <a href="javascript:void(0)">广州</a>
-                                </p>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>行业</em></label>
+                                <label><em>配置</em></label>
                                 <input type="text">
                             </li>
                             <li>
-                                <label><em>第一介绍人姓名</em></label>
+                                <label><em>设备</em></label>
                                 <input type="text">
                             </li>
                             <li>
-                                <label><em>邮箱</em></label>
+                                <label><em>公司占地面积</em></label>
                                 <input type="text">
                             </li>
                             <li>
-                                <label><em>座机</em></label>
+                                <label><em>公司业务</em></label>
                                 <input type="text">
                             </li>
                             <li>
-                                <label><em>微信</em></label>
+                                <label><em>已完成的项目</em></label>
+                                <select class="sele">
+                                    <option value="">独立完成</option>
+                                    <option value="">合作完成</option>
+                                    <option value="">阶段完成</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label><em>尚在进行中的项目</em></label>
                                 <input type="text">
                             </li>
                             <li>
-                                <label><em>QQ</em></label>
+                                <label><em>公司文化体系交流</em></label>
                                 <input type="text">
                             </li>
                             <li>
-                                <label><em>组织机构名称</em></label>
+                                <label><em>员工节假日活动</em></label>
                                 <input type="text">
                             </li>
                             <li>
-                                <label><em>组织规模</em></label>
+                                <label><em>公司公告栏</em></label>
                                 <input type="text">
-                            </li>
-                            <li>
-                                <label><em>岗位</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>职级</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>职权</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>生活地区</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>成长地区</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>以往工作地区</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>最近一次市场招待时间</em></label>
-                                <input type="text" class="add_image">
                             </li>
                         </ul>
                     </section>
@@ -301,127 +288,119 @@
                 <div class="input-list">
                     <section>
                         <ul>
-                            <li class="id-hide" style="display: none">
-                                <label><em>id</em></label>
-                                <input type="text" disabled>
-                            </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>客户信息编号</em></label>
-                                <input type="text" disabled>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>客户姓名</em></label>
-                                <input type="text" disabled>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>地区</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>公司名称</em></label>
                                 <input type="text">
                             </li>
                             <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>性别</em></label>
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>专业资质认证</em></label>
+                                <!-- 可手填的下拉框-->
+                                <input type="text" class="box_se">
+                                <p class="select_b1">
+                                    <a href="javascript:void(0)">电信工程专业承包企业资质</a>
+                                    <a href="javascript:void(0)">通信工程施工总承包企业资质</a>
+                                    <a href="javascript:void(0)">通信息系网络系统集成企业资质</a>
+                                    <a href="javascript:void(0)">电子通信广电行业的工程设计资质</a>
+                                    <a href="javascript:void(0)">通信信息专业工程咨询资质</a>
+                                </p>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>管理资质认证</em></label>
+                                <input type="text" class="box_se">
+                                <p class="select_b1">
+                                    <a href="javascript:void(0)">9000族质量管理体系或同类认证</a>
+                                    <a href="javascript:void(0)">27000族信息安全管理体系或同类认证</a>
+                                    <a href="javascript:void(0)">建筑业企业资质证书</a>
+                                </p>
+                            </li>
+                            <li class="required">
+                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>公司合作对象</em></label>
+                                <input type="text" class="box_se">
+                                <p class="select_b1">
+                                    <a href="javascript:void(0)">运营商</a>
+                                    <a href="javascript:void(0)">厂商</a>
+                                    <a href="javascript:void(0)">集成商</a>
+                                    <a href="javascript:void(0)">政府机关</a>
+                                </p>
+                            </li>
+                            <li>
+                                <label><em>公司荣誉证书</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>公司发展规划</em></label>
+                                <input type="text" class="box_se">
+                                <p class="select_b1">
+                                    <a href="javascript:void(0)">发展规划</a>
+                                </p>
+                            </li>
+                            <li>
+                                <label><em>项目发展规划</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>公司所在地区</em></label>
+                                <input type="text" class="box_se">
+                                <p class="select_b1">
+                                    <a href="javascript:void(0)">北京</a>
+                                    <a href="javascript:void(0)">广州</a>
+                                </p>
+                            </li>
+                            <li>
+                                <label><em>公司资金</em></label>
+                                <input type="text" class="box_se">
+                                <p class="select_b1">
+                                    <a href="javascript:void(0)">1000</a>
+                                    <a href="javascript:void(0)">2000</a>
+                                </p>
+                            </li>
+                            <li>
+                                <label><em>人员组成</em></label>
+                                <input type="text" class="box_se">
+                                <p class="select_b1">
+                                    <a href="javascript:void(0)">北京</a>
+                                    <a href="javascript:void(0)">广州</a>
+                                </p>
+                            </li>
+                            <li>
+                                <label><em>配置</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>设备</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>公司占地面积</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>公司业务</em></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label><em>已完成的项目</em></label>
                                 <select class="sele">
-                                    <option value="">男</option>
-                                    <option value="">女</option>
+                                    <option value="">独立完成</option>
+                                    <option value="">合作完成</option>
+                                    <option value="">阶段完成</option>
                                 </select>
                             </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>客户类别</em></label>
-                                <select class="sele">
-                                    <option value="">vip客户</option>
-                                    <option value="">老客户</option>
-                                    <option value="">合作伙伴</option>
-                                    <option value="">普通客户</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>客户状态</em></label>
-                                <select class="sele">
-                                    <option value="">已完成项目客户</option>
-                                    <option value="">现项目客户</option>
-                                    <option value="">潜在客户</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>关系程度</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>重要级别</em></label>
-                                <select class="sele">
-                                    <option value="">1星</option>
-                                    <option value="">2星</option>
-                                    <option value="">3星</option>
-                                    <option value="">4星</option>
-                                    <option value="">5星</option>
-                                </select>
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>客户来源</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>手机号</em></label>
-                                <input type="text">
-                            </li>
-                            <li class="required">
-                                <label><i><img src="/images/new_module/data/mandatory.png"></i><em>行业</em></label>
+                            <li>
+                                <label><em>尚在进行中的项目</em></label>
                                 <input type="text">
                             </li>
                             <li>
-                                <label><em>第一介绍人姓名</em></label>
+                                <label><em>公司文化体系交流</em></label>
                                 <input type="text">
                             </li>
                             <li>
-                                <label><em>邮箱</em></label>
+                                <label><em>员工节假日活动</em></label>
                                 <input type="text">
                             </li>
                             <li>
-                                <label><em>座机</em></label>
+                                <label><em>公司公告栏</em></label>
                                 <input type="text">
-                            </li>
-                            <li>
-                                <label><em>微信</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>QQ</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>组织机构名称</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>组织规模</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>岗位</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>职级</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>职权</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>生活地区</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>成长地区</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>以往工作地区</em></label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label><em>最近一次市场招待时间</em></label>
-                                <input type="text" class="add_image">
                             </li>
                         </ul>
                     </section>
@@ -443,17 +422,70 @@
                     </div>
                 </div>
             </div>
-            <div class="frozen">
-                <div class="fro-head">
+            <div class="updata-file">
+                <section>
+                    <div class="file">
+                        <input type="file" id="updata-file">
+                        <label for="updata-file">
+                            <p>
+                                <img src="/images/new_module/data/updata_file.png" alt="">
+                                <span>选择文件</span>
+                            </p>
+                        </label>
+                    </div>
+                    <div class="file-right">
+                        <div>
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>文件名</em></label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label><i><img src="/images/new_module/data/mandatory.png"></i><em>文件简述</em></label>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                </section>
+                <div class="file-bot">
+                    <p class="imPrompt-tis">
+                        <i><img src="/images/new_module/data/prompt.png"></i>
+                        温馨提示：上传的表格不能存在有合并单元格，《员工编号》《员工姓名》《是否补助》这三列必须为文本格式
+                    </p>
+                    <div class="btn">
+                        <button>浏览</button>
+                        <button>上传</button>
+                    </div>
+                </div>
+            </div>
+            <div class="export">
+                <div class="ex-head">
                     <h5>温馨提示</h5>
                 </div>
-                <div class="fro-con">
-                    <p>确定要冻结这条数据？</p>
+                <div class="ex-con">
+                    <p>是否导出数据？</p>
+                    <div class="export-input">
+                        <p class="export2">
+                            <label><em>内部项目名称</em></label>
+                            <select class="sele">
+                                <option value="">名称1</option>
+                                <option value="">名称2</option>
+                                <option value="">名称3</option>
+                            </select>
+                        </p>
+                    </div>
                     <div class="btn">
                         <button>确定</button>
                         <button>取消</button>
                     </div>
                 </div>
+            </div>
+            <div class="com-search">
+                <p class="com-search2">
+                    <label><em>公司名称</em></label>
+                    <input type="text">
+                </p>
+                <span class="btn">
+                    <a href="javascript:void(0)">清空</a>
+                    <a href="javascript:void(0)">搜索</a>
+              </span>
             </div>
         </div>
     </div>
